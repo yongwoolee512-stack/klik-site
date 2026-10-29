@@ -574,7 +574,7 @@ function renderGrid() {
         <h3>${esc(it.name)} <span class="en">${esc(it.en)}</span></h3>
         <p class="one">${esc(it.one)}</p>
         <p class="when"><b>이런 분께</b> ${esc(it.when)}</p>
-        <div class="meta"><span>★ ${fmt(it.stars)} · 설치 ${fmt(it.installs)}</span>${level(it.level)}<button class="install" data-open="${it.id}">설치</button></div>
+        <div class="meta"><span>★ ${fmt(it.stars)} · 설치 ${fmt(it.installs)}</span>${level(it.level)}<button class="install" data-open="${it.id}">${installOf(it)&&installOf(it).name?"설치":"연결"}</button></div>
       </div>
     </div>`);
   // 광고 카드: 6번째마다
