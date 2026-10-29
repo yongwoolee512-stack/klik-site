@@ -709,6 +709,20 @@ $("#subform").addEventListener("submit", e => { e.preventDefault(); toast("구�
 $("#st-count").textContent = ITEMS.length;
 renderChips(); renderRank(); renderGrid(); renderNews("today");
 
+// 부제 로테이션: 세 문장을 6초마다 부드럽게 교체. 접속할 때마다 시작 문장이 다름. 모션 축소 설정이면 고정.
+(function () {
+  const T = [
+    "이게 뭔지, 나한테 왜 필요한지 한글로 설명해 드립니다. 설치는 버튼 한 번, 끝.",
+    "인스타 팔로우, 유튜브 구독도 필요 없습니다. 매일 새로 나온 AI 도구를 한글로 골라 바로 씁니다.",
+    "AI 도구 편의점. 보고, 고르고, 딸깍."
+  ];
+  const el = $("#tagline"); if (!el) return;
+  let i = Math.floor(Math.random() * T.length); el.textContent = T[i];
+  if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  el.style.transition = "opacity .45s ease";
+  setInterval(() => { el.style.opacity = "0"; setTimeout(() => { i = (i + 1) % T.length; el.textContent = T[i]; el.style.opacity = "1"; }, 450); }, 6000);
+})();
+
 // 파이프라인이 만든 catalog.json / news.json이 있으면 그걸로 교체 (매일 자동 갱신되는 진짜 데이터)
 (async () => {
   try {
