@@ -1,5 +1,7 @@
 {
-  "count": 24,
+  "count": 20,
+  "pending": 27,
+  "generated_at": "2026-10-29T18:12:14.6247311Z",
   "rejected": 147,
   "items": [
     {
@@ -32,10 +34,10 @@
       ],
       "status": "published",
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       }
     },
     {
@@ -67,10 +69,10 @@
       ],
       "status": "published",
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       }
     },
     {
@@ -101,10 +103,10 @@
       ],
       "status": "published",
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       }
     },
     {
@@ -135,10 +137,10 @@
       ],
       "status": "published",
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       }
     },
     {
@@ -161,7 +163,7 @@
       "install": {
         "kind": "plugin",
         "name": "frontend-design",
-        "market": "anthropics/claude-code"
+        "market": "anthropics/claude-plugins-official"
       },
       "tips": [
         "\"카페 소개 페이지 만들어 줘\" 하면 글꼴·색·배치까지 골라 줍니다.",
@@ -169,10 +171,10 @@
       ],
       "status": "published",
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       }
     },
     {
@@ -202,10 +204,10 @@
       "note": "피그마 계정 로그인(OAuth)이 한 번 필요합니다.",
       "status": "published",
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       }
     },
     {
@@ -234,10 +236,10 @@
       ],
       "status": "published",
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       }
     },
     {
@@ -270,10 +272,10 @@
       ],
       "status": "published",
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       }
     },
     {
@@ -304,10 +306,10 @@
       ],
       "status": "published",
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       }
     },
     {
@@ -341,10 +343,10 @@
       ],
       "status": "published",
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       }
     },
     {
@@ -366,7 +368,7 @@
       "install": {
         "kind": "plugin",
         "name": "code-review",
-        "market": "anthropics/claude-code"
+        "market": "anthropics/claude-plugins-official"
       },
       "tips": [
         "/code-review 한 줄이면 됩니다.",
@@ -374,10 +376,10 @@
       ],
       "status": "published",
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       }
     },
     {
@@ -410,10 +412,10 @@
       "note": "수파베이스 가입과 프로젝트 생성이 먼저 필요합니다.",
       "status": "published",
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       }
     },
     {
@@ -445,10 +447,10 @@
       ],
       "status": "published",
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       }
     },
     {
@@ -478,10 +480,10 @@
       ],
       "status": "published",
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       }
     },
     {
@@ -515,10 +517,10 @@
       ],
       "status": "published",
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       }
     },
     {
@@ -546,10 +548,10 @@
       ],
       "status": "published",
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       }
     },
     {
@@ -577,147 +579,10 @@
       ],
       "status": "published",
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
-      }
-    },
-    {
-      "id": "naverblog",
-      "kind": "skill",
-      "cat": "marketing",
-      "name": "네이버 블로그 자동 발행",
-      "en": "naver-blog-upload",
-      "one": "쓴 글을 네이버 블로그에 바로 올리거나 임시저장합니다.",
-      "when": "블로그 글은 쓰는데 올리는 게 귀찮은 분",
-      "stars": 300,
-      "installs": 1900,
-      "level": 2,
-      "plat": [
-        "claude-code"
-      ],
-      "isNew": true,
-      "color": "#d6f0d6",
-      "repo": "https://github.com",
-      "install": {
-        "kind": "plugin",
-        "name": "naver-blog-upload",
-        "market": "skillmart/skills"
-      },
-      "tips": [
-        "\"이 글 블로그에 올려 줘\"",
-        "브라우저 로그인 상태를 그대로 씁니다."
-      ],
-      "note": "처음 한 번 네이버 로그인이 필요합니다.",
-      "status": "published",
-      "trust": {
-        "grade": "verified",
-        "reasons": [
-          "편집팀 검수"
-        ]
-      }
-    },
-    {
-      "id": "ultimate-scraper",
-      "kind": "plugin",
-      "cat": "marketing",
-      "name": "인스타·유튜브 데이터 수집",
-      "en": "Apify Ultimate Scraper",
-      "one": "인스타·유튜브·틱톡·구글맵 데이터를 표로 긁어 옵니다.",
-      "when": "경쟁사 분석·인플루언서 찾기를 수작업으로 하던 분",
-      "stars": 4100,
-      "installs": 3300,
-      "level": 2,
-      "plat": [
-        "claude-code",
-        "claude"
-      ],
-      "color": "#f5d6d6",
-      "repo": "https://github.com/apify",
-      "install": {
-        "kind": "plugin",
-        "name": "apify",
-        "market": "apify/claude-plugins"
-      },
-      "tips": [
-        "\"강남 카페 구글맵 리뷰 200개 모아 줘\"",
-        "엑셀로 바로 내려받습니다."
-      ],
-      "note": "Apify 무료 계정이 필요합니다.",
-      "status": "published",
-      "trust": {
-        "grade": "verified",
-        "reasons": [
-          "편집팀 검수"
-        ]
-      }
-    },
-    {
-      "id": "dataviz",
-      "kind": "skill",
-      "cat": "data",
-      "name": "보기 좋은 차트 만들기",
-      "en": "dataviz",
-      "one": "숫자를 주면 어디 내놔도 되는 차트로 그려 줍니다.",
-      "when": "엑셀 기본 차트가 촌스러워 보이는 분",
-      "stars": 19500,
-      "installs": 2800,
-      "level": 1,
-      "plat": [
-        "claude-code",
-        "claude"
-      ],
-      "color": "#d6e8f0",
-      "repo": "https://github.com/anthropics/claude-code",
-      "install": {
-        "kind": "plugin",
-        "name": "dataviz",
-        "market": "anthropics/claude-code"
-      },
-      "tips": [
-        "다크·라이트 모드 다 예쁘게 나옵니다.",
-        "색을 자동으로 조화롭게 고릅니다."
-      ],
-      "status": "published",
-      "trust": {
-        "grade": "verified",
-        "reasons": [
-          "편집팀 검수"
-        ]
-      }
-    },
-    {
-      "id": "schedule",
-      "kind": "plugin",
-      "cat": "auto",
-      "name": "정해진 시간에 자동 실행",
-      "en": "schedule",
-      "one": "매일 아침 뉴스 요약, 매주 보고서 같은 반복 작업을 맡깁니다.",
-      "when": "같은 일을 매일 손으로 반복하는 분",
-      "stars": 19500,
-      "installs": 4600,
-      "level": 2,
-      "plat": [
-        "claude-code",
-        "claude"
-      ],
-      "color": "#efe6d6",
-      "repo": "https://github.com/anthropics/claude-code",
-      "install": {
-        "kind": "plugin",
-        "name": "schedule",
-        "market": "anthropics/claude-code"
-      },
-      "tips": [
-        "\"매일 아침 8시에 경쟁사 뉴스 요약해서 슬랙에 올려 줘\""
-      ],
-      "status": "published",
-      "trust": {
-        "grade": "verified",
-        "reasons": [
-          "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       }
     },
     {
@@ -744,10 +609,10 @@
       ],
       "status": "published",
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       }
     },
     {
@@ -779,10 +644,10 @@
       "note": "국내 결제는 토스페이먼츠 등 별도 확인이 필요합니다.",
       "status": "published",
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       }
     },
     {
@@ -813,13 +678,11 @@
       ],
       "status": "published",
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       }
     }
-  ],
-  "generated_at": "2026-10-29T17:50:01.6798439Z",
-  "pending": 27
+  ]
 }
