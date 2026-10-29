@@ -568,13 +568,12 @@ function openDetail(id) {
 function closeDetail() { $("#modal-root").innerHTML = ""; document.body.style.overflow = ""; }
 
 // 딸깍: 링크를 열고 1.5초 안에 창 포커스가 빠져나가지 않으면(도우미가 안 뜨면) 그 자리에서 도우미 안내로 바꾼다
-function tryDeep(url, id) {
+function tryDeep(url, id, fromAnchor) {
   let left = false; const mark = () => { left = true; };
   window.addEventListener("blur", mark); document.addEventListener("visibilitychange", mark);
-  // 페이지를 이동시키지 않고 숨은 프레임으로 프로토콜만 호출 (줌·슬랙이 쓰는 방식). 주소창 이동은 페이지가 날아갈 수 있다.
-  let f = document.getElementById("klik-frame");
-  if (!f) { f = document.createElement("iframe"); f.id = "klik-frame"; f.style.display = "none"; f.setAttribute("aria-hidden", "true"); document.body.appendChild(f); }
-  try { f.src = url; } catch (e) {}
+  // 링크 자체의 기본 동작(브라우저의 "열까요?" 창)을 그대로 쓴다. 크롬은 숨은 프레임에서 나가는 외부 프로그램 호출을 막는다.
+  // 실제 브라우저는 알 수 없는 주소 형식으로 이동해도 페이지를 그대로 둔다. (아티팩트 미리보기 샌드박스만 페이지가 날아감)
+  if (!fromAnchor) { try { window.location.href = url; } catch (e) {} }
   setTimeout(() => {
     window.removeEventListener("blur", mark); document.removeEventListener("visibilitychange", mark);
     if (left) { try { localStorage.setItem("sm-helper", "1"); } catch (e) {} toast("딸깍 도우미가 확인 창을 띄웠어요. 거기서 '예'만 누르면 끝!"); return; }
@@ -600,7 +599,7 @@ function showHelperGuide(url, id) {
 document.addEventListener("click", e => {
   const t = e.target.closest("[data-fav],[data-copy],[data-deep],[data-helper],[data-open],[data-cat],[data-kind],[data-platform],[data-news-more],[data-news],[data-sub],[data-close],.modal,.play");
   if (!t) return;
-  if (t.dataset.deep) { e.preventDefault(); e.stopPropagation(); tryDeep(t.dataset.deep, t.dataset.item); return; }
+  if (t.dataset.deep) { e.stopPropagation(); tryDeep(t.dataset.deep, t.dataset.item, t.tagName === "A"); return; }   // <a>는 기본 동작으로 링크를 열게 둔다
   if (t.dataset.helper) { toast(t.dataset.helper === "win" ? "실제 서비스에서는 딸깍설치.exe 내려받기가 시작됩니다 (192KB)" : "Mac용은 준비 중입니다"); return; }
   if (t.hasAttribute("data-news-more")) { newsExpanded = true; renderNews(document.querySelector("#newsseg [aria-pressed='true']").dataset.news); return; }
   if (t.dataset.news) { document.querySelectorAll("#newsseg button").forEach(b=>b.setAttribute("aria-pressed", b.dataset.news===t.dataset.news)); renderNews(t.dataset.news); return; }
