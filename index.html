@@ -296,7 +296,7 @@ h1, h2, h3, p, .cbody .one, .cbody .when, .nitem .body b, .nitem .body span { wo
 
 /* 버그 수정: 카드에 기준점이 없어 NEW·인기 배지와 ♥ 버튼이 페이지 왼쪽 위로 튀던 문제 */
 .card { position: relative; }
-.hero { grid-template-columns: 1.8fr 1fr; } .hero-main { padding: 48px 40px 40px; } .hero-main { container-type: inline-size; } .hero-main h1 { max-width: none; font-size: clamp(24px, 5.5cqw, 44px); line-height: 1.16; } @media (min-width: 761px) { .hero-main h1 { white-space: nowrap; } } .h1-en { font-weight: 700; letter-spacing: .02em; color: var(--accent); }
+.hero { grid-template-columns: 1.8fr 1fr; } .hero-main { padding: 48px 40px 40px; } .hero-main h1 { max-width: none; font-size: clamp(24px, 2.5vw, 38px); line-height: 1.18; letter-spacing: -.035em; } @media (min-width: 761px) { .hero-main h1 { white-space: nowrap; } } .h1-en { font-weight: 700; letter-spacing: .02em; color: var(--accent); }
 
 /* 히어로: 왼쪽 큰 제목, 오른쪽에 숫자 타일을 크게 세로로 */
 .hero { grid-template-columns: 1.45fr 1fr; gap: 14px; align-items: stretch; }
