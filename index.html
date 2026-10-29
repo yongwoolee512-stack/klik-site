@@ -511,11 +511,17 @@ function cmdOf(it) {
   return "";
 }
 // 딸깍 설치 링크: 도우미(helper.ps1)가 받아 Claude Code에 설치
+// 설치 완료 창에 띄울 "추천 명령": 카드의 첫 사용 예시에서 따옴표 안 문장만 뽑는다
+function tryPrompt(it) {
+  const t = (it.tips && it.tips[0]) || ""; const m = t.match(/"([^"]{4,120})"/);
+  return m ? m[1] : "";
+}
 function deepLink(it) {
   const s = installOf(it); if (!s || !s.name) return "";
-  if (s.kind === "plugin") return `klik://install?kind=plugin&name=${s.name}&market=${encodeURIComponent(s.market || "")}`;
-  if (s.url) return `klik://install?kind=mcp&name=${s.name}&transport=${s.transport || "http"}&url=${encodeURIComponent(s.url)}`;
-  if (s.pkg) return `klik://install?kind=mcp&name=${s.name}&pkg=${encodeURIComponent(s.pkg)}`;
+  const tp = tryPrompt(it); const tail = tp ? `&try=${encodeURIComponent(tp)}` : "";
+  if (s.kind === "plugin") return `klik://install?kind=plugin&name=${s.name}&market=${encodeURIComponent(s.market || "")}${tail}`;
+  if (s.url) return `klik://install?kind=mcp&name=${s.name}&transport=${s.transport || "http"}&url=${encodeURIComponent(s.url)}${tail}`;
+  if (s.pkg) return `klik://install?kind=mcp&name=${s.name}&pkg=${encodeURIComponent(s.pkg)}${tail}`;
   return "";
 }
 const TRUST_LABEL = { official: "공식", verified: "검증됨", community: "커뮤니티" };
