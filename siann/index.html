@@ -376,13 +376,17 @@ section { margin-top:48px; } .sec-head h2 { font-size:26px; }
   <button data-skin="b">B 커머스</button>
   <button data-skin="c">C 토스</button>
   <button data-skin="x">현재(네이비)</button>
+  <span>|</span>
+  <button data-theme-pick="light" aria-pressed="true">라이트</button>
+  <button data-theme-pick="dark">다크</button>
 </div>
 <script>
 (function(){
-  const pick = s => { ["a","b","c"].forEach(k => { const el = document.getElementById("skin-"+k); if (el) el.media = (k===s) ? "" : "not all"; }); document.querySelectorAll(".skin-picker button").forEach(b => b.setAttribute("aria-pressed", b.dataset.skin===s)); try { localStorage.setItem("klik-skin", s); } catch(e){} };
-  document.querySelector(".skin-picker").addEventListener("click", e => { const b = e.target.closest("[data-skin]"); if (b) pick(b.dataset.skin); });
-  let s = "a"; try { s = localStorage.getItem("klik-skin") || "a"; } catch(e){}
-  pick(s);
+  const pick = s => { ["a","b","c"].forEach(k => { const el = document.getElementById("skin-"+k); if (el) el.media = (k===s) ? "" : "not all"; }); document.querySelectorAll(".skin-picker [data-skin]").forEach(b => b.setAttribute("aria-pressed", b.dataset.skin===s)); try { localStorage.setItem("klik-skin", s); } catch(e){} };
+  const theme = t => { document.documentElement.setAttribute("data-theme", t); document.querySelectorAll(".skin-picker [data-theme-pick]").forEach(b => b.setAttribute("aria-pressed", b.dataset.themePick===t)); try { localStorage.setItem("klik-theme", t); } catch(e){} };
+  document.querySelector(".skin-picker").addEventListener("click", e => { const b = e.target.closest("[data-skin]"); if (b) { pick(b.dataset.skin); return; } const t = e.target.closest("[data-theme-pick]"); if (t) theme(t.dataset.themePick); });
+  let s = "a", t = "light"; try { s = localStorage.getItem("klik-skin") || "a"; t = localStorage.getItem("klik-theme") || "light"; } catch(e){}
+  pick(s); theme(t);
 })();
 </script>
 
