@@ -232,102 +232,6 @@ footer { margin-top: 40px; padding-block: 24px; border-top: 1px solid var(--line
 }
 @media (prefers-reduced-motion: reduce) { .card { transition: none; } }
 </style>
-<style id="apple-skin">
-/* ===== 애플 스타일 스킨: 흰 바탕·큰 검정 제목·넓은 여백·알약 버튼·테두리 없는 회색 카드·반투명 상단바 ===== */
-:root {
-  --bg: #ffffff; --surface: #f5f5f7; --fg: #1d1d1f; --muted: #6e6e73; --line: #d2d2d7;
-  --accent: #0b2a6f; --accent-soft: #e9eefb; --accent-fg: #ffffff; --ad: #f5f5f7;
-  --shadow: 0 10px 30px rgba(0,0,0,.08);
-  --body: -apple-system, BlinkMacSystemFont, "SF Pro KR", "SF Pro Text", "Apple SD Gothic Neo", "Pretendard", "Noto Sans KR", "Segoe UI", system-ui, sans-serif;
-  --display: var(--body);
-  --glass: rgba(255,255,255,.72);
-}
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #000000; --surface: #1d1d1f; --fg: #f5f5f7; --muted: #a1a1a6; --line: #424245; --accent: #7aa2ff; --accent-soft: #15213f; --accent-fg: #000000; --ad: #1d1d1f; --shadow: 0 10px 30px rgba(0,0,0,.5); --glass: rgba(0,0,0,.72); } }
-:root[data-theme="dark"] { --bg: #000000; --surface: #1d1d1f; --fg: #f5f5f7; --muted: #a1a1a6; --line: #424245; --accent: #7aa2ff; --accent-soft: #15213f; --accent-fg: #000000; --ad: #1d1d1f; --shadow: 0 10px 30px rgba(0,0,0,.5); --glass: rgba(0,0,0,.72); }
-
-body { font-size: 17px; line-height: 1.47; -webkit-font-smoothing: antialiased; letter-spacing: -.01em; }
-.logo, .hero-main h1, .sec-head h2, .stat b, .rank .n, .subscribe h3, .submit h2, .nitem .date b, .sheet-head h2 { font-family: var(--body); font-weight: 700; letter-spacing: -.025em; }
-.logo { font-size: 22px; color: var(--fg); }
-.logo .logo-en { font-size: 12px; letter-spacing: .12em; opacity: .55; color: var(--fg); }
-.logo small { font-weight: 400; letter-spacing: 0; }
-
-/* 상단바: 반투명 유리 */
-header { background: var(--glass); backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px); border-bottom: 1px solid rgba(0,0,0,.06); }
-:root:not([data-theme="light"]) header { border-bottom-color: rgba(255,255,255,.08); }
-.search { background: var(--surface); border: 0; border-radius: 980px; }
-.search:focus-within { box-shadow: 0 0 0 3px var(--accent-soft); }
-.search button, .install, .btn-outline, .chip, .seg, .preview .play, .toast { border-radius: 980px; }
-.nav button { border-radius: 980px; font-size: 14px; }
-.chip { border: 0; background: var(--surface); font-size: 14px; }
-.chip[aria-pressed="true"] { background: var(--fg); color: var(--bg); }
-.seg { border: 0; background: var(--surface); padding: 3px; }
-.seg button { border-radius: 980px; padding: 5px 12px; font-size: 13px; }
-.seg button[aria-pressed="true"] { background: var(--bg); color: var(--fg); box-shadow: 0 1px 4px rgba(0,0,0,.12); }
-.toolbar select { border: 0; background: var(--surface); border-radius: 980px; padding: 6px 14px; }
-.btn-outline { border-width: 1px; }
-
-/* 히어로: 애플식 가운데 큰 제목 */
-.hero { grid-template-columns: 1fr; gap: 14px; margin-top: 8px; }
-.hero-main { background: var(--surface); color: var(--fg); border-radius: 28px; padding: 64px 28px 48px; align-items: center; text-align: center; min-height: 0; }
-.hero-main .deco { display: none; }
-.hero-main h1 { font-size: clamp(34px, 5vw, 60px); line-height: 1.08; letter-spacing: -.035em; max-width: 18ch; margin: 0 auto; }
-.hero-main p { opacity: 1; color: var(--muted); font-size: 19px; max-width: 40ch; margin: 14px auto 0; }
-.hero-steps { justify-content: center; }
-.step { background: var(--bg); color: var(--fg); border-radius: 980px; font-size: 14px; padding: 9px 16px; box-shadow: 0 1px 3px rgba(0,0,0,.06); }
-.hero-side { grid-template-columns: 1fr 1fr 1.4fr; }
-.stat, .ad { border: 0; background: var(--surface); border-radius: 20px; }
-.stat b { font-size: 34px; color: var(--fg); }
-
-/* 섹션 제목 */
-section { margin-top: 56px; }
-.sec-head h2 { font-size: 32px; }
-.sec-head p { font-size: 15px; }
-
-/* 카드: 테두리 없이 회색 면, 넉넉한 여백 */
-.grid { gap: 18px; }
-.card { border: 0; background: var(--surface); border-radius: 22px; }
-.card:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
-.thumb .win { border-radius: 10px; }
-.cbody { padding: 18px 18px 16px; gap: 9px; }
-.cbody h3 { font-size: 19px; letter-spacing: -.02em; }
-.cbody .one { font-size: 15px; }
-.cbody .when { font-size: 13.5px; }
-.meta { border-top: 0; padding-top: 6px; }
-.tag { border-radius: 980px; font-size: 11px; }
-.badge { border-radius: 980px; }
-.install { background: var(--accent); color: var(--accent-fg); padding: 7px 14px; font-size: 13px; }
-.big-install .install { padding: 13px 22px; font-size: 16px; }
-.big-install a.btn-outline { padding: 12px 20px; }
-.card.ad-card { border: 0; background: var(--surface); }
-
-/* 뉴스·구독·랭킹 */
-.nitem, .rank button, .subscribe, .submit, .blk { border: 0; background: var(--surface); border-radius: 18px; }
-.nitem:hover, .rank button:hover { background: var(--accent-soft); border: 0; }
-.subscribe input { border: 0; background: var(--bg); border-radius: 12px; }
-.subscribe input:focus { box-shadow: 0 0 0 3px var(--accent-soft); }
-.sub-alt button { border: 0; background: var(--bg); border-radius: 980px; }
-.submit { border-radius: 28px; padding: 36px 32px; }
-.submit h2 { font-size: 30px; }
-.note { border-radius: 14px; }
-.empty { border-radius: 18px; }
-footer { border-top: 1px solid var(--line); color: var(--muted); }
-
-/* 상세 시트 */
-.modal { background: rgba(0,0,0,.4); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
-.sheet { background: var(--bg); border-radius: 28px; }
-.sheet-head h2 { font-size: 26px; }
-.close { background: var(--surface); }
-.preview { border-radius: 20px; }
-.cmd { border-radius: 14px; }
-.stp .num { background: var(--fg); color: var(--bg); }
-
-@media (max-width: 760px) {
-  .hero-main { padding: 44px 20px 32px; border-radius: 22px; }
-  .hero-side { grid-template-columns: 1fr; }
-  .sec-head h2 { font-size: 26px; }
-  .sheet { border-radius: 24px 24px 0 0; }
-}
-</style>
 
 <header>
   <div class="wrap">
@@ -354,7 +258,7 @@ footer { border-top: 1px solid var(--line); color: var(--muted); }
       <div class="deco"></div>
       <div>
         <h1>깃허브 몰라도 됩니다.<br>필요한 AI 도구, 한글로 골라서 딸깍.</h1>
-        <p>스킬·플러그인·MCP를 "이게 뭐고, 나한테 왜 필요한지"부터 설명합니다. 설치는 버튼 한 번이면 끝.</p>
+        <p>스킬·플러그인·MCP를 "이게 뭐고, 나한테 왜 필요한지"부터 설명합니다. 설치는 복사 한 번이면 끝.</p>
       </div>
       <div class="hero-steps">
         <div class="step">① 카테고리에서 고르기</div>
