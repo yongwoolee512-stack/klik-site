@@ -454,7 +454,7 @@ let ITEMS = [
   { id:"canva", kind:"mcp", cat:"design", name:"캔바 연결", en:"Canva connector", one:"채팅으로 캔바 디자인을 만들고 수정합니다.", when:"SNS 카드뉴스·썸네일을 빨리 뽑고 싶은 분", stars:900, installs:4300, level:1, plat:["claude","chatgpt"], isNew:true, color:"#d6ecf5", repo:"https://www.canva.com/developers", cmd:"", link:"https://claude.ai/settings/connectors", tips:["\"인스타 카드뉴스 5장 만들어 줘\"","캔바 앱 설정에서 연결 버튼만 누르면 됩니다."] },
   { id:"github", kind:"mcp", cat:"dev", name:"깃허브 연결", en:"GitHub MCP", one:"깃허브 저장소를 읽고, 이슈를 만들고, PR을 올립니다.", when:"코드 관리를 채팅으로 하고 싶은 분", stars:21000, installs:9300, level:2, plat:["claude-code","claude","chatgpt"], color:"#dcdcdc", repo:"https://github.com/github/github-mcp-server", cmd:"claude mcp add --transport http github https://api.githubcopilot.com/mcp/", tips:["\"이번 주 올라온 이슈 요약해 줘\"","\"이 버그 고치고 PR 올려 줘\""] },
   { id:"playwright", kind:"mcp", cat:"dev", name:"브라우저 자동 조작", en:"Playwright MCP", one:"AI가 브라우저를 직접 열어 클릭하고 입력하고 검사합니다.", when:"내가 만든 사이트가 잘 되는지 자동으로 확인하고 싶은 분", stars:18000, installs:6900, level:2, plat:["claude-code","chatgpt"], color:"#d6f0e8", repo:"https://github.com/microsoft/playwright-mcp", cmd:"claude mcp add playwright -- npx -y @playwright/mcp@latest", tips:["\"로그인 페이지 들어가서 회원가입 잘 되는지 확인해 봐\"","스크린샷도 찍어 보여 줍니다."] },
-  { id:"context7", kind:"mcp", cat:"dev", name:"최신 코드 문서 찾기", en:"Context7", one:"AI가 오래된 정보 대신 최신 공식 설명서를 보고 답하게 합니다.", when:"AI가 자꾸 구버전 코드를 알려줘서 답답한 분", stars:26000, installs:8100, level:1, plat:["claude-code","chatgpt"], hot:true, color:"#f0ead6", repo:"https://github.com/upstash/context7", cmd:"claude mcp add --transport http context7 https://mcp.context7.com/mcp", tips:["질문 끝에 \"use context7\"만 붙이면 됩니다.","설치 후 따로 설정할 게 없습니다."] },
+  { id:"context7", demo:"media/klik-context7-demo.gif", kind:"mcp", cat:"dev", name:"최신 코드 문서 찾기", en:"Context7", one:"AI가 오래된 정보 대신 최신 공식 설명서를 보고 답하게 합니다.", when:"AI가 자꾸 구버전 코드를 알려줘서 답답한 분", stars:26000, installs:8100, level:1, plat:["claude-code","chatgpt"], hot:true, color:"#f0ead6", repo:"https://github.com/upstash/context7", cmd:"claude mcp add --transport http context7 https://mcp.context7.com/mcp", tips:["질문 끝에 \"use context7\"만 붙이면 됩니다.","설치 후 따로 설정할 게 없습니다."] },
   { id:"code-review", kind:"plugin", cat:"dev", name:"코드 자동 검토", en:"code-review", one:"내 코드의 버그와 보안 구멍을 찾아 리포트합니다.", when:"혼자 개발해서 봐 줄 사람이 없는 분", stars:19500, installs:5200, level:2, plat:["claude-code"], color:"#d6e4f0", repo:"https://github.com/anthropics/claude-code", cmd:"/plugin install code-review", tips:["/code-review 한 줄이면 됩니다.","심각도 순으로 정리해 줍니다."] },
   { id:"supabase", kind:"mcp", cat:"web", name:"수파베이스 DB 연결", en:"Supabase MCP", one:"데이터베이스를 만들고 표를 조회·수정합니다.", when:"회원·주문 데이터를 저장할 앱을 만드는 분", stars:2100, installs:3900, level:3, plat:["claude-code","chatgpt"], color:"#d6f0dd", repo:"https://github.com/supabase-community/supabase-mcp", cmd:"claude mcp add --transport http supabase https://mcp.supabase.com/mcp", tips:["\"회원 테이블 만들고 샘플 10명 넣어 줘\"","무료 플랜으로 시작할 수 있습니다."], note:"수파베이스 가입과 프로젝트 생성이 먼저 필요합니다." },
   { id:"vercel", kind:"mcp", cat:"web", name:"버셀 배포 연결", en:"Vercel MCP", one:"만든 웹사이트를 인터넷에 바로 올립니다.", when:"호스팅이 뭔지 몰라도 사이트를 공개하고 싶은 분", stars:1400, installs:4100, level:2, plat:["claude-code","chatgpt"], color:"#e4e4e4", repo:"https://vercel.com/docs/mcp", cmd:"claude mcp add --transport http vercel https://mcp.vercel.com", tips:["\"이거 배포해 줘\" 하면 주소를 돌려줍니다.","도메인 연결도 채팅으로 됩니다."] },
@@ -621,11 +621,13 @@ function openDetail(id) {
       </div>
       <div class="sheet-body">
         ${actions}
-        <div class="preview" style="background:${it.color}">
+        ${it.demo
+          ? `<div class="preview" style="background:${it.color};aspect-ratio:auto"><img src="${esc(it.demo)}" alt="${esc(it.name)} 작동 화면" style="display:block;width:100%;height:auto;border-radius:inherit"><span class="cap">작동 화면 · 검색 → 카드 → 딸깍 설치</span></div>`
+          : `<div class="preview" style="background:${it.color}">
           ${win(it.color,true).replace('class="thumb"','class="thumb" style="width:100%;aspect-ratio:auto;height:100%"')}
           <button class="play" aria-label="작동 영상 재생">▶</button>
-          <span class="cap">작동 화면 · 30초 영상 (예시 자리)</span>
-        </div>
+          <span class="cap">작동 화면 · 준비 중</span>
+        </div>`}
         <div class="blocks">
           <div class="blk"><h4>이게 뭐예요?</h4><p>${esc(it.one)}</p></div>
           <div class="blk"><h4>이런 분께 추천</h4><p>${esc(it.when)}</p></div>
@@ -646,6 +648,8 @@ function openDetail(id) {
   $("#modal .close").focus();
 }
 function closeDetail() { $("#modal-root").innerHTML = ""; document.body.style.overflow = ""; }
+let pressStart = null;
+document.addEventListener("pointerdown", e => { pressStart = { target: e.target, x: e.clientX, y: e.clientY }; });
 
 // 딸깍: 링크를 열고 1.5초 안에 창 포커스가 빠져나가지 않으면(도우미가 안 뜨면) 그 자리에서 도우미 안내로 바꾼다
 function tryDeep(url, id, fromAnchor) {
@@ -691,7 +695,9 @@ document.addEventListener("click", e => {
   if (t.dataset.cat) { state.cat = t.dataset.cat; renderAll(); return; }
   if (t.dataset.kind) { state.kind = t.dataset.kind; document.querySelectorAll("#kindseg button").forEach(b=>b.setAttribute("aria-pressed", b.dataset.kind===state.kind)); renderGrid(); return; }
   if (t.dataset.platform) { state.plat = t.dataset.platform; document.querySelectorAll(".nav button").forEach(b=>b.setAttribute("aria-pressed", b.dataset.platform===state.plat)); renderGrid(); return; }
-  if (t.hasAttribute("data-close") || t.id === "modal") { closeDetail(); return; }
+  if (t.hasAttribute("data-close")) { closeDetail(); return; }
+  // 바깥 어두운 부분: 누른 자리와 뗀 자리가 같은 '진짜 클릭'일 때만 닫는다 (살짝 드래그·글자 선택은 무시)
+  if (t.id === "modal") { if (pressStart && pressStart.target === t && Math.hypot(e.clientX - pressStart.x, e.clientY - pressStart.y) < 6) closeDetail(); return; }
 });
 document.addEventListener("keydown", e => {
   if (e.key === "Escape") closeDetail();

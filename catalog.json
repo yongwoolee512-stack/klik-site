@@ -1,7 +1,6 @@
 {
   "count": 24,
   "rejected": 147,
-  "pending": 27,
   "items": [
     {
       "id": "pptx",
@@ -313,6 +312,7 @@
     },
     {
       "id": "context7",
+      "demo": "media/klik-context7-demo.gif",
       "kind": "mcp",
       "cat": "dev",
       "name": "최신 코드 문서 찾기",
@@ -820,5 +820,6 @@
       }
     }
   ],
-  "generated_at": "2026-10-29T17:10:44.6936311Z"
+  "generated_at": "2026-10-29T17:50:01.6798439Z",
+  "pending": 27
 }
