@@ -293,6 +293,24 @@ header::after { content: ""; position: absolute; left: 0; right: 0; top: 100%; h
 :root, :root:not([data-theme="light"]), :root[data-theme="dark"] { --bg:#ffffff; --surface:#f5f5f7; --fg:#1d1d1f; --muted:#6e6e73; --line:#d2d2d7; --accent:#0b2a6f; --accent-soft:#e9eefb; --accent-fg:#ffffff; --ad:#f5f5f7; --warn-soft:#fdf1dc; --warn:#9a6400; --shadow:0 10px 30px rgba(0,0,0,.08); --glass:rgba(255,255,255,.72); color-scheme: light; }
 .tag.mcp { background:#e6e9fb !important; color:#3d49b5 !important; } .tag.plugin { background:#fbe9e3 !important; color:#b5471d !important; }
 h1, h2, h3, p, .cbody .one, .cbody .when, .nitem .body b, .nitem .body span { word-break: keep-all; overflow-wrap: anywhere; }
+
+/* 버그 수정: 카드에 기준점이 없어 NEW·인기 배지와 ♥ 버튼이 페이지 왼쪽 위로 튀던 문제 */
+.card { position: relative; }
+
+/* 히어로: 왼쪽 큰 제목, 오른쪽에 숫자 타일을 크게 세로로 */
+.hero { grid-template-columns: 1.45fr 1fr; gap: 14px; align-items: stretch; }
+.hero-main { text-align: left; align-items: flex-start; padding: 56px 44px 44px; justify-content: center; }
+.hero-main h1 { margin: 0; max-width: 16ch; font-size: clamp(34px, 4.6vw, 58px); }
+.hero-main p { margin: 16px 0 0; }
+.hero-steps { justify-content: flex-start; margin-top: 8px; }
+.hero-side { grid-template-columns: 1fr; grid-template-rows: 1fr 1fr auto; gap: 14px; }
+.stat { flex-direction: column; align-items: flex-start; justify-content: center; gap: 6px; padding: 26px 30px; }
+.stat > div { display: flex; flex-direction: column; gap: 2px; }
+.stat b { font-size: 60px; line-height: 1; letter-spacing: -.045em; }
+.stat > div > span { font-size: 15px; font-weight: 600; color: var(--fg); }
+.stat > span { font-size: 13px; color: var(--muted); }
+.ad { min-height: 92px; }
+@media (max-width: 760px) { .hero { grid-template-columns: 1fr; } .hero-main { padding: 40px 22px 32px; } .hero-side { grid-template-columns: 1fr 1fr; grid-template-rows: auto; } .hero-side .ad { grid-column: span 2; } .stat { padding: 18px 20px; } .stat b { font-size: 40px; } }
 </style>
 <header>
   <div class="wrap">
