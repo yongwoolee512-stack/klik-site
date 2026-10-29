@@ -233,6 +233,67 @@ footer { margin-top: 40px; padding-block: 24px; border-top: 1px solid var(--line
 @media (prefers-reduced-motion: reduce) { .card { transition: none; } }
 </style>
 
+<style id="skin-a">
+/* ===== 시안 A · 애플: 흰 바탕, 크고 굵은 검정 제목, 넓은 여백, 알약 버튼, 테두리 없는 회색 카드, 반투명 상단바 ===== */
+:root { --bg:#ffffff; --surface:#f5f5f7; --fg:#1d1d1f; --muted:#6e6e73; --line:#d2d2d7; --accent:#0b2a6f; --accent-soft:#e9eefb; --accent-fg:#ffffff; --ad:#f5f5f7; --shadow:0 10px 30px rgba(0,0,0,.08);
+  --body:-apple-system,BlinkMacSystemFont,"SF Pro KR","SF Pro Text","Apple SD Gothic Neo","Pretendard","Noto Sans KR","Segoe UI",system-ui,sans-serif; --display:var(--body); --glass:rgba(255,255,255,.72); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg:#000; --surface:#1d1d1f; --fg:#f5f5f7; --muted:#a1a1a6; --line:#424245; --accent:#7aa2ff; --accent-soft:#15213f; --accent-fg:#000; --ad:#1d1d1f; --shadow:0 10px 30px rgba(0,0,0,.5); --glass:rgba(0,0,0,.72); } }
+:root[data-theme="dark"] { --bg:#000; --surface:#1d1d1f; --fg:#f5f5f7; --muted:#a1a1a6; --line:#424245; --accent:#7aa2ff; --accent-soft:#15213f; --accent-fg:#000; --ad:#1d1d1f; --shadow:0 10px 30px rgba(0,0,0,.5); --glass:rgba(0,0,0,.72); }
+body { font-size:17px; line-height:1.47; -webkit-font-smoothing:antialiased; letter-spacing:-.01em; }
+.logo,.hero-main h1,.sec-head h2,.stat b,.rank .n,.subscribe h3,.submit h2,.nitem .date b,.sheet-head h2 { font-family:var(--body); font-weight:700; letter-spacing:-.025em; }
+.logo { font-size:22px; color:var(--fg); } .logo .logo-en { font-size:12px; letter-spacing:.12em; opacity:.55; color:var(--fg); } .logo small { font-weight:400; letter-spacing:0; }
+header { background:var(--glass); backdrop-filter:saturate(180%) blur(20px); -webkit-backdrop-filter:saturate(180%) blur(20px); border-bottom:1px solid rgba(0,0,0,.06); }
+.search { background:var(--surface); border:0; border-radius:980px; } .search:focus-within { box-shadow:0 0 0 3px var(--accent-soft); }
+.search button,.install,.btn-outline,.chip,.seg,.preview .play,.toast { border-radius:980px; }
+.nav button { border-radius:980px; font-size:14px; }
+.chip { border:0; background:var(--surface); font-size:14px; } .chip[aria-pressed="true"] { background:var(--fg); color:var(--bg); }
+.seg { border:0; background:var(--surface); padding:3px; } .seg button { border-radius:980px; padding:5px 12px; font-size:13px; } .seg button[aria-pressed="true"] { background:var(--bg); color:var(--fg); box-shadow:0 1px 4px rgba(0,0,0,.12); }
+.toolbar select { border:0; background:var(--surface); border-radius:980px; padding:6px 14px; } .btn-outline { border-width:1px; }
+.hero { grid-template-columns:1fr; gap:14px; margin-top:8px; }
+.hero-main { background:var(--surface); color:var(--fg); border-radius:28px; padding:64px 28px 48px; align-items:center; text-align:center; min-height:0; } .hero-main .deco { display:none; }
+.hero-main h1 { font-size:clamp(34px,5vw,60px); line-height:1.08; letter-spacing:-.035em; max-width:18ch; margin:0 auto; }
+.hero-main p { opacity:1; color:var(--muted); font-size:19px; max-width:40ch; margin:14px auto 0; }
+.hero-steps { justify-content:center; } .step { background:var(--bg); color:var(--fg); border-radius:980px; font-size:14px; padding:9px 16px; box-shadow:0 1px 3px rgba(0,0,0,.06); }
+.hero-side { grid-template-columns:1fr 1fr 1.4fr; } .stat,.ad { border:0; background:var(--surface); border-radius:20px; } .stat b { font-size:34px; color:var(--fg); }
+section { margin-top:56px; } .sec-head h2 { font-size:32px; } .sec-head p { font-size:15px; }
+.grid { gap:18px; } .card { border:0; background:var(--surface); border-radius:22px; } .card:hover { transform:translateY(-3px); box-shadow:var(--shadow); }
+.cbody { padding:18px 18px 16px; gap:9px; } .cbody h3 { font-size:19px; letter-spacing:-.02em; } .cbody .one { font-size:15px; } .cbody .when { font-size:13.5px; } .meta { border-top:0; padding-top:6px; }
+.tag,.badge { border-radius:980px; } .tag { font-size:11px; }
+.install { background:var(--accent); color:var(--accent-fg); padding:7px 14px; font-size:13px; } .big-install .install { padding:13px 22px; font-size:16px; } .big-install a.btn-outline { padding:12px 20px; }
+.card.ad-card { border:0; background:var(--surface); }
+.nitem,.rank button,.subscribe,.submit,.blk { border:0; background:var(--surface); border-radius:18px; } .nitem:hover,.rank button:hover { background:var(--accent-soft); }
+.subscribe input { border:0; background:var(--bg); border-radius:12px; } .sub-alt button { border:0; background:var(--bg); border-radius:980px; }
+.submit { border-radius:28px; padding:36px 32px; } .submit h2 { font-size:30px; } .note { border-radius:14px; } .empty { border-radius:18px; }
+.modal { background:rgba(0,0,0,.4); backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px); } .sheet { background:var(--bg); border-radius:28px; } .sheet-head h2 { font-size:26px; } .close { background:var(--surface); } .preview { border-radius:20px; } .cmd { border-radius:14px; } .stp .num { background:var(--fg); color:var(--bg); }
+/* --- apple-design 스킬 적용: 누르는 순간 반응(pointer-down), 재질(translucent chrome + 밝은 윗모서리), 스크롤 가장자리 효과, 크기별 자간, 임계감쇠 스프링, 모션 축소 대응 --- */
+.install, .btn-outline, .chip, .nav button, .seg button, .card, .nitem, .rank button, .search button, .sub-alt button, .close { transition: transform 100ms ease-out, background-color 150ms ease-out, box-shadow 200ms ease-out; }
+.install:active, .btn-outline:active, .chip:active, .nav button:active, .seg button:active, .search button:active, .sub-alt button:active, .close:active { transform: scale(.96); }
+.card:active, .nitem:active, .rank button:active { transform: scale(.985); }
+header { border-bottom: 0; box-shadow: inset 0 1px 0 rgba(255,255,255,.6); position: sticky; }
+header::after { content: ""; position: absolute; left: 0; right: 0; top: 100%; height: 14px; pointer-events: none; background: linear-gradient(to bottom, rgba(0,0,0,.05), rgba(0,0,0,0)); }
+:root:not([data-theme="light"]) header { box-shadow: inset 0 1px 0 rgba(255,255,255,.08); }
+.hero-main h1 { letter-spacing: -.04em; line-height: 1.05; font-optical-sizing: auto; }
+.sec-head h2 { letter-spacing: -.03em; line-height: 1.1; }
+.cbody h3 { letter-spacing: -.015em; }
+.cbody .one, .cbody .when, .blk p, .blk li, .stp .txt span { letter-spacing: 0; }
+.tag, .badge, .nt { letter-spacing: .02em; }
+.modal { animation: a-dim 240ms ease-out both; }
+.sheet { animation: a-rise 420ms cubic-bezier(.2,.9,.3,1) both; transform-origin: 50% 100%; }
+@keyframes a-dim { from { opacity: 0 } to { opacity: 1 } }
+@keyframes a-rise { from { opacity: 0; transform: translateY(24px) scale(.98) } to { opacity: 1; transform: none } }
+.toast { animation: a-rise 380ms cubic-bezier(.2,.9,.3,1) both; }
+.sheet, .toast, .search, .subscribe, .submit { box-shadow: var(--shadow), inset 0 1px 0 rgba(255,255,255,.5); }
+@media (prefers-reduced-motion: reduce) { .sheet, .toast, .modal { animation: a-dim 160ms ease-out both; transform: none !important; } .card:hover { transform: none; } .install:active, .card:active { transform: none; } }
+@media (prefers-reduced-transparency: reduce) { header { background: var(--bg); backdrop-filter: none; -webkit-backdrop-filter: none; } .modal { backdrop-filter: none; -webkit-backdrop-filter: none; } }
+@media (prefers-contrast: more) { .card, .nitem, .rank button, .stat, .subscribe, .submit { border: 1px solid var(--line); } }
+@media (max-width:760px) { .hero-main { padding:44px 20px 32px; border-radius:22px; } .hero-side { grid-template-columns:1fr; } .sec-head h2 { font-size:26px; } .sheet { border-radius:24px 24px 0 0; } header { position: static; } header::after { display: none; } }
+</style>
+<style id="skin-a-light">
+/* 라이트 고정: 기기가 다크 모드여도 항상 밝은 애플 스타일 */
+:root, :root:not([data-theme="light"]), :root[data-theme="dark"] { --bg:#ffffff; --surface:#f5f5f7; --fg:#1d1d1f; --muted:#6e6e73; --line:#d2d2d7; --accent:#0b2a6f; --accent-soft:#e9eefb; --accent-fg:#ffffff; --ad:#f5f5f7; --warn-soft:#fdf1dc; --warn:#9a6400; --shadow:0 10px 30px rgba(0,0,0,.08); --glass:rgba(255,255,255,.72); color-scheme: light; }
+.tag.mcp { background:#e6e9fb !important; color:#3d49b5 !important; } .tag.plugin { background:#fbe9e3 !important; color:#b5471d !important; }
+h1, h2, h3, p, .cbody .one, .cbody .when, .nitem .body b, .nitem .body span { word-break: keep-all; overflow-wrap: anywhere; }
+</style>
 <header>
   <div class="wrap">
     <div class="topbar">
@@ -258,7 +319,7 @@ footer { margin-top: 40px; padding-block: 24px; border-top: 1px solid var(--line
       <div class="deco"></div>
       <div>
         <h1>깃허브 몰라도 됩니다.<br>필요한 AI 도구, 한글로 골라서 딸깍.</h1>
-        <p>스킬·플러그인·MCP를 "이게 뭐고, 나한테 왜 필요한지"부터 설명합니다. 설치는 복사 한 번이면 끝.</p>
+        <p>스킬·플러그인·MCP를 "이게 뭐고, 나한테 왜 필요한지"부터 설명합니다. 설치는 버튼 한 번이면 끝.</p>
       </div>
       <div class="hero-steps">
         <div class="step">① 카테고리에서 고르기</div>
