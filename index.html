@@ -323,6 +323,50 @@ h1, h2, h3, p, .cbody .one, .cbody .when, .nitem .body b, .nitem .body span { wo
 .ad { min-height: 92px; }
 @media (max-width: 640px) { .hero { grid-template-columns: 1fr; } .hero-main { padding: 40px 22px 32px; } .hero-side { grid-template-columns: 1fr 1fr; grid-template-rows: auto; } .hero-side .ad { grid-column: span 2; } .stat { padding: 18px 20px; } .stat b { font-size: 40px; } } @media (min-width: 641px) and (max-width: 900px) { .hero { grid-template-columns: 1.4fr 1fr; } .stat { padding: 18px 20px; } .stat b { font-size: 42px; } .hero-main { padding: 36px 26px 30px; } }
 </style>
+<style id="community">
+/* ===== 커뮤니티: 한국 사용자 별점·한 줄 평·댓글 (Supabase 설정이 있을 때만 보임) ===== */
+.cm-rate { margin:0; font-size:13px; color:var(--muted); display:flex; gap:6px; align-items:center; flex-wrap:wrap; }
+.cm-rate .stars, .cm .stars { color:#f5a623; letter-spacing:-.5px; }
+.cm-rate b { color:var(--fg); font-weight:600; }
+.cm { display:grid; gap:16px; border-top:1px solid var(--line); padding-top:18px; }
+.cm h4 { margin:0 0 8px; font-size:15px; display:flex; align-items:baseline; gap:8px; }
+.cm .sub { font-size:13px; color:var(--muted); font-weight:400; }
+.cm-top { display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap; }
+.cm-avg { display:flex; align-items:baseline; gap:8px; }
+.cm-avg b { font-size:30px; font-weight:700; letter-spacing:-.02em; }
+.cm-avg .stars { font-size:18px; }
+.cm-react { display:flex; gap:8px; flex-wrap:wrap; }
+.cm-react button { border:0; background:var(--surface); color:var(--fg); border-radius:980px; padding:8px 14px; font-size:13px; font-weight:600; }
+.cm-react button[aria-pressed="true"] { background:var(--accent-soft); color:var(--accent); }
+.cm-form { background:var(--surface); border-radius:16px; padding:14px; display:grid; gap:10px; }
+.cm-form[hidden] { display:none; }
+.cm-starpick { display:flex; gap:2px; align-items:center; }
+.cm-starpick button { border:0; background:transparent; font-size:28px; line-height:1; color:var(--line); padding:0 2px; transition:transform 100ms ease-out; }
+.cm-starpick button.on { color:#f5a623; }
+.cm-starpick button:hover { transform:scale(1.15); }
+.cm-starpick .sub { margin-left:8px; }
+.cm-row { display:flex; gap:8px; flex-wrap:wrap; }
+.cm-row input, .cm-row textarea { flex:1 1 160px; min-width:0; border:0; background:var(--bg); color:var(--fg); border-radius:12px; padding:10px 12px; font:inherit; font-size:14px; }
+.cm-row input.nick { flex:0 1 120px; }
+.cm-row input:focus, .cm-row textarea:focus { outline:none; box-shadow:0 0 0 3px var(--accent-soft); }
+.cm-row textarea { resize:vertical; min-height:64px; flex-basis:100%; }
+.cm-row .install { flex:0 0 auto; }
+.cm-list { display:grid; gap:8px; }
+.cm-item { background:var(--surface); border-radius:14px; padding:10px 14px; font-size:14px; display:grid; gap:5px; }
+.cm-item.best { box-shadow:inset 0 0 0 1.5px var(--accent); }
+.cm-item .meta2 { display:flex; justify-content:space-between; gap:8px; font-size:12px; color:var(--muted); flex-wrap:wrap; }
+.cm-item .meta2 .best-tag { background:var(--accent); color:var(--accent-fg); border-radius:980px; padding:1px 8px; font-weight:700; font-size:11px; }
+.cm-item .meta2 button { border:0; background:transparent; color:var(--muted); font-size:12px; padding:0; font-weight:600; }
+.cm-item .meta2 button[aria-pressed="true"] { color:var(--accent); }
+.cm-item .meta2 button:hover { color:var(--fg); }
+.cm-item .body2 { white-space:pre-wrap; word-break:keep-all; overflow-wrap:anywhere; }
+.cm-empty { font-size:13px; color:var(--muted); padding:6px 2px; }
+.cm-done { font-size:14px; background:var(--surface); border-radius:14px; padding:12px 14px; }
+.cm-done b { color:var(--accent); }
+.cm-more { justify-self:start; }
+@media (max-width:760px) { .cm-avg b { font-size:26px; } }
+</style>
+<script src="community-config.js"></script>
 <header>
   <div class="wrap">
     <div class="topbar">
@@ -394,7 +438,7 @@ h1, h2, h3, p, .cbody .one, .cbody .when, .nitem .body b, .nitem .body span { wo
   <section>
     <div class="sec-head">
       <h2>이번 주 많이 설치한 도구</h2>
-      <p>설치 버튼 클릭 수 기준 · 예시 데이터</p>
+      <p id="rank-sub">설치 버튼 클릭 수 기준 · 예시 데이터</p>
     </div>
     <div class="rank" id="rank"></div>
   </section>
@@ -567,8 +611,16 @@ function renderChips() {
   $("#chips").innerHTML = CATS.map(c => `<button class="chip" data-cat="${c.id}" aria-pressed="${state.cat===c.id}">${c.icon} ${c.name}</button>`).join("");
 }
 function renderRank() {
-  const top = [...ITEMS].sort((a,b)=>b.installs-a.installs).slice(0,6);
-  $("#rank").innerHTML = top.map((it,i)=>`<button data-open="${it.id}"><span class="n">${i+1}</span><span class="t"><b>${esc(it.name)}</b><span>${esc(it.one)}</span></span><span class="d">${fmt(it.installs)}회</span></button>`).join("");
+  // 커뮤니티(Supabase)가 켜져 있고 최근 7일 딸깍 클릭이 하나라도 있으면 실제 집계, 아니면 카탈로그 설치 수(예시)
+  const week = window.CM && CM.on && CM.week.length ? CM.week : null;
+  let top = null, sub;
+  if (week) {
+    top = week.map(w => { const it = ITEMS.find(x => x.id === w.tool_id); return it ? { it, n: w.n } : null; }).filter(Boolean).slice(0, 6);
+    sub = "딸깍 설치 버튼 클릭 수 · 최근 7일 실제 집계";
+  }
+  if (!top || !top.length) { top = [...ITEMS].sort((a,b)=>b.installs-a.installs).slice(0,6).map(it => ({ it, n: it.installs })); sub = "설치 버튼 클릭 수 기준 · 예시 데이터"; }
+  const subEl = $("#rank-sub"); if (subEl) subEl.textContent = sub;
+  $("#rank").innerHTML = top.map(({it, n},i)=>`<button data-open="${it.id}"><span class="n">${i+1}</span><span class="t"><b>${esc(it.name)}</b><span>${esc(it.one)}</span></span><span class="d">${fmt(n)}회</span></button>`).join("");
 }
 function renderGrid() {
   const list = filtered();
@@ -585,7 +637,7 @@ function renderGrid() {
         <div class="kind"><span class="tag ${it.kind}">${KIND[it.kind]}</span>${it.trust&&TRUST_LABEL[it.trust.grade]?`<span class="tag trust-${it.trust.grade}">${TRUST_LABEL[it.trust.grade]}</span>`:""}${(it.plat||[]).map(p=>`<span>${PLAT[p]}</span>`).join("<span>·</span>")}</div>
         <h3>${esc(it.name)} <span class="en">${esc(it.en)}</span></h3>
         <p class="one">${esc(it.one)}</p>
-        <p class="when"><b>이런 분께</b> ${esc(it.when)}</p>
+        <p class="when"><b>이런 분께</b> ${esc(it.when)}</p>${window.CM ? CM.cardLine(it.id) : ""}
         <div class="meta"><span>★ ${fmt(it.stars)} · 설치 ${fmt(it.installs)}</span>${level(it.level)}<button class="install" data-open="${it.id}">${installOf(it)&&installOf(it).name?"설치":"연결"}</button></div>
       </div>
     </div>`);
@@ -618,7 +670,7 @@ function openDetail(id) {
     ? [["설치 명령 복사", "아래 '복사' 버튼을 누르면 복사됩니다."],["Claude Code 창에 붙여넣기", "Ctrl+V 하고 엔터. 끝입니다."],["써 보기", it.tips[0] || "채팅으로 바로 써 보세요."]]
     : [["Claude 앱 설정 열기", "'커넥터 설정 열기' 버튼을 누르면 설정 페이지로 갑니다."],["연결 버튼 누르기", "목록에서 찾아 '연결'을 누르고 로그인하면 됩니다."],["써 보기", it.tips[0] || "채팅으로 바로 써 보세요."]];
   const actions = `<div class="big-install">
-          ${hasCmd?(deep?`<a class="install" href="${esc(deep)}" data-deep="${esc(deep)}" data-item="${it.id}" style="text-decoration:none;text-align:center">⚡ 딸깍 설치</a>`:`<button class="install" data-copy="${esc(cmd)}">⚡ 설치 명령 복사</button>`):`<a class="btn-outline" href="${esc(it.link)}" target="_blank" rel="noopener" style="background:var(--accent);color:var(--accent-fg);border-color:var(--accent)">⚡ 커넥터 설정 열기</a>`}
+          ${hasCmd?(deep?`<a class="install" href="${esc(deep)}" data-deep="${esc(deep)}" data-item="${it.id}" data-track="${it.id}" style="text-decoration:none;text-align:center">⚡ 딸깍 설치</a>`:`<button class="install" data-copy="${esc(cmd)}" data-track="${it.id}">⚡ 설치 명령 복사</button>`):`<a class="btn-outline" href="${esc(it.link)}" target="_blank" rel="noopener" data-track="${it.id}" style="background:var(--accent);color:var(--accent-fg);border-color:var(--accent)">⚡ 커넥터 설정 열기</a>`}
           <a class="btn-outline" href="${esc(it.repo)}" target="_blank" rel="noopener">원문(깃허브) 보기</a>
         </div>`;
   const html = `
@@ -655,6 +707,7 @@ function openDetail(id) {
           <div class="steps">${steps.map((s,i)=>`<div class="stp"><span class="num">${i+1}</span><div class="txt"><b>${esc(s[0])}</b><span>${esc(s[1])}</span></div></div>`).join("")}</div>
           ${hasCmd?(deep?`<details style="margin-top:8px"><summary style="cursor:pointer;color:var(--muted);font-size:13px">도우미 없이 직접 하는 방법 (명령 복사)</summary><div class="cmd"><code>${esc(cmd)}</code><button data-copy="${esc(cmd)}">복사</button></div></details>`:`<div class="cmd"><code>${esc(cmd)}</code><button data-copy="${esc(cmd)}">복사</button></div>`):""}
         </div>
+        ${window.CM ? CM.box() : ""}
         <p style="margin:0;font-size:12px;color:var(--muted)">★ ${fmt(it.stars)} · 설치 ${fmt(it.installs)}회 · 한글 설명은 딸깍 편집팀이 작성했습니다.</p>
       </div>
     </div>
@@ -662,6 +715,7 @@ function openDetail(id) {
   $("#modal-root").innerHTML = html;
   document.body.style.overflow = "hidden";
   $("#modal .close").focus();
+  if (window.CM) CM.fill(it.id);
 }
 function closeDetail() { $("#modal-root").innerHTML = ""; document.body.style.overflow = ""; }
 let pressStart = null;
@@ -699,6 +753,7 @@ function showHelperGuide(url, id) {
 document.addEventListener("click", e => {
   const t = e.target.closest("[data-fav],[data-copy],[data-deep],[data-helper],[data-open],[data-cat],[data-kind],[data-platform],[data-news-more],[data-news],[data-sub],[data-close],.modal,.play");
   if (!t) return;
+  if (t.dataset.track && window.CM) CM.track(t.dataset.track);   // 딸깍 설치·명령 복사·커넥터 열기 클릭을 집계 (하루 1회)
   if (t.dataset.deep) { e.stopPropagation(); tryDeep(t.dataset.deep, t.dataset.item, t.tagName === "A"); return; }   // <a>는 기본 동작으로 링크를 열게 둔다
   if (t.dataset.helper) { toast(t.dataset.helper === "win" ? "실제 서비스에서는 딸깍설치.exe 내려받기가 시작됩니다 (192KB)" : "Mac용은 준비 중입니다"); return; }
   if (t.hasAttribute("data-news-more")) { newsExpanded = true; renderNews(document.querySelector("#newsseg [aria-pressed='true']").dataset.news); return; }
@@ -753,5 +808,207 @@ renderChips(); renderRank(); renderGrid(); renderNews("today");
     const n = await fetch("news.json" + bust); if (n.ok) { const arr = await n.json(); const usable = Array.isArray(arr) ? arr.filter(x => x.type !== "found") : []; if (usable.length) { NEWS = arr; TODAY = usable[0].date || TODAY; } }
     $("#st-count").textContent = ITEMS.length; renderAll(); renderRank(); renderNews("today");
   } catch (e) { /* 파일이 없으면 내장 예시 데이터 그대로 */ }
+})();
+</script>
+
+
+
+
+
+<script>
+// ===== 커뮤니티: 딸깍 수 집계 · 한국 사용자 별점 + 한 줄 평(추천 → 베스트) · 써 봤어요/막혔어요 · 닉네임 댓글 · 신고 =====
+// community-config.js 에 Supabase 주소·공개 키가 없으면 CM.on = false 이고 아래 UI는 전부 숨겨진다.
+window.CM = (() => {
+  const cfg = window.KLIK_COMMUNITY || {};
+  const on = /^https:\/\/[\w.-]+/.test(cfg.url || "") && typeof cfg.anonKey === "string" && cfg.anonKey.length > 20;
+  const CDN = "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.49.4/dist/umd/supabase.min.js";
+  const BEST_AT = 5;           // 추천 5개부터 "베스트 평"
+  const BAD = ["씨발","시발","씨빨","ㅅㅂ","병신","ㅄ","좆","개새","지랄","니애미","느금","꺼져","닥쳐"];
+  const S = { on, sb: null, week: [], stats: {}, react: {}, cur: null, star: 0, revPage: 5 };
+  const ls = { get: k => { try { return localStorage.getItem(k); } catch (e) { return null; } }, set: (k, v) => { try { localStorage.setItem(k, v); } catch (e) {} } };
+  function client() {
+    let c = ls.get("klik-client");
+    if (!c) { c = (crypto.randomUUID ? crypto.randomUUID() : String(Date.now()) + Math.random().toString(16).slice(2)).replace(/-/g, "").slice(0, 32); ls.set("klik-client", c); }
+    return c;
+  }
+  function nick() { return (ls.get("klik-nick") || "").slice(0, 12); }
+  function nickOr(v) { v = (v || "").trim().slice(0, 12); if (v) ls.set("klik-nick", v); return v || nick() || ("딸깍러" + client().slice(-4)); }
+  function dirty(s) { const t = String(s).replace(/\s/g, ""); return BAD.some(w => t.includes(w)); }
+  function starStr(n) { const r = Math.round(n); return "★★★★★".slice(0, r) + "☆☆☆☆☆".slice(0, 5 - r); }
+  function dstr(iso) { const d = new Date(iso); return `${d.getMonth() + 1}.${d.getDate()}`; }
+  function loadScript(src) { return new Promise((ok, no) => { const s = document.createElement("script"); s.src = src; s.onload = ok; s.onerror = no; document.head.appendChild(s); }); }
+  function err(e, msg) { console.warn("[커뮤니티]", e); toast(msg || "잠시 연결이 안 돼요. 다시 시도해 주세요."); }
+
+  async function init() {
+    if (!on) return;
+    try { await loadScript(CDN); S.sb = window.supabase.createClient(cfg.url, cfg.anonKey, { auth: { persistSession: false, autoRefreshToken: false } }); }
+    catch (e) { console.warn("[커뮤니티] Supabase 불러오기 실패", e); S.on = false; return; }
+    await refresh();
+  }
+  async function refresh() {
+    try {
+      const [w, r, c] = await Promise.all([
+        S.sb.from("installs_week").select("tool_id,n").order("n", { ascending: false }).limit(30),
+        S.sb.from("review_stats").select("tool_id,n,avg"),
+        S.sb.from("reaction_counts").select("tool_id,tried,blocked"),
+      ]);
+      if (w.error || r.error || c.error) throw (w.error || r.error || c.error);
+      S.week = w.data || []; S.stats = {}; S.react = {};
+      (r.data || []).forEach(x => S.stats[x.tool_id] = x);
+      (c.data || []).forEach(x => S.react[x.tool_id] = x);
+      renderRank(); renderGrid();
+    } catch (e) { console.warn("[커뮤니티] 집계 불러오기 실패 (SQL을 아직 안 돌렸을 수 있어요)", e); }
+  }
+
+  // 카드 아래 한 줄: 한국 사용자 별점 (깃허브 ★는 그대로 두고 그 아래 따로)
+  function cardLine(id) {
+    if (!S.on) return "";
+    const st = S.stats[id], re = S.react[id] || {};
+    if (!st) return `<p class="cm-rate"><span class="stars">☆☆☆☆☆</span><span>아직 평이 없어요 · 첫 별점을 남겨 보세요</span></p>`;
+    return `<p class="cm-rate"><span class="stars">${starStr(st.avg)}</span><b>${st.avg}</b><span>· 한국 사용자 ${st.n}명</span>${re.tried ? `<span>· 써 봤어요 ${re.tried}</span>` : ""}</p>`;
+  }
+
+  // 딸깍 설치 클릭 기록: 같은 브라우저·같은 도구는 하루 1회만
+  function track(id) {
+    if (!S.on || !id) return;
+    const today = new Date().toISOString().slice(0, 10), k = "klik-inst-" + id;
+    if (ls.get(k) === today) return; ls.set(k, today);
+    S.sb.from("installs").insert({ tool_id: id, client: client() }).then(({ error }) => { if (!error) refresh(); else console.warn(error); });
+  }
+
+  // ---- 상세 창 ----
+  function box() { return S.on ? `<div class="cm" id="cm-box"><div class="cm-empty">한국 사용자 평 불러오는 중…</div></div>` : ""; }
+  async function fill(id) {
+    if (!S.on) return; S.cur = id; S.star = 0; S.revPage = 5;
+    const el = $("#cm-box"); if (!el) return;
+    try {
+      const [rv, bl, cm] = await Promise.all([
+        S.sb.from("reviews").select("id,nick,stars,body,likes,created_at").eq("tool_id", id).order("likes", { ascending: false }).order("created_at", { ascending: false }).limit(50),
+        S.sb.from("reactions").select("nick,note,created_at").eq("tool_id", id).eq("kind", "blocked").neq("note", "").order("created_at", { ascending: false }).limit(5),
+        S.sb.from("comments").select("id,nick,body,created_at").eq("tool_id", id).order("created_at", { ascending: false }).limit(50),
+      ]);
+      if (rv.error || bl.error || cm.error) throw (rv.error || bl.error || cm.error);
+      S.data = { rv: rv.data || [], bl: bl.data || [], cm: cm.data || [] };
+      paint();
+    } catch (e) { el.innerHTML = `<div class="cm-empty">커뮤니티를 불러오지 못했어요. (Supabase SQL이 실행됐는지 확인해 주세요)</div>`; console.warn(e); }
+  }
+  function paint() {
+    const el = $("#cm-box"); if (!el || S.cur === null) return;
+    const id = S.cur, st = S.stats[id], re = S.react[id] || { tried: 0, blocked: 0 }, d = S.data;
+    const mine = (() => { try { return JSON.parse(ls.get("klik-rev-" + id) || "null"); } catch (e) { return null; } })();
+    const pressed = k => ls.get(`klik-re-${id}-${k}`) === "1";
+    const rvHtml = d.rv.length ? d.rv.slice(0, S.revPage).map(r => `
+      <div class="cm-item ${r.likes >= BEST_AT ? "best" : ""}">
+        <div class="body2">${r.body ? esc(r.body) : '<span class="sub">(별점만 남김)</span>'}</div>
+        <div class="meta2">
+          <span><span class="stars">${starStr(r.stars)}</span> ${esc(r.nick || "익명")} · ${dstr(r.created_at)} ${r.likes >= BEST_AT ? '<span class="best-tag">베스트</span>' : ""}</span>
+          <span><button data-cm-like="${r.id}" aria-pressed="${ls.get("klik-like-" + r.id) === "1"}">👍 추천 ${r.likes}</button> &nbsp; <button data-cm-report="review:${r.id}">신고</button></span>
+        </div>
+      </div>`).join("") + (d.rv.length > S.revPage ? `<button class="chip cm-more" data-cm-more>평 ${d.rv.length - S.revPage}개 더 보기</button>` : "")
+      : `<div class="cm-empty">아직 한 줄 평이 없어요. 첫 평을 남겨 보세요.</div>`;
+    const form = mine
+      ? `<div class="cm-done"><b>내 평</b> <span class="stars">${starStr(mine.stars)}</span> ${mine.body ? esc(mine.body) : ""} <span class="sub">· 한 브라우저에서 한 번만 남길 수 있어요</span></div>`
+      : `<div class="cm-form">
+          <div class="cm-starpick">${[1,2,3,4,5].map(n => `<button type="button" data-cm-star="${n}" class="${n <= S.star ? "on" : ""}" aria-label="${n}점">★</button>`).join("")}<span class="sub" id="cm-star-txt">${["별을 눌러 점수를 매겨 주세요","아쉬워요","그냥 그래요","쓸 만해요","좋아요","최고예요"][S.star]}</span></div>
+          <div class="cm-row"><input class="nick" id="cm-nick" maxlength="12" placeholder="닉네임" value="${esc(nick())}"><input id="cm-body" maxlength="120" placeholder="한 줄 평 (선택, 120자)"><button class="install" data-cm-submit>남기기</button></div>
+        </div>`;
+    const blHtml = d.bl.length ? d.bl.map(b => `<div class="cm-item"><div class="body2">${esc(b.note)}</div><div class="meta2"><span>${esc(b.nick || "익명")} · ${dstr(b.created_at)}</span></div></div>`).join("") : "";
+    const cmHtml = d.cm.length ? d.cm.map(c => `<div class="cm-item"><div class="body2">${esc(c.body)}</div><div class="meta2"><span><b>${esc(c.nick || "익명")}</b> · ${dstr(c.created_at)}</span><button data-cm-report="comment:${c.id}">신고</button></div></div>`).join("") : `<div class="cm-empty">첫 댓글을 남겨 보세요. 로그인 없이 닉네임만 쓰면 됩니다.</div>`;
+    el.innerHTML = `
+      <div class="cm-top">
+        <div class="cm-avg">${st ? `<span class="stars">${starStr(st.avg)}</span><b>${st.avg}</b><span class="sub">한국 사용자 ${st.n}명의 별점</span>` : `<span class="stars">☆☆☆☆☆</span><span class="sub">아직 별점이 없어요</span>`}</div>
+        <div class="cm-react">
+          <button data-cm-react="tried" aria-pressed="${pressed("tried")}">👍 써 봤어요 ${re.tried || 0}</button>
+          <button data-cm-react="blocked" aria-pressed="${pressed("blocked")}">🚧 설치 막혔어요 ${re.blocked || 0}</button>
+        </div>
+      </div>
+      <div id="cm-blocked-form" hidden class="cm-form"><div class="sub">어디서 막혔는지 한 줄만 남겨 주시면 다음 사람에게 큰 도움이 됩니다.</div><div class="cm-row"><input class="nick" id="cm-bnick" maxlength="12" placeholder="닉네임" value="${esc(nick())}"><input id="cm-bnote" maxlength="120" placeholder="예: 도우미 창이 안 떠요"><button class="install" data-cm-blocked-send>보내기</button><button class="btn-outline" data-cm-blocked-skip>그냥 넘기기</button></div></div>
+      <div><h4>한 줄 평 <span class="sub">추천 많은 순 · 추천 ${BEST_AT}개부터 베스트</span></h4>${form}<div class="cm-list" style="margin-top:10px">${rvHtml}</div></div>
+      ${blHtml ? `<div><h4>막혔던 사연 <span class="sub">${re.blocked}명이 막혔다고 했어요</span></h4><div class="cm-list">${blHtml}</div></div>` : ""}
+      <div><h4>댓글 <span class="sub">${d.cm.length}</span></h4>
+        <div class="cm-list">${cmHtml}</div>
+        <div class="cm-form" style="margin-top:10px"><div class="cm-row"><input class="nick" id="cm-cnick" maxlength="12" placeholder="닉네임" value="${esc(nick())}"><textarea id="cm-cbody" maxlength="500" placeholder="이 도구 어땠나요? 질문도 환영 (500자)"></textarea><button class="install" data-cm-comment>댓글 달기</button></div></div>
+      </div>`;
+  }
+
+  // ---- 동작 ----
+  async function submitReview() {
+    const id = S.cur; if (!S.star) { toast("별을 먼저 눌러 점수를 매겨 주세요"); return; }
+    const body = ($("#cm-body").value || "").trim().slice(0, 120); const nk = nickOr($("#cm-nick").value);
+    if (dirty(body) || dirty(nk)) { toast("표현을 조금만 순화해 주세요 🙏"); return; }
+    const { error } = await S.sb.from("reviews").insert({ tool_id: id, client: client(), nick: nk, stars: S.star, body });
+    if (error) { if (error.code === "23505") { ls.set("klik-rev-" + id, JSON.stringify({ stars: S.star, body })); toast("이 브라우저에서는 이미 평을 남기셨어요"); paint(); } else err(error); return; }
+    ls.set("klik-rev-" + id, JSON.stringify({ stars: S.star, body }));
+    toast("한 줄 평이 올라갔어요. 고마워요!");
+    await refresh(); await fill(id);
+  }
+  // 써 봤어요: 바로 기록. 막혔어요: 사연 입력창을 먼저 열고, 보내기/넘기기 때 한 번만 기록
+  async function react(kind) {
+    const id = S.cur, k = `klik-re-${id}-${kind}`;
+    if (ls.get(k) === "1") { toast(kind === "tried" ? "이미 '써 봤어요'를 누르셨어요" : "이미 '막혔어요'를 누르셨어요"); return; }
+    if (kind === "blocked") { const f = $("#cm-blocked-form"); if (f) { f.hidden = false; $("#cm-bnote").focus(); } return; }
+    await sendReaction("tried", "", nick()); toast("반영됐어요 👍");
+  }
+  async function sendReaction(kind, note, nk) {
+    const id = S.cur, k = `klik-re-${id}-${kind}`;
+    const { error } = await S.sb.from("reactions").insert({ tool_id: id, client: client(), kind, nick: nk, note });
+    if (error && error.code !== "23505") { err(error); return false; }
+    ls.set(k, "1");
+    const re = S.react[id] || (S.react[id] = { tool_id: id, tried: 0, blocked: 0 }); re[kind] = (re[kind] || 0) + 1;
+    const b = document.querySelector(`[data-cm-react="${kind}"]`); if (b) { b.setAttribute("aria-pressed", "true"); b.textContent = (kind === "tried" ? "👍 써 봤어요 " : "🚧 설치 막혔어요 ") + re[kind]; }
+    refresh(); return true;
+  }
+  async function blockedNote(skip) {
+    const id = S.cur, note = skip ? "" : ($("#cm-bnote").value || "").trim().slice(0, 120), nk = nickOr($("#cm-bnick").value);
+    if (dirty(note)) { toast("표현을 조금만 순화해 주세요 🙏"); return; }
+    $("#cm-blocked-form").hidden = true;
+    if (!(await sendReaction("blocked", note, nk))) return;
+    toast(note ? "사연 고마워요. 편집팀이 확인합니다." : "알려 주셔서 고마워요");
+    if (note) await fill(id);
+  }
+  async function like(rid) {
+    if (ls.get("klik-like-" + rid) === "1") { toast("이미 추천하셨어요"); return; }
+    const { error } = await S.sb.from("review_likes").insert({ review_id: Number(rid), client: client() });
+    if (error && error.code !== "23505") { err(error); return; }
+    ls.set("klik-like-" + rid, "1");
+    const r = S.data.rv.find(x => x.id === Number(rid)); if (r) r.likes++; paint();
+  }
+  async function report(spec) {
+    const [target, tid] = spec.split(":"); const k = `klik-rep-${target}-${tid}`;
+    if (ls.get(k) === "1") { toast("이미 신고하셨어요"); return; }
+    if (!confirm("이 글을 신고할까요? 신고가 3건 쌓이면 자동으로 숨겨집니다.")) return;
+    const { error } = await S.sb.from("reports").insert({ target, target_id: Number(tid), client: client() });
+    if (error && error.code !== "23505") { err(error); return; }
+    ls.set(k, "1"); toast("신고가 접수됐어요");
+  }
+  async function comment() {
+    const id = S.cur, body = ($("#cm-cbody").value || "").trim().slice(0, 500), nk = nickOr($("#cm-cnick").value);
+    if (!body) { toast("댓글 내용을 적어 주세요"); return; }
+    if (dirty(body) || dirty(nk)) { toast("표현을 조금만 순화해 주세요 🙏"); return; }
+    const last = Number(ls.get("klik-cmt-at") || 0); if (Date.now() - last < 20000) { toast("댓글은 20초에 하나씩 쓸 수 있어요"); return; }
+    const { error } = await S.sb.from("comments").insert({ tool_id: id, client: client(), nick: nk, body });
+    if (error) { err(error); return; }
+    ls.set("klik-cmt-at", String(Date.now())); toast("댓글이 올라갔어요");
+    await fill(id);
+  }
+
+  document.addEventListener("click", e => {
+    const t = e.target.closest("[data-cm-star],[data-cm-submit],[data-cm-react],[data-cm-blocked-send],[data-cm-blocked-skip],[data-cm-like],[data-cm-report],[data-cm-comment],[data-cm-more]");
+    if (!t || !S.on) return;
+    e.stopPropagation();
+    if (t.dataset.cmStar) { S.star = Number(t.dataset.cmStar); document.querySelectorAll("[data-cm-star]").forEach(b => b.classList.toggle("on", Number(b.dataset.cmStar) <= S.star)); $("#cm-star-txt").textContent = ["","아쉬워요","그냥 그래요","쓸 만해요","좋아요","최고예요"][S.star]; return; }
+    if (t.hasAttribute("data-cm-submit")) { submitReview(); return; }
+    if (t.dataset.cmReact) { react(t.dataset.cmReact); return; }
+    if (t.hasAttribute("data-cm-blocked-send")) { blockedNote(); return; }
+    if (t.hasAttribute("data-cm-blocked-skip")) { blockedNote(true); return; }
+    if (t.dataset.cmLike) { like(t.dataset.cmLike); return; }
+    if (t.dataset.cmReport) { report(t.dataset.cmReport); return; }
+    if (t.hasAttribute("data-cm-comment")) { comment(); return; }
+    if (t.hasAttribute("data-cm-more")) { S.revPage += 10; paint(); return; }
+  });
+  document.addEventListener("keydown", e => { if (e.key === "Enter" && e.target.id === "cm-body") submitReview(); if (e.key === "Enter" && e.target.id === "cm-bnote") blockedNote(); });
+
+  init();
+  return { get on() { return S.on; }, get week() { return S.week; }, cardLine, track, box, fill, refresh };
 })();
 </script>
