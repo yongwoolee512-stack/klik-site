@@ -1,7 +1,7 @@
 {
   "count": 24,
-  "pending": 27,
   "rejected": 147,
+  "pending": 27,
   "items": [
     {
       "id": "pptx",
@@ -332,7 +332,8 @@
       "install": {
         "kind": "mcp",
         "name": "context7",
-        "pkg": "@upstash/context7-mcp"
+        "transport": "http",
+        "url": "https://mcp.context7.com/mcp"
       },
       "tips": [
         "질문 끝에 \"use context7\"만 붙이면 됩니다.",
@@ -819,5 +820,5 @@
       }
     }
   ],
-  "generated_at": "2026-10-29T15:44:07.1534053Z"
+  "generated_at": "2026-10-29T17:10:44.6936311Z"
 }
