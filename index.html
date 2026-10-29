@@ -910,7 +910,7 @@ window.CM = (() => {
       ? `<div class="cm-done"><b>내 평</b> <span class="stars">${starStr(mine.stars)}</span> ${mine.body ? esc(mine.body) : ""} <span class="sub">· 한 브라우저에서 한 번만 남길 수 있어요</span></div>`
       : `<div class="cm-form">
           <div class="cm-starpick">${[1,2,3,4,5].map(n => `<button type="button" data-cm-star="${n}" class="${n <= S.star ? "on" : ""}" aria-label="${n}점">★</button>`).join("")}<span class="sub" id="cm-star-txt">${["별을 눌러 점수를 매겨 주세요","아쉬워요","그냥 그래요","쓸 만해요","좋아요","최고예요"][S.star]}</span></div>
-          <div class="cm-row"><input class="nick" id="cm-nick" maxlength="12" placeholder="닉네임" value="${esc(nick())}"><input id="cm-body" maxlength="120" placeholder="한 줄 평 (선택, 120자)"><button class="install" data-cm-submit>남기기</button></div>
+          <div class="cm-row"><input class="nick" id="cm-nick" maxlength="12" onfocus="this.select()" placeholder="닉네임" value="${esc(nick())}"><input id="cm-body" maxlength="120" placeholder="한 줄 평 (선택, 120자)"><button class="install" data-cm-submit>남기기</button></div>
         </div>`;
     const blHtml = d.bl.length ? d.bl.map(b => `<div class="cm-item"><div class="body2">${esc(b.note)}</div><div class="meta2"><span>${esc(b.nick || "익명")} · ${dstr(b.created_at)}</span></div></div>`).join("") : "";
     const cmHtml = d.cm.length ? d.cm.map(c => `<div class="cm-item"><div class="body2">${esc(c.body)}</div><div class="meta2"><span><b>${esc(c.nick || "익명")}</b> · ${dstr(c.created_at)}</span><button data-cm-report="comment:${c.id}">신고</button></div></div>`).join("") : `<div class="cm-empty">첫 댓글을 남겨 보세요. 로그인 없이 닉네임만 쓰면 됩니다.</div>`;
@@ -922,12 +922,12 @@ window.CM = (() => {
           <button data-cm-react="blocked" aria-pressed="${pressed("blocked")}">🚧 설치 막혔어요 ${re.blocked || 0}</button>
         </div>
       </div>
-      <div id="cm-blocked-form" hidden class="cm-form"><div class="sub">어디서 막혔는지 한 줄만 남겨 주시면 다음 사람에게 큰 도움이 됩니다.</div><div class="cm-row"><input class="nick" id="cm-bnick" maxlength="12" placeholder="닉네임" value="${esc(nick())}"><input id="cm-bnote" maxlength="120" placeholder="예: 도우미 창이 안 떠요"><button class="install" data-cm-blocked-send>보내기</button><button class="btn-outline" data-cm-blocked-skip>그냥 넘기기</button></div></div>
+      <div id="cm-blocked-form" hidden class="cm-form"><div class="sub">어디서 막혔는지 한 줄만 남겨 주시면 다음 사람에게 큰 도움이 됩니다.</div><div class="cm-row"><input class="nick" id="cm-bnick" maxlength="12" onfocus="this.select()" placeholder="닉네임" value="${esc(nick())}"><input id="cm-bnote" maxlength="120" placeholder="예: 도우미 창이 안 떠요"><button class="install" data-cm-blocked-send>보내기</button><button class="btn-outline" data-cm-blocked-skip>그냥 넘기기</button></div></div>
       <div><h4>한 줄 평 <span class="sub">추천 많은 순 · 추천 ${BEST_AT}개부터 베스트</span></h4>${form}<div class="cm-list" style="margin-top:10px">${rvHtml}</div></div>
       ${blHtml ? `<div><h4>막혔던 사연 <span class="sub">${re.blocked}명이 막혔다고 했어요</span></h4><div class="cm-list">${blHtml}</div></div>` : ""}
       <div><h4>댓글 <span class="sub">${d.cm.length}</span></h4>
         <div class="cm-list">${cmHtml}</div>
-        <div class="cm-form" style="margin-top:10px"><div class="cm-row"><input class="nick" id="cm-cnick" maxlength="12" placeholder="닉네임" value="${esc(nick())}"><textarea id="cm-cbody" maxlength="500" placeholder="이 도구 어땠나요? 질문도 환영 (500자)"></textarea><button class="install" data-cm-comment>댓글 달기</button></div></div>
+        <div class="cm-form" style="margin-top:10px"><div class="cm-row"><input class="nick" id="cm-cnick" maxlength="12" onfocus="this.select()" placeholder="닉네임" value="${esc(nick())}"><textarea id="cm-cbody" maxlength="500" placeholder="이 도구 어땠나요? 질문도 환영 (500자)"></textarea><button class="install" data-cm-comment>댓글 달기</button></div></div>
       </div>`;
   }
 
