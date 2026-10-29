@@ -1,0 +1,823 @@
+{
+  "count": 24,
+  "pending": 27,
+  "rejected": 147,
+  "items": [
+    {
+      "id": "pptx",
+      "kind": "skill",
+      "cat": "docs",
+      "name": "파워포인트 자동 제작",
+      "en": "pptx skill",
+      "one": "말로 설명하면 PPT 파일을 통째로 만들어 줍니다.",
+      "when": "회의 자료·발표 자료를 매번 처음부터 만드는 분",
+      "stars": 48200,
+      "installs": 12800,
+      "level": 1,
+      "plat": [
+        "claude-code",
+        "claude"
+      ],
+      "hot": true,
+      "color": "#f3d9c4",
+      "repo": "https://github.com/anthropics/skills",
+      "install": {
+        "kind": "plugin",
+        "name": "document-skills",
+        "market": "anthropics/skills"
+      },
+      "tips": [
+        "\"이 내용으로 10장짜리 PPT 만들어 줘\"라고만 하면 됩니다.",
+        "회사 템플릿 .pptx를 주면 그 디자인 그대로 채워 줍니다.",
+        "표·차트·이미지까지 들어갑니다."
+      ],
+      "status": "published",
+      "trust": {
+        "grade": "verified",
+        "reasons": [
+          "편집팀 검수"
+        ]
+      }
+    },
+    {
+      "id": "xlsx",
+      "kind": "skill",
+      "cat": "data",
+      "name": "엑셀 정리·수식 자동화",
+      "en": "xlsx skill",
+      "one": "지저분한 엑셀을 정리하고 수식과 차트를 넣어 줍니다.",
+      "when": "매출 정리, 명단 정리, 월말 보고서 만드는 분",
+      "stars": 48200,
+      "installs": 11100,
+      "level": 1,
+      "plat": [
+        "claude-code",
+        "claude"
+      ],
+      "color": "#cfe6d6",
+      "repo": "https://github.com/anthropics/skills",
+      "install": {
+        "kind": "plugin",
+        "name": "document-skills",
+        "market": "anthropics/skills"
+      },
+      "tips": [
+        "\"이 파일 월별 합계 내고 차트 넣어 줘\" 한 마디면 됩니다.",
+        "CSV·TSV도 읽습니다.",
+        "수식이 살아 있는 진짜 엑셀 파일이 나옵니다."
+      ],
+      "status": "published",
+      "trust": {
+        "grade": "verified",
+        "reasons": [
+          "편집팀 검수"
+        ]
+      }
+    },
+    {
+      "id": "docx",
+      "kind": "skill",
+      "cat": "docs",
+      "name": "워드 문서 작성·수정",
+      "en": "docx skill",
+      "one": "계약서, 보고서, 제안서를 워드 파일로 바로 뽑습니다.",
+      "when": "워드 양식 채우기가 귀찮은 분",
+      "stars": 48200,
+      "installs": 9800,
+      "level": 1,
+      "plat": [
+        "claude-code",
+        "claude"
+      ],
+      "color": "#d6dcf0",
+      "repo": "https://github.com/anthropics/skills",
+      "install": {
+        "kind": "plugin",
+        "name": "document-skills",
+        "market": "anthropics/skills"
+      },
+      "tips": [
+        "기존 워드 파일의 글꼴·서식을 유지한 채 내용만 바꿉니다.",
+        "변경 추적(수정 표시) 모드도 됩니다."
+      ],
+      "status": "published",
+      "trust": {
+        "grade": "verified",
+        "reasons": [
+          "편집팀 검수"
+        ]
+      }
+    },
+    {
+      "id": "pdf",
+      "kind": "skill",
+      "cat": "docs",
+      "name": "PDF 합치기·쪼개기·읽기",
+      "en": "pdf skill",
+      "one": "PDF를 합치고, 나누고, 글자를 뽑고, 양식도 채웁니다.",
+      "when": "스캔본 PDF에서 글자 뽑고 싶은 분",
+      "stars": 48200,
+      "installs": 8700,
+      "level": 1,
+      "plat": [
+        "claude-code",
+        "claude"
+      ],
+      "color": "#f0e0d6",
+      "repo": "https://github.com/anthropics/skills",
+      "install": {
+        "kind": "plugin",
+        "name": "document-skills",
+        "market": "anthropics/skills"
+      },
+      "tips": [
+        "\"이 3개 PDF 하나로 합쳐 줘\"",
+        "스캔한 PDF도 글자 검색이 되게 바꿔 줍니다."
+      ],
+      "status": "published",
+      "trust": {
+        "grade": "verified",
+        "reasons": [
+          "편집팀 검수"
+        ]
+      }
+    },
+    {
+      "id": "frontend",
+      "kind": "skill",
+      "cat": "design",
+      "name": "예쁜 웹 화면 디자인",
+      "en": "frontend-design",
+      "one": "AI 티 안 나는 세련된 웹 페이지를 디자인해 줍니다.",
+      "when": "랜딩페이지·포트폴리오를 직접 만들고 싶은 분",
+      "stars": 19500,
+      "installs": 7600,
+      "level": 2,
+      "plat": [
+        "claude-code"
+      ],
+      "hot": true,
+      "color": "#e0d6f0",
+      "repo": "https://github.com/anthropics/claude-code",
+      "install": {
+        "kind": "plugin",
+        "name": "frontend-design",
+        "market": "anthropics/claude-code"
+      },
+      "tips": [
+        "\"카페 소개 페이지 만들어 줘\" 하면 글꼴·색·배치까지 골라 줍니다.",
+        "흔한 AI 디자인(보라색 그라데이션 등)을 피하도록 학습돼 있습니다."
+      ],
+      "status": "published",
+      "trust": {
+        "grade": "verified",
+        "reasons": [
+          "편집팀 검수"
+        ]
+      }
+    },
+    {
+      "id": "figma",
+      "kind": "mcp",
+      "cat": "design",
+      "name": "피그마 연결",
+      "en": "Figma MCP",
+      "one": "피그마 디자인을 AI가 직접 보고 코드로 바꿔 줍니다.",
+      "when": "디자이너와 개발자 사이에서 왔다 갔다 하는 분",
+      "stars": 3200,
+      "installs": 5400,
+      "level": 2,
+      "plat": [
+        "claude-code",
+        "claude",
+        "chatgpt"
+      ],
+      "color": "#f5d8e4",
+      "repo": "https://github.com/figma/mcp-server-guide",
+      "install": null,
+      "link": "https://claude.ai/settings/connectors",
+      "tips": [
+        "피그마 링크를 붙여 넣으면 그 화면 그대로 코드를 짭니다.",
+        "디자인 시안을 피그마에 새로 그려 주기도 합니다."
+      ],
+      "note": "피그마 계정 로그인(OAuth)이 한 번 필요합니다.",
+      "status": "published",
+      "trust": {
+        "grade": "verified",
+        "reasons": [
+          "편집팀 검수"
+        ]
+      }
+    },
+    {
+      "id": "canva",
+      "kind": "mcp",
+      "cat": "design",
+      "name": "캔바 연결",
+      "en": "Canva connector",
+      "one": "채팅으로 캔바 디자인을 만들고 수정합니다.",
+      "when": "SNS 카드뉴스·썸네일을 빨리 뽑고 싶은 분",
+      "stars": 900,
+      "installs": 4300,
+      "level": 1,
+      "plat": [
+        "claude",
+        "chatgpt"
+      ],
+      "isNew": true,
+      "color": "#d6ecf5",
+      "repo": "https://www.canva.com/developers",
+      "install": null,
+      "link": "https://claude.ai/settings/connectors",
+      "tips": [
+        "\"인스타 카드뉴스 5장 만들어 줘\"",
+        "캔바 앱 설정에서 연결 버튼만 누르면 됩니다."
+      ],
+      "status": "published",
+      "trust": {
+        "grade": "verified",
+        "reasons": [
+          "편집팀 검수"
+        ]
+      }
+    },
+    {
+      "id": "github",
+      "kind": "mcp",
+      "cat": "dev",
+      "name": "깃허브 연결",
+      "en": "GitHub MCP",
+      "one": "깃허브 저장소를 읽고, 이슈를 만들고, PR을 올립니다.",
+      "when": "코드 관리를 채팅으로 하고 싶은 분",
+      "stars": 21000,
+      "installs": 9300,
+      "level": 2,
+      "plat": [
+        "claude-code",
+        "claude",
+        "chatgpt"
+      ],
+      "color": "#dcdcdc",
+      "repo": "https://github.com/github/github-mcp-server",
+      "install": {
+        "kind": "mcp",
+        "name": "github",
+        "transport": "http",
+        "url": "https://api.githubcopilot.com/mcp/"
+      },
+      "tips": [
+        "\"이번 주 올라온 이슈 요약해 줘\"",
+        "\"이 버그 고치고 PR 올려 줘\""
+      ],
+      "status": "published",
+      "trust": {
+        "grade": "verified",
+        "reasons": [
+          "편집팀 검수"
+        ]
+      }
+    },
+    {
+      "id": "playwright",
+      "kind": "mcp",
+      "cat": "dev",
+      "name": "브라우저 자동 조작",
+      "en": "Playwright MCP",
+      "one": "AI가 브라우저를 직접 열어 클릭하고 입력하고 검사합니다.",
+      "when": "내가 만든 사이트가 잘 되는지 자동으로 확인하고 싶은 분",
+      "stars": 18000,
+      "installs": 6900,
+      "level": 2,
+      "plat": [
+        "claude-code",
+        "chatgpt"
+      ],
+      "color": "#d6f0e8",
+      "repo": "https://github.com/microsoft/playwright-mcp",
+      "install": {
+        "kind": "mcp",
+        "name": "playwright",
+        "pkg": "@playwright/mcp@latest"
+      },
+      "tips": [
+        "\"로그인 페이지 들어가서 회원가입 잘 되는지 확인해 봐\"",
+        "스크린샷도 찍어 보여 줍니다."
+      ],
+      "status": "published",
+      "trust": {
+        "grade": "verified",
+        "reasons": [
+          "편집팀 검수"
+        ]
+      }
+    },
+    {
+      "id": "context7",
+      "kind": "mcp",
+      "cat": "dev",
+      "name": "최신 코드 문서 찾기",
+      "en": "Context7",
+      "one": "AI가 오래된 정보 대신 최신 공식 설명서를 보고 답하게 합니다.",
+      "when": "AI가 자꾸 구버전 코드를 알려줘서 답답한 분",
+      "stars": 26000,
+      "installs": 8100,
+      "level": 1,
+      "plat": [
+        "claude-code",
+        "chatgpt"
+      ],
+      "hot": true,
+      "color": "#f0ead6",
+      "repo": "https://github.com/upstash/context7",
+      "install": {
+        "kind": "mcp",
+        "name": "context7",
+        "pkg": "@upstash/context7-mcp"
+      },
+      "tips": [
+        "질문 끝에 \"use context7\"만 붙이면 됩니다.",
+        "설치 후 따로 설정할 게 없습니다."
+      ],
+      "status": "published",
+      "trust": {
+        "grade": "verified",
+        "reasons": [
+          "편집팀 검수"
+        ]
+      }
+    },
+    {
+      "id": "code-review",
+      "kind": "plugin",
+      "cat": "dev",
+      "name": "코드 자동 검토",
+      "en": "code-review",
+      "one": "내 코드의 버그와 보안 구멍을 찾아 리포트합니다.",
+      "when": "혼자 개발해서 봐 줄 사람이 없는 분",
+      "stars": 19500,
+      "installs": 5200,
+      "level": 2,
+      "plat": [
+        "claude-code"
+      ],
+      "color": "#d6e4f0",
+      "repo": "https://github.com/anthropics/claude-code",
+      "install": {
+        "kind": "plugin",
+        "name": "code-review",
+        "market": "anthropics/claude-code"
+      },
+      "tips": [
+        "/code-review 한 줄이면 됩니다.",
+        "심각도 순으로 정리해 줍니다."
+      ],
+      "status": "published",
+      "trust": {
+        "grade": "verified",
+        "reasons": [
+          "편집팀 검수"
+        ]
+      }
+    },
+    {
+      "id": "supabase",
+      "kind": "mcp",
+      "cat": "web",
+      "name": "수파베이스 DB 연결",
+      "en": "Supabase MCP",
+      "one": "데이터베이스를 만들고 표를 조회·수정합니다.",
+      "when": "회원·주문 데이터를 저장할 앱을 만드는 분",
+      "stars": 2100,
+      "installs": 3900,
+      "level": 3,
+      "plat": [
+        "claude-code",
+        "chatgpt"
+      ],
+      "color": "#d6f0dd",
+      "repo": "https://github.com/supabase-community/supabase-mcp",
+      "install": {
+        "kind": "mcp",
+        "name": "supabase",
+        "transport": "http",
+        "url": "https://mcp.supabase.com/mcp"
+      },
+      "tips": [
+        "\"회원 테이블 만들고 샘플 10명 넣어 줘\"",
+        "무료 플랜으로 시작할 수 있습니다."
+      ],
+      "note": "수파베이스 가입과 프로젝트 생성이 먼저 필요합니다.",
+      "status": "published",
+      "trust": {
+        "grade": "verified",
+        "reasons": [
+          "편집팀 검수"
+        ]
+      }
+    },
+    {
+      "id": "vercel",
+      "kind": "mcp",
+      "cat": "web",
+      "name": "버셀 배포 연결",
+      "en": "Vercel MCP",
+      "one": "만든 웹사이트를 인터넷에 바로 올립니다.",
+      "when": "호스팅이 뭔지 몰라도 사이트를 공개하고 싶은 분",
+      "stars": 1400,
+      "installs": 4100,
+      "level": 2,
+      "plat": [
+        "claude-code",
+        "chatgpt"
+      ],
+      "color": "#e4e4e4",
+      "repo": "https://vercel.com/docs/mcp",
+      "install": {
+        "kind": "mcp",
+        "name": "vercel",
+        "transport": "http",
+        "url": "https://mcp.vercel.com"
+      },
+      "tips": [
+        "\"이거 배포해 줘\" 하면 주소를 돌려줍니다.",
+        "도메인 연결도 채팅으로 됩니다."
+      ],
+      "status": "published",
+      "trust": {
+        "grade": "verified",
+        "reasons": [
+          "편집팀 검수"
+        ]
+      }
+    },
+    {
+      "id": "cloudflare",
+      "kind": "mcp",
+      "cat": "web",
+      "name": "클라우드플레어 연결",
+      "en": "Cloudflare MCP",
+      "one": "도메인·DNS·서버리스 배포를 채팅으로 관리합니다.",
+      "when": "도메인 설정이 늘 헷갈리는 분",
+      "stars": 2600,
+      "installs": 2200,
+      "level": 3,
+      "plat": [
+        "claude-code"
+      ],
+      "color": "#f5e2cf",
+      "repo": "https://github.com/cloudflare/mcp-server-cloudflare",
+      "install": {
+        "kind": "mcp",
+        "name": "cloudflare",
+        "transport": "sse",
+        "url": "https://docs.mcp.cloudflare.com/sse"
+      },
+      "tips": [
+        "\"내 도메인 DNS 레코드 보여 줘\""
+      ],
+      "status": "published",
+      "trust": {
+        "grade": "verified",
+        "reasons": [
+          "편집팀 검수"
+        ]
+      }
+    },
+    {
+      "id": "notion",
+      "kind": "mcp",
+      "cat": "work",
+      "name": "노션 연결",
+      "en": "Notion MCP",
+      "one": "노션 페이지를 읽고 쓰고 정리합니다.",
+      "when": "회의록·할 일을 노션에 두는 분",
+      "stars": 3500,
+      "installs": 7400,
+      "level": 1,
+      "plat": [
+        "claude-code",
+        "claude",
+        "chatgpt"
+      ],
+      "hot": true,
+      "color": "#ececec",
+      "repo": "https://github.com/makenotion/notion-mcp-server",
+      "install": {
+        "kind": "mcp",
+        "name": "notion",
+        "transport": "http",
+        "url": "https://mcp.notion.com/mcp"
+      },
+      "tips": [
+        "\"어제 회의록 요약해서 할 일 페이지 만들어 줘\"",
+        "Claude 앱에서는 커넥터 켜기만 하면 됩니다."
+      ],
+      "status": "published",
+      "trust": {
+        "grade": "verified",
+        "reasons": [
+          "편집팀 검수"
+        ]
+      }
+    },
+    {
+      "id": "slack",
+      "kind": "mcp",
+      "cat": "work",
+      "name": "슬랙 연결",
+      "en": "Slack MCP",
+      "one": "슬랙 대화를 읽고 요약하고 대신 보냅니다.",
+      "when": "안 읽은 메시지가 999+인 분",
+      "stars": 1800,
+      "installs": 5100,
+      "level": 1,
+      "plat": [
+        "claude",
+        "chatgpt"
+      ],
+      "color": "#f0d6e4",
+      "repo": "https://slack.com/apps",
+      "install": null,
+      "link": "https://claude.ai/settings/connectors",
+      "tips": [
+        "\"오늘 #마케팅 채널 무슨 얘기 했어?\"",
+        "보내기 전에 항상 확인을 받습니다."
+      ],
+      "status": "published",
+      "trust": {
+        "grade": "verified",
+        "reasons": [
+          "편집팀 검수"
+        ]
+      }
+    },
+    {
+      "id": "gdrive",
+      "kind": "mcp",
+      "cat": "work",
+      "name": "구글 드라이브·문서 연결",
+      "en": "Google Workspace",
+      "one": "구글 문서·시트·드라이브 파일을 찾고 수정합니다.",
+      "when": "회사 자료가 전부 구글에 있는 분",
+      "stars": 2400,
+      "installs": 8800,
+      "level": 1,
+      "plat": [
+        "claude",
+        "chatgpt"
+      ],
+      "color": "#d6ecd9",
+      "repo": "https://support.anthropic.com",
+      "install": null,
+      "link": "https://claude.ai/settings/connectors",
+      "tips": [
+        "\"지난달 매출 시트 열어서 차트 만들어 줘\"",
+        "구글 로그인 한 번이면 끝입니다."
+      ],
+      "status": "published",
+      "trust": {
+        "grade": "verified",
+        "reasons": [
+          "편집팀 검수"
+        ]
+      }
+    },
+    {
+      "id": "naverblog",
+      "kind": "skill",
+      "cat": "marketing",
+      "name": "네이버 블로그 자동 발행",
+      "en": "naver-blog-upload",
+      "one": "쓴 글을 네이버 블로그에 바로 올리거나 임시저장합니다.",
+      "when": "블로그 글은 쓰는데 올리는 게 귀찮은 분",
+      "stars": 300,
+      "installs": 1900,
+      "level": 2,
+      "plat": [
+        "claude-code"
+      ],
+      "isNew": true,
+      "color": "#d6f0d6",
+      "repo": "https://github.com",
+      "install": {
+        "kind": "plugin",
+        "name": "naver-blog-upload",
+        "market": "skillmart/skills"
+      },
+      "tips": [
+        "\"이 글 블로그에 올려 줘\"",
+        "브라우저 로그인 상태를 그대로 씁니다."
+      ],
+      "note": "처음 한 번 네이버 로그인이 필요합니다.",
+      "status": "published",
+      "trust": {
+        "grade": "verified",
+        "reasons": [
+          "편집팀 검수"
+        ]
+      }
+    },
+    {
+      "id": "ultimate-scraper",
+      "kind": "plugin",
+      "cat": "marketing",
+      "name": "인스타·유튜브 데이터 수집",
+      "en": "Apify Ultimate Scraper",
+      "one": "인스타·유튜브·틱톡·구글맵 데이터를 표로 긁어 옵니다.",
+      "when": "경쟁사 분석·인플루언서 찾기를 수작업으로 하던 분",
+      "stars": 4100,
+      "installs": 3300,
+      "level": 2,
+      "plat": [
+        "claude-code",
+        "claude"
+      ],
+      "color": "#f5d6d6",
+      "repo": "https://github.com/apify",
+      "install": {
+        "kind": "plugin",
+        "name": "apify",
+        "market": "apify/claude-plugins"
+      },
+      "tips": [
+        "\"강남 카페 구글맵 리뷰 200개 모아 줘\"",
+        "엑셀로 바로 내려받습니다."
+      ],
+      "note": "Apify 무료 계정이 필요합니다.",
+      "status": "published",
+      "trust": {
+        "grade": "verified",
+        "reasons": [
+          "편집팀 검수"
+        ]
+      }
+    },
+    {
+      "id": "dataviz",
+      "kind": "skill",
+      "cat": "data",
+      "name": "보기 좋은 차트 만들기",
+      "en": "dataviz",
+      "one": "숫자를 주면 어디 내놔도 되는 차트로 그려 줍니다.",
+      "when": "엑셀 기본 차트가 촌스러워 보이는 분",
+      "stars": 19500,
+      "installs": 2800,
+      "level": 1,
+      "plat": [
+        "claude-code",
+        "claude"
+      ],
+      "color": "#d6e8f0",
+      "repo": "https://github.com/anthropics/claude-code",
+      "install": {
+        "kind": "plugin",
+        "name": "dataviz",
+        "market": "anthropics/claude-code"
+      },
+      "tips": [
+        "다크·라이트 모드 다 예쁘게 나옵니다.",
+        "색을 자동으로 조화롭게 고릅니다."
+      ],
+      "status": "published",
+      "trust": {
+        "grade": "verified",
+        "reasons": [
+          "편집팀 검수"
+        ]
+      }
+    },
+    {
+      "id": "schedule",
+      "kind": "plugin",
+      "cat": "auto",
+      "name": "정해진 시간에 자동 실행",
+      "en": "schedule",
+      "one": "매일 아침 뉴스 요약, 매주 보고서 같은 반복 작업을 맡깁니다.",
+      "when": "같은 일을 매일 손으로 반복하는 분",
+      "stars": 19500,
+      "installs": 4600,
+      "level": 2,
+      "plat": [
+        "claude-code",
+        "claude"
+      ],
+      "color": "#efe6d6",
+      "repo": "https://github.com/anthropics/claude-code",
+      "install": {
+        "kind": "plugin",
+        "name": "schedule",
+        "market": "anthropics/claude-code"
+      },
+      "tips": [
+        "\"매일 아침 8시에 경쟁사 뉴스 요약해서 슬랙에 올려 줘\""
+      ],
+      "status": "published",
+      "trust": {
+        "grade": "verified",
+        "reasons": [
+          "편집팀 검수"
+        ]
+      }
+    },
+    {
+      "id": "computer-use",
+      "kind": "plugin",
+      "cat": "auto",
+      "name": "내 컴퓨터 화면 대신 조작",
+      "en": "computer-use",
+      "one": "AI가 내 화면을 보고 마우스·키보드를 대신 움직입니다.",
+      "when": "웹이 아닌 프로그램(한글·카톡 등)까지 자동화하고 싶은 분",
+      "stars": 19500,
+      "installs": 3700,
+      "level": 3,
+      "plat": [
+        "claude"
+      ],
+      "color": "#e2e2f0",
+      "repo": "https://github.com/anthropics/claude-code",
+      "install": null,
+      "link": "https://claude.ai/download",
+      "tips": [
+        "Claude 데스크톱 앱에서 권한만 켜면 됩니다.",
+        "앱마다 허용 여부를 묻습니다."
+      ],
+      "status": "published",
+      "trust": {
+        "grade": "verified",
+        "reasons": [
+          "편집팀 검수"
+        ]
+      }
+    },
+    {
+      "id": "stripe",
+      "kind": "mcp",
+      "cat": "web",
+      "name": "결제(스트라이프) 연결",
+      "en": "Stripe MCP",
+      "one": "결제 링크·구독 상품을 채팅으로 만듭니다.",
+      "when": "온라인 결제를 붙이고 싶은데 코드가 무서운 분",
+      "stars": 1100,
+      "installs": 1500,
+      "level": 3,
+      "plat": [
+        "claude-code",
+        "chatgpt"
+      ],
+      "color": "#dcd6f5",
+      "repo": "https://github.com/stripe/agent-toolkit",
+      "install": {
+        "kind": "mcp",
+        "name": "stripe",
+        "transport": "http",
+        "url": "https://mcp.stripe.com"
+      },
+      "tips": [
+        "\"월 9,900원 구독 상품 만들고 결제 링크 줘\""
+      ],
+      "note": "국내 결제는 토스페이먼츠 등 별도 확인이 필요합니다.",
+      "status": "published",
+      "trust": {
+        "grade": "verified",
+        "reasons": [
+          "편집팀 검수"
+        ]
+      }
+    },
+    {
+      "id": "sentry",
+      "kind": "mcp",
+      "cat": "dev",
+      "name": "오류 모니터링 연결",
+      "en": "Sentry MCP",
+      "one": "서비스에서 난 오류를 읽고 원인을 찾아 고칩니다.",
+      "when": "에러 알림은 오는데 뭔 소린지 모르는 분",
+      "stars": 600,
+      "installs": 1200,
+      "level": 3,
+      "plat": [
+        "claude-code",
+        "chatgpt"
+      ],
+      "color": "#f0dad6",
+      "repo": "https://github.com/getsentry/sentry-mcp",
+      "install": {
+        "kind": "mcp",
+        "name": "sentry",
+        "transport": "http",
+        "url": "https://mcp.sentry.dev/mcp"
+      },
+      "tips": [
+        "\"오늘 제일 많이 난 에러 고쳐 줘\""
+      ],
+      "status": "published",
+      "trust": {
+        "grade": "verified",
+        "reasons": [
+          "편집팀 검수"
+        ]
+      }
+    }
+  ],
+  "generated_at": "2026-10-29T15:44:07.1534053Z"
+}
