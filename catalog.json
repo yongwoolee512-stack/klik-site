@@ -1,4 +1,7 @@
 {
+  "count": 26,
+  "rejected": 147,
+  "pending": 27,
   "items": [
     {
       "id": "pptx",
@@ -30,10 +33,10 @@
       ],
       "status": "published",
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       },
       "readme_ko": [
         {
@@ -91,10 +94,10 @@
       ],
       "status": "published",
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       },
       "readme_ko": [
         {
@@ -151,10 +154,10 @@
       ],
       "status": "published",
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       },
       "readme_ko": [
         {
@@ -211,10 +214,10 @@
       ],
       "status": "published",
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       },
       "readme_ko": [
         {
@@ -271,10 +274,10 @@
       ],
       "status": "published",
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       },
       "readme_ko": [
         {
@@ -324,10 +327,10 @@
       "note": "피그마 계정 로그인(OAuth)이 한 번 필요합니다.",
       "status": "published",
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       },
       "readme_ko": [
         {
@@ -378,10 +381,10 @@
       ],
       "status": "published",
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       },
       "readme_ko": [
         {
@@ -400,6 +403,7 @@
     },
     {
       "id": "github",
+      "link": "https://claude.ai/settings/connectors",
       "kind": "mcp",
       "cat": "dev",
       "name": "깃허브 연결",
@@ -416,6 +420,7 @@
       ],
       "color": "#dcdcdc",
       "repo": "https://github.com/github/github-mcp-server",
+      "login": true,
       "install": {
         "kind": "mcp",
         "name": "github",
@@ -428,10 +433,10 @@
       ],
       "status": "published",
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       },
       "readme_ko": [
         {
@@ -480,10 +485,10 @@
       ],
       "status": "published",
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       },
       "readme_ko": [
         {
@@ -539,10 +544,10 @@
       ],
       "status": "published",
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       },
       "readme_ko": [
         {
@@ -594,10 +599,10 @@
       ],
       "status": "published",
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       },
       "readme_ko": [
         {
@@ -631,6 +636,7 @@
       ],
       "color": "#d6f0dd",
       "repo": "https://github.com/supabase-community/supabase-mcp",
+      "login": true,
       "install": {
         "kind": "mcp",
         "name": "supabase",
@@ -644,10 +650,10 @@
       "note": "수파베이스 가입과 프로젝트 생성이 먼저 필요합니다.",
       "status": "published",
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       },
       "readme_ko": [
         {
@@ -685,6 +691,7 @@
       ],
       "color": "#e4e4e4",
       "repo": "https://vercel.com/docs/mcp",
+      "login": true,
       "install": {
         "kind": "mcp",
         "name": "vercel",
@@ -697,10 +704,10 @@
       ],
       "status": "published",
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       },
       "readme_ko": [
         {
@@ -737,6 +744,7 @@
       ],
       "color": "#f5e2cf",
       "repo": "https://github.com/cloudflare/mcp-server-cloudflare",
+      "login": true,
       "install": {
         "kind": "mcp",
         "name": "cloudflare",
@@ -748,10 +756,10 @@
       ],
       "status": "published",
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       },
       "readme_ko": [
         {
@@ -774,6 +782,7 @@
     },
     {
       "id": "notion",
+      "link": "https://claude.ai/settings/connectors",
       "kind": "mcp",
       "cat": "work",
       "name": "노션 연결",
@@ -791,6 +800,7 @@
       "hot": true,
       "color": "#ececec",
       "repo": "https://github.com/makenotion/notion-mcp-server",
+      "login": true,
       "install": {
         "kind": "mcp",
         "name": "notion",
@@ -798,15 +808,15 @@
         "url": "https://mcp.notion.com/mcp"
       },
       "tips": [
-        "\"어제 회의록 요약해서 할 일 페이지 만들어 줘\"",
+        "\"노션에 이번 주 할 일 페이지 만들어 줘\"라고 하면 바로 노션에 씁니다. (노션이라고 꼭 말해 주세요.)",
         "Claude 앱에서는 커넥터 켜기만 하면 됩니다."
       ],
       "status": "published",
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       },
       "readme_ko": [
         {
@@ -848,10 +858,10 @@
       ],
       "status": "published",
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       },
       "readme_ko": [
         {
@@ -893,10 +903,10 @@
       ],
       "status": "published",
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       },
       "readme_ko": [
         {
@@ -941,10 +951,10 @@
       ],
       "status": "published",
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       },
       "readme_ko": [
         {
@@ -989,10 +999,10 @@
       "note": "국내 결제는 토스페이먼츠 등 별도 확인이 필요합니다.",
       "status": "published",
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       },
       "readme_ko": [
         {
@@ -1034,6 +1044,7 @@
       ],
       "color": "#f0dad6",
       "repo": "https://github.com/getsentry/sentry-mcp",
+      "login": true,
       "install": {
         "kind": "mcp",
         "name": "sentry",
@@ -1045,10 +1056,10 @@
       ],
       "status": "published",
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       },
       "readme_ko": [
         {
@@ -1419,8 +1430,5 @@
       ]
     }
   ],
-  "count": 26,
-  "generated_at": "2026-10-30T08:42:38.8197665Z",
-  "rejected": 147,
-  "pending": 27
+  "generated_at": "2026-10-30T09:58:56.7916975Z"
 }
