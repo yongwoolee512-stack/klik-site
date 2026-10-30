@@ -713,10 +713,10 @@ function openDetail(id) {
   const hasCmd = !!cmd;
   const deep = hasCmd ? deepLink(it) : "";
   const steps = deep
-    ? [["'딸깍 설치' 누르기", "브라우저가 '딸깍 도우미를 열까요?'라고 물으면 '열기'를 누르세요."],["도우미 확인창에서 '예'", "무엇이 설치되는지 보여 주고 묻습니다. '예' 한 번이면 끝."],["Claude 앱 열기 → 왼쪽 위 </> 버튼 누르기", "왼쪽 위에 </> 모양 버튼(Code)이 있어요. 이걸 눌러서 나오는 화면에서만 됩니다. 평소 채팅 화면에서는 안 돼요.", "media/code-button.svg"],...(it.login ? [["처음 한 번 로그인", `</> 화면 아래 입력창에 /mcp 치고 엔터 → ${it.en.split(" ")[0]} 고르기 → 브라우저에 뜨는 로그인 창에서 '승인'.`]] : []), ["</> 화면 아래 입력창에 이렇게 치기", it.tips[0] || "바로 써 보세요."]]
+    ? [["'딸깍 설치' 누르기 → 뜨는 창마다 '열기', '예'", "브라우저가 '딸깍 도우미를 열까요?' 하면 '열기', 도우미가 '설치할까요?' 하면 '예'. 설치 완료 창이 뜨면 끝."],...(it.login ? [["처음 한 번 로그인", `Claude 앱 왼쪽 위 </> 버튼을 누르고, 아래 입력창에 /mcp 치고 엔터 → ${it.en.split(" ")[0]} 고르기 → 브라우저 로그인 창에서 '승인'.`]] : []), ["Claude 앱 왼쪽 위 </> 버튼 → 아래 입력창에 이렇게 치기", (it.tips[0] || "바로 써 보세요.") + " (평소 채팅 화면 말고, </> 버튼을 누른 화면이어야 해요.)", "media/code-button.svg"]]
     : hasCmd
-    ? [["설치 명령 복사", "아래 '복사' 버튼을 누르면 복사됩니다."],["Claude 앱 열기 → 왼쪽 위 </> 버튼 → 아래 입력창에 붙여넣기", "왼쪽 위 </> 모양 버튼(Code)을 누르고, 그 화면 아래 입력창에 Ctrl+V 하고 엔터. 평소 채팅 화면에서는 안 돼요.", "media/code-button.svg"],["</> 화면 아래 입력창에 이렇게 치기", it.tips[0] || "바로 써 보세요."]]
-    : [["Claude 앱 설정 열기", "'커넥터 설정 열기' 버튼을 누르면 설정 페이지로 갑니다."],["연결 버튼 누르기", "목록에서 찾아 '연결'을 누르고 로그인하면 됩니다."],["써 보기", it.tips[0] || "채팅으로 바로 써 보세요."]];
+    ? [["'설치 명령 복사' 누르기", "문장이 복사됩니다."],["Claude 앱 왼쪽 위 </> 버튼 → 아래 입력창에 Ctrl+V, 엔터", "Claude가 나머지 설치를 합니다. 끝나면 같은 입력창에 이렇게 치세요: " + (it.tips[0] || "바로 써 보세요."), "media/code-button.svg"]]
+    : [["'커넥터 설정 열기' 누르기 → 목록에서 '연결' → 로그인", "Claude 앱 설정 페이지가 열립니다. 찾아서 '연결'을 누르고 로그인하면 끝."],["채팅에 이렇게 치기", it.tips[0] || "바로 써 보세요."]];
   const actions = `<div class="big-install">
           ${hasCmd?(deep?`<a class="install" href="${esc(deep)}" data-deep="${esc(deep)}" data-item="${it.id}" data-track="${it.id}" style="text-decoration:none;text-align:center">⚡ 딸깍 설치</a>`:`<button class="install" data-copy="${esc(cmd)}" data-track="${it.id}">⚡ 설치 명령 복사</button>`):`<a class="btn-outline" href="${esc(it.link)}" target="_blank" rel="noopener" data-track="${it.id}" style="background:var(--accent);color:var(--accent-fg);border-color:var(--accent)">⚡ 커넥터 설정 열기</a>`}
           <a class="btn-outline" href="${esc(it.repo)}" target="_blank" rel="noopener">원문(깃허브) 보기</a>
@@ -751,7 +751,7 @@ function openDetail(id) {
           <div class="readme-body">${it.readme_ko.map(s=>`<section><h5>${esc(s.h)}</h5><p>${esc(s.p).replace(/\n/g,"<br>")}</p></section>`).join("")}</div>
         </details>`:""}
         <div>
-          <h4 style="margin:0 0 10px;font-size:15px">설치 방법 (3단계)</h4>
+          <h4 style="margin:0 0 10px;font-size:15px">설치 방법 (${steps.length}단계)</h4>
           <div class="steps">${steps.map((s,i)=>`<div class="stp"><span class="num">${i+1}</span><div class="txt"><b>${esc(s[0])}</b><span>${esc(s[1])}</span>${s[2]?`<img src="${s[2]}" alt="" style="display:block;margin-top:8px;max-width:260px;width:100%;border-radius:10px;border:1px solid var(--line)">`:""}</div></div>`).join("")}</div>
           ${hasCmd?(deep?`<details style="margin-top:8px"><summary style="cursor:pointer;color:var(--muted);font-size:13px">도우미 없이 직접 하는 방법 (명령 복사)</summary><div class="cmd"><code>${esc(cmd)}</code><button data-copy="${esc(cmd)}">복사</button></div></details>`:`<div class="cmd"><code>${esc(cmd)}</code><button data-copy="${esc(cmd)}">복사</button></div>`):""}
         </div>
