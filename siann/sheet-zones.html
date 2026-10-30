@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>딸깍 칸 구분 시안</title>
+<style>
+  :root{--fg:#111;--muted:#6e6e73;--line:#e5e5ea;--soft:#f5f5f7;--accent:#0b2a6f}
+  body{margin:0;background:#ececf0;font-family:-apple-system,"Pretendard","Apple SD Gothic Neo","Malgun Gothic",sans-serif;color:var(--fg);padding:28px 16px 60px}
+  h1{font-size:22px;margin:0 0 4px}.sub{color:var(--muted);font-size:14px;margin:0 0 22px}
+  .row{display:flex;gap:22px;overflow-x:auto;padding-bottom:12px;align-items:flex-start}
+  .col{flex:0 0 370px}.col>h2{font-size:16px;margin:0 0 4px}.col>p{font-size:13px;color:var(--muted);margin:0 0 12px;min-height:54px}
+  .phone{background:#fff;border:1px solid #d9d9de;border-radius:28px;height:760px;overflow-y:auto;position:relative;box-shadow:0 10px 30px rgba(0,0,0,.08)}
+  .phone::-webkit-scrollbar{width:0}
+  .pad{padding:14px 16px}
+  .tag{display:inline-block;font-size:11px;font-weight:700;padding:3px 8px;border-radius:980px;background:var(--soft);color:var(--muted);margin-right:4px}
+  .tag.plugin{background:#e8edf8;color:var(--accent)}
+  h3.name{font-size:21px;margin:8px 0 2px;letter-spacing:-.3px}h3.name small{font-weight:500;color:var(--muted);font-size:13px;margin-left:4px}
+  .one{font-size:14px;color:#333;margin:0 0 4px}.meta{font-size:12px;color:var(--muted);margin:0}.meta b{color:#111}.stars{color:#f5a623;font-size:12px;letter-spacing:1px}
+  .install{display:block;background:var(--accent);color:#fff;border-radius:980px;padding:13px;font-weight:700;font-size:15px;text-align:center}
+  .btns{display:flex;gap:8px;margin:12px 0 0}.btns .install{flex:1}.btns .out{flex:1;border:1px solid var(--accent);color:var(--accent);border-radius:980px;padding:12px;text-align:center;font-weight:700;font-size:14px}
+  h4{margin:0 0 8px;font-size:15px}
+  .stp{display:flex;gap:8px;margin:8px 0}.num{flex:0 0 20px;height:20px;border-radius:50%;background:var(--accent);color:#fff;font-size:11px;font-weight:700;display:grid;place-items:center}.stp span{font-size:13px;line-height:1.45}
+  .try{border:2px solid var(--accent);border-radius:10px;padding:9px 12px;font-size:14px;font-weight:600;display:flex;justify-content:space-between;align-items:center;margin-top:8px}.try i{font-style:normal;background:var(--accent);color:#fff;border-radius:6px;padding:3px 9px;font-size:12px}
+  .note{font-size:12px;color:var(--muted);margin-top:4px}.note b{display:inline-grid;place-items:center;width:15px;height:15px;border-radius:50%;background:#f5a623;color:#fff;font-size:10px;margin-right:5px;vertical-align:-2px}
+  .k{font-size:13px;color:var(--muted);font-weight:600;margin:12px 0 4px}.k:first-child{margin-top:0}.t{font-size:13.5px;line-height:1.55;margin:0}.t ul{margin:0;padding-left:16px}
+  details{font-size:14px;font-weight:700;margin-top:10px}details span{font-weight:500;color:var(--muted);font-size:12px}
+  .vids{display:flex;gap:8px;overflow-x:auto}.vids img{width:100px;height:178px;object-fit:cover;border-radius:10px;flex:0 0 auto;background:#000}
+  .rev{border-top:1px solid var(--line);padding:9px 0;font-size:13px}.rev b{font-size:12px;color:var(--muted);font-weight:600}
+  .pic{display:block;width:200px;border-radius:10px;border:1px solid var(--line);margin-top:8px}
+  /* A: 구분선 + 작은 라벨 */
+  .a .sec{padding:18px 16px;border-top:1px solid var(--line)}.a .lbl{font-size:11px;font-weight:700;letter-spacing:.1em;color:var(--muted);margin:0 0 10px}
+  /* B: 배경 톤 */
+  .b .sec{padding:18px 16px}.b .gray{background:var(--soft)}.b .sec h4.big{font-size:17px;margin-bottom:10px}
+  /* C: 여백 + 큰 제목 + 점프 칩 */
+  .c .chips{display:flex;gap:6px;padding:10px 16px 0;position:sticky;top:0;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);z-index:2}.c .chips span{font-size:12px;font-weight:700;padding:6px 10px;border-radius:980px;background:var(--soft);color:var(--muted)}.c .chips span.on{background:#111;color:#fff}
+  .c .sec{padding:26px 16px 6px}.c .sec h4.big{font-size:19px;letter-spacing:-.3px;margin-bottom:12px}
+</style></head><body>
+<h1>칸 구분 시안 (상자 없이)</h1>
+<p class="sub">세 개 다 제목 바로 밑에 설치가 붙어요. 다른 건 "설치 → 알아보기 → 영상 → 후기"를 어떻게 나누느냐.</p>
+<div class="row">
+
+<div class="col"><h2>A. 가는 선 + 작은 라벨</h2><p>칸 사이에 머리카락 선 하나, 왼쪽 위에 작은 회색 라벨(설치 / 알아보기 / 영상 / 후기). 제일 조용함. 쿠팡·당근 상세 페이지 방식.</p>
+<div class="phone a">
+  <div class="pad"><span class="tag plugin">플러그인</span><span class="tag">커뮤니티</span><span class="tag">Claude Code</span>
+    <h3 class="name">포니테일 <small>Ponytail</small></h3><p class="one">AI가 쓸데없이 길게 짜는 코드를 절반으로 줄여 주는 '고참 개발자 성격'.</p>
+    <p class="meta"><span class="stars">☆☆☆☆☆</span> 아직 평이 없어요 · 깃허브 ★ 18만 · 설치 4.1만</p>
+    <div class="btns"><span class="install">⚡ 딸깍 설치</span><span class="out">원문 보기</span></div>
+    <h4 style="margin-top:16px">설치 방법 (2단계)</h4>
+    <div class="stp"><span class="num">1</span><span>'딸깍 설치' 누르기 → 뜨는 창마다 '열기', '예'</span></div>
+    <div class="stp"><span class="num">2</span><span>Claude 앱 왼쪽 위 &lt;/&gt; 버튼 → 아래 입력창에 이렇게 치기<img class="pic" src="../media/code-button.svg" alt=""><span class="try">/ponytail-review <i>복사</i></span><span class="note"><b>!</b>설치가 끝나면 자동으로 복사돼 있어요. Ctrl+V 하고 엔터.</span></span></div>
+  </div>
+  <div class="sec"><p class="lbl">알아보기</p>
+    <p class="k">이게 뭐예요?</p><p class="t">50줄짜리 코드를 보여 주면 한 줄로 바꿔 놓는 그 고참 개발자를 AI 안에 넣은 것. 코드 -53%, 시간 -41%.</p>
+    <p class="k">이런 분께</p><p class="t">Claude가 코드를 너무 길게 짜서 돈·시간이 아까운 분</p>
+    <p class="k">이렇게 써요</p><p class="t"><ul><li>"/ponytail-review" 치면 고참처럼 검토</li><li>매 세션 자동으로 켜짐</li></ul></p>
+    <p class="k">믿어도 되나</p><p class="t"><ul><li>깃허브 ★18만, MIT</li><li>exe·dll 없는 순수 텍스트</li></ul></p>
+    <details><summary>원문 설명 한글판 <span>· 5개 항목</span></summary></details></div>
+  <div class="sec"><p class="lbl">짧은 영상</p><div class="vids"><img src="https://i.ytimg.com/vi/rnF40kxwCIg/oar2.jpg" alt=""><img src="https://i.ytimg.com/vi/pKYAtrLJ-X4/oar2.jpg" alt=""><img src="https://i.ytimg.com/vi/C_0X56fe15w/oar2.jpg" alt=""></div></div>
+  <div class="sec"><p class="lbl">한국 사용자 이야기</p><div class="rev"><span class="stars">★★★★★</span> <b>딸깍편집팀</b><br>코드 양이 진짜 반으로 줄어요.</div><div class="rev"><span class="stars">★★★★☆</span> <b>초보개발자</b><br>lite로 바꾸니 딱 좋아요.</div><div style="height:30px"></div></div>
+</div></div>
+
+<div class="col"><h2>B. 배경 톤 번갈아</h2><p>선도 라벨도 없음. 설치는 흰 바탕, 알아보기는 연회색 바탕, 영상은 흰, 후기는 연회색. 눈이 알아서 "다른 칸"으로 읽음. 애플 설정 화면 방식.</p>
+<div class="phone b">
+  <div class="pad"><span class="tag plugin">플러그인</span><span class="tag">커뮤니티</span><span class="tag">Claude Code</span>
+    <h3 class="name">포니테일 <small>Ponytail</small></h3><p class="one">AI가 쓸데없이 길게 짜는 코드를 절반으로 줄여 주는 '고참 개발자 성격'.</p>
+    <p class="meta"><span class="stars">☆☆☆☆☆</span> 아직 평이 없어요 · 깃허브 ★ 18만 · 설치 4.1만</p>
+    <div class="btns"><span class="install">⚡ 딸깍 설치</span><span class="out">원문 보기</span></div>
+    <h4 style="margin-top:16px">설치 방법 (2단계)</h4>
+    <div class="stp"><span class="num">1</span><span>'딸깍 설치' 누르기 → 뜨는 창마다 '열기', '예'</span></div>
+    <div class="stp"><span class="num">2</span><span>Claude 앱 왼쪽 위 &lt;/&gt; 버튼 → 아래 입력창에 이렇게 치기<img class="pic" src="../media/code-button.svg" alt=""><span class="try">/ponytail-review <i>복사</i></span><span class="note"><b>!</b>설치가 끝나면 자동으로 복사돼 있어요. Ctrl+V 하고 엔터.</span></span></div>
+  </div>
+  <div class="sec gray"><h4 class="big">알아보기</h4>
+    <p class="k">이게 뭐예요?</p><p class="t">50줄짜리 코드를 보여 주면 한 줄로 바꿔 놓는 그 고참 개발자를 AI 안에 넣은 것. 코드 -53%, 시간 -41%.</p>
+    <p class="k">이런 분께</p><p class="t">Claude가 코드를 너무 길게 짜서 돈·시간이 아까운 분</p>
+    <p class="k">이렇게 써요</p><p class="t"><ul><li>"/ponytail-review" 치면 고참처럼 검토</li><li>매 세션 자동으로 켜짐</li></ul></p>
+    <p class="k">믿어도 되나</p><p class="t"><ul><li>깃허브 ★18만, MIT</li><li>exe·dll 없는 순수 텍스트</li></ul></p>
+    <details><summary>원문 설명 한글판 <span>· 5개 항목</span></summary></details></div>
+  <div class="sec"><h4 class="big">짧은 영상</h4><div class="vids"><img src="https://i.ytimg.com/vi/rnF40kxwCIg/oar2.jpg" alt=""><img src="https://i.ytimg.com/vi/pKYAtrLJ-X4/oar2.jpg" alt=""><img src="https://i.ytimg.com/vi/C_0X56fe15w/oar2.jpg" alt=""></div></div>
+  <div class="sec gray"><h4 class="big">한국 사용자 이야기</h4><div class="rev"><span class="stars">★★★★★</span> <b>딸깍편집팀</b><br>코드 양이 진짜 반으로 줄어요.</div><div class="rev"><span class="stars">★★★★☆</span> <b>초보개발자</b><br>lite로 바꾸니 딱 좋아요.</div><div style="height:30px"></div></div>
+</div></div>
+
+<div class="col"><h2>C. 여백 + 큰 제목 + 점프 칩</h2><p>선·배경 다 없음. 칸마다 큰 제목이랑 넉넉한 여백만. 제목 밑에 "설치 · 알아보기 · 영상 · 후기" 칩이 따라다녀서 누르면 그 칸으로 점프. 애플 제품 페이지 방식.</p>
+<div class="phone c">
+  <div class="pad" style="padding-bottom:0"><span class="tag plugin">플러그인</span><span class="tag">커뮤니티</span><span class="tag">Claude Code</span>
+    <h3 class="name">포니테일 <small>Ponytail</small></h3><p class="one">AI가 쓸데없이 길게 짜는 코드를 절반으로 줄여 주는 '고참 개발자 성격'.</p>
+    <p class="meta"><span class="stars">☆☆☆☆☆</span> 아직 평이 없어요 · 깃허브 ★ 18만 · 설치 4.1만</p></div>
+  <div class="chips"><span class="on">설치</span><span>알아보기</span><span>영상 3</span><span>후기</span></div>
+  <div class="sec" style="padding-top:12px">
+    <div class="btns" style="margin-top:0"><span class="install">⚡ 딸깍 설치</span><span class="out">원문 보기</span></div>
+    <h4 class="big" style="margin-top:18px">설치 방법 <small style="font-weight:500;color:var(--muted);font-size:13px">2단계</small></h4>
+    <div class="stp"><span class="num">1</span><span>'딸깍 설치' 누르기 → 뜨는 창마다 '열기', '예'</span></div>
+    <div class="stp"><span class="num">2</span><span>Claude 앱 왼쪽 위 &lt;/&gt; 버튼 → 아래 입력창에 이렇게 치기<img class="pic" src="../media/code-button.svg" alt=""><span class="try">/ponytail-review <i>복사</i></span><span class="note"><b>!</b>설치가 끝나면 자동으로 복사돼 있어요. Ctrl+V 하고 엔터.</span></span></div>
+  </div>
+  <div class="sec"><h4 class="big">알아보기</h4>
+    <p class="k">이게 뭐예요?</p><p class="t">50줄짜리 코드를 보여 주면 한 줄로 바꿔 놓는 그 고참 개발자를 AI 안에 넣은 것. 코드 -53%, 시간 -41%.</p>
+    <p class="k">이런 분께</p><p class="t">Claude가 코드를 너무 길게 짜서 돈·시간이 아까운 분</p>
+    <p class="k">이렇게 써요</p><p class="t"><ul><li>"/ponytail-review" 치면 고참처럼 검토</li><li>매 세션 자동으로 켜짐</li></ul></p>
+    <p class="k">믿어도 되나</p><p class="t"><ul><li>깃허브 ★18만, MIT</li><li>exe·dll 없는 순수 텍스트</li></ul></p>
+    <details><summary>원문 설명 한글판 <span>· 5개 항목</span></summary></details></div>
+  <div class="sec"><h4 class="big">짧은 영상</h4><div class="vids"><img src="https://i.ytimg.com/vi/rnF40kxwCIg/oar2.jpg" alt=""><img src="https://i.ytimg.com/vi/pKYAtrLJ-X4/oar2.jpg" alt=""><img src="https://i.ytimg.com/vi/C_0X56fe15w/oar2.jpg" alt=""></div></div>
+  <div class="sec"><h4 class="big">한국 사용자 이야기</h4><div class="rev"><span class="stars">★★★★★</span> <b>딸깍편집팀</b><br>코드 양이 진짜 반으로 줄어요.</div><div class="rev"><span class="stars">★★★★☆</span> <b>초보개발자</b><br>lite로 바꾸니 딱 좋아요.</div><div style="height:30px"></div></div>
+</div></div>
+
+</div></body></html>
