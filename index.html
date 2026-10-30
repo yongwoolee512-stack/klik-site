@@ -102,6 +102,7 @@ section { margin-top: 36px; }
 .badge { font-size: 11px; font-weight: 700; padding: 3px 8px; border-radius: 6px; background: var(--surface); color: var(--fg); }
 .badge.hot { background: #e8552f; color: #fff; }
 .badge.new { background: var(--accent); color: var(--accent-fg); }
+.badge.md { background: #111; color: #fff; } .md-why { background: #fff8e6; border: 1px solid #f3dca0; border-radius: 12px; padding: 10px 14px; font-size: 13.5px; line-height: 1.55; } .md-why b { display: block; font-size: 12px; color: #8a6200; margin-bottom: 3px; letter-spacing: .04em; }
 .fav { position: absolute; top: 8px; right: 8px; border: 0; background: var(--surface); width: 30px; height: 30px; border-radius: 50%; font-size: 14px; display: grid; place-items: center; }
 .fav[aria-pressed="true"] { color: #e9472f; }
 .cbody { padding: 14px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
@@ -686,7 +687,7 @@ function filtered() {
     (!q || [it.name, it.en, it.one, it.when, ...(it.tips||[]), CATS.find(c=>c.id===it.cat).name].join(" ").toLowerCase().includes(q))
   );
   const s = state.sort;
-  list.sort((a,b) => s==="stars" ? b.stars-a.stars : s==="easy" ? a.level-b.level || b.installs-a.installs : s==="new" ? (b.isNew?1:0)-(a.isNew?1:0) || b.installs-a.installs || b.stars-a.stars : b.installs-a.installs || b.stars-a.stars);
+  list.sort((a,b) => (s==="installs" && ((b.pick?1:0)-(a.pick?1:0))) || (s==="stars" ? b.stars-a.stars : s==="easy" ? a.level-b.level || b.installs-a.installs : s==="new" ? (b.isNew?1:0)-(a.isNew?1:0) || b.installs-a.installs || b.stars-a.stars : b.installs-a.installs || b.stars-a.stars));
   return list;
 }
 
@@ -714,7 +715,7 @@ function renderGrid() {
   const cards = list.map(it => `
     <div class="card" role="button" tabindex="0" data-open="${it.id}">
       ${win(it.color)}
-      <div class="badge-row">${it.hot?'<span class="badge hot">인기</span>':''}${it.isNew?'<span class="badge new">NEW</span>':''}</div>
+      <div class="badge-row">${it.pick?'<span class="badge md">MD 추천</span>':''}${it.hot?'<span class="badge hot">인기</span>':''}${it.isNew?'<span class="badge new">NEW</span>':''}</div>
       <button class="fav" data-fav="${it.id}" aria-pressed="${state.favs.has(it.id)}" aria-label="찜">${state.favs.has(it.id)?'♥':'♡'}</button>
       <div class="cbody">
         <div class="kind"><span class="tag ${it.kind}">${KIND[it.kind]}</span>${it.trust&&TRUST_LABEL[it.trust.grade]?`<span class="tag trust-${it.trust.grade}">${TRUST_LABEL[it.trust.grade]}</span>`:""}${(it.plat||[]).map(p=>`<span>${PLAT[p]}</span>`).join("<span>·</span>")}</div>
@@ -761,7 +762,7 @@ function openDetail(id) {
     <div class="sheet">
       <div class="sheet-head">
         <div>
-          <div class="kind"><span class="tag ${it.kind}">${KIND[it.kind]}</span>${it.trust&&TRUST_LABEL[it.trust.grade]?`<span class="tag trust-${it.trust.grade}">${TRUST_LABEL[it.trust.grade]}</span>`:""}<span>${it.plat.map(p=>PLAT[p]).join(" · ")}</span><span>·</span><span>난이도: ${LEVEL_TXT[it.level]}</span></div>
+          <div class="kind"><span class="tag ${it.kind}">${KIND[it.kind]}</span>${it.trust&&TRUST_LABEL[it.trust.grade]?`<span class="tag trust-${it.trust.grade}">${TRUST_LABEL[it.trust.grade]}</span>`:""}${it.pick?`<span class="badge md" style="position:static;margin-left:4px">MD 추천</span>`:""}<span>${it.plat.map(p=>PLAT[p]).join(" · ")}</span><span>·</span><span>난이도: ${LEVEL_TXT[it.level]}</span></div>
           <h2>${esc(it.name)} <span class="en" style="font-size:14px;color:var(--muted);font-weight:400">${esc(it.en)}</span></h2>
           <p class="one-line" style="font-size:14px;color:#333">${esc(it.one)}</p>
           ${window.CM ? CM.cardLine(it.id) : ""}
@@ -780,6 +781,7 @@ function openDetail(id) {
         </section>
         <section class="zone">
           <h3>알아보기</h3>
+          ${it.pick?`<div class="md-why" style="margin-bottom:12px"><b>딸깍 편집팀이 추천하는 이유</b>${esc(it.pick)}</div>`:""}
           <div class="blocks">
             <div class="blk"><h4>이게 뭐예요?</h4><p>${esc(it.one)}</p></div>
             <div class="blk"><h4>이런 분께 추천</h4><p>${esc(it.when)}</p></div>
