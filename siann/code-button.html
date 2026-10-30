@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>딸깍 그림 시안</title>
+<style>
+  body{margin:0;background:#f5f5f7;font-family:-apple-system,"Pretendard","Apple SD Gothic Neo","Malgun Gothic",sans-serif;color:#111;padding:32px 16px}
+  h1{font-size:22px;margin:0 0 6px} p.sub{color:#666;margin:0 0 28px;font-size:14px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;max-width:1100px;margin:0 auto}
+  .card{background:#fff;border:1px solid #e5e5ea;border-radius:16px;padding:18px}
+  .card h2{font-size:16px;margin:0 0 4px} .card p{font-size:13px;color:#666;margin:0 0 14px}
+  .stp{display:flex;gap:10px;align-items:flex-start;background:#f5f5f7;border-radius:12px;padding:12px}
+  .num{flex:0 0 22px;height:22px;border-radius:50%;background:#0b2a6f;color:#fff;font-size:12px;font-weight:700;display:grid;place-items:center}
+  .txt b{display:block;font-size:14px;margin-bottom:2px} .txt span{font-size:13px;color:#555}
+  .txt svg{display:block;margin-top:10px;max-width:260px;width:100%;border-radius:10px}
+</style></head><body>
+<h1>"왼쪽 위 &lt;/&gt; 버튼" 그림 시안</h1>
+<p class="sub">설치 3단계에 들어갈 그림. 사진 대신 사이트 톤으로 그린 것 3개.</p>
+<div class="grid">
+
+<div class="card"><h2>A. 사이드바 재현</h2><p>실제 Claude 앱 왼쪽 메뉴를 그대로 그리고 버튼만 네이비 링으로 강조. 가장 "그 화면이네" 하고 알아봄.</p>
+<div class="stp"><span class="num">3</span><div class="txt"><b>Claude 앱 열기 → 왼쪽 위 &lt;/&gt; 버튼 누르기</b><span>왼쪽 위에 &lt;/&gt; 모양 버튼(Code)이 있어요. 이걸 눌러서 나오는 화면에서만 됩니다.</span>
+<svg viewBox="0 0 260 180" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,Malgun Gothic,sans-serif">
+  <rect width="260" height="180" rx="12" fill="#1f1f22"/>
+  <g fill="none" stroke="#8e8e93" stroke-width="1.8" stroke-linecap="round"><path d="M18 22h14M18 27h14M18 32h14"/><rect x="44" y="20" width="14" height="12" rx="2"/><path d="M74 21l-5 5 5 5M88 21l5 5-5 5"/></g>
+  <circle cx="184" cy="26" r="11" fill="#2c2c2e"/><path d="M178 24a4 4 0 1 1 8 0v2a4 4 0 0 1-8 0zM186 31l5-5" fill="none" stroke="#8e8e93" stroke-width="1.6" stroke-linecap="round"/>
+  <rect x="207" y="13" width="34" height="26" rx="7" fill="#3a3a3c"/>
+  <text x="224" y="31" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">&lt;/&gt;</text>
+  <rect x="202" y="8" width="44" height="36" rx="11" fill="none" stroke="#2f6bff" stroke-width="2.5"/>
+  <g fill="#d1d1d6" font-size="12"><text x="18" y="66">＋  새로 만들기</text><text x="18" y="94">⌕  검색</text><text x="18" y="122">▢  아티팩트</text><text x="18" y="150">▭  사용자 지정</text></g>
+  <path d="M224 66v-14" stroke="#2f6bff" stroke-width="2.5" stroke-linecap="round"/><path d="M218 58l6-8 6 8" fill="none" stroke="#2f6bff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="150" y="76" width="96" height="24" rx="12" fill="#2f6bff"/><text x="198" y="92" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">여기를 누르세요</text>
+</svg></div></div></div>
+
+<div class="card"><h2>B. 버튼 하나 크게</h2><p>버튼만 확대. 메뉴 그리지 않아서 가장 단순. 앱 디자인이 바뀌어도 안 깨짐.</p>
+<div class="stp"><span class="num">3</span><div class="txt"><b>Claude 앱 열기 → 왼쪽 위 &lt;/&gt; 버튼 누르기</b><span>왼쪽 위에 &lt;/&gt; 모양 버튼(Code)이 있어요. 이걸 눌러서 나오는 화면에서만 됩니다.</span>
+<svg viewBox="0 0 260 150" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,Malgun Gothic,sans-serif">
+  <rect width="260" height="150" rx="12" fill="#f5f5f7"/>
+  <rect x="86" y="22" width="88" height="66" rx="18" fill="#1f1f22"/>
+  <text x="130" y="66" text-anchor="middle" font-size="34" font-weight="800" fill="#fff">&lt;/&gt;</text>
+  <rect x="79" y="15" width="102" height="80" rx="23" fill="none" stroke="#0b2a6f" stroke-width="3"/>
+  <text x="130" y="122" text-anchor="middle" font-size="13" font-weight="700" fill="#0b2a6f">Claude 앱 왼쪽 위, 이 모양 버튼</text>
+  <text x="130" y="140" text-anchor="middle" font-size="11" fill="#666">이름은 Code · 채팅 화면 아님</text>
+</svg></div></div></div>
+
+<div class="card"><h2>C. 앱 창 전체</h2><p>창 전체를 작게 그려 "왼쪽 위"라는 위치를 보여 줌. 어디에 있는지 모르는 사람에게 제일 친절.</p>
+<div class="stp"><span class="num">3</span><div class="txt"><b>Claude 앱 열기 → 왼쪽 위 &lt;/&gt; 버튼 누르기</b><span>왼쪽 위에 &lt;/&gt; 모양 버튼(Code)이 있어요. 이걸 눌러서 나오는 화면에서만 됩니다.</span>
+<svg viewBox="0 0 260 170" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,Malgun Gothic,sans-serif">
+  <rect width="260" height="170" rx="12" fill="#e9e9ee"/>
+  <rect x="10" y="10" width="240" height="150" rx="10" fill="#fff" stroke="#d9d9de"/>
+  <rect x="10" y="10" width="88" height="150" rx="10" fill="#1f1f22"/><rect x="60" y="10" width="38" height="150" fill="#1f1f22"/>
+  <g fill="none" stroke="#8e8e93" stroke-width="1.5" stroke-linecap="round"><path d="M20 23h9M20 27h9M20 31h9"/><rect x="36" y="22" width="9" height="8" rx="1.5"/></g>
+  <rect x="72" y="18" width="20" height="16" rx="5" fill="#3a3a3c"/><text x="82" y="30" text-anchor="middle" font-size="9" font-weight="700" fill="#fff">&lt;/&gt;</text>
+  <g fill="#9a9aa0" font-size="8"><text x="20" y="54">＋ 새로 만들기</text><text x="20" y="72">⌕ 검색</text><text x="20" y="90">▢ 아티팩트</text><text x="20" y="108">▭ 사용자 지정</text></g>
+  <g fill="#e5e5ea"><rect x="120" y="50" width="100" height="8" rx="4"/><rect x="120" y="66" width="80" height="8" rx="4"/><rect x="120" y="82" width="110" height="8" rx="4"/></g>
+  <rect x="112" y="128" width="126" height="20" rx="10" fill="#f5f5f7" stroke="#d9d9de"/><text x="122" y="142" font-size="8" fill="#9a9aa0">여기에 치면 됩니다</text>
+  <circle cx="82" cy="26" r="16" fill="none" stroke="#2f6bff" stroke-width="2.5"/>
+  <path d="M140 26h-36" stroke="#2f6bff" stroke-width="2.5" stroke-linecap="round"/><path d="M110 20l-8 6 8 6" fill="none" stroke="#2f6bff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="142" y="15" width="92" height="22" rx="11" fill="#2f6bff"/><text x="188" y="30" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">왼쪽 위 이 버튼</text>
+</svg></div></div></div>
+
+</div></body></html>
