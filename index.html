@@ -713,13 +713,13 @@ function openDetail(id) {
   const hasCmd = !!cmd;
   const deep = hasCmd ? deepLink(it) : "";
   const steps = deep
-    ? [["'딸깍 설치' 누르기", "브라우저가 '딸깍 도우미를 열까요?'라고 물으면 '열기'를 누르세요."],["도우미 확인창에서 '예'", "무엇이 설치되는지 보여 주고 묻습니다. '예' 한 번이면 끝."],...(it.login ? [["처음 한 번 로그인", `Claude Code에서 /mcp 치고 ${it.en.split(" ")[0]}을(를) 고르면 브라우저에 로그인 창이 떠요. 승인하면 끝.`]] : []), ["써 보기", it.tips[0] || "채팅으로 바로 써 보세요."]]
+    ? [["'딸깍 설치' 누르기", "브라우저가 '딸깍 도우미를 열까요?'라고 물으면 '열기'를 누르세요."],["도우미 확인창에서 '예'", "무엇이 설치되는지 보여 주고 묻습니다. '예' 한 번이면 끝."],["Claude 앱 열기 → 왼쪽 '코드' 탭", "채팅 탭이 아니라 '코드' 탭입니다. 여기 입력창에 치는 것만 됩니다."],...(it.login ? [["처음 한 번 로그인", `코드 탭 입력창에 /mcp 치고 엔터 → ${it.en.split(" ")[0]} 고르기 → 브라우저에 뜨는 로그인 창에서 '승인'.`]] : []), ["코드 탭 입력창에 이렇게 치기", it.tips[0] || "바로 써 보세요."]]
     : hasCmd
-    ? [["설치 명령 복사", "아래 '복사' 버튼을 누르면 복사됩니다."],["Claude Code 창에 붙여넣기", "Ctrl+V 하고 엔터. 끝입니다."],["써 보기", it.tips[0] || "채팅으로 바로 써 보세요."]]
+    ? [["설치 명령 복사", "아래 '복사' 버튼을 누르면 복사됩니다."],["Claude 앱 열기 → 왼쪽 '코드' 탭 → 입력창에 붙여넣기", "채팅 탭이 아니라 '코드' 탭입니다. Ctrl+V 하고 엔터. 끝입니다."],["코드 탭 입력창에 이렇게 치기", it.tips[0] || "바로 써 보세요."]]
     : [["Claude 앱 설정 열기", "'커넥터 설정 열기' 버튼을 누르면 설정 페이지로 갑니다."],["연결 버튼 누르기", "목록에서 찾아 '연결'을 누르고 로그인하면 됩니다."],["써 보기", it.tips[0] || "채팅으로 바로 써 보세요."]];
   const actions = `<div class="big-install">
           ${hasCmd?(deep?`<a class="install" href="${esc(deep)}" data-deep="${esc(deep)}" data-item="${it.id}" data-track="${it.id}" style="text-decoration:none;text-align:center">⚡ 딸깍 설치</a>`:`<button class="install" data-copy="${esc(cmd)}" data-track="${it.id}">⚡ 설치 명령 복사</button>`):`<a class="btn-outline" href="${esc(it.link)}" target="_blank" rel="noopener" data-track="${it.id}" style="background:var(--accent);color:var(--accent-fg);border-color:var(--accent)">⚡ 커넥터 설정 열기</a>`}
-          ${hasCmd&&it.link?`<a class="btn-outline" href="${esc(it.link)}" target="_blank" rel="noopener">채팅 앱(claude.ai)에서 쓰려면 커넥터 연결</a>`:""}<a class="btn-outline" href="${esc(it.repo)}" target="_blank" rel="noopener">원문(깃허브) 보기</a>
+          <a class="btn-outline" href="${esc(it.repo)}" target="_blank" rel="noopener">원문(깃허브) 보기</a>
         </div>`;
   const html = `
   <div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="${esc(it.name)}">
