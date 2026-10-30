@@ -137,3 +137,48 @@ grant select on public.story_metoo_counts, public.tool_solved_counts, public.act
 -- 8) (추가) 한 줄 평에도 답글 허용 — 상세 창을 글 목록 하나로 합치면서 필요 ----------
 alter table public.replies drop constraint if exists replies_target_check;
 alter table public.replies add constraint replies_target_check check (target in ('comment', 'story', 'question', 'review'));
+
+-- 7) 답글의 답글(깊이 제한 없음) + 모든 답글에 추천 ------------------------------
+alter table public.replies add column if not exists parent_id bigint references public.replies (id) on delete cascade;
+alter table public.replies add column if not exists likes integer not null default 0;
+create index if not exists replies_parent on public.replies (parent_id);
+
+-- 자식 답글은 부모의 target·target_id·tool_id를 그대로 물려받는다 (클라이언트가 틀려도 서버가 맞춤)
+create or replace function public.replies_inherit_parent()
+returns trigger language plpgsql security definer set search_path = public as $$
+declare p record;
+begin
+  if new.parent_id is not null then
+    select target, target_id, tool_id into p from public.replies where id = new.parent_id and hidden = false;
+    if p is null then raise exception '답글을 달 글이 없어요'; end if;
+    new.target := p.target; new.target_id := p.target_id; new.tool_id := p.tool_id;
+  end if;
+  new.likes := 0;
+  return new;
+end $$;
+drop trigger if exists replies_inherit_parent on public.replies;
+create trigger replies_inherit_parent before insert on public.replies
+  for each row execute function public.replies_inherit_parent();
+
+-- 답글 추천 (브라우저별 답글당 1회). 추천 수는 서버가 세어 replies.likes에 반영
+create table if not exists public.reply_likes (
+  id         bigint generated always as identity primary key,
+  reply_id   bigint not null references public.replies (id) on delete cascade,
+  client     text not null check (char_length(client) between 8 and 64),
+  created_at timestamptz not null default now(),
+  unique (reply_id, client)
+);
+alter table public.reply_likes enable row level security;
+drop policy if exists "reply_likes_insert" on public.reply_likes;
+create policy "reply_likes_insert" on public.reply_likes for insert to anon, authenticated with check (true);
+grant insert on public.reply_likes to anon, authenticated;
+
+create or replace function public.reply_likes_count()
+returns trigger language plpgsql security definer set search_path = public as $$
+begin
+  update public.replies set likes = (select count(*) from public.reply_likes where reply_id = new.reply_id) where id = new.reply_id;
+  return new;
+end $$;
+drop trigger if exists reply_likes_count on public.reply_likes;
+create trigger reply_likes_count after insert on public.reply_likes
+  for each row execute function public.reply_likes_count();

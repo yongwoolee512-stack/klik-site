@@ -402,6 +402,9 @@ html:not(.zone-tint):not(.zone-line) .sheet-body { gap:0; padding:16px 0 0; } ht
 .cm-reply .meta2 button.solve { color:#1f8a4c; }
 .cm-reply-form { display:grid; gap:8px; background:var(--bg); border-radius:12px; padding:10px; box-shadow:inset 0 0 0 1px var(--line); }
 .cm-reply-form[hidden] { display:none; }
+.cm-thread.sub { margin-left:6px; margin-top:4px; padding-left:10px; }
+.cm-thread.sub.flat { margin-left:0; padding-left:8px; }
+.cm-reply .body2 .to { color:var(--accent); font-weight:600; font-size:12px; }
 .cm-reply-form select { border:0; background:var(--surface); color:var(--fg); border-radius:12px; padding:8px 12px; font:inherit; font-size:13px; flex:1 1 160px; }
 .cm-row .btn-outline { padding:8px 14px; font-size:13px; }
 @media (max-width:760px) { .cm-thread { margin-left:6px; padding-left:8px; } }
@@ -962,7 +965,7 @@ window.CM = (() => {
   }
   async function repliesFor(target, ids) {
     const map = {}; if (!ids.length) return map;
-    const { data, error } = await S.sb.from("replies").select("id,target,target_id,rec_tool,nick,body,created_at").eq("target", target).in("target_id", ids).order("created_at", { ascending: true });
+    const { data, error } = await S.sb.from("replies").select("id,target,target_id,parent_id,likes,rec_tool,nick,body,created_at").eq("target", target).in("target_id", ids).order("created_at", { ascending: true });
     if (error) { console.warn(error); return map; }
     (data || []).forEach(x => (map[x.target_id] = map[x.target_id] || []).push(x));
     return map;
@@ -984,24 +987,35 @@ window.CM = (() => {
     S.sb.from("installs").insert({ tool_id: id, client: client() }).then(({ error }) => { if (!error) refresh(); else console.warn(error); });
   }
 
-  // ---- 답글 스레드 (후기·댓글·사연·질문 공용) ----
+  // ---- 답글 스레드 (후기·댓글·사연·질문 공용) — 답글의 답글은 깊이 제한 없이, 모든 답글에 추천 ----
+  const rfId = (key, part) => `rf-${part}-${key.replace(/:/g, "-")}`;
+  function replyForm(key, opts) {
+    const [target] = key.split(":"), nested = key.split(":").length > 2;
+    return `
+      <div class="cm-reply-form" data-rf="${key}" hidden>
+        <div class="cm-row">${nickInput(rfId(key, "nick"))}<textarea id="${rfId(key, "body")}" maxlength="500" placeholder="${nested ? "이 답글에 답글" : target === "question" ? "어떤 도구로 어떻게 하면 되는지 적어 주세요" : target === "story" ? "어떻게 해결했는지 적어 주세요" : "답글"}"></textarea></div>
+        <div class="cm-row">${opts.allowTool && !nested ? `<select id="${rfId(key, "tool")}"><option value="">추천 도구 (선택)</option>${ITEMS.map(it => `<option value="${esc(it.id)}">${esc(it.name)}</option>`).join("")}</select>` : ""}<button class="install" data-cm-reply-send="${key}">답글 달기</button><button class="btn-outline" data-cm-reply-open="${key}">닫기</button></div>
+      </div>`;
+  }
   function thread(target, id, replies, opts) {
     const o = Object.assign({ owner: false, solvedId: null, allowTool: false }, opts || {});
-    const list = [...(replies || [])].sort((a, b) => (a.id === o.solvedId ? -1 : b.id === o.solvedId ? 1 : 0));
-    const items = list.map(r => `
-      <div class="cm-reply ${r.id === o.solvedId ? "answer" : ""}">
-        <div class="body2">${esc(r.body)}</div>
+    const all = replies || [], kids = {}, byId = {};
+    all.forEach(r => { byId[r.id] = r; (kids[r.parent_id || 0] = kids[r.parent_id || 0] || []).push(r); });
+    const node = (r, depth) => {
+      const key = `${target}:${id}:${r.id}`, ch = kids[r.id] || [], parent = r.parent_id ? byId[r.parent_id] : null;
+      return `
+      <div class="cm-reply ${r.id === o.solvedId ? "answer" : ""}" data-depth="${depth}">
+        <div class="body2">${depth > 2 && parent ? `<span class="to">↳ ${esc(parent.nick || "익명")}</span> ` : ""}${esc(r.body)}</div>
         ${r.rec_tool ? `<div>${toolChip(r.rec_tool)}</div>` : ""}
         <div class="meta2"><span><b>${esc(r.nick || "익명")}</b> · ${dstr(r.created_at)} ${r.id === o.solvedId ? '<span class="ok">해결 ✓</span>' : ""}</span>
-          <span>${o.owner && !o.solvedId && (target === "question" || target === "story") ? `<button class="solve" data-cm-solve="${target}:${id}:${r.id}">✓ 이게 됐어요</button> &nbsp; ` : ""}<button data-cm-report="reply:${r.id}">신고</button></span></div>
-      </div>`).join("");
-    const key = `${target}:${id}`;
-    const form = `
-      <div class="cm-reply-form" data-rf="${key}" hidden>
-        <div class="cm-row">${nickInput(`rf-nick-${target}-${id}`)}<textarea id="rf-body-${target}-${id}" maxlength="500" placeholder="${target === "question" ? "어떤 도구로 어떻게 하면 되는지 적어 주세요" : target === "story" ? "어떻게 해결했는지 적어 주세요" : "답글"}"></textarea></div>
-        <div class="cm-row">${o.allowTool ? `<select id="rf-tool-${target}-${id}"><option value="">추천 도구 (선택)</option>${ITEMS.map(it => `<option value="${esc(it.id)}">${esc(it.name)}</option>`).join("")}</select>` : ""}<button class="install" data-cm-reply-send="${key}">답글 달기</button><button class="btn-outline" data-cm-reply-open="${key}">닫기</button></div>
+          <span><button data-cm-rlike="${r.id}" aria-pressed="${ls.get("klik-rlike-" + r.id) === "1"}">👍 ${r.likes || 0}</button> &nbsp; <button data-cm-reply-open="${key}">${ch.length ? `답글 ${ch.length}` : "답글"}</button> &nbsp; ${o.owner && !o.solvedId && (target === "question" || target === "story") ? `<button class="solve" data-cm-solve="${target}:${id}:${r.id}">✓ 이게 됐어요</button> &nbsp; ` : ""}<button data-cm-report="reply:${r.id}">신고</button></span></div>
+        ${replyForm(key, o)}
+        ${ch.length ? `<div class="cm-thread sub ${depth >= 2 ? "flat" : ""}">${ch.map(c => node(c, depth + 1)).join("")}</div>` : ""}
       </div>`;
-    return `<div class="cm-thread" data-thread="${key}">${items}${form}</div>`;
+    };
+    const roots = [...(kids[0] || [])].sort((a, b) => (a.id === o.solvedId ? -1 : b.id === o.solvedId ? 1 : 0));
+    const key = `${target}:${id}`;
+    return `<div class="cm-thread" data-thread="${key}">${roots.map(r => node(r, 1)).join("")}${replyForm(key, o)}</div>`;
   }
   const replyBtn = (target, id, n) => `<button data-cm-reply-open="${target}:${id}">${n ? `답글 ${n}` : "답글 쓰기"}</button>`;
 
@@ -1039,7 +1053,7 @@ window.CM = (() => {
         S.sb.from("reactions").select(v2 ? "id,nick,note,created_at,solved_reply_id" : "id,nick,note,created_at").eq("tool_id", id).eq("kind", "blocked").neq("note", "").order("created_at", { ascending: false }).limit(50),
         S.sb.from("comments").select("id,nick,body,created_at").eq("tool_id", id).order("created_at", { ascending: false }).limit(100),
         v2 ? S.sb.from("questions").select("id,tool_id,nick,body,solved_reply_id,created_at").eq("tool_id", id).order("created_at", { ascending: false }).limit(50) : Promise.resolve({ data: [] }),
-        v2 ? S.sb.from("replies").select("id,target,target_id,rec_tool,nick,body,created_at").eq("tool_id", id).order("created_at", { ascending: true }) : Promise.resolve({ data: [] }),
+        v2 ? S.sb.from("replies").select("id,target,target_id,parent_id,likes,rec_tool,nick,body,created_at").eq("tool_id", id).order("created_at", { ascending: true }) : Promise.resolve({ data: [] }),
       ]);
       if (rv.error || bl.error || cm.error || qs.error || rp.error) throw (rv.error || bl.error || cm.error || qs.error || rp.error);
       const rpm = {}; (rp.data || []).forEach(x => (rpm[`${x.target}:${x.target_id}`] = rpm[`${x.target}:${x.target_id}`] || []).push(x));
@@ -1166,6 +1180,16 @@ window.CM = (() => {
     ls.set("klik-like-" + rid, "1");
     const r = S.data.posts.find(x => x.kind === "review" && x.id === Number(rid)); if (r) r.likes++; paint();
   }
+  async function rlike(rid) {
+    if (ls.get("klik-rlike-" + rid) === "1") { toast("이미 추천하셨어요"); return; }
+    const { error } = await S.sb.from("reply_likes").insert({ reply_id: Number(rid), client: client() });
+    if (error && error.code !== "23505") { err(error); return; }
+    ls.set("klik-rlike-" + rid, "1");
+    const bump = r => { if (r.id === Number(rid)) r.likes = (r.likes || 0) + 1; };
+    if (S.data) Object.values(S.data.rp).forEach(a => a.forEach(bump));
+    Object.values(S.qrp).forEach(a => a.forEach(bump));
+    document.querySelectorAll(`[data-cm-rlike="${rid}"]`).forEach(b => { b.setAttribute("aria-pressed", "true"); b.textContent = "👍 " + (Number(b.textContent.replace(/[^0-9]/g, "")) + 1); });
+  }
   async function metoo(sid) {
     if (ls.get("klik-metoo-" + sid) === "1") { toast("이미 누르셨어요"); return; }
     const { error } = await S.sb.from("story_metoo").insert({ story_id: Number(sid), client: client() });
@@ -1192,15 +1216,15 @@ window.CM = (() => {
     await refresh();
   }
   async function reply(key) {
-    const [target, tid] = key.split(":");
-    const body = ($(`#rf-body-${target}-${tid}`).value || "").trim().slice(0, 500), nk = nickOr($(`#rf-nick-${target}-${tid}`).value);
-    const selEl = $(`#rf-tool-${target}-${tid}`); const rec = selEl && selEl.value ? selEl.value : null;
+    const [target, tid, pid] = key.split(":");
+    const body = ($("#" + rfId(key, "body")).value || "").trim().slice(0, 500), nk = nickOr($("#" + rfId(key, "nick")).value);
+    const selEl = $("#" + rfId(key, "tool")); const rec = selEl && selEl.value ? selEl.value : null;
     if (!body) { toast("답글 내용을 적어 주세요"); return; }
     if (dirty(body) || dirty(nk)) { toast("표현을 조금만 순화해 주세요 🙏"); return; }
     if (rateLimited("klik-rp-at", 15000, "답글은 15초에 하나씩 쓸 수 있어요")) return;
     // 부모 글의 도구: 상세 창이면 열린 도구, 광장 질문이면 그 질문의 도구
     let toolId = $("#cm-box") ? S.cur : null; if (target === "question") { const q = S.qs.find(x => x.id === Number(tid)); if (q) toolId = q.tool_id; }
-    const { error } = await S.sb.from("replies").insert({ target, target_id: Number(tid), tool_id: toolId || null, rec_tool: rec, client: client(), nick: nk, body });
+    const { error } = await S.sb.from("replies").insert({ target, target_id: Number(tid), parent_id: pid ? Number(pid) : null, tool_id: toolId || null, rec_tool: rec, client: client(), nick: nk, body });
     if (error) { err(error); return; }
     toast("답글이 달렸어요");
     await refresh(); if (S.cur !== null && $("#cm-box")) await fill(S.cur);
@@ -1219,7 +1243,7 @@ window.CM = (() => {
   }
 
   document.addEventListener("click", e => {
-    const t = e.target.closest("[data-cm-star],[data-cm-post],[data-cm-kind],[data-cm-filter],[data-cm-react],[data-cm-blocked-only],[data-cm-like],[data-cm-report],[data-cm-more],[data-cm-ask],[data-cm-reply-open],[data-cm-reply-send],[data-cm-solve],[data-cm-metoo],[data-cm-goto-plaza]");
+    const t = e.target.closest("[data-cm-star],[data-cm-post],[data-cm-kind],[data-cm-filter],[data-cm-react],[data-cm-blocked-only],[data-cm-like],[data-cm-rlike],[data-cm-report],[data-cm-more],[data-cm-ask],[data-cm-reply-open],[data-cm-reply-send],[data-cm-solve],[data-cm-metoo],[data-cm-goto-plaza]");
     if (!t || !S.on) return;
     e.stopPropagation();
     if (t.dataset.cmStar) { S.star = Number(t.dataset.cmStar); document.querySelectorAll("[data-cm-star]").forEach(b => b.classList.toggle("on", Number(b.dataset.cmStar) <= S.star)); $("#cm-star-txt").textContent = ["","아쉬워요","그냥 그래요","쓸 만해요","좋아요","최고예요"][S.star]; return; }
@@ -1229,6 +1253,7 @@ window.CM = (() => {
     if (t.dataset.cmReact) { react(t.dataset.cmReact); return; }
     if (t.hasAttribute("data-cm-blocked-only")) { sendReaction("blocked", "", nick()).then(ok => { if (ok) { toast("알려 주셔서 고마워요"); paint(); } }); return; }
     if (t.dataset.cmLike) { like(t.dataset.cmLike); return; }
+    if (t.dataset.cmRlike) { rlike(t.dataset.cmRlike); return; }
     if (t.dataset.cmMetoo) { metoo(t.dataset.cmMetoo); return; }
     if (t.dataset.cmReport) { report(t.dataset.cmReport); return; }
     if (t.hasAttribute("data-cm-ask")) { askPlaza(); return; }
