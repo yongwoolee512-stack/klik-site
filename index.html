@@ -323,6 +323,7 @@ h1, h2, h3, p, .cbody .one, .cbody .when, .nitem .body b, .nitem .body span { wo
 .ad { min-height: 92px; }
 @media (max-width: 640px) { .hero { grid-template-columns: 1fr; } .hero-main { padding: 40px 22px 32px; } .hero-side { grid-template-columns: 1fr 1fr; grid-template-rows: auto; } .hero-side .ad { grid-column: span 2; } .stat { padding: 18px 20px; } .stat b { font-size: 40px; } } @media (min-width: 641px) and (max-width: 900px) { .hero { grid-template-columns: 1.4fr 1fr; } .stat { padding: 18px 20px; } .stat b { font-size: 42px; } .hero-main { padding: 36px 26px 30px; } }
 </style>
+<script>(function(){var z=new URLSearchParams(location.search).get("zone");if(z)document.documentElement.classList.add("zone-"+z);})();</script>
 <script>document.write('<script src="community-config.js?t=' + Math.floor(Date.now() / 300000) + '"><\/script>');</script><!-- 설정 파일을 5분 단위로 새로 받기 (브라우저 캐시 방지) -->
 <style id="community">
 /* ===== 커뮤니티: 한국 사용자 별점·한 줄 평·댓글 (Supabase 설정이 있을 때만 보임) ===== */
@@ -352,7 +353,7 @@ h1, h2, h3, p, .cbody .one, .cbody .when, .nitem .body b, .nitem .body span { wo
 .cm-row input:focus, .cm-row textarea:focus { outline:none; box-shadow:0 0 0 3px var(--accent-soft); }
 .cm-row textarea { resize:vertical; min-height:64px; flex-basis:100%; }
 .cm-row .install { flex:0 0 auto; }
-.helper-guide { display:grid; gap:12px; background:var(--bg); border-radius:16px; padding:14px; margin-bottom:14px; }
+.helper-guide { position:relative; display:grid; gap:12px; background:var(--bg); border-radius:16px; padding:14px; margin-bottom:14px; }
 .sheet { overflow-x:hidden; } .sheet .zone { margin:0; min-width:0; border:0; border-radius:16px; padding:16px; background:var(--bg); } .zone > h3 { margin:0 0 12px; font-size:15px; font-weight:700; color:var(--fg); } .sheet .zone-install { background:transparent; padding:0; } .zone-install > h3 { display:none; } .zone .blk { background:var(--surface); } .zone-cm .cm { border-top:0; padding-top:0; } .sheet-body { gap:14px; } .warn-ico { display:inline-grid; place-items:center; width:16px; height:16px; border-radius:50%; background:#f5a623; color:#fff; font-style:normal; font-weight:800; font-size:11px; margin-right:6px; vertical-align:-3px; }
 .try-box { margin-top:8px; border:2px solid var(--accent); background:#fff; font-family:inherit; } .try-box code { font-size:14px; font-weight:600; color:var(--fg); white-space:normal; font-family:inherit; } .try-note { display:block; font-size:12px; color:var(--muted); margin-top:4px; }
 .try-line { margin:0; font-size:13px; background:var(--surface-2, #f5f5f7); border-radius:12px; padding:9px 12px; } .try-line code { background:#fff; border:1px solid var(--line); border-radius:6px; padding:1px 6px; font-size:12px; } .try-line span { color:var(--muted); font-size:12px; } .sheet-head .cm-rate { margin:6px 0 0; }
@@ -793,7 +794,7 @@ function tryDeep(url, id, fromAnchor) {
   if (!fromAnchor) { try { window.location.href = url; } catch (e) {} }
   setTimeout(() => {
     window.removeEventListener("blur", mark); document.removeEventListener("visibilitychange", mark);
-    if (left) { try { localStorage.setItem("sm-helper", "1"); } catch (e) {} toast("딸깍 도우미가 확인 창을 띄웠어요. 거기서 '예'만 누르면 끝!"); return; }
+    if (left) { try { localStorage.setItem("sm-helper", "1"); } catch (e) {} document.querySelectorAll(".helper-guide").forEach(g => g.remove()); toast("딸깍 도우미가 확인 창을 띄웠어요. 거기서 '예'만 누르면 끝!"); return; }
     let known = false; try { known = localStorage.getItem("sm-helper") === "1"; } catch (e) {}
     if (known) { toast("도우미가 응답하지 않아요. 창이 뜨지 않았다면 다시 눌러 주세요."); return; }
     showHelperGuide(url, id);
@@ -806,7 +807,7 @@ function showHelperGuide(url, id) {
   box.scrollIntoView({ block: "start", behavior: "smooth" });
   const cmd = it ? cmdOf(it) : "";
   box.innerHTML = `
-    <div class="note" style="font-size:14px"><b>딸깍 도우미가 아직 없는 것 같아요.</b> 줌이나 스팀처럼 한 번만 깔아 두면, 앞으로 모든 도구가 버튼 한 번에 설치됩니다. 30초면 끝나요.</div>
+    <button class="close" data-guide-close aria-label="닫기" style="position:absolute;top:8px;right:8px">✕</button> 줌이나 스팀처럼 한 번만 깔아 두면, 앞으로 모든 도구가 버튼 한 번에 설치됩니다. 30초면 끝나요.</div>
     <div class="steps">
       <div class="stp"><span class="num">1</span><div class="txt"><b>딸깍 도우미 받기 (한 번만)</b><span>관리자 권한·터미널·Node 필요 없음. 윈도우가 "알 수 없는 게시자" 경고를 띄우면 '추가 정보 → 실행'을 누르세요.</span>
         <div class="big-install" style="margin-top:8px"><button class="install" data-helper="win">⬇ Windows용 딸깍설치.exe</button><button class="btn-outline" data-helper="mac">Mac용</button></div></div></div>
@@ -817,7 +818,7 @@ function showHelperGuide(url, id) {
 }
 
 document.addEventListener("click", e => {
-  const t = e.target.closest("[data-fav],[data-copy],[data-deep],[data-helper],[data-open],[data-cat],[data-kind],[data-platform],[data-news-more],[data-news],[data-sub],[data-close],.modal,.play");
+  const t = e.target.closest("[data-fav],[data-copy],[data-deep],[data-helper],[data-open],[data-cat],[data-kind],[data-platform],[data-news-more],[data-news],[data-sub],[data-close],[data-guide-close],.modal,.play");
   if (!t) return;
   if (t.dataset.track && window.CM) CM.track(t.dataset.track);   // 딸깍 설치·명령 복사·커넥터 열기 클릭을 집계 (하루 1회)
   if (t.dataset.deep) { e.stopPropagation(); tryDeep(t.dataset.deep, t.dataset.item, t.tagName === "A"); return; }   // <a>는 기본 동작으로 링크를 열게 둔다
@@ -832,7 +833,7 @@ document.addEventListener("click", e => {
   if (t.dataset.cat) { state.cat = t.dataset.cat; renderAll(); return; }
   if (t.dataset.kind) { state.kind = t.dataset.kind; document.querySelectorAll("#kindseg button").forEach(b=>b.setAttribute("aria-pressed", b.dataset.kind===state.kind)); renderGrid(); return; }
   if (t.dataset.platform) { state.plat = t.dataset.platform; document.querySelectorAll(".nav button").forEach(b=>b.setAttribute("aria-pressed", b.dataset.platform===state.plat)); renderGrid(); return; }
-  if (t.hasAttribute("data-close")) { closeDetail(); return; }
+  if (t.hasAttribute("data-guide-close")) { t.closest(".helper-guide").remove(); return; }
   // 바깥 어두운 부분: 누른 자리와 뗀 자리가 같은 '진짜 클릭'일 때만 닫는다 (살짝 드래그·글자 선택은 무시)
   if (t.id === "modal") { if (pressStart && pressStart.target === t && Math.hypot(e.clientX - pressStart.x, e.clientY - pressStart.y) < 6) closeDetail(); return; }
 });
@@ -874,6 +875,7 @@ renderChips(); renderRank(); renderGrid(); renderNews("today");
     const n = await fetch("news.json" + bust); if (n.ok) { const arr = await n.json(); const usable = Array.isArray(arr) ? arr.filter(x => x.type !== "found") : []; if (usable.length) { NEWS = arr; TODAY = usable[0].date || TODAY; } }
     $("#st-count").textContent = ITEMS.length; renderAll(); renderRank(); renderNews("today");
   } catch (e) { /* 파일이 없으면 내장 예시 데이터 그대로 */ }
+  const qp = new URLSearchParams(location.search); if (qp.get("open")) openDetail(qp.get("open"));   // ?open=도구id 로 상세 창 바로 열기 (시안 비교용)
 })();
 </script>
 
