@@ -1,5 +1,7 @@
 {
   "pending": 27,
+  "generated_at": "2026-10-30T11:06:13.9041361Z",
+  "rejected": 147,
   "items": [
     {
       "id": "pptx",
@@ -92,7 +94,6 @@
       ],
       "status": "published",
       "videos": [
-        null,
         {
           "url": "https://www.youtube.com/shorts/xWeo5z69j1o",
           "by": "skill daily AI",
@@ -160,7 +161,6 @@
       ],
       "status": "published",
       "videos": [
-        null,
         {
           "url": "https://www.youtube.com/shorts/NZL2U1zh5D0",
           "by": "GuideGrid",
@@ -228,7 +228,6 @@
       ],
       "status": "published",
       "videos": [
-        null,
         {
           "url": "https://www.youtube.com/shorts/lYLpCvjx0l8",
           "by": "TD Vision U",
@@ -306,7 +305,6 @@
       ],
       "status": "published",
       "videos": [
-        null,
         {
           "url": "https://www.youtube.com/shorts/n8djv11DGCE",
           "by": "AI 데일리컷",
@@ -367,7 +365,6 @@
       "note": "피그마 계정 로그인(OAuth)이 한 번 필요합니다.",
       "status": "published",
       "videos": [
-        null,
         {
           "url": "https://www.youtube.com/shorts/riFFyTRljic",
           "by": "Figma",
@@ -439,7 +436,6 @@
       ],
       "status": "published",
       "videos": [
-        null,
         {
           "url": "https://www.youtube.com/shorts/L0CvZM6xVnQ",
           "by": "Porter Metrics",
@@ -509,7 +505,6 @@
       ],
       "status": "published",
       "videos": [
-        null,
         {
           "url": "https://www.youtube.com/shorts/3cMaHbezoxU",
           "by": "민둥이 | 쉽게 배우는 AI",
@@ -579,7 +574,6 @@
       ],
       "status": "published",
       "videos": [
-        null,
         {
           "url": "https://www.youtube.com/shorts/1k4LZVFpOKM",
           "by": "Testing Funda by Zeeshan Asghar",
@@ -656,7 +650,6 @@
       ],
       "status": "published",
       "videos": [
-        null,
         {
           "url": "https://www.youtube.com/shorts/Ow2dMFpy4Q8",
           "by": "Shinzo Labs",
@@ -729,7 +722,6 @@
       ],
       "status": "published",
       "videos": [
-        null,
         {
           "url": "https://www.youtube.com/shorts/GNzg_0VqLuc",
           "by": "Claude Code Updates",
@@ -798,7 +790,6 @@
       "note": "수파베이스 가입과 프로젝트 생성이 먼저 필요합니다.",
       "status": "published",
       "videos": [
-        null,
         {
           "url": "https://www.youtube.com/shorts/f-LxIzb4vLs",
           "by": "Supabase",
@@ -870,7 +861,6 @@
       ],
       "status": "published",
       "videos": [
-        null,
         {
           "url": "https://www.youtube.com/shorts/4nDerujSkD0",
           "by": "George Basics",
@@ -940,7 +930,6 @@
       ],
       "status": "published",
       "videos": [
-        null,
         {
           "url": "https://www.youtube.com/shorts/2ehq4dkFZkw",
           "by": "Checkmark Academy",
@@ -1015,7 +1004,6 @@
       ],
       "status": "published",
       "videos": [
-        null,
         {
           "url": "https://www.youtube.com/shorts/45hPRdfDEsI",
           "by": "Claude",
@@ -1078,7 +1066,6 @@
       ],
       "status": "published",
       "videos": [
-        null,
         {
           "url": "https://www.youtube.com/shorts/XpXImenrSPI",
           "by": "Anthropic",
@@ -1141,7 +1128,6 @@
       ],
       "status": "published",
       "videos": [
-        null,
         {
           "url": "https://www.youtube.com/shorts/idJQMJwHtyM",
           "by": "Claude",
@@ -1255,7 +1241,6 @@
       "note": "국내 결제는 토스페이먼츠 등 별도 확인이 필요합니다.",
       "status": "published",
       "videos": [
-        null,
         {
           "url": "https://www.youtube.com/shorts/_rurBUkTyQ8",
           "by": "Keith AI",
@@ -1330,7 +1315,6 @@
       ],
       "status": "published",
       "videos": [
-        null,
         {
           "url": "https://www.youtube.com/shorts/1Os4-vAhj2I",
           "by": "Sentry",
@@ -1490,7 +1474,6 @@
       ],
       "status": "published",
       "videos": [
-        null,
         {
           "url": "https://www.youtube.com/shorts/Z56_KCR-ZMc",
           "by": "ZeroCho TV",
@@ -1569,7 +1552,6 @@
       ],
       "status": "published",
       "videos": [
-        null,
         {
           "url": "https://www.youtube.com/shorts/H622ingVW48",
           "by": "Hungry Labs",
@@ -1644,7 +1626,6 @@
       ],
       "status": "published",
       "videos": [
-        null,
         {
           "url": "https://www.youtube.com/shorts/UlE5vTzOpYE",
           "by": "Tech Help Daily",
@@ -1719,7 +1700,6 @@
       ],
       "status": "published",
       "videos": [
-        null,
         {
           "url": "https://www.youtube.com/shorts/0M0EigWIS04",
           "by": "Github Awesome",
@@ -1781,7 +1761,6 @@
       ],
       "status": "published",
       "videos": [
-        null,
         {
           "url": "https://www.youtube.com/shorts/0NL9X_VhMCc",
           "by": "cmdkai",
@@ -1818,7 +1797,5 @@
       ]
     }
   ],
-  "generated_at": "2026-10-30T11:04:51.2005804Z",
-  "rejected": 147,
   "count": 26
 }
