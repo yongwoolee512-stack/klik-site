@@ -133,3 +133,7 @@ grant select, insert on public.questions, public.replies to anon, authenticated;
 grant insert on public.story_metoo, public.solves to anon, authenticated;
 grant select on public.story_metoo_counts, public.tool_solved_counts, public.activity_feed to anon, authenticated;
 -- 끝. "Success. No rows returned" 가 나오면 성공입니다.
+
+-- 8) (추가) 한 줄 평에도 답글 허용 — 상세 창을 글 목록 하나로 합치면서 필요 ----------
+alter table public.replies drop constraint if exists replies_target_check;
+alter table public.replies add constraint replies_target_check check (target in ('comment', 'story', 'question', 'review'));

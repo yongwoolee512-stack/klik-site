@@ -392,6 +392,18 @@ h1, h2, h3, p, .cbody .one, .cbody .when, .nitem .body b, .nitem .body span { wo
 .cm-reply-form select { border:0; background:var(--surface); color:var(--fg); border-radius:12px; padding:8px 12px; font:inherit; font-size:13px; flex:1 1 160px; }
 .cm-row .btn-outline { padding:8px 14px; font-size:13px; }
 @media (max-width:760px) { .cm-thread { margin-left:6px; padding-left:8px; } }
+/* 3차: 상세 창 글 목록 하나 (후기·질문·막힘·잡담) */
+.cm-compose { margin-bottom:10px; }
+.cm-kinds { margin-bottom:2px; }
+.cm-kinds button { font-size:13px; }
+.cm-filters { padding-block:4px 10px; }
+.cm-filters .chip { font-size:13px; padding:5px 12px; }
+.cm-item.post .phead { display:flex; gap:6px; align-items:center; flex-wrap:wrap; }
+.cm-item.post .phead .tag { font-size:11px; }
+.tag.k-review { background:#fdf1dc; color:#9a6400; } .tag.k-question { background:var(--accent-soft); color:var(--accent); } .tag.k-story { background:#fbe9e3; color:#b5471d; } .tag.k-talk { background:var(--line); color:var(--muted); }
+.cm-item.post.solved .body2::before { content:none; }
+.cm-item.post.solved .phead::after { content:"해결됨 ✓"; background:#1f8a4c; color:#fff; font-size:11px; font-weight:700; border-radius:980px; padding:2px 8px; }
+.cm-link { border:0; background:transparent; color:var(--accent); font-weight:700; padding:0; font-size:inherit; text-decoration:underline; }
 </style>
 <header>
   <div class="wrap">
@@ -854,16 +866,18 @@ renderChips(); renderRank(); renderGrid(); renderNews("today");
 
 
 
+
 <script>
-// ===== 커뮤니티: 딸깍 수 집계 · 한국 사용자 별점 + 한 줄 평(추천 → 베스트) · 써 봤어요/막혔어요(+저도요·해결) · 닉네임 댓글 · 답글 · 질문 광장 · 신고 =====
+// ===== 커뮤니티: 딸깍 수 집계 · 한국 사용자 별점 · 글 목록 하나(후기·질문·막힘·잡담, 답글·해결·추천·저도요) · 질문 광장 · 지금 대화 중 띠 · 신고 =====
 // community-config.js 에 Supabase 주소·공개 키가 없으면 CM.on = false 이고 아래 UI는 전부 숨겨진다.
 window.CM = (() => {
   const cfg = window.KLIK_COMMUNITY || {};
   const on = /^https:\/\/[\w.-]+/.test(cfg.url || "") && typeof cfg.anonKey === "string" && cfg.anonKey.length > 20;
   const CDN = "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.49.4/dist/umd/supabase.min.js";
-  const BEST_AT = 5;           // 추천 5개부터 "베스트 평"
+  const BEST_AT = 5;           // 추천 5개부터 "베스트 후기"
   const BAD = ["씨발","시발","씨빨","ㅅㅂ","병신","ㅄ","좆","개새","지랄","니애미","느금","꺼져","닥쳐"];
-  const S = { on, sb: null, week: [], stats: {}, react: {}, solved: {}, feed: [], qs: [], qrp: {}, cur: null, star: 0, revPage: 5, data: null };
+  const KIND = { review: "후기", question: "질문", story: "막힘", talk: "잡담" };
+  const S = { on, sb: null, week: [], stats: {}, react: {}, solved: {}, feed: [], qs: [], qrp: {}, cur: null, star: 0, kind: "review", filter: "all", page: 8, data: null };
   const ls = { get: k => { try { return localStorage.getItem(k); } catch (e) { return null; } }, set: (k, v) => { try { localStorage.setItem(k, v); } catch (e) {} } };
   function client() {
     let c = ls.get("klik-client");
@@ -882,6 +896,7 @@ window.CM = (() => {
   const toolName = id => { const it = ITEMS.find(x => x.id === id); return it ? it.name : ""; };
   const toolChip = id => toolName(id) ? `<button type="button" class="tool-chip" data-open="${esc(id)}">⚡ ${esc(toolName(id))}</button>` : "";
   const rateLimited = (k, ms, msg) => { const last = Number(ls.get(k) || 0); if (Date.now() - last < ms) { toast(msg); return true; } ls.set(k, String(Date.now())); return false; };
+  const myReview = id => { try { return JSON.parse(ls.get("klik-rev-" + id) || "null"); } catch (e) { return null; } };
 
   async function init() {
     if (!on) return;
@@ -903,7 +918,6 @@ window.CM = (() => {
       S.week = w.data || []; S.stats = {}; S.react = {}; S.solved = {};
       (r.data || []).forEach(x => S.stats[x.tool_id] = x);
       (c.data || []).forEach(x => S.react[x.tool_id] = x);
-      // 2차 표가 아직 없으면(v2 SQL 미실행) 광장·띠만 조용히 숨긴다
       S.v2 = !(sv.error || fd.error || qs.error);
       if (S.v2) {
         (sv.data || []).forEach(x => S.solved[x.tool_id] = x.n);
@@ -937,17 +951,16 @@ window.CM = (() => {
     S.sb.from("installs").insert({ tool_id: id, client: client() }).then(({ error }) => { if (!error) refresh(); else console.warn(error); });
   }
 
-  // ---- 답글 스레드 (댓글·사연·질문 공용) ----
-  // owner: 이 브라우저가 글쓴이면 true → 답글마다 "이게 됐어요 ✓" 버튼
+  // ---- 답글 스레드 (후기·댓글·사연·질문 공용) ----
   function thread(target, id, replies, opts) {
-    const o = Object.assign({ owner: false, solvedId: null, toolId: null, allowTool: false }, opts || {});
+    const o = Object.assign({ owner: false, solvedId: null, allowTool: false }, opts || {});
     const list = [...(replies || [])].sort((a, b) => (a.id === o.solvedId ? -1 : b.id === o.solvedId ? 1 : 0));
     const items = list.map(r => `
       <div class="cm-reply ${r.id === o.solvedId ? "answer" : ""}">
         <div class="body2">${esc(r.body)}</div>
         ${r.rec_tool ? `<div>${toolChip(r.rec_tool)}</div>` : ""}
         <div class="meta2"><span><b>${esc(r.nick || "익명")}</b> · ${dstr(r.created_at)} ${r.id === o.solvedId ? '<span class="ok">해결 ✓</span>' : ""}</span>
-          <span>${o.owner && !o.solvedId && target !== "comment" ? `<button class="solve" data-cm-solve="${target}:${id}:${r.id}">✓ 이게 됐어요</button> &nbsp; ` : ""}<button data-cm-report="reply:${r.id}">신고</button></span></div>
+          <span>${o.owner && !o.solvedId && (target === "question" || target === "story") ? `<button class="solve" data-cm-solve="${target}:${id}:${r.id}">✓ 이게 됐어요</button> &nbsp; ` : ""}<button data-cm-report="reply:${r.id}">신고</button></span></div>
       </div>`).join("");
     const key = `${target}:${id}`;
     const form = `
@@ -971,74 +984,85 @@ window.CM = (() => {
     const sec = $("#cm-plaza"); if (!sec) return;
     if (!S.on || !S.v2) { sec.hidden = true; return; }
     sec.hidden = false;
-    const list = $("#cm-qlist");
-    list.innerHTML = S.qs.length ? S.qs.map(q => qItem(q, S.qrp[q.id] || [])).join("") : `<div class="cm-empty">첫 질문을 올려 보세요. "이런 거 하고 싶은데 뭐 써요?"면 충분합니다.</div>`;
+    $("#cm-qlist").innerHTML = S.qs.length ? S.qs.map(q => qItem(q, S.qrp[q.id] || [])).join("") : `<div class="cm-empty">첫 질문을 올려 보세요. "이런 거 하고 싶은데 뭐 써요?"면 충분합니다.</div>`;
   }
   function qItem(q, replies) {
     return `<div class="cm-q ${q.solved_reply_id ? "solved" : ""}" data-q="${q.id}">
       <div class="qbody">${esc(q.body)}</div>
       <div class="meta2"><span><b>${esc(q.nick || "익명")}</b> · ${dstr(q.created_at)} ${q.tool_id ? toolChip(q.tool_id) : ""}</span><span>${replyBtn("question", q.id, replies.length)} &nbsp; <button data-cm-report="question:${q.id}">신고</button></span></div>
-      ${thread("question", q.id, replies, { owner: mine("question", q.id), solvedId: q.solved_reply_id, toolId: q.tool_id, allowTool: true })}
+      ${thread("question", q.id, replies, { owner: mine("question", q.id), solvedId: q.solved_reply_id, allowTool: true })}
     </div>`;
   }
 
-  // ---- 상세 창 ----
-  function box() { return S.on ? `<div class="cm" id="cm-box"><div class="cm-empty">한국 사용자 평 불러오는 중…</div></div>` : ""; }
+  // ---- 상세 창: 글 목록 하나 ----
+  function box() { return S.on ? `<div class="cm" id="cm-box"><div class="cm-empty">한국 사용자 이야기 불러오는 중…</div></div>` : ""; }
   async function fill(id) {
-    if (!S.on) return; S.cur = id; S.star = 0; S.revPage = 5;
+    if (!S.on) return; S.cur = id; S.star = 0; S.page = 8; S.filter = "all"; S.kind = myReview(id) ? "question" : "review";
     const el = $("#cm-box"); if (!el) return;
     try {
       const v2 = S.v2;
       const [rv, bl, cm, qs, rp] = await Promise.all([
-        S.sb.from("reviews").select("id,nick,stars,body,likes,created_at").eq("tool_id", id).order("likes", { ascending: false }).order("created_at", { ascending: false }).limit(50),
-        S.sb.from("reactions").select(v2 ? "id,nick,note,created_at,solved_reply_id" : "id,nick,note,created_at").eq("tool_id", id).eq("kind", "blocked").neq("note", "").order("created_at", { ascending: false }).limit(10),
-        S.sb.from("comments").select("id,nick,body,created_at").eq("tool_id", id).order("created_at", { ascending: false }).limit(50),
-        v2 ? S.sb.from("questions").select("id,tool_id,nick,body,solved_reply_id,created_at").eq("tool_id", id).order("created_at", { ascending: false }).limit(10) : Promise.resolve({ data: [] }),
+        S.sb.from("reviews").select("id,nick,stars,body,likes,created_at").eq("tool_id", id).order("created_at", { ascending: false }).limit(100),
+        S.sb.from("reactions").select(v2 ? "id,nick,note,created_at,solved_reply_id" : "id,nick,note,created_at").eq("tool_id", id).eq("kind", "blocked").neq("note", "").order("created_at", { ascending: false }).limit(50),
+        S.sb.from("comments").select("id,nick,body,created_at").eq("tool_id", id).order("created_at", { ascending: false }).limit(100),
+        v2 ? S.sb.from("questions").select("id,tool_id,nick,body,solved_reply_id,created_at").eq("tool_id", id).order("created_at", { ascending: false }).limit(50) : Promise.resolve({ data: [] }),
         v2 ? S.sb.from("replies").select("id,target,target_id,rec_tool,nick,body,created_at").eq("tool_id", id).order("created_at", { ascending: true }) : Promise.resolve({ data: [] }),
       ]);
       if (rv.error || bl.error || cm.error || qs.error || rp.error) throw (rv.error || bl.error || cm.error || qs.error || rp.error);
       const rpm = {}; (rp.data || []).forEach(x => (rpm[`${x.target}:${x.target_id}`] = rpm[`${x.target}:${x.target_id}`] || []).push(x));
       let metoo = {};
       if (v2 && bl.data && bl.data.length) { const m = await S.sb.from("story_metoo_counts").select("story_id,n").in("story_id", bl.data.map(b => b.id)); (m.data || []).forEach(x => metoo[x.story_id] = x.n); }
-      S.data = { rv: rv.data || [], bl: bl.data || [], cm: cm.data || [], qs: qs.data || [], rp: rpm, metoo };
+      // 네 종류를 글 하나의 모양으로 맞춘다
+      const posts = [
+        ...(rv.data || []).map(r => ({ kind: "review", id: r.id, nick: r.nick, body: r.body, created_at: r.created_at, stars: r.stars, likes: r.likes })),
+        ...(qs.data || []).map(q => ({ kind: "question", id: q.id, nick: q.nick, body: q.body, created_at: q.created_at, solved: q.solved_reply_id })),
+        ...(bl.data || []).map(b => ({ kind: "story", id: b.id, nick: b.nick, body: b.note, created_at: b.created_at, solved: b.solved_reply_id || null, metoo: metoo[b.id] || 0 })),
+        ...(cm.data || []).map(c => ({ kind: "talk", id: c.id, nick: c.nick, body: c.body, created_at: c.created_at })),
+      ].sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
+      S.data = { posts, rp: rpm };
       paint();
     } catch (e) { el.innerHTML = `<div class="cm-empty">커뮤니티를 불러오지 못했어요. (Supabase SQL이 실행됐는지 확인해 주세요)</div>`; console.warn(e); }
   }
+  const TARGET = { review: "review", question: "question", story: "story", talk: "comment" };
+  function postItem(p) {
+    const target = TARGET[p.kind], replies = (S.data.rp[`${target}:${p.id}`] || []), v2 = S.v2;
+    const best = p.kind === "review" && p.likes >= BEST_AT;
+    const head = `<span class="tag k-${p.kind}">${KIND[p.kind]}</span>${p.kind === "review" ? `<span class="stars">${starStr(p.stars)}</span>` : ""}${best ? '<span class="best-tag">베스트</span>' : ""}`;
+    const acts = [];
+    if (p.kind === "review") acts.push(`<button data-cm-like="${p.id}" aria-pressed="${ls.get("klik-like-" + p.id) === "1"}">👍 추천 ${p.likes}</button>`);
+    if (p.kind === "story" && v2) acts.push(`<button data-cm-metoo="${p.id}" aria-pressed="${ls.get("klik-metoo-" + p.id) === "1"}">🙋 저도요 ${p.metoo}</button>`);
+    if (v2) acts.push(replyBtn(target, p.id, replies.length));
+    acts.push(`<button data-cm-report="${target}:${p.id}">신고</button>`);
+    return `<div class="cm-item post ${p.solved ? "solved" : ""} ${best ? "best" : ""}">
+      <div class="phead">${head}</div>
+      <div class="body2">${p.body ? esc(p.body) : '<span class="sub">(별점만 남김)</span>'}</div>
+      <div class="meta2"><span><b>${esc(p.nick || "익명")}</b> · ${dstr(p.created_at)}</span><span>${acts.join(" &nbsp; ")}</span></div>
+      ${v2 ? thread(target, p.id, replies, { owner: mine(target, p.id), solvedId: p.solved || null, allowTool: p.kind === "question" }) : ""}
+    </div>`;
+  }
   function paint() {
     const el = $("#cm-box"); if (!el || S.cur === null || !S.data) return;
-    const id = S.cur, st = S.stats[id], re = S.react[id] || { tried: 0, blocked: 0 }, d = S.data, v2 = S.v2;
-    const myRev = (() => { try { return JSON.parse(ls.get("klik-rev-" + id) || "null"); } catch (e) { return null; } })();
+    const id = S.cur, st = S.stats[id], re = S.react[id] || { tried: 0, blocked: 0 }, d = S.data, v2 = S.v2, mr = myReview(id);
     const pressed = k => ls.get(`klik-re-${id}-${k}`) === "1";
-    const rp = (t, i) => d.rp[`${t}:${i}`] || [];
-    const rvHtml = d.rv.length ? d.rv.slice(0, S.revPage).map(r => `
-      <div class="cm-item ${r.likes >= BEST_AT ? "best" : ""}">
-        <div class="body2">${r.body ? esc(r.body) : '<span class="sub">(별점만 남김)</span>'}</div>
-        <div class="meta2">
-          <span><span class="stars">${starStr(r.stars)}</span> ${esc(r.nick || "익명")} · ${dstr(r.created_at)} ${r.likes >= BEST_AT ? '<span class="best-tag">베스트</span>' : ""}</span>
-          <span><button data-cm-like="${r.id}" aria-pressed="${ls.get("klik-like-" + r.id) === "1"}">👍 추천 ${r.likes}</button> &nbsp; <button data-cm-report="review:${r.id}">신고</button></span>
-        </div>
-      </div>`).join("") + (d.rv.length > S.revPage ? `<button class="chip cm-more" data-cm-more>평 ${d.rv.length - S.revPage}개 더 보기</button>` : "")
-      : `<div class="cm-empty">아직 한 줄 평이 없어요. 첫 평을 남겨 보세요.</div>`;
-    const form = myRev
-      ? `<div class="cm-done"><b>내 평</b> <span class="stars">${starStr(myRev.stars)}</span> ${myRev.body ? esc(myRev.body) : ""} <span class="sub">· 한 브라우저에서 한 번만 남길 수 있어요</span></div>`
-      : `<div class="cm-form">
-          <div class="cm-starpick">${[1,2,3,4,5].map(n => `<button type="button" data-cm-star="${n}" class="${n <= S.star ? "on" : ""}" aria-label="${n}점">★</button>`).join("")}<span class="sub" id="cm-star-txt">${["별을 눌러 점수를 매겨 주세요","아쉬워요","그냥 그래요","쓸 만해요","좋아요","최고예요"][S.star]}</span></div>
-          <div class="cm-row">${nickInput("cm-nick")}<input id="cm-body" maxlength="120" placeholder="한 줄 평 (선택, 120자)"><button class="install" data-cm-submit>남기기</button></div>
-        </div>`;
-    const blHtml = d.bl.map(b => `
-      <div class="cm-item ${b.solved_reply_id ? "solved" : ""}">
-        <div class="body2">${esc(b.note)}</div>
-        <div class="meta2"><span>${esc(b.nick || "익명")} · ${dstr(b.created_at)}</span>
-          <span>${v2 ? `<button data-cm-metoo="${b.id}" aria-pressed="${ls.get("klik-metoo-" + b.id) === "1"}">🙋 저도요 ${d.metoo[b.id] || 0}</button> &nbsp; ${replyBtn("story", b.id, rp("story", b.id).length)}` : ""}</span></div>
-        ${v2 ? thread("story", b.id, rp("story", b.id), { owner: mine("story", b.id), solvedId: b.solved_reply_id, toolId: id }) : ""}
-      </div>`).join("");
-    const qsHtml = d.qs.map(q => qItem(q, rp("question", q.id))).join("");
-    const cmHtml = d.cm.length ? d.cm.map(c => `
-      <div class="cm-item">
-        <div class="body2">${esc(c.body)}</div>
-        <div class="meta2"><span><b>${esc(c.nick || "익명")}</b> · ${dstr(c.created_at)}</span><span>${v2 ? replyBtn("comment", c.id, rp("comment", c.id).length) + " &nbsp; " : ""}<button data-cm-report="comment:${c.id}">신고</button></span></div>
-        ${v2 ? thread("comment", c.id, rp("comment", c.id), { toolId: id }) : ""}
-      </div>`).join("") : `<div class="cm-empty">첫 댓글을 남겨 보세요. 로그인 없이 닉네임만 쓰면 됩니다.</div>`;
+    const unanswered = p => (p.kind === "question" || p.kind === "story") && !p.solved && !(d.rp[`${TARGET[p.kind]}:${p.id}`] || []).length;
+    const counts = { all: d.posts.length, open: d.posts.filter(unanswered).length };
+    Object.keys(KIND).forEach(k => counts[k] = d.posts.filter(p => p.kind === k).length);
+    const list = d.posts.filter(p => S.filter === "all" ? true : S.filter === "open" ? unanswered(p) : p.kind === S.filter);
+    const shown = list.slice(0, S.page);
+    const filters = [["all", "전체"], ["open", "답 없는 글"], ["review", "후기"], ["question", "질문"], ["story", "막힘"], ["talk", "잡담"]]
+      .filter(([k]) => k === "all" || counts[k]).map(([k, t]) => `<button class="chip" data-cm-filter="${k}" aria-pressed="${S.filter === k}">${t} ${counts[k]}</button>`).join("");
+    const PH = { review: "한 줄 후기 (선택, 120자)", question: "예: 이걸로 회사 양식 그대로 되나요?", story: "어디서 막혔나요? 예: 도우미 창이 안 떠요", talk: "이 도구 어땠나요? 자유롭게 (500자)" };
+    const kinds = Object.keys(KIND).filter(k => k !== "question" || v2).filter(k => k !== "story" || v2 || true)
+      .map(k => `<button data-cm-kind="${k}" aria-pressed="${S.kind === k}">${k === "review" ? "★ 후기" : k === "story" ? "🚧 막혔어요" : KIND[k]}</button>`).join("");
+    const compose = `
+      <div class="cm-form cm-compose">
+        <div class="seg cm-kinds">${kinds}</div>
+        ${S.kind === "review" ? (mr
+          ? `<div class="cm-done"><b>내 후기</b> <span class="stars">${starStr(mr.stars)}</span> ${mr.body ? esc(mr.body) : ""} <span class="sub">· 후기는 한 브라우저에서 한 번만. 질문·잡담은 계속 쓸 수 있어요</span></div>`
+          : `<div class="cm-starpick">${[1,2,3,4,5].map(n => `<button type="button" data-cm-star="${n}" class="${n <= S.star ? "on" : ""}" aria-label="${n}점">★</button>`).join("")}<span class="sub" id="cm-star-txt">${["별을 눌러 점수를 매겨 주세요","아쉬워요","그냥 그래요","쓸 만해요","좋아요","최고예요"][S.star]}</span></div>`) : ""}
+        ${S.kind === "review" && mr ? "" : `<div class="cm-row">${nickInput("cm-nick")}${S.kind === "talk" ? `<textarea id="cm-body" maxlength="500" placeholder="${PH[S.kind]}"></textarea>` : `<input id="cm-body" maxlength="${S.kind === "review" ? 120 : 300}" placeholder="${PH[S.kind]}">`}<button class="install" data-cm-post>${S.kind === "story" ? "사연 올리기" : S.kind === "question" ? "질문하기" : "올리기"}</button></div>`}
+        ${S.kind === "story" && !pressed("blocked") ? `<div class="sub">사연 없이 "막혔어요" 숫자만 올리려면 <button type="button" class="cm-link" data-cm-blocked-only>여기</button>를 누르세요.</div>` : ""}
+      </div>`;
     el.innerHTML = `
       <div class="cm-top">
         <div class="cm-avg">${st ? `<span class="stars">${starStr(st.avg)}</span><b>${st.avg}</b><span class="sub">한국 사용자 ${st.n}명의 별점</span>` : `<span class="stars">☆☆☆☆☆</span><span class="sub">아직 별점이 없어요</span>`}</div>
@@ -1047,65 +1071,73 @@ window.CM = (() => {
           <button data-cm-react="blocked" aria-pressed="${pressed("blocked")}">🚧 설치 막혔어요 ${re.blocked || 0}</button>
         </div>
       </div>
-      <div id="cm-blocked-form" hidden class="cm-form"><div class="sub">어디서 막혔는지 한 줄만 남겨 주시면 다음 사람이 답을 달아 줄 수 있어요.</div><div class="cm-row">${nickInput("cm-bnick")}<input id="cm-bnote" maxlength="120" placeholder="예: 도우미 창이 안 떠요"><button class="install" data-cm-blocked-send>보내기</button><button class="btn-outline" data-cm-blocked-skip>그냥 넘기기</button></div></div>
-      <div><h4>한 줄 평 <span class="sub">추천 많은 순 · 추천 ${BEST_AT}개부터 베스트</span></h4>${form}<div class="cm-list" style="margin-top:10px">${rvHtml}</div></div>
-      ${blHtml ? `<div><h4>막혔던 사연 <span class="sub">${re.blocked}명이 막혔다고 했어요 · 해결했다면 답글로 알려 주세요</span></h4><div class="cm-list">${blHtml}</div></div>` : ""}
-      ${v2 ? `<div><h4>이 도구에 질문 <span class="sub">${d.qs.length}</span></h4>
-        <div class="cm-form" style="margin-bottom:10px"><div class="cm-row">${nickInput("cm-qnick2")}<input id="cm-qbody2" maxlength="300" placeholder="예: 이걸로 회사 양식 그대로 되나요?"><button class="install" data-cm-ask="${esc(id)}">질문하기</button></div></div>
-        <div class="cm-list">${qsHtml}</div></div>` : ""}
-      <div><h4>댓글 <span class="sub">${d.cm.length}</span></h4>
-        <div class="cm-list">${cmHtml}</div>
-        <div class="cm-form" style="margin-top:10px"><div class="cm-row">${nickInput("cm-cnick")}<textarea id="cm-cbody" maxlength="500" placeholder="이 도구 어땠나요? 질문도 환영 (500자)"></textarea><button class="install" data-cm-comment>댓글 달기</button></div></div>
+      <div>
+        <h4>이 도구 이야기 <span class="sub">후기·질문·막힌 사연·잡담을 한곳에 · 로그인 없이 닉네임만</span></h4>
+        ${compose}
+        <div class="chips cm-filters">${filters}</div>
+        <div class="cm-list">${shown.length ? shown.map(postItem).join("") : `<div class="cm-empty">${S.filter === "open" ? "답을 기다리는 글이 없어요. 모두 해결됐습니다 👍" : "아직 글이 없어요. 첫 글을 남겨 보세요."}</div>`}
+        ${list.length > S.page ? `<button class="chip cm-more" data-cm-more>글 ${list.length - S.page}개 더 보기</button>` : ""}</div>
       </div>`;
   }
 
   // ---- 동작 ----
-  async function submitReview() {
-    const id = S.cur; if (!S.star) { toast("별을 먼저 눌러 점수를 매겨 주세요"); return; }
-    const body = ($("#cm-body").value || "").trim().slice(0, 120); const nk = nickOr($("#cm-nick").value);
+  async function post() {
+    const id = S.cur, body = ($("#cm-body").value || "").trim(), nk = nickOr($("#cm-nick").value), k = S.kind;
     if (dirty(body) || dirty(nk)) { toast("표현을 조금만 순화해 주세요 🙏"); return; }
-    const { error } = await S.sb.from("reviews").insert({ tool_id: id, client: client(), nick: nk, stars: S.star, body });
-    if (error) { if (error.code === "23505") { ls.set("klik-rev-" + id, JSON.stringify({ stars: S.star, body })); toast("이 브라우저에서는 이미 평을 남기셨어요"); paint(); } else err(error); return; }
-    ls.set("klik-rev-" + id, JSON.stringify({ stars: S.star, body }));
-    toast("한 줄 평이 올라갔어요. 고마워요!");
+    if (k === "review") {
+      if (!S.star) { toast("별을 먼저 눌러 점수를 매겨 주세요"); return; }
+      const { error } = await S.sb.from("reviews").insert({ tool_id: id, client: client(), nick: nk, stars: S.star, body: body.slice(0, 120) });
+      if (error && error.code !== "23505") { err(error); return; }
+      ls.set("klik-rev-" + id, JSON.stringify({ stars: S.star, body })); toast(error ? "이 브라우저에서는 이미 후기를 남기셨어요" : "후기가 올라갔어요. 고마워요!");
+    } else if (k === "question") {
+      if (body.length < 2) { toast("질문을 적어 주세요"); return; }
+      if (rateLimited("klik-q-at", 30000, "질문은 30초에 하나씩 올릴 수 있어요")) return;
+      const { data, error } = await S.sb.from("questions").insert({ tool_id: id, client: client(), nick: nk, body: body.slice(0, 300) }).select("id");
+      if (error) { err(error); return; }
+      if (data && data[0]) ls.set(`klik-mine-question-${data[0].id}`, "1"); toast("질문이 올라갔어요. 답이 달리면 여기서 볼 수 있어요.");
+    } else if (k === "story") {
+      if (!body) { toast("어디서 막혔는지 한 줄만 적어 주세요"); return; }
+      if (!(await sendReaction("blocked", body.slice(0, 120), nk, true))) return;
+      toast("사연 고마워요. 누군가 해결법을 달아 줄 거예요.");
+    } else {
+      if (!body) { toast("내용을 적어 주세요"); return; }
+      if (rateLimited("klik-cmt-at", 20000, "잡담은 20초에 하나씩 쓸 수 있어요")) return;
+      const { error } = await S.sb.from("comments").insert({ tool_id: id, client: client(), nick: nk, body: body.slice(0, 500) });
+      if (error) { err(error); return; }
+      toast("올라갔어요");
+    }
     await refresh(); await fill(id);
   }
-  // 써 봤어요: 바로 기록. 막혔어요: 사연 입력창을 먼저 열고, 보내기/넘기기 때 한 번만 기록
+  // 써 봤어요: 바로 기록. 막혔어요: 쓰기 칸을 '막혔어요'로 바꿔 사연을 받는다 (숫자만 올리기 링크도 있음)
   async function react(kind) {
     const id = S.cur, k = `klik-re-${id}-${kind}`;
-    if (ls.get(k) === "1") { toast(kind === "tried" ? "이미 '써 봤어요'를 누르셨어요" : "이미 '막혔어요'를 누르셨어요"); return; }
-    if (kind === "blocked") { const f = $("#cm-blocked-form"); if (f) { f.hidden = false; $("#cm-bnote").focus(); } return; }
+    if (ls.get(k) === "1") { toast(kind === "tried" ? "이미 '써 봤어요'를 누르셨어요" : "이미 '막혔어요'를 누르셨어요. 사연은 아래 '막혔어요' 칸에 더 쓸 수 있어요"); if (kind === "blocked") { S.kind = "story"; paint(); } return; }
+    if (kind === "blocked") { S.kind = "story"; paint(); const b = $("#cm-body"); if (b) b.focus(); return; }
     await sendReaction("tried", "", nick()); toast("반영됐어요 👍");
   }
-  async function sendReaction(kind, note, nk) {
+  async function sendReaction(kind, note, nk, allowDup) {
     const id = S.cur, k = `klik-re-${id}-${kind}`;
-    const { data, error } = await S.sb.from("reactions").insert({ tool_id: id, client: client(), kind, nick: nk, note }).select("id");
+    // 같은 브라우저가 사연을 또 쓰면 토큰 뒤에 번호를 붙여 저장 (숫자 집계는 1명으로 세지 않지만 사연은 남긴다)
+    const dup = allowDup && ls.get(k) === "1";
+    const { data, error } = await S.sb.from("reactions").insert({ tool_id: id, client: dup ? client().slice(0, 24) + "-" + Date.now().toString(36) : client(), kind, nick: nk, note }).select("id");
     if (error && error.code !== "23505") { err(error); return false; }
     ls.set(k, "1"); if (data && data[0]) ls.set(`klik-mine-story-${data[0].id}`, "1");
     const re = S.react[id] || (S.react[id] = { tool_id: id, tried: 0, blocked: 0 }); re[kind] = (re[kind] || 0) + 1;
     const b = document.querySelector(`[data-cm-react="${kind}"]`); if (b) { b.setAttribute("aria-pressed", "true"); b.textContent = (kind === "tried" ? "👍 써 봤어요 " : "🚧 설치 막혔어요 ") + re[kind]; }
     refresh(); return true;
   }
-  async function blockedNote(skip) {
-    const id = S.cur, note = skip ? "" : ($("#cm-bnote").value || "").trim().slice(0, 120), nk = nickOr($("#cm-bnick").value);
-    if (dirty(note)) { toast("표현을 조금만 순화해 주세요 🙏"); return; }
-    $("#cm-blocked-form").hidden = true;
-    if (!(await sendReaction("blocked", note, nk))) return;
-    toast(note ? "사연 고마워요. 누군가 해결법을 달아 줄 거예요." : "알려 주셔서 고마워요");
-    if (note) await fill(id);
-  }
   async function like(rid) {
     if (ls.get("klik-like-" + rid) === "1") { toast("이미 추천하셨어요"); return; }
     const { error } = await S.sb.from("review_likes").insert({ review_id: Number(rid), client: client() });
     if (error && error.code !== "23505") { err(error); return; }
     ls.set("klik-like-" + rid, "1");
-    const r = S.data.rv.find(x => x.id === Number(rid)); if (r) r.likes++; paint();
+    const r = S.data.posts.find(x => x.kind === "review" && x.id === Number(rid)); if (r) r.likes++; paint();
   }
   async function metoo(sid) {
     if (ls.get("klik-metoo-" + sid) === "1") { toast("이미 누르셨어요"); return; }
     const { error } = await S.sb.from("story_metoo").insert({ story_id: Number(sid), client: client() });
     if (error && error.code !== "23505") { err(error); return; }
-    ls.set("klik-metoo-" + sid, "1"); S.data.metoo[sid] = (S.data.metoo[sid] || 0) + 1; paint(); toast("같이 막힌 사람이 있다고 표시했어요");
+    ls.set("klik-metoo-" + sid, "1"); const p = S.data.posts.find(x => x.kind === "story" && x.id === Number(sid)); if (p) p.metoo++; paint(); toast("같이 막힌 사람이 있다고 표시했어요");
   }
   async function report(spec) {
     const [target, tid] = spec.split(":"); const k = `klik-rep-${target}-${tid}`;
@@ -1115,26 +1147,16 @@ window.CM = (() => {
     if (error && error.code !== "23505") { err(error); return; }
     ls.set(k, "1"); toast("신고가 접수됐어요");
   }
-  async function comment() {
-    const id = S.cur, body = ($("#cm-cbody").value || "").trim().slice(0, 500), nk = nickOr($("#cm-cnick").value);
-    if (!body) { toast("댓글 내용을 적어 주세요"); return; }
-    if (dirty(body) || dirty(nk)) { toast("표현을 조금만 순화해 주세요 🙏"); return; }
-    if (rateLimited("klik-cmt-at", 20000, "댓글은 20초에 하나씩 쓸 수 있어요")) return;
-    const { error } = await S.sb.from("comments").insert({ tool_id: id, client: client(), nick: nk, body });
-    if (error) { err(error); return; }
-    toast("댓글이 올라갔어요"); await fill(id); refresh();
-  }
-  async function ask(toolId) {
-    const inModal = !!toolId; const bodyEl = $(inModal ? "#cm-qbody2" : "#cm-qbody"), nickEl = $(inModal ? "#cm-qnick2" : "#cm-qnick");
-    const body = (bodyEl.value || "").trim().slice(0, 300), nk = nickOr(nickEl.value);
+  async function askPlaza() {
+    const body = ($("#cm-qbody").value || "").trim().slice(0, 300), nk = nickOr($("#cm-qnick").value);
     if (body.length < 2) { toast("질문을 적어 주세요"); return; }
     if (dirty(body) || dirty(nk)) { toast("표현을 조금만 순화해 주세요 🙏"); return; }
     if (rateLimited("klik-q-at", 30000, "질문은 30초에 하나씩 올릴 수 있어요")) return;
-    const { data, error } = await S.sb.from("questions").insert({ tool_id: toolId || null, client: client(), nick: nk, body }).select("id");
+    const { data, error } = await S.sb.from("questions").insert({ tool_id: null, client: client(), nick: nk, body }).select("id");
     if (error) { err(error); return; }
     if (data && data[0]) ls.set(`klik-mine-question-${data[0].id}`, "1");
-    bodyEl.value = ""; toast("질문이 올라갔어요. 답이 달리면 여기서 볼 수 있어요.");
-    await refresh(); if (inModal) await fill(toolId);
+    $("#cm-qbody").value = ""; toast("질문이 올라갔어요. 답이 달리면 여기서 볼 수 있어요.");
+    await refresh();
   }
   async function reply(key) {
     const [target, tid] = key.split(":");
@@ -1144,15 +1166,15 @@ window.CM = (() => {
     if (dirty(body) || dirty(nk)) { toast("표현을 조금만 순화해 주세요 🙏"); return; }
     if (rateLimited("klik-rp-at", 15000, "답글은 15초에 하나씩 쓸 수 있어요")) return;
     // 부모 글의 도구: 상세 창이면 열린 도구, 광장 질문이면 그 질문의 도구
-    let toolId = S.cur; if (target === "question") { const q = (S.qs.find(x => x.id === Number(tid)) || (S.data && S.data.qs.find(x => x.id === Number(tid)))); if (q) toolId = q.tool_id; }
+    let toolId = $("#cm-box") ? S.cur : null; if (target === "question") { const q = S.qs.find(x => x.id === Number(tid)); if (q) toolId = q.tool_id; }
     const { error } = await S.sb.from("replies").insert({ target, target_id: Number(tid), tool_id: toolId || null, rec_tool: rec, client: client(), nick: nk, body });
     if (error) { err(error); return; }
     toast("답글이 달렸어요");
     await refresh(); if (S.cur !== null && $("#cm-box")) await fill(S.cur);
   }
-  function openReplyForm(key, scroll) {
+  function openReplyForm(key) {
     const f = document.querySelector(`.cm-reply-form[data-rf="${key}"]`); if (!f) return;
-    f.hidden = !f.hidden; if (!f.hidden) { const ta = f.querySelector("textarea"); if (ta) ta.focus(); if (scroll) f.scrollIntoView({ block: "nearest", behavior: "smooth" }); }
+    f.hidden = !f.hidden; if (!f.hidden) { const ta = f.querySelector("textarea"); if (ta) ta.focus(); }
   }
   async function solve(spec) {
     const [target, tid, rid] = spec.split(":");
@@ -1164,31 +1186,29 @@ window.CM = (() => {
   }
 
   document.addEventListener("click", e => {
-    const t = e.target.closest("[data-cm-star],[data-cm-submit],[data-cm-react],[data-cm-blocked-send],[data-cm-blocked-skip],[data-cm-like],[data-cm-report],[data-cm-comment],[data-cm-more],[data-cm-ask],[data-cm-reply-open],[data-cm-reply-send],[data-cm-solve],[data-cm-metoo],[data-cm-goto-plaza]");
+    const t = e.target.closest("[data-cm-star],[data-cm-post],[data-cm-kind],[data-cm-filter],[data-cm-react],[data-cm-blocked-only],[data-cm-like],[data-cm-report],[data-cm-more],[data-cm-ask],[data-cm-reply-open],[data-cm-reply-send],[data-cm-solve],[data-cm-metoo],[data-cm-goto-plaza]");
     if (!t || !S.on) return;
     e.stopPropagation();
     if (t.dataset.cmStar) { S.star = Number(t.dataset.cmStar); document.querySelectorAll("[data-cm-star]").forEach(b => b.classList.toggle("on", Number(b.dataset.cmStar) <= S.star)); $("#cm-star-txt").textContent = ["","아쉬워요","그냥 그래요","쓸 만해요","좋아요","최고예요"][S.star]; return; }
-    if (t.hasAttribute("data-cm-submit")) { submitReview(); return; }
+    if (t.dataset.cmKind) { S.kind = t.dataset.cmKind; paint(); const b = $("#cm-body"); if (b) b.focus(); return; }
+    if (t.dataset.cmFilter) { S.filter = t.dataset.cmFilter; S.page = 8; paint(); return; }
+    if (t.hasAttribute("data-cm-post")) { post(); return; }
     if (t.dataset.cmReact) { react(t.dataset.cmReact); return; }
-    if (t.hasAttribute("data-cm-blocked-send")) { blockedNote(); return; }
-    if (t.hasAttribute("data-cm-blocked-skip")) { blockedNote(true); return; }
+    if (t.hasAttribute("data-cm-blocked-only")) { sendReaction("blocked", "", nick()).then(ok => { if (ok) { toast("알려 주셔서 고마워요"); paint(); } }); return; }
     if (t.dataset.cmLike) { like(t.dataset.cmLike); return; }
     if (t.dataset.cmMetoo) { metoo(t.dataset.cmMetoo); return; }
     if (t.dataset.cmReport) { report(t.dataset.cmReport); return; }
-    if (t.hasAttribute("data-cm-comment")) { comment(); return; }
-    if (t.hasAttribute("data-cm-ask")) { ask(t.dataset.cmAsk || ""); return; }
+    if (t.hasAttribute("data-cm-ask")) { askPlaza(); return; }
     if (t.dataset.cmReplyOpen) { openReplyForm(t.dataset.cmReplyOpen); return; }
     if (t.dataset.cmReplySend) { reply(t.dataset.cmReplySend); return; }
     if (t.dataset.cmSolve) { solve(t.dataset.cmSolve); return; }
     if (t.hasAttribute("data-cm-goto-plaza")) { const s = $("#cm-plaza"); if (s) s.scrollIntoView({ block: "start", behavior: "smooth" }); return; }
-    if (t.hasAttribute("data-cm-more")) { S.revPage += 10; paint(); return; }
+    if (t.hasAttribute("data-cm-more")) { S.page += 10; paint(); return; }
   });
   document.addEventListener("keydown", e => {
     if (e.key !== "Enter") return;
-    if (e.target.id === "cm-body") submitReview();
-    else if (e.target.id === "cm-bnote") blockedNote();
-    else if (e.target.id === "cm-qbody") ask("");
-    else if (e.target.id === "cm-qbody2") ask(S.cur);
+    if (e.target.id === "cm-body" && e.target.tagName === "INPUT") post();
+    else if (e.target.id === "cm-qbody") askPlaza();
   });
 
   init();
