@@ -1,8 +1,4 @@
 {
-  "generated_at": "2026-10-30T12:01:20.0305568Z",
-  "pending": 27,
-  "count": 26,
-  "rejected": 147,
   "items": [
     {
       "id": "pptx",
@@ -32,13 +28,13 @@
         "표·차트·이미지까지 들어갑니다."
       ],
       "status": "published",
-      "stars": 184948,
+      "stars": 184964,
       "pushed_at": "2026-10-28T19:20:39Z",
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       },
       "readme_ko": [
         {
@@ -101,13 +97,13 @@
           "title": "스킬 #26 클로드 코드 엑셀 자동화 xlsx 스킬 #shorts #클로드코드"
         }
       ],
-      "stars": 184948,
+      "stars": 184964,
       "pushed_at": "2026-10-28T19:20:39Z",
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       },
       "readme_ko": [
         {
@@ -169,13 +165,13 @@
           "title": "How to Generate DOCX Documents with Claude AI | Make DOCX Files Look Professional"
         }
       ],
-      "stars": 184948,
+      "stars": 184964,
       "pushed_at": "2026-10-28T19:20:39Z",
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       },
       "readme_ko": [
         {
@@ -247,13 +243,13 @@
           "title": "클로드 PDF 토큰 낭비"
         }
       ],
-      "stars": 184948,
+      "stars": 184964,
       "pushed_at": "2026-10-28T19:20:39Z",
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       },
       "readme_ko": [
         {
@@ -315,13 +311,13 @@
           "title": "AI 티 안 나는 랜딩 페이지 | Claude Code frontend-design 스킬"
         }
       ],
-      "stars": 153920,
+      "stars": 153919,
       "pushed_at": "2026-10-30T01:06:26Z",
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       },
       "readme_ko": [
         {
@@ -389,10 +385,10 @@
       "stars": 2130,
       "pushed_at": "2026-10-28T14:18:10Z",
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       },
       "readme_ko": [
         {
@@ -414,69 +410,6 @@
         {
           "h": "써 보기",
           "p": "피그마 링크를 붙여 넣고 \"이 화면 그대로 코드로 만들어 줘\"라고 하면 됩니다."
-        }
-      ]
-    },
-    {
-      "id": "canva",
-      "kind": "mcp",
-      "cat": "design",
-      "name": "캔바 연결",
-      "en": "Canva connector",
-      "one": "채팅으로 캔바 디자인을 만들고 수정합니다.",
-      "when": "SNS 카드뉴스·썸네일을 빨리 뽑고 싶은 분",
-      "stars": 900,
-      "installs": 4300,
-      "level": 1,
-      "plat": [
-        "claude",
-        "chatgpt"
-      ],
-      "isNew": true,
-      "color": "#d6ecf5",
-      "repo": "https://www.canva.com/developers",
-      "install": null,
-      "link": "https://claude.ai/settings/connectors",
-      "tips": [
-        "\"인스타 카드뉴스 5장 만들어 줘\"",
-        "캔바 앱 설정에서 연결 버튼만 누르면 됩니다."
-      ],
-      "status": "published",
-      "videos": [
-        {
-          "url": "https://www.youtube.com/shorts/L0CvZM6xVnQ",
-          "by": "Porter Metrics",
-          "title": "How to connect Canva to Claude"
-        },
-        {
-          "url": "https://www.youtube.com/shorts/NuEvWr0tKUY",
-          "by": "Gannon Meyer",
-          "title": "Claude Design with Canva is NUTS"
-        },
-        {
-          "url": "https://www.youtube.com/shorts/zQGgNSETqe0",
-          "by": "Sabrina Ramonov 🍄",
-          "title": "Claude + Canva Is a Literal Cheat Code"
-        }
-      ],
-      "trust": {
-        "grade": "verified",
-        "reasons": [
-          "편집팀 검수"
-        ]
-      },
-      "readme_ko": [
-        {
-          "h": "이게 뭐예요?",
-          "p": "캔바 커넥터는 Claude 앱 안에서 캔바 디자인을 만들고 고치게 해 주는 연결입니다. 채팅으로 \"인스타 카드뉴스 5장 만들어 줘\"라고 하면 캔바에 디자인이 생깁니다."
-        },
-        {
-          "h": "연결 방법",
-          "p": "이건 Claude Code 플러그인이 아니라 Claude 앱의 커넥터라서 딸깍 설치 대신 '커넥터 설정 열기'로 갑니다. 거기서 캔바 옆 '연결'을 누르고 캔바 계정으로 로그인하면 끝입니다."
-        },
-        {
-          "h": "출처",
-          "p": "캔바 개발자 문서(canva.com/developers) 기준. 깃허브 저장소가 따로 없습니다."
         }
       ]
     },
@@ -527,13 +460,13 @@
           "title": "How to install Github skills into Claude Cowork"
         }
       ],
-      "stars": 34080,
+      "stars": 34082,
       "pushed_at": "2026-10-30T11:41:10Z",
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       },
       "readme_ko": [
         {
@@ -600,10 +533,10 @@
       "stars": 38849,
       "pushed_at": "2026-10-30T04:53:12Z",
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       },
       "readme_ko": [
         {
@@ -674,13 +607,13 @@
           "title": "Context7 MCP Server #mcp #modelcontextprotocol #ai #llm #coding #development"
         }
       ],
-      "stars": 63947,
-      "pushed_at": "2026-10-30T11:41:42Z",
+      "stars": 63949,
+      "pushed_at": "2026-10-30T12:31:20Z",
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       },
       "readme_ko": [
         {
@@ -747,13 +680,13 @@
           "title": "Let Claude Code check your code before you push: /code-review explained"
         }
       ],
-      "stars": 153920,
+      "stars": 153919,
       "pushed_at": "2026-10-30T01:06:26Z",
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       },
       "readme_ko": [
         {
@@ -817,12 +750,12 @@
         }
       ],
       "stars": 2983,
-      "pushed_at": "2026-10-30T11:51:34Z",
+      "pushed_at": "2026-10-30T12:19:37Z",
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       },
       "readme_ko": [
         {
@@ -890,10 +823,10 @@
         }
       ],
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       },
       "readme_ko": [
         {
@@ -960,10 +893,10 @@
       "stars": 4432,
       "pushed_at": "2026-10-22T15:21:16Z",
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       },
       "readme_ko": [
         {
@@ -1035,10 +968,10 @@
       "stars": 4686,
       "pushed_at": "2026-10-29T16:10:22Z",
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       },
       "readme_ko": [
         {
@@ -1052,68 +985,6 @@
         {
           "h": "써 보기",
           "p": "\"어제 회의록 요약해서 할 일 페이지 만들어 줘\", \"이번 주 노션에 올라온 문서 정리해 줘\""
-        }
-      ]
-    },
-    {
-      "id": "slack",
-      "kind": "mcp",
-      "cat": "work",
-      "name": "슬랙 연결",
-      "en": "Slack MCP",
-      "one": "슬랙 대화를 읽고 요약하고 대신 보냅니다.",
-      "when": "안 읽은 메시지가 999+인 분",
-      "stars": 1800,
-      "installs": 5100,
-      "level": 1,
-      "plat": [
-        "claude",
-        "chatgpt"
-      ],
-      "color": "#f0d6e4",
-      "repo": "https://slack.com/apps",
-      "install": null,
-      "link": "https://claude.ai/settings/connectors",
-      "tips": [
-        "\"오늘 #마케팅 채널 무슨 얘기 했어?\"",
-        "보내기 전에 항상 확인을 받습니다."
-      ],
-      "status": "published",
-      "videos": [
-        {
-          "url": "https://www.youtube.com/shorts/XpXImenrSPI",
-          "by": "Anthropic",
-          "title": "Claude Code in Slack"
-        },
-        {
-          "url": "https://www.youtube.com/shorts/4jKcvBC82EA",
-          "by": "조코딩 JoCoding",
-          "title": "슬랙에 팀원으로 들어온 클로드 ㄷㄷ"
-        },
-        {
-          "url": "https://www.youtube.com/shorts/IntkOQV9c5s",
-          "by": "Slack",
-          "title": "Claude is now your teammate in Slack"
-        }
-      ],
-      "trust": {
-        "grade": "verified",
-        "reasons": [
-          "편집팀 검수"
-        ]
-      },
-      "readme_ko": [
-        {
-          "h": "이게 뭐예요?",
-          "p": "슬랙 커넥터는 Claude 앱이 내 슬랙 대화를 읽고 요약하고, 허락하면 대신 메시지를 보내게 합니다."
-        },
-        {
-          "h": "연결 방법",
-          "p": "Claude 앱의 커넥터 설정에서 슬랙 '연결'을 누르고 슬랙 로그인·허용을 하면 됩니다. 딸깍 설치가 아니라 '커넥터 설정 열기'로 갑니다."
-        },
-        {
-          "h": "써 보기",
-          "p": "\"오늘 #마케팅 채널 무슨 얘기 했어?\", \"이 내용 팀 채널에 올려 줘\"(보내기 전 확인을 받습니다)"
         }
       ]
     },
@@ -1159,10 +1030,10 @@
         }
       ],
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       },
       "readme_ko": [
         {
@@ -1205,13 +1076,13 @@
         "앱마다 허용 여부를 묻습니다."
       ],
       "status": "published",
-      "stars": 153920,
+      "stars": 153919,
       "pushed_at": "2026-10-30T01:06:26Z",
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       },
       "readme_ko": [
         {
@@ -1271,13 +1142,13 @@
           "title": "How to integrate Stripe using Claude Code [FULL GUIDE]"
         }
       ],
-      "stars": 2004,
+      "stars": 2005,
       "pushed_at": "2026-10-30T00:36:36Z",
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       },
       "readme_ko": [
         {
@@ -1347,12 +1218,12 @@
         }
       ],
       "stars": 949,
-      "pushed_at": "2026-10-30T10:02:32Z",
+      "pushed_at": "2026-10-30T12:28:52Z",
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       },
       "readme_ko": [
         {
@@ -1427,7 +1298,7 @@
           "title": "Ponytail makes Claude Code check before it writes a single line"
         }
       ],
-      "stars": 180635,
+      "stars": 180655,
       "pushed_at": "2026-10-29T11:59:31Z",
       "readme_ko": [
         {
@@ -1507,7 +1378,7 @@
           "title": "클로드 코드 스킬 사용법: 코드 쓰기 전에 먼저 질문하게 만드는 Superpowers #shorts"
         }
       ],
-      "stars": 309083,
+      "stars": 309102,
       "pushed_at": "2026-10-29T23:35:34Z",
       "readme_ko": [
         {
@@ -1586,7 +1457,7 @@
           "title": "Claude-Mem: Give Claude Code Persistent Memory (Free & Open Source)"
         }
       ],
-      "stars": 105340,
+      "stars": 105387,
       "pushed_at": "2026-10-30T03:07:33Z",
       "readme_ko": [
         {
@@ -1661,7 +1532,7 @@
           "title": "Caveman: Make Claude Code Talk Less and Save Your Limit"
         }
       ],
-      "stars": 116222,
+      "stars": 116229,
       "pushed_at": "2026-10-30T07:41:52Z",
       "readme_ko": [
         {
@@ -1726,8 +1597,8 @@
           "title": "Context Mode: cutting Claude Code's context consumption by 98 percent."
         }
       ],
-      "stars": 32901,
-      "pushed_at": "2026-10-30T11:47:31Z",
+      "stars": 32904,
+      "pushed_at": "2026-10-30T12:19:41Z",
       "readme_ko": [
         {
           "h": "문제: 컨텍스트의 '나머지 절반'",
@@ -1799,7 +1670,7 @@
         }
       ],
       "stars": 138235,
-      "pushed_at": "2026-10-30T11:50:23Z",
+      "pushed_at": "2026-10-30T12:32:39Z",
       "readme_ko": [
         {
           "h": "지스택이란?",
@@ -1818,6 +1689,2518 @@
           "p": "Codex·Cursor 등 다른 에이전트에서도 돌아갑니다(./setup 이 알아서 감지). /cso(보안 담당)는 네이티브 빌드 도구가 필요해 없으면 비활성으로 남겨 둡니다. 삭제 방법은 docs/uninstall.md. 생산성 수치와 스프린트 10개를 동시에 돌리는 이야기는 docs/why-gstack.md에 있습니다."
         }
       ]
+    },
+    {
+      "id": "slack",
+      "kind": "plugin",
+      "cat": "work",
+      "name": "슬랙 연결",
+      "en": "Slack plugin",
+      "one": "슬랙 메시지·채널·스레드를 읽고 요약하고, 확인 받은 뒤 대신 보냅니다.",
+      "when": "안 읽은 슬랙이 999+이고 회의록을 슬랙에서 긁어 쓰는 분",
+      "installs": 0,
+      "level": 1,
+      "plat": [
+        "claude-code"
+      ],
+      "isNew": true,
+      "added": "2026-10-30",
+      "color": "#f0d6e4",
+      "repo": "https://github.com/slackapi/slack-mcp-plugin",
+      "install": {
+        "kind": "plugin",
+        "name": "slack",
+        "market": "anthropics/claude-plugins-official"
+      },
+      "login": true,
+      "trust": {
+        "grade": "official",
+        "reasons": [
+          "슬랙(Slack) 공식 제작",
+          "Anthropic 공식 마켓플레이스 등재"
+        ]
+      },
+      "note": "처음 쓸 때 슬랙 워크스페이스 로그인 승인이 한 번 필요합니다.",
+      "tips": [
+        "\"오늘 #마케팅 채널에서 무슨 얘기 했는지 요약해 줘\"",
+        "\"이 스레드 결론만 정리해서 노션에 넣어 줘\"",
+        "보내기 전에 항상 내용을 보여 주고 확인을 받습니다."
+      ],
+      "status": "published",
+      "videos": [
+        {
+          "url": "https://www.youtube.com/shorts/XpXImenrSPI",
+          "by": "Anthropic",
+          "title": "Claude Code in Slack"
+        },
+        {
+          "url": "https://www.youtube.com/shorts/4jKcvBC82EA",
+          "by": "조코딩 JoCoding",
+          "title": "슬랙에 팀원으로 들어온 클로드 ㄷㄷ"
+        },
+        {
+          "url": "https://www.youtube.com/shorts/IntkOQV9c5s",
+          "by": "Slack",
+          "title": "Claude is now your teammate in Slack"
+        }
+      ],
+      "stars": 162,
+      "pushed_at": "2026-10-29T22:02:58Z",
+      "readme_ko": [
+        {
+          "h": "이게 뭐예요?",
+          "p": "슬랙(Slack)이 직접 만든 공식 플러그인입니다. Claude가 내 슬랙 워크스페이스의 메시지를 검색하고, 채널과 스레드를 읽고, 팀 대화 흐름을 파악합니다. 메시지를 보낼 때는 반드시 내용을 먼저 보여 주고 확인을 받습니다."
+        },
+        {
+          "h": "설치와 첫 사용",
+          "p": "딸깍 설치 뒤 처음 쓸 때 브라우저에 슬랙 로그인 창이 떠요. 내 워크스페이스를 고르고 '허용'을 누르면 끝. 그다음부터는 \"#일반 채널 오늘 요약해 줘\"처럼 말하면 됩니다."
+        },
+        {
+          "h": "주의",
+          "p": "회사 슬랙은 관리자가 앱 설치를 막아 놨을 수 있어요. 그럴 땐 관리자에게 'Claude 앱 승인'을 요청해야 합니다. 읽기는 내 권한 범위 안에서만 됩니다."
+        }
+      ]
+    },
+    {
+      "id": "canva",
+      "kind": "plugin",
+      "cat": "design",
+      "name": "캔바 연결",
+      "en": "Canva plugin",
+      "one": "캔바 디자인을 만들고 고치고 크기 바꾸고 브랜드 규칙에 맞는지 검사합니다.",
+      "when": "SNS 카드뉴스·썸네일을 매번 캔바에서 손으로 만드는 분",
+      "installs": 0,
+      "level": 1,
+      "plat": [
+        "claude-code"
+      ],
+      "isNew": true,
+      "added": "2026-10-30",
+      "color": "#d6ecf5",
+      "repo": "https://github.com/canva-sdks/canva-skills",
+      "install": {
+        "kind": "plugin",
+        "name": "canva",
+        "market": "anthropics/claude-plugins-official"
+      },
+      "login": true,
+      "trust": {
+        "grade": "official",
+        "reasons": [
+          "캔바(Canva) 공식 제작",
+          "Anthropic 공식 마켓플레이스 등재"
+        ]
+      },
+      "note": "처음 쓸 때 캔바 계정 로그인 승인이 한 번 필요합니다.",
+      "tips": [
+        "\"인스타 카드뉴스 5장짜리 만들어 줘. 주제는 가을 세일\"",
+        "\"이 디자인 유튜브 썸네일 크기로 바꿔 줘\"",
+        "\"우리 브랜드 색이랑 폰트 맞게 됐는지 검사해 줘\""
+      ],
+      "status": "published",
+      "videos": [
+        {
+          "url": "https://www.youtube.com/shorts/L0CvZM6xVnQ",
+          "by": "Porter Metrics",
+          "title": "How to connect Canva to Claude"
+        },
+        {
+          "url": "https://www.youtube.com/shorts/NuEvWr0tKUY",
+          "by": "Gannon Meyer",
+          "title": "Claude Design with Canva is NUTS"
+        },
+        {
+          "url": "https://www.youtube.com/shorts/zQGgNSETqe0",
+          "by": "Sabrina Ramonov 🍄",
+          "title": "Claude + Canva Is a Literal Cheat Code"
+        }
+      ],
+      "stars": 140,
+      "pushed_at": "2026-10-23T18:21:55Z",
+      "readme_ko": [
+        {
+          "h": "이게 뭐예요?",
+          "p": "캔바(Canva)가 직접 만든 공식 플러그인입니다. 캔바 MCP 서버를 통해 디자인을 새로 만들고, 기존 디자인을 고치고, 다른 크기로 바꾸고, 브랜드 규칙(색·글꼴·로고)에 맞는지 검사합니다."
+        },
+        {
+          "h": "설치와 첫 사용",
+          "p": "딸깍 설치 뒤 처음 쓸 때 캔바 로그인 창이 한 번 뜹니다. 승인하면 끝. 그다음 \"인스타 카드뉴스 5장 만들어 줘\"처럼 말하면 캔바에 디자인이 생기고 링크를 돌려줍니다."
+        },
+        {
+          "h": "주의",
+          "p": "무료 캔바 계정도 되지만, 브랜드 키트 검사 같은 일부 기능은 캔바 프로가 필요합니다."
+        }
+      ]
+    },
+    {
+      "id": "linear",
+      "kind": "plugin",
+      "cat": "work",
+      "name": "리니어 연결",
+      "en": "Linear",
+      "one": "리니어 이슈를 만들고, 상태를 바꾸고, 프로젝트 전체를 검색합니다.",
+      "when": "개발팀 일감을 리니어로 관리하는 분",
+      "installs": 0,
+      "level": 1,
+      "plat": [
+        "claude-code"
+      ],
+      "isNew": true,
+      "added": "2026-10-30",
+      "color": "#dcdcf5",
+      "repo": "https://github.com/anthropics/claude-plugins-public",
+      "install": {
+        "kind": "plugin",
+        "name": "linear",
+        "market": "anthropics/claude-plugins-official"
+      },
+      "login": true,
+      "trust": {
+        "grade": "official",
+        "reasons": [
+          "Anthropic이 직접 묶은 공식 플러그인",
+          "리니어 공식 MCP 서버 사용"
+        ]
+      },
+      "tips": [
+        "\"이번 스프린트에 남은 이슈 뭐야?\"",
+        "\"로그인 버그 이슈 만들고 나한테 배정해 줘\"",
+        "코드 고치면서 이슈 상태를 같이 바꿔 줍니다."
+      ],
+      "status": "published",
+      "stars": 45376,
+      "pushed_at": "2026-10-30T07:32:39Z",
+      "readme_ko": [
+        {
+          "h": "이게 뭐예요?",
+          "p": "리니어(Linear)는 개발팀이 많이 쓰는 이슈 관리 도구입니다. 이 플러그인은 리니어 공식 MCP 서버를 Claude에 붙여 이슈 생성·상태 변경·프로젝트 검색을 채팅으로 합니다. Anthropic이 공식 마켓에 직접 올렸습니다."
+        },
+        {
+          "h": "설치와 첫 사용",
+          "p": "딸깍 설치 뒤 처음 쓸 때 리니어 로그인 승인 한 번. 그다음 \"이번 스프린트 남은 이슈\" 같은 질문이나 \"이 버그 이슈로 만들어\" 같은 명령이 됩니다. 코드 고치면서 이슈 상태를 같이 바꿔 주기도 합니다."
+        }
+      ]
+    },
+    {
+      "id": "atlassian",
+      "kind": "plugin",
+      "cat": "work",
+      "name": "지라·컨플루언스 연결",
+      "en": "Atlassian",
+      "one": "지라 이슈와 컨플루언스 문서를 검색·생성하고 스프린트를 관리합니다.",
+      "when": "회사가 지라·컨플루언스를 쓰는 분",
+      "installs": 0,
+      "level": 2,
+      "plat": [
+        "claude-code"
+      ],
+      "isNew": true,
+      "added": "2026-10-30",
+      "color": "#d6e4f5",
+      "repo": "https://github.com/atlassian/atlassian-mcp-server",
+      "install": {
+        "kind": "plugin",
+        "name": "atlassian",
+        "market": "anthropics/claude-plugins-official"
+      },
+      "login": true,
+      "trust": {
+        "grade": "official",
+        "reasons": [
+          "아틀라시안(Atlassian) 공식 제작",
+          "Anthropic 공식 마켓플레이스 등재"
+        ]
+      },
+      "note": "처음 쓸 때 아틀라시안 계정 로그인 승인이 한 번 필요합니다.",
+      "tips": [
+        "\"내가 담당한 지라 이슈 중 이번 주 마감 뭐야?\"",
+        "\"이 회의록을 컨플루언스 새 페이지로 올려 줘\""
+      ],
+      "status": "published",
+      "stars": 1138,
+      "pushed_at": "2026-10-29T18:23:30Z",
+      "readme_ko": [
+        {
+          "h": "이게 뭐예요?",
+          "p": "아틀라시안(지라·컨플루언스 만든 회사)이 직접 만든 공식 플러그인입니다. 지라 이슈 검색·생성, 스프린트 관리, 컨플루언스 문서 읽기·쓰기를 Claude가 합니다."
+        },
+        {
+          "h": "설치와 첫 사용",
+          "p": "딸깍 설치 뒤 처음 쓸 때 아틀라시안 계정 로그인 승인 한 번. 회사 지라 주소(예: 회사명.atlassian.net)를 물어볼 수 있어요."
+        },
+        {
+          "h": "주의",
+          "p": "회사 관리자가 외부 앱 연결을 막아 놨으면 관리자 승인이 필요합니다."
+        }
+      ]
+    },
+    {
+      "id": "asana",
+      "kind": "plugin",
+      "cat": "work",
+      "name": "아사나 연결",
+      "en": "Asana",
+      "one": "아사나 할 일을 만들고 프로젝트를 검색하고 진행 상황을 정리합니다.",
+      "when": "팀 업무를 아사나로 돌리는 분",
+      "installs": 0,
+      "level": 1,
+      "plat": [
+        "claude-code"
+      ],
+      "isNew": true,
+      "added": "2026-10-30",
+      "color": "#f5dcdc",
+      "repo": "https://github.com/anthropics/claude-plugins-public",
+      "install": {
+        "kind": "plugin",
+        "name": "asana",
+        "market": "anthropics/claude-plugins-official"
+      },
+      "login": true,
+      "trust": {
+        "grade": "official",
+        "reasons": [
+          "Anthropic이 직접 묶은 공식 플러그인",
+          "아사나 공식 MCP 서버 사용"
+        ]
+      },
+      "tips": [
+        "\"이번 주 내 아사나 할 일 정리해 줘\"",
+        "\"회의에서 나온 액션 아이템 아사나에 다 넣어 줘\""
+      ],
+      "status": "published",
+      "stars": 45376,
+      "pushed_at": "2026-10-30T07:32:39Z",
+      "readme_ko": [
+        {
+          "h": "이게 뭐예요?",
+          "p": "아사나(Asana) 공식 MCP 서버를 Claude에 붙인 플러그인입니다. 할 일 만들기, 담당자 배정, 프로젝트 검색, 진행 상황 요약을 채팅으로 합니다. Anthropic이 공식 마켓에 직접 올렸습니다."
+        },
+        {
+          "h": "설치와 첫 사용",
+          "p": "딸깍 설치 뒤 처음 쓸 때 아사나 로그인 승인 한 번. \"회의록에서 액션 아이템 뽑아서 아사나에 넣어 줘\"가 대표 사용법입니다."
+        }
+      ]
+    },
+    {
+      "id": "zapier",
+      "kind": "plugin",
+      "cat": "auto",
+      "name": "재피어 연결 (8,000개 앱)",
+      "en": "Zapier",
+      "one": "재피어에 연결된 8,000개 앱의 동작을 채팅으로 실행합니다. 메일·시트·캘린더·CRM 전부.",
+      "when": "여러 서비스를 오가는 반복 업무를 자동으로 돌리고 싶은 분",
+      "installs": 0,
+      "level": 2,
+      "plat": [
+        "claude-code"
+      ],
+      "isNew": true,
+      "added": "2026-10-30",
+      "color": "#f5e2cf",
+      "repo": "https://github.com/zapier/zapier-mcp",
+      "install": {
+        "kind": "plugin",
+        "name": "zapier",
+        "market": "anthropics/claude-plugins-official"
+      },
+      "login": true,
+      "trust": {
+        "grade": "official",
+        "reasons": [
+          "재피어(Zapier) 공식 제작",
+          "Anthropic 공식 마켓플레이스 등재"
+        ]
+      },
+      "note": "재피어 계정이 필요하고, 쓰려는 앱을 재피어에서 먼저 연결해 둬야 합니다. 무료 플랜은 월 실행 횟수 제한이 있습니다.",
+      "tips": [
+        "\"구글 시트 '문의' 탭에 새 줄 생기면 나한테 지메일 보내게 해 줘\"",
+        "\"캘린더에 내일 10시 미팅 잡아 줘\""
+      ],
+      "status": "published",
+      "stars": 452,
+      "pushed_at": "2026-10-22T23:28:19Z",
+      "readme_ko": [
+        {
+          "h": "이게 뭐예요?",
+          "p": "재피어(Zapier)는 8,000개가 넘는 앱(지메일, 구글 시트, 캘린더, 슬랙, 노션, 카카오 비즈 등)을 서로 연결하는 서비스입니다. 이 공식 플러그인은 재피어에 연결된 앱의 동작을 Claude가 직접 실행하게 합니다. 재피어에서 '행동'을 켜 두면 Claude가 찾아서 씁니다."
+        },
+        {
+          "h": "설치와 첫 사용",
+          "p": "딸깍 설치 뒤 재피어 로그인 승인 한 번. 그다음 재피어 사이트에서 쓰려는 앱을 연결하고 Claude에게 허용할 행동을 켭니다. 그 뒤로는 \"캘린더에 내일 10시 미팅 잡아 줘\"처럼 말하면 됩니다."
+        },
+        {
+          "h": "주의",
+          "p": "재피어 무료 플랜은 한 달 실행 횟수에 제한이 있습니다. 자주 쓰면 유료 플랜이 필요해요."
+        }
+      ]
+    },
+    {
+      "id": "airtable",
+      "kind": "plugin",
+      "cat": "data",
+      "name": "에어테이블 연결",
+      "en": "Airtable",
+      "one": "에어테이블 표를 읽고 쓰고, 자동화와 화면까지 채팅으로 만듭니다.",
+      "when": "엑셀 대신 에어테이블로 고객·재고·일정을 관리하는 분",
+      "installs": 0,
+      "level": 2,
+      "plat": [
+        "claude-code"
+      ],
+      "isNew": true,
+      "added": "2026-10-30",
+      "color": "#f5f0cf",
+      "repo": "https://github.com/Airtable/skills",
+      "install": {
+        "kind": "plugin",
+        "name": "airtable",
+        "market": "anthropics/claude-plugins-official"
+      },
+      "login": true,
+      "trust": {
+        "grade": "official",
+        "reasons": [
+          "에어테이블(Airtable) 공식 제작",
+          "Anthropic 공식 마켓플레이스 등재"
+        ]
+      },
+      "tips": [
+        "\"고객 표에서 이번 달 미결제 뽑아 줘\"",
+        "\"재고 표에 '입고일' 열 추가하고 자동 알림 만들어 줘\""
+      ],
+      "status": "published",
+      "stars": 53,
+      "pushed_at": "2026-07-21T18:20:59Z",
+      "readme_ko": [
+        {
+          "h": "이게 뭐예요?",
+          "p": "에어테이블(Airtable)은 엑셀처럼 보이는 데이터베이스입니다. 공식 플러그인으로 표를 읽고 쓰고, 열을 추가하고, 자동화와 화면(인터페이스)까지 채팅으로 만듭니다. 제품·마케팅·영업·인사 어디든 씁니다."
+        },
+        {
+          "h": "설치와 첫 사용",
+          "p": "딸깍 설치 뒤 에어테이블 로그인 승인 한 번. \"고객 표에서 이번 달 미결제 뽑아 줘\"처럼 말하면 됩니다."
+        }
+      ]
+    },
+    {
+      "id": "dropbox",
+      "kind": "plugin",
+      "cat": "work",
+      "name": "드롭박스 연결",
+      "en": "Dropbox",
+      "one": "드롭박스 파일을 찾고 정리하고, 만든 결과물을 바로 저장합니다.",
+      "when": "자료가 전부 드롭박스에 있는 분",
+      "installs": 0,
+      "level": 1,
+      "plat": [
+        "claude-code"
+      ],
+      "isNew": true,
+      "added": "2026-10-30",
+      "color": "#d6e8f5",
+      "repo": "https://github.com/dropbox/dropbox-ai-plugins",
+      "install": {
+        "kind": "plugin",
+        "name": "dropbox",
+        "market": "anthropics/claude-plugins-official"
+      },
+      "login": true,
+      "trust": {
+        "grade": "official",
+        "reasons": [
+          "드롭박스(Dropbox) 공식 제작",
+          "Anthropic 공식 마켓플레이스 등재"
+        ]
+      },
+      "tips": [
+        "\"드롭박스에서 작년 계약서 찾아서 요약해 줘\"",
+        "\"이 보고서 드롭박스 '2026 보고' 폴더에 저장해 줘\""
+      ],
+      "status": "published",
+      "stars": 11,
+      "pushed_at": "2026-10-23T17:49:09Z",
+      "readme_ko": [
+        {
+          "h": "이게 뭐예요?",
+          "p": "드롭박스(Dropbox) 공식 플러그인입니다. 내 드롭박스 파일을 검색하고, 폴더를 정리하고, Claude가 만든 결과물을 바로 드롭박스에 저장합니다."
+        },
+        {
+          "h": "설치와 첫 사용",
+          "p": "딸깍 설치 뒤 드롭박스 로그인 승인 한 번. \"작년 계약서 찾아서 요약해 줘\", \"이 보고서 '2026 보고' 폴더에 저장해 줘\"가 됩니다."
+        }
+      ]
+    },
+    {
+      "id": "telegram",
+      "kind": "plugin",
+      "cat": "auto",
+      "name": "텔레그램으로 Claude 조종",
+      "en": "Telegram bridge",
+      "one": "텔레그램 채팅으로 컴퓨터의 Claude에게 일을 시키고 결과를 받습니다. 밖에서도.",
+      "when": "컴퓨터는 집에 켜 두고 폰으로 작업 시키고 싶은 분",
+      "installs": 0,
+      "level": 2,
+      "plat": [
+        "claude-code"
+      ],
+      "isNew": true,
+      "added": "2026-10-30",
+      "color": "#d6ecf5",
+      "repo": "https://github.com/anthropics/claude-plugins-public",
+      "install": {
+        "kind": "plugin",
+        "name": "telegram",
+        "market": "anthropics/claude-plugins-official"
+      },
+      "trust": {
+        "grade": "official",
+        "reasons": [
+          "Anthropic이 직접 만든 공식 플러그인",
+          "허용한 사람만 말 걸 수 있는 접근 제어 내장"
+        ]
+      },
+      "note": "텔레그램 봇 토큰을 하나 만들어 넣어야 합니다(무료, 5분). 설치 뒤 /telegram:access 로 내 계정만 허용하세요.",
+      "tips": [
+        "설치 후 \"/telegram:access\"로 내 텔레그램만 허용",
+        "폰에서 봇한테 \"어제 하던 보고서 마저 써\"라고 보내면 됩니다."
+      ],
+      "status": "published",
+      "stars": 45376,
+      "pushed_at": "2026-10-30T07:32:39Z",
+      "readme_ko": [
+        {
+          "h": "이게 뭐예요?",
+          "p": "Anthropic이 만든 텔레그램 다리(bridge)입니다. 텔레그램 봇한테 말하면 내 컴퓨터의 Claude Code가 그 일을 하고 결과를 텔레그램으로 돌려줍니다. 밖에서 폰으로 컴퓨터 작업을 시키는 거예요. 누가 말 걸 수 있는지 허용 목록으로 제한합니다."
+        },
+        {
+          "h": "설치와 첫 사용",
+          "p": "1) 텔레그램에서 @BotFather에게 /newbot 보내서 봇 토큰 받기(무료, 3분). 2) 딸깍 설치. 3) 코드 탭에서 \"/telegram:access\"로 내 텔레그램 계정만 허용. 4) 폰에서 봇한테 말 걸기."
+        },
+        {
+          "h": "주의",
+          "p": "컴퓨터가 켜져 있고 코드 탭이 열려 있어야 답합니다. 허용 목록을 꼭 설정하세요. 안 하면 아무나 내 컴퓨터에 명령할 수 있습니다."
+        }
+      ]
+    },
+    {
+      "id": "discord",
+      "kind": "plugin",
+      "cat": "work",
+      "name": "디스코드 연결",
+      "en": "Discord bridge",
+      "one": "디스코드 채널에서 Claude를 부르고 답을 받습니다. 누가 쓸 수 있는지 직접 정합니다.",
+      "when": "팀·커뮤니티가 디스코드에 모여 있는 분",
+      "installs": 0,
+      "level": 2,
+      "plat": [
+        "claude-code"
+      ],
+      "isNew": true,
+      "added": "2026-10-30",
+      "color": "#dcdcf5",
+      "repo": "https://github.com/anthropics/claude-plugins-public",
+      "install": {
+        "kind": "plugin",
+        "name": "discord",
+        "market": "anthropics/claude-plugins-official"
+      },
+      "trust": {
+        "grade": "official",
+        "reasons": [
+          "Anthropic이 직접 만든 공식 플러그인",
+          "허용 목록 기반 접근 제어 내장"
+        ]
+      },
+      "note": "디스코드 봇 토큰이 필요합니다. /discord:access 로 허용할 사람을 정하세요.",
+      "tips": [
+        "\"/discord:access\"로 허용 목록 설정",
+        "채널에서 봇을 멘션하면 답합니다."
+      ],
+      "status": "published",
+      "stars": 45376,
+      "pushed_at": "2026-10-30T07:32:39Z",
+      "readme_ko": [
+        {
+          "h": "이게 뭐예요?",
+          "p": "Anthropic이 만든 디스코드 다리입니다. 디스코드 채널에서 봇을 부르면 내 컴퓨터의 Claude가 답합니다. 허용 목록과 정책으로 누가 쓸 수 있는지 정합니다."
+        },
+        {
+          "h": "설치와 첫 사용",
+          "p": "디스코드 개발자 포털에서 봇 토큰을 만들고(무료), 딸깍 설치 뒤 \"/discord:access\"로 허용할 사람을 정합니다."
+        },
+        {
+          "h": "주의",
+          "p": "텔레그램과 마찬가지로 허용 목록 설정이 필수입니다."
+        }
+      ]
+    },
+    {
+      "id": "browser-use",
+      "kind": "plugin",
+      "cat": "auto",
+      "name": "브라우저 대신 조작 (Browser Use)",
+      "en": "Browser Use",
+      "one": "내 크롬이나 클라우드 브라우저를 Claude가 직접 열어 사이트를 돌아다니며 일을 처리합니다.",
+      "when": "로그인이 필요한 사이트에서 반복 작업을 시키고 싶은 분",
+      "installs": 0,
+      "level": 2,
+      "plat": [
+        "claude-code"
+      ],
+      "isNew": true,
+      "added": "2026-10-30",
+      "color": "#d6f0e8",
+      "repo": "https://github.com/browser-use/plugins",
+      "install": {
+        "kind": "plugin",
+        "name": "browser-use",
+        "market": "anthropics/claude-plugins-official"
+      },
+      "trust": {
+        "grade": "verified",
+        "reasons": [
+          "Browser Use 팀 공식 제작",
+          "Anthropic 공식 마켓플레이스 등재"
+        ]
+      },
+      "tips": [
+        "\"쿠팡 들어가서 내 주문 내역 표로 정리해 줘\"",
+        "\"이 사이트 회원가입 폼이 제대로 되는지 직접 눌러 봐\""
+      ],
+      "status": "published",
+      "stars": 26,
+      "pushed_at": "2026-10-17T20:03:00Z",
+      "readme_ko": [
+        {
+          "h": "이게 뭐예요?",
+          "p": "Browser Use는 AI가 브라우저를 사람처럼 조작하게 하는 오픈소스 프로젝트입니다. 이 플러그인은 내 크롬이나 Browser Use 클라우드 브라우저를 Claude에게 쥐여 줍니다. 웹사이트에 들어가서 클릭하고, 입력하고, 읽어 오는 모든 일을 시킬 수 있어요."
+        },
+        {
+          "h": "설치와 첫 사용",
+          "p": "딸깍 설치 뒤 \"쿠팡 들어가서 내 주문 내역 표로 정리해 줘\"처럼 말하면 됩니다. 로그인이 필요한 사이트는 내 크롬을 쓰면 이미 로그인된 상태로 작업합니다."
+        },
+        {
+          "h": "주의",
+          "p": "결제·삭제 같은 되돌릴 수 없는 동작은 Claude가 하기 전에 확인하도록 말해 두세요."
+        }
+      ]
+    },
+    {
+      "id": "firecrawl",
+      "kind": "plugin",
+      "cat": "marketing",
+      "name": "웹사이트 통째로 긁기 (Firecrawl)",
+      "en": "Firecrawl",
+      "one": "아무 웹사이트나 깨끗한 글·표로 바꿔 가져옵니다. 경쟁사 가격, 블로그 전체, 상품 목록.",
+      "when": "사이트 여러 개를 매번 복사·붙여넣기 하던 분",
+      "installs": 0,
+      "level": 2,
+      "plat": [
+        "claude-code"
+      ],
+      "isNew": true,
+      "added": "2026-10-30",
+      "color": "#f5e2cf",
+      "repo": "https://github.com/firecrawl/firecrawl-claude-plugin",
+      "install": {
+        "kind": "plugin",
+        "name": "firecrawl",
+        "market": "anthropics/claude-plugins-official"
+      },
+      "trust": {
+        "grade": "official",
+        "reasons": [
+          "파이어크롤(Firecrawl) 공식 제작",
+          "Anthropic 공식 마켓플레이스 등재"
+        ]
+      },
+      "note": "파이어크롤 API 키가 필요합니다(무료 크레딧 있음).",
+      "tips": [
+        "\"이 쇼핑몰 신상품 페이지 전부 긁어서 가격표로 만들어 줘\"",
+        "\"경쟁사 블로그 최근 글 20개 제목·요약 뽑아 줘\""
+      ],
+      "status": "published",
+      "stars": 252,
+      "pushed_at": "2026-10-25T13:30:04Z",
+      "readme_ko": [
+        {
+          "h": "이게 뭐예요?",
+          "p": "파이어크롤(Firecrawl)은 웹사이트를 AI가 읽기 좋은 깨끗한 글(마크다운)이나 표로 바꿔 주는 서비스입니다. 한 페이지든 사이트 전체든 긁어 옵니다. 광고·메뉴 같은 잡음은 걷어내고 본문만 줍니다."
+        },
+        {
+          "h": "설치와 첫 사용",
+          "p": "firecrawl.dev에서 가입하고 API 키를 받습니다(무료 크레딧 있음). 딸깍 설치 뒤 키를 넣으면 \"이 쇼핑몰 신상품 전부 긁어서 가격표로\" 같은 요청이 됩니다."
+        }
+      ]
+    },
+    {
+      "id": "exa",
+      "kind": "plugin",
+      "cat": "marketing",
+      "name": "AI 웹 검색·리서치 (Exa)",
+      "en": "Exa",
+      "one": "AI용 검색 엔진으로 웹을 뒤지고, 깊은 조사 보고서까지 만듭니다.",
+      "when": "구글 검색 결과 수십 개 열어 보는 게 지겨운 분",
+      "installs": 0,
+      "level": 1,
+      "plat": [
+        "claude-code"
+      ],
+      "isNew": true,
+      "added": "2026-10-30",
+      "color": "#d6dcf0",
+      "repo": "https://github.com/exa-labs/exa-mcp-server",
+      "install": {
+        "kind": "plugin",
+        "name": "exa",
+        "market": "anthropics/claude-plugins-official"
+      },
+      "trust": {
+        "grade": "official",
+        "reasons": [
+          "Exa 공식 제작",
+          "Anthropic 공식 마켓플레이스 등재"
+        ]
+      },
+      "note": "Exa API 키가 필요합니다(무료 크레딧 있음).",
+      "tips": [
+        "\"2026년 한국 AI 스타트업 투자 동향 조사해서 보고서 써 줘\"",
+        "\"이 주제로 최근 한 달 글 찾아서 출처랑 같이 정리해 줘\""
+      ],
+      "status": "published",
+      "stars": 5201,
+      "pushed_at": "2026-10-28T19:55:10Z",
+      "readme_ko": [
+        {
+          "h": "이게 뭐예요?",
+          "p": "Exa는 AI를 위해 만든 검색 엔진입니다. 키워드가 아니라 '의미'로 찾아서, 보통 검색보다 관련 글을 잘 찾습니다. 이 플러그인은 웹 검색, 깊은 조사(여러 출처를 읽고 보고서 작성), 페이지 본문 추출을 Claude에 줍니다."
+        },
+        {
+          "h": "설치와 첫 사용",
+          "p": "exa.ai에서 API 키를 받습니다(무료 크레딧 있음). 딸깍 설치 뒤 \"이 주제로 최근 한 달 글 찾아서 출처랑 정리해 줘\"처럼 말하면 됩니다."
+        }
+      ]
+    },
+    {
+      "id": "postiz",
+      "kind": "plugin",
+      "cat": "marketing",
+      "name": "SNS 예약 발행 (Postiz)",
+      "en": "Postiz",
+      "one": "인스타·X·링크드인·틱톡 등 28개 SNS에 글을 예약 발행하고 성과를 봅니다.",
+      "when": "SNS 여러 개 운영하느라 매일 올리기 힘든 분",
+      "installs": 0,
+      "level": 2,
+      "plat": [
+        "claude-code"
+      ],
+      "isNew": true,
+      "added": "2026-10-30",
+      "color": "#f5d8e4",
+      "repo": "https://github.com/gitroomhq/postiz-agent",
+      "install": {
+        "kind": "plugin",
+        "name": "postiz",
+        "market": "anthropics/claude-plugins-official"
+      },
+      "trust": {
+        "grade": "verified",
+        "reasons": [
+          "Postiz(오픈소스 SNS 관리 도구) 공식 제작",
+          "Anthropic 공식 마켓플레이스 등재"
+        ]
+      },
+      "note": "Postiz 계정(무료 플랜 있음)에 SNS 계정을 먼저 연결해야 합니다.",
+      "tips": [
+        "\"이번 주 인스타·X에 올릴 글 5개 써서 매일 오전 9시로 예약해 줘\"",
+        "\"지난주 올린 글 중 반응 제일 좋은 거 알려 줘\""
+      ],
+      "status": "published",
+      "stars": 558,
+      "pushed_at": "2026-10-30T09:47:39Z",
+      "readme_ko": [
+        {
+          "h": "이게 뭐예요?",
+          "p": "Postiz는 오픈소스 SNS 관리 도구입니다. 인스타그램·X·링크드인·틱톡·유튜브·스레드 등 28개 플랫폼에 글을 예약 발행하고 성과를 봅니다. 이 플러그인은 그걸 Claude가 명령줄로 조작하게 합니다."
+        },
+        {
+          "h": "설치와 첫 사용",
+          "p": "postiz.com에서 계정을 만들고(무료 플랜 있음) SNS 계정들을 연결합니다. 딸깍 설치 뒤 \"이번 주 올릴 글 5개 써서 매일 오전 9시로 예약\"처럼 말하면 됩니다."
+        }
+      ]
+    },
+    {
+      "id": "remember",
+      "kind": "plugin",
+      "cat": "auto",
+      "name": "대화 기억 (Remember)",
+      "en": "Remember",
+      "one": "대화를 날짜별 일지로 압축해 저장하고, 다음 날 Claude가 전날 일을 기억합니다.",
+      "when": "매일 Claude 켤 때마다 상황 설명부터 다시 하는 분",
+      "installs": 0,
+      "level": 1,
+      "plat": [
+        "claude-code"
+      ],
+      "isNew": true,
+      "added": "2026-10-30",
+      "color": "#d6ecf5",
+      "repo": "https://github.com/Digital-Process-Tools/claude-remember",
+      "install": {
+        "kind": "plugin",
+        "name": "remember",
+        "market": "anthropics/claude-plugins-official"
+      },
+      "trust": {
+        "grade": "verified",
+        "reasons": [
+          "Anthropic 공식 마켓플레이스 등재",
+          "클로드 기억(claude-mem)보다 가벼움, 별도 프로그램 없음"
+        ]
+      },
+      "tips": [
+        "설치하면 자동으로 기록합니다. 따로 할 건 없어요.",
+        "\"어제 뭐 하다 끝났지?\""
+      ],
+      "status": "published",
+      "stars": 206,
+      "pushed_at": "2026-10-30T10:06:04Z",
+      "readme_ko": [
+        {
+          "h": "이게 뭐예요?",
+          "p": "Claude Code용 지속 기억 플러그인입니다. 대화를 뽑아 요약하고 날짜별 일지로 압축해 둡니다. 다음 세션에서 Claude가 '어제 뭐 했는지' 압니다. 클로드 기억(claude-mem)보다 가볍고 별도 프로그램을 띄우지 않습니다."
+        },
+        {
+          "h": "설치와 첫 사용",
+          "p": "딸깍 설치하면 끝. 자동으로 기록됩니다."
+        }
+      ]
+    },
+    {
+      "id": "hookify",
+      "kind": "plugin",
+      "cat": "auto",
+      "name": "하지 말 것 규칙 만들기 (Hookify)",
+      "en": "Hookify",
+      "one": "\"이건 하지 마\"를 말로 하면 Claude가 그 행동을 못 하게 막는 규칙을 만들어 줍니다.",
+      "when": "Claude가 자꾸 같은 실수(파일 지우기, 엉뚱한 명령)를 반복하는 분",
+      "installs": 0,
+      "level": 2,
+      "plat": [
+        "claude-code"
+      ],
+      "isNew": true,
+      "added": "2026-10-30",
+      "color": "#f0dad6",
+      "repo": "https://github.com/anthropics/claude-plugins-public",
+      "install": {
+        "kind": "plugin",
+        "name": "hookify",
+        "market": "anthropics/claude-plugins-official"
+      },
+      "trust": {
+        "grade": "official",
+        "reasons": [
+          "Anthropic이 직접 만든 공식 플러그인"
+        ]
+      },
+      "tips": [
+        "\"/hookify 앞으로 .env 파일은 절대 건드리지 마\"",
+        "대화를 분석해서 반복되는 나쁜 패턴을 찾아 규칙으로 만들어 주기도 합니다."
+      ],
+      "status": "published",
+      "stars": 45376,
+      "pushed_at": "2026-10-30T07:32:39Z",
+      "readme_ko": [
+        {
+          "h": "이게 뭐예요?",
+          "p": "Claude Code의 훅(hook: 특정 동작 전에 자동으로 끼어드는 규칙)을 말로 만들어 주는 Anthropic 공식 플러그인입니다. \"이 파일은 건드리지 마\", \"이 명령은 실행 전에 물어봐\" 같은 규칙을 대신 써 줍니다. 대화를 분석해 반복되는 나쁜 패턴을 찾아 규칙으로 제안하기도 합니다."
+        },
+        {
+          "h": "설치와 첫 사용",
+          "p": "딸깍 설치 뒤 \"/hookify 앞으로 .env 파일은 절대 건드리지 마\"처럼 말하면 규칙이 생깁니다."
+        }
+      ]
+    },
+    {
+      "id": "claude-md-management",
+      "kind": "plugin",
+      "cat": "dev",
+      "name": "프로젝트 메모 관리",
+      "en": "CLAUDE.md management",
+      "one": "Claude가 프로젝트마다 읽는 메모 파일(CLAUDE.md)을 점검하고, 오늘 배운 걸 자동으로 적어 둡니다.",
+      "when": "Claude가 프로젝트 규칙을 자꾸 까먹는 분",
+      "installs": 0,
+      "level": 2,
+      "plat": [
+        "claude-code"
+      ],
+      "isNew": true,
+      "added": "2026-10-30",
+      "color": "#e8e4dc",
+      "repo": "https://github.com/anthropics/claude-plugins-official",
+      "install": {
+        "kind": "plugin",
+        "name": "claude-md-management",
+        "market": "anthropics/claude-plugins-official"
+      },
+      "trust": {
+        "grade": "official",
+        "reasons": [
+          "Anthropic이 직접 만든 공식 플러그인"
+        ]
+      },
+      "tips": [
+        "\"/claude-md-management:audit\" 로 메모 품질 점검",
+        "작업 끝에 이번 세션에서 배운 걸 메모에 반영해 줍니다."
+      ],
+      "status": "published",
+      "stars": 45376,
+      "pushed_at": "2026-10-30T07:32:39Z",
+      "readme_ko": [
+        {
+          "h": "이게 뭐예요?",
+          "p": "CLAUDE.md는 Claude가 프로젝트를 열 때마다 읽는 메모 파일입니다. 이 공식 플러그인은 그 메모의 품질을 점검하고, 세션에서 배운 것을 메모에 반영하고, 프로젝트 기억을 깔끔하게 유지합니다."
+        },
+        {
+          "h": "설치와 첫 사용",
+          "p": "딸깍 설치 뒤 \"/claude-md-management:audit\"로 점검. 작업이 끝날 때 \"이번에 배운 거 메모에 반영해\"라고 하면 됩니다."
+        }
+      ]
+    },
+    {
+      "id": "feature-dev",
+      "kind": "plugin",
+      "cat": "dev",
+      "name": "기능 개발 풀코스",
+      "en": "Feature dev",
+      "one": "새 기능 하나를 코드 탐색 → 설계 → 구현 → 검토까지 전담 에이전트들이 순서대로 처리합니다.",
+      "when": "\"이 기능 만들어 줘\" 한마디로 끝까지 가길 원하는 분",
+      "installs": 0,
+      "level": 2,
+      "plat": [
+        "claude-code"
+      ],
+      "isNew": true,
+      "added": "2026-10-30",
+      "color": "#d6e4f0",
+      "repo": "https://github.com/anthropics/claude-plugins-public",
+      "install": {
+        "kind": "plugin",
+        "name": "feature-dev",
+        "market": "anthropics/claude-plugins-official"
+      },
+      "trust": {
+        "grade": "official",
+        "reasons": [
+          "Anthropic이 직접 만든 공식 플러그인"
+        ]
+      },
+      "tips": [
+        "\"/feature-dev 회원 탈퇴 기능 추가\"",
+        "설계안을 먼저 보여 주고 동의 받은 뒤 구현합니다."
+      ],
+      "status": "published",
+      "stars": 45376,
+      "pushed_at": "2026-10-30T07:32:39Z",
+      "readme_ko": [
+        {
+          "h": "이게 뭐예요?",
+          "p": "Anthropic 공식 '기능 개발 워크플로' 플러그인입니다. 코드 탐색 전담, 설계 전담, 품질 검토 전담 에이전트가 순서대로 일합니다. 새 기능 하나를 처음부터 끝까지 체계적으로 만듭니다."
+        },
+        {
+          "h": "설치와 첫 사용",
+          "p": "딸깍 설치 뒤 \"/feature-dev 회원 탈퇴 기능 추가\"처럼 말하면 설계안을 먼저 보여 주고, 동의하면 구현합니다."
+        }
+      ]
+    },
+    {
+      "id": "pr-review-toolkit",
+      "kind": "plugin",
+      "cat": "dev",
+      "name": "PR 검토 전문가 세트",
+      "en": "PR review toolkit",
+      "one": "주석·테스트·오류 처리·타입·코드 품질을 각각 전담하는 검토자들이 PR을 봐 줍니다.",
+      "when": "코드 검토해 줄 선배가 없는 1인 개발자",
+      "installs": 0,
+      "level": 2,
+      "plat": [
+        "claude-code"
+      ],
+      "isNew": true,
+      "added": "2026-10-30",
+      "color": "#dcd6f5",
+      "repo": "https://github.com/anthropics/claude-plugins-public",
+      "install": {
+        "kind": "plugin",
+        "name": "pr-review-toolkit",
+        "market": "anthropics/claude-plugins-official"
+      },
+      "trust": {
+        "grade": "official",
+        "reasons": [
+          "Anthropic이 직접 만든 공식 플러그인"
+        ]
+      },
+      "tips": [
+        "\"/pr-review-toolkit:review\" 로 지금 PR 검토",
+        "심각한 것부터 순서대로 알려 줍니다."
+      ],
+      "status": "published",
+      "stars": 45376,
+      "pushed_at": "2026-10-30T07:32:39Z",
+      "readme_ko": [
+        {
+          "h": "이게 뭐예요?",
+          "p": "Anthropic 공식 PR 검토 세트입니다. 주석, 테스트, 오류 처리, 타입 설계, 코드 품질, 코드 단순화를 각각 전담하는 검토 에이전트가 들어 있습니다."
+        },
+        {
+          "h": "설치와 첫 사용",
+          "p": "딸깍 설치 뒤 \"/pr-review-toolkit:review\"로 지금 변경 사항을 검토합니다."
+        }
+      ]
+    },
+    {
+      "id": "security-guidance",
+      "kind": "plugin",
+      "cat": "dev",
+      "name": "보안 실수 경고",
+      "en": "Security guidance",
+      "one": "Claude가 코드를 고칠 때마다 보안 구멍(비밀번호 노출, 주입 공격 등)을 즉시 경고합니다.",
+      "when": "보안을 잘 모르는데 서비스는 공개해야 하는 분",
+      "installs": 0,
+      "level": 1,
+      "plat": [
+        "claude-code"
+      ],
+      "isNew": true,
+      "added": "2026-10-30",
+      "color": "#f0dad6",
+      "repo": "https://github.com/anthropics/claude-plugins-official",
+      "install": {
+        "kind": "plugin",
+        "name": "security-guidance",
+        "market": "anthropics/claude-plugins-official"
+      },
+      "trust": {
+        "grade": "official",
+        "reasons": [
+          "Anthropic이 직접 만든 공식 플러그인"
+        ]
+      },
+      "tips": [
+        "설치하면 자동으로 켜져요. 따로 할 건 없습니다.",
+        "위험한 코드를 쓰면 그 자리에서 경고가 뜹니다."
+      ],
+      "status": "published",
+      "stars": 45376,
+      "pushed_at": "2026-10-30T07:32:39Z",
+      "readme_ko": [
+        {
+          "h": "이게 뭐예요?",
+          "p": "Anthropic 공식 보안 안내 플러그인입니다. Claude가 코드를 고칠 때 패턴 기반 경고를 띄우고, 작업이 끝날 때 바뀐 부분을 AI가 보안 관점에서 다시 검토합니다."
+        },
+        {
+          "h": "설치와 첫 사용",
+          "p": "딸깍 설치하면 자동으로 켜집니다."
+        }
+      ]
+    },
+    {
+      "id": "commit-commands",
+      "kind": "plugin",
+      "cat": "dev",
+      "name": "커밋·푸시·PR 한 줄로",
+      "en": "Commit commands",
+      "one": "/commit, /push, PR 만들기를 한 단어 명령으로 끝냅니다. 커밋 메시지도 알아서.",
+      "when": "깃 명령 외우기 싫은 분",
+      "installs": 0,
+      "level": 1,
+      "plat": [
+        "claude-code"
+      ],
+      "isNew": true,
+      "added": "2026-10-30",
+      "color": "#e4e4e4",
+      "repo": "https://github.com/anthropics/claude-plugins-public",
+      "install": {
+        "kind": "plugin",
+        "name": "commit-commands",
+        "market": "anthropics/claude-plugins-official"
+      },
+      "trust": {
+        "grade": "official",
+        "reasons": [
+          "Anthropic이 직접 만든 공식 플러그인"
+        ]
+      },
+      "tips": [
+        "\"/commit\" 치면 바뀐 내용 보고 커밋 메시지까지 써서 커밋",
+        "\"/commit-push-pr\" 로 커밋·푸시·PR 생성 한 번에"
+      ],
+      "status": "published",
+      "stars": 45376,
+      "pushed_at": "2026-10-30T07:32:39Z",
+      "readme_ko": [
+        {
+          "h": "이게 뭐예요?",
+          "p": "깃 커밋·푸시·PR 생성을 한 단어 명령으로 만든 Anthropic 공식 플러그인입니다. 커밋 메시지는 바뀐 내용을 보고 알아서 씁니다."
+        },
+        {
+          "h": "설치와 첫 사용",
+          "p": "딸깍 설치 뒤 \"/commit\", \"/commit-push-pr\"를 치면 됩니다."
+        }
+      ]
+    },
+    {
+      "id": "ralph-loop",
+      "kind": "plugin",
+      "cat": "dev",
+      "name": "될 때까지 반복 (Ralph loop)",
+      "en": "Ralph loop",
+      "one": "\"테스트 다 통과할 때까지 계속해\"처럼 조건이 될 때까지 Claude가 스스로 반복 작업합니다.",
+      "when": "밤새 돌려 놓고 아침에 결과만 보고 싶은 분",
+      "installs": 0,
+      "level": 3,
+      "plat": [
+        "claude-code"
+      ],
+      "isNew": true,
+      "added": "2026-10-30",
+      "color": "#e0d6f0",
+      "repo": "https://github.com/anthropics/claude-plugins-public",
+      "install": {
+        "kind": "plugin",
+        "name": "ralph-loop",
+        "market": "anthropics/claude-plugins-official"
+      },
+      "trust": {
+        "grade": "official",
+        "reasons": [
+          "Anthropic이 직접 만든 공식 플러그인"
+        ]
+      },
+      "note": "반복 횟수 제한을 꼭 거세요. 요금이 계속 나갑니다.",
+      "tips": [
+        "\"/ralph-loop 모든 테스트 통과할 때까지 고쳐. 최대 20번\""
+      ],
+      "status": "published",
+      "stars": 45376,
+      "pushed_at": "2026-10-30T07:32:39Z",
+      "readme_ko": [
+        {
+          "h": "이게 뭐예요?",
+          "p": "'랄프 위검 기법'이라 불리는 반복 작업 방식입니다. 조건(예: 모든 테스트 통과)이 될 때까지 Claude가 같은 과제를 스스로 반복합니다. 밤새 돌려 놓는 용도로 씁니다."
+        },
+        {
+          "h": "설치와 첫 사용",
+          "p": "딸깍 설치 뒤 \"/ralph-loop 테스트 다 통과할 때까지 고쳐. 최대 20번\"처럼 씁니다."
+        },
+        {
+          "h": "주의",
+          "p": "반복 횟수 제한을 꼭 거세요. 안 걸면 요금이 계속 나갑니다."
+        }
+      ]
+    },
+    {
+      "id": "superdesign",
+      "kind": "plugin",
+      "cat": "design",
+      "name": "화면 디자인 캔버스 (Superdesign)",
+      "en": "Superdesign",
+      "one": "무한 캔버스 위에 앱 화면·마케팅 이미지를 여러 안으로 그려 보고 고릅니다.",
+      "when": "디자이너 없이 앱 화면 시안을 뽑아야 하는 분",
+      "installs": 0,
+      "level": 2,
+      "plat": [
+        "claude-code"
+      ],
+      "isNew": true,
+      "added": "2026-10-30",
+      "color": "#f5d8e4",
+      "repo": "https://github.com/superdesigndev/superdesign-skill",
+      "install": {
+        "kind": "plugin",
+        "name": "superdesign",
+        "market": "anthropics/claude-plugins-official"
+      },
+      "trust": {
+        "grade": "verified",
+        "reasons": [
+          "Superdesign 공식 제작",
+          "Anthropic 공식 마켓플레이스 등재"
+        ]
+      },
+      "tips": [
+        "\"로그인 화면 시안 3개 그려 줘\"",
+        "내 코드를 읽고 지금 쓰는 색·글꼴에 맞춰 그립니다."
+      ],
+      "status": "published",
+      "stars": 921,
+      "pushed_at": "2026-08-21T05:23:23Z",
+      "readme_ko": [
+        {
+          "h": "이게 뭐예요?",
+          "p": "Superdesign은 무한 캔버스 위에서 앱 화면과 마케팅 이미지를 디자인하는 도구입니다. 이 플러그인은 내 코드를 읽어 지금 쓰는 색·글꼴·구성 요소를 파악하고, 그에 맞는 시안을 여러 개 그립니다."
+        },
+        {
+          "h": "설치와 첫 사용",
+          "p": "딸깍 설치 뒤 \"로그인 화면 시안 3개 그려 줘\"처럼 말하면 캔버스가 열립니다."
+        }
+      ]
+    },
+    {
+      "id": "miro",
+      "kind": "plugin",
+      "cat": "design",
+      "name": "미로 보드 연결",
+      "en": "Miro",
+      "one": "미로 화이트보드를 읽고, 다이어그램을 그리고, 보드 내용으로 코드까지 만듭니다.",
+      "when": "기획·회의를 미로 보드에서 하는 분",
+      "installs": 0,
+      "level": 2,
+      "plat": [
+        "claude-code"
+      ],
+      "isNew": true,
+      "added": "2026-10-30",
+      "color": "#f5f0cf",
+      "repo": "https://github.com/miroapp/miro-ai",
+      "install": {
+        "kind": "plugin",
+        "name": "miro",
+        "market": "anthropics/claude-plugins-official"
+      },
+      "login": true,
+      "trust": {
+        "grade": "official",
+        "reasons": [
+          "미로(Miro) 공식 제작",
+          "Anthropic 공식 마켓플레이스 등재"
+        ]
+      },
+      "tips": [
+        "\"이 보드의 플로우차트 보고 순서도 설명해 줘\"",
+        "\"회의 내용으로 보드에 마인드맵 그려 줘\""
+      ],
+      "status": "published",
+      "stars": 164,
+      "pushed_at": "2026-09-17T14:36:57Z",
+      "readme_ko": [
+        {
+          "h": "이게 뭐예요?",
+          "p": "미로(Miro) 공식 플러그인입니다. 미로 보드의 내용을 Claude가 읽고, 다이어그램을 그리고, 보드에 적힌 기획을 바탕으로 코드를 만듭니다. 기업용 보안 기준을 지킵니다."
+        },
+        {
+          "h": "설치와 첫 사용",
+          "p": "딸깍 설치 뒤 미로 로그인 승인 한 번. \"이 보드 플로우차트 설명해 줘\"처럼 씁니다."
+        }
+      ]
+    },
+    {
+      "id": "runway-api",
+      "kind": "plugin",
+      "cat": "design",
+      "name": "AI 영상 만들기 (Runway)",
+      "en": "Runway",
+      "one": "런웨이로 영상·이미지·오디오를 대량 생성합니다. 광고 영상 여러 버전, 상품 영상.",
+      "when": "제품 영상·광고 시안을 돈 적게 들이고 많이 뽑고 싶은 분",
+      "installs": 0,
+      "level": 3,
+      "plat": [
+        "claude-code"
+      ],
+      "isNew": true,
+      "added": "2026-10-30",
+      "color": "#e0d6f0",
+      "repo": "https://github.com/runwayml/skills",
+      "install": {
+        "kind": "plugin",
+        "name": "runway-api",
+        "market": "anthropics/claude-plugins-official"
+      },
+      "trust": {
+        "grade": "official",
+        "reasons": [
+          "런웨이(Runway) 공식 제작",
+          "Anthropic 공식 마켓플레이스 등재"
+        ]
+      },
+      "note": "런웨이 API 키와 크레딧(유료)이 필요합니다.",
+      "tips": [
+        "\"이 상품 사진으로 10초 광고 영상 3가지 버전 만들어 줘\""
+      ],
+      "status": "published",
+      "stars": 74,
+      "pushed_at": "2026-10-29T13:57:36Z",
+      "readme_ko": [
+        {
+          "h": "이게 뭐예요?",
+          "p": "런웨이(Runway)는 AI 영상 생성 회사입니다. 이 공식 플러그인은 런웨이 API로 영상·이미지·오디오를 대량으로 만듭니다. 광고 캠페인 여러 버전, 상품 영상, 여러 장면을 이어 붙인 영상 같은 작업."
+        },
+        {
+          "h": "설치와 첫 사용",
+          "p": "런웨이 개발자 계정과 API 키, 크레딧(유료)이 필요합니다. 딸깍 설치 뒤 키를 넣고 \"이 상품 사진으로 10초 영상 3개\"처럼 말합니다."
+        }
+      ]
+    },
+    {
+      "id": "adobe",
+      "kind": "plugin",
+      "cat": "design",
+      "name": "어도비 연결 (포토샵·일러스트)",
+      "en": "Adobe for creativity",
+      "one": "어도비 AI 도구로 이미지를 고치고 디자인 작업을 자동화합니다.",
+      "when": "포토샵·일러스트레이터 반복 작업이 많은 분",
+      "installs": 0,
+      "level": 2,
+      "plat": [
+        "claude-code"
+      ],
+      "isNew": true,
+      "added": "2026-10-30",
+      "color": "#f0dad6",
+      "repo": "https://github.com/adobe/skills",
+      "install": {
+        "kind": "plugin",
+        "name": "adobe-for-creativity",
+        "market": "anthropics/claude-plugins-official"
+      },
+      "login": true,
+      "trust": {
+        "grade": "official",
+        "reasons": [
+          "어도비(Adobe) 공식 제작",
+          "Anthropic 공식 마켓플레이스 등재"
+        ]
+      },
+      "note": "어도비 계정이 필요합니다.",
+      "tips": [
+        "\"이 사진 50장 배경 지우고 흰 배경으로 바꿔 줘\""
+      ],
+      "status": "published",
+      "stars": 318,
+      "pushed_at": "2026-10-30T07:08:53Z",
+      "readme_ko": [
+        {
+          "h": "이게 뭐예요?",
+          "p": "어도비(Adobe) 공식 플러그인입니다. 어도비의 AI 도구(파이어플라이 등)와 크리에이티브 클라우드 기능으로 이미지를 고치고 디자인 작업을 자동화합니다."
+        },
+        {
+          "h": "설치와 첫 사용",
+          "p": "딸깍 설치 뒤 어도비 계정 로그인 승인 한 번. \"이 사진 50장 배경 지워 줘\"처럼 씁니다."
+        }
+      ]
+    },
+    {
+      "id": "duckdb",
+      "kind": "plugin",
+      "cat": "data",
+      "name": "큰 데이터 파일 바로 분석 (DuckDB)",
+      "en": "DuckDB skills",
+      "one": "엑셀로 안 열리는 큰 CSV·파케이 파일을 바로 읽고 집계합니다.",
+      "when": "행이 수백만 개라 엑셀이 멈추는 분",
+      "installs": 0,
+      "level": 2,
+      "plat": [
+        "claude-code"
+      ],
+      "isNew": true,
+      "added": "2026-10-30",
+      "color": "#f5f0cf",
+      "repo": "https://github.com/duckdb/duckdb-skills",
+      "install": {
+        "kind": "plugin",
+        "name": "duckdb-skills",
+        "market": "anthropics/claude-plugins-official"
+      },
+      "trust": {
+        "grade": "official",
+        "reasons": [
+          "DuckDB 공식 제작",
+          "Anthropic 공식 마켓플레이스 등재"
+        ]
+      },
+      "tips": [
+        "\"이 3GB 매출 CSV에서 월별 지점별 합계 뽑아 줘\"",
+        "엑셀·CSV·JSON 어떤 파일이든 됩니다."
+      ],
+      "status": "published",
+      "stars": 613,
+      "pushed_at": "2026-04-23T13:56:22Z",
+      "readme_ko": [
+        {
+          "h": "이게 뭐예요?",
+          "p": "DuckDB는 큰 데이터 파일을 설치 없이 빠르게 분석하는 작은 데이터베이스입니다. 공식 스킬 묶음으로 CSV·엑셀·JSON·파케이 파일을 바로 읽고, 합치고, 집계합니다. 엑셀이 멈추는 크기도 됩니다."
+        },
+        {
+          "h": "설치와 첫 사용",
+          "p": "딸깍 설치 뒤 \"이 CSV에서 월별 합계\"처럼 말하면 됩니다."
+        }
+      ]
+    },
+    {
+      "id": "mongodb",
+      "kind": "plugin",
+      "cat": "data",
+      "name": "몽고DB 연결",
+      "en": "MongoDB",
+      "one": "몽고DB에 연결해 데이터를 보고, 컬렉션을 관리하고, 느린 쿼리를 고칩니다.",
+      "when": "앱 데이터가 몽고DB에 있는 분",
+      "installs": 0,
+      "level": 3,
+      "plat": [
+        "claude-code"
+      ],
+      "isNew": true,
+      "added": "2026-10-30",
+      "color": "#d6f0dd",
+      "repo": "https://github.com/mongodb/agent-skills",
+      "install": {
+        "kind": "plugin",
+        "name": "mongodb",
+        "market": "anthropics/claude-plugins-official"
+      },
+      "trust": {
+        "grade": "official",
+        "reasons": [
+          "몽고DB(MongoDB) 공식 제작",
+          "Anthropic 공식 마켓플레이스 등재"
+        ]
+      },
+      "tips": [
+        "\"users 컬렉션에서 지난달 가입자 수 세 줘\""
+      ],
+      "status": "published",
+      "stars": 192,
+      "pushed_at": "2026-10-28T20:30:23Z",
+      "readme_ko": [
+        {
+          "h": "이게 뭐예요?",
+          "p": "몽고DB(MongoDB) 공식 플러그인입니다. MCP 서버와 스킬이 함께 들어 있어 데이터베이스 연결, 데이터 탐색, 컬렉션 관리, 쿼리 최적화를 채팅으로 합니다."
+        },
+        {
+          "h": "설치와 첫 사용",
+          "p": "딸깍 설치 뒤 몽고DB 연결 주소를 넣습니다. \"users에서 지난달 가입자 수\"처럼 씁니다."
+        }
+      ]
+    },
+    {
+      "id": "firebase",
+      "kind": "plugin",
+      "cat": "web",
+      "name": "파이어베이스 연결",
+      "en": "Firebase",
+      "one": "구글 파이어베이스의 데이터베이스·로그인·호스팅을 채팅으로 관리합니다.",
+      "when": "앱 뒷단을 파이어베이스로 돌리는 분",
+      "installs": 0,
+      "level": 3,
+      "plat": [
+        "claude-code"
+      ],
+      "isNew": true,
+      "added": "2026-10-30",
+      "color": "#f5e2cf",
+      "repo": "https://github.com/anthropics/claude-plugins-public",
+      "install": {
+        "kind": "plugin",
+        "name": "firebase",
+        "market": "anthropics/claude-plugins-official"
+      },
+      "login": true,
+      "trust": {
+        "grade": "official",
+        "reasons": [
+          "Anthropic이 직접 묶은 공식 플러그인",
+          "구글 파이어베이스 공식 MCP 사용"
+        ]
+      },
+      "tips": [
+        "\"파이어스토어 users 컬렉션 구조 보여 줘\"",
+        "\"이 앱 파이어베이스 호스팅에 배포해 줘\""
+      ],
+      "status": "published",
+      "stars": 45376,
+      "pushed_at": "2026-10-30T07:32:39Z",
+      "readme_ko": [
+        {
+          "h": "이게 뭐예요?",
+          "p": "구글 파이어베이스 공식 MCP를 Claude에 붙인 플러그인입니다. 파이어스토어 데이터베이스, 로그인(인증), 클라우드 함수, 호스팅, 저장소를 관리합니다. Anthropic이 공식 마켓에 직접 올렸습니다."
+        },
+        {
+          "h": "설치와 첫 사용",
+          "p": "딸깍 설치 뒤 구글 로그인 승인 한 번. \"이 앱 파이어베이스 호스팅에 배포\"처럼 씁니다."
+        }
+      ]
+    },
+    {
+      "id": "railway",
+      "kind": "plugin",
+      "cat": "web",
+      "name": "레일웨이 배포",
+      "en": "Railway",
+      "one": "앱·데이터베이스를 레일웨이에 올리고 환경 설정·도메인까지 채팅으로.",
+      "when": "서버 세팅 모르고 앱만 올리고 싶은 분",
+      "installs": 0,
+      "level": 2,
+      "plat": [
+        "claude-code"
+      ],
+      "isNew": true,
+      "added": "2026-10-30",
+      "color": "#e4e4e4",
+      "repo": "https://github.com/railwayapp/railway-skills",
+      "install": {
+        "kind": "plugin",
+        "name": "railway",
+        "market": "anthropics/claude-plugins-official"
+      },
+      "trust": {
+        "grade": "official",
+        "reasons": [
+          "레일웨이(Railway) 공식 제작",
+          "Anthropic 공식 마켓플레이스 등재"
+        ]
+      },
+      "tips": [
+        "\"이 프로젝트 레일웨이에 배포하고 주소 줘\""
+      ],
+      "status": "published",
+      "stars": 339,
+      "pushed_at": "2026-10-15T11:49:47Z",
+      "readme_ko": [
+        {
+          "h": "이게 뭐예요?",
+          "p": "레일웨이(Railway)는 앱과 데이터베이스를 쉽게 올리는 호스팅 서비스입니다. 공식 플러그인으로 프로젝트 생성, 배포, 환경 변수, 네트워크, 도메인 설정을 채팅으로 합니다."
+        },
+        {
+          "h": "설치와 첫 사용",
+          "p": "딸깍 설치 뒤 \"이 프로젝트 레일웨이에 배포하고 주소 줘\"처럼 씁니다. 레일웨이 계정이 필요합니다."
+        }
+      ]
+    },
+    {
+      "id": "render",
+      "kind": "plugin",
+      "cat": "web",
+      "name": "렌더 배포",
+      "en": "Render",
+      "one": "렌더에 앱을 배포하고 로그를 보고 문제를 고칩니다. 설정 파일 검사까지.",
+      "when": "무료로 시작할 수 있는 서버를 찾는 분",
+      "installs": 0,
+      "level": 2,
+      "plat": [
+        "claude-code"
+      ],
+      "isNew": true,
+      "added": "2026-10-30",
+      "color": "#d6f0e8",
+      "repo": "https://github.com/render-oss/render-plugin-claude-code",
+      "install": {
+        "kind": "plugin",
+        "name": "render",
+        "market": "anthropics/claude-plugins-official"
+      },
+      "trust": {
+        "grade": "official",
+        "reasons": [
+          "렌더(Render) 공식 제작",
+          "Anthropic 공식 마켓플레이스 등재"
+        ]
+      },
+      "tips": [
+        "\"렌더에 올리고 배포 실패하면 로그 보고 고쳐 줘\""
+      ],
+      "status": "published",
+      "stars": 1,
+      "pushed_at": "2026-10-27T20:47:50Z",
+      "readme_ko": [
+        {
+          "h": "이게 뭐예요?",
+          "p": "렌더(Render)는 무료 플랜이 있는 앱 호스팅 서비스입니다. 공식 플러그인에 스킬, 에이전트, 명령, 설정 파일(render.yaml) 검사 훅이 들어 있어 배포·디버깅·모니터링을 합니다."
+        },
+        {
+          "h": "설치와 첫 사용",
+          "p": "딸깍 설치 뒤 \"렌더에 올리고 실패하면 로그 보고 고쳐\"처럼 씁니다."
+        }
+      ]
+    },
+    {
+      "id": "wix",
+      "kind": "plugin",
+      "cat": "web",
+      "name": "윅스 사이트 만들기",
+      "en": "Wix",
+      "one": "윅스 사이트와 앱을 만들고 관리합니다. 대시보드 확장, 위젯, 백엔드까지.",
+      "when": "윅스로 홈페이지 운영하는 분",
+      "installs": 0,
+      "level": 2,
+      "plat": [
+        "claude-code"
+      ],
+      "isNew": true,
+      "added": "2026-10-30",
+      "color": "#d6e8f5",
+      "repo": "https://github.com/wix/skills",
+      "install": {
+        "kind": "plugin",
+        "name": "wix",
+        "market": "anthropics/claude-plugins-official"
+      },
+      "trust": {
+        "grade": "official",
+        "reasons": [
+          "윅스(Wix) 공식 제작",
+          "Anthropic 공식 마켓플레이스 등재"
+        ]
+      },
+      "tips": [
+        "\"내 윅스 사이트에 예약 문의 폼 위젯 추가해 줘\""
+      ],
+      "status": "published",
+      "stars": 36,
+      "pushed_at": "2026-10-30T09:35:26Z",
+      "readme_ko": [
+        {
+          "h": "이게 뭐예요?",
+          "p": "윅스(Wix) 공식 스킬입니다. 윅스 CLI로 대시보드 확장, 백엔드 API, 사이트 위젯, 서비스 플러그인을 만들고 배포합니다."
+        },
+        {
+          "h": "설치와 첫 사용",
+          "p": "딸깍 설치 뒤 \"내 윅스 사이트에 예약 문의 폼 추가\"처럼 씁니다. 윅스 계정이 필요합니다."
+        }
+      ]
+    },
+    {
+      "id": "wordpress",
+      "kind": "plugin",
+      "cat": "web",
+      "name": "워드프레스 사이트 만들기",
+      "en": "WordPress.com",
+      "one": "워드프레스 테마·플러그인부터 쇼핑몰·배포까지 만듭니다.",
+      "when": "블로그·홈페이지를 워드프레스로 하는 분",
+      "installs": 0,
+      "level": 2,
+      "plat": [
+        "claude-code"
+      ],
+      "isNew": true,
+      "added": "2026-10-30",
+      "color": "#d6dcf0",
+      "repo": "https://github.com/Automattic/claude-code-wordpress.com",
+      "install": {
+        "kind": "plugin",
+        "name": "build-with-wordpress",
+        "market": "anthropics/claude-plugins-official"
+      },
+      "trust": {
+        "grade": "official",
+        "reasons": [
+          "오토매틱(워드프레스닷컴 운영사) 공식 제작",
+          "Anthropic 공식 마켓플레이스 등재"
+        ]
+      },
+      "tips": [
+        "\"내 블로그 테마에 다크 모드 추가해 줘\"",
+        "\"우커머스로 상품 10개짜리 쇼핑몰 만들어 줘\""
+      ],
+      "status": "published",
+      "stars": 53,
+      "pushed_at": "2026-04-20T23:21:22Z",
+      "readme_ko": [
+        {
+          "h": "이게 뭐예요?",
+          "p": "워드프레스닷컴을 운영하는 오토매틱(Automattic) 공식 플러그인입니다. 테마와 플러그인부터 쇼핑몰(우커머스), 배포까지 워드프레스 사이트 전반을 만듭니다."
+        },
+        {
+          "h": "설치와 첫 사용",
+          "p": "딸깍 설치 뒤 \"내 블로그 테마에 다크 모드 추가\"처럼 씁니다."
+        }
+      ]
+    },
+    {
+      "id": "hostinger",
+      "kind": "plugin",
+      "cat": "web",
+      "name": "호스팅어 관리",
+      "en": "Hostinger",
+      "one": "호스팅어 호스팅·도메인·사이트를 채팅으로 배포하고 관리합니다.",
+      "when": "호스팅어를 쓰는 분",
+      "installs": 0,
+      "level": 2,
+      "plat": [
+        "claude-code"
+      ],
+      "isNew": true,
+      "added": "2026-10-30",
+      "color": "#e0d6f0",
+      "repo": "https://github.com/hostinger/claude-plugin",
+      "install": {
+        "kind": "plugin",
+        "name": "hostinger",
+        "market": "anthropics/claude-plugins-official"
+      },
+      "login": true,
+      "trust": {
+        "grade": "official",
+        "reasons": [
+          "호스팅어(Hostinger) 공식 제작",
+          "Anthropic 공식 마켓플레이스 등재"
+        ]
+      },
+      "tips": [
+        "\"내 도메인 목록이랑 만료일 보여 줘\""
+      ],
+      "status": "published",
+      "stars": 8,
+      "pushed_at": "2026-10-28T06:14:42Z",
+      "readme_ko": [
+        {
+          "h": "이게 뭐예요?",
+          "p": "호스팅어(Hostinger) 공식 플러그인입니다. 호스팅어의 원격 MCP 서버에 연결해 호스팅·도메인·사이트를 배포하고 관리합니다."
+        },
+        {
+          "h": "설치와 첫 사용",
+          "p": "딸깍 설치 뒤 호스팅어 로그인 승인 한 번."
+        }
+      ]
+    },
+    {
+      "id": "lovable",
+      "kind": "plugin",
+      "cat": "web",
+      "name": "러버블 앱 연결",
+      "en": "Lovable",
+      "one": "러버블에서 만든 앱을 코드 탭에서 이어서 고치고 배포합니다.",
+      "when": "러버블로 앱 만들다가 막힌 분",
+      "installs": 0,
+      "level": 2,
+      "plat": [
+        "claude-code"
+      ],
+      "isNew": true,
+      "added": "2026-10-30",
+      "color": "#f5d8e4",
+      "repo": "https://github.com/lovablelabs/mcp",
+      "install": {
+        "kind": "plugin",
+        "name": "lovable",
+        "market": "anthropics/claude-plugins-official"
+      },
+      "login": true,
+      "trust": {
+        "grade": "official",
+        "reasons": [
+          "러버블(Lovable) 공식 제작",
+          "Anthropic 공식 마켓플레이스 등재"
+        ]
+      },
+      "tips": [
+        "\"내 러버블 프로젝트 목록 보여 주고 '가계부' 앱에 로그인 추가해 줘\""
+      ],
+      "status": "published",
+      "stars": 9,
+      "pushed_at": "2026-09-27T16:07:59Z",
+      "readme_ko": [
+        {
+          "h": "이게 뭐예요?",
+          "p": "러버블(Lovable)은 말로 앱을 만드는 서비스입니다. 공식 MCP 서버가 들어 있어 러버블 프로젝트를 코드 탭에서 이어서 고치고, 반복하고, 배포하고, 관리합니다."
+        },
+        {
+          "h": "설치와 첫 사용",
+          "p": "딸깍 설치 뒤 러버블 로그인 승인 한 번. \"내 프로젝트 목록 보여 줘\"부터."
+        }
+      ]
+    },
+    {
+      "id": "expo",
+      "kind": "plugin",
+      "cat": "dev",
+      "name": "휴대폰 앱 만들기 (Expo)",
+      "en": "Expo",
+      "one": "아이폰·안드로이드 앱을 하나의 코드로 만들고 스토어에 올립니다.",
+      "when": "앱을 만들고 싶은데 스위프트·코틀린 둘 다 못 하는 분",
+      "installs": 0,
+      "level": 3,
+      "plat": [
+        "claude-code"
+      ],
+      "isNew": true,
+      "added": "2026-10-30",
+      "color": "#dcdcdc",
+      "repo": "https://github.com/expo/skills",
+      "install": {
+        "kind": "plugin",
+        "name": "expo",
+        "market": "anthropics/claude-plugins-official"
+      },
+      "trust": {
+        "grade": "official",
+        "reasons": [
+          "엑스포(Expo) 공식 제작",
+          "Anthropic 공식 마켓플레이스 등재"
+        ]
+      },
+      "tips": [
+        "\"할 일 앱 만들어서 내 폰에서 바로 보게 해 줘\""
+      ],
+      "status": "published",
+      "stars": 3793,
+      "pushed_at": "2026-10-29T10:37:46Z",
+      "readme_ko": [
+        {
+          "h": "이게 뭐예요?",
+          "p": "엑스포(Expo) 공식 스킬입니다. 리액트 네이티브로 아이폰·안드로이드 앱을 한 코드로 만들고, 빌드하고, 스토어에 올리고, 업그레이드하고, 디버깅합니다."
+        },
+        {
+          "h": "설치와 첫 사용",
+          "p": "딸깍 설치 뒤 \"할 일 앱 만들어서 내 폰에서 보게 해 줘\"처럼 씁니다. 폰에 Expo Go 앱을 깔면 바로 볼 수 있어요."
+        }
+      ]
+    },
+    {
+      "id": "unity",
+      "kind": "plugin",
+      "cat": "dev",
+      "name": "유니티 게임 개발",
+      "en": "Unity",
+      "one": "유니티 공식 스킬로 게임 개발·수익화·성능 최적화를 돕습니다.",
+      "when": "유니티로 게임 만드는 분",
+      "installs": 0,
+      "level": 3,
+      "plat": [
+        "claude-code"
+      ],
+      "isNew": true,
+      "added": "2026-10-30",
+      "color": "#e4e4e4",
+      "repo": "https://github.com/Unity-Technologies/unity-agent-plugin",
+      "install": {
+        "kind": "plugin",
+        "name": "unity",
+        "market": "anthropics/claude-plugins-official"
+      },
+      "trust": {
+        "grade": "official",
+        "reasons": [
+          "유니티(Unity) 공식 제작",
+          "Anthropic 공식 마켓플레이스 등재"
+        ]
+      },
+      "tips": [
+        "\"이 씬 프레임 떨어지는 원인 찾아 줘\""
+      ],
+      "status": "published",
+      "stars": 583,
+      "pushed_at": "2026-10-29T20:51:42Z",
+      "readme_ko": [
+        {
+          "h": "이게 뭐예요?",
+          "p": "유니티(Unity) 공식 플러그인입니다. 게임 개발, 수익화(광고·인앱 결제), 성능 최적화에 대한 선별된 스킬이 들어 있습니다."
+        },
+        {
+          "h": "설치와 첫 사용",
+          "p": "딸깍 설치 뒤 유니티 프로젝트 폴더에서 \"이 씬 프레임 떨어지는 원인\"처럼 씁니다."
+        }
+      ]
+    },
+    {
+      "id": "shopify",
+      "kind": "plugin",
+      "cat": "web",
+      "name": "쇼피파이 쇼핑몰 개발",
+      "en": "Shopify AI toolkit",
+      "one": "쇼피파이 테마·앱·결제를 만드는 공식 스킬 18개.",
+      "when": "쇼피파이로 해외 쇼핑몰 하는 분",
+      "installs": 0,
+      "level": 3,
+      "plat": [
+        "claude-code"
+      ],
+      "isNew": true,
+      "added": "2026-10-30",
+      "color": "#d6f0dd",
+      "repo": "https://github.com/Shopify/Shopify-AI-Toolkit",
+      "install": {
+        "kind": "plugin",
+        "name": "shopify-ai-toolkit",
+        "market": "anthropics/claude-plugins-official"
+      },
+      "trust": {
+        "grade": "official",
+        "reasons": [
+          "쇼피파이(Shopify) 공식 제작",
+          "Anthropic 공식 마켓플레이스 등재"
+        ]
+      },
+      "tips": [
+        "\"상품 페이지에 사이즈 가이드 팝업 넣어 줘\""
+      ],
+      "status": "published",
+      "stars": 620,
+      "pushed_at": "2026-10-27T16:13:43Z",
+      "readme_ko": [
+        {
+          "h": "이게 뭐예요?",
+          "p": "쇼피파이(Shopify) 공식 AI 툴킷입니다. 문서 검색, 테마, 앱, 결제, 체크아웃 등 쇼피파이 플랫폼 개발용 스킬 18개."
+        },
+        {
+          "h": "설치와 첫 사용",
+          "p": "딸깍 설치 뒤 \"상품 페이지에 사이즈 가이드 팝업\"처럼 씁니다."
+        }
+      ]
+    },
+    {
+      "id": "hubspot",
+      "kind": "plugin",
+      "cat": "work",
+      "name": "허브스팟 영업 연결",
+      "en": "HubSpot Sales",
+      "one": "허브스팟 CRM의 고객·딜을 불러오고, 하루 영업 일정을 채팅으로 돌립니다.",
+      "when": "영업 관리를 허브스팟으로 하는 분",
+      "installs": 0,
+      "level": 2,
+      "plat": [
+        "claude-code"
+      ],
+      "isNew": true,
+      "added": "2026-10-30",
+      "color": "#f5e2cf",
+      "repo": "https://github.com/HubSpot/hubspot-mcp-plugins",
+      "install": {
+        "kind": "plugin",
+        "name": "hubspot-sales",
+        "market": "anthropics/claude-plugins-official"
+      },
+      "login": true,
+      "trust": {
+        "grade": "official",
+        "reasons": [
+          "허브스팟(HubSpot) 공식 제작",
+          "Anthropic 공식 마켓플레이스 등재"
+        ]
+      },
+      "tips": [
+        "\"오늘 연락해야 할 딜 순서대로 정리해 줘\""
+      ],
+      "status": "published",
+      "stars": 4,
+      "pushed_at": "2026-10-12T12:46:54Z",
+      "readme_ko": [
+        {
+          "h": "이게 뭐예요?",
+          "p": "허브스팟(HubSpot) 공식 영업 플러그인입니다. 연락처·딜 가져오기, 하루 영업 일정 브리핑, 후속 메일 초안 등 영업의 하루 전체를 덮는 스킬이 들어 있습니다."
+        },
+        {
+          "h": "설치와 첫 사용",
+          "p": "딸깍 설치 뒤 허브스팟 로그인 승인 한 번."
+        }
+      ]
+    },
+    {
+      "id": "monday",
+      "kind": "plugin",
+      "cat": "work",
+      "name": "먼데이 CRM 연결",
+      "en": "monday CRM",
+      "one": "먼데이닷컴 CRM 파이프라인을 말로 만들고, 아침에 딜 브리핑을 받습니다.",
+      "when": "먼데이닷컴을 쓰는 분",
+      "installs": 0,
+      "level": 2,
+      "plat": [
+        "claude-code"
+      ],
+      "isNew": true,
+      "added": "2026-10-30",
+      "color": "#f5d8e4",
+      "repo": "https://github.com/mondaycom/mcp",
+      "install": {
+        "kind": "plugin",
+        "name": "monday-crm",
+        "market": "anthropics/claude-plugins-official"
+      },
+      "login": true,
+      "trust": {
+        "grade": "official",
+        "reasons": [
+          "먼데이닷컴(monday.com) 공식 제작",
+          "Anthropic 공식 마켓플레이스 등재"
+        ]
+      },
+      "tips": [
+        "\"이번 주 마감 딜 브리핑해 줘\""
+      ],
+      "status": "published",
+      "stars": 436,
+      "pushed_at": "2026-10-29T15:32:07Z",
+      "readme_ko": [
+        {
+          "h": "이게 뭐예요?",
+          "p": "먼데이닷컴(monday.com) 공식 CRM 플러그인입니다. 파이프라인을 처음부터 만들고, 아침에 우선순위 매긴 딜 브리핑을 받고, 자동화를 띄웁니다."
+        },
+        {
+          "h": "설치와 첫 사용",
+          "p": "딸깍 설치 뒤 먼데이 로그인 승인 한 번."
+        }
+      ]
+    },
+    {
+      "id": "intercom",
+      "kind": "plugin",
+      "cat": "work",
+      "name": "인터콤 고객 상담 연결",
+      "en": "Intercom",
+      "one": "인터콤 상담 대화를 검색하고 고객 문의 패턴을 분석합니다.",
+      "when": "고객 상담을 인터콤으로 받는 분",
+      "installs": 0,
+      "level": 2,
+      "plat": [
+        "claude-code"
+      ],
+      "isNew": true,
+      "added": "2026-10-30",
+      "color": "#d6e8f5",
+      "repo": "https://github.com/intercom/claude-plugin-external",
+      "install": {
+        "kind": "plugin",
+        "name": "intercom",
+        "market": "anthropics/claude-plugins-official"
+      },
+      "login": true,
+      "trust": {
+        "grade": "official",
+        "reasons": [
+          "인터콤(Intercom) 공식 제작",
+          "Anthropic 공식 마켓플레이스 등재"
+        ]
+      },
+      "tips": [
+        "\"이번 주 제일 많이 들어온 문의 유형 5개 뽑아 줘\""
+      ],
+      "status": "published",
+      "stars": 3,
+      "pushed_at": "2026-10-27T11:49:19Z",
+      "readme_ko": [
+        {
+          "h": "이게 뭐예요?",
+          "p": "인터콤(Intercom) 공식 플러그인입니다. 상담 대화 검색, 고객 문의 패턴 분석, 연락처·회사 조회를 Claude가 합니다."
+        },
+        {
+          "h": "설치와 첫 사용",
+          "p": "딸깍 설치 뒤 인터콤 로그인 승인 한 번."
+        }
+      ]
+    },
+    {
+      "id": "desktop-commander",
+      "kind": "plugin",
+      "cat": "auto",
+      "name": "내 컴퓨터 파일·프로그램 조작",
+      "en": "Desktop Commander",
+      "one": "컴퓨터의 파일·폴더·프로그램을 채팅으로 다룹니다. PDF·워드·엑셀·이미지까지.",
+      "when": "파일 정리, 이름 바꾸기, 폴더 분류를 말로 시키고 싶은 분",
+      "installs": 0,
+      "level": 2,
+      "plat": [
+        "claude-code"
+      ],
+      "isNew": true,
+      "added": "2026-10-30",
+      "color": "#e2e2f0",
+      "repo": "https://github.com/wonderwhy-er/DesktopCommanderMCP",
+      "install": {
+        "kind": "plugin",
+        "name": "desktop-commander",
+        "market": "anthropics/claude-plugins-official"
+      },
+      "trust": {
+        "grade": "verified",
+        "reasons": [
+          "Anthropic 공식 마켓플레이스 등재",
+          "깃허브 인기 상위 MCP"
+        ]
+      },
+      "note": "내 컴퓨터 파일을 직접 건드리는 도구라 삭제 같은 작업은 꼭 확인하고 하세요.",
+      "tips": [
+        "\"다운로드 폴더 파일들 종류별로 폴더 나눠서 정리해 줘\""
+      ],
+      "status": "published",
+      "stars": 10169,
+      "pushed_at": "2026-10-30T11:28:38Z",
+      "readme_ko": [
+        {
+          "h": "이게 뭐예요?",
+          "p": "Desktop Commander는 깃허브에서 인기 많은 MCP 서버입니다. 터미널 명령, 프로그램 관리, 파일 작업(텍스트·코드·PDF·워드·엑셀·이미지)을 Claude가 내 컴퓨터에서 직접 합니다."
+        },
+        {
+          "h": "설치와 첫 사용",
+          "p": "딸깍 설치 뒤 \"다운로드 폴더 종류별로 정리해 줘\"처럼 씁니다."
+        },
+        {
+          "h": "주의",
+          "p": "내 컴퓨터 파일을 실제로 옮기고 지웁니다. 삭제 작업은 \"지우기 전에 목록 보여 줘\"라고 하세요."
+        }
+      ]
+    },
+    {
+      "id": "chrome-devtools",
+      "kind": "plugin",
+      "cat": "dev",
+      "name": "크롬 개발자 도구 연결",
+      "en": "Chrome DevTools MCP",
+      "one": "크롬을 직접 띄워 느린 원인·네트워크·오류를 보고 고칩니다.",
+      "when": "내 사이트가 왜 느린지 모르는 분",
+      "installs": 0,
+      "level": 3,
+      "plat": [
+        "claude-code"
+      ],
+      "isNew": true,
+      "added": "2026-10-30",
+      "color": "#f5f0cf",
+      "repo": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+      "install": {
+        "kind": "plugin",
+        "name": "chrome-devtools-mcp",
+        "market": "anthropics/claude-plugins-official"
+      },
+      "trust": {
+        "grade": "official",
+        "reasons": [
+          "구글 크롬 개발자 도구 팀 공식 제작",
+          "Anthropic 공식 마켓플레이스 등재"
+        ]
+      },
+      "tips": [
+        "\"내 사이트 첫 화면이 왜 3초 걸리는지 찾아 줘\""
+      ],
+      "status": "published",
+      "stars": 54481,
+      "pushed_at": "2026-10-30T10:15:13Z",
+      "readme_ko": [
+        {
+          "h": "이게 뭐예요?",
+          "p": "구글 크롬 개발자 도구 팀이 만든 공식 MCP입니다. 크롬을 직접 띄워 성능 기록, 네트워크 요청 분석, 콘솔 오류 확인을 하고, 그 결과로 느린 원인을 고칩니다."
+        },
+        {
+          "h": "설치와 첫 사용",
+          "p": "딸깍 설치 뒤 \"내 사이트 첫 화면 왜 3초 걸리는지\"처럼 씁니다."
+        }
+      ]
+    },
+    {
+      "id": "session-report",
+      "kind": "plugin",
+      "cat": "auto",
+      "name": "내 사용량 보고서",
+      "en": "Session report",
+      "one": "이번 세션에서 토큰을 어디에 얼마나 썼는지 보기 좋은 보고서로 만듭니다.",
+      "when": "요금이 왜 이렇게 나왔는지 궁금한 분",
+      "installs": 0,
+      "level": 1,
+      "plat": [
+        "claude-code"
+      ],
+      "isNew": true,
+      "added": "2026-10-30",
+      "color": "#d6dcf0",
+      "repo": "https://github.com/anthropics/claude-plugins-official",
+      "install": {
+        "kind": "plugin",
+        "name": "session-report",
+        "market": "anthropics/claude-plugins-official"
+      },
+      "trust": {
+        "grade": "official",
+        "reasons": [
+          "Anthropic이 직접 만든 공식 플러그인"
+        ]
+      },
+      "tips": [
+        "\"/session-report\" 치면 보고서가 열립니다."
+      ],
+      "status": "published",
+      "stars": 45376,
+      "pushed_at": "2026-10-30T07:32:39Z",
+      "readme_ko": [
+        {
+          "h": "이게 뭐예요?",
+          "p": "Anthropic 공식 플러그인. 이번 Claude Code 세션의 토큰 사용량, 캐시 효율, 보조 에이전트, 스킬 사용을 눌러 볼 수 있는 HTML 보고서로 만듭니다."
+        },
+        {
+          "h": "설치와 첫 사용",
+          "p": "딸깍 설치 뒤 \"/session-report\"."
+        }
+      ]
+    },
+    {
+      "id": "receipts",
+      "kind": "plugin",
+      "cat": "auto",
+      "name": "내가 한 일 증명서",
+      "en": "Receipts",
+      "one": "Claude로 뭘 만들었고 시간을 얼마나 아꼈는지 상사·자기 평가용 보고서로 뽑습니다.",
+      "when": "회사에 \"AI 쓸 만하다\"를 증명해야 하는 분",
+      "installs": 0,
+      "level": 1,
+      "plat": [
+        "claude-code"
+      ],
+      "isNew": true,
+      "added": "2026-10-30",
+      "color": "#f0ead6",
+      "repo": "https://github.com/anthropics/claude-plugins-official",
+      "install": {
+        "kind": "plugin",
+        "name": "receipts",
+        "market": "anthropics/claude-plugins-official"
+      },
+      "trust": {
+        "grade": "official",
+        "reasons": [
+          "Anthropic이 직접 만든 공식 플러그인"
+        ]
+      },
+      "tips": [
+        "\"/receipts 이번 달\" 치면 보고서가 나옵니다."
+      ],
+      "status": "published",
+      "stars": 45376,
+      "pushed_at": "2026-10-30T07:32:39Z",
+      "readme_ko": [
+        {
+          "h": "이게 뭐예요?",
+          "p": "Anthropic 공식 플러그인. 내가 Claude Code로 뭘 만들었고, 어떤 프로젝트에 썼고, 시간을 얼마나 아꼈는지 상사에게 보여 주거나 자기 평가에 쓸 '영향 보고서'를 만듭니다."
+        },
+        {
+          "h": "설치와 첫 사용",
+          "p": "딸깍 설치 뒤 \"/receipts\"."
+        }
+      ]
+    },
+    {
+      "id": "project-artifact",
+      "kind": "plugin",
+      "cat": "docs",
+      "name": "프로젝트 현황 페이지 자동 발행",
+      "en": "Project artifact",
+      "one": "프로젝트 목표·진행 순서·다음 할 일을 담은 현황 페이지를 만들어 공유 링크로 발행합니다.",
+      "when": "팀에 \"지금 어디까지 됐어?\" 매번 설명하는 분",
+      "installs": 0,
+      "level": 1,
+      "plat": [
+        "claude-code"
+      ],
+      "isNew": true,
+      "added": "2026-10-30",
+      "color": "#d6ecf5",
+      "repo": "https://github.com/anthropics/claude-plugins-public",
+      "install": {
+        "kind": "plugin",
+        "name": "project-artifact",
+        "market": "anthropics/claude-plugins-official"
+      },
+      "trust": {
+        "grade": "official",
+        "reasons": [
+          "Anthropic이 직접 만든 공식 플러그인"
+        ]
+      },
+      "tips": [
+        "\"/project-artifact 현황 페이지 만들어서 링크 줘\""
+      ],
+      "status": "published",
+      "stars": 45376,
+      "pushed_at": "2026-10-30T07:32:39Z",
+      "readme_ko": [
+        {
+          "h": "이게 뭐예요?",
+          "p": "Anthropic 공식 플러그인. 프로젝트 개요·성공 기준, 작업 순서, 다음 할 일을 담은 '살아 있는 현황 페이지'를 만들어 공유 링크로 발행합니다. 작업이 진행되면 페이지도 갱신됩니다."
+        },
+        {
+          "h": "설치와 첫 사용",
+          "p": "딸깍 설치 뒤 \"/project-artifact\"."
+        }
+      ]
+    },
+    {
+      "id": "explanatory",
+      "kind": "plugin",
+      "cat": "docs",
+      "name": "왜 이렇게 짰는지 설명 모드",
+      "en": "Explanatory output style",
+      "one": "코드를 짤 때마다 \"왜 이 방법을 골랐는지\" 교육용 설명을 덧붙입니다.",
+      "when": "Claude가 짜 준 코드를 보면서 배우고 싶은 분",
+      "installs": 0,
+      "level": 1,
+      "plat": [
+        "claude-code"
+      ],
+      "isNew": true,
+      "added": "2026-10-30",
+      "color": "#f0ead6",
+      "repo": "https://github.com/anthropics/claude-plugins-public",
+      "install": {
+        "kind": "plugin",
+        "name": "explanatory-output-style",
+        "market": "anthropics/claude-plugins-official"
+      },
+      "trust": {
+        "grade": "official",
+        "reasons": [
+          "Anthropic이 직접 만든 공식 플러그인"
+        ]
+      },
+      "tips": [
+        "설치하면 자동으로 켜져요. 답마다 '왜'가 붙습니다."
+      ],
+      "status": "published",
+      "stars": 45376,
+      "pushed_at": "2026-10-30T07:32:39Z",
+      "readme_ko": [
+        {
+          "h": "이게 뭐예요?",
+          "p": "예전 Claude Code에 있던 '설명 모드'를 플러그인으로 되살린 것입니다. 코드를 짤 때 왜 이 구현을 골랐는지, 이 코드베이스에 어떤 패턴이 있는지 교육용 설명을 덧붙입니다."
+        },
+        {
+          "h": "설치와 첫 사용",
+          "p": "딸깍 설치하면 자동으로 켜집니다."
+        }
+      ]
+    },
+    {
+      "id": "coursera",
+      "kind": "plugin",
+      "cat": "docs",
+      "name": "코세라 맞춤 공부 코스",
+      "en": "Learn with Coursera",
+      "one": "배우고 싶은 주제를 말하면 질문 세 개 하고 코세라 강의로 맞춤 코스를 짜 줍니다.",
+      "when": "뭘 배워야 할지 막막한 분",
+      "installs": 0,
+      "level": 1,
+      "plat": [
+        "claude-code"
+      ],
+      "isNew": true,
+      "added": "2026-10-30",
+      "color": "#d6e4f0",
+      "repo": "https://github.com/coursera/skills",
+      "install": {
+        "kind": "plugin",
+        "name": "learn-with-coursera",
+        "market": "anthropics/claude-plugins-official"
+      },
+      "trust": {
+        "grade": "official",
+        "reasons": [
+          "코세라(Coursera) 공식 제작",
+          "Anthropic 공식 마켓플레이스 등재"
+        ]
+      },
+      "tips": [
+        "\"데이터 분석 배우고 싶어. 엑셀은 좀 해\""
+      ],
+      "status": "published",
+      "stars": 1,
+      "pushed_at": "2026-05-18T22:26:25Z",
+      "readme_ko": [
+        {
+          "h": "이게 뭐예요?",
+          "p": "코세라(Coursera) 공식 스킬. 배우고 싶은 것을 말하면 주제·익숙함·선호를 묻는 질문 세 개를 하고, 코세라 강의로 맞춤 학습 경로를 만들어 줍니다."
+        },
+        {
+          "h": "설치와 첫 사용",
+          "p": "딸깍 설치 뒤 \"데이터 분석 배우고 싶어\"처럼 말합니다."
+        }
+      ]
+    },
+    {
+      "id": "playground",
+      "kind": "plugin",
+      "cat": "docs",
+      "name": "만져 보는 설명 페이지",
+      "en": "Playground",
+      "one": "슬라이더·버튼으로 직접 만져 보는 한 장짜리 설명 페이지를 만듭니다. 개념 설명, 수식, 데모.",
+      "when": "설명을 글 대신 만져 보게 보여 주고 싶은 분",
+      "installs": 0,
+      "level": 1,
+      "plat": [
+        "claude-code"
+      ],
+      "isNew": true,
+      "added": "2026-10-30",
+      "color": "#f5d8e4",
+      "repo": "https://github.com/anthropics/claude-plugins-official",
+      "install": {
+        "kind": "plugin",
+        "name": "playground",
+        "market": "anthropics/claude-plugins-official"
+      },
+      "trust": {
+        "grade": "official",
+        "reasons": [
+          "Anthropic이 직접 만든 공식 플러그인"
+        ]
+      },
+      "tips": [
+        "\"복리 계산 원리를 슬라이더로 만져 보는 페이지로 만들어 줘\""
+      ],
+      "status": "published",
+      "stars": 45376,
+      "pushed_at": "2026-10-30T07:32:39Z",
+      "readme_ko": [
+        {
+          "h": "이게 뭐예요?",
+          "p": "Anthropic 공식 플러그인. 슬라이더·버튼 같은 조작 장치와 실시간 미리보기가 있는 한 파일짜리 HTML '놀이터'를 만듭니다. 개념 설명, 수식 탐색, 디자인 데모에 씁니다."
+        },
+        {
+          "h": "설치와 첫 사용",
+          "p": "딸깍 설치 뒤 \"복리 계산을 슬라이더로 만져 보는 페이지\"처럼 말합니다."
+        }
+      ]
+    },
+    {
+      "id": "code-simplifier",
+      "kind": "plugin",
+      "cat": "dev",
+      "name": "코드 간단하게 정리",
+      "en": "Code simplifier",
+      "one": "동작은 그대로 두고 코드를 읽기 쉽고 일관되게 정리해 줍니다.",
+      "when": "코드가 돌아가긴 하는데 나중에 못 알아볼 것 같은 분",
+      "installs": 0,
+      "level": 1,
+      "plat": [
+        "claude-code"
+      ],
+      "isNew": true,
+      "added": "2026-10-30",
+      "color": "#e8e4dc",
+      "repo": "https://github.com/anthropics/claude-plugins-official",
+      "install": {
+        "kind": "plugin",
+        "name": "code-simplifier",
+        "market": "anthropics/claude-plugins-official"
+      },
+      "trust": {
+        "grade": "official",
+        "reasons": [
+          "Anthropic이 직접 만든 공식 플러그인"
+        ]
+      },
+      "tips": [
+        "\"/simplify\" 치면 방금 바꾼 코드를 정리합니다."
+      ],
+      "status": "published",
+      "stars": 45376,
+      "pushed_at": "2026-10-30T07:32:39Z",
+      "readme_ko": [
+        {
+          "h": "이게 뭐예요?",
+          "p": "Anthropic 공식 플러그인. 동작은 그대로 두고 코드를 명확하고 일관되고 유지보수하기 쉽게 다듬는 에이전트입니다."
+        },
+        {
+          "h": "설치와 첫 사용",
+          "p": "딸깍 설치 뒤 \"/simplify\"."
+        }
+      ]
+    },
+    {
+      "id": "resend",
+      "kind": "plugin",
+      "cat": "auto",
+      "name": "메일 발송 붙이기 (Resend)",
+      "en": "Resend",
+      "one": "내 앱에서 메일을 보내고 받는 기능을 붙입니다. 가입 확인 메일, 알림 메일.",
+      "when": "앱에 메일 보내기가 필요한 분",
+      "installs": 0,
+      "level": 3,
+      "plat": [
+        "claude-code"
+      ],
+      "isNew": true,
+      "added": "2026-10-30",
+      "color": "#e4e4e4",
+      "repo": "https://github.com/resend/resend-skills",
+      "install": {
+        "kind": "plugin",
+        "name": "resend",
+        "market": "anthropics/claude-plugins-official"
+      },
+      "trust": {
+        "grade": "official",
+        "reasons": [
+          "리센드(Resend) 공식 제작",
+          "Anthropic 공식 마켓플레이스 등재"
+        ]
+      },
+      "note": "리센드 계정과 API 키가 필요합니다(무료 플랜 있음).",
+      "tips": [
+        "\"회원가입하면 환영 메일 가게 만들어 줘\""
+      ],
+      "status": "published",
+      "stars": 208,
+      "pushed_at": "2026-10-28T19:18:37Z",
+      "readme_ko": [
+        {
+          "h": "이게 뭐예요?",
+          "p": "리센드(Resend)는 개발자용 메일 발송 서비스입니다. 공식 스킬로 메일 API 연동, 받은 편지함, CLI, 리액트 이메일 템플릿을 다룹니다."
+        },
+        {
+          "h": "설치와 첫 사용",
+          "p": "resend.com에서 API 키(무료 플랜 있음)를 받고 딸깍 설치 뒤 \"회원가입하면 환영 메일 가게\"처럼 말합니다."
+        }
+      ]
+    },
+    {
+      "id": "huggingface",
+      "kind": "plugin",
+      "cat": "dev",
+      "name": "허깅페이스 AI 모델 쓰기",
+      "en": "Hugging Face skills",
+      "one": "공개 AI 모델·데이터셋을 찾아 쓰고, 학습시키고, 평가합니다.",
+      "when": "오픈소스 AI 모델을 직접 돌려 보고 싶은 분",
+      "installs": 0,
+      "level": 3,
+      "plat": [
+        "claude-code"
+      ],
+      "isNew": true,
+      "added": "2026-10-30",
+      "color": "#f5f0cf",
+      "repo": "https://github.com/huggingface/skills",
+      "install": {
+        "kind": "plugin",
+        "name": "huggingface-skills",
+        "market": "anthropics/claude-plugins-official"
+      },
+      "trust": {
+        "grade": "official",
+        "reasons": [
+          "허깅페이스(Hugging Face) 공식 제작",
+          "Anthropic 공식 마켓플레이스 등재"
+        ]
+      },
+      "tips": [
+        "\"한국어 감정 분석 모델 찾아서 이 리뷰 500개 돌려 줘\""
+      ],
+      "status": "published",
+      "stars": 11237,
+      "pushed_at": "2026-10-29T15:42:48Z",
+      "readme_ko": [
+        {
+          "h": "이게 뭐예요?",
+          "p": "허깅페이스(Hugging Face) 공식 스킬. 공개 AI 모델·데이터셋·스페이스를 찾고, 쓰고, 학습시키고, 평가합니다."
+        },
+        {
+          "h": "설치와 첫 사용",
+          "p": "딸깍 설치 뒤 \"한국어 감정 분석 모델 찾아서 돌려 줘\"처럼 말합니다. 무거운 모델은 GPU가 필요합니다."
+        }
+      ]
     }
-  ]
+  ],
+  "pending": 27,
+  "count": 76,
+  "rejected": 147,
+  "generated_at": "2026-10-30T12:34:28.9535429Z"
 }

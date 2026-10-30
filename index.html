@@ -686,7 +686,7 @@ function filtered() {
     (!q || [it.name, it.en, it.one, it.when, ...(it.tips||[]), CATS.find(c=>c.id===it.cat).name].join(" ").toLowerCase().includes(q))
   );
   const s = state.sort;
-  list.sort((a,b) => s==="stars" ? b.stars-a.stars : s==="easy" ? a.level-b.level || b.installs-a.installs : s==="new" ? (b.isNew?1:0)-(a.isNew?1:0) || b.installs-a.installs : b.installs-a.installs);
+  list.sort((a,b) => s==="stars" ? b.stars-a.stars : s==="easy" ? a.level-b.level || b.installs-a.installs : s==="new" ? (b.isNew?1:0)-(a.isNew?1:0) || b.installs-a.installs || b.stars-a.stars : b.installs-a.installs || b.stars-a.stars);
   return list;
 }
 
@@ -721,7 +721,7 @@ function renderGrid() {
         <h3>${esc(it.name)} <span class="en">${esc(it.en)}</span></h3>
         <p class="one">${esc(it.one)}</p>
         <p class="when"><b>이런 분께</b> ${esc(it.when)}</p>${window.CM ? CM.cardLine(it.id) : ""}
-        <div class="meta"><span>★ ${fmt(it.stars)} · 설치 ${fmt(it.installs)}</span>${level(it.level)}<button class="install" data-open="${it.id}">${installOf(it)&&installOf(it).name?"설치":"연결"}</button></div>
+        <div class="meta"><span>★ ${fmt(it.stars)}${it.installs>0?` · 설치 ${fmt(it.installs)}`:""}</span>${level(it.level)}<button class="install" data-open="${it.id}">${installOf(it)&&installOf(it).name?"설치":"연결"}</button></div>
       </div>
     </div>`);
   // 광고 카드: 6번째마다
@@ -765,7 +765,7 @@ function openDetail(id) {
           <h2>${esc(it.name)} <span class="en" style="font-size:14px;color:var(--muted);font-weight:400">${esc(it.en)}</span></h2>
           <p class="one-line" style="font-size:14px;color:#333">${esc(it.one)}</p>
           ${window.CM ? CM.cardLine(it.id) : ""}
-          <p class="meta-line" style="font-size:12px;color:var(--muted)">깃허브 ★ ${fmt(it.stars)}${it.stars30>0?` <b style="color:var(--accent)">(${it.stars30_days>=28?"이달":it.stars30_days+"일간"} +${fmt(it.stars30)} ↑)</b>`:""}${it.pushed_at?` · ${ago(it.pushed_at)} 업데이트`:""} · 설치 ${fmt(it.installs)}회${CATALOG_AT?` · 딸깍 확인 ${ago(CATALOG_AT)}`:""}</p>
+          <p class="meta-line" style="font-size:12px;color:var(--muted)">깃허브 ★ ${fmt(it.stars)}${it.stars30>0?` <b style="color:var(--accent)">(${it.stars30_days>=28?"이달":it.stars30_days+"일간"} +${fmt(it.stars30)} ↑)</b>`:""}${it.pushed_at?` · ${ago(it.pushed_at)} 업데이트`:""}${it.installs>0?` · 설치 ${fmt(it.installs)}회`:""}${CATALOG_AT?` · 딸깍 확인 ${ago(CATALOG_AT)}`:""}</p>
         </div>
         <button class="close" data-close aria-label="닫기">✕</button>
       </div>
