@@ -352,6 +352,7 @@ h1, h2, h3, p, .cbody .one, .cbody .when, .nitem .body b, .nitem .body span { wo
 .cm-row input:focus, .cm-row textarea:focus { outline:none; box-shadow:0 0 0 3px var(--accent-soft); }
 .cm-row textarea { resize:vertical; min-height:64px; flex-basis:100%; }
 .cm-row .install { flex:0 0 auto; }
+.try-line { margin:0; font-size:13px; background:var(--surface-2, #f5f5f7); border-radius:12px; padding:9px 12px; } .try-line code { background:#fff; border:1px solid var(--line); border-radius:6px; padding:1px 6px; font-size:12px; } .try-line span { color:var(--muted); font-size:12px; } .sheet-head .cm-rate { margin:6px 0 0; }
 .vids { display:flex; gap:10px; overflow-x:auto; padding-bottom:6px; -webkit-overflow-scrolling:touch; } .vid { flex:0 0 auto; width:100%; max-width:420px; } .vid.v { width:220px; } .vid iframe { display:block; width:100%; aspect-ratio:16/9; border:0; border-radius:12px; background:#000; } .vid.v iframe { aspect-ratio:9/16; } .vid span { display:block; font-size:12px; color:var(--muted); margin-top:4px; }
 .cm-list { display:grid; gap:8px; }
 .cm-item { background:var(--surface); border-radius:14px; padding:10px 14px; font-size:14px; display:grid; gap:5px; }
@@ -735,38 +736,36 @@ function openDetail(id) {
     <div class="sheet">
       <div class="sheet-head">
         <div>
-          <div class="kind"><span class="tag ${it.kind}">${KIND[it.kind]}</span><span>${it.plat.map(p=>PLAT[p]).join(" · ")}</span><span>·</span><span>난이도: ${LEVEL_TXT[it.level]}</span></div>
+          <div class="kind"><span class="tag ${it.kind}">${KIND[it.kind]}</span>${it.trust&&TRUST_LABEL[it.trust.grade]?`<span class="tag trust-${it.trust.grade}">${TRUST_LABEL[it.trust.grade]}</span>`:""}<span>${it.plat.map(p=>PLAT[p]).join(" · ")}</span><span>·</span><span>난이도: ${LEVEL_TXT[it.level]}</span></div>
           <h2>${esc(it.name)} <span class="en" style="font-size:14px;color:var(--muted);font-weight:400">${esc(it.en)}</span></h2>
+          <p style="margin:6px 0 0;font-size:14px;color:#333">${esc(it.one)}</p>
+          ${window.CM ? CM.cardLine(it.id) : ""}
+          <p style="margin:4px 0 0;font-size:12px;color:var(--muted)">깃허브 ★ ${fmt(it.stars)} · 설치 ${fmt(it.installs)}회</p>
         </div>
         <button class="close" data-close aria-label="닫기">✕</button>
       </div>
       <div class="sheet-body">
         ${actions}
-        ${it.demo
-          ? `<div class="preview" style="background:${it.color};aspect-ratio:auto"><img src="${esc(it.demo)}" alt="${esc(it.name)} 작동 화면" style="display:block;width:100%;height:auto;border-radius:inherit"><span class="cap">작동 화면 · 검색 → 카드 → 딸깍 설치</span></div>`
-          : `<div class="preview" style="background:${it.color}">
-          ${win(it.color,true).replace('class="thumb"','class="thumb" style="width:100%;aspect-ratio:auto;height:100%"')}
-          <button class="play" aria-label="작동 영상 재생">▶</button>
-          <span class="cap">작동 화면 · 준비 중</span>
-        </div>`}
-        <div class="blocks">
-          <div class="blk"><h4>이게 뭐예요?</h4><p>${esc(it.one)}</p></div>
-          <div class="blk"><h4>이런 분께 추천</h4><p>${esc(it.when)}</p></div>
-          <div class="blk" style="grid-column:1/-1"><h4>이렇게 써요</h4><ul>${it.tips.map(t=>`<li>${esc(t)}</li>`).join("")}</ul></div>
-        </div>
-        ${it.note?`<div class="note">⚠ ${esc(it.note)}</div>`:""}
-        ${Array.isArray(it.videos)&&it.videos.length?`<div><h4 style="margin:0 0 4px;font-size:15px">짧은 영상</h4><p style="margin:0 0 10px;font-size:12px;color:var(--muted)">인플루언서가 올린 영상입니다. 영상은 영상, 실제 평가는 아래 후기를 보세요.</p><div class="vids">${it.videos.map(v=>{const e=videoEmbed(v.url); return e?`<div class="vid${e.v?" v":""}"><iframe src="${e.src}" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>${v.by?`<span>${esc(v.by)}</span>`:""}</div>`:"";}).join("")}</div></div>`:""}
-        ${Array.isArray(it.readme_ko)&&it.readme_ko.length?`<details class="readme" open>
-          <summary><b>원문 설명 한글판</b> <span>깃허브 README를 편집팀이 일반인 말로 옮겼습니다 · ${it.readme_ko.length}개 항목</span></summary>
-          <div class="readme-body">${it.readme_ko.map(s=>`<section><h5>${esc(s.h)}</h5><p>${esc(s.p).replace(/\n/g,"<br>")}</p></section>`).join("")}</div>
-        </details>`:""}
+        ${deep&&tryPrompt(it)?`<p class="try-line">설치되면 이렇게 치세요: <code>${esc(tryPrompt(it))}</code> <span>(설치가 끝나면 자동으로 복사돼요)</span></p>`:""}
+        ${it.demo?`<div class="preview" style="background:${it.color};aspect-ratio:auto"><img src="${esc(it.demo)}" alt="${esc(it.name)} 작동 화면" style="display:block;width:100%;height:auto;border-radius:inherit"><span class="cap">작동 화면 · 검색 → 카드 → 딸깍 설치</span></div>`:""}
         <div>
           <h4 style="margin:0 0 10px;font-size:15px">설치 방법 (${steps.length}단계)</h4>
           <div class="steps">${steps.map((s,i)=>`<div class="stp"><span class="num">${i+1}</span><div class="txt"><b>${esc(s[0])}</b><span>${esc(s[1])}</span>${s[2]?`<img src="${s[2]}" alt="" style="display:block;margin-top:8px;max-width:260px;width:100%;border-radius:10px;border:1px solid var(--line)">`:""}</div></div>`).join("")}</div>
           ${hasCmd?(deep?`<details style="margin-top:8px"><summary style="cursor:pointer;color:var(--muted);font-size:13px">도우미 없이 직접 하는 방법 (명령 복사)</summary><div class="cmd"><code>${esc(cmd)}</code><button data-copy="${esc(cmd)}">복사</button></div></details>`:`<div class="cmd"><code>${esc(cmd)}</code><button data-copy="${esc(cmd)}">복사</button></div>`):""}
         </div>
+        <div class="blocks">
+          <div class="blk"><h4>이게 뭐예요?</h4><p>${esc(it.one)}</p></div>
+          <div class="blk"><h4>이런 분께 추천</h4><p>${esc(it.when)}</p></div>
+          <div class="blk" style="grid-column:1/-1"><h4>이렇게 써요</h4><ul>${it.tips.map(t=>`<li>${esc(t)}</li>`).join("")}</ul></div>
+          <div class="blk" style="grid-column:1/-1"><h4>믿어도 되나</h4>${it.trust&&it.trust.reasons&&it.trust.reasons.length?`<ul>${it.trust.reasons.map(r=>`<li>${esc(r)}</li>`).join("")}</ul>`:`<p>딸깍 편집팀이 직접 설치해 보고 올렸습니다.</p>`}${it.note?`<div class="note" style="margin-top:8px">⚠ ${esc(it.note)}</div>`:""}</div>
+        </div>
         ${window.CM ? CM.box() : ""}
-        <p style="margin:0;font-size:12px;color:var(--muted)">★ ${fmt(it.stars)} · 설치 ${fmt(it.installs)}회 · 한글 설명은 딸깍 편집팀이 작성했습니다.</p>
+        ${Array.isArray(it.videos)&&it.videos.length?`<div><h4 style="margin:0 0 4px;font-size:15px">짧은 영상</h4><p style="margin:0 0 10px;font-size:12px;color:var(--muted)">인플루언서가 올린 영상입니다. 영상은 영상, 실제 평가는 위 후기를 보세요.</p><div class="vids">${it.videos.map(v=>{const e=videoEmbed(v.url); return e?`<div class="vid${e.v?" v":""}"><iframe src="${e.src}" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>${v.by?`<span>${esc(v.by)}</span>`:""}</div>`:"";}).join("")}</div></div>`:""}
+        ${Array.isArray(it.readme_ko)&&it.readme_ko.length?`<details class="readme">
+          <summary><b>원문 설명 한글판</b> <span>깃허브 README를 편집팀이 일반인 말로 옮겼습니다 · ${it.readme_ko.length}개 항목</span></summary>
+          <div class="readme-body">${it.readme_ko.map(s=>`<section><h5>${esc(s.h)}</h5><p>${esc(s.p).replace(/\n/g,"<br>")}</p></section>`).join("")}</div>
+        </details>`:""}
+        <p style="margin:0;font-size:12px;color:var(--muted)">한글 설명은 딸깍 편집팀이 작성했습니다.</p>
       </div>
     </div>
   </div>`;
