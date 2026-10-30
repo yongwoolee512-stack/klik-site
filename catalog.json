@@ -1,7 +1,4 @@
 {
-  "generated_at": "2026-10-29T18:36:29.6569338Z",
-  "pending": 27,
-  "count": 20,
   "items": [
     {
       "id": "pptx",
@@ -33,10 +30,10 @@
       ],
       "status": "published",
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "readme_ko": [
         {
@@ -94,10 +91,10 @@
       ],
       "status": "published",
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "readme_ko": [
         {
@@ -154,10 +151,10 @@
       ],
       "status": "published",
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "readme_ko": [
         {
@@ -214,10 +211,10 @@
       ],
       "status": "published",
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "readme_ko": [
         {
@@ -274,10 +271,10 @@
       ],
       "status": "published",
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "readme_ko": [
         {
@@ -327,10 +324,10 @@
       "note": "피그마 계정 로그인(OAuth)이 한 번 필요합니다.",
       "status": "published",
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "readme_ko": [
         {
@@ -381,10 +378,10 @@
       ],
       "status": "published",
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "readme_ko": [
         {
@@ -431,10 +428,10 @@
       ],
       "status": "published",
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "readme_ko": [
         {
@@ -483,10 +480,10 @@
       ],
       "status": "published",
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "readme_ko": [
         {
@@ -542,10 +539,10 @@
       ],
       "status": "published",
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "readme_ko": [
         {
@@ -597,10 +594,10 @@
       ],
       "status": "published",
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "readme_ko": [
         {
@@ -647,10 +644,10 @@
       "note": "수파베이스 가입과 프로젝트 생성이 먼저 필요합니다.",
       "status": "published",
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "readme_ko": [
         {
@@ -700,10 +697,10 @@
       ],
       "status": "published",
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "readme_ko": [
         {
@@ -751,10 +748,10 @@
       ],
       "status": "published",
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "readme_ko": [
         {
@@ -806,10 +803,10 @@
       ],
       "status": "published",
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "readme_ko": [
         {
@@ -851,10 +848,10 @@
       ],
       "status": "published",
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "readme_ko": [
         {
@@ -896,10 +893,10 @@
       ],
       "status": "published",
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "readme_ko": [
         {
@@ -944,10 +941,10 @@
       ],
       "status": "published",
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "readme_ko": [
         {
@@ -992,10 +989,10 @@
       "note": "국내 결제는 토스페이먼츠 등 별도 확인이 필요합니다.",
       "status": "published",
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "readme_ko": [
         {
@@ -1048,10 +1045,10 @@
       ],
       "status": "published",
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "readme_ko": [
         {
@@ -1071,7 +1068,359 @@
           "p": "\"오늘 제일 많이 난 에러 고쳐 줘\""
         }
       ]
+    },
+    {
+      "id": "ponytail",
+      "kind": "plugin",
+      "cat": "dev",
+      "name": "포니테일 (게으른 고참 개발자)",
+      "en": "Ponytail",
+      "one": "AI가 쓸데없이 길게 짜는 코드를 절반으로 줄여 주는 '고참 개발자 성격'. 코드 -53%, 시간 -41%, 비용 -26%.",
+      "when": "Claude가 코드를 너무 복잡하고 길게 짜서 돈과 시간이 아깝다고 느끼는 분",
+      "stars": 180482,
+      "installs": 41000,
+      "level": 1,
+      "plat": [
+        "claude-code"
+      ],
+      "hot": true,
+      "isNew": true,
+      "added": "2026-10-30",
+      "color": "#e8e4dc",
+      "repo": "https://github.com/DietrichGebert/ponytail",
+      "install": {
+        "kind": "plugin",
+        "name": "ponytail",
+        "market": "DietrichGebert/ponytail"
+      },
+      "trust": {
+        "grade": "community",
+        "reasons": [
+          "깃허브 ★18만, 개인 개발자 제작",
+          "MIT 라이선스",
+          "exe·dll 없는 순수 텍스트 프롬프트 (제작자가 명시)"
+        ]
+      },
+      "note": "공식 Claude 앱 플러그인 목록에는 없고, 제작자 저장소에서 직접 받습니다. 설치 후 매 세션 자동으로 켜집니다.",
+      "tips": [
+        "\"/ponytail-review\"라고 치면 지금 바꾼 코드를 '터지면 호출당하는 고참'처럼 검토해 줍니다.",
+        "설치하면 따로 할 건 없어요. 매 세션 자동으로 켜지고, 답 끝에 '건너뛴 것·확인 안 한 것'을 꼭 알려 줍니다.",
+        "너무 과격하면 \"/ponytail lite\", 코드베이스가 괘씸하면 \"/ponytail ultra\", 끄려면 \"/ponytail off\"."
+      ],
+      "status": "published",
+      "readme_ko": [
+        {
+          "h": "포니테일이란?",
+          "p": "회사에 버전 관리 시스템보다 오래 있었던 그 고참 개발자를 아시죠. 긴 머리, 타원형 안경. 당신이 50줄짜리 코드를 보여 주면 아무 말 없이 한 줄로 바꿔 놓습니다. 포니테일은 그 사람을 AI 에이전트 안에 넣은 것입니다.\n\n정체는 '프롬프트 하나'입니다. skills/ponytail/SKILL.md 파일 하나가 전부이고, 저장소의 나머지는 이 프롬프트를 여러 AI 에이전트(Claude Code, Codex, Cursor 등 20개)에 꽂아 주는 어댑터입니다."
+        },
+        {
+          "h": "숫자로 보면",
+          "p": "같은 Claude Code(Opus 5.5)로 39개 과제(실제 FastAPI+React 저장소 포함)를 5번씩 돌려 비교했습니다. 포니테일 5를 켰을 때 코드 -53%, 시간 -41%, 비용 -26%, 토큰 -45%.\n\n그런데 품질은 오히려 올랐습니다. 위험한 로직(분기·반복·돈·보안)의 98%가 테스트와 함께 나왔습니다(안 켰을 땐 68%). SQL 주입·경로 탈출·토큰 위조 같은 보안 과제 30회는 전부 통과. 블라인드 비교에서 이전 버전을 110 대 67로 이겼습니다."
+        },
+        {
+          "h": "원칙: 적게 쓰되, 게으르지는 않게",
+          "p": "규칙은 '토큰 최소화'가 아닙니다. '과제에 필요한 것만 쓰고, 검증·오류 처리·보안·접근성은 절대 깎지 않는다'입니다. 코드가 작아지는 건 필요한 것만 남겨서이고, 비용과 속도는 부수 효과입니다.\n\n분기·반복·파서·돈·보안이 들어간 로직에는 작은 테스트 하나를 반드시 남깁니다. 모든 답 끝에 '무엇을 건너뛰었고 무엇을 확인하지 않았는지, 알아야 할 위험'을 적습니다."
+        },
+        {
+          "h": "설치와 명령",
+          "p": "Claude Code에서 두 줄: /plugin marketplace add DietrichGebert/ponytail → /plugin install ponytail@ponytail. 딸깍은 이 두 줄을 대신 실행합니다. 설치되면 매 세션 자동으로 켜집니다.\n\n/ponytail [lite|full|ultra|off] 강도 조절, /ponytail-review 바뀐 코드 검토(버그·보안·부하·테스트 없는 위험 코드·느린 경로·잘라낼 것), /ponytail-audit 저장소 전체 점검, /ponytail-debt 미뤄 둔 'shortcut:' 주석을 장부로 모으기, /ponytail-gain 절감 점수판."
+        },
+        {
+          "h": "주의",
+          "p": "제작자는 \"깃허브 DietrichGebert/ponytail 과 npm @dietrichgebert/ponytail 에서만 받으라\"고 말합니다. 포니테일은 .exe나 .dll 파일을 절대 포함하지 않으며, 그런 게 들어 있는 복제판은 제작자 것이 아닙니다. 설정 파일은 필요 없고(선택 사항만 있음), MIT 라이선스입니다."
+        }
+      ]
+    },
+    {
+      "id": "superpowers",
+      "kind": "plugin",
+      "cat": "dev",
+      "name": "슈퍼파워 (개발 방법론 세트)",
+      "en": "Superpowers",
+      "one": "코드부터 짜지 않고 '뭘 만들지' 먼저 묻고, 설계→계획→테스트→구현 순서로 일하게 만듭니다.",
+      "when": "뭘 시키면 Claude가 바로 코드를 쏟아내서 결국 엉망이 되는 경험을 한 분",
+      "stars": 308953,
+      "installs": 72000,
+      "level": 1,
+      "plat": [
+        "claude-code"
+      ],
+      "hot": true,
+      "isNew": true,
+      "added": "2026-10-30",
+      "color": "#d6dcf0",
+      "repo": "https://github.com/obra/superpowers",
+      "install": {
+        "kind": "plugin",
+        "name": "superpowers",
+        "market": "anthropics/claude-plugins-official"
+      },
+      "trust": {
+        "grade": "verified",
+        "reasons": [
+          "Anthropic 공식 마켓플레이스에 등재",
+          "깃허브 ★30만, 커뮤니티 제작",
+          "MIT 라이선스"
+        ]
+      },
+      "note": "커뮤니티 제작이지만 Anthropic 공식 마켓플레이스에 올라 있어 그쪽에서 받습니다.",
+      "tips": [
+        "\"회원가입 기능 만들어 줘\"라고 해 보세요. 바로 코딩하지 않고 뭘 원하는지 먼저 짧게 묻습니다.",
+        "설계에 동의하면 계획서를 쓰고, '시작'이라고 하면 보조 에이전트들이 몇 시간씩 혼자 일합니다.",
+        "테스트 먼저 쓰기(TDD), 필요 없는 건 안 만들기(YAGNI)가 기본값입니다."
+      ],
+      "status": "published",
+      "readme_ko": [
+        {
+          "h": "슈퍼파워란?",
+          "p": "코딩 에이전트를 위한 '완성된 소프트웨어 개발 방법론'입니다. 서로 조합되는 스킬 묶음과, 에이전트가 그 스킬을 꼭 쓰게 만드는 초기 지시문으로 되어 있습니다."
+        },
+        {
+          "h": "어떻게 일하나",
+          "p": "에이전트를 켜는 순간부터 시작됩니다. 뭔가 만들려는 걸 알아채면 바로 코드로 뛰어들지 않고, 한 발 물러서서 '진짜 뭘 하려는 건지' 묻습니다. 대화에서 요구 사항을 뽑아내면 읽고 소화할 수 있을 만큼 짧은 덩어리로 보여 줍니다.\n\n설계에 동의하면 '의욕은 넘치지만 취향 없고 판단력 없고 프로젝트 맥락 모르고 테스트 싫어하는 신입'도 따라갈 수 있을 만큼 명확한 구현 계획을 씁니다. 진짜 빨강/초록 TDD, YAGNI(필요 없는 건 안 만든다), DRY(반복 금지)를 강조합니다.\n\n'시작'이라고 하면 보조 에이전트 주도 개발이 돌아갑니다. 에이전트들이 과제를 하나씩 처리하고, 서로 검토하고, 다음으로 넘어갑니다. 계획에서 벗어나지 않고 몇 시간씩 혼자 일하는 게 흔합니다. 스킬이 자동으로 발동되니 따로 할 건 없습니다."
+        },
+        {
+          "h": "설치",
+          "p": "Anthropic 공식 플러그인 마켓플레이스에 올라 있습니다: /plugin install superpowers@claude-plugins-official. 딸깍이 이 명령을 대신합니다. 제작자 자체 마켓(obra/superpowers-marketplace)도 있고, Codex·Cursor·Gemini CLI·Copilot CLI 등 15개 이상의 다른 에이전트용 설치법도 README에 있습니다. 여러 에이전트를 쓰면 각각 설치해야 합니다."
+        },
+        {
+          "h": "안에 든 스킬",
+          "p": "테스트: test-driven-development(빨강-초록-리팩터 사이클).\n디버깅: systematic-debugging(4단계 근본 원인 추적), verification-before-completion(정말 고쳐졌는지 확인), diagnosing-superpowers(세션에서 뭐가 잘못됐는지 증거로 밝히기).\n협업: brainstorming(의도 끌어내기), writing-plans, executing-plans, dispatching-parallel-agents(병렬 보조 에이전트), requesting/receiving-code-review, using-git-worktrees, finishing-a-development-branch(머지/PR 결정), subagent-driven-development(2단계 검토).\n메타: writing-skills(새 스킬 만들기), using-superpowers(입문)."
+        },
+        {
+          "h": "철학",
+          "p": "테스트 먼저, 항상. 즉흥보다 체계. 복잡성 줄이기가 제1 목표. 주장보다 증거: 끝났다고 말하기 전에 확인. 기업용 상용 지원은 primeradiant.com으로 문의. 새 스킬 기여는 일반적으로 받지 않으며, 모든 지원 에이전트에서 동작해야 합니다."
+        }
+      ]
+    },
+    {
+      "id": "claude-mem",
+      "kind": "plugin",
+      "cat": "auto",
+      "name": "클로드 기억 (세션 기억 유지)",
+      "en": "Claude-Mem",
+      "one": "대화창을 닫아도 지난 작업을 기억해서, 다음 세션이 '어디까지 했는지' 알고 시작합니다.",
+      "when": "새 대화마다 프로젝트 설명을 처음부터 다시 하느라 지친 분",
+      "stars": 105136,
+      "installs": 23000,
+      "level": 2,
+      "plat": [
+        "claude-code"
+      ],
+      "isNew": true,
+      "added": "2026-10-30",
+      "color": "#d6ecf5",
+      "repo": "https://github.com/thedotmack/claude-mem",
+      "install": {
+        "kind": "plugin",
+        "name": "claude-mem",
+        "market": "thedotmack/claude-mem"
+      },
+      "trust": {
+        "grade": "community",
+        "reasons": [
+          "깃허브 ★10만, 개인 개발자 제작",
+          "Apache 2.0 라이선스",
+          "Vercel 오픈소스 프로그램 후원"
+        ]
+      },
+      "note": "뒤에서 기억을 정리하는 작은 프로그램이 함께 돌아갑니다. Node.js가 없는 컴퓨터는 첫 실행 때 설치 안내가 뜰 수 있습니다. 설치 뒤 Claude Code를 한 번 다시 열어 주세요.",
+      "tips": [
+        "\"지난번에 뭐 하다 끝났지?\"라고 물어 보세요. 전 세션 요약을 꺼내 옵니다.",
+        "작업하는 동안 자동으로 관찰 기록을 모아 요약하니 따로 메모할 필요가 없습니다.",
+        "검색 도구가 들어 있어 '그때 그 오류 어떻게 고쳤지' 같은 질문에도 답합니다."
+      ],
+      "status": "published",
+      "readme_ko": [
+        {
+          "h": "클로드 기억이란?",
+          "p": "Claude Code용 '지속 기억 압축 시스템'입니다. 작업 중 도구 사용 관찰 기록을 자동으로 모으고, 의미 단위로 요약해, 다음 세션에서 쓸 수 있게 넘겨 줍니다. 세션이 끝나거나 다시 연결돼도 Claude가 프로젝트에 대한 지식을 이어 갑니다."
+        },
+        {
+          "h": "빠른 시작",
+          "p": "Claude Code 안에서 두 줄: /plugin marketplace add thedotmack/claude-mem → /plugin install claude-mem. 딸깍이 이 두 줄을 대신합니다. 설치 후 Claude Code를 다시 열면 이전 세션의 맥락이 새 세션에 자동으로 나타납니다.\n\n주의: npm에도 올라 있지만 npm install -g claude-mem 은 '라이브러리만' 설치하고 훅이나 작업자 서비스는 등록하지 않습니다. 반드시 플러그인 명령이나 npx claude-mem install 로 설치하세요."
+        },
+        {
+          "h": "작동 원리",
+          "p": "Claude Code의 훅(hook) 기능으로 세션 시작·도구 사용·세션 종료 시점을 잡아 관찰 기록을 남기고, 별도의 작업자(worker) 서비스가 이를 요약해 저장합니다. 저장된 기억은 검색 도구(MCP)로도 꺼낼 수 있어 '그때 그 오류 어떻게 고쳤지' 같은 질문에 답합니다.\n\n윈도우에서는 훅이 Git Bash 없이 claude-mem 실행 파일을 직접 부릅니다. 'Executable not found' 오류가 나면 npx claude-mem doctor 를 실행하라고 안내합니다."
+        },
+        {
+          "h": "지원과 주의",
+          "p": "Claude Code 외에 OpenCode·Antigravity·Pi 등 다른 에이전트용 설치 옵션(--ide)도 있습니다. Node.js 20 이상. Apache 2.0 라이선스. Vercel 오픈소스 프로그램, Greptile, SerpApi가 후원합니다. 문서는 docs.claude-mem.ai, 32개 언어 README(한국어 포함)가 있습니다."
+        }
+      ]
+    },
+    {
+      "id": "caveman",
+      "kind": "plugin",
+      "cat": "auto",
+      "name": "원시인 모드 (토큰 절약)",
+      "en": "Caveman",
+      "one": "AI 대답을 원시인처럼 짧게 만들어 요금(토큰)을 아낍니다. 같은 답, 63토큰이 20토큰으로. 코드는 그대로.",
+      "when": "Claude가 말이 길어 요금과 읽는 시간이 아까운 분",
+      "stars": 116181,
+      "installs": 27000,
+      "level": 1,
+      "plat": [
+        "claude-code"
+      ],
+      "isNew": true,
+      "added": "2026-10-30",
+      "color": "#f3d9c4",
+      "repo": "https://github.com/JuliusBrussee/caveman",
+      "install": {
+        "kind": "plugin",
+        "name": "caveman",
+        "market": "JuliusBrussee/caveman"
+      },
+      "trust": {
+        "grade": "community",
+        "reasons": [
+          "깃허브 ★11만, 개인 개발자 제작",
+          "Apache 2.0 라이선스",
+          "Adobe 연구·JetBrains A/B 테스트로 효과 검증"
+        ]
+      },
+      "note": "플러그인판은 '짧게 말하기'가 중심입니다. 로그·JSON 읽기 압축 같은 전체 기능은 Node.js로 설치하는 npx 판에서만 켜집니다.",
+      "tips": [
+        "\"/caveman\"이라고 치면 바로 짧게 말합니다. 평소 말투로 돌리려면 \"stop caveman\".",
+        "더 짧게는 \"/ultracave\". 보안 경고나 되돌릴 수 없는 작업은 알아서 긴 문장으로 설명합니다.",
+        "내 질문은 절대 바꾸지 않고 답만 줄입니다. 코드·명령·경로·오류 메시지는 한 글자도 안 건드립니다."
+      ],
+      "status": "published",
+      "readme_ko": [
+        {
+          "h": "왜 많은 토큰, 적은 토큰도 되는데",
+          "p": "원시인(Caveman)은 AI 에이전트가 '덜 말하고 덜 읽게' 합니다. 코드는 정확히 그대로. 머리는 여전히 큽니다.\n\n같은 React 리렌더링 질문에 보통 에이전트는 63토큰(\"...이유는 아마 렌더마다 새 객체 참조를 만들어서인데, 인라인 객체를 prop으로 넘기면 React의 얕은 비교가...\"), 원시인 에이전트는 20토큰(\"렌더마다 새 객체 참조, 그래서 React 재렌더. prop을 useMemo로 감싸.\"). 같은 해결책입니다."
+        },
+        {
+          "h": "증명",
+          "p": "Adobe 연구(CAVEWOMAN 논문, 이 저장소 인용): 8개 모델·5개 데이터셋에서 비용 1.4~2.4배, 최대 3배 절감. JetBrains: 실제 코딩 과제 86개 A/B 테스트, 품질 저하 없음(p=0.82). Elastic: Elasticsearch용으로 재제작, 응답 토큰 63.6% 감소, '정보 손실 0'. 해커뉴스 1위, 깃허브 트렌딩 1위.\n\n두 발견이 설계를 바꿨습니다. Adobe: '내 질문'을 원시인화하면 답이 나빠진다 → 원시인은 사용자 프롬프트를 절대 건드리지 않습니다. JetBrains: 에이전트 세션은 대부분 코드와 도구 호출 → 말투는 그걸 그대로 두고, 대신 에이전트가 '읽는 것'을 줄이는 기능이 생겼습니다."
+        },
+        {
+          "h": "여섯 개의 돌(4.0 기준)",
+          "p": "덜 말하기: 답이 짧아짐, 코드는 정확(63→20토큰). 덜 읽기: 로그·JSON·CSV·테스트 출력을 모델이 읽기 전에 줄임(세션당 입력 토큰 33.2% 감소). 자동(Auto): 질문마다 모델과 노력 수준을 골라 줌(Opus 최고 설정 대비 54% 저렴, 같은 점수). 블록: 에이전트가 쓴 스크립트를 보관해 다시 씀(테스트 1회 397→76토큰). 낭비 수정, 그리고 원시인 클라우드.\n\n전체 기능은 npx @caveman-ai/cli@latest 로 설치합니다(Node.js 22.13 이상). Claude Code 플러그인판(/plugin marketplace add JuliusBrussee/caveman → /plugin install caveman@caveman)은 매 대화 세션에 자동 시작되며, 딸깍은 이 플러그인판을 설치합니다."
+        },
+        {
+          "h": "원시인 말투의 규칙",
+          "p": "망가진 문법이 아니라 '목소리'입니다. 답 먼저: [대상][동작][이유]. [다음 단계]. 인사·요약 없음. 한 문장에 한 생각(항공 정비 매뉴얼의 통제 영어 ASD-STE100 기반, 최대 20단어). 뜻은 절대 빠지지 않음: 관사는 빼도 not·never·no·only 는 안 뺌, 숫자와 단위는 정확. 코드·명령·경로·오류 메시지는 글자 하나 안 건드림. 보안 경고·되돌릴 수 없는 작업·헷갈리는 사용자에게는 완전한 문장으로 돌아옴. 내 프롬프트는 절대 다시 쓰지 않음.\n\n/caveman 보통, /ultracave 더 짧게, /megacave 한자 압축. 'stop caveman' 으로 돌아옵니다. 솔직한 숫자: 'Be concise' 한 줄만 써도 꽤 줄어들고, 그 위에 /caveman은 3%, /ultracave는 35% 더 줄입니다. 요청당 과금(Copilot)에서는 짧은 답이 돈을 아끼지 않습니다."
+        }
+      ]
+    },
+    {
+      "id": "context-mode",
+      "kind": "plugin",
+      "cat": "auto",
+      "name": "컨텍스트 모드 (대화 용량 절약)",
+      "en": "Context Mode",
+      "one": "도구가 쏟아내는 긴 결과물을 밖에서 걸러 대화 용량의 98%를 아끼고, 중간에 끊겨도 하던 일을 이어 갑니다.",
+      "when": "긴 작업을 하다 보면 Claude가 앞 내용을 잊어버려 답답한 분",
+      "stars": 32885,
+      "installs": 8100,
+      "level": 2,
+      "plat": [
+        "claude-code"
+      ],
+      "isNew": true,
+      "added": "2026-10-30",
+      "color": "#cfe6d6",
+      "repo": "https://github.com/mksglu/context-mode",
+      "install": {
+        "kind": "plugin",
+        "name": "context-mode",
+        "market": "mksglu/context-mode"
+      },
+      "trust": {
+        "grade": "community",
+        "reasons": [
+          "깃허브 ★3.3만, 해커뉴스 1위",
+          "ELv2 라이선스 (쓰는 건 자유, 되팔기만 제한)",
+          "Node.js 기반 MCP 서버"
+        ]
+      },
+      "note": "MCP 서버라 Node.js(npx)가 설치돼 있어야 돌아갑니다. 없는 컴퓨터는 설치 뒤에도 켜지지 않을 수 있습니다.",
+      "tips": [
+        "\"ctx stats\"라고 치면 지금까지 얼마나 아꼈는지 보여 줍니다.",
+        "파일 50개를 읽어 세는 대신 '세는 스크립트'를 써서 결과만 가져오게 바꿔 줍니다.",
+        "대화가 압축돼도 편집한 파일·진행 중 작업·내 결정을 검색해서 되찾습니다."
+      ],
+      "status": "published",
+      "readme_ko": [
+        {
+          "h": "문제: 컨텍스트의 '나머지 절반'",
+          "p": "MCP 도구를 부를 때마다 날 데이터가 대화창(컨텍스트)에 쏟아집니다. Playwright 스냅샷 56KB, 깃허브 이슈 20개 59KB, 접근 로그 하나 45KB. 30분 뒤면 컨텍스트의 40%가 사라집니다. 그리고 에이전트가 공간을 비우려고 대화를 압축하면, 편집 중인 파일·진행 중 과제·마지막 요청을 잊어버립니다. 거기에 인사·군말·장황한 설명으로 출력 토큰까지 태웁니다."
+        },
+        {
+          "h": "해결: 네 가지",
+          "p": "1) 컨텍스트 절약: 샌드박스 도구가 날 데이터를 컨텍스트 밖에 둡니다. 315KB가 5.4KB로, 98% 감소.\n2) 세션 연속성: 모든 파일 편집·git 작업·과제·오류·사용자 결정을 SQLite에 기록. 압축이 일어나면 그걸 다 다시 쏟는 게 아니라 전문 검색(FTS5·BM25)으로 '관련 있는 것만' 꺼냅니다. --continue 를 안 쓰면 이전 세션 데이터는 즉시 지워집니다.\n3) 코드로 생각하기: 파일 50개를 읽어 함수를 세는 대신, 세는 스크립트를 써서 결과만 출력합니다(47번 Read 700KB → 1번 실행 3.6KB).\n4) 말투 강제 없음: 데이터가 '어디로 가는지'만 다루고, 답을 어떻게 쓰는지는 모델(또는 내 CLAUDE.md)에 맡깁니다. 과한 간결 지시는 코딩·추론 성능을 떨어뜨린다는 보고가 있어서입니다."
+        },
+        {
+          "h": "설치",
+          "p": "Claude Code 1.0.33 이상. /plugin marketplace add mksglu/context-mode → /plugin install context-mode@context-mode. 딸깍이 이 두 줄을 대신합니다. 플러그인 없이 MCP만 붙이려면 claude mcp add context-mode -- npx -y context-mode.\n\nNode.js(npx)로 돌아가는 MCP 서버입니다. Node.js가 없는 컴퓨터에서는 설치돼도 켜지지 않을 수 있습니다. ctx stats 로 도구가 켜졌는지 확인합니다."
+        },
+        {
+          "h": "지원 범위",
+          "p": "Claude Code, Gemini CLI, VS Code·JetBrains Copilot, OpenCode, KiloCode에서 세션 연속성(기록+스냅샷+복원)이 완전히 동작합니다. Codex CLI는 부분 지원, Cursor는 압축 후 복원이 아직 안 됩니다. Copilot CLI, Antigravity CLI, OMP, OpenClaw 게이트웨이 등 17개 클라이언트용 설정이 들어 있습니다. 라이선스는 ELv2(쓰는 건 자유, 서비스로 되파는 것만 제한). 디스코드 커뮤니티가 있습니다."
+        }
+      ]
+    },
+    {
+      "id": "gstack",
+      "kind": "skill",
+      "cat": "dev",
+      "name": "지스택 (1인 개발팀 세트)",
+      "en": "gstack",
+      "one": "CEO·설계 책임자·디자이너·코드 검토자·QA·보안 담당·배포 담당이 되어 주는 슬래시 명령 묶음. Y컴비네이터 대표가 매일 쓰는 구성.",
+      "when": "혼자 만들지만 '팀처럼' 검토·테스트·배포까지 챙기고 싶은 분",
+      "stars": 138224,
+      "installs": 19000,
+      "level": 3,
+      "plat": [
+        "claude-code"
+      ],
+      "isNew": true,
+      "added": "2026-10-30",
+      "color": "#e0d6f0",
+      "repo": "https://github.com/garrytan/gstack",
+      "install": null,
+      "cmd": "Install gstack: run git clone --single-branch --depth 1 https://github.com/garrytan/gstack.git ~/.claude/skills/gstack && cd ~/.claude/skills/gstack && ./setup then add a \"gstack\" section to CLAUDE.md that says to use the /browse skill from gstack for all web browsing and never use mcp__claude-in-chrome__* tools.",
+      "trust": {
+        "grade": "community",
+        "reasons": [
+          "깃허브 ★14만, Y컴비네이터 대표 Garry Tan 제작",
+          "MIT 라이선스",
+          "Bun·Git 등 개발 도구 필요 (딸깍 한 번으론 안 됨)"
+        ]
+      },
+      "note": "딸깍 한 번으로는 안 됩니다. '설치 명령 복사'를 누른 뒤 Claude Code 입력창에 붙여 넣으면 Claude가 나머지 설치를 대신합니다. Git·Bun(1.4.2 이상)이 필요하고, 윈도우는 Node.js도 필요합니다.",
+      "tips": [
+        "\"/office-hours\"라고 치고 만들고 싶은 걸 설명하세요. 기획을 되묻고 설계 문서를 써 줍니다.",
+        "\"/review\"는 CI는 통과하지만 실제로 터지는 버그를 찾고, \"/qa\"는 진짜 브라우저를 열어 테스트합니다.",
+        "\"/ship\"은 테스트·검토·PR까지 한 번에. 매주 월·목 안정판이 자동 업데이트됩니다."
+      ],
+      "status": "published",
+      "readme_ko": [
+        {
+          "h": "지스택이란?",
+          "p": "Claude Code(와 다른 코딩 에이전트)를 '가상 엔지니어링 팀'으로 바꿉니다. 제품을 다시 생각하는 CEO, 아키텍처를 확정하는 엔지니어링 매니저, AI 티 나는 디자인을 잡는 디자이너, 운영에서 터질 버그를 찾는 검토자, 진짜 브라우저를 여는 QA 책임자, OWASP+STRIDE 보안 감사를 하는 보안 담당, PR을 내보내는 릴리스 엔지니어. 전부 슬래시 명령, 전부 마크다운, 전부 무료, MIT.\n\n제작자는 Y컴비네이터 대표 Garry Tan입니다. 매일 쓰는 오픈소스 '소프트웨어 공장'을 모두가 쓸 수 있어야 한다며 공개했습니다. 대상: 직접 만들고 싶은 기술 창업자, 빈 프롬프트 대신 구조화된 역할이 필요한 Claude Code 초보, 모든 PR에 엄격한 검토·QA·배포 자동화를 원하는 리드 엔지니어."
+        },
+        {
+          "h": "빠른 시작",
+          "p": "1) 설치(붙여넣기 두 번, 30초). 2) /office-hours 를 치고 만들려는 걸 설명하면 기획을 되묻고 다른 스킬이 읽는 설계 문서를 씁니다. 3) 변경이 있는 브랜치에서 /review 를 치면 CI는 통과하지만 운영에서 깨지는 버그를 찾아 고칩니다. 4) /qa 를 스테이징 주소에 쓰면 진짜 브라우저를 열어 버그를 재현하고 고칩니다.\n\n여기까지 해 보면 맞는지 알게 됩니다. 전체 스프린트를 원하면 /autoplan 이 계획을 끝까지 검토하고 /ship 이 테스트·검토·PR을 돌립니다."
+        },
+        {
+          "h": "설치: 왜 딸깍 한 번이 안 되나",
+          "p": "필요한 것: Claude Code, Git, Bun 1.4.2 이상(1.3.3 미만은 컴파일된 도구가 프로젝트의 .env를 읽을 수 있어 거부), 윈도우는 Node.js도. 맥은 Aside 브라우저를 권장(없으면 자체 브라우저를 빌드).\n\n1단계: Claude Code를 열고 README의 설치 문장을 붙여 넣습니다. 'git clone ... ~/.claude/skills/gstack && ./setup 을 실행하고, CLAUDE.md에 gstack 섹션을 추가하라'는 내용이고, 나머지는 Claude가 합니다. 딸깍 사이트의 '설치 명령 복사'가 바로 이 문장입니다.\n\n2단계(선택, 팀 모드): 저장소 안에서 ./setup --team 과 gstack-team-init 을 실행해 커밋하면 팀원이 자동으로 gstack을 받습니다. 매 세션 시작 때 조용히 업데이트를 확인하고(시간당 1회), 월·목 태그된 안정판만 따릅니다."
+        },
+        {
+          "h": "그 밖에",
+          "p": "Codex·Cursor 등 다른 에이전트에서도 돌아갑니다(./setup 이 알아서 감지). /cso(보안 담당)는 네이티브 빌드 도구가 필요해 없으면 비활성으로 남겨 둡니다. 삭제 방법은 docs/uninstall.md. 생산성 수치와 스프린트 10개를 동시에 돌리는 이야기는 docs/why-gstack.md에 있습니다."
+        }
+      ]
     }
   ],
-  "rejected": 147
+  "count": 26,
+  "generated_at": "2026-10-30T08:42:38.8197665Z",
+  "rejected": 147,
+  "pending": 27
 }
