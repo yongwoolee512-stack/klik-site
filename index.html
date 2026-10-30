@@ -468,43 +468,14 @@ html.head-c .sheet-head .cm-rate { display:inline-flex; margin:10px 14px 0 0; ve
   </div>
 
   <div class="cm-feed" id="cm-feed" hidden aria-label="지금 대화 중"></div>
-  <section>
+  <section data-sec="md">
     <div class="sec-head">
-      <div><h2>오늘의 신상 소식</h2><p>인스타 눈치 안 봐도 됩니다. 새로 나온 것만 하루 한 번, 한글로 정리해 드려요.</p></div>
-      <div class="seg" id="newsseg" role="group" aria-label="기간">
-        <button data-news="today" aria-pressed="true">오늘</button>
-        <button data-news="week">이번 주</button>
-        <button data-news="all">전체</button>
-      </div>
+      <div><h2>딸깍 편집팀 추천</h2><p>"그래서 뭘 깔아야 돼?"에 대한 답. 편집팀이 직접 써 보고 고른 것만.</p></div>
     </div>
-    <div class="news-wrap">
-      <div class="news" id="news"></div>
-      <aside class="subscribe">
-        <h3>신상 알림 받기</h3>
-        <p>매일 아침 8시, 새 스킬·MCP 소식 3줄 요약. 광고 없이 소식만.</p>
-        <form id="subform">
-          <input id="subemail" type="email" placeholder="이메일 주소" aria-label="이메일" required>
-          <button type="submit" class="install">무료 구독</button>
-        </form>
-        <div class="sub-alt">
-          <button type="button" data-sub="kakao">카카오톡 채널</button>
-          <button type="button" data-sub="rss">RSS</button>
-          <button type="button" data-sub="tg">텔레그램</button>
-        </div>
-        <span class="sub-cnt">구독자 <b>12,480</b>명 (예시)</span>
-      </aside>
-    </div>
+    <div class="rank" id="rank-md"></div>
   </section>
 
-  <section>
-    <div class="sec-head">
-      <h2>이번 주 많이 설치한 도구</h2>
-      <p id="rank-sub">설치 버튼 클릭 수 기준 · 예시 데이터</p>
-    </div>
-    <div class="rank" id="rank"></div>
-  </section>
-
-  <section>
+  <section data-sec="gh">
     <div class="sec-head">
       <h2>깃허브에서 별을 가장 많이 받은 도구</h2>
       <p>깃허브 별(★)은 전 세계 사용자가 누른 '좋아요'예요. 다운로드 수가 아니라 추천 수 · 매일 갱신</p>
@@ -512,13 +483,21 @@ html.head-c .sheet-head .cm-rate { display:inline-flex; margin:10px 14px 0 0; ve
     <div class="rank" id="rank-gh"></div>
   </section>
   <section id="rank-hot-sec" hidden>
-    <div class="sec-head">
+  <section id="rank-hot-sec" data-sec="hot" hidden>
       <h2>이달 가장 빨리 뜨는 도구</h2>
       <p>최근 30일 동안 별이 가장 많이 늘어난 순서</p>
     </div>
     <div class="rank" id="rank-hot"></div>
   </section>
   <section id="cm-plaza" hidden>
+  <section data-sec="week">
+    <div class="sec-head">
+      <h2>이번 주 많이 설치한 도구</h2>
+      <p id="rank-sub">설치 버튼 클릭 수 기준 · 예시 데이터</p>
+    </div>
+    <div class="rank" id="rank"></div>
+  </section>
+
     <div class="sec-head">
       <div><h2>뭐 쓰면 돼요? 질문 광장</h2><p>하고 싶은 일을 적으면 써 본 사람들이 도구를 골라 줍니다. 로그인 없이 닉네임만.</p></div>
     </div>
@@ -549,6 +528,35 @@ html.head-c .sheet-head .cm-rate { display:inline-flex; margin:10px 14px 0 0; ve
     </div>
     <div class="grid" id="grid"></div>
   </section>
+
+  <section data-sec="new">
+    <div class="sec-head">
+      <div><h2>오늘의 신상 소식</h2><p>인스타 눈치 안 봐도 됩니다. 새로 나온 것만 하루 한 번, 한글로 정리해 드려요.</p></div>
+      <div class="seg" id="newsseg" role="group" aria-label="기간">
+        <button data-news="today" aria-pressed="true">오늘</button>
+        <button data-news="week">이번 주</button>
+        <button data-news="all">전체</button>
+      </div>
+    </div>
+    <div class="news-wrap">
+      <div class="news" id="news"></div>
+      <aside class="subscribe">
+        <h3>신상 알림 받기</h3>
+        <p>매일 아침 8시, 새 스킬·MCP 소식 3줄 요약. 광고 없이 소식만.</p>
+        <form id="subform">
+          <input id="subemail" type="email" placeholder="이메일 주소" aria-label="이메일" required>
+          <button type="submit" class="install">무료 구독</button>
+        </form>
+        <div class="sub-alt">
+          <button type="button" data-sub="kakao">카카오톡 채널</button>
+          <button type="button" data-sub="rss">RSS</button>
+          <button type="button" data-sub="tg">텔레그램</button>
+        </div>
+        <span class="sub-cnt">구독자 <b>12,480</b>명 (예시)</span>
+      </aside>
+    </div>
+  </section>
+
 
   <div class="submit">
     <div>
@@ -720,6 +728,9 @@ function renderRank() {
   if (!top || !top.length) { top = [...ITEMS].sort((a,b)=>b.installs-a.installs).slice(0,6).map(it => ({ it, n: it.installs })); sub = "설치 버튼 클릭 수 기준 · 예시 데이터"; }
   const subEl = $("#rank-sub"); if (subEl) subEl.textContent = sub;
   $("#rank").innerHTML = top.map(({it, n},i)=>`<button data-open="${it.id}"><span class="n">${i+1}</span><span class="t"><b>${esc(it.name)}</b><span>${esc(it.one)}</span></span><span class="d">${fmt(n)}회</span></button>`).join("");
+  // MD 추천: 편집팀 픽 + 추천 이유 한 줄
+  const md = ITEMS.filter(it => it.pick).slice(0, 8);
+  const mdEl = $("#rank-md"); if (mdEl) mdEl.innerHTML = md.map((it,i)=>`<button data-open="${it.id}"><span class="n">${i+1}</span><span class="t"><b>${esc(it.name)}</b><span>${esc(it.pick)}</span></span><span class="d">MD</span></button>`).join("");
   // 깃허브 별 순위: 같은 저장소(예: anthropics/skills의 문서 스킬 4종)는 한 번만 센다
   const seen = new Set();
   const gh = [...ITEMS].filter(it => it.stars > 0).sort((a,b)=>b.stars-a.stars).filter(it => { const k = (it.repo||it.id).toLowerCase(); if (seen.has(k)) return false; seen.add(k); return true; }).slice(0, 9);
@@ -874,7 +885,7 @@ document.addEventListener("click", e => {
   if (t.dataset.fav) { e.stopPropagation(); const id=t.dataset.fav; state.favs.has(id)?state.favs.delete(id):state.favs.add(id); saveFavs(); renderGrid(); return; }
   if (t.dataset.copy !== undefined && t.dataset.copy !== "") { e.stopPropagation(); copyText(t.dataset.copy, t.closest(".try-box") ? "복사됐어요. Claude 입력창에 Ctrl+V 하고 엔터!" : ""); return; }
   if (t.classList.contains("play")) { toast("실제 서비스에서는 여기서 30초 작동 영상이 재생됩니다"); return; }
-  if (t.dataset.open) { e.stopPropagation(); openDetail(t.dataset.open); return; }
+  if (t.dataset.open) { e.stopPropagation(); const sec = t.closest("[data-sec]"); if (sec && window.CM && CM.trackSection) CM.trackSection(sec.dataset.sec, t.dataset.open); openDetail(t.dataset.open); return; }   // 어느 칸에서 열었는지 집계 (칸 순서 결정용)
   if (t.dataset.cat) { state.cat = t.dataset.cat; renderAll(); return; }
   if (t.dataset.kind) { state.kind = t.dataset.kind; document.querySelectorAll("#kindseg button").forEach(b=>b.setAttribute("aria-pressed", b.dataset.kind===state.kind)); renderGrid(); return; }
   if (t.dataset.platform) { state.plat = t.dataset.platform; document.querySelectorAll(".nav button").forEach(b=>b.setAttribute("aria-pressed", b.dataset.platform===state.plat)); renderGrid(); return; }
