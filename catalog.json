@@ -1,6 +1,5 @@
 {
-  "rejected": 147,
-  "generated_at": "2026-10-30T11:00:30.6338431Z",
+  "pending": 27,
   "items": [
     {
       "id": "pptx",
@@ -92,6 +91,14 @@
         "수식이 살아 있는 진짜 엑셀 파일이 나옵니다."
       ],
       "status": "published",
+      "videos": [
+        null,
+        {
+          "url": "https://www.youtube.com/shorts/xWeo5z69j1o",
+          "by": "skill daily AI",
+          "title": "스킬 #26 클로드 코드 엑셀 자동화 xlsx 스킬 #shorts #클로드코드"
+        }
+      ],
       "trust": {
         "reasons": [
           "편집팀 검수"
@@ -152,6 +159,14 @@
         "변경 추적(수정 표시) 모드도 됩니다."
       ],
       "status": "published",
+      "videos": [
+        null,
+        {
+          "url": "https://www.youtube.com/shorts/NZL2U1zh5D0",
+          "by": "GuideGrid",
+          "title": "How to Generate DOCX Documents with Claude AI | Make DOCX Files Look Professional"
+        }
+      ],
       "trust": {
         "reasons": [
           "편집팀 검수"
@@ -212,6 +227,24 @@
         "스캔한 PDF도 글자 검색이 되게 바꿔 줍니다."
       ],
       "status": "published",
+      "videos": [
+        null,
+        {
+          "url": "https://www.youtube.com/shorts/lYLpCvjx0l8",
+          "by": "TD Vision U",
+          "title": "Claude Code Turns a PDF into AutoCAD Drawings"
+        },
+        {
+          "url": "https://www.youtube.com/shorts/_lQ3CZq6oxM",
+          "by": "Carson Yan",
+          "title": "Don't upload PDFs to Claude, Use this instead!"
+        },
+        {
+          "url": "https://www.youtube.com/shorts/Dki_l3iZ77E",
+          "by": "홍익인간",
+          "title": "클로드 PDF 토큰 낭비"
+        }
+      ],
       "trust": {
         "reasons": [
           "편집팀 검수"
@@ -272,6 +305,14 @@
         "흔한 AI 디자인(보라색 그라데이션 등)을 피하도록 학습돼 있습니다."
       ],
       "status": "published",
+      "videos": [
+        null,
+        {
+          "url": "https://www.youtube.com/shorts/n8djv11DGCE",
+          "by": "AI 데일리컷",
+          "title": "AI 티 안 나는 랜딩 페이지 | Claude Code frontend-design 스킬"
+        }
+      ],
       "trust": {
         "reasons": [
           "편집팀 검수"
@@ -325,6 +366,24 @@
       ],
       "note": "피그마 계정 로그인(OAuth)이 한 번 필요합니다.",
       "status": "published",
+      "videos": [
+        null,
+        {
+          "url": "https://www.youtube.com/shorts/riFFyTRljic",
+          "by": "Figma",
+          "title": "Claude Code to Figma"
+        },
+        {
+          "url": "https://www.youtube.com/shorts/3SloEAQnJs4",
+          "by": "Elisa",
+          "title": "How to use Figma with Claude"
+        },
+        {
+          "url": "https://www.youtube.com/shorts/skvDVmuZT-w",
+          "by": "Tech With Tim",
+          "title": "Turn Figma Designs Into Working Code With Claude Code"
+        }
+      ],
       "trust": {
         "reasons": [
           "편집팀 검수"
@@ -379,6 +438,24 @@
         "캔바 앱 설정에서 연결 버튼만 누르면 됩니다."
       ],
       "status": "published",
+      "videos": [
+        null,
+        {
+          "url": "https://www.youtube.com/shorts/L0CvZM6xVnQ",
+          "by": "Porter Metrics",
+          "title": "How to connect Canva to Claude"
+        },
+        {
+          "url": "https://www.youtube.com/shorts/NuEvWr0tKUY",
+          "by": "Gannon Meyer",
+          "title": "Claude Design with Canva is NUTS"
+        },
+        {
+          "url": "https://www.youtube.com/shorts/zQGgNSETqe0",
+          "by": "Sabrina Ramonov 🍄",
+          "title": "Claude + Canva Is a Literal Cheat Code"
+        }
+      ],
       "trust": {
         "reasons": [
           "편집팀 검수"
@@ -431,6 +508,24 @@
         "\"이 버그 고치고 PR 올려 줘\""
       ],
       "status": "published",
+      "videos": [
+        null,
+        {
+          "url": "https://www.youtube.com/shorts/3cMaHbezoxU",
+          "by": "민둥이 | 쉽게 배우는 AI",
+          "title": "[오늘의 깃허브 트렌딩] AI 게임 개발팀 49명을 담은 스킬"
+        },
+        {
+          "url": "https://www.youtube.com/shorts/0ULEsxvde3c",
+          "by": "SoojinTech",
+          "title": "How to Sync Github with Claude Code"
+        },
+        {
+          "url": "https://www.youtube.com/shorts/9UYqW3h_F5A",
+          "by": "Isabelle Hanson | Gold St Solutions | Claude",
+          "title": "How to install Github skills into Claude Cowork"
+        }
+      ],
       "trust": {
         "reasons": [
           "편집팀 검수"
@@ -483,6 +578,24 @@
         "스크린샷도 찍어 보여 줍니다."
       ],
       "status": "published",
+      "videos": [
+        null,
+        {
+          "url": "https://www.youtube.com/shorts/1k4LZVFpOKM",
+          "by": "Testing Funda by Zeeshan Asghar",
+          "title": "Claude AI + Playwright MCP Server Opens Browser in 30 Sec 🚀 | AI Automation Shorts"
+        },
+        {
+          "url": "https://www.youtube.com/shorts/vhAJZWO6U14",
+          "by": "Jack Roberts",
+          "title": "Claude MCP setup: Firecrawl, Playwright and Context7"
+        },
+        {
+          "url": "https://www.youtube.com/shorts/ed_aGJUSyQw",
+          "by": "Chase AI",
+          "title": "Playwright MCP + Claude Code is Dead. Long Live Playwright."
+        }
+      ],
       "trust": {
         "reasons": [
           "편집팀 검수"
@@ -542,6 +655,24 @@
         "설치 후 따로 설정할 게 없습니다."
       ],
       "status": "published",
+      "videos": [
+        null,
+        {
+          "url": "https://www.youtube.com/shorts/Ow2dMFpy4Q8",
+          "by": "Shinzo Labs",
+          "title": "How To set Up Context7 in Claude Code in 3 Minutes."
+        },
+        {
+          "url": "https://www.youtube.com/shorts/vhAJZWO6U14",
+          "by": "Jack Roberts",
+          "title": "Claude MCP setup: Firecrawl, Playwright and Context7"
+        },
+        {
+          "url": "https://www.youtube.com/shorts/yejRD0TyTTo",
+          "by": "Jessica Wang",
+          "title": "Context7 MCP Server #mcp #modelcontextprotocol #ai #llm #coding #development"
+        }
+      ],
       "trust": {
         "reasons": [
           "편집팀 검수"
@@ -597,6 +728,24 @@
         "심각도 순으로 정리해 줍니다."
       ],
       "status": "published",
+      "videos": [
+        null,
+        {
+          "url": "https://www.youtube.com/shorts/GNzg_0VqLuc",
+          "by": "Claude Code Updates",
+          "title": "Claude Code v2.1.147 — Workflow Tool & /code-review"
+        },
+        {
+          "url": "https://www.youtube.com/shorts/2fuhUoIlYNI",
+          "by": "SoojinTech",
+          "title": "How to Set up Claude Code-Reviewer Subagent?"
+        },
+        {
+          "url": "https://www.youtube.com/shorts/YajWK1IF3bc",
+          "by": "Small Talk Claude",
+          "title": "Let Claude Code check your code before you push: /code-review explained"
+        }
+      ],
       "trust": {
         "reasons": [
           "편집팀 검수"
@@ -648,6 +797,24 @@
       ],
       "note": "수파베이스 가입과 프로젝트 생성이 먼저 필요합니다.",
       "status": "published",
+      "videos": [
+        null,
+        {
+          "url": "https://www.youtube.com/shorts/f-LxIzb4vLs",
+          "by": "Supabase",
+          "title": "We just shipped an official Claude Connector for Supabase"
+        },
+        {
+          "url": "https://www.youtube.com/shorts/9TkyFwCewIE",
+          "by": "Extreme Guides",
+          "title": "How to connect Claude Code to Supabase[FULL GUIDE]"
+        },
+        {
+          "url": "https://www.youtube.com/shorts/0OvYpVUQ2D4",
+          "by": "AiNow",
+          "title": "Connect Supabase to Claude Code in 3 Mins (Full Setup Tutorial)"
+        }
+      ],
       "trust": {
         "reasons": [
           "편집팀 검수"
@@ -702,6 +869,24 @@
         "도메인 연결도 채팅으로 됩니다."
       ],
       "status": "published",
+      "videos": [
+        null,
+        {
+          "url": "https://www.youtube.com/shorts/4nDerujSkD0",
+          "by": "George Basics",
+          "title": "How to Deploy Claude Code Project On Vercel (Step-By-Step Guide)"
+        },
+        {
+          "url": "https://www.youtube.com/shorts/kA-tfNLGf9A",
+          "by": "Mindly Nova",
+          "title": "How to Deploy Claude Code Project On Vercel - Step by Step"
+        },
+        {
+          "url": "https://www.youtube.com/shorts/xQ1HdDn-1P4",
+          "by": "Amir Tutorial",
+          "title": "How to Deploy Claude Code Project on Vercel: Step-by-Step Guide"
+        }
+      ],
       "trust": {
         "reasons": [
           "편집팀 검수"
@@ -754,6 +939,24 @@
         "\"내 도메인 DNS 레코드 보여 줘\""
       ],
       "status": "published",
+      "videos": [
+        null,
+        {
+          "url": "https://www.youtube.com/shorts/2ehq4dkFZkw",
+          "by": "Checkmark Academy",
+          "title": "How to Connect Cloudflare to Claude AI (Step by Step) 2026"
+        },
+        {
+          "url": "https://www.youtube.com/shorts/YJSbtVJYle8",
+          "by": "Jonathan Acuña - Doctor AI",
+          "title": "Host Your Website For Free With Claude Code + Cloudflare"
+        },
+        {
+          "url": "https://www.youtube.com/shorts/znQRWBAOem0",
+          "by": "Brock Mesarich | AI for Non Techies",
+          "title": "Cloudflare's Free Skill Finds Security Holes in Your Code"
+        }
+      ],
       "trust": {
         "reasons": [
           "편집팀 검수"
@@ -811,6 +1014,24 @@
         "Claude 앱에서는 커넥터 켜기만 하면 됩니다."
       ],
       "status": "published",
+      "videos": [
+        null,
+        {
+          "url": "https://www.youtube.com/shorts/45hPRdfDEsI",
+          "by": "Claude",
+          "title": "How Notion built with Claude Managed Agents"
+        },
+        {
+          "url": "https://www.youtube.com/shorts/3vv14e4XzuM",
+          "by": "Elisa",
+          "title": "How to use Notion with Claude"
+        },
+        {
+          "url": "https://www.youtube.com/shorts/RMb7p9sGkiI",
+          "by": "FK Prompts",
+          "title": "Tip 25: Using Notion in Claude Code"
+        }
+      ],
       "trust": {
         "reasons": [
           "편집팀 검수"
@@ -856,6 +1077,24 @@
         "보내기 전에 항상 확인을 받습니다."
       ],
       "status": "published",
+      "videos": [
+        null,
+        {
+          "url": "https://www.youtube.com/shorts/XpXImenrSPI",
+          "by": "Anthropic",
+          "title": "Claude Code in Slack"
+        },
+        {
+          "url": "https://www.youtube.com/shorts/4jKcvBC82EA",
+          "by": "조코딩 JoCoding",
+          "title": "슬랙에 팀원으로 들어온 클로드 ㄷㄷ"
+        },
+        {
+          "url": "https://www.youtube.com/shorts/IntkOQV9c5s",
+          "by": "Slack",
+          "title": "Claude is now your teammate in Slack"
+        }
+      ],
       "trust": {
         "reasons": [
           "편집팀 검수"
@@ -901,6 +1140,24 @@
         "구글 로그인 한 번이면 끝입니다."
       ],
       "status": "published",
+      "videos": [
+        null,
+        {
+          "url": "https://www.youtube.com/shorts/idJQMJwHtyM",
+          "by": "Claude",
+          "title": "Claude for Google Workspace™"
+        },
+        {
+          "url": "https://www.youtube.com/shorts/NvHxeepRScM",
+          "by": "Claude Code Live News",
+          "title": "Claude in Google Workspace: Claude moves into Docs, Sheets and Slides #Shorts"
+        },
+        {
+          "url": "https://www.youtube.com/shorts/dMpq3srMJD8",
+          "by": "The AI Drill",
+          "title": "Claude Inside Google Workspace Changes Everything"
+        }
+      ],
       "trust": {
         "reasons": [
           "편집팀 검수"
@@ -997,6 +1254,24 @@
       ],
       "note": "국내 결제는 토스페이먼츠 등 별도 확인이 필요합니다.",
       "status": "published",
+      "videos": [
+        null,
+        {
+          "url": "https://www.youtube.com/shorts/_rurBUkTyQ8",
+          "by": "Keith AI",
+          "title": "How to Build Stripe Payments and subscriptions in Minutes with Claude Code"
+        },
+        {
+          "url": "https://www.youtube.com/shorts/JEDlSMhvwqs",
+          "by": "Stripe Developers",
+          "title": "How the Stripe Tools plugin works with Claude Code"
+        },
+        {
+          "url": "https://www.youtube.com/shorts/3xApvDImNxE",
+          "by": "Extreme Guides",
+          "title": "How to integrate Stripe using Claude Code [FULL GUIDE]"
+        }
+      ],
       "trust": {
         "reasons": [
           "편집팀 검수"
@@ -1054,6 +1329,24 @@
         "\"오늘 제일 많이 난 에러 고쳐 줘\""
       ],
       "status": "published",
+      "videos": [
+        null,
+        {
+          "url": "https://www.youtube.com/shorts/1Os4-vAhj2I",
+          "by": "Sentry",
+          "title": "Sentry Claude Code Plugin and Skills"
+        },
+        {
+          "url": "https://www.youtube.com/shorts/gtDrd_s8vWg",
+          "by": "Sentry",
+          "title": "Sentry + Claude Agents: Automatic Bug Fixes from Root Cause to PR"
+        },
+        {
+          "url": "https://www.youtube.com/shorts/wnma-S_NT40",
+          "by": "Jessica Wang",
+          "title": "Sentry MCP Server #mcp #modelcontextprotocol #mcpserver #ai #llm #vibecode #tech #softwareengineer"
+        }
+      ],
       "trust": {
         "reasons": [
           "편집팀 검수"
@@ -1122,6 +1415,16 @@
         {
           "url": "https://www.youtube.com/shorts/rnF40kxwCIg",
           "by": "ZeroCho TV"
+        },
+        {
+          "url": "https://www.youtube.com/shorts/bMfUtbD-EDU",
+          "by": "Github Awesome",
+          "title": "Ponytail: a Claude Code skill that asks \"should we build this at all?\" before touching the keyboard"
+        },
+        {
+          "url": "https://www.youtube.com/shorts/C_0X56fe15w",
+          "by": "Jack Roberts",
+          "title": "Ponytail makes Claude Code check before it writes a single line"
         }
       ],
       "readme_ko": [
@@ -1186,6 +1489,24 @@
         "테스트 먼저 쓰기(TDD), 필요 없는 건 안 만들기(YAGNI)가 기본값입니다."
       ],
       "status": "published",
+      "videos": [
+        null,
+        {
+          "url": "https://www.youtube.com/shorts/Z56_KCR-ZMc",
+          "by": "ZeroCho TV",
+          "title": "AI 에이전트 코딩할 때 필수 설치 스킬 Superpowers #agent #llm #claude #codex #opencode"
+        },
+        {
+          "url": "https://www.youtube.com/shorts/0tcg1OirmOw",
+          "by": "Alex Followell AI Shorts",
+          "title": "Normal Claude vs Claude with superpowers (huge difference) #ai"
+        },
+        {
+          "url": "https://www.youtube.com/shorts/hdyCQ_Dw2nY",
+          "by": "AI비즈메이커",
+          "title": "클로드 코드 스킬 사용법: 코드 쓰기 전에 먼저 질문하게 만드는 Superpowers #shorts"
+        }
+      ],
       "readme_ko": [
         {
           "h": "슈퍼파워란?",
@@ -1247,6 +1568,24 @@
         "검색 도구가 들어 있어 '그때 그 오류 어떻게 고쳤지' 같은 질문에도 답합니다."
       ],
       "status": "published",
+      "videos": [
+        null,
+        {
+          "url": "https://www.youtube.com/shorts/H622ingVW48",
+          "by": "Hungry Labs",
+          "title": "claude-mem: Persistent Memory for Claude Code That Survives Every Session"
+        },
+        {
+          "url": "https://www.youtube.com/shorts/f4crvxQVkqA",
+          "by": "AI Shortcut",
+          "title": "Give Claude Code Long-Term Memory with claude-mem"
+        },
+        {
+          "url": "https://www.youtube.com/shorts/hV_jbznpvYc",
+          "by": "Analytics Vidhya",
+          "title": "Claude-Mem: Give Claude Code Persistent Memory (Free & Open Source)"
+        }
+      ],
       "readme_ko": [
         {
           "h": "클로드 기억이란?",
@@ -1304,6 +1643,24 @@
         "내 질문은 절대 바꾸지 않고 답만 줄입니다. 코드·명령·경로·오류 메시지는 한 글자도 안 건드립니다."
       ],
       "status": "published",
+      "videos": [
+        null,
+        {
+          "url": "https://www.youtube.com/shorts/UlE5vTzOpYE",
+          "by": "Tech Help Daily",
+          "title": "How to Add the Caveman Skill to Claude Code (Easy Method)"
+        },
+        {
+          "url": "https://www.youtube.com/shorts/0nO64outHWI",
+          "by": "Github Awesome",
+          "title": "Caveman: A Claude Code skill that forces your AI to talk like a literal caveman"
+        },
+        {
+          "url": "https://www.youtube.com/shorts/HmWiXI7sKgk",
+          "by": "Marvomatic | AI Automations",
+          "title": "Caveman: Make Claude Code Talk Less and Save Your Limit"
+        }
+      ],
       "readme_ko": [
         {
           "h": "왜 많은 토큰, 적은 토큰도 되는데",
@@ -1361,6 +1718,14 @@
         "대화가 압축돼도 편집한 파일·진행 중 작업·내 결정을 검색해서 되찾습니다."
       ],
       "status": "published",
+      "videos": [
+        null,
+        {
+          "url": "https://www.youtube.com/shorts/0M0EigWIS04",
+          "by": "Github Awesome",
+          "title": "Context Mode: cutting Claude Code's context consumption by 98 percent."
+        }
+      ],
       "readme_ko": [
         {
           "h": "문제: 컨텍스트의 '나머지 절반'",
@@ -1415,6 +1780,24 @@
         "\"/ship\"은 테스트·검토·PR까지 한 번에. 매주 월·목 안정판이 자동 업데이트됩니다."
       ],
       "status": "published",
+      "videos": [
+        null,
+        {
+          "url": "https://www.youtube.com/shorts/0NL9X_VhMCc",
+          "by": "cmdkai",
+          "title": "Garry Tan's Claude Code setup (gstack): start with 3 commands"
+        },
+        {
+          "url": "https://www.youtube.com/shorts/ova4oT9gniA",
+          "by": "ZeroCho TV",
+          "title": "YCombinator CEO가 직접 만든 핫한 하네스 엔지니어링 gstack #ai #llm #claude #anthropic #agent #codex #google #gemini"
+        },
+        {
+          "url": "https://www.youtube.com/shorts/4DzDBls8yaw",
+          "by": "데이터가 답이다 ",
+          "title": "코드 한 줄 안 치고 사이트 만들었다 — Y컴 CEO의 Claude Code 셋팅 gstack 실전기"
+        }
+      ],
       "readme_ko": [
         {
           "h": "지스택이란?",
@@ -1435,6 +1818,7 @@
       ]
     }
   ],
-  "count": 26,
-  "pending": 27
+  "generated_at": "2026-10-30T11:04:51.2005804Z",
+  "rejected": 147,
+  "count": 26
 }
