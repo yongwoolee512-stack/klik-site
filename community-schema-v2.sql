@@ -182,3 +182,24 @@ end $$;
 drop trigger if exists reply_likes_count on public.reply_likes;
 create trigger reply_likes_count after insert on public.reply_likes
   for each row execute function public.reply_likes_count();
+
+-- 8) 메인 칸별 클릭 집계 (어느 칸이 선호되는지 보고 2주 뒤 순서 재결정) ------------------
+create table if not exists public.section_clicks (
+  id         bigint generated always as identity primary key,
+  section    text not null check (section in ('md', 'gh', 'hot', 'week', 'new')),
+  tool_id    text not null check (char_length(tool_id) between 1 and 80),
+  client     text not null check (char_length(client) between 8 and 64),
+  created_at timestamptz not null default now()
+);
+create index if not exists section_clicks_time on public.section_clicks (created_at desc);
+alter table public.section_clicks enable row level security;
+drop policy if exists "section_clicks_insert" on public.section_clicks;
+create policy "section_clicks_insert" on public.section_clicks for insert to anon, authenticated with check (true);
+grant insert on public.section_clicks to anon, authenticated;
+-- 표는 insert만 열고, 집계 뷰만 읽게 (security_invoker = false 라 RLS를 넘어 센다)
+create or replace view public.section_clicks_week with (security_invoker = false) as
+  select section, count(*)::int as n
+  from public.section_clicks
+  where created_at > now() - interval '7 days'
+  group by section order by n desc;
+grant select on public.section_clicks_week to anon, authenticated;

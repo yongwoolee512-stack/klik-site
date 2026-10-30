@@ -1027,6 +1027,15 @@ window.CM = (() => {
     S.sb.from("installs").insert({ tool_id: id, client: client() }).then(({ error }) => { if (!error) refresh(); else console.warn(error); });
   }
 
+  // 메인 칸별 클릭 기록: 같은 브라우저·같은 칸·같은 도구는 하루 1회만. 읽기: 콘솔에서 CM.sectionStats()
+  function trackSection(section, toolId) {
+    if (!S.on || !section || !toolId) return;
+    const today = new Date().toISOString().slice(0, 10), k = `klik-sec-${section}-${toolId}`;
+    if (ls.get(k) === today) return; ls.set(k, today);
+    S.sb.from("section_clicks").insert({ section, tool_id: toolId, client: client() }).then(({ error }) => { if (error) console.warn(error); });
+  }
+  async function sectionStats() { const { data, error } = await S.sb.from("section_clicks_week").select("section,n"); if (error) throw error; console.table(data); return data; }
+
   // ---- 답글 스레드 (후기·댓글·사연·질문 공용) — 답글의 답글은 깊이 제한 없이, 모든 답글에 추천 ----
   const rfId = (key, part) => `rf-${part}-${key.replace(/:/g, "-")}`;
   function replyForm(key, opts) {
@@ -1310,6 +1319,6 @@ window.CM = (() => {
   });
 
   init();
-  return { get on() { return S.on; }, get week() { return S.week; }, cardLine, track, box, fill, refresh };
+  return { get on() { return S.on; }, get week() { return S.week; }, cardLine, track, trackSection, sectionStats, box, fill, refresh };
 })();
 </script>
