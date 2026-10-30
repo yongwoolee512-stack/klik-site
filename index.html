@@ -352,6 +352,7 @@ h1, h2, h3, p, .cbody .one, .cbody .when, .nitem .body b, .nitem .body span { wo
 .cm-row input:focus, .cm-row textarea:focus { outline:none; box-shadow:0 0 0 3px var(--accent-soft); }
 .cm-row textarea { resize:vertical; min-height:64px; flex-basis:100%; }
 .cm-row .install { flex:0 0 auto; }
+.vids { display:flex; gap:10px; overflow-x:auto; padding-bottom:6px; -webkit-overflow-scrolling:touch; } .vid { flex:0 0 auto; width:100%; max-width:420px; } .vid.v { width:220px; } .vid iframe { display:block; width:100%; aspect-ratio:16/9; border:0; border-radius:12px; background:#000; } .vid.v iframe { aspect-ratio:9/16; } .vid span { display:block; font-size:12px; color:var(--muted); margin-top:4px; }
 .cm-list { display:grid; gap:8px; }
 .cm-item { background:var(--surface); border-radius:14px; padding:10px 14px; font-size:14px; display:grid; gap:5px; }
 .cm-item.best { box-shadow:inset 0 0 0 1.5px var(--accent); }
@@ -626,7 +627,15 @@ function deepLink(it) {
   if (s.pkg) return `klik://install?kind=mcp&name=${s.name}&pkg=${encodeURIComponent(s.pkg)}${tail}`;
   return "";
 }
-const TRUST_LABEL = { official: "공식", verified: "검증됨", community: "커뮤니티" };
+// 짧은 영상: 주소를 사이트 안에서 재생되는 끼워 넣기 주소로. v=세로(쇼츠·릴스·틱톡)
+function videoEmbed(u) {
+  let m;
+  if ((m = u.match(/youtube\.com\/shorts\/([\w-]{11})/))) return { src: `https://www.youtube.com/embed/${m[1]}`, v: true };
+  if ((m = u.match(/(?:youtu\.be\/|youtube\.com\/(?:watch\?(?:.*&)?v=|embed\/))([\w-]{11})/))) return { src: `https://www.youtube.com/embed/${m[1]}`, v: false };
+  if ((m = u.match(/instagram\.com\/(?:reel|reels|p)\/([\w-]+)/))) return { src: `https://www.instagram.com/reel/${m[1]}/embed/`, v: true };
+  if ((m = u.match(/tiktok\.com\/.*\/video\/(\d+)/))) return { src: `https://www.tiktok.com/embed/v2/${m[1]}`, v: true };
+  return null;
+}const TRUST_LABEL = { official: "공식", verified: "검증됨", community: "커뮤니티" };
 
 const $ = s => document.querySelector(s);
 const state = { q: "", cat: "all", kind: "all", plat: "all", sort: "installs", favOnly: false, favs: new Set() };
@@ -746,6 +755,7 @@ function openDetail(id) {
           <div class="blk" style="grid-column:1/-1"><h4>이렇게 써요</h4><ul>${it.tips.map(t=>`<li>${esc(t)}</li>`).join("")}</ul></div>
         </div>
         ${it.note?`<div class="note">⚠ ${esc(it.note)}</div>`:""}
+        ${Array.isArray(it.videos)&&it.videos.length?`<div><h4 style="margin:0 0 4px;font-size:15px">짧은 영상</h4><p style="margin:0 0 10px;font-size:12px;color:var(--muted)">인플루언서가 올린 영상입니다. 영상은 영상, 실제 평가는 아래 후기를 보세요.</p><div class="vids">${it.videos.map(v=>{const e=videoEmbed(v.url); return e?`<div class="vid${e.v?" v":""}"><iframe src="${e.src}" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>${v.by?`<span>${esc(v.by)}</span>`:""}</div>`:"";}).join("")}</div></div>`:""}
         ${Array.isArray(it.readme_ko)&&it.readme_ko.length?`<details class="readme" open>
           <summary><b>원문 설명 한글판</b> <span>깃허브 README를 편집팀이 일반인 말로 옮겼습니다 · ${it.readme_ko.length}개 항목</span></summary>
           <div class="readme-body">${it.readme_ko.map(s=>`<section><h5>${esc(s.h)}</h5><p>${esc(s.p).replace(/\n/g,"<br>")}</p></section>`).join("")}</div>

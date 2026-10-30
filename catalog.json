@@ -1,7 +1,6 @@
 {
-  "count": 26,
   "rejected": 147,
-  "pending": 27,
+  "generated_at": "2026-10-30T11:00:30.6338431Z",
   "items": [
     {
       "id": "pptx",
@@ -1119,6 +1118,12 @@
         "너무 과격하면 \"/ponytail lite\", 코드베이스가 괘씸하면 \"/ponytail ultra\", 끄려면 \"/ponytail off\"."
       ],
       "status": "published",
+      "videos": [
+        {
+          "url": "https://www.youtube.com/shorts/rnF40kxwCIg",
+          "by": "ZeroCho TV"
+        }
+      ],
       "readme_ko": [
         {
           "h": "포니테일이란?",
@@ -1430,5 +1435,6 @@
       ]
     }
   ],
-  "generated_at": "2026-10-30T09:58:56.7916975Z"
+  "count": 26,
+  "pending": 27
 }
