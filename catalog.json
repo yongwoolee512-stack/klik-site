@@ -1,6 +1,7 @@
 {
+  "generated_at": "2026-10-30T12:01:20.0305568Z",
   "pending": 27,
-  "generated_at": "2026-10-30T11:06:13.9041361Z",
+  "count": 26,
   "rejected": 147,
   "items": [
     {
@@ -11,7 +12,6 @@
       "en": "pptx skill",
       "one": "말로 설명하면 PPT 파일을 통째로 만들어 줍니다.",
       "when": "회의 자료·발표 자료를 매번 처음부터 만드는 분",
-      "stars": 48200,
       "installs": 12800,
       "level": 1,
       "plat": [
@@ -32,11 +32,13 @@
         "표·차트·이미지까지 들어갑니다."
       ],
       "status": "published",
+      "stars": 184948,
+      "pushed_at": "2026-10-28T19:20:39Z",
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "readme_ko": [
         {
@@ -73,7 +75,6 @@
       "en": "xlsx skill",
       "one": "지저분한 엑셀을 정리하고 수식과 차트를 넣어 줍니다.",
       "when": "매출 정리, 명단 정리, 월말 보고서 만드는 분",
-      "stars": 48200,
       "installs": 11100,
       "level": 1,
       "plat": [
@@ -100,11 +101,13 @@
           "title": "스킬 #26 클로드 코드 엑셀 자동화 xlsx 스킬 #shorts #클로드코드"
         }
       ],
+      "stars": 184948,
+      "pushed_at": "2026-10-28T19:20:39Z",
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "readme_ko": [
         {
@@ -141,7 +144,6 @@
       "en": "docx skill",
       "one": "계약서, 보고서, 제안서를 워드 파일로 바로 뽑습니다.",
       "when": "워드 양식 채우기가 귀찮은 분",
-      "stars": 48200,
       "installs": 9800,
       "level": 1,
       "plat": [
@@ -167,11 +169,13 @@
           "title": "How to Generate DOCX Documents with Claude AI | Make DOCX Files Look Professional"
         }
       ],
+      "stars": 184948,
+      "pushed_at": "2026-10-28T19:20:39Z",
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "readme_ko": [
         {
@@ -208,7 +212,6 @@
       "en": "pdf skill",
       "one": "PDF를 합치고, 나누고, 글자를 뽑고, 양식도 채웁니다.",
       "when": "스캔본 PDF에서 글자 뽑고 싶은 분",
-      "stars": 48200,
       "installs": 8700,
       "level": 1,
       "plat": [
@@ -244,11 +247,13 @@
           "title": "클로드 PDF 토큰 낭비"
         }
       ],
+      "stars": 184948,
+      "pushed_at": "2026-10-28T19:20:39Z",
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "readme_ko": [
         {
@@ -285,7 +290,6 @@
       "en": "frontend-design",
       "one": "AI 티 안 나는 세련된 웹 페이지를 디자인해 줍니다.",
       "when": "랜딩페이지·포트폴리오를 직접 만들고 싶은 분",
-      "stars": 19500,
       "installs": 7600,
       "level": 2,
       "plat": [
@@ -311,11 +315,13 @@
           "title": "AI 티 안 나는 랜딩 페이지 | Claude Code frontend-design 스킬"
         }
       ],
+      "stars": 153920,
+      "pushed_at": "2026-10-30T01:06:26Z",
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "readme_ko": [
         {
@@ -344,7 +350,6 @@
       "en": "Figma MCP",
       "one": "피그마 디자인을 AI가 직접 보고 코드로 바꿔 줍니다.",
       "when": "디자이너와 개발자 사이에서 왔다 갔다 하는 분",
-      "stars": 3200,
       "installs": 5400,
       "level": 2,
       "plat": [
@@ -381,11 +386,13 @@
           "title": "Turn Figma Designs Into Working Code With Claude Code"
         }
       ],
+      "stars": 2130,
+      "pushed_at": "2026-10-28T14:18:10Z",
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "readme_ko": [
         {
@@ -453,10 +460,10 @@
         }
       ],
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "readme_ko": [
         {
@@ -482,7 +489,6 @@
       "en": "GitHub MCP",
       "one": "깃허브 저장소를 읽고, 이슈를 만들고, PR을 올립니다.",
       "when": "코드 관리를 채팅으로 하고 싶은 분",
-      "stars": 21000,
       "installs": 9300,
       "level": 2,
       "plat": [
@@ -521,11 +527,13 @@
           "title": "How to install Github skills into Claude Cowork"
         }
       ],
+      "stars": 34080,
+      "pushed_at": "2026-10-30T11:41:10Z",
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "readme_ko": [
         {
@@ -554,7 +562,6 @@
       "en": "Playwright MCP",
       "one": "AI가 브라우저를 직접 열어 클릭하고 입력하고 검사합니다.",
       "when": "내가 만든 사이트가 잘 되는지 자동으로 확인하고 싶은 분",
-      "stars": 18000,
       "installs": 6900,
       "level": 2,
       "plat": [
@@ -590,11 +597,13 @@
           "title": "Playwright MCP + Claude Code is Dead. Long Live Playwright."
         }
       ],
+      "stars": 38849,
+      "pushed_at": "2026-10-30T04:53:12Z",
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "readme_ko": [
         {
@@ -628,7 +637,6 @@
       "en": "Context7",
       "one": "AI가 오래된 정보 대신 최신 공식 설명서를 보고 답하게 합니다.",
       "when": "AI가 자꾸 구버전 코드를 알려줘서 답답한 분",
-      "stars": 26000,
       "installs": 8100,
       "level": 1,
       "plat": [
@@ -666,11 +674,13 @@
           "title": "Context7 MCP Server #mcp #modelcontextprotocol #ai #llm #coding #development"
         }
       ],
+      "stars": 63947,
+      "pushed_at": "2026-10-30T11:41:42Z",
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "readme_ko": [
         {
@@ -703,7 +713,6 @@
       "en": "code-review",
       "one": "내 코드의 버그와 보안 구멍을 찾아 리포트합니다.",
       "when": "혼자 개발해서 봐 줄 사람이 없는 분",
-      "stars": 19500,
       "installs": 5200,
       "level": 2,
       "plat": [
@@ -738,11 +747,13 @@
           "title": "Let Claude Code check your code before you push: /code-review explained"
         }
       ],
+      "stars": 153920,
+      "pushed_at": "2026-10-30T01:06:26Z",
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "readme_ko": [
         {
@@ -767,7 +778,6 @@
       "en": "Supabase MCP",
       "one": "데이터베이스를 만들고 표를 조회·수정합니다.",
       "when": "회원·주문 데이터를 저장할 앱을 만드는 분",
-      "stars": 2100,
       "installs": 3900,
       "level": 3,
       "plat": [
@@ -806,11 +816,13 @@
           "title": "Connect Supabase to Claude Code in 3 Mins (Full Setup Tutorial)"
         }
       ],
+      "stars": 2983,
+      "pushed_at": "2026-10-30T11:51:34Z",
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "readme_ko": [
         {
@@ -878,10 +890,10 @@
         }
       ],
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "readme_ko": [
         {
@@ -910,7 +922,6 @@
       "en": "Cloudflare MCP",
       "one": "도메인·DNS·서버리스 배포를 채팅으로 관리합니다.",
       "when": "도메인 설정이 늘 헷갈리는 분",
-      "stars": 2600,
       "installs": 2200,
       "level": 3,
       "plat": [
@@ -946,11 +957,13 @@
           "title": "Cloudflare's Free Skill Finds Security Holes in Your Code"
         }
       ],
+      "stars": 4432,
+      "pushed_at": "2026-10-22T15:21:16Z",
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "readme_ko": [
         {
@@ -980,7 +993,6 @@
       "en": "Notion MCP",
       "one": "노션 페이지를 읽고 쓰고 정리합니다.",
       "when": "회의록·할 일을 노션에 두는 분",
-      "stars": 3500,
       "installs": 7400,
       "level": 1,
       "plat": [
@@ -1020,11 +1032,13 @@
           "title": "Tip 25: Using Notion in Claude Code"
         }
       ],
+      "stars": 4686,
+      "pushed_at": "2026-10-29T16:10:22Z",
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "readme_ko": [
         {
@@ -1083,10 +1097,10 @@
         }
       ],
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "readme_ko": [
         {
@@ -1145,10 +1159,10 @@
         }
       ],
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "readme_ko": [
         {
@@ -1177,7 +1191,6 @@
       "en": "computer-use",
       "one": "AI가 내 화면을 보고 마우스·키보드를 대신 움직입니다.",
       "when": "웹이 아닌 프로그램(한글·카톡 등)까지 자동화하고 싶은 분",
-      "stars": 19500,
       "installs": 3700,
       "level": 3,
       "plat": [
@@ -1192,11 +1205,13 @@
         "앱마다 허용 여부를 묻습니다."
       ],
       "status": "published",
+      "stars": 153920,
+      "pushed_at": "2026-10-30T01:06:26Z",
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "readme_ko": [
         {
@@ -1221,7 +1236,6 @@
       "en": "Stripe MCP",
       "one": "결제 링크·구독 상품을 채팅으로 만듭니다.",
       "when": "온라인 결제를 붙이고 싶은데 코드가 무서운 분",
-      "stars": 1100,
       "installs": 1500,
       "level": 3,
       "plat": [
@@ -1257,11 +1271,13 @@
           "title": "How to integrate Stripe using Claude Code [FULL GUIDE]"
         }
       ],
+      "stars": 2004,
+      "pushed_at": "2026-10-30T00:36:36Z",
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "readme_ko": [
         {
@@ -1294,7 +1310,6 @@
       "en": "Sentry MCP",
       "one": "서비스에서 난 오류를 읽고 원인을 찾아 고칩니다.",
       "when": "에러 알림은 오는데 뭔 소린지 모르는 분",
-      "stars": 600,
       "installs": 1200,
       "level": 3,
       "plat": [
@@ -1331,11 +1346,13 @@
           "title": "Sentry MCP Server #mcp #modelcontextprotocol #mcpserver #ai #llm #vibecode #tech #softwareengineer"
         }
       ],
+      "stars": 949,
+      "pushed_at": "2026-10-30T10:02:32Z",
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "readme_ko": [
         {
@@ -1364,7 +1381,6 @@
       "en": "Ponytail",
       "one": "AI가 쓸데없이 길게 짜는 코드를 절반으로 줄여 주는 '고참 개발자 성격'. 코드 -53%, 시간 -41%, 비용 -26%.",
       "when": "Claude가 코드를 너무 복잡하고 길게 짜서 돈과 시간이 아깝다고 느끼는 분",
-      "stars": 180482,
       "installs": 41000,
       "level": 1,
       "plat": [
@@ -1411,6 +1427,8 @@
           "title": "Ponytail makes Claude Code check before it writes a single line"
         }
       ],
+      "stars": 180635,
+      "pushed_at": "2026-10-29T11:59:31Z",
       "readme_ko": [
         {
           "h": "포니테일이란?",
@@ -1442,7 +1460,6 @@
       "en": "Superpowers",
       "one": "코드부터 짜지 않고 '뭘 만들지' 먼저 묻고, 설계→계획→테스트→구현 순서로 일하게 만듭니다.",
       "when": "뭘 시키면 Claude가 바로 코드를 쏟아내서 결국 엉망이 되는 경험을 한 분",
-      "stars": 308953,
       "installs": 72000,
       "level": 1,
       "plat": [
@@ -1490,6 +1507,8 @@
           "title": "클로드 코드 스킬 사용법: 코드 쓰기 전에 먼저 질문하게 만드는 Superpowers #shorts"
         }
       ],
+      "stars": 309083,
+      "pushed_at": "2026-10-29T23:35:34Z",
       "readme_ko": [
         {
           "h": "슈퍼파워란?",
@@ -1521,7 +1540,6 @@
       "en": "Claude-Mem",
       "one": "대화창을 닫아도 지난 작업을 기억해서, 다음 세션이 '어디까지 했는지' 알고 시작합니다.",
       "when": "새 대화마다 프로젝트 설명을 처음부터 다시 하느라 지친 분",
-      "stars": 105136,
       "installs": 23000,
       "level": 2,
       "plat": [
@@ -1568,6 +1586,8 @@
           "title": "Claude-Mem: Give Claude Code Persistent Memory (Free & Open Source)"
         }
       ],
+      "stars": 105340,
+      "pushed_at": "2026-10-30T03:07:33Z",
       "readme_ko": [
         {
           "h": "클로드 기억이란?",
@@ -1595,7 +1615,6 @@
       "en": "Caveman",
       "one": "AI 대답을 원시인처럼 짧게 만들어 요금(토큰)을 아낍니다. 같은 답, 63토큰이 20토큰으로. 코드는 그대로.",
       "when": "Claude가 말이 길어 요금과 읽는 시간이 아까운 분",
-      "stars": 116181,
       "installs": 27000,
       "level": 1,
       "plat": [
@@ -1642,6 +1661,8 @@
           "title": "Caveman: Make Claude Code Talk Less and Save Your Limit"
         }
       ],
+      "stars": 116222,
+      "pushed_at": "2026-10-30T07:41:52Z",
       "readme_ko": [
         {
           "h": "왜 많은 토큰, 적은 토큰도 되는데",
@@ -1669,7 +1690,6 @@
       "en": "Context Mode",
       "one": "도구가 쏟아내는 긴 결과물을 밖에서 걸러 대화 용량의 98%를 아끼고, 중간에 끊겨도 하던 일을 이어 갑니다.",
       "when": "긴 작업을 하다 보면 Claude가 앞 내용을 잊어버려 답답한 분",
-      "stars": 32885,
       "installs": 8100,
       "level": 2,
       "plat": [
@@ -1706,6 +1726,8 @@
           "title": "Context Mode: cutting Claude Code's context consumption by 98 percent."
         }
       ],
+      "stars": 32901,
+      "pushed_at": "2026-10-30T11:47:31Z",
       "readme_ko": [
         {
           "h": "문제: 컨텍스트의 '나머지 절반'",
@@ -1733,7 +1755,6 @@
       "en": "gstack",
       "one": "CEO·설계 책임자·디자이너·코드 검토자·QA·보안 담당·배포 담당이 되어 주는 슬래시 명령 묶음. Y컴비네이터 대표가 매일 쓰는 구성.",
       "when": "혼자 만들지만 '팀처럼' 검토·테스트·배포까지 챙기고 싶은 분",
-      "stars": 138224,
       "installs": 19000,
       "level": 3,
       "plat": [
@@ -1777,6 +1798,8 @@
           "title": "코드 한 줄 안 치고 사이트 만들었다 — Y컴 CEO의 Claude Code 셋팅 gstack 실전기"
         }
       ],
+      "stars": 138235,
+      "pushed_at": "2026-10-30T11:50:23Z",
       "readme_ko": [
         {
           "h": "지스택이란?",
@@ -1796,6 +1819,5 @@
         }
       ]
     }
-  ],
-  "count": 26
+  ]
 }

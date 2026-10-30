@@ -655,6 +655,12 @@ try { state.favs = new Set(JSON.parse(localStorage.getItem("sm-favs") || "[]"));
 function saveFavs() { try { localStorage.setItem("sm-favs", JSON.stringify([...state.favs])); } catch (e) {} }
 
 function fmt(n) { return n >= 10000 ? (n/10000).toFixed(1).replace(/\.0$/,"") + "만" : n.toLocaleString("ko-KR"); }
+let CATALOG_AT = "";   // catalog.json 생성 시각 (딸깍이 깃허브를 마지막으로 확인한 때)
+function ago(iso) {
+  const m = Math.round((Date.now() - new Date(iso)) / 60000); if (isNaN(m)) return "";
+  if (m < 60) return "방금"; if (m < 60*24) return Math.floor(m/60) + "시간 전"; const d = Math.floor(m/60/24);
+  if (d < 7) return d + "일 전"; if (d < 30) return Math.floor(d/7) + "주 전"; if (d < 365) return Math.floor(d/30) + "달 전"; return Math.floor(d/365) + "년 전";
+}
 function esc(s) { return String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])); }
 function win(color, big) {
   return `<div class="thumb" style="background:${color}"><div class="win" style="${big?'width:70%;font-size:12px':''}"><div class="bar"><i></i><i></i><i></i></div><div class="ln m"></div><div class="ln a"></div><div class="ln s"></div><div class="ln m"></div></div></div>`;
@@ -751,7 +757,7 @@ function openDetail(id) {
           <h2>${esc(it.name)} <span class="en" style="font-size:14px;color:var(--muted);font-weight:400">${esc(it.en)}</span></h2>
           <p style="margin:6px 0 0;font-size:14px;color:#333">${esc(it.one)}</p>
           ${window.CM ? CM.cardLine(it.id) : ""}
-          <p style="margin:4px 0 0;font-size:12px;color:var(--muted)">깃허브 ★ ${fmt(it.stars)} · 설치 ${fmt(it.installs)}회</p>
+          <p style="margin:4px 0 0;font-size:12px;color:var(--muted)">깃허브 ★ ${fmt(it.stars)}${it.stars30>0?` <b style="color:var(--accent)">(${it.stars30_days>=28?"이달":it.stars30_days+"일간"} +${fmt(it.stars30)} ↑)</b>`:""}${it.pushed_at?` · ${ago(it.pushed_at)} 업데이트`:""} · 설치 ${fmt(it.installs)}회${CATALOG_AT?` · 딸깍 확인 ${ago(CATALOG_AT)}`:""}</p>
         </div>
         <button class="close" data-close aria-label="닫기">✕</button>
       </div>
@@ -878,7 +884,7 @@ renderChips(); renderRank(); renderGrid(); renderNews("today");
 (async () => {
   try {
     const bust = "?t=" + Math.floor(Date.now() / 300000);   // 5분 단위로 새로 받기 (브라우저가 옛 카탈로그를 붙잡는 문제 방지)
-    const c = await fetch("catalog.json" + bust); if (c.ok) { const d = await c.json(); if (d.items && d.items.length) ITEMS = d.items.filter(x => x.status !== "pending"); }
+    const c = await fetch("catalog.json" + bust); if (c.ok) { const d = await c.json(); if (d.items && d.items.length) { ITEMS = d.items.filter(x => x.status !== "pending"); CATALOG_AT = d.generated_at || ""; } }
     const n = await fetch("news.json" + bust); if (n.ok) { const arr = await n.json(); const usable = Array.isArray(arr) ? arr.filter(x => x.type !== "found") : []; if (usable.length) { NEWS = arr; TODAY = usable[0].date || TODAY; } }
     $("#st-count").textContent = ITEMS.length; renderAll(); renderRank(); renderNews("today");
   } catch (e) { /* 파일이 없으면 내장 예시 데이터 그대로 */ }
