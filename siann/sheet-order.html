@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>딸깍 상세 창 순서 시안</title>
+<style>
+  :root{--bg:#fff;--fg:#111;--muted:#6e6e73;--line:#e5e5ea;--soft:#f5f5f7;--accent:#0b2a6f;--accent-soft:#e8edf8}
+  body{margin:0;background:#ececf0;font-family:-apple-system,"Pretendard","Apple SD Gothic Neo","Malgun Gothic",sans-serif;color:var(--fg);padding:28px 16px 60px}
+  h1{font-size:22px;margin:0 0 4px}.sub{color:var(--muted);font-size:14px;margin:0 0 22px}
+  .row{display:flex;gap:22px;overflow-x:auto;padding-bottom:12px;align-items:flex-start}
+  .col{flex:0 0 370px}.col>h2{font-size:16px;margin:0 0 4px}.col>p{font-size:13px;color:var(--muted);margin:0 0 12px;min-height:54px}
+  .phone{background:var(--bg);border:1px solid #d9d9de;border-radius:28px;padding:14px 14px 0;height:760px;overflow-y:auto;position:relative;box-shadow:0 10px 30px rgba(0,0,0,.08)}
+  .phone::-webkit-scrollbar{width:0}
+  .tag{display:inline-block;font-size:11px;font-weight:700;padding:3px 8px;border-radius:980px;background:var(--soft);color:var(--muted);margin-right:4px}
+  .tag.plugin{background:#e8edf8;color:var(--accent)}.tag.comm{background:var(--line);color:var(--muted)}
+  h3.name{font-size:21px;margin:8px 0 2px;letter-spacing:-.3px}h3.name small{font-weight:500;color:var(--muted);font-size:13px;margin-left:4px}
+  .one{font-size:14px;color:#333;margin:0 0 6px}
+  .meta{font-size:12px;color:var(--muted);margin:0 0 12px}.meta b{color:#111}
+  .install{display:block;width:100%;background:var(--accent);color:#fff;border:0;border-radius:980px;padding:13px;font-weight:700;font-size:15px;text-align:center}
+  .try{font-size:13px;color:#333;background:var(--soft);border-radius:12px;padding:9px 12px;margin:8px 0 0}.try code{background:#fff;border:1px solid var(--line);border-radius:6px;padding:1px 6px;font-size:12px}
+  .box{background:var(--soft);border-radius:14px;padding:12px 14px;margin:12px 0}.box h4{margin:0 0 6px;font-size:13px;color:var(--muted);font-weight:600}.box p,.box li{font-size:13.5px;margin:0;line-height:1.55}.box ul{margin:0;padding-left:16px}
+  .stp{display:flex;gap:8px;margin:6px 0}.num{flex:0 0 20px;height:20px;border-radius:50%;background:var(--accent);color:#fff;font-size:11px;font-weight:700;display:grid;place-items:center}.stp span{font-size:13px;line-height:1.45}
+  .trust li{font-size:13px}.note{background:#fff6e5;color:#7a4b00;border-radius:12px;padding:9px 12px;font-size:12.5px;margin:8px 0}
+  .rev{border-top:1px solid var(--line);padding:9px 0;font-size:13px}.rev b{font-size:12px;color:var(--muted);font-weight:600}.stars{color:#f5a623;font-size:12px;letter-spacing:1px}
+  .vids{display:flex;gap:8px;overflow-x:auto}.vids img{width:110px;height:196px;object-fit:cover;border-radius:10px;flex:0 0 auto;background:#000}
+  details{margin:10px 0}summary{cursor:pointer;font-size:14px;font-weight:700}summary span{font-weight:500;color:var(--muted);font-size:12px}
+  .sticky{position:sticky;bottom:0;background:linear-gradient(transparent,#fff 30%);padding:18px 0 14px;margin:0 -14px;padding-left:14px;padding-right:14px}
+  .tabs{display:flex;gap:6px;margin:12px 0 6px}.tabs span{flex:1;text-align:center;font-size:13px;font-weight:700;padding:8px;border-radius:980px;background:var(--soft);color:var(--muted)}.tabs span.on{background:#111;color:#fff}
+  .dim{opacity:.45}
+  .write{border:1px dashed var(--line);border-radius:12px;padding:10px;font-size:12.5px;color:var(--muted);margin-top:8px}
+</style></head><body>
+<h1>상세 창 순서 시안 (포니테일 기준)</h1>
+<p class="sub">휴대폰 폭. 각 창은 실제처럼 스크롤돼요. 위에서부터 뭐가 먼저 보이는지로 판단하세요.</p>
+<div class="row">
+
+<!-- A -->
+<div class="col"><h2>A. 결정한 사람 먼저</h2><p>버튼·설치법·"뭘 칠지"가 맨 위. 이미 깔기로 한 사람은 3초 만에 끝. 고민하는 사람은 내려가면서 설명→신뢰→후기→영상.</p>
+<div class="phone">
+  <span class="tag plugin">플러그인</span><span class="tag comm">커뮤니티</span><span class="tag">Claude Code</span>
+  <h3 class="name">포니테일 <small>Ponytail</small></h3>
+  <p class="one">AI가 쓸데없이 길게 짜는 코드를 절반으로 줄여 주는 '고참 개발자 성격'.</p>
+  <p class="meta"><span class="stars">★★★★★</span> <b>4.6</b> (한국 후기 12) · 깃허브 ★ 18만 · 설치 4.1만</p>
+  <a class="install">⚡ 딸깍 설치</a>
+  <p class="try">설치되면 이렇게 치세요: <code>/ponytail-review</code> (자동으로 복사돼요)</p>
+  <div class="box"><h4>설치 방법 (2단계)</h4>
+    <div class="stp"><span class="num">1</span><span>'딸깍 설치' 누르기 → 뜨는 창마다 '열기', '예'</span></div>
+    <div class="stp"><span class="num">2</span><span>Claude 앱 왼쪽 위 &lt;/&gt; 버튼 → 아래 입력창에 치기</span></div></div>
+  <div class="box"><h4>이게 뭐예요?</h4><p>50줄짜리 코드를 보여 주면 아무 말 없이 한 줄로 바꿔 놓는 그 고참 개발자를 AI 안에 넣은 것. 코드 -53%, 시간 -41%, 비용 -26%.</p></div>
+  <div class="box"><h4>이런 분께</h4><p>Claude가 코드를 너무 복잡하고 길게 짜서 돈과 시간이 아깝다고 느끼는 분</p></div>
+  <div class="box"><h4>이렇게 써요</h4><ul><li>"/ponytail-review" 치면 바꾼 코드를 고참처럼 검토</li><li>설치하면 매 세션 자동으로 켜짐</li><li>과격하면 /ponytail lite, 끄려면 /ponytail off</li></ul></div>
+  <div class="box"><h4>믿어도 되나</h4><ul class="trust"><li>깃허브 ★18만, 개인 개발자 제작</li><li>MIT 라이선스</li><li>exe·dll 없는 순수 텍스트 (제작자 명시)</li></ul>
+    <div class="note">⚠ 공식 Claude 앱 목록에는 없고 제작자 저장소에서 받습니다.</div></div>
+  <div class="box"><h4>한국 사용자 후기 · 질문 (12)</h4>
+    <div class="rev"><span class="stars">★★★★★</span> <b>딸깍편집팀</b><br>코드 양이 진짜 반으로 줄어요. 답 끝에 "안 한 것" 적어 주는 게 제일 좋음.</div>
+    <div class="rev"><span class="stars">★★★★☆</span> <b>초보개발자</b><br>처음엔 너무 짧게 답해서 당황. lite로 바꾸니 딱 좋아요.</div>
+    <div class="write">후기 쓰기 · 질문하기 (닉네임만)</div></div>
+  <div class="box"><h4>짧은 영상</h4><div class="vids"><img src="https://i.ytimg.com/vi/rnF40kxwCIg/oar2.jpg" alt=""><img src="https://i.ytimg.com/vi/pKYAtrLJ-X4/oar2.jpg" alt=""><img src="https://i.ytimg.com/vi/C_0X56fe15w/oar2.jpg" alt=""></div></div>
+  <details><summary>원문 설명 한글판 <span>· 5개 항목</span></summary><p style="font-size:13px;color:#555">회사에 버전 관리보다 오래 있었던 그 고참 개발자를 아시죠…</p></details>
+  <div style="height:20px"></div>
+</div></div>
+
+<!-- B -->
+<div class="col"><h2>B. 이해한 뒤 설치</h2><p>설명·신뢰·후기를 먼저 읽히고, 버튼은 화면 바닥에 항상 떠 있음. 어디서든 "그래 깔자" 하면 바로 누름. 설치법은 버튼 누른 뒤 도우미가 알려 줌.</p>
+<div class="phone">
+  <span class="tag plugin">플러그인</span><span class="tag comm">커뮤니티</span><span class="tag">Claude Code</span>
+  <h3 class="name">포니테일 <small>Ponytail</small></h3>
+  <p class="one">AI가 쓸데없이 길게 짜는 코드를 절반으로 줄여 주는 '고참 개발자 성격'.</p>
+  <p class="meta"><span class="stars">★★★★★</span> <b>4.6</b> (한국 후기 12) · 깃허브 ★ 18만 · 설치 4.1만</p>
+  <div class="box"><h4>이게 뭐예요?</h4><p>50줄짜리 코드를 보여 주면 아무 말 없이 한 줄로 바꿔 놓는 그 고참 개발자를 AI 안에 넣은 것. 코드 -53%, 시간 -41%, 비용 -26%.</p></div>
+  <div class="box"><h4>이런 분께</h4><p>Claude가 코드를 너무 복잡하고 길게 짜서 돈과 시간이 아깝다고 느끼는 분</p></div>
+  <div class="box"><h4>믿어도 되나</h4><ul class="trust"><li>깃허브 ★18만, 개인 개발자 제작</li><li>MIT 라이선스</li><li>exe·dll 없는 순수 텍스트 (제작자 명시)</li></ul>
+    <div class="note">⚠ 공식 Claude 앱 목록에는 없고 제작자 저장소에서 받습니다.</div></div>
+  <div class="box"><h4>한국 사용자 후기 · 질문 (12)</h4>
+    <div class="rev"><span class="stars">★★★★★</span> <b>딸깍편집팀</b><br>코드 양이 진짜 반으로 줄어요. 답 끝에 "안 한 것" 적어 주는 게 제일 좋음.</div>
+    <div class="rev"><span class="stars">★★★★☆</span> <b>초보개발자</b><br>처음엔 너무 짧게 답해서 당황. lite로 바꾸니 딱 좋아요.</div>
+    <div class="write">후기 쓰기 · 질문하기 (닉네임만)</div></div>
+  <div class="box"><h4>짧은 영상</h4><div class="vids"><img src="https://i.ytimg.com/vi/rnF40kxwCIg/oar2.jpg" alt=""><img src="https://i.ytimg.com/vi/pKYAtrLJ-X4/oar2.jpg" alt=""><img src="https://i.ytimg.com/vi/C_0X56fe15w/oar2.jpg" alt=""></div></div>
+  <div class="box"><h4>이렇게 써요</h4><ul><li>"/ponytail-review" 치면 바꾼 코드를 고참처럼 검토</li><li>설치하면 매 세션 자동으로 켜짐</li><li>과격하면 /ponytail lite, 끄려면 /ponytail off</li></ul></div>
+  <div class="box"><h4>설치 방법 (2단계)</h4>
+    <div class="stp"><span class="num">1</span><span>'딸깍 설치' 누르기 → 뜨는 창마다 '열기', '예'</span></div>
+    <div class="stp"><span class="num">2</span><span>Claude 앱 왼쪽 위 &lt;/&gt; 버튼 → 아래 입력창에 치기</span></div></div>
+  <details><summary>원문 설명 한글판 <span>· 5개 항목</span></summary><p style="font-size:13px;color:#555">회사에 버전 관리보다 오래 있었던 그 고참 개발자를 아시죠…</p></details>
+  <div style="height:40px"></div>
+  <div class="sticky"><a class="install">⚡ 딸깍 설치 · 2단계</a></div>
+</div></div>
+
+<!-- C -->
+<div class="col"><h2>C. 위는 고정, 아래는 탭</h2><p>버튼·설치법·"뭘 칠지"는 위에 고정. 그 아래를 "알아보기 / 후기 / 영상" 탭으로 나눠 창이 짧음. 원하는 것만 골라 봄. 스크롤이 거의 없음.</p>
+<div class="phone">
+  <span class="tag plugin">플러그인</span><span class="tag comm">커뮤니티</span><span class="tag">Claude Code</span>
+  <h3 class="name">포니테일 <small>Ponytail</small></h3>
+  <p class="one">AI가 쓸데없이 길게 짜는 코드를 절반으로 줄여 주는 '고참 개발자 성격'.</p>
+  <p class="meta"><span class="stars">★★★★★</span> <b>4.6</b> (한국 후기 12) · 깃허브 ★ 18만 · 설치 4.1만</p>
+  <a class="install">⚡ 딸깍 설치</a>
+  <p class="try">설치되면 이렇게 치세요: <code>/ponytail-review</code> (자동으로 복사돼요)</p>
+  <div class="box"><h4>설치 방법 (2단계)</h4>
+    <div class="stp"><span class="num">1</span><span>'딸깍 설치' 누르기 → 뜨는 창마다 '열기', '예'</span></div>
+    <div class="stp"><span class="num">2</span><span>Claude 앱 왼쪽 위 &lt;/&gt; 버튼 → 아래 입력창에 치기</span></div></div>
+  <div class="tabs"><span class="on">알아보기</span><span>후기 12</span><span>영상 3</span></div>
+  <div class="box"><h4>이게 뭐예요?</h4><p>50줄짜리 코드를 보여 주면 아무 말 없이 한 줄로 바꿔 놓는 그 고참 개발자를 AI 안에 넣은 것. 코드 -53%, 시간 -41%, 비용 -26%.</p></div>
+  <div class="box"><h4>이런 분께</h4><p>Claude가 코드를 너무 복잡하고 길게 짜서 돈과 시간이 아깝다고 느끼는 분</p></div>
+  <div class="box"><h4>이렇게 써요</h4><ul><li>"/ponytail-review" 치면 바꾼 코드를 고참처럼 검토</li><li>설치하면 매 세션 자동으로 켜짐</li><li>과격하면 /ponytail lite, 끄려면 /ponytail off</li></ul></div>
+  <div class="box"><h4>믿어도 되나</h4><ul class="trust"><li>깃허브 ★18만, 개인 개발자 제작</li><li>MIT 라이선스</li><li>exe·dll 없는 순수 텍스트 (제작자 명시)</li></ul>
+    <div class="note">⚠ 공식 Claude 앱 목록에는 없고 제작자 저장소에서 받습니다.</div></div>
+  <details><summary>원문 설명 한글판 <span>· 5개 항목</span></summary><p style="font-size:13px;color:#555">회사에 버전 관리보다 오래 있었던 그 고참 개발자를 아시죠…</p></details>
+  <p class="dim" style="font-size:12px;text-align:center;margin:16px 0">(후기·영상은 위 탭을 누르면 이 자리에 나옴)</p>
+  <div style="height:20px"></div>
+</div></div>
+
+</div></body></html>
