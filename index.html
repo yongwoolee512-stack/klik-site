@@ -503,6 +503,21 @@ html.head-c .sheet-head .cm-rate { display:inline-flex; margin:10px 14px 0 0; ve
     </div>
     <div class="rank" id="rank"></div>
   </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>깃허브에서 가장 많이 받은 도구</h2>
+      <p>전 세계 사용자가 별(★)을 가장 많이 준 순서 · 매일 갱신</p>
+    </div>
+    <div class="rank" id="rank-gh"></div>
+  </section>
+  <section id="rank-hot-sec" hidden>
+    <div class="sec-head">
+      <h2>이달 가장 빨리 뜨는 도구</h2>
+      <p>최근 30일 동안 별이 가장 많이 늘어난 순서</p>
+    </div>
+    <div class="rank" id="rank-hot"></div>
+  </section>
   <section id="cm-plaza" hidden>
     <div class="sec-head">
       <div><h2>뭐 쓰면 돼요? 질문 광장</h2><p>하고 싶은 일을 적으면 써 본 사람들이 도구를 골라 줍니다. 로그인 없이 닉네임만.</p></div>
@@ -705,6 +720,13 @@ function renderRank() {
   if (!top || !top.length) { top = [...ITEMS].sort((a,b)=>b.installs-a.installs).slice(0,6).map(it => ({ it, n: it.installs })); sub = "설치 버튼 클릭 수 기준 · 예시 데이터"; }
   const subEl = $("#rank-sub"); if (subEl) subEl.textContent = sub;
   $("#rank").innerHTML = top.map(({it, n},i)=>`<button data-open="${it.id}"><span class="n">${i+1}</span><span class="t"><b>${esc(it.name)}</b><span>${esc(it.one)}</span></span><span class="d">${fmt(n)}회</span></button>`).join("");
+  // 깃허브 별 순위: 같은 저장소(예: anthropics/skills의 문서 스킬 4종)는 한 번만 센다
+  const seen = new Set();
+  const gh = [...ITEMS].filter(it => it.stars > 0).sort((a,b)=>b.stars-a.stars).filter(it => { const k = (it.repo||it.id).toLowerCase(); if (seen.has(k)) return false; seen.add(k); return true; }).slice(0, 9);
+  const ghEl = $("#rank-gh"); if (ghEl) ghEl.innerHTML = gh.map((it,i)=>`<button data-open="${it.id}"><span class="n">${i+1}</span><span class="t"><b>${esc(it.name)}</b><span>${esc(it.one)}</span></span><span class="d">★ ${fmt(it.stars)}</span></button>`).join("");
+  // 이달 증가 순위: 별 기록이 하루 이상 쌓이면 자동으로 나타난다
+  const hot = [...ITEMS].filter(it => it.stars30 > 0).sort((a,b)=>b.stars30-a.stars30).slice(0, 6);
+  const hotSec = $("#rank-hot-sec"); if (hotSec) { hotSec.hidden = hot.length < 3; if (hot.length >= 3) $("#rank-hot").innerHTML = hot.map((it,i)=>`<button data-open="${it.id}"><span class="n">${i+1}</span><span class="t"><b>${esc(it.name)}</b><span>${esc(it.one)}</span></span><span class="d">+${fmt(it.stars30)} ↑</span></button>`).join(""); }
 }
 function renderGrid() {
   const list = filtered();
