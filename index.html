@@ -352,6 +352,7 @@ h1, h2, h3, p, .cbody .one, .cbody .when, .nitem .body b, .nitem .body span { wo
 .cm-row input:focus, .cm-row textarea:focus { outline:none; box-shadow:0 0 0 3px var(--accent-soft); }
 .cm-row textarea { resize:vertical; min-height:64px; flex-basis:100%; }
 .cm-row .install { flex:0 0 auto; }
+.try-box { margin-top:8px; border:2px solid var(--accent); background:#fff; font-family:inherit; } .try-box code { font-size:14px; font-weight:600; color:var(--fg); white-space:normal; font-family:inherit; } .try-note { display:block; font-size:12px; color:var(--muted); margin-top:4px; }
 .try-line { margin:0; font-size:13px; background:var(--surface-2, #f5f5f7); border-radius:12px; padding:9px 12px; } .try-line code { background:#fff; border:1px solid var(--line); border-radius:6px; padding:1px 6px; font-size:12px; } .try-line span { color:var(--muted); font-size:12px; } .sheet-head .cm-rate { margin:6px 0 0; }
 .vids { display:flex; gap:10px; overflow-x:auto; padding-bottom:6px; -webkit-overflow-scrolling:touch; } .vid { flex:0 0 auto; width:100%; max-width:420px; } .vid.v { width:220px; } .vid iframe { display:block; width:100%; aspect-ratio:16/9; border:0; border-radius:12px; background:#000; } .vid.v iframe { aspect-ratio:9/16; } .vid span { display:block; font-size:12px; color:var(--muted); margin-top:4px; }
 .cm-list { display:grid; gap:8px; }
@@ -723,10 +724,10 @@ function openDetail(id) {
   const hasCmd = !!cmd;
   const deep = hasCmd ? deepLink(it) : "";
   const steps = deep
-    ? [["'딸깍 설치' 누르기 → 뜨는 창마다 '열기', '예'", "브라우저가 '딸깍 도우미를 열까요?' 하면 '열기', 도우미가 '설치할까요?' 하면 '예'. 설치 완료 창이 뜨면 끝."],...(it.login ? [["처음 한 번 로그인", `Claude 앱 왼쪽 위 </> 버튼을 누르고, 아래 입력창에 /mcp 치고 엔터 → ${it.en.split(" ")[0]} 고르기 → 브라우저 로그인 창에서 '승인'.`]] : []), ["Claude 앱 왼쪽 위 </> 버튼 → 아래 입력창에 이렇게 치기", (it.tips[0] || "바로 써 보세요.") + " (평소 채팅 화면 말고, </> 버튼을 누른 화면이어야 해요.)", "media/code-button.svg"]]
+    ? [["'딸깍 설치' 누르기 → 뜨는 창마다 '열기', '예'", "브라우저가 '딸깍 도우미를 열까요?' 하면 '열기', 도우미가 '설치할까요?' 하면 '예'. 설치 완료 창이 뜨면 끝."],...(it.login ? [["처음 한 번 로그인", `Claude 앱 왼쪽 위 </> 버튼을 누르고, 아래 입력창에 /mcp 치고 엔터 → ${it.en.split(" ")[0]} 고르기 → 브라우저 로그인 창에서 '승인'.`]] : []), ["Claude 앱 왼쪽 위 </> 버튼 → 아래 입력창에 이렇게 치기", "평소 채팅 화면 말고, </> 버튼을 누른 화면이어야 해요.", "media/code-button.svg", tryPrompt(it) || it.tips[0] || "", "설치가 끝나면 이 문장이 자동으로 복사돼 있어요. 입력창에 Ctrl+V 하고 엔터."]]
     : hasCmd
-    ? [["'설치 명령 복사' 누르기", "문장이 복사됩니다."],["Claude 앱 왼쪽 위 </> 버튼 → 아래 입력창에 Ctrl+V, 엔터", "Claude가 나머지 설치를 합니다. 끝나면 같은 입력창에 이렇게 치세요: " + (it.tips[0] || "바로 써 보세요."), "media/code-button.svg"]]
-    : [["'커넥터 설정 열기' 누르기 → 목록에서 '연결' → 로그인", "Claude 앱 설정 페이지가 열립니다. 찾아서 '연결'을 누르고 로그인하면 끝."],["채팅에 이렇게 치기", it.tips[0] || "바로 써 보세요."]];
+    ? [["'설치 명령 복사' 누르기", "문장이 복사됩니다."],["Claude 앱 왼쪽 위 </> 버튼 → 아래 입력창에 Ctrl+V, 엔터", "Claude가 나머지 설치를 합니다. 끝나면 같은 입력창에 이렇게 치세요.", "media/code-button.svg", tryPrompt(it) || it.tips[0] || "", "복사 버튼을 누르고 입력창에 Ctrl+V 하고 엔터."]]
+    : [["'커넥터 설정 열기' 누르기 → 목록에서 '연결' → 로그인", "Claude 앱 설정 페이지가 열립니다. 찾아서 '연결'을 누르고 로그인하면 끝."],["채팅에 이렇게 치기", "연결이 끝나면 평소 채팅 화면에서 바로 됩니다.", "", tryPrompt(it) || it.tips[0] || "", "복사 버튼을 누르고 채팅창에 Ctrl+V 하고 엔터."]];
   const actions = `<div class="big-install">
           ${hasCmd?(deep?`<a class="install" href="${esc(deep)}" data-deep="${esc(deep)}" data-item="${it.id}" data-track="${it.id}" style="text-decoration:none;text-align:center">⚡ 딸깍 설치</a>`:`<button class="install" data-copy="${esc(cmd)}" data-track="${it.id}">⚡ 설치 명령 복사</button>`):`<a class="btn-outline" href="${esc(it.link)}" target="_blank" rel="noopener" data-track="${it.id}" style="background:var(--accent);color:var(--accent-fg);border-color:var(--accent)">⚡ 커넥터 설정 열기</a>`}
           <a class="btn-outline" href="${esc(it.repo)}" target="_blank" rel="noopener">원문(깃허브) 보기</a>
@@ -750,7 +751,7 @@ function openDetail(id) {
         ${it.demo?`<div class="preview" style="background:${it.color};aspect-ratio:auto"><img src="${esc(it.demo)}" alt="${esc(it.name)} 작동 화면" style="display:block;width:100%;height:auto;border-radius:inherit"><span class="cap">작동 화면 · 검색 → 카드 → 딸깍 설치</span></div>`:""}
         <div>
           <h4 style="margin:0 0 10px;font-size:15px">설치 방법 (${steps.length}단계)</h4>
-          <div class="steps">${steps.map((s,i)=>`<div class="stp"><span class="num">${i+1}</span><div class="txt"><b>${esc(s[0])}</b><span>${esc(s[1])}</span>${s[2]?`<img src="${s[2]}" alt="" style="display:block;margin-top:8px;max-width:260px;width:100%;border-radius:10px;border:1px solid var(--line)">`:""}</div></div>`).join("")}</div>
+          <div class="steps">${steps.map((s,i)=>`<div class="stp"><span class="num">${i+1}</span><div class="txt"><b>${esc(s[0])}</b><span>${esc(s[1])}</span>${s[3]?`<div class="cmd try-box"><code>${esc(s[3])}</code><button data-copy="${esc(s[3])}">복사</button></div><span class="try-note">${esc(s[4]||"")}</span>`:""}${s[2]?`<img src="${s[2]}" alt="" style="display:block;margin-top:8px;max-width:260px;width:100%;border-radius:10px;border:1px solid var(--line)">`:""}</div></div>`).join("")}</div>
           ${hasCmd?(deep?`<details style="margin-top:8px"><summary style="cursor:pointer;color:var(--muted);font-size:13px">도우미 없이 직접 하는 방법 (명령 복사)</summary><div class="cmd"><code>${esc(cmd)}</code><button data-copy="${esc(cmd)}">복사</button></div></details>`:`<div class="cmd"><code>${esc(cmd)}</code><button data-copy="${esc(cmd)}">복사</button></div>`):""}
         </div>
         <div class="blocks">
