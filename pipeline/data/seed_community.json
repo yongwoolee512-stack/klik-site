@@ -295,5 +295,39 @@
       "\"headroom wrap claude\" 를 터미널에 치면 그때부터 모든 대화가 압축을 거칩니다.",
       "\"/headroom\" 이라고 치면 지금까지 얼마나 아꼈는지 보여 줍니다."
     ]
+  },
+  {
+    "id": "klik-watch-video",
+    "kind": "skill",
+    "cat": "docs",
+    "name": "영상 읽기 (유튜브·릴스 자막 뽑기)",
+    "en": "klik-watch-video",
+    "one": "유튜브·인스타 릴스·틱톡 주소를 주면 영상 속 말을 글로 바꿔 Claude가 내용을 읽습니다. \"이 릴스 요약해 줘\"가 됩니다.",
+    "when": "릴스·쇼츠에서 본 도구나 정보를 Claude한테 바로 물어보고 싶은 분",
+    "level": 2,
+    "plat": [
+      "claude-code"
+    ],
+    "added": "2026-10-31",
+    "color": "#d6ecf5",
+    "repo": "https://github.com/yongwoolee512-stack/klik-watch",
+    "install": {
+      "kind": "skill",
+      "repo": "yongwoolee512-stack/klik-watch"
+    },
+    "trust": {
+      "grade": "verified",
+      "reasons": [
+        "딸깍 편집팀이 직접 만들고 공개한 스킬 (MIT)",
+        "영상 받기(yt-dlp)와 음성→글(faster-whisper) 모두 내 컴퓨터에서, 외부 서비스 없음",
+        "파이썬이 필요해요. 처음 한 번 모델 파일(약 460MB)을 받습니다"
+      ]
+    },
+    "note": "파이썬(무료)이 필요합니다. 처음 쓸 때 Claude가 준비물 설치 명령을 안내하고, 모델 내려받기에 1~2분 걸려요. 공개 영상만 됩니다.",
+    "tips": [
+      "\"이 릴스에서 소개하는 도구가 뭐야? https://www.instagram.com/reel/…\"",
+      "\"이 유튜브 10줄로 요약해 줘 https://www.youtube.com/watch?v=…\"",
+      "영어 영상이면 \"영어 영상이야\"라고 덧붙이면 더 정확해요."
+    ]
   }
 ]
