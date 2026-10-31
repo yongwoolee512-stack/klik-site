@@ -3,6 +3,8 @@
 #   skillssh.ps1 skills.sh 설치 수·지난주 증가 + 설치 10만+ 신규 후보
 #   videos.ps1   유튜브 쇼츠 (깃허브 러너에서는 유튜브가 막을 수 있어 실패해도 계속)
 #   discover.ps1 깃허브 검색 → 기준(★1,000 / MCP ★5,000) 넘긴 신규 후보
+#   reels.py     (워크플로가 따로 실행) 인플루언서 유튜브 쇼츠 말소리 → 도구 언급 → videos_influencer.json·mentions_pending.json
+#                인스타 릴스는 로그인 때문에 서버에서 못 읽고, Claude 앱 예약 작업(klik-reels)이 Chrome으로 목록을 읽어 같은 스크립트에 --urls 로 넘긴다
 #   build.ps1    catalog.json / news.json 생성
 # 신규 도구의 한글 설명·등록은 자동이 아니다(검수 필요). 후보는 data/candidates.json, data/skillssh_candidates.json 에 쌓인다.
 param([switch]$SkipVideos, [switch]$SkipDiscover)

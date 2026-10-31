@@ -1,7 +1,5 @@
 {
-  "pending": 27,
-  "count": 171,
-  "generated_at": "2026-10-31T13:54:20.1101724Z",
+  "generated_at": "2026-10-31T14:12:35.2622186Z",
   "rejected": 147,
   "items": [
     {
@@ -37,10 +35,10 @@
       "stars30": 732,
       "stars30_days": 1,
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       },
       "pick": "말로 설명하면 PPT가 나옵니다. 비개발자가 Claude Code를 처음 켤 이유로 이만한 게 없음.",
       "sh_installs": 245786,
@@ -111,10 +109,10 @@
       "stars30": 732,
       "stars30_days": 1,
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       },
       "sh_installs": 190817,
       "sh_week": 3448,
@@ -188,10 +186,10 @@
       "stars30": 732,
       "stars30_days": 1,
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       },
       "sh_installs": 210248,
       "sh_week": 3658,
@@ -270,10 +268,10 @@
       "stars30": 732,
       "stars30_days": 1,
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       },
       "sh_installs": 220143,
       "sh_week": 3873,
@@ -342,10 +340,10 @@
       "stars30": 107,
       "stars30_days": 1,
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       },
       "sh_installs": 63896,
       "sh_week": 800,
@@ -397,6 +395,11 @@
       "status": "published",
       "videos": [
         {
+          "url": "https://www.youtube.com/shorts/QalGd9uErFA",
+          "by": "ZeroCho TV",
+          "title": "디자인 몰라도 되는 시대, Figma AI 에이전트 직접 써봤습니다 #figma #바이브코딩"
+        },
+        {
           "url": "https://www.youtube.com/shorts/riFFyTRljic",
           "by": "Figma",
           "title": "Claude Code to Figma"
@@ -417,10 +420,10 @@
       "stars30": 5,
       "stars30_days": 1,
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       },
       "sh_installs": 9333,
       "sh_week": 477,
@@ -499,10 +502,10 @@
       "stars30": 33,
       "stars30_days": 1,
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       },
       "readme_ko": [
         {
@@ -571,10 +574,10 @@
       "stars30": 39,
       "stars30_days": 1,
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       },
       "readme_ko": [
         {
@@ -650,10 +653,10 @@
       "stars30": 51,
       "stars30_days": 1,
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       },
       "pick": "AI가 구버전 코드를 알려 주는 문제를 한 번에 해결. 설치 뒤 설정 없음.",
       "sh_installs": 8038,
@@ -723,10 +726,10 @@
       "stars30": 107,
       "stars30_days": 1,
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       },
       "sh_installs": 63896,
       "sh_week": 800,
@@ -796,10 +799,10 @@
       "stars30": 4,
       "stars30_days": 1,
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       },
       "readme_ko": [
         {
@@ -867,10 +870,10 @@
         }
       ],
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       },
       "readme_ko": [
         {
@@ -939,10 +942,10 @@
       "stars30": 3,
       "stars30_days": 1,
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       },
       "readme_ko": [
         {
@@ -1016,10 +1019,10 @@
       "stars30": 4,
       "stars30_days": 1,
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       },
       "pick": "회의록·할 일을 노션에 두는 분이면 첫날부터 쓰게 됩니다.",
       "readme_ko": [
@@ -1079,10 +1082,10 @@
         }
       ],
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       },
       "readme_ko": [
         {
@@ -1130,10 +1133,10 @@
       "stars30": 107,
       "stars30_days": 1,
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       },
       "sh_installs": 63896,
       "sh_week": 800,
@@ -1200,10 +1203,10 @@
       "stars30": 9,
       "stars30_days": 1,
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       },
       "readme_ko": [
         {
@@ -1277,10 +1280,10 @@
       "stars30": 3,
       "stars30_days": 1,
       "trust": {
-        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ]
+        ],
+        "grade": "verified"
       },
       "readme_ko": [
         {
@@ -10439,5 +10442,7 @@
         }
       ]
     }
-  ]
+  ],
+  "count": 171,
+  "pending": 27
 }

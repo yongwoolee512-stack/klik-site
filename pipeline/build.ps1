@@ -35,9 +35,11 @@ foreach ($f in $rkPath, (Join-Path $root "data\readme_ko_community.json"), (Join
 $vids = @{}
 $vidPath = Join-Path $root "data\videos.json"
 if (Test-Path $vidPath) { (Get-Content $vidPath -Raw -Encoding UTF8 | ConvertFrom-Json).PSObject.Properties | Where-Object { $_.Name -ne "_doc" -and $_.Value.Count -gt 0 } | ForEach-Object { $vids[$_.Name] = @($_.Value) } }
-# 자동 수집한 쇼츠(videos.ps1)는 사람이 넣은 것 뒤에, 같은 주소는 한 번만
-$autoPath = Join-Path $root "data\videos_auto.json"
-if (Test-Path $autoPath) { (Get-Content $autoPath -Raw -Encoding UTF8 | ConvertFrom-Json).PSObject.Properties | ForEach-Object { $have = @($vids[$_.Name] | ForEach-Object { $_.url }); $vids[$_.Name] = @($vids[$_.Name] | Where-Object { $_ }) + @($_.Value | Where-Object { $have -notcontains $_.url }) } }
+# 인플루언서 영상(reels.py: 말소리에서 도구 언급을 찾은 것)은 사람이 넣은 것 바로 뒤에, 자동 수집 쇼츠(videos.ps1)는 그 뒤에. 같은 주소는 한 번만
+foreach ($extraVid in "videos_influencer.json", "videos_auto.json") {
+  $autoPath = Join-Path $root "data\$extraVid"
+  if (Test-Path $autoPath) { (Get-Content $autoPath -Raw -Encoding UTF8 | ConvertFrom-Json).PSObject.Properties | ForEach-Object { $have = @($vids[$_.Name] | ForEach-Object { $_.url }); $vids[$_.Name] = @($vids[$_.Name] | Where-Object { $_ }) + @($_.Value | Where-Object { $have -notcontains $_.url }) } }
+}
 # 깃허브 신호(stars.ps1): 실시간 별 수로 덮어쓰고, 마지막 업데이트·이달 증가를 붙인다
 $gh = @{}
 $ghPath = Join-Path $root "data\gh_signals.json"
