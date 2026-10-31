@@ -1,0 +1,872 @@
+{
+  "mcp:agency.thebureauoflostcontext/bureau-public": {
+    "status": "rejected",
+    "updated_at": "2026-09-13T05:48:39.780486Z",
+    "seen": "2026-10-31"
+  },
+  "gh:retospect/precis-mcp": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:39:40Z",
+    "seen": "2026-10-31"
+  },
+  "mcp:agency.justidea/justidea-agency": {
+    "status": "rejected",
+    "updated_at": "2026-09-27T23:11:35.114076Z",
+    "seen": "2026-10-31"
+  },
+  "gh:lizaixi01/AgentCAD": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:38:59Z",
+    "seen": "2026-10-31"
+  },
+  "gh:kalinichenko88/agent-skills": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:35:48Z",
+    "seen": "2026-10-31"
+  },
+  "gh:WYRE-AI/syncro-mcp": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:37:53Z",
+    "seen": "2026-10-31"
+  },
+  "gh:griffinwork40/agent-afk": {
+    "status": "pending",
+    "updated_at": "2026-10-29T14:37:26Z",
+    "seen": "2026-10-31"
+  },
+  "gh:IsraelWebDev/funkbox": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:37:21Z",
+    "seen": "2026-10-31"
+  },
+  "gh:mindsightventures/lona": {
+    "status": "rejected",
+    "updated_at": "2026-02-24T00:07:27.525636Z",
+    "seen": "2026-10-31"
+  },
+  "gh:felipesauer/mnema": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:39:51Z",
+    "seen": "2026-10-31"
+  },
+  "mcp:ai.adsap/adsap": {
+    "status": "rejected",
+    "updated_at": "2026-09-19T12:13:27.871767Z",
+    "seen": "2026-10-31"
+  },
+  "gh:mihirkavi/open-media": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:28:13Z",
+    "seen": "2026-10-31"
+  },
+  "mcp:ai.adkix/adkix": {
+    "status": "rejected",
+    "updated_at": "2026-10-21T10:30:19.62174Z",
+    "seen": "2026-10-31"
+  },
+  "gh:1325ai/1325ai": {
+    "status": "rejected",
+    "updated_at": "2026-07-10T05:01:17.106808Z",
+    "seen": "2026-10-31"
+  },
+  "mcp:ai.aard/aard": {
+    "status": "rejected",
+    "updated_at": "2026-09-15T02:38:30.780577Z",
+    "seen": "2026-10-31"
+  },
+  "gh:BryceBin/freeqrly": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:38:12Z",
+    "seen": "2026-10-31"
+  },
+  "mcp:ae.easyvoice/tts": {
+    "status": "rejected",
+    "updated_at": "2026-10-11T18:47:52.634428Z",
+    "seen": "2026-10-31"
+  },
+  "gh:dealfluence/adeu": {
+    "status": "rejected",
+    "updated_at": "2026-05-05T14:01:01.659721Z",
+    "seen": "2026-10-31"
+  },
+  "mcp:ai.adplane/google-ads": {
+    "status": "rejected",
+    "updated_at": "2026-08-08T17:50:55.40943Z",
+    "seen": "2026-10-31"
+  },
+  "gh:t4zxxx1/colibri-mcp": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:39:01Z",
+    "seen": "2026-10-31"
+  },
+  "gh:DamianoCeka/tokyn": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:40:11Z",
+    "seen": "2026-10-31"
+  },
+  "gh:zdraveski/project-memory": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:37:19Z",
+    "seen": "2026-10-31"
+  },
+  "gh:JE4NVRG/mepmail": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:38:26Z",
+    "seen": "2026-10-31"
+  },
+  "mcp:ai.adside/adside": {
+    "status": "rejected",
+    "updated_at": "2026-07-16T19:48:48.148514Z",
+    "seen": "2026-10-31"
+  },
+  "gh:TOMOSIA-VIETNAM/open-erd": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:40:06Z",
+    "seen": "2026-10-31"
+  },
+  "gh:monolithlabs-hub/opindex-agent": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:39:36Z",
+    "seen": "2026-10-31"
+  },
+  "gh:atlanai/ai-registry": {
+    "status": "pending",
+    "updated_at": "2026-10-29T14:36:01Z",
+    "seen": "2026-10-31"
+  },
+  "gh:WYRE-AI/unitrends-mcp": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:38:02Z",
+    "seen": "2026-10-31"
+  },
+  "mcp:ad.inside/inside-ads": {
+    "status": "rejected",
+    "updated_at": "2026-08-18T20:55:46.452926Z",
+    "seen": "2026-10-31"
+  },
+  "gh:PressReacher/PressReacher-MCP": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:38:39Z",
+    "seen": "2026-10-31"
+  },
+  "mcp:ai.2kw/mcp-server": {
+    "status": "rejected",
+    "updated_at": "2026-10-03T09:22:27.183577Z",
+    "seen": "2026-10-31"
+  },
+  "gh:triggerdotdev/trigger.dev": {
+    "status": "pending",
+    "updated_at": "2026-10-29T14:37:28Z",
+    "seen": "2026-10-31"
+  },
+  "gh:lawwu/agentic-ml-plugin": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:23:55Z",
+    "seen": "2026-10-31"
+  },
+  "gh:magic5644/Graph-It-Live": {
+    "status": "pending",
+    "updated_at": "2026-10-29T14:27:26Z",
+    "seen": "2026-10-31"
+  },
+  "mcp:ai.adrio/adrio": {
+    "status": "rejected",
+    "updated_at": "2026-10-03T12:20:35.801463Z",
+    "seen": "2026-10-31"
+  },
+  "gh:UCR-Research-Computing/ursa-bifrost": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:39:40Z",
+    "seen": "2026-10-31"
+  },
+  "mcp:ae.beachclubs/mcp": {
+    "status": "rejected",
+    "updated_at": "2026-10-22T22:20:40.178549Z",
+    "seen": "2026-10-31"
+  },
+  "gh:WYRE-AI/spanning-mcp": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:37:31Z",
+    "seen": "2026-10-31"
+  },
+  "gh:Parallel-Platforms/hootlens-mcp": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:37:22Z",
+    "seen": "2026-10-31"
+  },
+  "gh:Youzini-afk/Varin": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:39:42Z",
+    "seen": "2026-10-31"
+  },
+  "gh:stylemi-co/adramp": {
+    "status": "rejected",
+    "updated_at": "2026-03-20T10:48:50.293302Z",
+    "seen": "2026-10-31"
+  },
+  "gh:Lu1sDV/skillsmd": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:36:00Z",
+    "seen": "2026-10-31"
+  },
+  "gh:jackneil/claude-jacked": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:35:11Z",
+    "seen": "2026-10-31"
+  },
+  "mcp:ac.snag/snag": {
+    "status": "rejected",
+    "updated_at": "2026-09-09T10:35:53.194664Z",
+    "seen": "2026-10-31"
+  },
+  "gh:devthomy/adrails-mcp": {
+    "status": "rejected",
+    "updated_at": "2026-10-03T19:41:49.956965Z",
+    "seen": "2026-10-31"
+  },
+  "gh:CultureClub-dev/alphabridge-mcp-free": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:38:24Z",
+    "seen": "2026-10-31"
+  },
+  "gh:linny006/mcp-servers-live": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:39:58Z",
+    "seen": "2026-10-31"
+  },
+  "gh:open-metadata/OpenMetadata": {
+    "status": "pending",
+    "updated_at": "2026-10-29T14:39:07Z",
+    "seen": "2026-10-31"
+  },
+  "gh:alexgreensh/anidoodle": {
+    "status": "pending",
+    "updated_at": "2026-10-29T14:33:10Z",
+    "seen": "2026-10-31"
+  },
+  "gh:ai-hub-open/yandex-direct-manager": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:22:44Z",
+    "seen": "2026-10-31"
+  },
+  "gh:FAHTHIZ/oasis": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:40:18Z",
+    "seen": "2026-10-31"
+  },
+  "gh:ruslan2027/adako-mcp": {
+    "status": "rejected",
+    "updated_at": "2026-09-13T20:00:50.661243Z",
+    "seen": "2026-10-31"
+  },
+  "gh:lawwu/skills-marketplace": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:35:20Z",
+    "seen": "2026-10-31"
+  },
+  "gh:ramonk2o/storymaker": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:27:07Z",
+    "seen": "2026-10-31"
+  },
+  "gh:unclejobs-ai/motion-video-skill": {
+    "status": "pending",
+    "updated_at": "2026-10-29T14:31:27Z",
+    "seen": "2026-10-31"
+  },
+  "mcp:ae.waggle/vera": {
+    "status": "rejected",
+    "updated_at": "2026-10-20T08:03:33.116792Z",
+    "seen": "2026-10-31"
+  },
+  "gh:FaultyPacket/faultypacket-audit": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:40:18Z",
+    "seen": "2026-10-31"
+  },
+  "gh:saradamian/agentic-base": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:40:11Z",
+    "seen": "2026-10-31"
+  },
+  "gh:datadubai/dubai-real-estate-dld": {
+    "status": "rejected",
+    "updated_at": "2026-09-30T08:30:47.911063Z",
+    "seen": "2026-10-31"
+  },
+  "gh:FxrcRed/claude-usage-rings": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:30:53Z",
+    "seen": "2026-10-31"
+  },
+  "gh:hproxy-com/free-proxy-list": {
+    "status": "pending",
+    "updated_at": "2026-10-29T14:40:03Z",
+    "seen": "2026-10-31"
+  },
+  "gh:frumu-ai/tandem": {
+    "status": "rejected",
+    "updated_at": "2026-04-02T11:22:40.005172Z",
+    "seen": "2026-10-31"
+  },
+  "gh:mxyhi/ok-skills": {
+    "status": "pending",
+    "updated_at": "2026-10-29T14:37:24Z",
+    "seen": "2026-10-31"
+  },
+  "gh:ricardowendell/agent-skills": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:39:19Z",
+    "seen": "2026-10-31"
+  },
+  "mcp:ai.0si/disclosures": {
+    "status": "rejected",
+    "updated_at": "2026-10-09T06:35:05.568225Z",
+    "seen": "2026-10-31"
+  },
+  "mcp:ae.projectory/mcp": {
+    "status": "rejected",
+    "updated_at": "2026-09-29T20:37:54.5633Z",
+    "seen": "2026-10-31"
+  },
+  "gh:barretstorck/baton": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:29:34Z",
+    "seen": "2026-10-31"
+  },
+  "gh:Adgrowofficial/getlead-mcp": {
+    "status": "rejected",
+    "updated_at": "2026-09-26T12:28:37.779048Z",
+    "seen": "2026-10-31"
+  },
+  "mcp:agency.kesey/pretrip": {
+    "status": "rejected",
+    "updated_at": "2026-07-26T18:03:21.463557Z",
+    "seen": "2026-10-31"
+  },
+  "mcp:ai.1clickwebsite/mcp": {
+    "status": "rejected",
+    "updated_at": "2026-10-05T09:31:32.655518Z",
+    "seen": "2026-10-31"
+  },
+  "gh:MiniMax-AI/mcode-stack": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:24:29Z",
+    "seen": "2026-10-31"
+  },
+  "mcp:ae.grovisor/grotax": {
+    "status": "rejected",
+    "updated_at": "2026-10-02T03:01:23.583792Z",
+    "seen": "2026-10-31"
+  },
+  "gh:midplaneai/midplane": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:39:34Z",
+    "seen": "2026-10-31"
+  },
+  "gh:vargHQ/awesome-ai-video-agents": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:20:38Z",
+    "seen": "2026-10-31"
+  },
+  "gh:anhmtk/agentshare-mcp": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:38:41Z",
+    "seen": "2026-10-31"
+  },
+  "gh:connormatthewdouglas/agent-work-stack-deals": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:36:53Z",
+    "seen": "2026-10-31"
+  },
+  "gh:DIGIBIZ360-COM/adoraads": {
+    "status": "rejected",
+    "updated_at": "2026-08-08T16:09:27.163464Z",
+    "seen": "2026-10-31"
+  },
+  "gh:neurot1ca/purser-claude-orchestrator": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:38:35Z",
+    "seen": "2026-10-31"
+  },
+  "mcp:ai.adramp/google-ads": {
+    "status": "rejected",
+    "updated_at": "2026-03-20T11:06:29.964194Z",
+    "seen": "2026-10-31"
+  },
+  "gh:QingYunA/answer-me-with-html": {
+    "status": "pending",
+    "updated_at": "2026-10-29T14:21:20Z",
+    "seen": "2026-10-31"
+  },
+  "gh:querysail/querysail-gsc": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:28:22Z",
+    "seen": "2026-10-31"
+  },
+  "gh:gabrielh-silvestre/hexlog": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:39:22Z",
+    "seen": "2026-10-31"
+  },
+  "gh:Sorasukiawa/full-stack-maintenance": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:40:31Z",
+    "seen": "2026-10-31"
+  },
+  "gh:Saad-web-spec/DevScratchPad": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:36:19Z",
+    "seen": "2026-10-31"
+  },
+  "gh:jachai/session-guide": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:25:44Z",
+    "seen": "2026-10-31"
+  },
+  "mcp:aero.events/events": {
+    "status": "rejected",
+    "updated_at": "2026-10-09T21:06:19.122059Z",
+    "seen": "2026-10-31"
+  },
+  "gh:savoirfairelinux/virtual-engineer": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:37:33Z",
+    "seen": "2026-10-31"
+  },
+  "gh:lalabase/lalabase": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:40:19Z",
+    "seen": "2026-10-31"
+  },
+  "gh:yschimke/compose-ai-tools": {
+    "status": "pending",
+    "updated_at": "2026-10-29T14:40:09Z",
+    "seen": "2026-10-31"
+  },
+  "gh:vuca-dev/unstale": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:38:14Z",
+    "seen": "2026-10-31"
+  },
+  "mcp:agency.zoll/ausfuhr": {
+    "status": "rejected",
+    "updated_at": "2026-10-24T14:11:05.083261Z",
+    "seen": "2026-10-31"
+  },
+  "gh:ItsOdeLeo/usage-planner": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:38:31Z",
+    "seen": "2026-10-31"
+  },
+  "gh:EJRyan89/coding-agent-skills": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:39:24Z",
+    "seen": "2026-10-31"
+  },
+  "gh:Cotal-AI/Cotal": {
+    "status": "pending",
+    "updated_at": "2026-10-29T14:38:42Z",
+    "seen": "2026-10-31"
+  },
+  "mcp:ae.genosys/genosys": {
+    "status": "rejected",
+    "updated_at": "2026-10-12T08:52:12.154288Z",
+    "seen": "2026-10-31"
+  },
+  "gh:AndrewAvery7/promptspend": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:39:10Z",
+    "seen": "2026-10-31"
+  },
+  "gh:6xy16/skillcard": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:40:09Z",
+    "seen": "2026-10-31"
+  },
+  "gh:a-church-ai/church": {
+    "status": "pending",
+    "updated_at": "2026-10-29T14:37:51Z",
+    "seen": "2026-10-31"
+  },
+  "mcp:ae.propick/propick": {
+    "status": "rejected",
+    "updated_at": "2026-08-25T11:16:56.879334Z",
+    "seen": "2026-10-31"
+  },
+  "gh:janmaaarc/basecamp": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:37:08Z",
+    "seen": "2026-10-31"
+  },
+  "gh:escoffier-labs/brigade": {
+    "status": "pending",
+    "updated_at": "2026-10-29T14:34:03Z",
+    "seen": "2026-10-31"
+  },
+  "mcp:ai.adadvisor/mcp-server": {
+    "status": "rejected",
+    "updated_at": "2026-02-28T12:39:22.82128Z",
+    "seen": "2026-10-31"
+  },
+  "gh:JacobStephens2/thirdshift": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:39:06Z",
+    "seen": "2026-10-31"
+  },
+  "gh:tt-a1i/archify": {
+    "status": "pending",
+    "updated_at": "2026-10-29T14:19:52Z",
+    "seen": "2026-10-31"
+  },
+  "gh:fainir/flipback": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:23:16Z",
+    "seen": "2026-10-31"
+  },
+  "mcp:africa.ugc/ugc": {
+    "status": "rejected",
+    "updated_at": "2026-10-03T16:28:09.054327Z",
+    "seen": "2026-10-31"
+  },
+  "gh:CaiZongyuan/spatial-sync": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:39:37Z",
+    "seen": "2026-10-31"
+  },
+  "mcp:ac.inference.sh/mcp": {
+    "status": "rejected",
+    "updated_at": "2026-04-13T17:32:20.852269Z",
+    "seen": "2026-10-31"
+  },
+  "gh:code-yeongyu/oh-my-openagent": {
+    "status": "pending",
+    "updated_at": "2026-10-29T14:22:19Z",
+    "seen": "2026-10-31"
+  },
+  "mcp:ai.aarna/atars-mcp": {
+    "status": "rejected",
+    "updated_at": "2026-03-10T11:09:59.15927Z",
+    "seen": "2026-10-31"
+  },
+  "gh:JiramedFirst/TVideo": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:31:41Z",
+    "seen": "2026-10-31"
+  },
+  "gh:fynnhaupt/skills": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:37:44Z",
+    "seen": "2026-10-31"
+  },
+  "gh:homeassistant-ai/ha-mcp": {
+    "status": "pending",
+    "updated_at": "2026-10-29T14:40:09Z",
+    "seen": "2026-10-31"
+  },
+  "gh:j0hanz/filesystem-mcp": {
+    "status": "pending",
+    "updated_at": "2026-10-29T14:40:08Z",
+    "seen": "2026-10-31"
+  },
+  "gh:goji-agency/website": {
+    "status": "rejected",
+    "updated_at": "2026-08-03T10:29:06.593837Z",
+    "seen": "2026-10-31"
+  },
+  "gh:awslabs/mcp": {
+    "status": "pending",
+    "updated_at": "2026-10-29T14:38:27Z",
+    "seen": "2026-10-31"
+  },
+  "gh:paperclipai/paperclip": {
+    "status": "pending",
+    "updated_at": "2026-10-29T14:39:56Z",
+    "seen": "2026-10-31"
+  },
+  "gh:chaelynet/chainmemory-mcp": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:40:02Z",
+    "seen": "2026-10-31"
+  },
+  "gh:carrick-tools/carrick": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:32:25Z",
+    "seen": "2026-10-31"
+  },
+  "gh:achromat-ai/achromat-mcp-server": {
+    "status": "rejected",
+    "updated_at": "2026-10-19T16:40:53.960211Z",
+    "seen": "2026-10-31"
+  },
+  "gh:thread3d/rMath": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:40:27Z",
+    "seen": "2026-10-31"
+  },
+  "gh:rbadillap/sre": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:38:25Z",
+    "seen": "2026-10-31"
+  },
+  "gh:WireCatLabs/gcal-cli": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:39:59Z",
+    "seen": "2026-10-31"
+  },
+  "gh:WizardingCode-io/wizardingcode-developer-crew": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:28:46Z",
+    "seen": "2026-10-31"
+  },
+  "gh:netopsengineer/agent-skill-description-optimizer": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:23:15Z",
+    "seen": "2026-10-31"
+  },
+  "mcp:ag.hood/name-service": {
+    "status": "rejected",
+    "updated_at": "2026-07-10T04:58:06.628668Z",
+    "seen": "2026-10-31"
+  },
+  "mcp:ai.69ai/69ai": {
+    "status": "rejected",
+    "updated_at": "2026-09-29T16:18:02.678783Z",
+    "seen": "2026-10-31"
+  },
+  "gh:ApexAI-Academy/sample-agents": {
+    "status": "rejected",
+    "updated_at": "2026-10-16T03:32:46.025467Z",
+    "seen": "2026-10-31"
+  },
+  "gh:PershinIlya/glidepath": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:26:54Z",
+    "seen": "2026-10-31"
+  },
+  "mcp:ai.advisorsai/service-navigator": {
+    "status": "rejected",
+    "updated_at": "2026-08-28T14:34:43.327043Z",
+    "seen": "2026-10-31"
+  },
+  "gh:techtheist/engram": {
+    "status": "pending",
+    "updated_at": "2026-10-29T14:37:24Z",
+    "seen": "2026-10-31"
+  },
+  "gh:SemanS/kontext": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:39:21Z",
+    "seen": "2026-10-31"
+  },
+  "gh:WYRE-AI/superops-mcp": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:37:43Z",
+    "seen": "2026-10-31"
+  },
+  "gh:PawanSirsat/Laika": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:39:32Z",
+    "seen": "2026-10-31"
+  },
+  "mcp:ae.brainy/grocery-prices": {
+    "status": "rejected",
+    "updated_at": "2026-09-30T10:34:55.977998Z",
+    "seen": "2026-10-31"
+  },
+  "gh:autonomous-ai/openharness": {
+    "status": "pending",
+    "updated_at": "2026-10-29T14:40:38Z",
+    "seen": "2026-10-31"
+  },
+  "gh:homenewstar/agentic-windows-mcp": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:38:29Z",
+    "seen": "2026-10-31"
+  },
+  "mcp:ae.waggle/fenlight": {
+    "status": "rejected",
+    "updated_at": "2026-10-16T04:35:48.176825Z",
+    "seen": "2026-10-31"
+  },
+  "gh:lutzseverino/repo-canon": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:40:27Z",
+    "seen": "2026-10-31"
+  },
+  "mcp:academy.ase/periodic-system": {
+    "status": "rejected",
+    "updated_at": "2026-10-22T20:23:57.545065Z",
+    "seen": "2026-10-31"
+  },
+  "gh:kajisho5/ffmpeg-skill": {
+    "status": "pending",
+    "updated_at": "2026-10-29T14:37:27Z",
+    "seen": "2026-10-31"
+  },
+  "gh:abmeter/abmeter": {
+    "status": "rejected",
+    "updated_at": "2026-04-19T18:11:04.905549Z",
+    "seen": "2026-10-31"
+  },
+  "gh:nexika/nexika": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:27:00Z",
+    "seen": "2026-10-31"
+  },
+  "gh:querysail/querysail-ga4": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:28:27Z",
+    "seen": "2026-10-31"
+  },
+  "gh:ankhorage/devtools": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:37:27Z",
+    "seen": "2026-10-31"
+  },
+  "gh:bks-lab/open-bridge": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:38:30Z",
+    "seen": "2026-10-31"
+  },
+  "gh:noobshole/svalin-agent": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:39:22Z",
+    "seen": "2026-10-31"
+  },
+  "mcp:ae.plantguide/dubai-gardening": {
+    "status": "rejected",
+    "updated_at": "2026-10-07T06:55:35.364125Z",
+    "seen": "2026-10-31"
+  },
+  "gh:qadeer-ux/oh-my-codex-remix": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:21:05Z",
+    "seen": "2026-10-31"
+  },
+  "gh:ajitta/dialectic-skills": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:27:24Z",
+    "seen": "2026-10-31"
+  },
+  "gh:NTLx/ServerFS_MCP": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:40:08Z",
+    "seen": "2026-10-31"
+  },
+  "mcp:ai.actwise/ideation": {
+    "status": "rejected",
+    "updated_at": "2026-08-14T04:14:24.243152Z",
+    "seen": "2026-10-31"
+  },
+  "gh:hqzhon/agent-skills-wiki": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:40:12Z",
+    "seen": "2026-10-31"
+  },
+  "gh:SecPlusDev/verified-security-sweep": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:28:09Z",
+    "seen": "2026-10-31"
+  },
+  "gh:googlarz/suunto-mcp": {
+    "status": "pending",
+    "updated_at": "2026-10-29T14:40:33Z",
+    "seen": "2026-10-31"
+  },
+  "gh:simonmak-ascent/opencode-workbench": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:39:50Z",
+    "seen": "2026-10-31"
+  },
+  "gh:alpic-ai/skybridge": {
+    "status": "pending",
+    "updated_at": "2026-10-29T14:38:49Z",
+    "seen": "2026-10-31"
+  },
+  "gh:nikolanaidenko-eng/clouding-bar": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:35:36Z",
+    "seen": "2026-10-31"
+  },
+  "mcp:ai.1court.state/court-directory": {
+    "status": "rejected",
+    "updated_at": "2026-10-21T01:56:14.481942Z",
+    "seen": "2026-10-31"
+  },
+  "gh:menaker/adtest-mcp": {
+    "status": "rejected",
+    "updated_at": "2026-09-01T21:42:48.138341Z",
+    "seen": "2026-10-31"
+  },
+  "gh:modelcontextprotocol/registry": {
+    "status": "pending",
+    "updated_at": "2026-09-07T21:23:32.359958Z",
+    "seen": "2026-10-31"
+  },
+  "gh:CreativeAiTech/FuriousAISkill": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:38:32Z",
+    "seen": "2026-10-31"
+  },
+  "gh:ggbondpromax666/humanize-writing-skill": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:40:06Z",
+    "seen": "2026-10-31"
+  },
+  "gh:goji-agency/goji-mcp": {
+    "status": "rejected",
+    "updated_at": "2026-08-13T13:12:26.047978Z",
+    "seen": "2026-10-31"
+  },
+  "gh:mblauberg/provenant": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:39:35Z",
+    "seen": "2026-10-31"
+  },
+  "gh:fainir/conductor": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:23:21Z",
+    "seen": "2026-10-31"
+  },
+  "gh:GeneralD/jam": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:23:20Z",
+    "seen": "2026-10-31"
+  },
+  "mcp:ai.adrails/adrails": {
+    "status": "rejected",
+    "updated_at": "2026-10-03T17:44:39.042634Z",
+    "seen": "2026-10-31"
+  },
+  "gh:dean-matt/claude-skills": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:20:19Z",
+    "seen": "2026-10-31"
+  },
+  "gh:juzorei/game-re-skills": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:37:49Z",
+    "seen": "2026-10-31"
+  },
+  "gh:niksavis/basicly": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:38:04Z",
+    "seen": "2026-10-31"
+  },
+  "gh:linny006/trending-claude-skills": {
+    "status": "pending",
+    "updated_at": "2026-10-29T14:30:17Z",
+    "seen": "2026-10-31"
+  },
+  "gh:iwamot/skills": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:40:16Z",
+    "seen": "2026-10-31"
+  },
+  "gh:Anderson-Gomes-Lab/claude-code-pilotage": {
+    "status": "rejected",
+    "updated_at": "2026-10-29T14:27:21Z",
+    "seen": "2026-10-31"
+  }
+}

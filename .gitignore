@@ -1,2 +1,6 @@
 serve.ps1
 *.zip
+pipeline/data/src2/
+pipeline/data/readmes*/
+pipeline/data/skillssh_raw.json
+pipeline/site/

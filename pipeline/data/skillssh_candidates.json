@@ -1,0 +1,382 @@
+[
+  {
+    "source": "101-skills/superpowers",
+    "installs": 911011,
+    "week": 67895,
+    "top_skill": "ai-video-generation",
+    "skills_n": 26,
+    "official": false,
+    "skills": [
+      "ai-video-generation",
+      "ai-image-generation",
+      "twitter-automation",
+      "ai-avatar-video",
+      "agent-browser",
+      "web-search",
+      "remotion-render",
+      "infsh-cli"
+    ]
+  },
+  {
+    "source": "uizze.sh",
+    "installs": 854029,
+    "week": 106978,
+    "top_skill": "ui-taste",
+    "skills_n": 2,
+    "official": false,
+    "skills": [
+      "ui-taste",
+      "ios-design"
+    ]
+  },
+  {
+    "source": "open.feishu.cn",
+    "installs": 837061,
+    "week": 23873,
+    "top_skill": "lark-doc",
+    "skills_n": 29,
+    "official": false,
+    "skills": [
+      "lark-doc",
+      "lark-base",
+      "lark-drive",
+      "lark-shared",
+      "lark-im",
+      "lark-calendar",
+      "lark-sheets",
+      "lark-approval"
+    ]
+  },
+  {
+    "source": "magentosh/superpowers",
+    "installs": 801105,
+    "week": 201368,
+    "top_skill": "ai-image-generation",
+    "skills_n": 26,
+    "official": false,
+    "skills": [
+      "ai-image-generation",
+      "ai-video-generation",
+      "ai-avatar-video",
+      "twitter-automation",
+      "agent-browser",
+      "web-search",
+      "agent-tools",
+      "remotion-render"
+    ]
+  },
+  {
+    "source": "qu-skills/superpowers",
+    "installs": 593592,
+    "week": 66995,
+    "top_skill": "ai-avatar-video",
+    "skills_n": 26,
+    "official": false,
+    "skills": [
+      "ai-avatar-video",
+      "twitter-automation",
+      "ai-video-generation",
+      "ai-image-generation",
+      "agent-browser",
+      "infsh-cli",
+      "agent-tools",
+      "remotion-render"
+    ]
+  },
+  {
+    "source": "skills-shell/superpowers",
+    "installs": 520622,
+    "week": 67191,
+    "top_skill": "ai-video-generation",
+    "skills_n": 26,
+    "official": false,
+    "skills": [
+      "ai-video-generation",
+      "ai-image-generation",
+      "twitter-automation",
+      "ai-avatar-video",
+      "agent-browser",
+      "python-executor",
+      "remotion-render",
+      "infsh-cli"
+    ]
+  },
+  {
+    "source": "larksuite/cli",
+    "installs": 483101,
+    "week": 5629,
+    "top_skill": "lark-doc",
+    "skills_n": 29,
+    "official": false,
+    "skills": [
+      "lark-doc",
+      "lark-base",
+      "lark-shared",
+      "lark-im",
+      "lark-drive",
+      "lark-sheets",
+      "lark-wiki",
+      "lark-whiteboard"
+    ]
+  },
+  {
+    "source": "supabase/agent-skills",
+    "installs": 467816,
+    "week": 9704,
+    "top_skill": "supabase-postgres-best-practices",
+    "skills_n": 2,
+    "official": true,
+    "skills": [
+      "supabase-postgres-best-practices",
+      "supabase"
+    ]
+  },
+  {
+    "source": "its-a-skill-issue/superpowers",
+    "installs": 441911,
+    "week": 67113,
+    "top_skill": "ai-image-generation",
+    "skills_n": 26,
+    "official": false,
+    "skills": [
+      "ai-image-generation",
+      "twitter-automation",
+      "ai-avatar-video",
+      "ai-video-generation",
+      "agent-browser",
+      "remotion-render",
+      "web-search",
+      "agent-tools"
+    ]
+  },
+  {
+    "source": "bankai-skills/superpowers",
+    "installs": 426673,
+    "week": 67068,
+    "top_skill": "ai-image-generation",
+    "skills_n": 26,
+    "official": false,
+    "skills": [
+      "ai-image-generation",
+      "ai-avatar-video",
+      "ai-video-generation",
+      "twitter-automation",
+      "agent-browser",
+      "python-executor",
+      "web-search",
+      "infsh-cli"
+    ]
+  },
+  {
+    "source": "gencraft-labs/skills",
+    "installs": 353755,
+    "week": 97074,
+    "top_skill": "ai-music",
+    "skills_n": 5,
+    "official": false,
+    "skills": [
+      "ai-music",
+      "video-edit",
+      "ai-video-generation",
+      "ai-image-generation",
+      "image-to-video"
+    ]
+  },
+  {
+    "source": "shadcn/ui",
+    "installs": 271099,
+    "week": 0,
+    "top_skill": "shadcn",
+    "skills_n": 2,
+    "official": false,
+    "skills": [
+      "shadcn",
+      "migrate-radix-to-base"
+    ]
+  },
+  {
+    "source": "wind-alice/alicemarket",
+    "installs": 230040,
+    "week": 10969,
+    "top_skill": "wind-mcp-skill",
+    "skills_n": 3,
+    "official": false,
+    "skills": [
+      "wind-mcp-skill",
+      "wind-find-finance-skill",
+      "wind-alice"
+    ]
+  },
+  {
+    "source": "microsoft/playwright-cli",
+    "installs": 202438,
+    "week": 7772,
+    "top_skill": "playwright-cli",
+    "skills_n": 2,
+    "official": true,
+    "skills": [
+      "playwright-cli",
+      "dev"
+    ]
+  },
+  {
+    "source": "firebase/agent-skills",
+    "installs": 178376,
+    "week": 3685,
+    "top_skill": "firebase-basics",
+    "skills_n": 22,
+    "official": true,
+    "skills": [
+      "firebase-basics",
+      "firebase-auth-basics",
+      "firebase-hosting-basics",
+      "firebase-app-hosting-basics",
+      "firebase-data-connect",
+      "firebase-security-rules-auditor",
+      "firebase-ai-logic-basics",
+      "firebase-firestore"
+    ]
+  },
+  {
+    "source": "sentry/dev",
+    "installs": 178240,
+    "week": 5386,
+    "top_skill": "sentry-cli",
+    "skills_n": 1,
+    "official": false,
+    "skills": [
+      "sentry-cli"
+    ]
+  },
+  {
+    "source": "cloudflare/skills",
+    "installs": 143460,
+    "week": 9408,
+    "top_skill": "cloudflare",
+    "skills_n": 22,
+    "official": true,
+    "skills": [
+      "cloudflare",
+      "wrangler",
+      "workers-best-practices",
+      "durable-objects",
+      "web-perf",
+      "agents-sdk",
+      "cloudflare-email-service",
+      "cloudflare-one"
+    ]
+  },
+  {
+    "source": "antibrow/anti-detect-browser-skills",
+    "installs": 143019,
+    "week": 8625,
+    "top_skill": "anti-detect-browser",
+    "skills_n": 3,
+    "official": false,
+    "skills": [
+      "anti-detect-browser",
+      "browser-mcp-agent",
+      "multi-account-isolation"
+    ]
+  },
+  {
+    "source": "shadcn-ui/ui",
+    "installs": 130304,
+    "week": 12253,
+    "top_skill": "shadcn",
+    "skills_n": 2,
+    "official": false,
+    "skills": [
+      "shadcn",
+      "migrate-radix-to-base"
+    ]
+  },
+  {
+    "source": "better-auth/skills",
+    "installs": 128867,
+    "week": 3152,
+    "top_skill": "better-auth-best-practices",
+    "skills_n": 7,
+    "official": true,
+    "skills": [
+      "better-auth-best-practices",
+      "better-auth-security-best-practices",
+      "email-and-password-best-practices",
+      "organization-best-practices",
+      "two-factor-authentication-best-practices",
+      "create-auth-skill",
+      "create-auth"
+    ]
+  },
+  {
+    "source": "browser-act/skills",
+    "installs": 108337,
+    "week": 57,
+    "top_skill": "browser-act",
+    "skills_n": 2,
+    "official": false,
+    "skills": [
+      "browser-act",
+      "browser-act-skill-forge"
+    ]
+  },
+  {
+    "source": "liarjsdev/liarjs-skills",
+    "installs": 108096,
+    "week": 8467,
+    "top_skill": "browser-fingerprint-audit",
+    "skills_n": 4,
+    "official": false,
+    "skills": [
+      "browser-fingerprint-audit",
+      "playwright-stealth-verify",
+      "fingerprint-ci-gate",
+      "fingerprint-failure-triage"
+    ]
+  },
+  {
+    "source": "solana-foundation/solana-dev-skill",
+    "installs": 104733,
+    "week": 4246,
+    "top_skill": "solana-dev",
+    "skills_n": 1,
+    "official": false,
+    "skills": [
+      "solana-dev"
+    ]
+  },
+  {
+    "source": "firecrawl/cli",
+    "installs": 103736,
+    "week": 535,
+    "top_skill": "firecrawl",
+    "skills_n": 14,
+    "official": true,
+    "skills": [
+      "firecrawl",
+      "firecrawl-search",
+      "firecrawl-scrape",
+      "firecrawl-agent",
+      "firecrawl-crawl",
+      "firecrawl-map",
+      "firecrawl-download",
+      "firecrawl-interact"
+    ]
+  },
+  {
+    "source": "stripe/ai",
+    "installs": 100305,
+    "week": 2408,
+    "top_skill": "stripe-best-practices",
+    "skills_n": 6,
+    "official": true,
+    "skills": [
+      "stripe-best-practices",
+      "upgrade-stripe",
+      "stripe-projects",
+      "stripe-directory",
+      "connect-recommend",
+      "stripe-docs"
+    ]
+  }
+]

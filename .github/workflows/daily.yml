@@ -1,0 +1,32 @@
+name: daily-update
+# 매일 05:00 KST(20:00 UTC): 깃허브 별·skills.sh 설치 수·쇼츠·신규 후보 갱신 → catalog.json/news.json 커밋 → Pages 자동 반영
+on:
+  schedule:
+    - cron: "0 20 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: daily-update
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: windows-latest   # 스크립트가 Windows 경로(data\...)를 쓴다
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - name: 파이프라인 실행
+        shell: pwsh
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: pwsh -NoProfile -File pipeline/run-daily.ps1
+      - name: 변경분 커밋
+        shell: pwsh
+        run: |
+          git config user.name "klik-bot"
+          git config user.email "klik-bot@users.noreply.github.com"
+          git add catalog.json news.json pipeline/data/*.json
+          if (git diff --cached --quiet) { Write-Host "변경 없음"; exit 0 }
+          $n = (git diff --cached --numstat | Measure-Object).Count
+          git commit -m "자동 갱신 $(Get-Date -Format 'yyyy-MM-dd') (파일 $n개)"
+          git push
