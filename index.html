@@ -472,7 +472,7 @@ html.head-c .sheet-head .cm-rate { display:inline-flex; margin:10px 14px 0 0; ve
   <div class="cm-feed" id="cm-feed" hidden aria-label="지금 대화 중"></div>
   <section data-sec="md">
     <div class="sec-head">
-      <div><h2>딸깍 편집팀 추천</h2><p>"그래서 뭘 깔아야 돼?"에 대한 답. 편집팀이 직접 써 보고 고른 것만.</p></div>
+      <div><h2>Claude를 10배 똑똑하게 만드는 필수 도구</h2><p>딸깍 편집팀이 전부 직접 깔아 보고 고른 것만. 처음이면 이것부터.</p></div>
     </div>
     <div class="rank" id="rank-md"></div>
   </section>
@@ -755,7 +755,7 @@ function renderRank() {
   $("#rank").innerHTML = top.map(({it, n},i)=>`<button data-open="${it.id}"><span class="n">${i+1}</span><span class="t"><b>${esc(it.name)}</b><span>${esc(it.one)}</span></span><span class="d">${fmt(n)}회</span></button>`).join("");
   // MD 추천: 편집팀 픽 + 추천 이유 한 줄
   const md = ITEMS.filter(it => it.pick).slice(0, 8);
-  const mdEl = $("#rank-md"); if (mdEl) mdEl.innerHTML = md.map((it,i)=>`<button data-open="${it.id}"><span class="n">${i+1}</span><span class="t"><b>${esc(it.name)}</b><span>${esc(it.pick)}</span></span><span class="d">MD</span></button>`).join("");
+  const mdEl = $("#rank-md"); if (mdEl) mdEl.innerHTML = md.map((it,i)=>`<button data-open="${it.id}"><span class="n">${i+1}</span><span class="t"><b>${esc(it.name)}</b><span>${esc(it.pick)}</span></span><span class="d">필수</span></button>`).join("");
   // 깃허브 별 순위: 같은 저장소(예: anthropics/skills의 문서 스킬 4종)는 한 번만 센다
   const seen = new Set();
   const gh = [...ITEMS].filter(it => it.stars > 0).sort((a,b)=>b.stars-a.stars).filter(it => { const k = (it.repo||it.id).toLowerCase(); if (seen.has(k)) return false; seen.add(k); return true; }).slice(0, 9);
@@ -777,7 +777,7 @@ function renderGrid() {
   const cards = list.map(it => `
     <div class="card" role="button" tabindex="0" data-open="${it.id}">
       ${win(it.color)}
-      <div class="badge-row">${it.pick?'<span class="badge md">MD 추천</span>':''}${it.hot?'<span class="badge hot">인기</span>':''}${it.isNew?'<span class="badge new">NEW</span>':''}</div>
+      <div class="badge-row">${it.pick?'<span class="badge md">편집팀 검증</span>':''}${it.hot?'<span class="badge hot">인기</span>':''}${it.isNew?'<span class="badge new">NEW</span>':''}</div>
       <button class="fav" data-fav="${it.id}" aria-pressed="${state.favs.has(it.id)}" aria-label="찜">${state.favs.has(it.id)?'♥':'♡'}</button>
       <div class="cbody">
         <div class="kind"><span class="tag ${it.kind}">${KIND[it.kind]}</span>${it.trust&&TRUST_LABEL[it.trust.grade]?`<span class="tag trust-${it.trust.grade}">${TRUST_LABEL[it.trust.grade]}</span>`:""}${(it.plat||[]).map(p=>`<span>${PLAT[p]}</span>`).join("<span>·</span>")}</div>
@@ -824,7 +824,7 @@ function openDetail(id) {
     <div class="sheet">
       <div class="sheet-head">
         <div>
-          <div class="kind"><span class="tag ${it.kind}">${KIND[it.kind]}</span>${it.trust&&TRUST_LABEL[it.trust.grade]?`<span class="tag trust-${it.trust.grade}">${TRUST_LABEL[it.trust.grade]}</span>`:""}${it.pick?`<span class="badge md" style="position:static;margin-left:4px">MD 추천</span>`:""}<span>${it.plat.map(p=>PLAT[p]).join(" · ")}</span><span>·</span><span>난이도: ${LEVEL_TXT[it.level]}</span></div>
+          <div class="kind"><span class="tag ${it.kind}">${KIND[it.kind]}</span>${it.trust&&TRUST_LABEL[it.trust.grade]?`<span class="tag trust-${it.trust.grade}">${TRUST_LABEL[it.trust.grade]}</span>`:""}${it.pick?`<span class="badge md" style="position:static;margin-left:4px">편집팀 검증</span>`:""}<span>${it.plat.map(p=>PLAT[p]).join(" · ")}</span><span>·</span><span>난이도: ${LEVEL_TXT[it.level]}</span></div>
           <h2>${esc(it.name)} <span class="en" style="font-size:14px;color:var(--muted);font-weight:400">${esc(it.en)}</span></h2>
           <p class="one-line" style="font-size:14px;color:#333">${esc(it.one)}</p>
           ${window.CM ? CM.cardLine(it.id) : ""}
@@ -843,7 +843,7 @@ function openDetail(id) {
         </section>
         <section class="zone">
           <h3>알아보기</h3>
-          ${it.pick?`<div class="md-why" style="margin-bottom:12px"><b>딸깍 편집팀이 추천하는 이유</b>${esc(it.pick)}</div>`:""}
+          ${it.pick?`<div class="md-why" style="margin-bottom:12px"><b>편집팀이 직접 깔아 보고 고른 이유</b>${esc(it.pick)}</div>`:""}
           <div class="blocks">
             <div class="blk"><h4>이게 뭐예요?</h4><p>${esc(it.one)}</p></div>
             <div class="blk"><h4>이런 분께 추천</h4><p>${esc(it.when)}</p></div>
