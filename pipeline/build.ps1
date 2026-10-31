@@ -140,7 +140,7 @@ foreach ($t in $catalog) {
   $name = [string]$t.name; $en = [string]$t.en; $one = [string]$t.one
   $url = "$BASE/tools/$id.html"
   $src = if ($t.sh_url) { [string]$t.sh_url } else { [string]$t.repo }
-  $srcLabel = if ($t.sh_url) { "skills.sh에서 원문 보기" } else { "GitHub 저장소 원문 보기" }
+  $srcLabel = if ($t.sh_url) { "원문(skills.sh) 보기" } else { "원문(깃허브) 보기" }   # 메인 상세 창과 같은 표기
   $catKo = $CAT_KO[[string]$t.cat]; if (-not $catKo) { $catKo = [string]$t.cat }
   $kindKo = $KIND_KO[[string]$t.kind]; if (-not $kindKo) { $kindKo = [string]$t.kind }
   $ld = [ordered]@{ "@context" = "https://schema.org"; "@type" = "SoftwareApplication"; name = $name; alternateName = $en; description = $one; url = [string]$t.repo
@@ -167,7 +167,7 @@ foreach ($t in $catalog) {
   if ($tips.Count) { [void]$sb.Append("<h2>사용 예시</h2>`n<ul>`n"); foreach ($tip in $tips) { [void]$sb.Append("<li>$(esc $tip)</li>`n") }; [void]$sb.Append("</ul>`n") }
   $rk = @($t.readme_ko | Where-Object { $_ })
   if ($rk.Count) {
-    [void]$sb.Append("<h2>원문 설명 한글판</h2>`n")
+    [void]$sb.Append("<h2>$(if ($t.sh_url) { 'skills.sh' } else { '깃허브' }) 원문 설명 한글판</h2>`n")
     foreach ($sec in $rk) { if ($sec.h) { [void]$sb.Append("<h3>$(esc $sec.h)</h3>`n") }; if ($sec.p) { [void]$sb.Append("<p>$(escNl $sec.p)</p>`n") } }
   }
   [void]$sb.Append("<h2>출처</h2>`n<p><a href=`"$(esc $src)`" rel=`"noopener`" target=`"_blank`">$srcLabel</a></p>`n")
