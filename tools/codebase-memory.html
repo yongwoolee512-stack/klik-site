@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>코드 지도 기억 (codebase-memory) (codebase-memory-mcp) 설치법·한글 설명 | 딸깍</title>
+<meta name="description" content="내 저장소의 코드&#183;문서&#183;설정&#183;인프라를 한 장의 관계 지도로 만들어 두고, AI가 매번 파일을 뒤지지 않고 바로 찾게 합니다.">
+<link rel="canonical" href="https://yongwoolee512-stack.github.io/klik-site/tools/codebase-memory.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="딸깍">
+<meta property="og:title" content="코드 지도 기억 (codebase-memory) (codebase-memory-mcp) 설치법·한글 설명">
+<meta property="og:description" content="내 저장소의 코드&#183;문서&#183;설정&#183;인프라를 한 장의 관계 지도로 만들어 두고, AI가 매번 파일을 뒤지지 않고 바로 찾게 합니다.">
+<meta property="og:url" content="https://yongwoolee512-stack.github.io/klik-site/tools/codebase-memory.html">
+<meta property="og:image" content="https://yongwoolee512-stack.github.io/klik-site/media/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../media/favicon.svg" type="image/svg+xml">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"코드 지도 기억 (codebase-memory)","alternateName":"codebase-memory-mcp","description":"내 저장소의 코드·문서·설정·인프라를 한 장의 관계 지도로 만들어 두고, AI가 매번 파일을 뒤지지 않고 바로 찾게 합니다.","url":"https://github.com/DeusData/codebase-memory-mcp","applicationCategory":"개발","operatingSystem":"Claude Code","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+<style>*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}body{margin:0;background:#fff;color:#1d1d1f;font:16px/1.65 -apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Pretendard","Malgun Gothic","Segoe UI",Roboto,sans-serif;word-break:keep-all}
+main{max-width:720px;margin:0 auto;padding:28px 16px 64px}header.top{max-width:720px;margin:0 auto;padding:14px 16px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #e5e5ea}
+a{color:#0b2a6f}.brand{font-weight:800;text-decoration:none;color:#0b2a6f;letter-spacing:-.02em}.meta{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 14px}
+.tag{display:inline-block;padding:3px 10px;border-radius:999px;background:#f2f4f8;color:#0b2a6f;font-size:13px;font-weight:600}
+h1{font-size:30px;line-height:1.25;letter-spacing:-.02em;margin:6px 0 4px}.en{color:#6e6e73;font-size:16px;margin:0 0 14px}.one{font-size:19px;margin:0 0 22px}
+h2{font-size:19px;margin:30px 0 8px;letter-spacing:-.01em}h3{font-size:16px;margin:18px 0 4px}p{margin:0 0 10px}ul{margin:0;padding-left:20px}li{margin:4px 0}
+.cta{display:inline-block;padding:14px 26px;border-radius:999px;background:#0b2a6f;color:#fff;font-weight:700;font-size:17px;text-decoration:none;box-shadow:0 6px 18px rgba(11,42,111,.22)}
+.cta:hover{background:#0a2459}.ctabox{margin:26px 0 8px;padding:20px;border-radius:16px;background:#f5f6fa;text-align:center}.ctabox p{margin:10px 0 0;color:#6e6e73;font-size:14px}
+.stats{display:flex;flex-wrap:wrap;gap:10px 22px;color:#6e6e73;font-size:14px;margin:0 0 4px}.stats b{color:#1d1d1f}
+footer{max-width:720px;margin:0 auto;padding:18px 16px 40px;color:#6e6e73;font-size:13px;border-top:1px solid #e5e5ea}footer a{margin-right:14px}
+@media (max-width:480px){h1{font-size:26px}.one{font-size:17px}.cta{display:block}}</style>
+</head>
+<body>
+<header class="top"><a class="brand" href="../">딸깍</a><a href="../">전체 도구 보기</a></header>
+<main>
+<div class="meta"><span class="tag">MCP</span><span class="tag">개발</span></div>
+<h1>코드 지도 기억 (codebase-memory)</h1>
+<p class="en">codebase-memory-mcp</p>
+<p class="one">내 저장소의 코드&#183;문서&#183;설정&#183;인프라를 한 장의 관계 지도로 만들어 두고, AI가 매번 파일을 뒤지지 않고 바로 찾게 합니다.</p>
+<div class="stats"><span>GitHub ★ <b>47,893</b></span></div>
+<div class="ctabox"><a class="cta" href="../?open=codebase-memory">딸깍에서 한 번에 설치하기</a><p>설치 명령을 복사·실행하는 과정을 딸깍 홈에서 안내합니다.</p></div>
+<h2>이런 분께</h2>
+<p>프로젝트가 커져서 AI가 &#39;어디에 뭐가 있는지&#39; 자꾸 헤매는 분</p>
+<h2>사용 예시</h2>
+<ul>
+<li>&quot;이 함수 누가 호출해?&quot;</li>
+<li>&quot;이 파일 바꾸면 영향 받는 테스트 찾아 줘&quot;</li>
+<li>처음 한 번 색인하면 다음 세션에도 그대로 남아요.</li>
+</ul>
+<h2>깃허브 원문 설명 한글판</h2>
+<h3>이게 뭐예요?</h3>
+<p>소스 코드, 문서, 설정, 인프라를 하나의 영구 로컬 그래프로 연결해 두는 MCP 서버입니다. 코딩 에이전트에게 구조적 맥락을 주는 것이 핵심이고, 순수 C로 만든 백엔드가 17개 MCP 도구를 제공하며 162개 언어&#183;파일 형식을 파싱합니다. 심볼&#183;텍스트&#183;의미 검색을 호출자, 의존성, 코드 조각과 함께 돌려 주어 토큰 사용을 줄입니다.</p>
+<h3>무엇을 연결하나</h3>
+<p>문서 섹션&#183;PDF&#183;아키텍처 결정을 코드에 연결하고, Docker&#183;Kubernetes&#183;Helm&#183;Terraform&#183;Ansible&#183;CI 설정까지 관계를 따라갑니다. 변경 전 영향 받는 심볼과 관련 테스트를 찾아 주고(실험적 Smart CI), 색인은 세션 사이에 유지됩니다. CBM Lens(오픈 베타)라는 시각화 도구가 함께 들어 있어 폴더&#183;파일&#183;심볼의 관계를 지도처럼 봅니다.</p>
+<h3>Claude Code 플러그인으로 설치</h3>
+<p>이 저장소는 플러그인 마켓플레이스이기도 합니다. `claude plugin marketplace add DeusData/codebase-memory-mcp` 뒤 `claude plugin install codebase-memory@codebase-memory`. 플러그인은 MCP 서버만 등록하며 `npx -y codebase-memory-mcp@&lt;버전&gt;`으로 시작하고, 첫 실행 때 npm 패키지를 통해 릴리스 바이너리를 받아 체크섬을 검증합니다. 스킬&#183;에이전트 3종&#183;훅은 별도 `codebase-memory-mcp install`로 넣습니다. 둘을 같이 쓰면 서버가 두 번 돌아가니 하나만 고르세요.</p>
+<h3>안전</h3>
+<p>분석과 그래프 저장은 모두 내 컴퓨터에서 이루어지고 호스팅 서비스가 없습니다. 모든 릴리스를 SLSA 3와 VirusTotal로 검증하고 OpenSSF Scorecard를 공개합니다. CBM Lens의 로컬 모델은 켠 뒤에만 내려받고 추론은 기기 안에서 합니다. MIT 라이선스이며 arXiv 논문이 있습니다.</p>
+<h2>출처</h2>
+<p><a href="https://github.com/DeusData/codebase-memory-mcp" rel="noopener" target="_blank">원문(깃허브) 보기</a></p>
+<p style="margin-top:28px"><a class="cta" href="../?open=codebase-memory">딸깍에서 한 번에 설치하기</a></p>
+</main>
+<footer><a href="../">딸깍 홈</a><a href="../terms.html">이용약관</a><a href="../privacy.html">개인정보</a><span>한글 설명은 딸깍 편집팀이 옮긴 것이며, 도구의 권리는 원저작자에게 있습니다.</span></footer>
+</body>
+</html>

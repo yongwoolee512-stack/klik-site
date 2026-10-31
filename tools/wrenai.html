@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>렌AI (데이터베이스에 말로 질문하기) (WrenAI) 설치법·한글 설명 | 딸깍</title>
+<meta name="description" content="회사 데이터베이스에 &#39;이번 분기 매출 상위 10 고객은?&#39;처럼 물으면 지표 정의를 지키는 SQL을 만들어 답하고, 결과를 공유 가능한 대시보드로 배포합니다.">
+<link rel="canonical" href="https://yongwoolee512-stack.github.io/klik-site/tools/wrenai.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="딸깍">
+<meta property="og:title" content="렌AI (데이터베이스에 말로 질문하기) (WrenAI) 설치법·한글 설명">
+<meta property="og:description" content="회사 데이터베이스에 &#39;이번 분기 매출 상위 10 고객은?&#39;처럼 물으면 지표 정의를 지키는 SQL을 만들어 답하고, 결과를 공유 가능한 대시보드로 배포합니다.">
+<meta property="og:url" content="https://yongwoolee512-stack.github.io/klik-site/tools/wrenai.html">
+<meta property="og:image" content="https://yongwoolee512-stack.github.io/klik-site/media/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../media/favicon.svg" type="image/svg+xml">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"렌AI (데이터베이스에 말로 질문하기)","alternateName":"WrenAI","description":"회사 데이터베이스에 '이번 분기 매출 상위 10 고객은?'처럼 물으면 지표 정의를 지키는 SQL을 만들어 답하고, 결과를 공유 가능한 대시보드로 배포합니다.","url":"https://github.com/Canner/WrenAI","applicationCategory":"데이터·엑셀","operatingSystem":"Claude Code","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+<style>*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}body{margin:0;background:#fff;color:#1d1d1f;font:16px/1.65 -apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Pretendard","Malgun Gothic","Segoe UI",Roboto,sans-serif;word-break:keep-all}
+main{max-width:720px;margin:0 auto;padding:28px 16px 64px}header.top{max-width:720px;margin:0 auto;padding:14px 16px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #e5e5ea}
+a{color:#0b2a6f}.brand{font-weight:800;text-decoration:none;color:#0b2a6f;letter-spacing:-.02em}.meta{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 14px}
+.tag{display:inline-block;padding:3px 10px;border-radius:999px;background:#f2f4f8;color:#0b2a6f;font-size:13px;font-weight:600}
+h1{font-size:30px;line-height:1.25;letter-spacing:-.02em;margin:6px 0 4px}.en{color:#6e6e73;font-size:16px;margin:0 0 14px}.one{font-size:19px;margin:0 0 22px}
+h2{font-size:19px;margin:30px 0 8px;letter-spacing:-.01em}h3{font-size:16px;margin:18px 0 4px}p{margin:0 0 10px}ul{margin:0;padding-left:20px}li{margin:4px 0}
+.cta{display:inline-block;padding:14px 26px;border-radius:999px;background:#0b2a6f;color:#fff;font-weight:700;font-size:17px;text-decoration:none;box-shadow:0 6px 18px rgba(11,42,111,.22)}
+.cta:hover{background:#0a2459}.ctabox{margin:26px 0 8px;padding:20px;border-radius:16px;background:#f5f6fa;text-align:center}.ctabox p{margin:10px 0 0;color:#6e6e73;font-size:14px}
+.stats{display:flex;flex-wrap:wrap;gap:10px 22px;color:#6e6e73;font-size:14px;margin:0 0 4px}.stats b{color:#1d1d1f}
+footer{max-width:720px;margin:0 auto;padding:18px 16px 40px;color:#6e6e73;font-size:13px;border-top:1px solid #e5e5ea}footer a{margin-right:14px}
+@media (max-width:480px){h1{font-size:26px}.one{font-size:17px}.cta{display:block}}</style>
+</head>
+<body>
+<header class="top"><a class="brand" href="../">딸깍</a><a href="../">전체 도구 보기</a></header>
+<main>
+<div class="meta"><span class="tag">스킬</span><span class="tag">데이터&#183;엑셀</span></div>
+<h1>렌AI (데이터베이스에 말로 질문하기)</h1>
+<p class="en">WrenAI</p>
+<p class="one">회사 데이터베이스에 &#39;이번 분기 매출 상위 10 고객은?&#39;처럼 물으면 지표 정의를 지키는 SQL을 만들어 답하고, 결과를 공유 가능한 대시보드로 배포합니다.</p>
+<div class="stats"><span>GitHub ★ <b>18,023</b></span></div>
+<div class="ctabox"><a class="cta" href="../?open=wrenai">딸깍에서 한 번에 설치하기</a><p>설치 명령을 복사·실행하는 과정을 딸깍 홈에서 안내합니다.</p></div>
+<h2>이런 분께</h2>
+<p>Postgres 등 실제 데이터베이스를 가진 데이터 담당자&#183;개발자용. 파이썬으로 wrenai CLI를 설치하고 DB 연결을 해야 하므로 비개발자 혼자 쓰기는 어렵습니다</p>
+<h2>사용 예시</h2>
+<ul>
+<li>&quot;Wren으로 내 Postgres 데이터베이스 연결 설정해 줘&quot;</li>
+<li>&quot;이번 달 지역별 주문 건수를 필터 가능한 대시보드로 만들어 줘&quot;</li>
+</ul>
+<h2>깃허브 원문 설명 한글판</h2>
+<h3>이게 뭔가요?</h3>
+<p>오픈소스 생성형 BI(GenBI) 엔진입니다. 내가 이미 쓰는 에이전트(Claude Code, Cursor, MCP 클라이언트 등)에 &#39;통제된 시맨틱 레이어&#39;와 &#39;AI 컨텍스트 레이어&#39;를 붙여, 업무 질문을 정확한 SQL로 바꾸고 결과를 공유 가능한 대시보드로 배포하게 합니다. 스키마가 데이터 위치를 알려 준다면 Wren은 데이터의 의미(승인된 지표 정의, 코드값, 단위, 조인, 예시, 문서&#183;채팅에 묻힌 노하우)를 알려 주며, 전부 내 저장소의 YAML&#183;마크다운 파일로 검토 가능하게 보관됩니다. 22개 이상 데이터 소스를 지원합니다.</p>
+<h3>쓰는 법</h3>
+<p>세 단계입니다. pip install wrenai 로 CLI 설치(postgres 등 커넥터는 추가 옵션), npx skills add Canner/WrenAI 로 약 50줄짜리 안내 스킬 설치(상세 지침은 설치된 CLI 버전에서 가져오므로 항상 버전이 맞음), 프로젝트 폴더에서 &#39;Wren으로 내 Postgres 설정해 줘&#39;라고 요청. DB가 없으면 내장 샘플 jaffle_shop으로 같은 흐름을 체험할 수 있습니다.</p>
+<h3>이후 흐름</h3>
+<p>Know: &#39;raw/ 폴더의 업무 맥락으로 Wren 프로젝트 보강해 줘&#39; → 정의&#183;예시&#183;메모리를 파일로 기록. Generate: &#39;이번 분기 매출 상위 10 고객은?&#39; → 맥락과 과거 질의를 떠올려 통제된 SQL을 쓰고 실행. Deploy: &#39;필터 가능한 대시보드로 Vercel에 배포해 줘&#39; → 브라우저용 앱을 만들어 내 Vercel 또는 Cloudflare Pages 계정에 올리고 URL을 돌려줍니다.</p>
+<h3>주의할 점</h3>
+<p>실제 데이터베이스 연결과 파이썬 환경이 전제라 데이터 담당자&#183;개발자용입니다. 스키마 인식 검색, 사전 계획 검증, 행 수 제한 같은 가드레일로 &#39;자신 있게 틀리는&#39; SQL을 막는 것이 핵심 가치라고 설명합니다.</p>
+<h2>출처</h2>
+<p><a href="https://github.com/Canner/WrenAI" rel="noopener" target="_blank">원문(깃허브) 보기</a></p>
+<p style="margin-top:28px"><a class="cta" href="../?open=wrenai">딸깍에서 한 번에 설치하기</a></p>
+</main>
+<footer><a href="../">딸깍 홈</a><a href="../terms.html">이용약관</a><a href="../privacy.html">개인정보</a><span>한글 설명은 딸깍 편집팀이 옮긴 것이며, 도구의 권리는 원저작자에게 있습니다.</span></footer>
+</body>
+</html>

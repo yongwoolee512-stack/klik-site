@@ -8,7 +8,7 @@ $today = (Get-Date).ToString("yyyy-MM-dd")
 
 $seed = @(Get-Content (Join-Path $root "data\seed.json") -Raw -Encoding UTF8 | ConvertFrom-Json)
 # 편집팀이 고른 커뮤니티 도구(공식 Claude 앱 목록에 없는 것): 등급(trust)을 항목마다 직접 적는다
-foreach ($extra in "seed_community.json", "seed_official.json", "seed_popular.json", "seed_skillssh.json") { $p = Join-Path $root "data\$extra"; if (Test-Path $p) { $seed += @(Get-Content $p -Raw -Encoding UTF8 | ConvertFrom-Json) } }
+foreach ($extra in "seed_community.json", "seed_official.json", "seed_popular.json", "seed_skillssh.json", "seed_night.json") { $p = Join-Path $root "data\$extra"; if (Test-Path $p) { $seed += @(Get-Content $p -Raw -Encoding UTF8 | ConvertFrom-Json) } }
 $auto = Get-Content (Join-Path $root "data\summarized.json") -Raw -Encoding UTF8 | ConvertFrom-Json
 $statePath = Join-Path $root "data\state.json"
 $prev = @{}
@@ -28,7 +28,7 @@ $catalog = @(); $news = @(); $pending = 0; $rejected = 0
 # 편집팀 한글 번역본(readme_ko.json): 값이 문자열이면 다른 항목의 번역을 그대로 쓴다는 뜻 (예: "xlsx": "pptx")
 $rk = @{}
 $rkPath = Join-Path $root "data\readme_ko.json"
-foreach ($f in $rkPath, (Join-Path $root "data\readme_ko_community.json"), (Join-Path $root "data\readme_ko_official.json"), (Join-Path $root "data\readme_ko_popular.json"), (Join-Path $root "data\readme_ko_skillssh.json")) {
+foreach ($f in $rkPath, (Join-Path $root "data\readme_ko_community.json"), (Join-Path $root "data\readme_ko_official.json"), (Join-Path $root "data\readme_ko_popular.json"), (Join-Path $root "data\readme_ko_skillssh.json"), (Join-Path $root "data\readme_ko_night.json")) {
   if (Test-Path $f) { (Get-Content $f -Raw -Encoding UTF8 | ConvertFrom-Json).PSObject.Properties | Where-Object { $_.Name -ne "_doc" } | ForEach-Object { $rk[$_.Name] = $_.Value } }
 }
 # 짧은 영상 링크(videos.json): 사용자가 토스한 유튜브·인스타·틱톡 주소
@@ -105,6 +105,12 @@ $allNews = @($news) + @($oldNews) | Select-Object -First 60
 
 $generatedAt = (Get-Date).ToUniversalTime()
 @{ generated_at = $generatedAt.ToString("o"); count = $catalog.Count; pending = $pending; rejected = $rejected; items = $catalog } | ConvertTo-Json -Depth 8 | Set-Content (Join-Path $site "catalog.json") -Encoding UTF8
+# 도우미용 신뢰 목록(site/trust.json → 사이트 루트): 진열된 도구의 원격 MCP 서버 호스트와 npm 패키지. 도우미는 이 목록에 있는 것만 설치한다.
+$tHosts = @(); $tPkgs = @()
+foreach ($it in $catalog) { $ins = $it.install; if (-not $ins) { continue }
+  if ($ins.url) { try { $tHosts += ([System.Uri]$ins.url).Host } catch {} }
+  if ($ins.kind -eq "mcp" -and $ins.pkg) { $tPkgs += ($ins.pkg -replace '(?<=.)@[^@/]+$', '') } }   # 끝의 @latest·@1.2 버전 꼬리 제거
+@{ generated_at = (Get-Date).ToUniversalTime().ToString("o"); hosts = @($tHosts | Sort-Object -Unique); pkgs = @($tPkgs | Sort-Object -Unique) } | ConvertTo-Json -Depth 3 | Set-Content (Join-Path $site "trust.json") -Encoding UTF8
 $newsJson = if ($allNews) { ConvertTo-Json -InputObject @($allNews) -Depth 4 } else { "[]" }   # 0건이어도 빈 배열 파일을 남긴다
 Set-Content -Path $newsPath -Value $newsJson -Encoding UTF8
 Write-Host "카탈로그: 진열 $($catalog.Count)개 (시드 $($seed.Count) + 자동 $i), 검수 대기 $pending, 보류 $rejected, 새 소식 $($news.Count)건"

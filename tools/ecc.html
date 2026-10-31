@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>올인원 작업 체계 (ECC) (ECC (Everything Claude Code)) 설치법·한글 설명 | 딸깍</title>
+<meta name="description" content="계획 → 테스트 → 구현 → 검토 → 검증 → 기억 → 개선. 이 순서를 AI에게 한 번 깔아 주는 에이전트 71개&#183;스킬 314개 묶음.">
+<link rel="canonical" href="https://yongwoolee512-stack.github.io/klik-site/tools/ecc.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="딸깍">
+<meta property="og:title" content="올인원 작업 체계 (ECC) (ECC (Everything Claude Code)) 설치법·한글 설명">
+<meta property="og:description" content="계획 → 테스트 → 구현 → 검토 → 검증 → 기억 → 개선. 이 순서를 AI에게 한 번 깔아 주는 에이전트 71개&#183;스킬 314개 묶음.">
+<meta property="og:url" content="https://yongwoolee512-stack.github.io/klik-site/tools/ecc.html">
+<meta property="og:image" content="https://yongwoolee512-stack.github.io/klik-site/media/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../media/favicon.svg" type="image/svg+xml">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"올인원 작업 체계 (ECC)","alternateName":"ECC (Everything Claude Code)","description":"계획 → 테스트 → 구현 → 검토 → 검증 → 기억 → 개선. 이 순서를 AI에게 한 번 깔아 주는 에이전트 71개·스킬 314개 묶음.","url":"https://github.com/affaan-m/ECC","applicationCategory":"개발","operatingSystem":"Claude Code","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+<style>*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}body{margin:0;background:#fff;color:#1d1d1f;font:16px/1.65 -apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Pretendard","Malgun Gothic","Segoe UI",Roboto,sans-serif;word-break:keep-all}
+main{max-width:720px;margin:0 auto;padding:28px 16px 64px}header.top{max-width:720px;margin:0 auto;padding:14px 16px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #e5e5ea}
+a{color:#0b2a6f}.brand{font-weight:800;text-decoration:none;color:#0b2a6f;letter-spacing:-.02em}.meta{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 14px}
+.tag{display:inline-block;padding:3px 10px;border-radius:999px;background:#f2f4f8;color:#0b2a6f;font-size:13px;font-weight:600}
+h1{font-size:30px;line-height:1.25;letter-spacing:-.02em;margin:6px 0 4px}.en{color:#6e6e73;font-size:16px;margin:0 0 14px}.one{font-size:19px;margin:0 0 22px}
+h2{font-size:19px;margin:30px 0 8px;letter-spacing:-.01em}h3{font-size:16px;margin:18px 0 4px}p{margin:0 0 10px}ul{margin:0;padding-left:20px}li{margin:4px 0}
+.cta{display:inline-block;padding:14px 26px;border-radius:999px;background:#0b2a6f;color:#fff;font-weight:700;font-size:17px;text-decoration:none;box-shadow:0 6px 18px rgba(11,42,111,.22)}
+.cta:hover{background:#0a2459}.ctabox{margin:26px 0 8px;padding:20px;border-radius:16px;background:#f5f6fa;text-align:center}.ctabox p{margin:10px 0 0;color:#6e6e73;font-size:14px}
+.stats{display:flex;flex-wrap:wrap;gap:10px 22px;color:#6e6e73;font-size:14px;margin:0 0 4px}.stats b{color:#1d1d1f}
+footer{max-width:720px;margin:0 auto;padding:18px 16px 40px;color:#6e6e73;font-size:13px;border-top:1px solid #e5e5ea}footer a{margin-right:14px}
+@media (max-width:480px){h1{font-size:26px}.one{font-size:17px}.cta{display:block}}</style>
+</head>
+<body>
+<header class="top"><a class="brand" href="../">딸깍</a><a href="../">전체 도구 보기</a></header>
+<main>
+<div class="meta"><span class="tag">플러그인</span><span class="tag">개발</span></div>
+<h1>올인원 작업 체계 (ECC)</h1>
+<p class="en">ECC (Everything Claude Code)</p>
+<p class="one">계획 → 테스트 → 구현 → 검토 → 검증 → 기억 → 개선. 이 순서를 AI에게 한 번 깔아 주는 에이전트 71개&#183;스킬 314개 묶음.</p>
+<div class="stats"><span>GitHub ★ <b>293,769</b></span><span>skills.sh 설치 <b>8,905</b>회</span></div>
+<div class="ctabox"><a class="cta" href="../?open=ecc">딸깍에서 한 번에 설치하기</a><p>설치 명령을 복사·실행하는 과정을 딸깍 홈에서 안내합니다.</p></div>
+<h2>이런 분께</h2>
+<p>매 프롬프트마다 &#39;먼저 계획 세우고, 테스트 짜고...&#39;를 반복해서 시키는 게 지친 분</p>
+<h2>사용 예시</h2>
+<ul>
+<li>설치 뒤 `/ecc:configure-ecc`로 훅 수준을 바꿀 수 있어요.</li>
+<li>플러그인과 수동 설치(install.sh)를 겹쳐 깔지 마세요.</li>
+<li>스킬이 매우 많으니 처음엔 기본 설정 그대로 써 보세요.</li>
+</ul>
+<h2>깃허브 원문 설명 한글판</h2>
+<h3>이게 뭐예요?</h3>
+<p>ECC(Everything Claude Code)는 에이전트에게 조율된 공학 작업 체계를 깔아 주는 묶음입니다. 만들기 전에 계획하고, 테스트로 검증하고, 새 컨텍스트에서 자기 작업을 검토하고, 중요한 것을 기억하고, 반복되는 성공을 재사용 스킬로 바꿉니다. 매 프롬프트에 이 과정을 다시 쓰는 대신 한 번 설치해 두는 것입니다. MIT 라이선스입니다.</p>
+<h3>들어 있는 것</h3>
+<p>에이전트 71개(계획&#183;검토&#183;빌드 복구&#183;보안&#183;아키텍처), 스킬 314개(TDD&#183;리서치&#183;보안&#183;문서&#183;프런트엔드&#183;데이터&#183;ML&#183;운영), 명령 98개, 훅과 메모리(세션 요약&#183;지속 학습&#183;컨텍스트 제어), 선택형 규칙 팩, 그리고 프롬프트&#183;훅&#183;MCP 설정&#183;권한&#183;비밀을 스캔하는 AgentShield가 포함됩니다.</p>
+<h3>설치</h3>
+<p>권장은 `npx ecc-universal@2.2.3 setup` 안내형 설치(Node 18 이상, Git, Claude Code 2.1 이상 필요). Claude Code 안에서 `/plugin marketplace add https://github.com/affaan-m/ECC` → `/plugin install ecc@ecc`로도 같은 ecc@ecc 플러그인이 깔립니다. 둘 중 하나만 쓰고 수동 설치(install.sh)를 겹치지 마세요. 설치 뒤 `/ecc:configure-ecc`로 재설정합니다.</p>
+<h3>주의</h3>
+<p>README는 깃허브 저장소와 npm ecc-universal&#183;ecc-agentshield 등 공식 채널에서만 설치하라고 경고합니다. Claude Code 플러그인은 rules를 배포할 수 없어 원하는 규칙 팩(rules/common + 쓰는 언어 하나)만 저장소에서 복사합니다. 진단은 자동 업로드되지 않습니다.</p>
+<h2>출처</h2>
+<p><a href="https://github.com/affaan-m/ECC" rel="noopener" target="_blank">원문(깃허브) 보기</a></p>
+<p style="margin-top:28px"><a class="cta" href="../?open=ecc">딸깍에서 한 번에 설치하기</a></p>
+</main>
+<footer><a href="../">딸깍 홈</a><a href="../terms.html">이용약관</a><a href="../privacy.html">개인정보</a><span>한글 설명은 딸깍 편집팀이 옮긴 것이며, 도구의 권리는 원저작자에게 있습니다.</span></footer>
+</body>
+</html>

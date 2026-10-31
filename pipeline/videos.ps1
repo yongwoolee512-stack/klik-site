@@ -7,7 +7,7 @@ $UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/130 S
 $PerTool = 3
 
 $seed = @(Get-Content (Join-Path $root "data\seed.json") -Raw -Encoding UTF8 | ConvertFrom-Json)
-foreach ($extra in "seed_community.json", "seed_official.json", "seed_popular.json", "seed_skillssh.json") { $cp = Join-Path $root "data\$extra"; if (Test-Path $cp) { $seed += @(Get-Content $cp -Raw -Encoding UTF8 | ConvertFrom-Json) } }
+foreach ($extra in "seed_community.json", "seed_official.json", "seed_popular.json", "seed_skillssh.json", "seed_night.json") { $cp = Join-Path $root "data\$extra"; if (Test-Path $cp) { $seed += @(Get-Content $cp -Raw -Encoding UTF8 | ConvertFrom-Json) } }
 $outPath = Join-Path $root "data\videos_auto.json"
 $prev = @{}; if (Test-Path $outPath) { (Get-Content $outPath -Raw -Encoding UTF8 | ConvertFrom-Json).PSObject.Properties | ForEach-Object { $prev[$_.Name] = $_.Value } }
 

@@ -7,7 +7,7 @@ $root = Split-Path -Parent $MyInvocation.MyCommand.Path
 $today = (Get-Date).ToString("yyyy-MM-dd")
 
 $seed = @(Get-Content (Join-Path $root "data\seed.json") -Raw -Encoding UTF8 | ConvertFrom-Json)
-foreach ($extra in "seed_community.json", "seed_official.json", "seed_popular.json", "seed_skillssh.json") { $cp = Join-Path $root "data\$extra"; if (Test-Path $cp) { $seed += @(Get-Content $cp -Raw -Encoding UTF8 | ConvertFrom-Json) } }
+foreach ($extra in "seed_community.json", "seed_official.json", "seed_popular.json", "seed_skillssh.json", "seed_night.json") { $cp = Join-Path $root "data\$extra"; if (Test-Path $cp) { $seed += @(Get-Content $cp -Raw -Encoding UTF8 | ConvertFrom-Json) } }
 
 $headers = @{ "Accept" = "application/vnd.github+json"; "User-Agent" = "klik-pipeline" }
 if ($env:GITHUB_TOKEN) { $headers["Authorization"] = "Bearer $env:GITHUB_TOKEN" }   # GitHub Actions

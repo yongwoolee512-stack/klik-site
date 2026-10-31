@@ -8,7 +8,7 @@ if ($env:GITHUB_TOKEN) { $UA["Authorization"] = "Bearer $env:GITHUB_TOKEN" }
 else { try { $cred = "protocol=https`nhost=github.com`n`n" | git credential fill 2>$null; $tok = ($cred | ? { $_ -like "password=*" }) -replace '^password=', ''; if ($tok) { $UA["Authorization"] = "Bearer $tok" } } catch {} }
 
 $have = @{}
-foreach ($f in "seed.json","seed_community.json","seed_official.json","seed_popular.json","seed_skillssh.json") { $p = Join-Path $root "data\$f"; if (Test-Path $p) { (Get-Content $p -Raw -Encoding UTF8 | ConvertFrom-Json) | % { if ($_.repo -match 'github\.com/([^/]+/[^/#?]+)') { $have[$Matches[1].ToLower()] = $true } } } }
+foreach ($f in "seed.json","seed_community.json","seed_official.json","seed_popular.json","seed_skillssh.json", "seed_night.json") { $p = Join-Path $root "data\$f"; if (Test-Path $p) { (Get-Content $p -Raw -Encoding UTF8 | ConvertFrom-Json) | % { if ($_.repo -match 'github\.com/([^/]+/[^/#?]+)') { $have[$Matches[1].ToLower()] = $true } } } }
 
 $all = @{}
 Get-ChildItem (Join-Path $root "data\src2") -Filter "gh_q*.json" | % {

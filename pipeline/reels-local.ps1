@@ -12,7 +12,8 @@ if ($LASTEXITCODE) { Write-Warning "reels.py 종료 코드 $LASTEXITCODE" }
 Copy-Item (Join-Path $root "site\catalog.json") (Join-Path $site "catalog.json") -Force
 Copy-Item (Join-Path $root "site\news.json") (Join-Path $site "news.json") -Force
 git -C $site pull -q --no-rebase
-git -C $site add catalog.json news.json sitemap.xml tools pipeline/data/mentions.json pipeline/data/videos_influencer.json pipeline/data/mentions_pending.json pipeline/data/state.json
+Copy-Item (Join-Path $root "site\trust.json") (Join-Path $site "trust.json") -Force
+git -C $site add catalog.json news.json trust.json sitemap.xml tools pipeline/data/mentions.json pipeline/data/videos_influencer.json pipeline/data/mentions_pending.json pipeline/data/state.json
 if (-not (git -C $site diff --cached --quiet)) {
   git -C $site commit -q -m "인플루언서 릴스 읽기 $(Get-Date -Format 'yyyy-MM-dd HH:mm') (자동)"
   git -C $site push -q

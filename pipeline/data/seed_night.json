@@ -1,0 +1,1430 @@
+[
+  {
+    "id": "linkedin-agent",
+    "kind": "plugin",
+    "cat": "marketing",
+    "name": "링크드인 운영 스킬",
+    "en": "LinkedIn agent skill",
+    "one": "링크드인 글·댓글·답글·프로필 수정 초안을 써 주고, AI 티를 지운 뒤 보여 줍니다. 올리는 건 직접.",
+    "when": "링크드인을 꾸준히 운영하고 싶은데 글쓰기가 부담인 분",
+    "level": 1,
+    "color": "#d6dcf0",
+    "repo": "https://github.com/Jakeschincariol/linkedin-agent-skill",
+    "install": {
+      "kind": "plugin",
+      "name": "linkedin-agent@linkedin-agent-skill",
+      "market": "Jakeschincariol/linkedin-agent-skill"
+    },
+    "trust": {
+      "grade": "community",
+      "reasons": [
+        "개인 제작, MIT, 가입·API 키 없음",
+        "자동으로 게시하지 않고 초안만 써 줍니다. 올리기 전 꼭 직접 확인"
+      ]
+    },
+    "tips": [
+      "\"/li-post 이직 소감을 글로 써 줘\"",
+      "\"/li-profile 내 프로필 점수 매기고 고쳐 줘\""
+    ],
+    "added": "2026-10-31",
+    "note": "먼저 voice.md(내 말투 파일)를 채워 두면 결과가 훨씬 자연스러워요."
+  },
+  {
+    "id": "arscontexta",
+    "kind": "plugin",
+    "cat": "docs",
+    "name": "내 생각 정리 시스템 (Ars Contexta)",
+    "en": "Ars Contexta",
+    "one": "대화로 내 일하는 방식을 물어본 뒤, 나에게 맞는 노트 폴더·템플릿·자동 정리 규칙을 통째로 만들어 줍니다.",
+    "when": "메모가 쌓이기만 하고 정리가 안 되는 분. 첫 설정 20분 정도",
+    "level": 2,
+    "color": "#e0d6f0",
+    "repo": "https://github.com/agenticnotetaking/arscontexta",
+    "install": {
+      "kind": "plugin",
+      "name": "arscontexta@agenticnotetaking",
+      "market": "agenticnotetaking/arscontexta"
+    },
+    "trust": {
+      "grade": "community",
+      "reasons": [
+        "개인 제작, MIT",
+        "노트가 전부 내 컴퓨터의 마크다운 파일로 남고 클라우드 없음. 설정 때 토큰을 꽤 씁니다"
+      ]
+    },
+    "tips": [
+      "\"/arscontexta:setup\"",
+      "\"/arscontexta:help\""
+    ],
+    "added": "2026-10-31"
+  },
+  {
+    "id": "pascal-editor",
+    "kind": "plugin",
+    "cat": "design",
+    "name": "3D 건물 편집기 (Pascal)",
+    "en": "Pascal Editor",
+    "one": "방 구조와 가구 배치를 3D로 만들고 검토하는 오픈소스 편집기를 AI가 다루게 해 줍니다.",
+    "when": "집 구조·가구 배치를 그려 보고 싶은 분. Pascal CLI 설치 필요",
+    "level": 2,
+    "color": "#f0e0d6",
+    "repo": "https://github.com/pascalorg/editor",
+    "install": {
+      "kind": "plugin",
+      "name": "pascal-agent-skills@pascal",
+      "market": "pascalorg/editor"
+    },
+    "trust": {
+      "grade": "official",
+      "reasons": [
+        "Pascal 제작팀이 직접 올린 공식 스킬",
+        "로컬 연결은 계정·API 키 없이 동작하고 내 프로젝트를 자동 업로드하지 않습니다"
+      ]
+    },
+    "tips": [
+      "\"이 방에 침대·책상·옷장 배치안 세 개 만들어 줘\"",
+      "\"가구가 문 여는 데 걸리지 않는지 검사해 줘\""
+    ],
+    "added": "2026-10-31",
+    "note": "Pascal CLI를 먼저 설치하고 실행해 둬야 합니다."
+  },
+  {
+    "id": "repomix",
+    "kind": "plugin",
+    "cat": "dev",
+    "name": "코드 한 파일로 묶기 (Repomix)",
+    "en": "Repomix",
+    "one": "프로젝트 전체 코드를 AI가 읽기 좋은 한 파일로 묶어 주고, 비밀번호 같은 민감 정보를 걸러 줍니다.",
+    "when": "개발자. 코드베이스를 다른 AI에 통째로 보여 주고 싶을 때",
+    "level": 3,
+    "color": "#dcdcdc",
+    "repo": "https://github.com/yamadashy/repomix",
+    "install": {
+      "kind": "plugin",
+      "name": "repomix-mcp@repomix",
+      "market": "yamadashy/repomix"
+    },
+    "trust": {
+      "grade": "official",
+      "reasons": [
+        "Repomix 제작자가 올린 공식 플러그인. 깃허브 인기 최상위, MIT",
+        "API 키·비밀번호를 자동 검사해 빼 주지만 결과 파일 공유 전 한 번 더 확인"
+      ]
+    },
+    "tips": [
+      "\"이 저장소를 repomix로 묶어서 요약해 줘\""
+    ],
+    "added": "2026-10-31",
+    "note": "repomix-commands, repomix-explorer 플러그인을 추가로 설치할 수 있어요. Node.js 필요."
+  },
+  {
+    "id": "wshobson-agents",
+    "kind": "plugin",
+    "cat": "dev",
+    "name": "개발 워크플로 모음 (wshobson)",
+    "en": "wshobson/agents",
+    "one": "코드 리뷰·디버깅·깃·테스트 전문 에이전트와 스킬 묶음. 94개 플러그인 중 기본 묶음을 설치합니다.",
+    "when": "개발자. 파이썬·JS 등 언어별 플러그인은 따로 골라 설치",
+    "level": 3,
+    "color": "#d6e4f0",
+    "repo": "https://github.com/wshobson/agents",
+    "install": {
+      "kind": "plugin",
+      "name": "developer-essentials@claude-code-workflows",
+      "market": "wshobson/agents"
+    },
+    "trust": {
+      "grade": "community",
+      "reasons": [
+        "개인 제작, 깃허브 인기 최상위",
+        "플러그인 94개, 에이전트 202개로 범위가 넓어 필요한 것만 설치 권장"
+      ]
+    },
+    "tips": [
+      "\"/plugin install python-development@claude-code-workflows\"",
+      "\"이 PR을 코드 리뷰 에이전트로 검토해 줘\""
+    ],
+    "added": "2026-10-31"
+  },
+  {
+    "id": "trailofbits-skills",
+    "kind": "plugin",
+    "cat": "dev",
+    "name": "보안 감사 스킬 (Trail of Bits)",
+    "en": "Trail of Bits skills",
+    "one": "보안 회사 Trail of Bits가 만든 코드 변경 보안 리뷰·정적 분석·취약점 분석 스킬. 기본으로 변경분 보안 리뷰 플러그인을 설치합니다.",
+    "when": "개발자·보안 담당자. 46개 플러그인 중 필요한 것을 /plugin menu 에서 추가",
+    "level": 3,
+    "color": "#e4e4e4",
+    "repo": "https://github.com/trailofbits/skills",
+    "install": {
+      "kind": "plugin",
+      "name": "differential-review@trailofbits",
+      "market": "trailofbits/skills"
+    },
+    "trust": {
+      "grade": "official",
+      "reasons": [
+        "보안 감사 회사 Trail of Bits 공식 저장소",
+        "분석 결과는 참고용. 실제 보안 판단은 전문가 검토 필요"
+      ]
+    },
+    "tips": [
+      "\"이번 변경분을 보안 관점에서 리뷰해 줘\"",
+      "\"/plugin menu 에서 trailofbits 플러그인 더 보기\""
+    ],
+    "added": "2026-10-31"
+  },
+  {
+    "id": "dotnet-skills",
+    "kind": "plugin",
+    "cat": "dev",
+    "name": ".NET 공식 스킬",
+    "en": "dotnet/skills",
+    "one": "마이크로소프트 .NET 팀이 만든 C#·.NET 개발 스킬과 C# 언어 서버 연동.",
+    "when": ".NET·C# 개발자 전용",
+    "level": 3,
+    "color": "#d6dcf0",
+    "repo": "https://github.com/dotnet/skills",
+    "install": {
+      "kind": "plugin",
+      "name": "dotnet@dotnet-agent-skills",
+      "market": "dotnet/skills"
+    },
+    "trust": {
+      "grade": "official",
+      "reasons": [
+        ".NET 공식 깃허브 조직(dotnet)에서 관리",
+        "데이터·테스트·업그레이드 등 세부 플러그인은 따로 설치"
+      ]
+    },
+    "tips": [
+      "\"이 C# 프로젝트를 .NET 10으로 올려 줘\"",
+      "\"/plugin install dotnet-test@dotnet-agent-skills\""
+    ],
+    "added": "2026-10-31"
+  },
+  {
+    "id": "mobile-mcp",
+    "kind": "plugin",
+    "cat": "dev",
+    "name": "모바일 앱 조작 (Mobile MCP)",
+    "en": "Mobile MCP",
+    "one": "AI가 아이폰·안드로이드 시뮬레이터나 실제 기기를 직접 눌러 보며 앱을 테스트합니다.",
+    "when": "모바일 앱 개발자. Xcode나 Android SDK가 깔려 있어야 함",
+    "level": 3,
+    "color": "#d6ecf5",
+    "repo": "https://github.com/mobile-next/mobile-mcp",
+    "install": {
+      "kind": "plugin",
+      "name": "mobile-mcp@mobile-mcp",
+      "market": "mobile-next/mobile-mcp"
+    },
+    "trust": {
+      "grade": "official",
+      "reasons": [
+        "Mobile Next 팀 공식 저장소, 깃허브 인기 상위",
+        "실제 기기를 조작하므로 연결된 기기에서 어떤 앱을 다루는지 확인하며 쓰기"
+      ]
+    },
+    "tips": [
+      "\"시뮬레이터에서 우리 앱 로그인 흐름 테스트해 줘\"",
+      "\"/mobile-mirror\""
+    ],
+    "added": "2026-10-31"
+  },
+  {
+    "id": "ruflo",
+    "kind": "plugin",
+    "cat": "dev",
+    "name": "에이전트 하네스 (Ruflo)",
+    "en": "Ruflo",
+    "one": "여러 AI 에이전트를 팀처럼 묶어 계획·기억·검증을 맡기는 오케스트레이션 도구. 옛 Claude Flow.",
+    "when": "개발자 전용. 여러 에이전트를 동시에 굴리는 대규모 작업",
+    "level": 3,
+    "color": "#dcd6f5",
+    "repo": "https://github.com/ruvnet/ruflo",
+    "install": {
+      "kind": "plugin",
+      "name": "ruflo-core@ruflo",
+      "market": "ruvnet/ruflo"
+    },
+    "trust": {
+      "grade": "community",
+      "reasons": [
+        "개인(rUv) 제작, 깃허브 인기 최상위, MIT",
+        "MCP 도구 300개 이상으로 매우 무겁고, 모드(mods)는 내 계정 권한으로 돌아가니 코드 확인 후 설치"
+      ]
+    },
+    "tips": [
+      "\"/ruflo\"",
+      "\"ruflo 콘솔 열어 줘\""
+    ],
+    "added": "2026-10-31",
+    "note": "Claude Code 2.1.287 이상 필요. ruflo-console, ruflo-mods 는 선택 설치."
+  },
+  {
+    "id": "aris",
+    "kind": "plugin",
+    "cat": "docs",
+    "name": "자동 연구 보조 (ARIS)",
+    "en": "ARIS (Auto-Research-In-Sleep)",
+    "one": "아이디어 찾기부터 실험·논문 쓰기까지 머신러닝 연구 과정을 스킬로 자동화하고, 다른 모델이 검토합니다.",
+    "when": "ML 연구자·대학원생 전용. Codex 검토 모델 연결 필요",
+    "level": 3,
+    "color": "#f0ead6",
+    "repo": "https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep",
+    "install": {
+      "kind": "plugin",
+      "name": "aris@aris",
+      "market": "wanshuiyin/Auto-claude-code-research-in-sleep"
+    },
+    "trust": {
+      "grade": "community",
+      "reasons": [
+        "개인 제작, 깃허브 인기 상위, 논문 발표됨",
+        "설치 뒤 /aris:setup 으로 Codex 검토 브리지를 등록해야 하고, 외부 모델 사용료가 들 수 있음"
+      ]
+    },
+    "tips": [
+      "\"/aris:setup\"",
+      "\"/aris:idea-discovery\""
+    ],
+    "added": "2026-10-31"
+  },
+  {
+    "id": "dashboard-icons",
+    "kind": "mcp",
+    "cat": "design",
+    "name": "서비스 아이콘 3,400개",
+    "en": "Dashboard Icons MCP",
+    "one": "유명 서비스·앱 로고 3,400개를 찾아 바로 쓸 수 있는 링크(SVG·PNG)로 가져옵니다.",
+    "when": "대시보드·소개 페이지에 서비스 로고가 필요한 분",
+    "level": 1,
+    "color": "#f0d6e4",
+    "repo": "https://github.com/homarr-labs/dashboard-icons",
+    "install": {
+      "kind": "mcp",
+      "name": "dashboard-icons",
+      "transport": "http",
+      "url": "https://dashboardicons.com/api/mcp"
+    },
+    "trust": {
+      "grade": "official",
+      "reasons": [
+        "dashboardicons.com 운영팀(homarr-labs) 공식 서버",
+        "무료, API 키 없음. 아이콘 제출 기능만 로그인 필요"
+      ]
+    },
+    "tips": [
+      "\"노션·슬랙·깃허브 로고 링크 찾아 줘\"",
+      "\"이 docker-compose.yml 서비스마다 아이콘 매칭해 줘\""
+    ],
+    "added": "2026-10-31"
+  },
+  {
+    "id": "financetoolkit",
+    "kind": "mcp",
+    "cat": "data",
+    "name": "재무 분석 도구 (Finance Toolkit)",
+    "en": "Finance Toolkit MCP",
+    "one": "기업 재무제표·비율·시장 지표 500개 이상을 투명한 계산식으로 조회합니다.",
+    "when": "기업 분석·투자 공부하는 분. 투자 조언이 아니라 데이터 도구",
+    "level": 2,
+    "color": "#cfe6d6",
+    "repo": "https://github.com/JerBouma/FinanceToolkit",
+    "install": {
+      "kind": "mcp",
+      "name": "financetoolkit",
+      "transport": "http",
+      "url": "https://financetoolkit.jeroenbouma.com/mcp"
+    },
+    "trust": {
+      "grade": "community",
+      "reasons": [
+        "개인(Jeroen Bouma) 제작, 깃허브 인기 상위",
+        "무료 데이터는 한도가 있고, 투자 판단 책임은 본인"
+      ]
+    },
+    "tips": [
+      "\"애플과 마이크로소프트 최근 5년 PER 비교해 줘\"",
+      "\"반도체 ETF들 수익률·변동성 비교해 줘\""
+    ],
+    "added": "2026-10-31",
+    "login": true
+  },
+  {
+    "id": "mempalace",
+    "kind": "skill",
+    "cat": "work",
+    "name": "멤팰리스 (대화 기억 보관소)",
+    "en": "MemPalace",
+    "one": "Claude와 나눈 대화를 요약하지 않고 원문 그대로 내 컴퓨터에 쌓아 두고, 나중에 \"그때 왜 그렇게 정했지?\" 하면 찾아서 꺼내 줍니다.",
+    "when": "세션이 바뀌면 Claude가 지난 대화를 잊어버려 답답한 분. 파이썬(3.10 이상)이 필요하고 처음에 모델 파일(약 300MB)을 받습니다",
+    "level": 2,
+    "color": "#dcd6f5",
+    "repo": "https://github.com/MemPalace/mempalace",
+    "install": {
+      "kind": "skill",
+      "repo": "MemPalace/mempalace"
+    },
+    "trust": {
+      "grade": "community",
+      "reasons": [
+        "GitHub 별 6만 개, PyPI 공개 패키지. 공식 사이트는 GitHub·PyPI·mempalaceofficial.com 셋뿐이라고 README가 사칭 사이트를 경고",
+        "기본값은 모든 데이터가 내 컴퓨터에만 저장되고 외부로 나가지 않음"
+      ]
+    },
+    "tips": [
+      "\"멤팰리스 설치하고 내 Claude Code 대화 기록을 긁어 넣어 줘\"",
+      "\"지난달에 블로그 톤 어떻게 정했는지 기억 보관소에서 찾아 줘\""
+    ],
+    "added": "2026-10-31"
+  },
+  {
+    "id": "book-to-skill",
+    "kind": "skill",
+    "cat": "docs",
+    "name": "책을 스킬로 (PDF 한 권을 Claude 참고서로)",
+    "en": "book-to-skill",
+    "one": "두꺼운 책·매뉴얼 PDF를 주면 챕터별 요약, 용어집, 핵심 규칙 치트시트로 정리된 '스킬'을 만들어, 이후 \"/책이름 질문\"으로 책 내용에 근거해 답하게 합니다.",
+    "when": "한 번 읽고 잊어버린 책, 회사 매뉴얼, 브랜드 가이드를 Claude가 필요할 때마다 펼쳐 보게 하고 싶은 분. PDF 추출에 파이썬 도구가 필요하며 스캔본은 OCR을 먼저 해야 합니다",
+    "level": 2,
+    "color": "#f0ead6",
+    "repo": "https://github.com/virgiliojr94/book-to-skill",
+    "install": {
+      "kind": "skill",
+      "repo": "virgiliojr94/book-to-skill"
+    },
+    "trust": {
+      "grade": "community",
+      "reasons": [
+        "개인 개발자 저장소지만 GitHub 별 3.6만 개, 영어·러시아어·중국어 문서 제공",
+        "책을 통째로 넣는 것보다 토큰을 24~51배 적게 쓴다고 실측 자료를 공개"
+      ]
+    },
+    "tips": [
+      "\"/book-to-skill ./마케팅책.pdf — 기술서 아니고 글 위주 책이야\"",
+      "\"/마케팅책 고객 인터뷰할 때 피해야 할 질문이 뭐라고 했어?\""
+    ],
+    "added": "2026-10-31"
+  },
+  {
+    "id": "scientific-agent-skills",
+    "kind": "skill",
+    "cat": "data",
+    "name": "과학 연구 스킬 177종 (K-Dense)",
+    "en": "Scientific Agent Skills",
+    "one": "생물·화학·의학·물리·지구과학·데이터 분석까지, 연구용 파이썬 패키지와 100여 개 과학 데이터베이스 쓰는 법을 Claude에 가르치는 177개 스킬 묶음입니다.",
+    "when": "논문·실험 데이터를 다루는 연구자·대학원생용. 파이썬과 각 과학 패키지 설치가 전제라 일반 사용자에겐 무겁습니다. 스킬이 177개라 설치하면 스킬 목록이 아주 길어집니다",
+    "level": 3,
+    "color": "#d6f0e8",
+    "repo": "https://github.com/K-Dense-AI/scientific-agent-skills",
+    "install": {
+      "kind": "skill",
+      "repo": "K-Dense-AI/scientific-agent-skills"
+    },
+    "trust": {
+      "grade": "community",
+      "reasons": [
+        "K-Dense 회사가 공개, GitHub 별 5.5만 개, arXiv 논문(2609.00065)으로 정리됨",
+        "보안 스캔·스킬 테스트가 GitHub Actions로 돌아가고 있음"
+      ]
+    },
+    "tips": [
+      "\"이 RNA-seq 결과 파일 품질 확인하고 유전자별 카운트 표로 정리해 줘\"",
+      "\"PubMed에서 이 주제 최근 논문 찾아서 표로 요약해 줘\"",
+      "177개 중 자주 쓰일 것: Database Lookup(과학 DB 80종 검색), Biopython, RDKit(화학 구조), Scanpy(단일세포), scikit-learn"
+    ],
+    "added": "2026-10-31"
+  },
+  {
+    "id": "gws-cli",
+    "kind": "skill",
+    "cat": "work",
+    "name": "구글 워크스페이스 명령줄 (gws)",
+    "en": "Google Workspace CLI (gws)",
+    "one": "드라이브·Gmail·캘린더·시트·문서를 터미널 한 줄로 다루는 gws 명령어와, Claude가 그 명령을 쓰는 법을 담은 스킬 95개(서비스별 + 활용 레시피)입니다.",
+    "when": "Gmail 정리, 드라이브 파일 검색, 캘린더 일정 추가를 Claude에 맡기고 싶은 분. 단, 구글 클라우드 프로젝트를 만들어 OAuth 인증을 직접 설정해야 해서 개발 경험이 없으면 첫 설정이 어렵습니다",
+    "level": 3,
+    "color": "#d6ecd9",
+    "repo": "https://github.com/googleworkspace/cli",
+    "install": {
+      "kind": "skill",
+      "repo": "googleworkspace/cli"
+    },
+    "trust": {
+      "grade": "community",
+      "reasons": [
+        "googleworkspace GitHub 조직에서 공개하지만 README에 '공식 지원 구글 제품은 아님'이라고 명시, 별 3.2만 개",
+        "인증 정보는 AES-256으로 암호화해 OS 키체인에 저장. v1.0 전이라 바뀔 수 있다고 경고"
+      ]
+    },
+    "tips": [
+      "\"gws로 이번 주 받은 메일 중 첨부파일 있는 것만 목록으로 보여 줘\"",
+      "\"내 드라이브에서 '견적'이 들어간 파일 찾아서 최근 5개 알려 줘\"",
+      "95개 중 핵심: gws-gmail, gws-drive, gws-calendar, gws-sheets, gws-docs (각 서비스 1개씩 골라 설치도 가능)"
+    ],
+    "added": "2026-10-31"
+  },
+  {
+    "id": "guizang-ppt-skill",
+    "kind": "skill",
+    "cat": "docs",
+    "name": "귀장 PPT (브라우저로 넘기는 발표 자료)",
+    "en": "Guizang PPT Skill",
+    "one": "글이나 메모를 주면 좌우로 넘기는 한 파일짜리 HTML 발표 자료를 만들어 줍니다. 잡지 느낌(스타일 A)과 스위스 그리드 느낌(스타일 B) 두 가지 디자인에 발표자 모드까지 있습니다.",
+    "when": "파워포인트 없이 브라우저에서 바로 여는 발표 자료가 필요한 분. 표가 많은 데이터 자료나 여러 사람이 함께 편집할 자료에는 안 맞습니다(제작자 안내)",
+    "level": 2,
+    "color": "#f0e0d6",
+    "repo": "https://github.com/op7418/guizang-ppt-skill",
+    "install": {
+      "kind": "skill",
+      "repo": "op7418/guizang-ppt-skill"
+    },
+    "trust": {
+      "grade": "community",
+      "reasons": [
+        "중국 크리에이터 歸藏(op7418) 개인 저장소, GitHub 별 2.9만 개. 영어 README 제공",
+        "원문이 중국어 중심이라 한국어 결과는 요청할 때 '한국어로'라고 적어 주는 게 안전"
+      ]
+    },
+    "tips": [
+      "\"이 글을 바탕으로 스위스 스타일 PPT 7장 정도로 만들어 줘, 한국어로\"",
+      "\"이 PPT에 발표 메모랑 장당 예상 시간 붙여 주고 발표자 모드로 연습하게 해 줘\""
+    ],
+    "added": "2026-10-31"
+  },
+  {
+    "id": "huashu-design",
+    "kind": "skill",
+    "cat": "design",
+    "name": "화수 디자인 (한 문장으로 시안·PPT·애니메이션)",
+    "en": "Huashu Design",
+    "one": "\"관찰 기록 앱 시안 만들어 줘\" 한 줄로 클릭되는 앱 시안, 편집 가능한 PPTX, 짧은 MP4 애니메이션, 인포그래픽을 뽑습니다. 방향이 막연하면 후보 6장을 먼저 보여 주고 3개를 골라 완성합니다.",
+    "when": "디자이너 없이 제품 시안·발표 자료·소개 영상을 뽑아 보고 싶은 분. 로고·색상 등 브랜드 자료를 주면 결과가 훨씬 좋아진다고 제작자가 말합니다",
+    "level": 2,
+    "color": "#f5d8e4",
+    "repo": "https://github.com/alchaincyf/huashu-design",
+    "install": {
+      "kind": "skill",
+      "repo": "alchaincyf/huashu-design"
+    },
+    "trust": {
+      "grade": "community",
+      "reasons": [
+        "중국 크리에이터 花叔 개인 저장소, GitHub 별 2.8만 개, 2026-05부터 MIT(상업 사용 무료)",
+        "핵심 작업(디자인→렌더→MP4/PDF/PPTX)은 100% 로컬·키 없음. 음성·AI 평가 등 클라우드 기능은 선택이며 본인 키 필요"
+      ]
+    },
+    "tips": [
+      "\"우리 카페 메뉴판 앱 시안 세 방향으로 보여 주고 고르게 해 줘\"",
+      "\"이 발표 원고를 편집 가능한 PPTX로 만들어 줘, 한국어로\""
+    ],
+    "added": "2026-10-31"
+  },
+  {
+    "id": "ego-lite",
+    "kind": "skill",
+    "cat": "auto",
+    "name": "이고 라이트 (AI용 브라우저)",
+    "en": "ego lite (ego-browser)",
+    "one": "Claude가 내 브라우저를 빼앗지 않고 자기만의 '공간(Space)'에서 웹 작업을 하도록 만든 브라우저입니다. 내 로그인 상태를 그대로 쓰면서 나는 내 탭에서 계속 일할 수 있습니다.",
+    "when": "브라우저 자동화를 시켜 두고 그 사이에 나도 웹을 써야 하는 분. macOS·Windows용 앱 설치가 필요하고 리눅스는 아직 안 됩니다",
+    "level": 2,
+    "color": "#d6e4f5",
+    "repo": "https://github.com/citrolabs/ego-lite",
+    "install": {
+      "kind": "skill",
+      "repo": "citrolabs/ego-lite"
+    },
+    "trust": {
+      "grade": "community",
+      "reasons": [
+        "Citro Labs 회사 제품, GitHub 별 2만 개, 한국어 README 제공",
+        "브라우징 데이터는 기기에 남고 수집은 '기본 브라우저 설정 여부' 같은 단순 신호만이라고 README가 밝힘. 크롬 데이터 이전은 선택"
+      ]
+    },
+    "tips": [
+      "\"/ego-browser 네이버 쇼핑에서 이 상품 최저가 5개 찾아서 표로 정리해 줘\"",
+      "\"ego lite 설정해 줘: https://github.com/citrolabs/ego-lite\""
+    ],
+    "added": "2026-10-31"
+  },
+  {
+    "id": "notebooklm-py",
+    "kind": "skill",
+    "cat": "docs",
+    "name": "노트북LM 자동화 (팟캐스트·퀴즈·슬라이드 뽑기)",
+    "en": "notebooklm-py",
+    "one": "구글 NotebookLM(제미나이 노트북)에 자료를 넣고 오디오 요약, 영상, 슬라이드, 퀴즈, 플래시카드, 마인드맵을 만들어 내려받는 일을 Claude가 대신합니다. 웹 화면에 없는 일괄 다운로드도 됩니다.",
+    "when": "NotebookLM을 자주 쓰는데 자료 넣고 결과 내려받는 손품이 귀찮은 분. 파이썬(uv 또는 pipx)과 구글 로그인이 필요하고, 비공식 API라 구글이 바꾸면 멈출 수 있습니다",
+    "level": 2,
+    "color": "#d6ecf5",
+    "repo": "https://github.com/teng-lin/notebooklm-py",
+    "install": {
+      "kind": "skill",
+      "repo": "teng-lin/notebooklm-py"
+    },
+    "trust": {
+      "grade": "community",
+      "reasons": [
+        "개인 개발자 저장소, MIT, PyPI 공개, GitHub 별 2만 개",
+        "README가 '비공식·문서화되지 않은 구글 API 사용, 언제든 깨질 수 있음'을 명시"
+      ]
+    },
+    "tips": [
+      "\"이 PDF 세 개로 노트북 만들고 한국어 오디오 요약 생성해서 내려받아 줘\"",
+      "\"이 노트북 자료로 어려운 난이도 퀴즈 만들어서 마크다운으로 저장해 줘\""
+    ],
+    "added": "2026-10-31"
+  },
+  {
+    "id": "wrenai",
+    "kind": "skill",
+    "cat": "data",
+    "name": "렌AI (데이터베이스에 말로 질문하기)",
+    "en": "WrenAI",
+    "one": "회사 데이터베이스에 '이번 분기 매출 상위 10 고객은?'처럼 물으면 지표 정의를 지키는 SQL을 만들어 답하고, 결과를 공유 가능한 대시보드로 배포합니다.",
+    "when": "Postgres 등 실제 데이터베이스를 가진 데이터 담당자·개발자용. 파이썬으로 wrenai CLI를 설치하고 DB 연결을 해야 하므로 비개발자 혼자 쓰기는 어렵습니다",
+    "level": 3,
+    "color": "#d6f0dd",
+    "repo": "https://github.com/Canner/WrenAI",
+    "install": {
+      "kind": "skill",
+      "repo": "Canner/WrenAI"
+    },
+    "trust": {
+      "grade": "community",
+      "reasons": [
+        "Canner 회사의 오픈소스, GitHub 별 1.8만 개, PyPI 공개",
+        "스킬 자체는 50줄짜리 안내문이고 상세 지침은 설치된 CLI에서 가져오는 구조"
+      ]
+    },
+    "tips": [
+      "\"Wren으로 내 Postgres 데이터베이스 연결 설정해 줘\"",
+      "\"이번 달 지역별 주문 건수를 필터 가능한 대시보드로 만들어 줘\""
+    ],
+    "added": "2026-10-31"
+  },
+  {
+    "id": "video-shotcraft",
+    "kind": "skill",
+    "cat": "design",
+    "name": "비디오 샷크래프트 (내 화면으로 제품 홍보 영상)",
+    "en": "video-shotcraft",
+    "one": "\"우리 서비스 홍보 영상 만들어 줘\" 하면 실제 웹페이지를 캡처해 150개 연출(샷) 중 골라 스토리보드를 짜고, 코드로 애니메이션을 그려 음악·효과음까지 넣은 MP4를 만듭니다. AI 영상 생성이 아니라 코드로 그려 선명하고 수정 가능합니다.",
+    "when": "제품·서비스 소개 영상을 편집 프로그램 없이 뽑고 싶은 분. Node.js, ffmpeg가 필요하고 macOS에서 테스트됐습니다",
+    "level": 2,
+    "color": "#f0d6e4",
+    "repo": "https://github.com/Vincentwei1021/video-shotcraft",
+    "install": {
+      "kind": "skill",
+      "repo": "Vincentwei1021/video-shotcraft"
+    },
+    "trust": {
+      "grade": "community",
+      "reasons": [
+        "개인 개발자 저장소, GitHub 별 1.5만 개, 영어·중국어·일본어·러시아어 README",
+        "Remotion(오픈소스 영상 라이브러리) 기반. 스폰서 API 광고가 README에 있으나 사용에 필수는 아님"
+      ]
+    },
+    "tips": [
+      "\"video-shotcraft로 우리 서비스 15초 홍보 영상 만들어 줘, Ink Press 템플릿으로\"",
+      "\"spotlight-hero-card 샷 느낌으로 제품 클로즈업 한 장면만 만들어 줘\""
+    ],
+    "added": "2026-10-31"
+  },
+  {
+    "id": "genoffice",
+    "kind": "skill",
+    "cat": "docs",
+    "name": "젠오피스 (무료 AI 오피스 + 문서 명령어)",
+    "en": "GenOffice",
+    "one": "워드·엑셀·파워포인트·PDF를 열고 고치고 저장하는 무료 오피스 앱과, Claude가 그 엔진(genoffice 명령어)으로 진짜 .docx/.xlsx/.pptx 파일을 만들게 하는 스킬입니다.",
+    "when": "MS 오피스 없이 Claude가 만든 결과를 실제 오피스 파일로 받고 싶은 분. GenOffice 앱(Windows·macOS·Linux)을 먼저 설치해야 합니다",
+    "level": 2,
+    "color": "#d6e8f5",
+    "repo": "https://github.com/genspark-ai/genoffice",
+    "install": {
+      "kind": "skill",
+      "repo": "genspark-ai/genoffice"
+    },
+    "trust": {
+      "grade": "community",
+      "reasons": [
+        "Genspark 회사 오픈소스, GitHub 별 1.1만 개, 한국어 README 제공",
+        "파일 열기·수정·변환은 내 컴퓨터에서 처리, 외부로 나가는 건 내가 고른 AI 호출만이라고 명시"
+      ]
+    },
+    "tips": [
+      "\"이 메모를 genoffice로 워드 파일(.docx)로 만들어 줘\"",
+      "\"이 PDF를 엑셀로 변환하고 합계 수식 넣어 줘\""
+    ],
+    "added": "2026-10-31"
+  },
+  {
+    "id": "drawio-skill",
+    "kind": "skill",
+    "cat": "design",
+    "name": "드로우io 다이어그램 (말로 그리는 구조도)",
+    "en": "drawio-skill",
+    "one": "\"주문→결제→배송 흐름도 그려 줘\"라고 하면 편집 가능한 .drawio 도면을 만들고 PNG로 내보낸 뒤 겹침·잘린 글자를 스스로 고칩니다. 화이트보드 사진을 도면으로 바꾸는 기능도 있습니다.",
+    "when": "흐름도·조직도·시스템 구조도를 그림판 없이 뽑고 싶은 분. draw.io 데스크톱 앱(무료, 30 이상 권장)을 먼저 설치해야 합니다",
+    "level": 2,
+    "color": "#d6dcf0",
+    "repo": "https://github.com/Agents365-ai/drawio-skill",
+    "install": {
+      "kind": "skill",
+      "repo": "Agents365-ai/drawio-skill"
+    },
+    "trust": {
+      "grade": "community",
+      "reasons": [
+        "Agents365 조직 저장소, GitHub 별 1만 개, 영어·중국어 문서와 온라인 문서 사이트",
+        "ERD·UML·BPMN·네트워크 등 11종 프리셋, Terraform·K8s·SQL 같은 실제 소스에서도 도면 생성"
+      ]
+    },
+    "tips": [
+      "\"회원가입부터 첫 구매까지 흐름도를 draw.io로 그려 줘\"",
+      "\"이 화이트보드 사진을 편집 가능한 draw.io 도면으로 바꿔 줘\""
+    ],
+    "added": "2026-10-31"
+  },
+  {
+    "id": "antislop",
+    "kind": "skill",
+    "cat": "design",
+    "name": "안티슬롭 (AI 티 나는 디자인·글 걸러내기)",
+    "en": "Anti Slop (antislop-ai)",
+    "one": "AI가 만든 화면·문구·코드에서 흔히 보이는 '어디서 본 듯한 밍밍함'을 걸러내는 규칙 40개와 PASS/FAIL 점검표입니다. 색이나 폰트를 정해 주진 않고, 방향은 내가 쓴 DESIGN.md가 정합니다.",
+    "when": "Claude가 만든 랜딩페이지·문구가 다 비슷비슷해 보여 답답한 분. 스킬 6개(핵심·UI·카피·접근성·모바일·코드) 중 필요한 것만 골라도 됩니다",
+    "level": 2,
+    "color": "#e8e4dc",
+    "repo": "https://github.com/miqdadbadjuber/anti-slop",
+    "install": {
+      "kind": "skill",
+      "repo": "miqdadbadjuber/anti-slop"
+    },
+    "trust": {
+      "grade": "community",
+      "reasons": [
+        "개인 개발자 저장소, GitHub 별 7.6천 개, npm 설치기(antislop-ai)와 skills.sh 등록",
+        "'필터일 뿐 스타일 가이드가 아니다'라고 범위를 분명히 밝힘"
+      ]
+    },
+    "tips": [
+      "\"antislop 켜고(during 모드) 우리 서비스 소개 페이지 만들어 줘\"",
+      "\"이 랜딩페이지를 antislop after 모드로 점검해서 고칠 목록 보여 줘\""
+    ],
+    "added": "2026-10-31"
+  },
+  {
+    "id": "lieflat-charts",
+    "kind": "skill",
+    "cat": "data",
+    "name": "리플랫 차트 (데이터를 잡지 같은 차트로)",
+    "en": "Lieflat Charts",
+    "one": "CSV·표 데이터를 주면 편집 디자인 느낌의 HTML 차트를 만들어 줍니다. 꼼꼼히 읽는 '루피', 10초에 파악하는 '글랜스', 익숙한 기본형 세 가지 스타일과 흑백·청자색·녹색·빨강 색 세트가 있습니다.",
+    "when": "보고서·블로그·발표에 넣을 차트가 엑셀 기본형보다 예쁘길 바라는 분. 요청하면 차트 PPT(HTML)나 한 장짜리 리포트도 만듭니다",
+    "level": 2,
+    "color": "#f3d9c4",
+    "repo": "https://github.com/larashero3-dotcom/lieflat-charts",
+    "install": {
+      "kind": "skill",
+      "repo": "larashero3-dotcom/lieflat-charts"
+    },
+    "trust": {
+      "grade": "community",
+      "reasons": [
+        "중국 크리에이터 '躺在废墟里' 개인 저장소, GitHub 별 6.5천 개, 영어 README 제공",
+        "템플릿 49종 + 색 프리셋 3세트, Chart.js·ECharts·수제 SVG 기반"
+      ]
+    },
+    "tips": [
+      "\"이 주간 매출 CSV를 Glance 스타일 차트로 만들어 줘, 10초 안에 순위랑 변화가 보이게\"",
+      "\"이 설문 결과를 블로그용 한국어 차트 4장으로 만들어 줘\""
+    ],
+    "added": "2026-10-31"
+  },
+  {
+    "id": "gamedev-agent-skills",
+    "kind": "skill",
+    "cat": "dev",
+    "name": "게임 개발 스킬 77종 (Godot·Unity·Unreal)",
+    "en": "awesome-gamedev-agent-skills",
+    "one": "Godot·Unity·Unreal·Phaser·three.js 등 12개 엔진의 게임 개발 노하우 77개와, 내 프로젝트 엔진을 알아채서 맞는 스킬만 불러오는 '라우터'를 설치합니다.",
+    "when": "개발자용. 게임 엔진 프로젝트가 이미 있는 분이 \"더블 점프 넣어 줘\"처럼 말할 때 쓰입니다. 77개 스킬이 설치되니 게임 개발을 안 하면 받지 마세요",
+    "level": 3,
+    "color": "#e0d6f0",
+    "repo": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills",
+    "install": {
+      "kind": "skill",
+      "repo": "gamedev-skills/awesome-gamedev-agent-skills"
+    },
+    "trust": {
+      "grade": "community",
+      "reasons": [
+        "gamedev-skills 조직 저장소, GitHub 별 6.1천 개, 각 스킬이 공식 문서 기반이고 엔진 버전을 명시",
+        "검증 스크립트로 스킬 형식을 점검, Claude 플러그인 마켓으로도 설치 가능"
+      ]
+    },
+    "tips": [
+      "\"내 Godot 플레이어에 더블 점프 추가해 줘\"",
+      "\"Unity RPG용 인벤토리 만들어 줘\"",
+      "77개 중 자주 쓰일 것: godot-2d-movement, unity-scriptableobjects, create-game-assets(픽셀 아트 에셋), save-systems, itch-publish"
+    ],
+    "added": "2026-10-31"
+  },
+  {
+    "id": "antfu-skills",
+    "kind": "skill",
+    "cat": "dev",
+    "name": "앤서니 푸 스킬 (Vue·Vite 생태계 개발 습관)",
+    "en": "Anthony Fu's Skills",
+    "one": "Vue·Vite·Vitest 핵심 개발자 Anthony Fu의 작업 습관(eslint·pnpm 설정, PR 작성법, 이슈 정리, 코드 단순화)과 Vue·Nuxt·Pinia·Vite 공식 문서에서 뽑은 스킬 묶음입니다.",
+    "when": "개발자용, 특히 Vue/Nuxt 프로젝트를 하는 분. 제작자 스스로 '실험 단계이며 성능을 충분히 검증하지 못했다'고 밝힙니다",
+    "level": 3,
+    "color": "#cfe6d6",
+    "repo": "https://github.com/antfu/skills",
+    "install": {
+      "kind": "skill",
+      "repo": "antfu/skills"
+    },
+    "trust": {
+      "grade": "community",
+      "reasons": [
+        "Vue 코어팀·Vite 팀의 Anthony Fu 개인 저장소, GitHub 별 6천 개",
+        "README가 '개념 증명(proof-of-concept) 프로젝트'라고 명시"
+      ]
+    },
+    "tips": [
+      "\"antfu 스킬 기준으로 이 Nuxt 프로젝트 초기 설정 잡아 줘\"",
+      "\"antfu-simplify로 이 PR에서 꼭 필요한 코드만 남겨 줘\""
+    ],
+    "added": "2026-10-31"
+  },
+  {
+    "id": "anti-slop-oxlint",
+    "kind": "skill",
+    "cat": "dev",
+    "name": "안티슬롭 린트 규칙 (TypeScript 코드용)",
+    "en": "anti-slop (dmmulroy, Oxlint rules)",
+    "one": "AI가 짜는 TypeScript/JavaScript에서 흔한 '근거 없는 형 단언', '불필요한 filter→map 중복' 같은 패턴을 거부하는 Oxlint 규칙 세트를 내 프로젝트에 복사해 설정해 주는 스킬입니다.",
+    "when": "개발자용. Oxlint를 쓰는 TypeScript 프로젝트에서만 의미가 있고, 제작자 취향이 강하게 반영된 규칙이라 팀 기준에 맞게 고쳐 쓰라고 안내합니다",
+    "level": 3,
+    "color": "#dcdcdc",
+    "repo": "https://github.com/dmmulroy/anti-slop",
+    "install": {
+      "kind": "skill",
+      "repo": "dmmulroy/anti-slop"
+    },
+    "trust": {
+      "grade": "community",
+      "reasons": [
+        "개인 개발자(dmmulroy) 저장소, GitHub 별 5.8천 개, skills.sh 등록",
+        "npm 패키지가 아니라 '복사해서 내 것으로 만드는(vendored)' 방식임을 명시"
+      ]
+    },
+    "tips": [
+      "\"이 저장소에 anti-slop 린트 규칙 설치하고 설정해 줘\"",
+      "\"로컬 수정은 유지하면서 anti-slop 최신 버전으로 업데이트해 줘\""
+    ],
+    "added": "2026-10-31"
+  },
+  {
+    "id": "baoyu-design",
+    "kind": "skill",
+    "cat": "design",
+    "name": "바오위 디자인 (Claude 디자인 도구를 내 컴퓨터에서)",
+    "en": "baoyu-design",
+    "one": "claude.ai의 슬라이드·디자인 캔버스·디자인 시스템·대시보드 아티팩트를 내 컴퓨터의 Claude Code에서 만들고, 각각 전용 편집기에서 고쳐 PDF·PPT·PNG로 내보냅니다.",
+    "when": "슬라이드·화면 시안·데이터 대시보드를 Claude Code에서 만들고 편집기로 다듬고 싶은 분. Node.js 20 이상(대시보드는 22 이상)이 필요합니다",
+    "level": 2,
+    "color": "#f5e2cf",
+    "repo": "https://github.com/JimLiu/baoyu-design",
+    "install": {
+      "kind": "skill",
+      "repo": "JimLiu/baoyu-design"
+    },
+    "trust": {
+      "grade": "community",
+      "reasons": [
+        "중국 개발자 宝玉(JimLiu) 개인 저장소, GitHub 별 5.5천 개, 영어·중국어 README",
+        "스킬 5개(claude-slides, claude-design, claude-design-system, claude-dashboard, dataviz)로 구성, 모든 결과물이 내 저장소에 남음"
+      ]
+    },
+    "tips": [
+      "\"/claude-slides 이 기획서로 10장짜리 발표 자료 만들어 줘\"",
+      "\"이 CSV로 필터 가능한 대시보드 만들어 줘\""
+    ],
+    "added": "2026-10-31"
+  },
+  {
+    "id": "task-observer",
+    "kind": "skill",
+    "cat": "work",
+    "name": "태스크 옵저버 (내 스킬을 스스로 키우는 메타 스킬)",
+    "en": "task-observer (One Skill to Rule Them All)",
+    "one": "내가 일하는 걸 옆에서 지켜보다가 '이건 스킬로 만들면 좋겠다', '이 스킬은 이렇게 고치면 좋겠다'를 기록하고 제안합니다. 자기 자신도 관찰해 개선합니다.",
+    "when": "스킬을 여러 개 쓰는데 손봐야 할 때마다 막막한 분. 설치만으론 잘 안 켜져서 CLAUDE.md에 활성화 문구를 넣어야 한다고 제작자가 강조합니다",
+    "level": 2,
+    "color": "#ececec",
+    "repo": "https://github.com/rebelytics/one-skill-to-rule-them-all",
+    "install": {
+      "kind": "skill",
+      "repo": "rebelytics/one-skill-to-rule-them-all"
+    },
+    "trust": {
+      "grade": "community",
+      "reasons": [
+        "Rebelytics(개인) 저장소, GitHub 별 3.7천 개, skills.sh 설치 1.3만 건, 기여자 100명 이상",
+        "제작자 본인 스킬 84개에서 관찰 1,900건을 쌓아 개선했다고 밝힘"
+      ]
+    },
+    "tips": [
+      "\"task-observer 활성화 문구를 내 CLAUDE.md에 넣어 줘\"",
+      "\"이번 세션에서 관찰한 스킬 개선 제안 보여 줘\""
+    ],
+    "added": "2026-10-31"
+  },
+  {
+    "id": "oil-ui",
+    "kind": "skill",
+    "cat": "design",
+    "name": "오일 UI (방향 먼저 잡는 화면 디자인)",
+    "en": "Oil UI",
+    "one": "웹사이트·앱·대시보드 화면을 디자인할 때 제품이 뭔지 먼저 파악하고 비슷한 서비스를 참고해 방향 하나를 추천하거나, 요청하면 서로 확실히 다른 여러 안을 나란히 비교 페이지로 보여 줍니다.",
+    "when": "\"깔끔하게\", \"고급스럽게\" 말고 구체적 디자인 결정을 받고 싶은 분. 설치 후 설정 없이 바로 씁니다",
+    "level": 2,
+    "color": "#f0dad6",
+    "repo": "https://github.com/oil-oil/oil-ui",
+    "install": {
+      "kind": "skill",
+      "repo": "oil-oil/oil-ui"
+    },
+    "trust": {
+      "grade": "community",
+      "reasons": [
+        "oil-oil 개인 저장소, GitHub 별 2.5천 개, 영어·중국어 README",
+        "유료 Oil UI Pro가 따로 있으며 둘을 같이 설치하면 충돌한다고 안내(무료판만으로 사용 가능)"
+      ]
+    },
+    "tips": [
+      "\"oil-ui로 이 강의 예약 서비스 디자인 방향 몇 개 잡고 미리볼 페이지 만들어 줘\"",
+      "\"이 홈페이지 검토해서 뭘 바꿔야 하는지 설명해 줘\""
+    ],
+    "added": "2026-10-31"
+  },
+  {
+    "id": "design-dna",
+    "kind": "skill",
+    "cat": "design",
+    "name": "디자인 DNA (마음에 드는 사이트 스타일 추출)",
+    "en": "design-dna",
+    "one": "좋아하는 사이트 스크린샷이나 주소를 주면 색·글꼴·간격·분위기·효과를 JSON으로 뽑아 '디자인 DNA'로 저장하고, 그 DNA에 내 내용을 넣어 비슷한 느낌의 화면을 만들어 줍니다.",
+    "when": "\"저 사이트처럼 만들어 줘\"를 정확하게 전달하고 싶은 분. Node.js(npx)가 필요합니다",
+    "level": 2,
+    "color": "#e2e2f0",
+    "repo": "https://github.com/zanwei/design-dna",
+    "install": {
+      "kind": "skill",
+      "repo": "zanwei/design-dna"
+    },
+    "trust": {
+      "grade": "community",
+      "reasons": [
+        "개인 개발자 저장소, GitHub 별 2천 개, 한국어 README 제공",
+        "분석→JSON→생성 3단계가 분리돼 있어 JSON만 보관·공유해도 됨"
+      ]
+    },
+    "tips": [
+      "\"이 스크린샷 두 장의 디자인 DNA를 JSON으로 뽑아 줘\"",
+      "\"이 DNA JSON으로 우리 동네 빵집 소개 페이지 만들어 줘\""
+    ],
+    "added": "2026-10-31"
+  },
+  {
+    "id": "beautify-github-readme",
+    "kind": "skill",
+    "cat": "dev",
+    "name": "깃허브 README 꾸미기",
+    "en": "beautify-github-readme",
+    "one": "내 GitHub 프로젝트의 README를 프로젝트 가치·실제 사례·설치법·한계가 한눈에 읽히도록 정리하고, 프로젝트 성격에서 끌어낸 대표 이미지(SVG 등)까지 디자인해 줍니다.",
+    "when": "개발자용. 공개 저장소 첫 화면을 보기 좋게 만들고 싶은 분",
+    "level": 3,
+    "color": "#e4e4e4",
+    "repo": "https://github.com/oil-oil/beautify-github-readme",
+    "install": {
+      "kind": "skill",
+      "repo": "oil-oil/beautify-github-readme"
+    },
+    "trust": {
+      "grade": "community",
+      "reasons": [
+        "oil-oil 개인 저장소, GitHub 별 1.9천 개, 영어·중국어·일본어 README",
+        "적용 사례 8개를 README에 공개"
+      ]
+    },
+    "tips": [
+      "\"이 저장소 README를 beautify-github-readme로 다시 써 줘, 한국어로\"",
+      "\"README 상단에 프로젝트 성격이 드러나는 대표 이미지 만들어 줘\""
+    ],
+    "added": "2026-10-31"
+  },
+  {
+    "id": "pg-aiguide",
+    "kind": "skill",
+    "cat": "dev",
+    "name": "PostgreSQL 가이드 (pg-aiguide)",
+    "en": "pg-aiguide",
+    "one": "Claude가 PostgreSQL 코드를 짤 때 제약조건·인덱스·최신 기능을 빠뜨리지 않도록 Timescale이 정리한 모범 사례 스킬(postgres, schema-exploration)입니다.",
+    "when": "개발자용. Postgres 데이터베이스 설계·조회를 Claude에 맡기는 분. 공식 문서 검색이 필요하면 공개 MCP 서버(mcp.tigerdata.com)도 함께 쓸 수 있습니다",
+    "level": 3,
+    "color": "#d6e4f0",
+    "repo": "https://github.com/timescale/pg-aiguide",
+    "install": {
+      "kind": "skill",
+      "repo": "timescale/pg-aiguide"
+    },
+    "trust": {
+      "grade": "official",
+      "reasons": [
+        "TimescaleDB 개발사 Timescale(Tiger Data) 공식 저장소, GitHub 별 1.9천 개",
+        "Claude 플러그인 마켓과 공개 MCP 서버로도 제공"
+      ]
+    },
+    "tips": [
+      "\"쇼핑몰용 Postgres 스키마를 pg-aiguide 기준으로 설계해 줘\"",
+      "\"schema-exploration으로 지금 연결된 DB 구조 파악해서 설명해 줘\""
+    ],
+    "added": "2026-10-31"
+  },
+  {
+    "id": "tutor-skills",
+    "kind": "skill",
+    "cat": "docs",
+    "name": "튜터 스킬 (자료를 옵시디언 공부 노트로, 그리고 퀴즈)",
+    "en": "tutor-skills",
+    "one": "PDF·문서·웹페이지를 /tutor-setup으로 옵시디언 공부 노트(개념 정리, 비교표, 연습 문제, 대시보드)로 바꾸고, /tutor로 한 번에 4문제씩 퀴즈를 내며 개념별 이해도를 추적합니다.",
+    "when": "시험 공부나 자격증 준비 자료를 정리하고 스스로 점검하고 싶은 분. 결과를 보려면 옵시디언(무료 노트 앱)이 있어야 합니다",
+    "level": 2,
+    "color": "#f0ead6",
+    "repo": "https://github.com/bevibing/tutor-skills",
+    "install": {
+      "kind": "skill",
+      "repo": "bevibing/tutor-skills"
+    },
+    "trust": {
+      "grade": "community",
+      "reasons": [
+        "개인 개발자 저장소, GitHub 별 1.4천 개, MIT",
+        "README의 설치 명령은 옛 계정명(RoundTable02)을 쓰고 있어 저장소가 이전된 것으로 보임. 딸깍은 현재 주소로 설치"
+      ]
+    },
+    "tips": [
+      "\"/tutor-setup 이 폴더의 PDF들로 공부 노트 만들어 줘\"",
+      "\"/tutor 오늘 공부한 부분 퀴즈 내 줘\""
+    ],
+    "added": "2026-10-31"
+  },
+  {
+    "id": "supabase-agent-skills",
+    "kind": "skill",
+    "cat": "web",
+    "name": "수파베이스 공식 스킬",
+    "en": "Supabase Agent Skills",
+    "one": "Supabase(데이터베이스·로그인·저장소)로 서비스 만들 때 Claude가 공식 모범 사례대로 코드를 짜고 느린 쿼리를 고치게 합니다.",
+    "when": "Supabase로 앱 뒷단을 만들거나 Postgres 성능·보안(RLS)을 점검할 때. 개발 지식이 필요합니다",
+    "level": 3,
+    "color": "#d6f0e6",
+    "repo": "https://github.com/supabase/agent-skills",
+    "install": {
+      "kind": "plugin",
+      "name": "supabase@supabase-agent-skills",
+      "market": "supabase/agent-skills"
+    },
+    "trust": {
+      "grade": "official",
+      "reasons": [
+        "Supabase 공식 저장소, skills.sh 설치 46만 회",
+        "Claude 플러그인 마켓플레이스 제공"
+      ]
+    },
+    "tips": [
+      "\"이 Postgres 쿼리 최적화해 줘\"",
+      "\"Next.js에 Supabase 로그인 붙여 줘\""
+    ],
+    "added": "2026-10-31",
+    "sh_source": "supabase/agent-skills"
+  },
+  {
+    "id": "playwright-cli",
+    "kind": "skill",
+    "cat": "auto",
+    "name": "플레이라이트 CLI (브라우저 자동 조작)",
+    "en": "playwright-cli",
+    "one": "Claude가 브라우저를 열어 사이트에 들어가 클릭·입력·스크린샷을 찍어 주는 마이크로소프트 공식 명령줄 도구입니다.",
+    "when": "웹사이트 동작을 확인하거나 반복 클릭 작업을 맡기고 싶을 때. Node.js 18 이상이 필요합니다",
+    "level": 2,
+    "color": "#dfe8f5",
+    "repo": "https://github.com/microsoft/playwright-cli",
+    "install": {
+      "kind": "skill",
+      "repo": "microsoft/playwright-cli"
+    },
+    "trust": {
+      "grade": "official",
+      "reasons": [
+        "Microsoft Playwright 팀 공식 도구, skills.sh 설치 20만 회",
+        "MCP 방식보다 토큰을 적게 쓰는 CLI 방식"
+      ]
+    },
+    "tips": [
+      "\"playwright-cli로 우리 쇼핑몰 장바구니 담기 흐름 테스트하고 스크린샷 찍어 줘\"",
+      "\"브라우저 창 보이게(--headed) 열어서 로그인 화면까지 가 줘\""
+    ],
+    "added": "2026-10-31",
+    "sh_source": "microsoft/playwright-cli"
+  },
+  {
+    "id": "firebase-agent-skills",
+    "kind": "skill",
+    "cat": "web",
+    "name": "파이어베이스 공식 스킬",
+    "en": "Firebase Agent Skills",
+    "one": "Firebase(구글 앱 백엔드)의 로그인·호스팅·데이터베이스·보안 규칙을 Claude가 최신 방식대로 다루게 하는 공식 스킬 모음입니다.",
+    "when": "Firebase로 앱을 만들거나 보안 규칙을 점검할 때. 개발 지식이 필요합니다",
+    "level": 3,
+    "color": "#fbe9d3",
+    "repo": "https://github.com/firebase/agent-skills",
+    "install": {
+      "kind": "plugin",
+      "name": "firebase@firebase",
+      "market": "firebase/agent-skills"
+    },
+    "trust": {
+      "grade": "official",
+      "reasons": [
+        "Firebase(구글) 공식 저장소, Apache 2 라이선스",
+        "skills.sh 설치 17만 회, Claude 플러그인 마켓플레이스 제공"
+      ]
+    },
+    "tips": [
+      "\"Firebase 보안 규칙 점검해 줘\"",
+      "\"Firestore에 사용자 프로필 저장하는 기능 만들어 줘\""
+    ],
+    "added": "2026-10-31",
+    "sh_source": "firebase/agent-skills"
+  },
+  {
+    "id": "cloudflare-skills",
+    "kind": "skill",
+    "cat": "web",
+    "name": "클라우드플레어 공식 스킬",
+    "en": "Cloudflare Skills",
+    "one": "Cloudflare Workers·Agents SDK·Durable Objects 등 클라우드플레어 개발 플랫폼을 Claude가 공식 가이드대로 쓰게 하는 스킬 모음입니다.",
+    "when": "Cloudflare에 사이트·API·AI 에이전트를 배포할 때. 개발 지식이 필요합니다",
+    "level": 3,
+    "color": "#fde4cf",
+    "repo": "https://github.com/cloudflare/skills",
+    "install": {
+      "kind": "plugin",
+      "name": "cloudflare@cloudflare",
+      "market": "cloudflare/skills"
+    },
+    "trust": {
+      "grade": "official",
+      "reasons": [
+        "Cloudflare 공식 저장소, skills.sh 설치 14만 회",
+        "플러그인 설치 시 Cloudflare MCP 서버도 함께 들어옴"
+      ]
+    },
+    "tips": [
+      "\"이 사이트를 Cloudflare Workers로 배포해 줘\"",
+      "\"우리 사이트 Core Web Vitals 점검해 줘 (web-perf)\""
+    ],
+    "added": "2026-10-31",
+    "sh_source": "cloudflare/skills"
+  },
+  {
+    "id": "solana-dev-skill",
+    "kind": "skill",
+    "cat": "dev",
+    "name": "솔라나 개발 스킬",
+    "en": "Solana Development Skill",
+    "one": "솔라나 블록체인 앱(지갑 연결·온체인 프로그램·테스트)을 만들 때 Claude가 2026년 기준 최신 모범 사례를 따르게 합니다.",
+    "when": "솔라나 dApp이나 Anchor 프로그램을 개발할 때. 블록체인 개발 지식이 필요합니다",
+    "level": 3,
+    "color": "#e6dcf5",
+    "repo": "https://github.com/solana-foundation/solana-dev-skill",
+    "install": {
+      "kind": "skill",
+      "repo": "solana-foundation/solana-dev-skill"
+    },
+    "trust": {
+      "grade": "official",
+      "reasons": [
+        "Solana Foundation 공식 저장소, skills.sh 설치 10만 회",
+        "Claude Code·Codex·Cursor 등 8개 에이전트 지원"
+      ]
+    },
+    "tips": [
+      "\"Next.js 앱에 솔라나 지갑 연결 붙여 줘\"",
+      "\"이 Anchor 프로그램 보안 취약점 검토해 줘\""
+    ],
+    "added": "2026-10-31",
+    "sh_source": "solana-foundation/solana-dev-skill"
+  },
+  {
+    "id": "firecrawl-cli",
+    "kind": "skill",
+    "cat": "data",
+    "name": "파이어크롤 CLI (웹 검색·수집)",
+    "en": "Firecrawl CLI",
+    "one": "웹 검색, 페이지 긁어오기, 사이트 전체 수집, 논문·공공 자료 검색을 터미널 명령 한 줄로 Claude가 하게 해 줍니다.",
+    "when": "조사 자료를 모으거나 여러 사이트 내용을 한 번에 가져올 때. Node.js와 Firecrawl 계정(무료 등급 있음)이 필요합니다",
+    "level": 2,
+    "color": "#fde3d3",
+    "repo": "https://github.com/firecrawl/cli",
+    "install": {
+      "kind": "skill",
+      "repo": "firecrawl/cli"
+    },
+    "trust": {
+      "grade": "official",
+      "reasons": [
+        "Firecrawl 공식 CLI, skills.sh 설치 10만 회",
+        "리드 수집·심층 조사·SEO 감사 등 워크플로 스킬 포함"
+      ]
+    },
+    "tips": [
+      "\"firecrawl로 '한글 AI 도구 추천' 검색해서 상위 10개 요약해 줘\"",
+      "\"이 블로그 글 전부 긁어서 마크다운으로 저장해 줘\""
+    ],
+    "added": "2026-10-31",
+    "sh_source": "firecrawl/cli"
+  },
+  {
+    "id": "next-ai-drawio",
+    "kind": "mcp",
+    "cat": "design",
+    "name": "말로 그리는 다이어그램 (Next AI Draw.io)",
+    "en": "Next AI Draw.io MCP",
+    "one": "\"로그인 흐름도 그려 줘\" 한 문장이면 draw.io 캔버스에 도표가 그려지고, 선택한 도형만 골라 고칠 수도 있습니다.",
+    "when": "순서도·조직도·아키텍처 그림을 손으로 그리기 귀찮은 분",
+    "level": 1,
+    "color": "#f5d8e4",
+    "repo": "https://github.com/DayuanJiang/next-ai-draw-io",
+    "install": {
+      "kind": "mcp",
+      "name": "drawio",
+      "pkg": "@next-ai-drawio/mcp-server@latest"
+    },
+    "trust": {
+      "grade": "community",
+      "reasons": [
+        "깃허브 인기 최상위, 개인 제작",
+        "Apache 2.0 라이선스, draw.io 편집기가 패키지 안에 들어 있어 오프라인에서도 미리보기"
+      ]
+    },
+    "tips": [
+      "\"회원 가입부터 결제까지 순서도 그려 줘\"",
+      "\"AWS 아이콘으로 서버 구성도 그려 줘\"",
+      "그려진 그림은 .drawio·.png·.svg로 저장되고 Ctrl+Z로 되돌릴 수 있어요."
+    ],
+    "added": "2026-10-31",
+    "note": "API 키 없이 Claude Code 안에서 바로 그립니다. 그림은 브라우저 창에 뜨고 ~/.next-ai-drawio/에 자동 저장됩니다."
+  },
+  {
+    "id": "screenpipe",
+    "kind": "mcp",
+    "cat": "work",
+    "name": "내 화면 기억 (screenpipe)",
+    "en": "screenpipe MCP",
+    "one": "컴퓨터 화면과 소리를 24시간 내 PC에만 기록해 두고, \"아까 본 그 자료 뭐였지?\"를 AI에게 물어봅니다.",
+    "when": "회의·검색·문서를 하루 종일 오가다 뭘 봤는지 잊어버리는 분",
+    "level": 3,
+    "color": "#d6e4f0",
+    "repo": "https://github.com/screenpipe/screenpipe",
+    "install": {
+      "kind": "mcp",
+      "name": "screenpipe",
+      "pkg": "screenpipe-mcp@latest"
+    },
+    "trust": {
+      "grade": "community",
+      "reasons": [
+        "깃허브 인기 최상위, YC 투자 스타트업",
+        "기록은 기본적으로 내 기기에만 저장, 계정 없이 사용 가능",
+        "소스 공개(개인·비상업 용도 허용 라이선스)"
+      ]
+    },
+    "tips": [
+      "\"지난 5분 동안 내가 뭘 봤어?\"",
+      "\"오늘 회의 내용 요약해 줘\"",
+      "기록이 먼저 돌아가고 있어야 답할 수 있어요."
+    ],
+    "added": "2026-10-31",
+    "note": "MCP만으로는 비어 있습니다. 먼저 screenpipe 데스크톱 앱(무료 플랜 있음)이나 `npx screenpipe record`로 화면 기록을 켜 두어야 합니다. 기록이라는 성격상 민감 정보가 저장되니 설정을 확인하세요."
+  },
+  {
+    "id": "codeburn",
+    "kind": "plugin",
+    "cat": "dev",
+    "name": "AI 사용료 가계부 (CodeBurn)",
+    "en": "CodeBurn MCP",
+    "one": "Claude Code·Codex·Cursor가 남긴 세션 파일을 읽어 어느 프로젝트·어느 모델에 돈이 얼마나 들었고 어디가 낭비였는지 보여 줍니다.",
+    "when": "청구서 총액만 보고 '뭐에 이렇게 썼지?' 하는 분",
+    "level": 1,
+    "color": "#f0ead6",
+    "repo": "https://github.com/getagentseal/codeburn",
+    "install": {
+      "kind": "plugin",
+      "name": "codeburn@codeburn",
+      "market": "getagentseal/codeburn"
+    },
+    "trust": {
+      "grade": "community",
+      "reasons": [
+        "깃허브 인기 최상위, MIT 라이선스",
+        "계정·API 키·프록시 없음, 이미 내 디스크에 있는 파일만 읽음",
+        "MCP 서버는 네트워크 요청을 하지 않음"
+      ]
+    },
+    "tips": [
+      "\"이번 주 토큰 어디에 썼어?\"",
+      "\"비용 줄이려면 뭘 바꿔야 해?\"",
+      "터미널에서 `npx codeburn`을 치면 표로 바로 볼 수 있어요."
+    ],
+    "added": "2026-10-31",
+    "note": "Node.js 22.13 이상 필요. 설치 명령은 `npx -y codeburn mcp`(패키지 뒤에 mcp 인자)입니다. 데스크톱 앱·메뉴 막대도 있지만 선택 사항입니다."
+  },
+  {
+    "id": "browser-mcp",
+    "kind": "mcp",
+    "cat": "web",
+    "name": "내 크롬으로 웹 시키기 (Browser MCP)",
+    "en": "Browser MCP",
+    "one": "AI가 새 브라우저가 아니라 '내 크롬'을 씁니다. 이미 로그인된 사이트에서 클릭·입력·조회를 대신해 줍니다.",
+    "when": "로그인이 필요한 사이트 작업을 AI에게 맡기고 싶은 분",
+    "level": 2,
+    "color": "#d6f0e8",
+    "repo": "https://github.com/BrowserMCP/mcp",
+    "install": {
+      "kind": "mcp",
+      "name": "browsermcp",
+      "pkg": "@browsermcp/mcp@latest"
+    },
+    "trust": {
+      "grade": "community",
+      "reasons": [
+        "깃허브 인기 최상위, Apache 2.0",
+        "모든 동작이 내 컴퓨터 안에서만 실행",
+        "확장 프로그램이 처음 연결 때 '허용' 확인을 요구"
+      ]
+    },
+    "tips": [
+      "\"내 크롬에서 ○○ 사이트 열고 이번 달 주문 내역 정리해 줘\"",
+      "AI는 자기 탭을 따로 열어 쓰므로 내가 보던 탭은 그대로예요."
+    ],
+    "added": "2026-10-31",
+    "note": "크롬 웹 스토어에서 'Browser MCP' 확장 프로그램(무료)을 설치해야 합니다. 첫 사용 때 확장 팝업에서 서버를 '허용'해 주세요."
+  },
+  {
+    "id": "dbx",
+    "kind": "mcp",
+    "cat": "dev",
+    "name": "데이터베이스 뷰어 연결 (DBX)",
+    "en": "DBX MCP",
+    "one": "25MB짜리 무료 DB 도구 DBX에 연결해 둔 100여 종 데이터베이스를 AI가 조회하고 표를 열어 봅니다.",
+    "when": "SQL은 몰라도 우리 DB에 뭐가 들어 있는지 말로 물어보고 싶은 분",
+    "level": 3,
+    "color": "#e8e4dc",
+    "repo": "https://github.com/t8y2/dbx",
+    "install": {
+      "kind": "mcp",
+      "name": "dbx",
+      "pkg": "@dbx-app/mcp-server"
+    },
+    "trust": {
+      "grade": "community",
+      "reasons": [
+        "깃허브 인기 최상위, Apache 2.0, 무료 오픈소스",
+        "DBX 설정 → MCP에서 읽기 전용·쓰기 허용 범위와 연결 허용 목록을 직접 관리",
+        "중국 개발자 커뮤니티 중심이지만 README·앱은 영어 지원"
+      ]
+    },
+    "tips": [
+      "\"연결된 DB 목록 보여 줘\"",
+      "\"주문 테이블에서 이번 달 건수 세 줘\"",
+      "처음엔 DBX 설정에서 '읽기 전용'으로 두는 게 안전해요."
+    ],
+    "added": "2026-10-31",
+    "note": "DBX 데스크톱 앱(무료, Windows·macOS·Linux)을 먼저 설치하고 그 안에서 DB 연결을 만들어 두어야 합니다. MCP는 그 연결을 그대로 씁니다. Windows 포터블 버전은 DBX_DATA_DIR 설정이 추가로 필요합니다."
+  },
+  {
+    "id": "codebase-memory",
+    "kind": "mcp",
+    "cat": "dev",
+    "name": "코드 지도 기억 (codebase-memory)",
+    "en": "codebase-memory-mcp",
+    "one": "내 저장소의 코드·문서·설정·인프라를 한 장의 관계 지도로 만들어 두고, AI가 매번 파일을 뒤지지 않고 바로 찾게 합니다.",
+    "when": "프로젝트가 커져서 AI가 '어디에 뭐가 있는지' 자꾸 헤매는 분",
+    "level": 2,
+    "color": "#dcdcdc",
+    "repo": "https://github.com/DeusData/codebase-memory-mcp",
+    "install": {
+      "kind": "plugin",
+      "name": "codebase-memory@codebase-memory",
+      "market": "DeusData/codebase-memory-mcp"
+    },
+    "trust": {
+      "grade": "community",
+      "reasons": [
+        "깃허브 인기 최상위, MIT 라이선스",
+        "분석과 저장이 모두 내 컴퓨터에서, 호스팅 서비스 없음",
+        "모든 릴리스를 SLSA 3·VirusTotal로 검증, 논문(arXiv) 공개"
+      ]
+    },
+    "tips": [
+      "\"이 함수 누가 호출해?\"",
+      "\"이 파일 바꾸면 영향 받는 테스트 찾아 줘\"",
+      "처음 한 번 색인하면 다음 세션에도 그대로 남아요."
+    ],
+    "added": "2026-10-31",
+    "note": "플러그인은 MCP 서버만 등록하며, 첫 실행 때 npm 패키지를 통해 플랫폼용 바이너리를 내려받습니다(체크섬 검증). 스킬·에이전트·훅까지 쓰려면 별도 `codebase-memory-mcp install`이 필요합니다."
+  },
+  {
+    "id": "ecc",
+    "kind": "plugin",
+    "cat": "dev",
+    "name": "올인원 작업 체계 (ECC)",
+    "en": "ECC (Everything Claude Code)",
+    "one": "계획 → 테스트 → 구현 → 검토 → 검증 → 기억 → 개선. 이 순서를 AI에게 한 번 깔아 주는 에이전트 71개·스킬 314개 묶음.",
+    "when": "매 프롬프트마다 '먼저 계획 세우고, 테스트 짜고...'를 반복해서 시키는 게 지친 분",
+    "level": 2,
+    "color": "#e8e4dc",
+    "repo": "https://github.com/affaan-m/ECC",
+    "install": {
+      "kind": "plugin",
+      "name": "ecc@ecc",
+      "market": "affaan-m/ECC"
+    },
+    "trust": {
+      "grade": "community",
+      "reasons": [
+        "깃허브 별 29만 개, MIT 라이선스",
+        "공식 채널(깃허브 저장소, npm ecc-universal)에서만 설치하라고 README가 경고",
+        "AgentShield 보안 스캐너 포함, 진단 자동 업로드 없음"
+      ]
+    },
+    "tips": [
+      "설치 뒤 `/ecc:configure-ecc`로 훅 수준을 바꿀 수 있어요.",
+      "플러그인과 수동 설치(install.sh)를 겹쳐 깔지 마세요.",
+      "스킬이 매우 많으니 처음엔 기본 설정 그대로 써 보세요."
+    ],
+    "added": "2026-10-31",
+    "note": "덩치가 큰 묶음입니다(에이전트 71·스킬 314·명령 98·훅). 규칙(rules)은 플러그인으로 배포되지 않아 원하면 저장소에서 따로 복사해야 합니다. Claude Code 2.1 이상, Git 필요."
+  }
+]

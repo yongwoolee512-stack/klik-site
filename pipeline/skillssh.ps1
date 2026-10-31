@@ -30,7 +30,7 @@ foreach ($s in $all) { $k = $s.source.ToLower(); if (-not $byRepo[$k]) { $byRepo
 function Week($s) { $w = @($s.weeklyInstalls); if ($w.Count -ge 2) { [int]$w[$w.Count - 2] } else { 0 } }   # 마지막 칸은 진행 중인 주 → 직전 주 사용
 
 $seed = @()
-foreach ($f in "seed.json", "seed_community.json", "seed_official.json", "seed_popular.json", "seed_skillssh.json") { $p = Join-Path $root "data\$f"; if (Test-Path $p) { $seed += @(Get-Content $p -Raw -Encoding UTF8 | ConvertFrom-Json) } }
+foreach ($f in "seed.json", "seed_community.json", "seed_official.json", "seed_popular.json", "seed_skillssh.json", "seed_night.json") { $p = Join-Path $root "data\$f"; if (Test-Path $p) { $seed += @(Get-Content $p -Raw -Encoding UTF8 | ConvertFrom-Json) } }
 
 # 시드에 sh_source(owner/repo)를 적으면 그 출처로 찾는다. 단, 카드가 설치하는 것과 다른 저장소(예: 노션 MCP 카드 ↔ 노션 스킬 저장소)를 이어 붙이면 안 된다 — 숫자가 거짓말이 된다.
 # 그런 회사 공식 스킬 저장소(supabase/agent-skills, cloudflare/skills, stripe/ai …)는 별도 도구로 등록할 것.

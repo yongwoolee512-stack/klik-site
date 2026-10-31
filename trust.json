@@ -1,0 +1,21 @@
+{
+  "hosts": [
+    "api.githubcopilot.com",
+    "dashboardicons.com",
+    "financetoolkit.jeroenbouma.com",
+    "mcp.cloudflare.com",
+    "mcp.context7.com",
+    "mcp.notion.com",
+    "mcp.sentry.dev",
+    "mcp.supabase.com",
+    "mcp.vercel.com"
+  ],
+  "generated_at": "2026-10-31T14:58:51.7285265Z",
+  "pkgs": [
+    "@browsermcp/mcp",
+    "@dbx-app/mcp-server",
+    "@next-ai-drawio/mcp-server",
+    "@playwright/mcp",
+    "screenpipe-mcp"
+  ]
+}
