@@ -1,7 +1,4 @@
 {
-  "count": 142,
-  "rejected": 147,
-  "generated_at": "2026-10-30T13:07:34.5546124Z",
   "items": [
     {
       "id": "pptx",
@@ -40,6 +37,8 @@
         "grade": "verified"
       },
       "pick": "말로 설명하면 PPT가 나옵니다. 비개발자가 Claude Code를 처음 켤 이유로 이만한 게 없음.",
+      "sh_installs": 245761,
+      "sh_week": 4232,
       "readme_ko": [
         {
           "h": "스킬이란?",
@@ -109,6 +108,8 @@
         ],
         "grade": "verified"
       },
+      "sh_installs": 190793,
+      "sh_week": 3448,
       "readme_ko": [
         {
           "h": "스킬이란?",
@@ -177,6 +178,8 @@
         ],
         "grade": "verified"
       },
+      "sh_installs": 210222,
+      "sh_week": 3658,
       "readme_ko": [
         {
           "h": "스킬이란?",
@@ -255,6 +258,8 @@
         ],
         "grade": "verified"
       },
+      "sh_installs": 220124,
+      "sh_week": 3873,
       "readme_ko": [
         {
           "h": "스킬이란?",
@@ -323,6 +328,8 @@
         ],
         "grade": "verified"
       },
+      "sh_installs": 63896,
+      "sh_week": 800,
       "readme_ko": [
         {
           "h": "이 저장소는?",
@@ -394,6 +401,8 @@
         ],
         "grade": "verified"
       },
+      "sh_installs": 9331,
+      "sh_week": 477,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -620,6 +629,8 @@
         "grade": "verified"
       },
       "pick": "AI가 구버전 코드를 알려 주는 문제를 한 번에 해결. 설치 뒤 설정 없음.",
+      "sh_installs": 8036,
+      "sh_week": 283,
       "readme_ko": [
         {
           "h": "없으면 어떻게 되나 (원문 Without Context7)",
@@ -693,6 +704,8 @@
         ],
         "grade": "verified"
       },
+      "sh_installs": 63896,
+      "sh_week": 800,
       "readme_ko": [
         {
           "h": "이 저장소는?",
@@ -1090,6 +1103,8 @@
         ],
         "grade": "verified"
       },
+      "sh_installs": 63896,
+      "sh_week": 800,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -1307,6 +1322,8 @@
       "stars": 180665,
       "pushed_at": "2026-10-29T11:59:31Z",
       "pick": "설치 뒤 손 댈 게 없는데 코드 양이 반으로 줄고 테스트는 더 붙습니다. 편집팀이 직접 써 보고 가장 체감이 컸던 도구.",
+      "sh_installs": 113280,
+      "sh_week": 14193,
       "readme_ko": [
         {
           "h": "포니테일이란?",
@@ -1388,6 +1405,8 @@
       "stars": 309106,
       "pushed_at": "2026-10-29T23:35:34Z",
       "pick": "\"뭘 만들지\"부터 묻게 만드는 습관 하나가 결과물 품질을 바꿉니다. 공식 마켓 등재.",
+      "sh_installs": 412370,
+      "sh_week": 9334,
       "readme_ko": [
         {
           "h": "슈퍼파워란?",
@@ -1467,6 +1486,8 @@
       ],
       "stars": 105423,
       "pushed_at": "2026-10-30T03:07:33Z",
+      "sh_installs": 9049,
+      "sh_week": 186,
       "readme_ko": [
         {
           "h": "클로드 기억이란?",
@@ -1543,6 +1564,8 @@
       "stars": 116233,
       "pushed_at": "2026-10-30T07:41:52Z",
       "pick": "요금이 눈에 띄게 줄어듭니다. 코드는 안 건드리니 부작용이 없음.",
+      "sh_installs": 602136,
+      "sh_week": 12197,
       "readme_ko": [
         {
           "h": "왜 많은 토큰, 적은 토큰도 되는데",
@@ -1618,6 +1641,8 @@
       ],
       "stars": 32905,
       "pushed_at": "2026-10-30T12:49:36Z",
+      "sh_installs": 2983,
+      "sh_week": 109,
       "readme_ko": [
         {
           "h": "문제: 컨텍스트의 '나머지 절반'",
@@ -1690,6 +1715,8 @@
       ],
       "stars": 138240,
       "pushed_at": "2026-10-30T12:53:58Z",
+      "sh_installs": 24344,
+      "sh_week": 244,
       "readme_ko": [
         {
           "h": "지스택이란?",
@@ -2585,6 +2612,8 @@
       ],
       "stars": 558,
       "pushed_at": "2026-10-30T09:47:39Z",
+      "sh_installs": 4970,
+      "sh_week": 231,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -2758,6 +2787,8 @@
       "status": "published",
       "stars": 45376,
       "pushed_at": "2026-10-30T07:32:39Z",
+      "sh_installs": 17579,
+      "sh_week": 587,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -2920,6 +2951,8 @@
       ],
       "stars": 45376,
       "pushed_at": "2026-10-30T07:32:39Z",
+      "sh_installs": 17579,
+      "sh_week": 587,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -3092,6 +3125,8 @@
       ],
       "stars": 921,
       "pushed_at": "2026-08-21T05:23:23Z",
+      "sh_installs": 11439,
+      "sh_week": 446,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -3286,6 +3321,8 @@
       ],
       "stars": 318,
       "pushed_at": "2026-10-30T07:08:53Z",
+      "sh_installs": 1800,
+      "sh_week": 12,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -3396,6 +3433,8 @@
       ],
       "stars": 192,
       "pushed_at": "2026-10-28T20:30:23Z",
+      "sh_installs": 7275,
+      "sh_week": 304,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -3524,6 +3563,8 @@
       ],
       "stars": 339,
       "pushed_at": "2026-10-15T11:49:47Z",
+      "sh_installs": 8994,
+      "sh_week": 505,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -3895,6 +3936,8 @@
       ],
       "stars": 3795,
       "pushed_at": "2026-10-29T10:37:46Z",
+      "sh_installs": 72078,
+      "sh_week": 2004,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -4021,6 +4064,8 @@
       ],
       "stars": 620,
       "pushed_at": "2026-10-27T16:13:43Z",
+      "sh_installs": 17739,
+      "sh_week": 217,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -4312,6 +4357,8 @@
       ],
       "stars": 54481,
       "pushed_at": "2026-10-30T10:15:13Z",
+      "sh_installs": 8776,
+      "sh_week": 346,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -4364,6 +4411,8 @@
       ],
       "stars": 45376,
       "pushed_at": "2026-10-30T07:32:39Z",
+      "sh_installs": 3948,
+      "sh_week": 306,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -4426,6 +4475,8 @@
       ],
       "stars": 45376,
       "pushed_at": "2026-10-30T07:32:39Z",
+      "sh_installs": 2331,
+      "sh_week": 301,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -4624,6 +4675,8 @@
       ],
       "stars": 45376,
       "pushed_at": "2026-10-30T07:32:39Z",
+      "sh_installs": 8255,
+      "sh_week": 308,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -4686,6 +4739,8 @@
       ],
       "stars": 45376,
       "pushed_at": "2026-10-30T07:32:39Z",
+      "sh_installs": 17579,
+      "sh_week": 587,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -4745,6 +4800,8 @@
       ],
       "stars": 208,
       "pushed_at": "2026-10-28T19:18:37Z",
+      "sh_installs": 23960,
+      "sh_week": 937,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -4791,6 +4848,8 @@
       "status": "published",
       "stars": 11237,
       "pushed_at": "2026-10-29T15:42:48Z",
+      "sh_installs": 2478,
+      "sh_week": 81,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -4894,6 +4953,8 @@
       "status": "published",
       "stars": 175184,
       "pushed_at": "2026-10-30T12:46:55Z",
+      "sh_installs": 2576,
+      "sh_week": 33,
       "plat": [
         "claude-code"
       ],
@@ -4937,6 +4998,8 @@
       "status": "published",
       "stars": 142836,
       "pushed_at": "2026-10-26T10:07:28Z",
+      "sh_installs": 425610,
+      "sh_week": 11203,
       "plat": [
         "claude-code"
       ],
@@ -4981,6 +5044,8 @@
       "status": "published",
       "stars": 111879,
       "pushed_at": "2026-10-29T05:06:58Z",
+      "sh_installs": 77106,
+      "sh_week": 6429,
       "plat": [
         "claude-code"
       ],
@@ -5041,6 +5106,8 @@
       ],
       "stars": 105996,
       "pushed_at": "2026-10-30T09:24:57Z",
+      "sh_installs": 707344,
+      "sh_week": 41181,
       "plat": [
         "claude-code"
       ],
@@ -5084,6 +5151,8 @@
       "status": "published",
       "stars": 88992,
       "pushed_at": "2026-10-26T07:05:22Z",
+      "sh_installs": 5470,
+      "sh_week": 209,
       "plat": [
         "claude-code"
       ],
@@ -5206,6 +5275,8 @@
       ],
       "stars": 65960,
       "pushed_at": "2026-10-28T16:30:58Z",
+      "sh_installs": 55707,
+      "sh_week": 2494,
       "plat": [
         "claude-code"
       ],
@@ -5261,6 +5332,8 @@
       ],
       "stars": 63164,
       "pushed_at": "2026-10-27T20:01:35Z",
+      "sh_installs": 22609,
+      "sh_week": 5193,
       "plat": [
         "claude-code"
       ],
@@ -5322,6 +5395,8 @@
       ],
       "stars": 62574,
       "pushed_at": "2026-10-28T07:17:33Z",
+      "sh_installs": 11366,
+      "sh_week": 790,
       "plat": [
         "claude-code"
       ],
@@ -5372,6 +5447,8 @@
       ],
       "stars": 57430,
       "pushed_at": "2026-10-29T17:22:37Z",
+      "sh_installs": 242299,
+      "sh_week": 5907,
       "plat": [
         "claude-code"
       ],
@@ -5427,6 +5504,8 @@
       ],
       "stars": 54636,
       "pushed_at": "2026-10-28T02:56:11Z",
+      "sh_installs": 11022,
+      "sh_week": 314,
       "plat": [
         "claude-code"
       ],
@@ -5488,6 +5567,8 @@
       ],
       "stars": 50426,
       "pushed_at": "2026-09-15T14:43:57Z",
+      "sh_installs": 93910,
+      "sh_week": 1276,
       "plat": [
         "claude-code"
       ],
@@ -5548,6 +5629,8 @@
       ],
       "stars": 42435,
       "pushed_at": "2026-10-29T16:50:04Z",
+      "sh_installs": 81037,
+      "sh_week": 2555,
       "plat": [
         "claude-code"
       ],
@@ -5664,6 +5747,8 @@
       ],
       "stars": 30024,
       "pushed_at": "2026-10-29T15:58:00Z",
+      "sh_installs": 11236,
+      "sh_week": 312,
       "plat": [
         "claude-code"
       ],
@@ -5768,6 +5853,8 @@
       "status": "published",
       "stars": 29012,
       "pushed_at": "2026-10-29T07:44:34Z",
+      "sh_installs": 2399,
+      "sh_week": 18,
       "plat": [
         "claude-code"
       ],
@@ -5818,6 +5905,8 @@
       ],
       "stars": 27770,
       "pushed_at": "2026-10-28T17:42:45Z",
+      "sh_installs": 47662,
+      "sh_week": 729,
       "plat": [
         "claude-code"
       ],
@@ -5862,6 +5951,8 @@
       "status": "published",
       "stars": 27084,
       "pushed_at": "2026-09-10T15:13:43Z",
+      "sh_installs": 34561,
+      "sh_week": 164,
       "plat": [
         "claude-code"
       ],
@@ -5923,6 +6014,8 @@
       ],
       "stars": 25784,
       "pushed_at": "2026-10-30T04:49:43Z",
+      "sh_installs": 3985,
+      "sh_week": 57,
       "plat": [
         "claude-code"
       ],
@@ -5983,6 +6076,8 @@
       ],
       "stars": 24250,
       "pushed_at": "2026-10-22T16:47:40Z",
+      "sh_installs": 9424,
+      "sh_week": 356,
       "plat": [
         "claude-code"
       ],
@@ -6098,6 +6193,8 @@
       ],
       "stars": 19558,
       "pushed_at": "2026-10-23T21:18:13Z",
+      "sh_installs": 21714,
+      "sh_week": 2222,
       "plat": [
         "claude-code"
       ],
@@ -6141,6 +6238,8 @@
       "status": "published",
       "stars": 14116,
       "pushed_at": "2026-10-11T02:56:34Z",
+      "sh_installs": 2373,
+      "sh_week": 61,
       "plat": [
         "claude-code"
       ],
@@ -6258,6 +6357,8 @@
       ],
       "stars": 13410,
       "pushed_at": "2026-10-25T13:45:33Z",
+      "sh_installs": 9046,
+      "sh_week": 356,
       "plat": [
         "claude-code"
       ],
@@ -6344,6 +6445,8 @@
       "status": "published",
       "stars": 12142,
       "pushed_at": "2026-10-29T01:36:45Z",
+      "sh_installs": 23520,
+      "sh_week": 288,
       "plat": [
         "claude-code"
       ],
@@ -6399,6 +6502,8 @@
       ],
       "stars": 12135,
       "pushed_at": "2026-10-30T02:57:38Z",
+      "sh_installs": 13502,
+      "sh_week": 232,
       "plat": [
         "claude-code"
       ],
@@ -6502,6 +6607,8 @@
       "status": "published",
       "stars": 10595,
       "pushed_at": "2026-10-17T01:35:42Z",
+      "sh_installs": 4932,
+      "sh_week": 159,
       "plat": [
         "claude-code"
       ],
@@ -6613,6 +6720,8 @@
       ],
       "stars": 9222,
       "pushed_at": "2026-10-30T12:49:56Z",
+      "sh_installs": 1727,
+      "sh_week": 388,
       "plat": [
         "claude-code"
       ],
@@ -6656,6 +6765,8 @@
       "status": "published",
       "stars": 7783,
       "pushed_at": "2026-10-16T01:51:12Z",
+      "sh_installs": 4759,
+      "sh_week": 89,
       "plat": [
         "claude-code"
       ],
@@ -6711,6 +6822,8 @@
       ],
       "stars": 7472,
       "pushed_at": "2026-10-29T02:50:11Z",
+      "sh_installs": 18851,
+      "sh_week": 376,
       "plat": [
         "claude-code"
       ],
@@ -6872,6 +6985,8 @@
       ],
       "stars": 5379,
       "pushed_at": "2026-10-27T11:22:16Z",
+      "sh_installs": 1770,
+      "sh_week": 157,
       "plat": [
         "claude-code"
       ],
@@ -7025,6 +7140,8 @@
       ],
       "stars": 4856,
       "pushed_at": "2026-10-30T08:48:27Z",
+      "sh_installs": 6391,
+      "sh_week": 1314,
       "plat": [
         "claude-code"
       ],
@@ -7068,6 +7185,8 @@
       "status": "published",
       "stars": 4421,
       "pushed_at": "2026-10-23T11:31:15Z",
+      "sh_installs": 3113,
+      "sh_week": 43,
       "plat": [
         "claude-code"
       ],
@@ -7271,6 +7390,8 @@
       "status": "published",
       "stars": 3640,
       "pushed_at": "2026-10-27T07:26:53Z",
+      "sh_installs": 4132,
+      "sh_week": 38,
       "plat": [
         "claude-code"
       ],
@@ -7357,6 +7478,8 @@
       "status": "published",
       "stars": 3011,
       "pushed_at": "2026-08-24T21:07:36Z",
+      "sh_installs": 33937,
+      "sh_week": 1112,
       "plat": [
         "claude-code"
       ],
@@ -7486,6 +7609,8 @@
       "status": "published",
       "stars": 2540,
       "pushed_at": "2026-09-10T21:48:01Z",
+      "sh_installs": 9738,
+      "sh_week": 582,
       "plat": [
         "claude-code"
       ],
@@ -7597,6 +7722,8 @@
       ],
       "stars": 2433,
       "pushed_at": "2026-10-24T11:55:58Z",
+      "sh_installs": 7674,
+      "sh_week": 215,
       "plat": [
         "claude-code"
       ],
@@ -7978,6 +8105,8 @@
       ],
       "stars": 1305,
       "pushed_at": "2026-10-19T05:39:48Z",
+      "sh_installs": 2395,
+      "sh_week": 24,
       "plat": [
         "claude-code"
       ],
@@ -8187,5 +8316,8 @@
       ]
     }
   ],
+  "count": 142,
+  "rejected": 147,
+  "generated_at": "2026-10-31T04:50:38.9284606Z",
   "pending": 27
 }

@@ -364,6 +364,8 @@ html:not(.zone-tint):not(.zone-line) .sheet-body { gap:0; padding:16px 0 0; } ht
 /* 원문 한글판: 알아보기 안의 한 칸(흰 배경)처럼, 오른쪽에 "더보기/접기" */
 .zone .readme { background:var(--bg); border-radius:12px; padding:14px; margin-top:12px; } .zone .readme summary { display:flex; align-items:center; gap:8px; font-size:14px; } .zone .readme summary::before { display:none; } .zone .readme summary b { font-size:14px; } .zone .readme summary span { flex:1 1 auto; } .zone .readme summary::after { content:"더보기 ▾"; flex:0 0 auto; font-size:12px; font-weight:700; color:var(--accent); background:var(--surface); border:1px solid var(--line); border-radius:980px; padding:5px 11px; } .zone .readme[open] summary::after { content:"접기 ▴"; } .warn-ico { display:inline-grid; place-items:center; width:16px; height:16px; border-radius:50%; background:#f5a623; color:#fff; font-style:normal; font-weight:800; font-size:11px; margin-right:6px; vertical-align:-3px; }
 .try-box { margin-top:8px; border:2px solid var(--accent); background:#fff; font-family:inherit; } .try-box code { font-size:14px; font-weight:600; color:var(--fg); white-space:normal; font-family:inherit; } .try-note { display:block; font-size:12px; color:var(--muted); margin-top:4px; }
+.done-box { display:flex; gap:10px; align-items:flex-start; margin-top:10px; padding:12px 14px; border-radius:12px; background:#ecfdf3; border:1.5px solid #bbf7d0; font-size:14px; line-height:1.5; color:#14532d; } .ok-ico { flex:none; display:grid; place-items:center; width:22px; height:22px; border-radius:50%; background:#15803d; color:#fff; font-style:normal; font-weight:800; font-size:13px; margin-top:1px; }
+.opt-lead { display:block; font-size:12.5px; color:var(--muted); margin-top:12px; } .try-box.opt-box { margin-top:6px; border-style:dashed; border-color:#9ca3af; } .try-box.opt-box code { font-weight:500; } .try-box.opt-box button { background:#fff; color:var(--accent); border:1.5px solid var(--accent); }
 .try-line { margin:0; font-size:13px; background:var(--surface-2, #f5f5f7); border-radius:12px; padding:9px 12px; } .try-line code { background:#fff; border:1px solid var(--line); border-radius:6px; padding:1px 6px; font-size:12px; } .try-line span { color:var(--muted); font-size:12px; } /* 제목 줄 간격: B 중간 (사용자 선택 2026-10-30) */
 .sheet-head .cm-rate { margin:10px 0 0; } .sheet-head h2 { margin-top:6px; } .sheet-head .one-line { margin:8px 0 0 !important; line-height:1.55; } .sheet-head .meta-line { margin:5px 0 0 !important; line-height:1.6; } .sheet-head { padding-bottom:6px; }
 /* 헤더 간격 시안 (?head=a|b|c): a 촘촘 / b 중간 / c 별점·숫자 한 줄 */
@@ -482,14 +484,23 @@ html.head-c .sheet-head .cm-rate { display:inline-flex; margin:10px 14px 0 0; ve
     </div>
     <div class="rank" id="rank-gh"></div>
   </section>
-  <section id="rank-hot-sec" hidden>
+
+  <section id="rank-sh-sec" data-sec="sh" hidden>
+    <div class="sec-head">
+      <h2>실제로 가장 많이 설치한 스킬</h2>
+      <p>스킬 저장소 skills.sh 의 설치 횟수. 별은 '추천', 이건 '실제로 깐 횟수' · 매일 갱신</p>
+    </div>
+    <div class="rank" id="rank-sh"></div>
+  </section>
+
   <section id="rank-hot-sec" data-sec="hot" hidden>
+    <div class="sec-head">
       <h2>이달 가장 빨리 뜨는 도구</h2>
       <p>최근 30일 동안 별이 가장 많이 늘어난 순서</p>
     </div>
     <div class="rank" id="rank-hot"></div>
   </section>
-  <section id="cm-plaza" hidden>
+
   <section data-sec="week">
     <div class="sec-head">
       <h2>이번 주 많이 설치한 도구</h2>
@@ -498,6 +509,7 @@ html.head-c .sheet-head .cm-rate { display:inline-flex; margin:10px 14px 0 0; ve
     <div class="rank" id="rank"></div>
   </section>
 
+  <section id="cm-plaza" hidden>
     <div class="sec-head">
       <div><h2>뭐 쓰면 돼요? 질문 광장</h2><p>하고 싶은 일을 적으면 써 본 사람들이 도구를 골라 줍니다. 로그인 없이 닉네임만.</p></div>
     </div>
@@ -653,6 +665,7 @@ function cmdOf(it) {
   if (it.cmd) return it.cmd;
   const s = installOf(it); if (!s || !s.name) return "";
   if (s.kind === "plugin") return `/plugin install ${s.name}`;
+  if (s.kind === "skill") return `npx skills add ${s.repo}`;   // skills.sh 표준 명령 (딸깍 도우미는 git으로 직접 받는다)
   if (s.url) return `claude mcp add --transport ${s.transport || "http"} ${s.name} ${s.url}`;
   if (s.pkg) return `claude mcp add ${s.name} -- npx -y ${s.pkg}`;
   return "";
@@ -663,10 +676,22 @@ function tryPrompt(it) {
   const t = (it.tips && it.tips[0]) || ""; const m = t.match(/"([^"]{4,120})"/);
   return m ? m[1] : "";
 }
+// 칠 문장이 없는 도구(설치하면 자동 적용)용 확인 문장: 팁 어디든 따옴표 문장이 있으면 그걸, 없으면 자동 생성
+function checkPrompt(it) {
+  for (const t of (it.tips || [])) { const m = String(t).match(/"([^"]{4,120})"/); if (m) return m[1]; }
+  return `방금 설치한 ${it.name}, 뭐가 바뀌는지 요약해 줘`;
+}
+// 2단계(입력창에 치기): 칠 문장이 있으면 복사칸, 없으면 "끝" 칸 + 확인용 문장(선택)
+function typeStep(it, where, img, noteHas) {
+  const tp = tryPrompt(it);
+  if (tp) return [`${where} 이렇게 치기`, where.startsWith("채팅") ? "연결이 끝나면 평소 채팅 화면에서 바로 됩니다." : "평소 채팅 화면 말고, </> 버튼을 누른 화면이어야 해요.", img, tp, noteHas];
+  return [where.startsWith("채팅") ? "끝. 평소 채팅에서 바로 됩니다" : "Claude 앱 왼쪽 위 </> 버튼 → 새 대화 열기", where.startsWith("채팅") ? "" : "평소 채팅 화면 말고, </> 버튼을 누른 화면이어야 해요.", img, "", "", { done: "이 도구는 여기까지가 끝. 입력창에 따로 칠 건 없어요.", opt: checkPrompt(it) }];
+}
 function deepLink(it) {
   const s = installOf(it); if (!s || !s.name) return "";
   const tp = tryPrompt(it); const tail = (tp ? `&try=${encodeURIComponent(tp)}` : "") + (it.login ? "&login=1" : "");
   if (s.kind === "plugin") return `klik://install?kind=plugin&name=${s.name}&market=${encodeURIComponent(s.market || "")}${tail}`;
+  if (s.kind === "skill") return `klik://install?kind=skill&name=${s.name}&repo=${encodeURIComponent(s.repo || "")}${tail}`;
   if (s.url) return `klik://install?kind=mcp&name=${s.name}&transport=${s.transport || "http"}&url=${encodeURIComponent(s.url)}${tail}`;
   if (s.pkg) return `klik://install?kind=mcp&name=${s.name}&pkg=${encodeURIComponent(s.pkg)}${tail}`;
   return "";
@@ -735,6 +760,10 @@ function renderRank() {
   const seen = new Set();
   const gh = [...ITEMS].filter(it => it.stars > 0).sort((a,b)=>b.stars-a.stars).filter(it => { const k = (it.repo||it.id).toLowerCase(); if (seen.has(k)) return false; seen.add(k); return true; }).slice(0, 9);
   const ghEl = $("#rank-gh"); if (ghEl) ghEl.innerHTML = gh.map((it,i)=>`<button data-open="${it.id}"><span class="n">${i+1}</span><span class="t"><b>${esc(it.name)}</b><span>${esc(it.one)}</span></span><span class="d">★ ${fmt(it.stars)}</span></button>`).join("");
+  // skills.sh 설치 순위: 실제 설치 횟수(별이 아니라). 같은 저장소는 한 번만
+  const seenSh = new Set();
+  const sh = [...ITEMS].filter(it => it.sh_installs > 0).sort((a,b)=>b.sh_installs-a.sh_installs).filter(it => { const k = (it.repo||it.id).toLowerCase(); if (seenSh.has(k)) return false; seenSh.add(k); return true; }).slice(0, 9);
+  const shSec = $("#rank-sh-sec"); if (shSec) { shSec.hidden = sh.length < 3; if (sh.length >= 3) $("#rank-sh").innerHTML = sh.map((it,i)=>`<button data-open="${it.id}"><span class="n">${i+1}</span><span class="t"><b>${esc(it.name)}</b><span>${esc(it.one)}</span></span><span class="d">${fmt(it.sh_installs)}회</span></button>`).join(""); }
   // 이달 증가 순위: 별 기록이 하루 이상 쌓이면 자동으로 나타난다
   const hot = [...ITEMS].filter(it => it.stars30 > 0).sort((a,b)=>b.stars30-a.stars30).slice(0, 6);
   const hotSec = $("#rank-hot-sec"); if (hotSec) { hotSec.hidden = hot.length < 3; if (hot.length >= 3) $("#rank-hot").innerHTML = hot.map((it,i)=>`<button data-open="${it.id}"><span class="n">${i+1}</span><span class="t"><b>${esc(it.name)}</b><span>${esc(it.one)}</span></span><span class="d">+${fmt(it.stars30)} ↑</span></button>`).join(""); }
@@ -782,10 +811,10 @@ function openDetail(id) {
   const hasCmd = !!cmd;
   const deep = hasCmd ? deepLink(it) : "";
   const steps = deep
-    ? [["'딸깍 설치' 누르기 → 뜨는 창마다 '열기', '예'", "브라우저가 '딸깍 도우미를 열까요?' 하면 '열기', 도우미가 '설치할까요?' 하면 '예'. 설치 완료 창이 뜨면 끝."],...(it.login ? [["처음 한 번 로그인", `Claude 앱 왼쪽 위 </> 버튼을 누르고, 아래 입력창에 /mcp 치고 엔터 → ${it.en.split(" ")[0]} 고르기 → 브라우저 로그인 창에서 '승인'.`]] : []), ["Claude 앱 왼쪽 위 </> 버튼 → 아래 입력창에 이렇게 치기", "평소 채팅 화면 말고, </> 버튼을 누른 화면이어야 해요.", "media/code-button.svg", tryPrompt(it) || it.tips[0] || "", "설치가 끝나면 이 문장이 자동으로 복사돼 있어요. 입력창에 Ctrl+V 하고 엔터."]]
+    ? [["'딸깍 설치' 누르기 → 뜨는 창마다 '열기', '예'", "브라우저가 '딸깍 도우미를 열까요?' 하면 '열기', 도우미가 '설치할까요?' 하면 '예'. 설치 완료 창이 뜨면 끝."],...(it.login ? [["처음 한 번 로그인", `Claude 앱 왼쪽 위 </> 버튼을 누르고, 아래 입력창에 /mcp 치고 엔터 → ${it.en.split(" ")[0]} 고르기 → 브라우저 로그인 창에서 '승인'.`]] : []), typeStep(it, "Claude 앱 왼쪽 위 </> 버튼 → 아래 입력창에", "media/code-button.svg", "설치가 끝나면 이 문장이 자동으로 복사돼 있어요. 입력창에 Ctrl+V 하고 엔터.")]
     : hasCmd
-    ? [["'설치 명령 복사' 누르기", "문장이 복사됩니다."],["Claude 앱 왼쪽 위 </> 버튼 → 아래 입력창에 Ctrl+V, 엔터", "Claude가 나머지 설치를 합니다. 끝나면 같은 입력창에 이렇게 치세요.", "media/code-button.svg", tryPrompt(it) || it.tips[0] || "", "복사 버튼을 누르고 입력창에 Ctrl+V 하고 엔터."]]
-    : [["'커넥터 설정 열기' 누르기 → 목록에서 '연결' → 로그인", "Claude 앱 설정 페이지가 열립니다. 찾아서 '연결'을 누르고 로그인하면 끝."],["채팅에 이렇게 치기", "연결이 끝나면 평소 채팅 화면에서 바로 됩니다.", "", tryPrompt(it) || it.tips[0] || "", "복사 버튼을 누르고 채팅창에 Ctrl+V 하고 엔터."]];
+    ? [["'설치 명령 복사' 누르기", "문장이 복사됩니다."],(tryPrompt(it) ? ["Claude 앱 왼쪽 위 </> 버튼 → 아래 입력창에 Ctrl+V, 엔터", "Claude가 나머지 설치를 합니다. 끝나면 같은 입력창에 이렇게 치세요.", "media/code-button.svg", tryPrompt(it), "복사 버튼을 누르고 입력창에 Ctrl+V 하고 엔터."] : ["Claude 앱 왼쪽 위 </> 버튼 → 아래 입력창에 Ctrl+V, 엔터", "Claude가 나머지 설치를 합니다.", "media/code-button.svg", "", "", { done: "설치가 끝나면 그걸로 끝. 입력창에 따로 칠 건 없어요.", opt: checkPrompt(it) }])]
+    : [["'커넥터 설정 열기' 누르기 → 목록에서 '연결' → 로그인", "Claude 앱 설정 페이지가 열립니다. 찾아서 '연결'을 누르고 로그인하면 끝."], typeStep(it, "채팅에", "", "복사 버튼을 누르고 채팅창에 Ctrl+V 하고 엔터.")];
   const actions = `<div class="big-install">
           ${hasCmd?(deep?`<a class="install" href="${esc(deep)}" data-deep="${esc(deep)}" data-item="${it.id}" data-track="${it.id}" style="text-decoration:none;text-align:center">⚡ 딸깍 설치</a>`:`<button class="install" data-copy="${esc(cmd)}" data-track="${it.id}">⚡ 설치 명령 복사</button>`):`<a class="btn-outline" href="${esc(it.link)}" target="_blank" rel="noopener" data-track="${it.id}" style="background:var(--accent);color:var(--accent-fg);border-color:var(--accent)">⚡ 커넥터 설정 열기</a>`}
           <a class="btn-outline" href="${esc(it.repo)}" target="_blank" rel="noopener">원문(깃허브) 보기</a>
@@ -799,7 +828,7 @@ function openDetail(id) {
           <h2>${esc(it.name)} <span class="en" style="font-size:14px;color:var(--muted);font-weight:400">${esc(it.en)}</span></h2>
           <p class="one-line" style="font-size:14px;color:#333">${esc(it.one)}</p>
           ${window.CM ? CM.cardLine(it.id) : ""}
-          <p class="meta-line" style="font-size:12px;color:var(--muted)">깃허브 ★ ${fmt(it.stars)}${it.stars30>0?` <b style="color:var(--accent)">(${it.stars30_days>=28?"이달":it.stars30_days+"일간"} +${fmt(it.stars30)} ↑)</b>`:""}${it.pushed_at?` · ${ago(it.pushed_at)} 업데이트`:""}${it.installs>0?` · 설치 ${fmt(it.installs)}회`:""}${CATALOG_AT?` · 딸깍 확인 ${ago(CATALOG_AT)}`:""}</p>
+          <p class="meta-line" style="font-size:12px;color:var(--muted)">깃허브 ★ ${fmt(it.stars)}${it.stars30>0?` <b style="color:var(--accent)">(${it.stars30_days>=28?"이달":it.stars30_days+"일간"} +${fmt(it.stars30)} ↑)</b>`:""}${it.pushed_at?` · ${ago(it.pushed_at)} 업데이트`:""}${it.sh_installs>0?` · skills.sh 설치 ${fmt(it.sh_installs)}회${it.sh_week>0?` <b style="color:var(--accent)">(지난주 +${fmt(it.sh_week)})</b>`:""}`:""}${it.installs>0?` · 설치 ${fmt(it.installs)}회`:""}${CATALOG_AT?` · 딸깍 확인 ${ago(CATALOG_AT)}`:""}</p>
         </div>
         <button class="close" data-close aria-label="닫기">✕</button>
       </div>
@@ -809,7 +838,7 @@ function openDetail(id) {
           ${actions}
           ${it.demo?`<div class="preview" style="background:${it.color};aspect-ratio:auto"><img src="${esc(it.demo)}" alt="${esc(it.name)} 작동 화면" style="display:block;width:100%;height:auto;border-radius:inherit"><span class="cap">작동 화면 · 검색 → 카드 → 딸깍 설치</span></div>`:""}
           <h4 style="margin:14px 0 10px;font-size:15px">설치 방법 (${steps.length}단계)</h4>
-          <div class="steps">${steps.map((s,i)=>`<div class="stp"><span class="num">${i+1}</span><div class="txt"><b>${esc(s[0])}</b><span>${esc(s[1])}</span>${s[2]?`<img src="${s[2]}" alt="" style="display:block;margin-top:8px;max-width:260px;width:100%;border-radius:10px;border:1px solid var(--line)">`:""}${s[3]?`<div class="cmd try-box"><code>${esc(s[3])}</code><button data-copy="${esc(s[3])}">복사</button></div><span class="try-note"><i class="warn-ico" aria-hidden="true">!</i>${esc(s[4]||"")}</span>`:""}</div></div>`).join("")}</div>
+          <div class="steps">${steps.map((s,i)=>`<div class="stp"><span class="num">${i+1}</span><div class="txt"><b>${esc(s[0])}</b><span>${esc(s[1])}</span>${s[2]?`<img src="${s[2]}" alt="" style="display:block;margin-top:8px;max-width:260px;width:100%;border-radius:10px;border:1px solid var(--line)">`:""}${s[3]?`<div class="cmd try-box"><code>${esc(s[3])}</code><button data-copy="${esc(s[3])}">복사</button></div><span class="try-note"><i class="warn-ico" aria-hidden="true">!</i>${esc(s[4]||"")}</span>`:""}${s[5]?`<div class="done-box"><i class="ok-ico" aria-hidden="true">✓</i><span>${esc(s[5].done)}</span></div><span class="opt-lead">잘 깔렸는지 확인하고 싶으면 (선택) 입력창에 이렇게 쳐 보세요:</span><div class="cmd try-box opt-box"><code>${esc(s[5].opt)}</code><button data-copy="${esc(s[5].opt)}">복사</button></div>`:""}</div></div>`).join("")}</div>
           ${hasCmd?(deep?`<details style="margin-top:8px"><summary style="cursor:pointer;color:var(--muted);font-size:13px">도우미 없이 직접 하는 방법 (명령 복사)</summary><div class="cmd"><code>${esc(cmd)}</code><button data-copy="${esc(cmd)}">복사</button></div></details>`:`<div class="cmd"><code>${esc(cmd)}</code><button data-copy="${esc(cmd)}">복사</button></div>`):""}
         </section>
         <section class="zone">

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>시안: 칠 문장이 없는 도구</title>
+<style>
+:root{--accent:#1f3a93;--muted:#6b7280;--line:#e5e7eb;--ok:#15803d;--okbg:#ecfdf3}
+body{margin:0;font-family:"Pretendard","Noto Sans KR",system-ui,sans-serif;background:#f3f4f6;color:#111}
+.wrap{max-width:1500px;margin:0 auto;padding:22px 16px}
+h1{font-size:20px;margin:0 0 4px}.lead{color:var(--muted);font-size:14px;margin:0 0 18px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}@media(max-width:1000px){.grid{grid-template-columns:1fr}}
+.card{background:#fff;border-radius:14px;padding:18px 18px 20px;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+.card h2{font-size:16px;margin:0 0 2px}.card .sub{font-size:13px;color:var(--muted);margin:0 0 14px;line-height:1.5}
+.pros{font-size:12.5px;color:#374151;background:#f9fafb;border-radius:8px;padding:8px 10px;margin-top:14px;line-height:1.6}
+h3.t{font-size:15px;margin:0 0 10px}
+.step{display:flex;gap:12px;margin:10px 0}.n{flex:none;width:28px;height:28px;border-radius:50%;background:#111;color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center;font-size:14px}
+.step b{display:block;font-size:15px}.step p{margin:3px 0 0;font-size:13px;color:#374151;line-height:1.5}
+.pic{width:230px;border-radius:12px;margin:10px 0 0;display:block}
+.try{display:flex;align-items:center;gap:10px;border:2px solid var(--accent);border-radius:12px;padding:12px 14px;margin:12px 0 0;font-size:15px}
+.try span{flex:1}.try button{background:var(--accent);color:#fff;border:0;border-radius:8px;padding:8px 14px;font-weight:700;font-size:14px}
+.note{display:flex;gap:6px;align-items:center;font-size:12.5px;color:#4b5563;margin:8px 0 0}.ico{flex:none;width:16px;height:16px;border-radius:50%;background:#f59e0b;color:#fff;font-size:11px;font-weight:800;display:flex;align-items:center;justify-content:center}
+.done{display:flex;gap:10px;align-items:flex-start;background:var(--okbg);border:1.5px solid #bbf7d0;border-radius:12px;padding:12px 14px;margin:12px 0 0;font-size:14px;line-height:1.5}
+.done .ck{flex:none;width:22px;height:22px;border-radius:50%;background:var(--ok);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:13px;margin-top:1px}
+.opt{font-size:12.5px;color:var(--muted);margin:14px 0 4px}
+.try.opt-box{border-style:dashed;border-color:#9ca3af;font-size:14px}.try.opt-box button{background:#fff;color:var(--accent);border:1.5px solid var(--accent)}
+.badge{display:inline-block;background:var(--okbg);color:var(--ok);border:1px solid #bbf7d0;border-radius:999px;padding:2px 9px;font-size:12px;font-weight:700;margin-left:6px;vertical-align:middle}
+.small{width:150px}
+</style></head><body><div class="wrap">
+<h1>시안: "설치하면 자동" 도구의 2단계</h1>
+<p class="lead">예시: 카파시 코딩 원칙 (설치만 하면 매 세션 자동 적용, 입력창에 칠 문장이 없음). 현재는 첫 팁이 복사칸에 들어가는 상태 → 아래 셋 중 고르면 그 방식으로 전부 바꿈.</p>
+<div class="grid">
+
+<div class="card"><h2>A안 · 복사칸 대신 "끝" 칸</h2><p class="sub">칠 게 없으면 복사 버튼을 없애고, 초록 완료 칸으로 "따로 할 거 없음"을 말한다. 단계 수·그림은 그대로.</p>
+<h3 class="t">설치 방법 (2단계)</h3>
+<div class="step"><div class="n">1</div><div><b>'딸깍 설치' 누르기 → 뜨는 창마다 '열기', '예'</b><p>브라우저가 '딸깍 도우미를 열까요?' 하면 '열기', 도우미가 '설치할까요?' 하면 '예'. 설치 완료 창이 뜨면 끝.</p></div></div>
+<div class="step"><div class="n">2</div><div><b>Claude 앱 왼쪽 위 &lt;/&gt; 버튼 → 새 대화 열기</b><p>평소 채팅 화면 말고, &lt;/&gt; 버튼을 누른 화면이어야 해요.</p>
+<img class="pic" src="../media/code-button.svg" alt="">
+<div class="done"><div class="ck">✓</div><div>이 도구는 여기까지가 끝. <b>입력창에 따로 칠 건 없어요.</b> 새 대화를 열면 자동으로 켜져 있어요.</div></div>
+</div></div>
+<div class="pros">+ 제일 단순. 복사할 게 없다는 걸 색으로 바로 알 수 있음<br>− "진짜 됐나?" 확인할 방법이 없음</div>
+</div>
+
+<div class="card"><h2>B안 · "끝" 칸 + 확인용 문장(선택)</h2><p class="sub">A안에 더해, 제대로 깔렸는지 보고 싶은 사람을 위해 점선 복사칸을 하나 더. "선택"이라고 명시.</p>
+<h3 class="t">설치 방법 (2단계)</h3>
+<div class="step"><div class="n">1</div><div><b>'딸깍 설치' 누르기 → 뜨는 창마다 '열기', '예'</b><p>브라우저가 '딸깍 도우미를 열까요?' 하면 '열기', 도우미가 '설치할까요?' 하면 '예'. 설치 완료 창이 뜨면 끝.</p></div></div>
+<div class="step"><div class="n">2</div><div><b>Claude 앱 왼쪽 위 &lt;/&gt; 버튼 → 새 대화 열기</b><p>평소 채팅 화면 말고, &lt;/&gt; 버튼을 누른 화면이어야 해요.</p>
+<img class="pic" src="../media/code-button.svg" alt="">
+<div class="done"><div class="ck">✓</div><div>이 도구는 여기까지가 끝. <b>입력창에 따로 칠 건 없어요.</b></div></div>
+<p class="opt">잘 깔렸는지 확인하고 싶으면 (선택) 입력창에 이렇게 쳐 보세요:</p>
+<div class="try opt-box"><span>방금 설치한 카파시 코딩 원칙, 뭐가 바뀌는지 요약해 줘</span><button>복사</button></div>
+</div></div>
+<div class="pros">+ 불안한 사람에게 확인 수단을 줌. 팁에 확인 문장이 있으면 그걸, 없으면 자동 생성 문장<br>− 칸이 하나 더 생김 (지금처럼 다닥다닥해질 수 있음)</div>
+</div>
+
+<div class="card"><h2>C안 · 1단계로 줄이고 제목에 "자동 적용" 배지</h2><p class="sub">칠 게 없으면 2단계 자체를 없앤다. 제목 옆에 배지, 그림은 작게 한 줄짜리 안내로.</p>
+<h3 class="t">설치 방법 (1단계) <span class="badge">설치하면 자동 적용</span></h3>
+<div class="step"><div class="n">1</div><div><b>'딸깍 설치' 누르기 → 뜨는 창마다 '열기', '예'</b><p>브라우저가 '딸깍 도우미를 열까요?' 하면 '열기', 도우미가 '설치할까요?' 하면 '예'. 설치 완료 창이 뜨면 끝.</p></div></div>
+<div class="done"><div class="ck">✓</div><div>끝. 다음에 Claude 앱 왼쪽 위 <b>&lt;/&gt; 버튼</b>을 눌러 새 대화를 열면 자동으로 적용돼 있어요. 입력창에 칠 건 없음.<img class="pic small" src="../media/code-button.svg" alt=""></div></div>
+<div class="pros">+ 가장 짧음. "설치 = 끝"이 한눈에<br>− 다른 도구는 2단계인데 이것만 1단계라 틀이 달라짐. &lt;/&gt; 그림이 작아져서 처음 보는 사람에겐 덜 친절</div>
+</div>
+
+</div></div></body></html>
