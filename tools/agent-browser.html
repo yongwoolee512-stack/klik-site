@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>에이전트 브라우저 (Claude가 웹을 직접 조작) (agent-browser) 설치법·한글 설명 | 딸깍</title>
+<meta name="description" content="Claude가 웹사이트를 열고, 버튼을 누르고, 글자를 입력하고, 화면을 캡처하도록 해 주는 빠른 브라우저 조작 도구입니다.">
+<link rel="canonical" href="https://yongwoolee512-stack.github.io/klik-site/tools/agent-browser.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="딸깍">
+<meta property="og:title" content="에이전트 브라우저 (Claude가 웹을 직접 조작) (agent-browser) 설치법·한글 설명">
+<meta property="og:description" content="Claude가 웹사이트를 열고, 버튼을 누르고, 글자를 입력하고, 화면을 캡처하도록 해 주는 빠른 브라우저 조작 도구입니다.">
+<meta property="og:url" content="https://yongwoolee512-stack.github.io/klik-site/tools/agent-browser.html">
+<meta property="og:image" content="https://yongwoolee512-stack.github.io/klik-site/media/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../media/favicon.svg" type="image/svg+xml">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"에이전트 브라우저 (Claude가 웹을 직접 조작)","alternateName":"agent-browser","description":"Claude가 웹사이트를 열고, 버튼을 누르고, 글자를 입력하고, 화면을 캡처하도록 해 주는 빠른 브라우저 조작 도구입니다.","url":"https://github.com/vercel-labs/agent-browser","applicationCategory":"자동화·생산성","operatingSystem":"Claude Code","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+<style>*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}body{margin:0;background:#fff;color:#1d1d1f;font:16px/1.65 -apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Pretendard","Malgun Gothic","Segoe UI",Roboto,sans-serif;word-break:keep-all}
+main{max-width:720px;margin:0 auto;padding:28px 16px 64px}header.top{max-width:720px;margin:0 auto;padding:14px 16px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #e5e5ea}
+a{color:#0b2a6f}.brand{font-weight:800;text-decoration:none;color:#0b2a6f;letter-spacing:-.02em}.meta{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 14px}
+.tag{display:inline-block;padding:3px 10px;border-radius:999px;background:#f2f4f8;color:#0b2a6f;font-size:13px;font-weight:600}
+h1{font-size:30px;line-height:1.25;letter-spacing:-.02em;margin:6px 0 4px}.en{color:#6e6e73;font-size:16px;margin:0 0 14px}.one{font-size:19px;margin:0 0 22px}
+h2{font-size:19px;margin:30px 0 8px;letter-spacing:-.01em}h3{font-size:16px;margin:18px 0 4px}p{margin:0 0 10px}ul{margin:0;padding-left:20px}li{margin:4px 0}
+.cta{display:inline-block;padding:14px 26px;border-radius:999px;background:#0b2a6f;color:#fff;font-weight:700;font-size:17px;text-decoration:none;box-shadow:0 6px 18px rgba(11,42,111,.22)}
+.cta:hover{background:#0a2459}.ctabox{margin:26px 0 8px;padding:20px;border-radius:16px;background:#f5f6fa;text-align:center}.ctabox p{margin:10px 0 0;color:#6e6e73;font-size:14px}
+.stats{display:flex;flex-wrap:wrap;gap:10px 22px;color:#6e6e73;font-size:14px;margin:0 0 4px}.stats b{color:#1d1d1f}
+footer{max-width:720px;margin:0 auto;padding:18px 16px 40px;color:#6e6e73;font-size:13px;border-top:1px solid #e5e5ea}footer a{margin-right:14px}
+@media (max-width:480px){h1{font-size:26px}.one{font-size:17px}.cta{display:block}}</style>
+</head>
+<body>
+<header class="top"><a class="brand" href="../">딸깍</a><a href="../">전체 도구 보기</a></header>
+<main>
+<div class="meta"><span class="tag">스킬</span><span class="tag">자동화&#183;생산성</span></div>
+<h1>에이전트 브라우저 (Claude가 웹을 직접 조작)</h1>
+<p class="en">agent-browser</p>
+<p class="one">Claude가 웹사이트를 열고, 버튼을 누르고, 글자를 입력하고, 화면을 캡처하도록 해 주는 빠른 브라우저 조작 도구입니다.</p>
+<div class="stats"><span>GitHub ★ <b>44,950</b></span><span>skills.sh 설치 <b>1,318,228</b>회</span></div>
+<div class="ctabox"><a class="cta" href="../?open=agent-browser">딸깍에서 한 번에 설치하기</a><p>설치 명령을 복사·실행하는 과정을 딸깍 홈에서 안내합니다.</p></div>
+<h2>이런 분께</h2>
+<p>웹에서 반복되는 클릭&#183;입력 작업을 맡기거나, 내가 만든 사이트가 제대로 동작하는지 확인시키고 싶을 때. npm 설치가 필요합니다</p>
+<h2>사용 예시</h2>
+<ul>
+<li>&quot;agent-browser로 우리 쇼핑몰 주문 페이지 열어서 끝까지 진행되는지 확인해 줘&quot;</li>
+<li>&quot;이 사이트 접속해서 공지사항 제목들만 뽑아 줘&quot;</li>
+</ul>
+<h2>원문 설명 한글판</h2>
+<h3>이게 뭔가요?</h3>
+<p>AI 에이전트용 브라우저 자동화 명령줄 도구입니다. Rust로 만든 네이티브 프로그램이라 빠르고, Claude가 명령 한 줄씩 보내서 웹페이지를 열고(open), 화면 구조를 읽고(snapshot), 클릭하고(click), 입력하고(fill), 스크린샷을 찍을 수 있습니다.</p>
+<h3>어떻게 동작하나요?</h3>
+<p>snapshot 명령이 페이지의 접근성 트리를 읽어 각 요소에 @e1, @e2 같은 짧은 참조 번호를 붙입니다. Claude는 그 번호로 &quot;@e2 클릭&quot;, &quot;@e3에 이메일 입력&quot;처럼 정확하게 조작합니다. 요소가 숨겨져 있거나 다른 창에 가려져 있으면 성공한 척하지 않고 바로 실패를 알려 줍니다. CSS 선택자 같은 전통 방식도 지원합니다.</p>
+<h3>설치</h3>
+<p>npm install -g agent-browser 후 agent-browser install 로 테스트용 Chrome을 한 번 내려받습니다(이미 설치된 Chrome&#183;Brave 등이 있으면 자동 인식). 맥은 Homebrew, Rust 사용자는 cargo로도 설치할 수 있습니다. Claude Code에서는 플러그인으로 설치하면 스킬이 함께 들어옵니다.</p>
+<h3>주의할 점</h3>
+<p>브라우저가 실제로 사이트에 접속해 행동하므로 로그인 정보나 결제처럼 민감한 작업은 직접 하고, 읽기&#183;확인 위주로 맡기는 것이 안전합니다. 리눅스에서는 추가 시스템 라이브러리 설치가 필요할 수 있습니다.</p>
+<h2>출처</h2>
+<p><a href="https://skills.sh/vercel-labs/agent-browser/agent-browser" rel="noopener" target="_blank">skills.sh에서 원문 보기</a></p>
+<p style="margin-top:28px"><a class="cta" href="../?open=agent-browser">딸깍에서 한 번에 설치하기</a></p>
+</main>
+<footer><a href="../">딸깍 홈</a><a href="../terms.html">이용약관</a><a href="../privacy.html">개인정보</a><span>한글 설명은 딸깍 편집팀이 옮긴 것이며, 도구의 권리는 원저작자에게 있습니다.</span></footer>
+</body>
+</html>

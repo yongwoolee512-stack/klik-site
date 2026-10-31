@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>피그마 연결 (Figma MCP) 설치법·한글 설명 | 딸깍</title>
+<meta name="description" content="피그마 디자인을 AI가 직접 보고 코드로 바꿔 줍니다.">
+<link rel="canonical" href="https://yongwoolee512-stack.github.io/klik-site/tools/figma.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="딸깍">
+<meta property="og:title" content="피그마 연결 (Figma MCP) 설치법·한글 설명">
+<meta property="og:description" content="피그마 디자인을 AI가 직접 보고 코드로 바꿔 줍니다.">
+<meta property="og:url" content="https://yongwoolee512-stack.github.io/klik-site/tools/figma.html">
+<meta property="og:image" content="https://yongwoolee512-stack.github.io/klik-site/media/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../media/favicon.svg" type="image/svg+xml">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"피그마 연결","alternateName":"Figma MCP","description":"피그마 디자인을 AI가 직접 보고 코드로 바꿔 줍니다.","url":"https://github.com/figma/mcp-server-guide","applicationCategory":"디자인","operatingSystem":"Claude Code","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+<style>*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}body{margin:0;background:#fff;color:#1d1d1f;font:16px/1.65 -apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Pretendard","Malgun Gothic","Segoe UI",Roboto,sans-serif;word-break:keep-all}
+main{max-width:720px;margin:0 auto;padding:28px 16px 64px}header.top{max-width:720px;margin:0 auto;padding:14px 16px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #e5e5ea}
+a{color:#0b2a6f}.brand{font-weight:800;text-decoration:none;color:#0b2a6f;letter-spacing:-.02em}.meta{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 14px}
+.tag{display:inline-block;padding:3px 10px;border-radius:999px;background:#f2f4f8;color:#0b2a6f;font-size:13px;font-weight:600}
+h1{font-size:30px;line-height:1.25;letter-spacing:-.02em;margin:6px 0 4px}.en{color:#6e6e73;font-size:16px;margin:0 0 14px}.one{font-size:19px;margin:0 0 22px}
+h2{font-size:19px;margin:30px 0 8px;letter-spacing:-.01em}h3{font-size:16px;margin:18px 0 4px}p{margin:0 0 10px}ul{margin:0;padding-left:20px}li{margin:4px 0}
+.cta{display:inline-block;padding:14px 26px;border-radius:999px;background:#0b2a6f;color:#fff;font-weight:700;font-size:17px;text-decoration:none;box-shadow:0 6px 18px rgba(11,42,111,.22)}
+.cta:hover{background:#0a2459}.ctabox{margin:26px 0 8px;padding:20px;border-radius:16px;background:#f5f6fa;text-align:center}.ctabox p{margin:10px 0 0;color:#6e6e73;font-size:14px}
+.stats{display:flex;flex-wrap:wrap;gap:10px 22px;color:#6e6e73;font-size:14px;margin:0 0 4px}.stats b{color:#1d1d1f}
+footer{max-width:720px;margin:0 auto;padding:18px 16px 40px;color:#6e6e73;font-size:13px;border-top:1px solid #e5e5ea}footer a{margin-right:14px}
+@media (max-width:480px){h1{font-size:26px}.one{font-size:17px}.cta{display:block}}</style>
+</head>
+<body>
+<header class="top"><a class="brand" href="../">딸깍</a><a href="../">전체 도구 보기</a></header>
+<main>
+<div class="meta"><span class="tag">MCP</span><span class="tag">디자인</span></div>
+<h1>피그마 연결</h1>
+<p class="en">Figma MCP</p>
+<p class="one">피그마 디자인을 AI가 직접 보고 코드로 바꿔 줍니다.</p>
+<div class="stats"><span>GitHub ★ <b>2,131</b></span><span>skills.sh 설치 <b>9,333</b>회</span></div>
+<div class="ctabox"><a class="cta" href="../?open=figma">딸깍에서 한 번에 설치하기</a><p>설치 명령을 복사·실행하는 과정을 딸깍 홈에서 안내합니다.</p></div>
+<h2>이런 분께</h2>
+<p>디자이너와 개발자 사이에서 왔다 갔다 하는 분</p>
+<h2>사용 예시</h2>
+<ul>
+<li>피그마 링크를 붙여 넣으면 그 화면 그대로 코드를 짭니다.</li>
+<li>디자인 시안을 피그마에 새로 그려 주기도 합니다.</li>
+</ul>
+<h2>원문 설명 한글판</h2>
+<h3>이게 뭐예요?</h3>
+<p>피그마 MCP 서버는 피그마 디자인 파일의 정보(색, 글꼴, 간격, 구성요소)를 AI에게 직접 넘겨 주는 연결 통로입니다. 디자인 시안을 보고 코드를 짜거나, 반대로 코드에서 피그마 시안을 만들 수 있습니다.</p>
+<h3>주요 기능</h3>
+<p>• 선택한 프레임을 코드로 변환<br>• 디자인 변수&#183;구성요소&#183;레이아웃 정보 가져오기<br>• (원격 서버) AI가 피그마 캔버스에 직접 그리기: 프레임&#183;구성요소&#183;자동 레이아웃 생성&#183;수정<br>• 이미지가 없을 때 자리 채움 이미지 생성 (피그마 AI 크레딧 사용, 사전 동의 필요)<br>• 웹페이지를 피그마 디자인으로 가져오기 (순차 배포 중)</p>
+<h3>요금&#183;제한 (중요)</h3>
+<p>스타터 요금제이거나 유료 플랜의 View/Collab 좌석이면 월 6회만 쓸 수 있습니다. Dev 또는 Full 좌석(Professional 이상)은 분당 제한만 있습니다. 캔버스에 그리기 기능은 베타 동안 무료지만 나중에 사용량 과금으로 바뀔 예정입니다.</p>
+<h3>Claude Code 설치 (원문 권장 방식)</h3>
+<p>피그마가 권장하는 방식은 Anthropic 공식 마켓의 figma 플러그인 설치입니다. 딸깍 설치가 바로 그 명령(claude plugin install figma@claude-plugins-official)을 대신 눌러 줍니다. 설치 후 피그마 로그인 창이 한 번 뜹니다.</p>
+<h3>써 보기</h3>
+<p>피그마 링크를 붙여 넣고 &quot;이 화면 그대로 코드로 만들어 줘&quot;라고 하면 됩니다.</p>
+<h2>출처</h2>
+<p><a href="https://github.com/figma/mcp-server-guide" rel="noopener" target="_blank">GitHub 저장소 원문 보기</a></p>
+<p style="margin-top:28px"><a class="cta" href="../?open=figma">딸깍에서 한 번에 설치하기</a></p>
+</main>
+<footer><a href="../">딸깍 홈</a><a href="../terms.html">이용약관</a><a href="../privacy.html">개인정보</a><span>한글 설명은 딸깍 편집팀이 옮긴 것이며, 도구의 권리는 원저작자에게 있습니다.</span></footer>
+</body>
+</html>

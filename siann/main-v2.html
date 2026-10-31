@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>메인 시안 A·B·C</title>
+<style>
+body{margin:0;font-family:-apple-system,"Apple SD Gothic Neo","Pretendard","Noto Sans KR",system-ui,sans-serif;background:#1d1d1f;color:#fff;height:100vh;display:flex;flex-direction:column}
+.bar{display:flex;align-items:center;gap:10px;padding:10px 14px;background:#111;flex-wrap:wrap}
+.bar b{font-size:14px;margin-right:6px}
+.bar button{border:1px solid #444;background:#222;color:#ddd;border-radius:999px;padding:7px 14px;font-weight:700;font-size:13px}
+.bar button[aria-pressed="true"]{background:#fff;color:#111;border-color:#fff}
+.bar .d{font-size:12.5px;color:#bbb;flex:1 1 100%;line-height:1.5}
+iframe{flex:1;border:0;background:#fff}
+</style></head><body>
+<div class="bar"><b>메인 시안</b>
+<button data-v="a" aria-pressed="true">A · 위계+버튼+작동 예시</button>
+<button data-v="b">B · A + 순위 5칸을 탭 하나로</button>
+<button data-v="c">C · A + 전체 도구를 위로, 컴팩트 카드</button>
+<span class="d" id="d"></span></div>
+<iframe id="f" src="main-a.html" title="시안"></iframe>
+<script>
+const D={a:"공통 변경만: 제목이 섹션 제목·숫자보다 크게(위계 복구), 히어로에 '첫 도구 딸깍해 보기' 버튼, 카드 썸네일을 영문 이름 타이포 타일로, 상세 창 설치 칸 아래 '작동 예시'(말하면→이렇게 됩니다 + 원문 한글판 한 단락). 섹션 순서는 지금 그대로.",
+b:"A + 순위 칸 5개(필수·깃허브 별·실제 설치·이달 상승·이번 주)를 섹션 하나에 탭으로 합침 → 같은 도구가 네 번 반복되지 않고 전체 도구가 한 화면 위로 올라옴. 질문 광장은 전체 도구 뒤로.",
+c:"A + 순서를 필수 10개 → 전체 도구 → 순위(탭) → 소식 → 질문 광장으로. 카드에서 썸네일을 빼고 글만 남긴 컴팩트형이라 한 화면에 더 많이 보임. 대신 카드가 밋밋해질 수 있음."};
+const f=document.getElementById('f'), d=document.getElementById('d');
+function go(v){ f.src='main-'+v+'.html'; d.textContent=D[v]; document.querySelectorAll('.bar button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.v===v)); }
+document.querySelector('.bar').addEventListener('click',e=>{const b=e.target.closest('button[data-v]'); if(b) go(b.dataset.v);});
+go('a');
+</script>
+</body></html>

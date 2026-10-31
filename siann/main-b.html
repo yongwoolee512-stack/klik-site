@@ -1,0 +1,1432 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>딸깍 Klik — Claude 스킬·플러그인·MCP, 한글로 고르고 버튼 한 번에 설치</title>
+<meta name="description" content="스킬·플러그인·MCP가 뭔지 몰라도 됩니다. Claude에 필요한 AI 도구를 한글 설명으로 고르고, 설치는 딸깍 버튼 한 번. 깃허브 별·실제 설치 수·편집팀 검증까지.">
+<link rel="canonical" href="https://yongwoolee512-stack.github.io/klik-site/">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="딸깍 Klik">
+<meta property="og:title" content="딸깍 — AI 도구, 한글로 고르고 버튼 한 번에 설치">
+<meta property="og:description" content="Claude 스킬·플러그인·MCP를 한글 설명으로 골라 딸깍 한 번. 터미널 안 쳐도 됩니다.">
+<meta property="og:image" content="https://yongwoolee512-stack.github.io/klik-site/media/og.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:url" content="https://yongwoolee512-stack.github.io/klik-site/">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../media/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap">
+<style>
+/* Layout: 쇼핑몰식 진열대 — 상단 검색바, 카테고리 칩 줄, 상품 카드 그리드, 우측/중간 광고 슬롯 */
+:root {
+  --bg: #f3f5f9;
+  --surface: #ffffff;
+  --fg: #111a2f;
+  --muted: #5d6885;
+  --line: #dbe1ec;
+  --accent: #15295a;
+  --accent-soft: #e3e9f6;
+  --accent-fg: #ffffff;
+  --warn-soft: #fdf1dc;
+  --warn: #9a6400;
+  --ad: #e9edf5;
+  --shadow: 0 8px 24px rgba(17,26,47,.10);
+  --display: "Do Hyeon", "Noto Sans KR", system-ui, sans-serif;
+  --body: "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0c1326; --surface: #141d36; --fg: #e9edf7; --muted: #96a2c2; --line: #263253;
+    --accent: #8fb0ff; --accent-soft: #1d2b52; --accent-fg: #0c1326;
+    --warn-soft: #3a2d12; --warn: #f0c36b; --ad: #1a2340; --shadow: 0 8px 24px rgba(0,0,0,.4);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0c1326; --surface: #141d36; --fg: #e9edf7; --muted: #96a2c2; --line: #263253;
+  --accent: #8fb0ff; --accent-soft: #1d2b52; --accent-fg: #0c1326;
+  --warn-soft: #3a2d12; --warn: #f0c36b; --ad: #1a2340; --shadow: 0 8px 24px rgba(0,0,0,.4);
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 15px; line-height: 1.55; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--surface); }
+a { color: inherit; }
+button { font: inherit; cursor: pointer; }
+.wrap { max-width: 1180px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+
+/* 헤더 */
+header { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 9; background: var(--surface); border-bottom: 1px solid var(--line); }
+.topbar { display: flex; align-items: center; gap: 16px; padding-block: 12px; flex-wrap: wrap; }
+.logo { font-family: var(--display); font-size: 28px; letter-spacing: -.5px; color: var(--accent); display: flex; align-items: baseline; gap: 6px; text-decoration: none; }
+.logo small { font-family: var(--body); font-size: 12px; color: var(--muted); font-weight: 500; }
+.logo .logo-en { font-family: var(--body); font-size: 15px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); opacity: .75; }
+.search { flex: 1 1 260px; display: flex; align-items: center; background: var(--bg); border: 1.5px solid var(--line); border-radius: 999px; padding: 0 6px 0 16px; min-width: 0; }
+.search:focus-within { border-color: var(--accent); }
+.search input { flex: 1; min-width: 0; border: 0; background: transparent; padding: 10px 0; font: inherit; color: var(--fg); outline: none; }
+.search button { border: 0; background: var(--accent); color: var(--accent-fg); border-radius: 999px; padding: 8px 14px; font-weight: 700; }
+.nav { display: flex; gap: 4px; }
+.nav button { border: 0; background: transparent; padding: 8px 10px; border-radius: 8px; color: var(--muted); font-weight: 500; }
+.nav button:hover, .nav button[aria-pressed="true"] { background: var(--accent-soft); color: var(--accent); }
+.chips { display: flex; gap: 8px; overflow-x: auto; padding-block: 10px; scrollbar-width: none; }
+.chips::-webkit-scrollbar { display: none; }
+.chip { flex: 0 0 auto; border: 1px solid var(--line); background: var(--surface); border-radius: 999px; padding: 6px 14px; font-weight: 500; color: var(--fg); white-space: nowrap; }
+.chip[aria-pressed="true"] { background: var(--fg); color: var(--bg); border-color: var(--fg); }
+
+/* 히어로 */
+.hero { display: grid; grid-template-columns: 1.4fr 1fr; gap: 20px; margin-top: 20px; }
+.hero-main { background: linear-gradient(135deg, #15295a 0%, #0e1c42 100%); color: #ffffff; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; justify-content: space-between; gap: 18px; min-height: 230px; position: relative; overflow: hidden; }
+.hero-main h1 { font-family: var(--display); font-size: clamp(28px, 4vw, 44px); line-height: 1.15; margin: 0; font-weight: 400; text-wrap: balance; }
+.hero-main p { margin: 0; opacity: .9; max-width: 36ch; }
+.hero-main .deco { position: absolute; right: -30px; bottom: -40px; width: 220px; height: 220px; border-radius: 50%; background: rgba(255,255,255,.12); }
+.hero-steps { display: flex; gap: 10px; flex-wrap: wrap; }
+.step { background: rgba(255,255,255,.16); border-radius: 12px; padding: 8px 12px; font-size: 13px; font-weight: 500; }
+.hero-side { display: grid; gap: 12px; }
+.stat { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 14px 18px; display: flex; justify-content: space-between; align-items: center; }
+.stat b { font-family: var(--display); font-size: 26px; font-weight: 400; color: var(--accent); font-variant-numeric: tabular-nums; }
+.stat span { color: var(--muted); font-size: 13px; }
+.ad { background: var(--ad); border: 1px dashed var(--line); border-radius: 16px; display: grid; place-items: center; color: var(--muted); font-size: 12px; text-align: center; padding: 12px; }
+.ad small { display: block; opacity: .7; }
+
+/* 섹션 */
+section { margin-top: 36px; }
+.sec-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 14px; flex-wrap: wrap; }
+.sec-head h2 { font-family: var(--display); font-weight: 400; font-size: 26px; margin: 0; scroll-margin-top: 130px; }
+@media (max-width: 760px) { .sec-head h2 { scroll-margin-top: 12px; } }
+.sec-head p { margin: 0; color: var(--muted); font-size: 14px; }
+.toolbar { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.toolbar select { border: 1px solid var(--line); background: var(--surface); color: var(--fg); border-radius: 8px; padding: 6px 10px; font: inherit; }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: var(--surface); }
+.seg button { border: 0; background: transparent; padding: 6px 12px; color: var(--muted); font-weight: 500; }
+.seg button[aria-pressed="true"] { background: var(--accent-soft); color: var(--accent); }
+
+/* 카드 */
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 16px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; overflow: hidden; display: flex; flex-direction: column; transition: transform .15s, box-shadow .15s; text-align: left; padding: 0; color: inherit; }
+.card:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
+.card:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.thumb { aspect-ratio: 16/10; max-width: 100%; position: relative; overflow: hidden; display: grid; place-items: center; }
+.thumb .win { width: 82%; background: var(--surface); border-radius: 8px; box-shadow: 0 6px 18px rgba(0,0,0,.18); padding: 8px; font-size: 10px; line-height: 1.4; color: var(--fg); }
+.thumb .win .bar { display: flex; gap: 4px; margin-bottom: 6px; }
+.thumb .win .bar i { width: 7px; height: 7px; border-radius: 50%; background: var(--line); }
+.thumb .win .ln { height: 6px; border-radius: 3px; background: var(--line); margin: 4px 0; }
+.thumb .win .ln.a { background: var(--accent); width: 60%; }
+.thumb .win .ln.s { width: 40%; }
+.thumb .win .ln.m { width: 80%; }
+.badge-row { position: absolute; top: 10px; left: 10px; display: flex; gap: 6px; }
+.badge { font-size: 11px; font-weight: 700; padding: 3px 8px; border-radius: 6px; background: var(--surface); color: var(--fg); }
+.badge.hot { background: #d33f1a; color: #fff; }
+.badge.new { background: var(--accent); color: var(--accent-fg); }
+.badge.md { background: #111; color: #fff; } .md-why { background: #fff8e6; border: 1px solid #f3dca0; border-radius: 12px; padding: 10px 14px; font-size: 13.5px; line-height: 1.55; } .md-why b { display: block; font-size: 12px; color: #8a6200; margin-bottom: 3px; letter-spacing: .04em; }
+.fav { position: absolute; top: 8px; right: 8px; border: 0; background: var(--surface); width: 30px; height: 30px; border-radius: 50%; font-size: 14px; display: grid; place-items: center; }
+.fav[aria-pressed="true"] { color: #e9472f; }
+.cbody { padding: 14px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
+.kind { display: flex; gap: 6px; align-items: center; font-size: 12px; color: var(--muted); flex-wrap: wrap; }
+.tag { background: var(--accent-soft); color: var(--accent); padding: 2px 8px; border-radius: 6px; font-weight: 700; }
+.tag.mcp { background: #e6e9fb; color: #3d49b5; }
+.tag.plugin { background: #fbe9e3; color: #b5471d; }
+.tag.trust-official { background: var(--fg); color: var(--bg); }
+.tag.trust-verified { background: var(--accent-soft); color: var(--accent); }
+.tag.trust-community { background: var(--line); color: var(--muted); }
+:root[data-theme="dark"] .tag.mcp, :root:not([data-theme="light"]) .tag.mcp { background: #262b4f; color: #aab3f5; }
+:root[data-theme="dark"] .tag.plugin, :root:not([data-theme="light"]) .tag.plugin { background: #4a2a1e; color: #f5b79f; }
+@media (prefers-color-scheme: light) { :root:not([data-theme="dark"]) .tag.mcp { background: #e6e9fb; color: #3d49b5; } :root:not([data-theme="dark"]) .tag.plugin { background: #fbe9e3; color: #b5471d; } }
+.cbody h3 { margin: 0; font-size: 17px; font-weight: 700; line-height: 1.3; }
+.cbody .en { font-size: 12px; color: var(--muted); font-weight: 400; }
+.cbody .one { margin: 0; font-size: 14px; color: var(--fg); }
+.cbody .when { margin: 0; font-size: 13px; color: var(--muted); }
+.cbody .when b { color: var(--accent); font-weight: 700; }
+.meta { display: flex; justify-content: space-between; align-items: center; margin-top: auto; padding-top: 8px; border-top: 1px solid var(--line); font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.meta .lvl { display: inline-flex; gap: 2px; }
+.meta .lvl i { width: 6px; height: 10px; border-radius: 2px; background: var(--line); }
+.meta .lvl i.on { background: var(--accent); }
+.install { background: var(--accent); color: var(--accent-fg); border: 0; border-radius: 8px; padding: 6px 12px; font-weight: 700; font-size: 13px; }
+.card.ad-card { background: var(--ad); border-style: dashed; align-items: center; justify-content: center; color: var(--muted); font-size: 13px; min-height: 260px; text-align: center; padding: 20px; }
+
+/* 랭킹 */
+.rank { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 10px; }
+.rank button { display: flex; gap: 12px; align-items: center; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 10px 14px; text-align: left; color: inherit; }
+.rank button:hover { border-color: var(--accent); }
+.rank .n { font-family: var(--display); font-size: 24px; color: var(--accent); width: 28px; flex: 0 0 auto; }
+.rank .t { flex: 1; min-width: 0; }
+.rank .t b { display: block; font-size: 15px; }
+.rank .t span { font-size: 12px; color: var(--muted); display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.rank .d { font-size: 12px; color: var(--accent); font-weight: 700; font-variant-numeric: tabular-nums; }
+
+.helper-banner { margin-top: 20px; background: var(--accent-soft); color: var(--fg); border-radius: 14px; padding: 14px 18px; display: flex; gap: 14px; align-items: center; justify-content: space-between; flex-wrap: wrap; font-size: 14px; }
+.helper-banner b { color: var(--accent); }
+.helper-banner .install { padding: 10px 16px; font-size: 14px; border-radius: 10px; white-space: nowrap; }
+
+/* 신상 소식 */
+.news-wrap { display: grid; grid-template-columns: 1fr 300px; gap: 16px; align-items: start; }
+.news { display: grid; gap: 8px; min-width: 0; }
+.nitem { display: grid; grid-template-columns: 64px 1fr auto; gap: 12px; align-items: center; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; text-align: left; color: inherit; min-width: 0; }
+.nitem:hover { border-color: var(--accent); }
+.nitem .date { font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; line-height: 1.3; }
+.nitem .date b { display: block; font-family: var(--display); font-size: 18px; font-weight: 400; color: var(--fg); }
+.nitem .body { min-width: 0; }
+.nitem .body b { display: block; font-size: 15px; }
+.nitem .body span { font-size: 13px; color: var(--muted); }
+.nitem .nt { font-size: 11px; font-weight: 700; padding: 3px 8px; border-radius: 6px; white-space: nowrap; }
+.nt.new { background: var(--accent-soft); color: var(--accent); }
+.nt.upd { background: var(--warn-soft); color: var(--warn); }
+.nt.pick { background: var(--fg); color: var(--bg); }
+.nitem.today { border-left: 4px solid var(--accent); }
+.subscribe { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 18px; display: grid; gap: 10px; position: sticky; top: calc(110px + env(safe-area-inset-top, 0px)); }
+.subscribe h3 { margin: 0; font-family: var(--display); font-weight: 400; font-size: 22px; }
+.subscribe p { margin: 0; font-size: 13px; color: var(--muted); }
+.subscribe form { display: grid; gap: 8px; }
+.subscribe input { border: 1.5px solid var(--line); background: var(--bg); color: var(--fg); border-radius: 10px; padding: 10px 12px; font: inherit; }
+.subscribe input:focus { outline: none; border-color: var(--accent); }
+.subscribe form .install { padding: 10px; font-size: 14px; border-radius: 10px; }
+.sub-alt { display: flex; gap: 6px; }
+.sub-alt button { flex: 1; border: 1px solid var(--line); background: transparent; color: var(--fg); border-radius: 8px; padding: 7px 4px; font-size: 12px; font-weight: 500; }
+.sub-cnt { font-size: 12px; color: var(--muted); }
+.sub-cnt b { color: var(--accent); }
+
+.empty { padding: 40px; text-align: center; color: var(--muted); border: 1px dashed var(--line); border-radius: 16px; }
+
+/* 하단 */
+.submit { margin-top: 40px; background: var(--surface); border: 1px solid var(--line); border-radius: 20px; padding: 24px; display: grid; grid-template-columns: 1fr auto; gap: 16px; align-items: center; }
+.submit h2 { font-family: var(--display); font-weight: 400; margin: 0 0 4px; font-size: 24px; }
+.submit p { margin: 0; color: var(--muted); font-size: 14px; }
+.btn-outline { border: 1.5px solid var(--accent); color: var(--accent); background: transparent; border-radius: 10px; padding: 10px 18px; font-weight: 700; }
+footer { margin-top: 40px; padding-block: 24px; border-top: 1px solid var(--line); color: var(--muted); font-size: 12px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+
+/* 상세 모달 */
+.modal { position: fixed; inset: 0; z-index: 20; background: rgba(0,0,0,.5); display: grid; place-items: center; padding: 16px; }
+.sheet { background: var(--surface); color: var(--fg); border-radius: 20px; max-width: 760px; width: 100%; max-height: 92vh; overflow: auto; box-shadow: var(--shadow); }
+.sheet-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; padding: 20px 20px 0; }
+.sheet-head h2 { margin: 0; font-size: 24px; font-weight: 700; line-height: 1.25; }
+.close { border: 0; background: var(--bg); width: 36px; height: 36px; border-radius: 50%; font-size: 18px; flex: 0 0 auto; }
+.sheet-body { padding: 16px 20px 20px; display: grid; gap: 18px; }
+.preview { border-radius: 14px; overflow: hidden; aspect-ratio: 16/8; max-width: 100%; display: grid; place-items: center; position: relative; }
+.preview .cap { position: absolute; bottom: 10px; left: 12px; font-size: 12px; background: rgba(0,0,0,.55); color: #fff; padding: 4px 10px; border-radius: 6px; }
+.preview .play { position: absolute; width: 56px; height: 56px; border-radius: 50%; background: rgba(255,255,255,.92); color: #111; border: 0; font-size: 20px; display: grid; place-items: center; }
+.blocks { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.blk { background: var(--bg); border-radius: 12px; padding: 14px; min-width: 0; }
+.blk h4 { margin: 0 0 6px; font-size: 13px; color: var(--muted); letter-spacing: .04em; text-transform: uppercase; }
+.blk p, .blk li { margin: 0; font-size: 14px; }
+.blk ul { margin: 0; padding-left: 18px; display: grid; gap: 4px; }
+.steps { display: grid; gap: 10px; }
+.stp { display: flex; gap: 12px; align-items: flex-start; }
+.stp .num { flex: 0 0 auto; width: 26px; height: 26px; border-radius: 50%; background: var(--accent); color: var(--accent-fg); display: grid; place-items: center; font-weight: 700; font-size: 13px; }
+.stp .txt { min-width: 0; flex: 1; }
+.stp .txt b { display: block; }
+.stp .txt span { font-size: 13px; color: var(--muted); }
+.cmd { display: flex; gap: 8px; align-items: center; background: #0b1328; color: #d6e0ff; border-radius: 10px; padding: 10px 12px; font-family: ui-monospace, Consolas, monospace; font-size: 13px; margin-top: 8px; }
+.cmd code { flex: 1; min-width: 0; overflow-x: auto; white-space: nowrap; }
+.cmd button { border: 0; background: var(--accent); color: var(--accent-fg); border-radius: 6px; padding: 5px 10px; font-weight: 700; font-size: 12px; flex: 0 0 auto; }
+.big-install { display: flex; gap: 10px; flex-wrap: wrap; }
+.big-install .install { padding: 12px 20px; font-size: 15px; border-radius: 12px; flex: 1 1 200px; }
+.big-install a.btn-outline { text-decoration: none; text-align: center; flex: 1 1 160px; padding: 11px 18px; }
+.note { background: var(--warn-soft); color: var(--warn); border-radius: 10px; padding: 10px 14px; font-size: 13px; }
+.readme { background: var(--surface); border-radius: 14px; padding: 14px 16px; }
+.readme summary { cursor: pointer; list-style: none; display: flex; flex-wrap: wrap; gap: 8px; align-items: baseline; font-size: 15px; }
+.readme summary::-webkit-details-marker { display: none; }
+.readme summary::before { content: "▸"; color: var(--muted); margin-right: 2px; }
+.readme[open] summary::before { content: "▾"; }
+.readme summary span { font-size: 12px; color: var(--muted); }
+.readme-body { display: grid; gap: 0; margin-top: 10px; border-top: 1px solid var(--line); }
+.readme-body section { background: transparent; border-radius: 0; padding: 14px 2px; margin-top: 0; border-bottom: 1px solid var(--line); }
+.readme-body h5 { margin: 0 0 6px; font-size: 14px; color: var(--fg); display: flex; align-items: center; gap: 8px; }
+.readme-body h5::before { content: ""; width: 4px; height: 14px; border-radius: 2px; background: var(--accent); flex: 0 0 auto; }
+.readme-body p { margin: 0; font-size: 14px; line-height: 1.6; word-break: keep-all; overflow-wrap: anywhere; }
+.toast { position: fixed; left: 50%; bottom: calc(24px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); background: var(--fg); color: var(--bg); padding: 10px 18px; border-radius: 999px; font-weight: 700; z-index: 30; box-shadow: var(--shadow); }
+
+@media (max-width: 760px) {
+  /* 폰: 헤더는 고정하지 않고 같이 스크롤(화면 40%를 먹던 문제), 플랫폼 탭은 한 줄 가로 스크롤, 설명 문구 숨김 */
+  header { position: static; }
+  .topbar { gap: 10px; padding-block: 10px; }
+  .logo small { display: none; }
+  .nav { width: 100%; justify-content: flex-start; overflow-x: auto; flex-wrap: nowrap; scrollbar-width: none; }
+  .nav::-webkit-scrollbar { display: none; }
+  .nav button { white-space: nowrap; font-size: 13px; padding: 6px 10px; flex: 0 0 auto; }
+  .chips { padding-block: 6px 10px; }
+  .thumb { aspect-ratio: 16/7; }
+  .thumb .win { width: 60%; }
+  .modal { align-items: end; padding: 0; }
+  .sheet { border-radius: 20px 20px 0 0; max-height: 94vh; }
+  .hero { grid-template-columns: 1fr; }
+  .news-wrap { grid-template-columns: 1fr; }
+  .subscribe { position: static; }
+  .nitem { grid-template-columns: 52px 1fr; }
+  .nitem .nt { grid-column: 2; justify-self: start; }
+  .hero-side { grid-template-columns: 1fr; }   /* 폰에서 숫자 타일 두 칸이면 글자가 세로로 깨짐 */
+  .stat { padding: 12px 16px; }
+  .blocks { grid-template-columns: 1fr; }
+  .submit { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: reduce) { .card { transition: none; } }
+</style>
+
+<style id="skin-a">
+/* ===== 시안 A · 애플: 흰 바탕, 크고 굵은 검정 제목, 넓은 여백, 알약 버튼, 테두리 없는 회색 카드, 반투명 상단바 ===== */
+:root { --bg:#ffffff; --surface:#f5f5f7; --fg:#1d1d1f; --muted:#6e6e73; --line:#d2d2d7; --accent:#0b2a6f; --accent-soft:#e9eefb; --accent-fg:#ffffff; --ad:#f5f5f7; --shadow:0 10px 30px rgba(0,0,0,.08);
+  --body:-apple-system,BlinkMacSystemFont,"SF Pro KR","SF Pro Text","Apple SD Gothic Neo","Pretendard","Noto Sans KR","Segoe UI",system-ui,sans-serif; --display:var(--body); --glass:rgba(255,255,255,.72); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg:#000; --surface:#1d1d1f; --fg:#f5f5f7; --muted:#a1a1a6; --line:#424245; --accent:#7aa2ff; --accent-soft:#15213f; --accent-fg:#000; --ad:#1d1d1f; --shadow:0 10px 30px rgba(0,0,0,.5); --glass:rgba(0,0,0,.72); } }
+:root[data-theme="dark"] { --bg:#000; --surface:#1d1d1f; --fg:#f5f5f7; --muted:#a1a1a6; --line:#424245; --accent:#7aa2ff; --accent-soft:#15213f; --accent-fg:#000; --ad:#1d1d1f; --shadow:0 10px 30px rgba(0,0,0,.5); --glass:rgba(0,0,0,.72); }
+body { font-size:17px; line-height:1.47; -webkit-font-smoothing:antialiased; letter-spacing:-.01em; }
+.logo,.hero-main h1,.sec-head h2,.stat b,.rank .n,.subscribe h3,.submit h2,.nitem .date b,.sheet-head h2 { font-family:var(--body); font-weight:700; letter-spacing:-.025em; }
+.logo { font-size:22px; color:var(--fg); } .logo .logo-en { font-size:12px; letter-spacing:.12em; opacity:1; color:var(--muted); } .logo small { font-weight:400; letter-spacing:0; }
+header { background:var(--glass); backdrop-filter:saturate(180%) blur(20px); -webkit-backdrop-filter:saturate(180%) blur(20px); border-bottom:1px solid rgba(0,0,0,.06); }
+.search { background:var(--surface); border:0; border-radius:980px; } .search:focus-within { box-shadow:0 0 0 3px var(--accent-soft); }
+.search button,.install,.btn-outline,.chip,.seg,.preview .play,.toast { border-radius:980px; }
+.nav button { border-radius:980px; font-size:14px; }
+.chip { border:0; background:var(--surface); font-size:14px; } .chip[aria-pressed="true"] { background:var(--fg); color:var(--bg); }
+.seg { border:0; background:var(--surface); padding:3px; } .seg button { border-radius:980px; padding:5px 12px; font-size:13px; } .seg button[aria-pressed="true"] { background:var(--bg); color:var(--fg); box-shadow:0 1px 4px rgba(0,0,0,.12); }
+.toolbar select { border:0; background:var(--surface); border-radius:980px; padding:6px 14px; } .btn-outline { border-width:1px; }
+.hero { grid-template-columns:1fr; gap:14px; margin-top:8px; }
+.hero-main { background:var(--surface); color:var(--fg); border-radius:28px; padding:64px 28px 48px; align-items:center; text-align:center; min-height:0; } .hero-main .deco { display:none; }
+.hero-main h1 { font-size:clamp(34px,5vw,60px); line-height:1.08; letter-spacing:-.035em; max-width:18ch; margin:0 auto; }
+.hero-main p { opacity:1; color:var(--muted); font-size:19px; max-width:40ch; margin:14px auto 0; }
+.hero-steps { justify-content:center; } .step { background:var(--bg); color:var(--fg); border-radius:980px; font-size:14px; padding:9px 16px; box-shadow:0 1px 3px rgba(0,0,0,.06); }
+.hero-side { grid-template-columns:1fr 1fr 1.4fr; } .stat,.ad { border:0; background:var(--surface); border-radius:20px; } .stat b { font-size:34px; color:var(--fg); }
+section { margin-top:56px; } .sec-head h2 { font-size:32px; } .sec-head p { font-size:15px; }
+.grid { gap:18px; } .card { border:0; background:var(--surface); border-radius:22px; } .card:hover { transform:translateY(-3px); box-shadow:var(--shadow); }
+.cbody { padding:18px 18px 16px; gap:9px; } .cbody h3 { font-size:19px; letter-spacing:-.02em; } .cbody .one { font-size:15px; } .cbody .when { font-size:13.5px; } .meta { border-top:0; padding-top:6px; }
+.tag,.badge { border-radius:980px; } .tag { font-size:11px; }
+.install { background:var(--accent); color:var(--accent-fg); padding:7px 14px; font-size:13px; } .big-install .install { padding:13px 22px; font-size:16px; } .big-install a.btn-outline { padding:12px 20px; }
+.card.ad-card { border:0; background:var(--surface); }
+.nitem,.rank button,.subscribe,.submit,.blk { border:0; background:var(--surface); border-radius:18px; } .nitem:hover,.rank button:hover { background:var(--accent-soft); }
+.subscribe input { border:0; background:var(--bg); border-radius:12px; } .sub-alt button { border:0; background:var(--bg); border-radius:980px; }
+.submit { border-radius:28px; padding:36px 32px; } .submit h2 { font-size:30px; } .note { border-radius:14px; } .empty { border-radius:18px; }
+.modal { background:rgba(0,0,0,.4); backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px); } .sheet { background:var(--bg); border-radius:28px; } .sheet-head h2 { font-size:26px; } .close { background:var(--surface); } .preview { border-radius:20px; } .cmd { border-radius:14px; } .stp .num { background:var(--fg); color:var(--bg); }
+/* --- apple-design 스킬 적용: 누르는 순간 반응(pointer-down), 재질(translucent chrome + 밝은 윗모서리), 스크롤 가장자리 효과, 크기별 자간, 임계감쇠 스프링, 모션 축소 대응 --- */
+.install, .btn-outline, .chip, .nav button, .seg button, .card, .nitem, .rank button, .search button, .sub-alt button, .close { transition: transform 100ms ease-out, background-color 150ms ease-out, box-shadow 200ms ease-out; }
+.install:active, .btn-outline:active, .chip:active, .nav button:active, .seg button:active, .search button:active, .sub-alt button:active, .close:active { transform: scale(.96); }
+.card:active, .nitem:active, .rank button:active { transform: scale(.985); }
+header { border-bottom: 0; box-shadow: inset 0 1px 0 rgba(255,255,255,.6); position: sticky; }
+header::after { content: ""; position: absolute; left: 0; right: 0; top: 100%; height: 14px; pointer-events: none; background: linear-gradient(to bottom, rgba(0,0,0,.05), rgba(0,0,0,0)); }
+:root:not([data-theme="light"]) header { box-shadow: inset 0 1px 0 rgba(255,255,255,.08); }
+.hero-main h1 { letter-spacing: -.04em; line-height: 1.05; font-optical-sizing: auto; }
+.sec-head h2 { letter-spacing: -.03em; line-height: 1.1; }
+.cbody h3 { letter-spacing: -.015em; }
+.cbody .one, .cbody .when, .blk p, .blk li, .stp .txt span { letter-spacing: 0; }
+.tag, .badge, .nt { letter-spacing: .02em; }
+.modal { animation: a-dim 240ms ease-out both; }
+.sheet { animation: a-rise 420ms cubic-bezier(.2,.9,.3,1) both; transform-origin: 50% 100%; }
+@keyframes a-dim { from { opacity: 0 } to { opacity: 1 } }
+@keyframes a-rise { from { opacity: 0; transform: translateY(24px) scale(.98) } to { opacity: 1; transform: none } }
+.toast { animation: a-rise 380ms cubic-bezier(.2,.9,.3,1) both; }
+.sheet, .toast, .search, .subscribe, .submit { box-shadow: var(--shadow), inset 0 1px 0 rgba(255,255,255,.5); }
+@media (prefers-reduced-motion: reduce) { .sheet, .toast, .modal { animation: a-dim 160ms ease-out both; transform: none !important; } .card:hover { transform: none; } .install:active, .card:active { transform: none; } }
+@media (prefers-reduced-transparency: reduce) { header { background: var(--bg); backdrop-filter: none; -webkit-backdrop-filter: none; } .modal { backdrop-filter: none; -webkit-backdrop-filter: none; } }
+@media (prefers-contrast: more) { .card, .nitem, .rank button, .stat, .subscribe, .submit { border: 1px solid var(--line); } }
+@media (max-width:760px) { .hero-main { padding:44px 20px 32px; border-radius:22px; } .hero-side { grid-template-columns:1fr; } .sec-head h2 { font-size:26px; } .sheet { border-radius:24px 24px 0 0; } header { position: static; } header::after { display: none; } }
+</style>
+<style id="skin-a-light">
+/* 라이트 고정: 기기가 다크 모드여도 항상 밝은 애플 스타일 */
+:root, :root:not([data-theme="light"]), :root[data-theme="dark"] { --bg:#ffffff; --surface:#f5f5f7; --fg:#1d1d1f; --muted:#5e5e63; --line:#d2d2d7; --accent:#0b2a6f; --accent-soft:#e9eefb; --accent-fg:#ffffff; --ad:#f5f5f7; --warn-soft:#fdf1dc; --warn:#9a6400; --shadow:0 10px 30px rgba(0,0,0,.08); --glass:rgba(255,255,255,.72); color-scheme: light; }
+.tag.mcp { background:#e6e9fb !important; color:#3d49b5 !important; } .tag.plugin { background:#fbe9e3 !important; color:#b5471d !important; }
+h1, h2, h3, p, .cbody .one, .cbody .when, .nitem .body b, .nitem .body span { word-break: keep-all; overflow-wrap: anywhere; }
+
+/* 버그 수정: 카드에 기준점이 없어 NEW·인기 배지와 ♥ 버튼이 페이지 왼쪽 위로 튀던 문제 */
+.card { position: relative; }
+.hero { grid-template-columns: 1.8fr 1fr; } .hero-main { padding: 48px 40px 40px; } .hero-main h1 { max-width: none; font-size: clamp(24px, 2.5vw, 38px); line-height: 1.18; letter-spacing: -.035em; } .h1-en { font-weight: 700; letter-spacing: .02em; color: var(--accent); }
+
+/* 히어로: 왼쪽 큰 제목, 오른쪽에 숫자 타일을 크게 세로로 */
+.hero { grid-template-columns: 1.45fr 1fr; gap: 14px; align-items: stretch; }
+.hero-main { text-align: left; align-items: flex-start; padding: 56px 44px 44px; justify-content: center; }
+.hero-main h1 { margin: 0; }
+.hero-main p { margin: 16px 0 0; }
+.hero-steps { justify-content: flex-start; margin-top: 8px; }
+.hero-side { grid-template-columns: 1fr; grid-template-rows: 1fr 1fr auto; gap: 14px; }
+.stat { flex-direction: column; align-items: flex-start; justify-content: center; gap: 6px; padding: 26px 30px; }
+.stat > div { display: flex; flex-direction: column; gap: 2px; }
+.stat b { font-size: 60px; line-height: 1; letter-spacing: -.045em; }
+.stat > div > span { font-size: 15px; font-weight: 600; color: var(--fg); }
+.stat > span { font-size: 13px; color: var(--muted); }
+.ad { min-height: 92px; }
+@media (max-width: 640px) { .hero { grid-template-columns: 1fr; } .hero-main { padding: 40px 22px 32px; } .hero-side { grid-template-columns: 1fr 1fr; grid-template-rows: auto; } .hero-side .ad { grid-column: span 2; } .stat { padding: 18px 20px; } .stat b { font-size: 40px; } } @media (min-width: 641px) and (max-width: 900px) { .hero { grid-template-columns: 1.4fr 1fr; } .stat { padding: 18px 20px; } .stat b { font-size: 42px; } .hero-main { padding: 36px 26px 30px; } }
+</style>
+<script>(function(){var q=new URLSearchParams(location.search),z=q.get("zone"),h=q.get("head");if(z)document.documentElement.classList.add("zone-"+z);if(h)document.documentElement.classList.add("head-"+h);})();</script>
+<script>document.write('<script src="../community-config.js?t=' + Math.floor(Date.now() / 300000) + '"><\/script>');</script><!-- 설정 파일을 5분 단위로 새로 받기 (브라우저 캐시 방지) -->
+<style id="community">
+/* ===== 커뮤니티: 한국 사용자 별점·한 줄 평·댓글 (Supabase 설정이 있을 때만 보임) ===== */
+.cm-rate { margin:0; font-size:13px; color:var(--muted); display:flex; gap:6px; align-items:center; flex-wrap:wrap; }
+.cm-rate .stars, .cm .stars { color:#f5a623; letter-spacing:-.5px; }
+.cm-rate b { color:var(--fg); font-weight:600; }
+.cm { display:grid; gap:16px; border-top:1px solid var(--line); padding-top:18px; }
+.cm h4 { margin:0 0 8px; font-size:15px; display:flex; align-items:baseline; gap:8px; }
+.cm .sub { font-size:13px; color:var(--muted); font-weight:400; }
+.cm-top { display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap; }
+.cm-avg { display:flex; align-items:baseline; gap:8px; }
+.cm-avg b { font-size:30px; font-weight:700; letter-spacing:-.02em; }
+.cm-avg .stars { font-size:18px; }
+.cm-react { display:flex; gap:8px; flex-wrap:wrap; }
+.cm-react button { border:0; background:var(--surface); color:var(--fg); border-radius:980px; padding:8px 14px; font-size:13px; font-weight:600; }
+.cm-react button[aria-pressed="true"] { background:var(--accent-soft); color:var(--accent); }
+.cm-form { background:var(--surface); border-radius:16px; padding:14px; display:grid; gap:10px; }
+.cm-form[hidden] { display:none; }
+.cm-starpick { display:flex; gap:2px; align-items:center; }
+.cm-starpick button { border:0; background:transparent; font-size:28px; line-height:1; color:var(--line); padding:0 2px; transition:transform 100ms ease-out; }
+.cm-starpick button.on { color:#f5a623; }
+.cm-starpick button:hover { transform:scale(1.15); }
+.cm-starpick .sub { margin-left:8px; }
+.cm-row { display:flex; gap:8px; flex-wrap:wrap; }
+.cm-row input, .cm-row textarea { flex:1 1 160px; min-width:0; border:0; background:var(--bg); color:var(--fg); border-radius:12px; padding:10px 12px; font:inherit; font-size:14px; }
+.cm-row input.nick { flex:0 1 120px; }
+.cm-row input:focus, .cm-row textarea:focus { outline:none; box-shadow:0 0 0 3px var(--accent-soft); }
+.cm-row textarea { resize:vertical; min-height:64px; flex-basis:100%; }
+.cm-row .install { flex:0 0 auto; }
+.helper-guide { position:relative; display:grid; gap:12px; background:var(--bg); border-radius:16px; padding:14px; margin-bottom:14px; }
+.sheet { overflow-x:hidden; } .sheet .zone { margin:0; min-width:0; border:0; border-radius:16px; padding:16px; background:var(--surface); } .zone > h3 { margin:0 0 12px; font-size:15px; font-weight:700; color:var(--fg); } .sheet .zone-install { background:transparent; padding:0; } .zone-install > h3 { display:none; } .zone .blk { background:var(--bg); } .zone-cm .cm { border-top:0; padding-top:0; } .sheet-body { gap:14px; }
+/* 구분 모드 (주소 ?zone=line|band, 기본은 위의 흰 타일) */
+html.zone-line .sheet .zone { background:transparent; border-radius:0; padding:18px 0 0; border-top:1px solid var(--line); } html.zone-line .sheet .zone-install { border-top:0; padding-top:0; } html.zone-line .zone .blk { background:var(--surface); } html.zone-line .sheet-body { gap:18px; }
+/* 기본 = 배경 띠 (사용자 선택 2026-10-30): 알아보기·후기는 연회색 띠, 설치·영상은 흰색. ?zone=tint 면 예전 타일 */
+html:not(.zone-tint):not(.zone-line) .sheet-body { gap:0; padding:16px 0 0; } html:not(.zone-tint):not(.zone-line) .sheet .zone { border-radius:0; padding:18px 20px; background:var(--bg); } html:not(.zone-tint):not(.zone-line) .sheet .zone-install { padding:0 20px 18px; } html:not(.zone-tint):not(.zone-line) .sheet .zone:nth-of-type(2), html:not(.zone-tint):not(.zone-line) .sheet .zone:nth-of-type(4) { background:var(--surface); } html:not(.zone-tint):not(.zone-line) .sheet .zone:nth-of-type(2) .blk, html:not(.zone-tint):not(.zone-line) .sheet .zone:nth-of-type(4) .blk { background:var(--bg); } html:not(.zone-tint):not(.zone-line) .sheet .zone:nth-of-type(3) .blk { background:var(--surface); }
+/* 원문 한글판: 알아보기 안의 한 칸(흰 배경)처럼, 오른쪽에 "더보기/접기" */
+.zone .readme { background:var(--bg); border-radius:12px; padding:14px; margin-top:12px; } .zone .readme summary { display:flex; align-items:center; gap:8px; font-size:14px; } .zone .readme summary::before { display:none; } .zone .readme summary b { font-size:14px; } .zone .readme summary span { flex:1 1 auto; } .zone .readme summary::after { content:"더보기 ▾"; flex:0 0 auto; font-size:12px; font-weight:700; color:var(--accent); background:var(--surface); border:1px solid var(--line); border-radius:980px; padding:5px 11px; } .zone .readme[open] summary::after { content:"접기 ▴"; } .warn-ico { display:inline-grid; place-items:center; width:16px; height:16px; border-radius:50%; background:#f5a623; color:#fff; font-style:normal; font-weight:800; font-size:11px; margin-right:6px; vertical-align:-3px; }
+.try-box { margin-top:8px; border:2px solid var(--accent); background:#fff; font-family:inherit; } .try-box code { font-size:14px; font-weight:600; color:var(--fg); white-space:normal; font-family:inherit; } .try-note { display:block; font-size:12px; color:var(--muted); margin-top:4px; }
+.done-box { display:flex; gap:10px; align-items:flex-start; margin-top:10px; padding:12px 14px; border-radius:12px; background:#ecfdf3; border:1.5px solid #bbf7d0; font-size:14px; line-height:1.5; color:#14532d; } .ok-ico { flex:none; display:grid; place-items:center; width:22px; height:22px; border-radius:50%; background:#15803d; color:#fff; font-style:normal; font-weight:800; font-size:13px; margin-top:1px; }
+.opt-lead { display:block; font-size:12.5px; color:var(--muted); margin-top:12px; } .try-box.opt-box { margin-top:6px; border-style:dashed; border-color:#9ca3af; } .try-box.opt-box code { font-weight:500; } .try-box.opt-box button { background:#fff; color:var(--accent); border:1.5px solid var(--accent); }
+.try-line { margin:0; font-size:13px; background:var(--surface-2, #f5f5f7); border-radius:12px; padding:9px 12px; } .try-line code { background:#fff; border:1px solid var(--line); border-radius:6px; padding:1px 6px; font-size:12px; } .try-line span { color:var(--muted); font-size:12px; } /* 제목 줄 간격: B 중간 (사용자 선택 2026-10-30) */
+.sheet-head .cm-rate { margin:10px 0 0; } .sheet-head h2 { margin-top:6px; } .sheet-head .one-line { margin:8px 0 0 !important; line-height:1.55; } .sheet-head .meta-line { margin:5px 0 0 !important; line-height:1.6; } .sheet-head { padding-bottom:6px; }
+/* 헤더 간격 시안 (?head=a|b|c): a 촘촘 / b 중간 / c 별점·숫자 한 줄 */
+html.head-a .sheet-head h2 { margin-top:4px; } html.head-a .sheet-head .one-line { margin-top:4px !important; } html.head-a .sheet-head .cm-rate { margin-top:6px; } html.head-a .sheet-head .meta-line { margin-top:3px !important; }
+html.head-b .sheet-head h2 { margin-top:6px; } html.head-b .sheet-head .one-line { margin-top:8px !important; } html.head-b .sheet-head .cm-rate { margin-top:10px; } html.head-b .sheet-head .meta-line { margin-top:5px !important; }
+html.head-c .sheet-head .cm-rate { display:inline-flex; margin:10px 14px 0 0; vertical-align:middle; } html.head-c .sheet-head .meta-line { display:inline-block; margin:10px 0 0 !important; vertical-align:middle; } html.head-c .sheet-head .one-line { margin-top:6px !important; }
+.vids { display:flex; gap:10px; overflow-x:auto; padding-bottom:6px; -webkit-overflow-scrolling:touch; } .vid { flex:0 0 auto; width:100%; max-width:420px; } .vid.v { width:220px; } .vid iframe { display:block; width:100%; aspect-ratio:16/9; border:0; border-radius:12px; background:#000; } .vid.v iframe { aspect-ratio:9/16; } .vid span { display:block; font-size:12px; color:var(--muted); margin-top:4px; }
+.cm-list { display:grid; gap:8px; }
+.cm-item { background:var(--surface); border-radius:14px; padding:10px 14px; font-size:14px; display:grid; gap:5px; }
+.cm-item.best { box-shadow:inset 0 0 0 1.5px var(--accent); }
+.cm-item .meta2 { display:flex; justify-content:space-between; gap:8px; font-size:12px; color:var(--muted); flex-wrap:wrap; }
+.cm-item .meta2 .best-tag { background:var(--accent); color:var(--accent-fg); border-radius:980px; padding:1px 8px; font-weight:700; font-size:11px; }
+.cm-item .meta2 button { border:0; background:transparent; color:var(--muted); font-size:12px; padding:0; font-weight:600; }
+.cm-item .meta2 button[aria-pressed="true"] { color:var(--accent); }
+.cm-item .meta2 button:hover { color:var(--fg); }
+.cm-item .body2 { white-space:pre-wrap; word-break:keep-all; overflow-wrap:anywhere; }
+.cm-empty { font-size:13px; color:var(--muted); padding:6px 2px; }
+.cm-done { font-size:14px; background:var(--surface); border-radius:14px; padding:12px 14px; }
+.cm-done b { color:var(--accent); }
+.cm-more { justify-self:start; }
+@media (max-width:760px) { .cm-avg b { font-size:26px; } }
+/* 2차: 답글 스레드 · 질문 광장 · 지금 대화 중 띠 */
+.cm-feed { display:flex; gap:8px; overflow-x:auto; margin-top:14px; padding-bottom:4px; scrollbar-width:none; }
+.cm-feed::-webkit-scrollbar { display:none; }
+.cm-feed .chip { max-width:360px; overflow:hidden; text-overflow:ellipsis; font-weight:400; }
+.cm-feed .chip b { font-weight:600; margin-right:4px; }
+.cm-feed .chip.lbl { background:var(--fg); color:var(--bg); font-weight:600; }
+.cm-ask { margin-bottom:12px; }
+.cm-q { background:var(--surface); border-radius:18px; padding:14px 16px; display:grid; gap:8px; }
+.cm-q .qbody { font-size:16px; font-weight:600; letter-spacing:-.01em; word-break:keep-all; overflow-wrap:anywhere; }
+.cm-q.solved .qbody::before, .cm-item.solved .body2::before { content:"해결됨 ✓"; display:inline-block; background:#1f8a4c; color:#fff; font-size:11px; font-weight:700; border-radius:980px; padding:2px 8px; margin-right:6px; vertical-align:middle; }
+.cm-q .meta2 { display:flex; justify-content:space-between; gap:8px; font-size:12px; color:var(--muted); flex-wrap:wrap; }
+.cm-q .meta2 button, .cm-item .meta2 button { border:0; background:transparent; color:var(--muted); font-size:12px; padding:0; font-weight:600; }
+.cm-q .meta2 button:hover { color:var(--fg); }
+.cm-q .tool-chip, .cm-reply .tool-chip { display:inline-flex; align-items:center; gap:4px; border:0; background:var(--accent-soft); color:var(--accent); border-radius:980px; padding:3px 10px; font-size:12px; font-weight:700; }
+.cm-thread { display:grid; gap:6px; margin-left:14px; border-left:2px solid var(--line); padding-left:12px; }
+.cm-reply { background:var(--bg); border-radius:12px; padding:8px 12px; font-size:14px; display:grid; gap:4px; }
+.cm-q .cm-reply { background:var(--bg); }
+.cm-item .cm-reply { background:var(--bg); box-shadow:inset 0 0 0 1px var(--line); }
+.cm-reply.answer { box-shadow:inset 0 0 0 1.5px #1f8a4c; }
+.cm-reply .meta2 .ok { background:#1f8a4c; color:#fff; border-radius:980px; padding:1px 8px; font-size:11px; font-weight:700; }
+.cm-reply .meta2 button.solve { color:#1f8a4c; }
+.cm-reply-form { display:grid; gap:8px; background:var(--bg); border-radius:12px; padding:10px; box-shadow:inset 0 0 0 1px var(--line); }
+.cm-reply-form[hidden] { display:none; }
+.cm-thread.sub { margin-left:6px; margin-top:4px; padding-left:10px; }
+.cm-thread.sub.flat { margin-left:0; padding-left:8px; }
+.cm-reply .body2 .to { color:var(--accent); font-weight:600; font-size:12px; }
+.cm-reply-form select { border:0; background:var(--surface); color:var(--fg); border-radius:12px; padding:8px 12px; font:inherit; font-size:13px; flex:1 1 160px; }
+.cm-row .btn-outline { padding:8px 14px; font-size:13px; }
+@media (max-width:760px) { .cm-thread { margin-left:6px; padding-left:8px; } }
+/* 3차: 상세 창 글 목록 하나 (후기·질문·막힘·잡담) */
+.cm-compose { margin-bottom:10px; }
+.cm-kinds { margin-bottom:2px; }
+.cm-kinds button { font-size:13px; }
+.cm-filters { padding-block:4px 10px; }
+.cm-filters .chip { font-size:13px; padding:5px 12px; }
+.cm-item.post .phead { display:flex; gap:6px; align-items:center; flex-wrap:wrap; }
+.cm-item.post .phead .tag { font-size:11px; }
+.tag.k-review { background:#fdf1dc; color:#9a6400; } .tag.k-question { background:var(--accent-soft); color:var(--accent); } .tag.k-story { background:#fbe9e3; color:#b5471d; } .tag.k-talk { background:var(--line); color:var(--muted); }
+.cm-item.post.solved .body2::before { content:none; }
+.cm-item.post.solved .phead::after { content:"해결됨 ✓"; background:#1f8a4c; color:#fff; font-size:11px; font-weight:700; border-radius:980px; padding:2px 8px; }
+.cm-link { border:0; background:transparent; color:var(--accent); font-weight:700; padding:0; font-size:inherit; text-decoration:underline; }
+:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
+</style>
+<style id="siann-common">
+.hero-main h1 { font-size: clamp(28px, 3.4vw, 46px) !important; line-height: 1.1 !important; }
+.sec-head h2 { font-size: 26px !important; }
+.stat b { font-size: 44px !important; }
+.hero-cta { display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin-top:18px; }
+.hero-cta .install { padding:14px 22px; font-size:16px; border-radius:980px; }
+.hero-sub { font-size:13px; color:var(--muted); }
+.thumb .win { display:none; }
+.thumb { aspect-ratio: 16/6; display:grid; place-items:center; }
+.thumb::after { content: attr(data-t); font-size: 30px; font-weight: 800; letter-spacing: -.03em; color: rgba(0,0,0,.5); padding: 0 16px; max-width:100%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.zone-demo .dm { background: color-mix(in srgb, var(--c) 55%, #fff); border-radius:16px; padding:16px; display:flex; flex-direction:column; gap:10px; }
+.dm-row { display:flex; gap:10px; align-items:flex-start; }
+.dm-row.ai { flex-direction:row; }
+.dm-av { flex:none; width:28px; height:28px; border-radius:50%; background:#fff; color:var(--fg); font-size:12px; font-weight:700; display:grid; place-items:center; box-shadow:0 1px 3px rgba(0,0,0,.12); }
+.dm-av.ai { background:var(--accent); color:#fff; }
+.dm-bub { background:#fff; border-radius:14px; padding:10px 14px; font-size:14px; line-height:1.5; max-width:92%; box-shadow:0 1px 3px rgba(0,0,0,.06); }
+.dm-row.you .dm-bub { background:var(--accent); color:#fff; }
+.dm-bub b { display:block; font-size:12px; color:var(--accent); margin-bottom:3px; }
+.dm-out { align-self:flex-end; font-size:12.5px; font-weight:700; color:#15803d; background:#ecfdf3; border-radius:980px; padding:5px 12px; }
+.dm-more { margin-top:12px; background:var(--bg); border-radius:12px; padding:12px 14px; }
+.dm-more b { display:block; font-size:13px; margin-bottom:4px; }
+.dm-more p { margin:0; font-size:13.5px; line-height:1.6; color:var(--fg); }
+.dm-link { margin-top:6px; border:0; background:transparent; color:var(--accent); font-weight:700; font-size:13px; padding:0; }
+.dm-cap { margin:10px 0 0; font-size:13px; color:var(--muted); } .dm-cap b { color:var(--accent); margin-right:6px; }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="topbar">
+      <a class="logo" href="#top" id="logo">딸깍 <span class="logo-en">Klik</span> <small>AI 도구, 한글로 고르고 한 번에 설치</small></a>
+      <div class="search">
+        <input id="q" type="search" placeholder="예: 피피티 만들기, 노션 연결, 스크린샷, 블로그 글" aria-label="검색">
+        <button id="qbtn">검색</button>
+      </div>
+      <nav class="nav" aria-label="플랫폼">
+        <button data-platform="all" aria-pressed="true">전체</button>
+        <button data-platform="claude-code">Claude Code</button>
+        <button data-platform="claude">Claude 앱</button>
+        <button data-platform="chatgpt">ChatGPT</button>
+      </nav>
+    </div>
+    <div class="chips" id="chips" role="group" aria-label="카테고리"></div>
+  </div>
+</header>
+
+<main class="wrap" id="top">
+  <div class="hero">
+    <div class="hero-main">
+      <div class="deco"></div>
+      <div>
+        <h1 id="h1">스킬·플러그인·MCP, 몰라도 됩니다.<br>필요한 AI 도구를 한글로 골라<br>버튼 한 번, 딸깍<span class="h1-en">(KLIK)</span>.</h1>
+        <p id="tagline">이게 뭔지, 나한테 왜 필요한지 쉽게 설명.<br>설치는 버튼 한 번, 끝.</p>
+      </div>
+      <div class="hero-steps">
+        <div class="step">① 카테고리에서 고르기</div>
+        <div class="step">② 한글 설명·작동 예시 보기</div>
+        <div class="step">③ 설치 버튼 딸깍</div>
+      </div>
+      <div class="hero-cta"><button class="install" data-open="pptx">⚡ 첫 도구 딸깍해 보기 — 파워포인트 자동 제작</button><span class="hero-sub">처음 한 번만 도우미(30초)를 받습니다 · 그다음부턴 버튼 하나</span></div>
+    </div>
+    <div class="hero-side">
+      <div class="stat"><div><b id="st-count">0</b><br><span>등록된 도구</span></div><span>매주 업데이트</span></div>
+      <div class="stat"><div><b>0줄</b><br><span>직접 치는 명령</span></div><span>도우미가 대신 칩니다</span></div>
+      <div class="ad" style="display:none" aria-hidden="true">광고 자리 (300×120)<small>히어로 옆 배너 · CPM 과금</small></div>
+    </div>
+  </div>
+
+  <div class="cm-feed" id="cm-feed" hidden aria-label="지금 대화 중"></div>
+  <section data-sec="md">
+    <div class="sec-head">
+      <div><h2>Claude를 10배 똑똑하게 만드는 필수 도구</h2><p>딸깍 편집팀이 전부 직접 깔아 보고 고른 것만. 처음이면 이것부터.</p></div>
+    </div>
+    <div class="rank" id="rank-md"></div>
+  </section>
+
+  <section data-sec="gh">
+    <div class="sec-head">
+      <h2>깃허브에서 별을 가장 많이 받은 도구</h2>
+      <p>깃허브 별(★)은 전 세계 사용자가 누른 '좋아요'예요. 다운로드 수가 아니라 추천 수 · 매일 갱신</p>
+    </div>
+    <div class="rank" id="rank-gh"></div>
+  </section>
+
+  <section id="rank-sh-sec" data-sec="sh" hidden>
+    <div class="sec-head">
+      <h2>실제로 가장 많이 설치한 스킬</h2>
+      <p>스킬 저장소 skills.sh 의 설치 횟수. 별은 '추천', 이건 '실제로 깐 횟수' · 매일 갱신</p>
+    </div>
+    <div class="rank" id="rank-sh"></div>
+  </section>
+
+  <section id="rank-hot-sec" data-sec="hot" hidden>
+    <div class="sec-head">
+      <h2>이달 가장 빨리 뜨는 도구</h2>
+      <p>최근 30일 동안 별이 가장 많이 늘어난 순서</p>
+    </div>
+    <div class="rank" id="rank-hot"></div>
+  </section>
+
+  <section data-sec="week">
+    <div class="sec-head">
+      <h2>이번 주 많이 설치한 도구</h2>
+      <p id="rank-sub">설치 버튼 클릭 수 기준 · 예시 데이터</p>
+    </div>
+    <div class="rank" id="rank"></div>
+  </section>
+
+  <section id="cm-plaza" hidden>
+    <div class="sec-head">
+      <div><h2>뭐 쓰면 돼요? 질문 광장</h2><p>하고 싶은 일을 적으면 써 본 사람들이 도구를 골라 줍니다. 로그인 없이 닉네임만.</p></div>
+    </div>
+    <div class="cm-form cm-ask">
+      <div class="cm-row"><input class="nick" id="cm-qnick" maxlength="12" placeholder="닉네임" onfocus="this.select()"><input id="cm-qbody" maxlength="300" placeholder="예: 거래처 명단 300개 엑셀 정리 자동으로 하고 싶은데 뭐 써요?"><button class="install" data-cm-ask>질문 올리기</button></div>
+    </div>
+    <div class="cm-list" id="cm-qlist"></div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <div><h2 id="list-title">전체 도구</h2><p id="list-sub">카드를 누르면 한글 설명과 작동 화면을 볼 수 있어요</p></div>
+      <div class="toolbar">
+        <div class="seg" id="kindseg" role="group" aria-label="종류">
+          <button data-kind="all" aria-pressed="true">전체</button>
+          <button data-kind="skill">스킬</button>
+          <button data-kind="plugin">플러그인</button>
+          <button data-kind="mcp">MCP</button>
+        </div>
+        <select id="sort" aria-label="정렬">
+          <option value="installs">인기순</option>
+          <option value="stars">깃허브 별순</option>
+          <option value="new">최신순</option>
+          <option value="easy">쉬운순</option>
+        </select>
+        <button class="chip" id="favbtn" aria-pressed="false">♥ 찜한 것만</button>
+      </div>
+    </div>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <section data-sec="new">
+    <div class="sec-head">
+      <div><h2>오늘의 신상 소식</h2><p>인스타 눈치 안 봐도 됩니다. 새로 나온 것만 하루 한 번, 한글로 정리해 드려요.</p></div>
+      <div class="seg" id="newsseg" role="group" aria-label="기간">
+        <button data-news="today" aria-pressed="true">오늘</button>
+        <button data-news="week">이번 주</button>
+        <button data-news="all">전체</button>
+      </div>
+    </div>
+    <div class="news-wrap">
+      <div class="news" id="news"></div>
+      <aside class="subscribe">
+        <h3>신상 알림 받기</h3>
+        <p>매일 아침 8시, 새 스킬·MCP 소식 3줄 요약. 광고 없이 소식만.</p>
+        <form id="subform">
+          <input id="subemail" type="email" placeholder="이메일 주소" aria-label="이메일" required>
+          <button type="submit" class="install">무료 구독</button>
+        </form>
+        <div class="sub-alt">
+          <button type="button" data-sub="kakao">카카오톡 채널</button>
+          <button type="button" data-sub="rss">RSS</button>
+          <button type="button" data-sub="tg">텔레그램</button>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+
+  <div class="submit">
+    <div>
+      <h2>내 도구를 올리고 싶다면</h2>
+      <p>깃허브 주소만 보내 주세요. 한글 설명·작동 화면·설치 버튼까지 저희가 만들어 드립니다. 제작자 인증 배지도 드려요.</p>
+    </div>
+    <button class="btn-outline" id="submitbtn">등록 요청하기</button>
+  </div>
+
+  <footer>
+    <span>딸깍 Klik · AI 도구 큐레이션 (프로토타입) · <a href="terms.html" style="color:inherit">이용약관</a> · <a href="privacy.html" style="color:inherit">개인정보처리방침</a></span>
+    <span>딸깍 설치는 줌·스팀처럼 한 번만 까는 작은 도우미가 대신 눌러 줍니다. 별·설치 수는 매일 자동 갱신됩니다.</span>
+  </footer>
+</main>
+
+<div id="modal-root"></div>
+<div id="toast-root" role="status" aria-live="polite"></div>
+
+<script>
+const CATS = [
+  { id: "all", name: "전체", icon: "✦" },
+  { id: "design", name: "디자인", icon: "🎨" },
+  { id: "dev", name: "개발", icon: "⌘" },
+  { id: "docs", name: "문서·글쓰기", icon: "✎" },
+  { id: "data", name: "데이터·엑셀", icon: "▦" },
+  { id: "marketing", name: "마케팅·SNS", icon: "📣" },
+  { id: "web", name: "웹사이트·호스팅", icon: "🌐" },
+  { id: "work", name: "업무 연결", icon: "🔗" },
+  { id: "auto", name: "자동화·생산성", icon: "⚡" },
+];
+const KIND = { skill: "스킬", plugin: "플러그인", mcp: "MCP" };
+const PLAT = { "claude-code": "Claude Code", "claude": "Claude 앱", "chatgpt": "ChatGPT" };
+
+// 예시 데이터: 별·설치 수는 대략값. 실제 서비스는 깃허브 API로 갱신.
+let ITEMS = [
+  { id:"pptx", kind:"skill", cat:"docs", name:"파워포인트 자동 제작", en:"pptx skill", one:"말로 설명하면 PPT 파일을 통째로 만들어 줍니다.", when:"회의 자료·발표 자료를 매번 처음부터 만드는 분", stars:48200, installs:12800, level:1, plat:["claude-code","claude"], hot:true, color:"#f3d9c4", repo:"https://github.com/anthropics/skills", cmd:"/plugin install document-skills", tips:["\"이 내용으로 10장짜리 PPT 만들어 줘\"라고만 하면 됩니다.","회사 템플릿 .pptx를 주면 그 디자인 그대로 채워 줍니다.","표·차트·이미지까지 들어갑니다."] },
+  { id:"xlsx", kind:"skill", cat:"data", name:"엑셀 정리·수식 자동화", en:"xlsx skill", one:"지저분한 엑셀을 정리하고 수식과 차트를 넣어 줍니다.", when:"매출 정리, 명단 정리, 월말 보고서 만드는 분", stars:48200, installs:11100, level:1, plat:["claude-code","claude"], color:"#cfe6d6", repo:"https://github.com/anthropics/skills", cmd:"/plugin install document-skills", tips:["\"이 파일 월별 합계 내고 차트 넣어 줘\" 한 마디면 됩니다.","CSV·TSV도 읽습니다.","수식이 살아 있는 진짜 엑셀 파일이 나옵니다."] },
+  { id:"docx", kind:"skill", cat:"docs", name:"워드 문서 작성·수정", en:"docx skill", one:"계약서, 보고서, 제안서를 워드 파일로 바로 뽑습니다.", when:"워드 양식 채우기가 귀찮은 분", stars:48200, installs:9800, level:1, plat:["claude-code","claude"], color:"#d6dcf0", repo:"https://github.com/anthropics/skills", cmd:"/plugin install document-skills", tips:["기존 워드 파일의 글꼴·서식을 유지한 채 내용만 바꿉니다.","변경 추적(수정 표시) 모드도 됩니다."] },
+  { id:"pdf", kind:"skill", cat:"docs", name:"PDF 합치기·쪼개기·읽기", en:"pdf skill", one:"PDF를 합치고, 나누고, 글자를 뽑고, 양식도 채웁니다.", when:"스캔본 PDF에서 글자 뽑고 싶은 분", stars:48200, installs:8700, level:1, plat:["claude-code","claude"], color:"#f0e0d6", repo:"https://github.com/anthropics/skills", cmd:"/plugin install document-skills", tips:["\"이 3개 PDF 하나로 합쳐 줘\"","스캔한 PDF도 글자 검색이 되게 바꿔 줍니다."] },
+  { id:"frontend", kind:"skill", cat:"design", name:"예쁜 웹 화면 디자인", en:"frontend-design", one:"AI 티 안 나는 세련된 웹 페이지를 디자인해 줍니다.", when:"랜딩페이지·포트폴리오를 직접 만들고 싶은 분", stars:19500, installs:7600, level:2, plat:["claude-code"], hot:true, color:"#e0d6f0", repo:"https://github.com/anthropics/claude-code", cmd:"/plugin install frontend-design", tips:["\"카페 소개 페이지 만들어 줘\" 하면 글꼴·색·배치까지 골라 줍니다.","흔한 AI 디자인(보라색 그라데이션 등)을 피하도록 학습돼 있습니다."] },
+  { id:"figma", kind:"mcp", cat:"design", name:"피그마 연결", en:"Figma MCP", one:"피그마 디자인을 AI가 직접 보고 코드로 바꿔 줍니다.", when:"디자이너와 개발자 사이에서 왔다 갔다 하는 분", stars:3200, installs:5400, level:2, plat:["claude-code","claude","chatgpt"], color:"#f5d8e4", repo:"https://github.com/figma/mcp-server-guide", cmd:"/plugin install figma", tips:["피그마 링크를 붙여 넣으면 그 화면 그대로 코드를 짭니다.","디자인 시안을 피그마에 새로 그려 주기도 합니다."], note:"피그마 계정 로그인(OAuth)이 한 번 필요합니다." },
+  { id:"canva", kind:"mcp", cat:"design", name:"캔바 연결", en:"Canva connector", one:"채팅으로 캔바 디자인을 만들고 수정합니다.", when:"SNS 카드뉴스·썸네일을 빨리 뽑고 싶은 분", stars:900, installs:4300, level:1, plat:["claude","chatgpt"], isNew:true, color:"#d6ecf5", repo:"https://www.canva.com/developers", cmd:"", link:"https://claude.ai/settings/connectors", tips:["\"인스타 카드뉴스 5장 만들어 줘\"","캔바 앱 설정에서 연결 버튼만 누르면 됩니다."] },
+  { id:"github", kind:"mcp", cat:"dev", name:"깃허브 연결", en:"GitHub MCP", one:"깃허브 저장소를 읽고, 이슈를 만들고, PR을 올립니다.", when:"코드 관리를 채팅으로 하고 싶은 분", stars:21000, installs:9300, level:2, plat:["claude-code","claude","chatgpt"], color:"#dcdcdc", repo:"https://github.com/github/github-mcp-server", cmd:"claude mcp add --transport http github https://api.githubcopilot.com/mcp/", tips:["\"이번 주 올라온 이슈 요약해 줘\"","\"이 버그 고치고 PR 올려 줘\""] },
+  { id:"playwright", kind:"mcp", cat:"dev", name:"브라우저 자동 조작", en:"Playwright MCP", one:"AI가 브라우저를 직접 열어 클릭하고 입력하고 검사합니다.", when:"내가 만든 사이트가 잘 되는지 자동으로 확인하고 싶은 분", stars:18000, installs:6900, level:2, plat:["claude-code","chatgpt"], color:"#d6f0e8", repo:"https://github.com/microsoft/playwright-mcp", cmd:"claude mcp add playwright -- npx -y @playwright/mcp@latest", tips:["\"로그인 페이지 들어가서 회원가입 잘 되는지 확인해 봐\"","스크린샷도 찍어 보여 줍니다."] },
+  { id:"context7", demo:"../media/klik-context7-demo.gif", kind:"mcp", cat:"dev", name:"최신 코드 문서 찾기", en:"Context7", one:"AI가 오래된 정보 대신 최신 공식 설명서를 보고 답하게 합니다.", when:"AI가 자꾸 구버전 코드를 알려줘서 답답한 분", stars:26000, installs:8100, level:1, plat:["claude-code","chatgpt"], hot:true, color:"#f0ead6", repo:"https://github.com/upstash/context7", cmd:"claude mcp add --transport http context7 https://mcp.context7.com/mcp", tips:["질문 끝에 \"use context7\"만 붙이면 됩니다.","설치 후 따로 설정할 게 없습니다."] },
+  { id:"code-review", kind:"plugin", cat:"dev", name:"코드 자동 검토", en:"code-review", one:"내 코드의 버그와 보안 구멍을 찾아 리포트합니다.", when:"혼자 개발해서 봐 줄 사람이 없는 분", stars:19500, installs:5200, level:2, plat:["claude-code"], color:"#d6e4f0", repo:"https://github.com/anthropics/claude-code", cmd:"/plugin install code-review", tips:["/code-review 한 줄이면 됩니다.","심각도 순으로 정리해 줍니다."] },
+  { id:"supabase", kind:"mcp", cat:"web", name:"수파베이스 DB 연결", en:"Supabase MCP", one:"데이터베이스를 만들고 표를 조회·수정합니다.", when:"회원·주문 데이터를 저장할 앱을 만드는 분", stars:2100, installs:3900, level:3, plat:["claude-code","chatgpt"], color:"#d6f0dd", repo:"https://github.com/supabase-community/supabase-mcp", cmd:"claude mcp add --transport http supabase https://mcp.supabase.com/mcp", tips:["\"회원 테이블 만들고 샘플 10명 넣어 줘\"","무료 플랜으로 시작할 수 있습니다."], note:"수파베이스 가입과 프로젝트 생성이 먼저 필요합니다." },
+  { id:"vercel", kind:"mcp", cat:"web", name:"버셀 배포 연결", en:"Vercel MCP", one:"만든 웹사이트를 인터넷에 바로 올립니다.", when:"호스팅이 뭔지 몰라도 사이트를 공개하고 싶은 분", stars:1400, installs:4100, level:2, plat:["claude-code","chatgpt"], color:"#e4e4e4", repo:"https://vercel.com/docs/mcp", cmd:"claude mcp add --transport http vercel https://mcp.vercel.com", tips:["\"이거 배포해 줘\" 하면 주소를 돌려줍니다.","도메인 연결도 채팅으로 됩니다."] },
+  { id:"cloudflare", kind:"mcp", cat:"web", name:"클라우드플레어 연결", en:"Cloudflare MCP", one:"도메인·DNS·서버리스 배포를 채팅으로 관리합니다.", when:"도메인 설정이 늘 헷갈리는 분", stars:2600, installs:2200, level:3, plat:["claude-code"], color:"#f5e2cf", repo:"https://github.com/cloudflare/mcp-server-cloudflare", cmd:"claude mcp add --transport http cloudflare https://mcp.cloudflare.com/mcp", tips:["\"내 도메인 DNS 레코드 보여 줘\""] },
+  { id:"notion", kind:"mcp", cat:"work", name:"노션 연결", en:"Notion MCP", one:"노션 페이지를 읽고 쓰고 정리합니다.", when:"회의록·할 일을 노션에 두는 분", stars:3500, installs:7400, level:1, plat:["claude-code","claude","chatgpt"], hot:true, color:"#ececec", repo:"https://github.com/makenotion/notion-mcp-server", cmd:"claude mcp add --transport http notion https://mcp.notion.com/mcp", tips:["\"어제 회의록 요약해서 할 일 페이지 만들어 줘\"","Claude 앱에서는 커넥터 켜기만 하면 됩니다."] },
+  { id:"slack", kind:"mcp", cat:"work", name:"슬랙 연결", en:"Slack MCP", one:"슬랙 대화를 읽고 요약하고 대신 보냅니다.", when:"안 읽은 메시지가 999+인 분", stars:1800, installs:5100, level:1, plat:["claude","chatgpt"], color:"#f0d6e4", repo:"https://slack.com/apps", cmd:"", link:"https://claude.ai/settings/connectors", tips:["\"오늘 #마케팅 채널 무슨 얘기 했어?\"","보내기 전에 항상 확인을 받습니다."] },
+  { id:"gdrive", kind:"mcp", cat:"work", name:"구글 드라이브·문서 연결", en:"Google Workspace", one:"구글 문서·시트·드라이브 파일을 찾고 수정합니다.", when:"회사 자료가 전부 구글에 있는 분", stars:2400, installs:8800, level:1, plat:["claude","chatgpt"], color:"#d6ecd9", repo:"https://support.anthropic.com", cmd:"", link:"https://claude.ai/settings/connectors", tips:["\"지난달 매출 시트 열어서 차트 만들어 줘\"","구글 로그인 한 번이면 끝입니다."] },
+  { id:"computer-use", kind:"plugin", cat:"auto", name:"내 컴퓨터 화면 대신 조작", en:"computer-use", one:"AI가 내 화면을 보고 마우스·키보드를 대신 움직입니다.", when:"웹이 아닌 프로그램(한글·카톡 등)까지 자동화하고 싶은 분", stars:19500, installs:3700, level:3, plat:["claude"], color:"#e2e2f0", repo:"https://github.com/anthropics/claude-code", cmd:"", link:"https://claude.ai/download", tips:["Claude 데스크톱 앱에서 권한만 켜면 됩니다.","앱마다 허용 여부를 묻습니다."] },
+  { id:"stripe", kind:"mcp", cat:"web", name:"결제(스트라이프) 연결", en:"Stripe MCP", one:"결제 링크·구독 상품을 채팅으로 만듭니다.", when:"온라인 결제를 붙이고 싶은데 코드가 무서운 분", stars:1100, installs:1500, level:3, plat:["claude-code","chatgpt"], color:"#dcd6f5", repo:"https://github.com/stripe/agent-toolkit", cmd:"/plugin install stripe", tips:["\"월 9,900원 구독 상품 만들고 결제 링크 줘\""], note:"국내 결제는 토스페이먼츠 등 별도 확인이 필요합니다." },
+  { id:"sentry", kind:"mcp", cat:"dev", name:"오류 모니터링 연결", en:"Sentry MCP", one:"서비스에서 난 오류를 읽고 원인을 찾아 고칩니다.", when:"에러 알림은 오는데 뭔 소린지 모르는 분", stars:600, installs:1200, level:3, plat:["claude-code","chatgpt"], color:"#f0dad6", repo:"https://github.com/getsentry/sentry-mcp", cmd:"claude mcp add --transport http sentry https://mcp.sentry.dev/mcp", tips:["\"오늘 제일 많이 난 에러 고쳐 줘\""] },
+];
+
+// 신상 소식: 실제 서비스에서는 깃허브 릴리스·공식 블로그·레지스트리를 매일 자동 감시해 한글로 요약
+let TODAY = "2026-10-29";
+let NEWS = [
+  { date:"2026-10-29", type:"new", title:"캔바 커넥터 출시", sub:"채팅으로 카드뉴스 제작. Claude 앱·ChatGPT 둘 다 지원", ref:"canva" },
+  { date:"2026-10-29", type:"upd", title:"파워포인트 스킬, 회사 템플릿 인식 개선", sub:"기존 .pptx 디자인을 그대로 이어 쓰는 정확도가 올라갔습니다", ref:"pptx" },
+  { date:"2026-10-28", type:"pick", title:"편집팀 추천: 깃허브 몰라도 되는 배포 3종", sub:"버셀 · 클라우드플레어 · 수파베이스를 묶어서 보기", ref:"vercel" },
+  { date:"2026-10-28", type:"new", title:"네이버 블로그 자동 발행 스킬 등록", sub:"임시저장·발행 둘 다 지원. 국내 사용자 요청 1위였습니다", ref:"naverblog" },
+  { date:"2026-10-27", type:"upd", title:"Context7, 설치 명령이 한 줄로 단순해짐", sub:"API 키 없이 바로 쓸 수 있습니다", ref:"context7" },
+  { date:"2026-10-24", type:"upd", title:"노션 MCP 원격 접속 지원", sub:"서버 설치 없이 주소만 넣으면 연결됩니다", ref:"notion" },
+  { date:"2026-10-22", type:"new", title:"스트라이프 결제 MCP 등록", sub:"국내 결제사 대응은 확인 중", ref:"stripe" },
+  { date:"2026-10-15", type:"pick", title:"인스타에서 떠들썩했던 '브라우저 자동화', 실제로 써 보니", sub:"Playwright MCP 솔직 후기와 한계", ref:"playwright" },
+];
+const NEWS_TYPE = { new:"신규", upd:"업데이트", pick:"추천", found:"새로 발견" };
+let newsExpanded = false;
+function renderNews(range) {
+  const weekAgo = new Date(TODAY); weekAgo.setDate(weekAgo.getDate()-7);
+  // "새로 발견"(검수 전, 한글 없음)은 사용자에게 소음이라 피드에서 뺀다. 설치 가능한 소식만.
+  const list = NEWS.filter(n => n.type !== "found").filter(n => range==="all" || (range==="today" ? n.date===TODAY : new Date(n.date) >= weekAgo));
+  const shown = newsExpanded ? list : list.slice(0, 5);
+  $("#news").innerHTML = (shown.map(n => {
+    const d = n.date.split("-");
+    return `<button class="nitem ${n.date===TODAY?'today':''}" data-open="${n.ref||""}"><span class="date"><b>${d[2]}</b>${d[1]}월</span><span class="body"><b>${esc(n.title)}</b><span>${esc(n.sub||"")}</span></span><span class="nt ${n.type}">${NEWS_TYPE[n.type]||n.type}</span></button>`;
+  }).join("") + (list.length > 5 && !newsExpanded ? `<button class="chip" data-news-more style="justify-self:start">소식 ${list.length - 5}건 더 보기</button>` : "")) || `<div class="empty">오늘은 새 소식이 없어요. 조용한 날입니다.</div>`;
+}
+
+// 설치 정보: 카탈로그는 install 객체로, 내장 예시는 cmd 문자열로 갖고 있다. 둘 다 같은 형태로 맞춘다.
+function installOf(it) {
+  if (it.install !== undefined) { const s = it.install; if (s && s.kind === "skill" && !s.name) s.name = it.id; return s; }   // 스킬 저장소형은 이름이 없으면 도구 id
+  if (!it.cmd) return null;
+  let m;
+  if ((m = it.cmd.match(/^\/plugin install ([\w.-]+)/))) return { kind: "plugin", name: m[1], market: m[1] === "document-skills" ? "anthropics/skills" : "anthropics/claude-plugins-official" };
+  if ((m = it.cmd.match(/^claude mcp add --transport (http|sse) ([\w.-]+) (https:\/\/\S+)/))) return { kind: "mcp", name: m[2], transport: m[1], url: m[3] };
+  if ((m = it.cmd.match(/^claude mcp add ([\w.-]+) -- npx -y (\S+)/))) return { kind: "mcp", name: m[1], pkg: m[2] };
+  return null;
+}
+function cmdOf(it) {
+  if (it.cmd) return it.cmd;
+  const s = installOf(it); if (!s || !s.name) return "";
+  if (s.kind === "plugin") return `/plugin install ${s.name}`;
+  if (s.kind === "skill") return `npx skills add ${s.repo}`;   // skills.sh 표준 명령 (딸깍 도우미는 git으로 직접 받는다)
+  if (s.url) return `claude mcp add --transport ${s.transport || "http"} ${s.name} ${s.url}`;
+  if (s.pkg) return `claude mcp add ${s.name} -- npx -y ${s.pkg}`;
+  return "";
+}
+// 딸깍 설치 링크: 도우미(helper.ps1)가 받아 Claude Code에 설치
+// 설치 완료 창에 띄울 "추천 명령": 카드의 첫 사용 예시에서 따옴표 안 문장만 뽑는다
+function tryPrompt(it) {
+  const t = (it.tips && it.tips[0]) || ""; const m = t.match(/"([^"]{4,120})"/);
+  return m ? m[1] : "";
+}
+// 칠 문장이 없는 도구(설치하면 자동 적용)용 확인 문장: 팁 어디든 따옴표 문장이 있으면 그걸, 없으면 자동 생성
+function checkPrompt(it) {
+  for (const t of (it.tips || [])) { const m = String(t).match(/"([^"]{4,120})"/); if (m) return m[1]; }
+  return `방금 설치한 ${it.name}, 뭐가 바뀌는지 요약해 줘`;
+}
+// 2단계(입력창에 치기): 칠 문장이 있으면 복사칸, 없으면 "끝" 칸 + 확인용 문장(선택)
+function typeStep(it, where, img, noteHas) {
+  const tp = tryPrompt(it);
+  if (tp) return [`${where} 이렇게 치기`, where.startsWith("채팅") ? "연결이 끝나면 평소 채팅 화면에서 바로 됩니다." : "평소 채팅 화면 말고, </> 버튼을 누른 화면이어야 해요.", img, tp, noteHas];
+  return [where.startsWith("채팅") ? "끝. 평소 채팅에서 바로 됩니다" : "Claude 앱 왼쪽 위 </> 버튼 → 새 대화 열기", where.startsWith("채팅") ? "" : "평소 채팅 화면 말고, </> 버튼을 누른 화면이어야 해요.", img, "", "", { done: "이 도구는 여기까지가 끝. 입력창에 따로 칠 건 없어요.", opt: checkPrompt(it) }];
+}
+function deepLink(it) {
+  const s = installOf(it); if (!s || !s.name) return "";
+  const tp = tryPrompt(it); const tail = (tp ? `&try=${encodeURIComponent(tp)}` : "") + (it.login ? "&login=1" : "");
+  if (s.kind === "plugin") return `klik://install?kind=plugin&name=${s.name}&market=${encodeURIComponent(s.market || "")}${tail}`;
+  if (s.kind === "skill") return `klik://install?kind=skill&name=${s.name}&repo=${encodeURIComponent(s.repo || "")}${tail}`;
+  if (s.url) return `klik://install?kind=mcp&name=${s.name}&transport=${s.transport || "http"}&url=${encodeURIComponent(s.url)}${tail}`;
+  if (s.pkg) return `klik://install?kind=mcp&name=${s.name}&pkg=${encodeURIComponent(s.pkg)}${tail}`;
+  return "";
+}
+// 짧은 영상: 주소를 사이트 안에서 재생되는 끼워 넣기 주소로. v=세로(쇼츠·릴스·틱톡)
+function videoEmbed(u) {
+  let m;
+  if ((m = u.match(/youtube\.com\/shorts\/([\w-]{11})/))) return { src: `https://www.youtube.com/embed/${m[1]}`, v: true };
+  if ((m = u.match(/(?:youtu\.be\/|youtube\.com\/(?:watch\?(?:.*&)?v=|embed\/))([\w-]{11})/))) return { src: `https://www.youtube.com/embed/${m[1]}`, v: false };
+  if ((m = u.match(/instagram\.com\/(?:reel|reels|p)\/([\w-]+)/))) return { src: `https://www.instagram.com/reel/${m[1]}/embed/`, v: true };
+  if ((m = u.match(/tiktok\.com\/.*\/video\/(\d+)/))) return { src: `https://www.tiktok.com/embed/v2/${m[1]}`, v: true };
+  return null;
+}const TRUST_LABEL = { official: "공식", verified: "검증됨", community: "커뮤니티" };
+
+const $ = s => document.querySelector(s);
+const state = { q: "", cat: "all", kind: "all", plat: "all", sort: "installs", favOnly: false, favs: new Set() };
+try { state.favs = new Set(JSON.parse(localStorage.getItem("sm-favs") || "[]")); } catch (e) {}
+function saveFavs() { try { localStorage.setItem("sm-favs", JSON.stringify([...state.favs])); } catch (e) {} }
+
+function fmt(n) { return n >= 10000 ? (n/10000).toFixed(1).replace(/\.0$/,"") + "만" : n.toLocaleString("ko-KR"); }
+let CATALOG_AT = "";   // catalog.json 생성 시각 (딸깍이 깃허브를 마지막으로 확인한 때)
+function ago(iso) {
+  const m = Math.round((Date.now() - new Date(iso)) / 60000); if (isNaN(m)) return "";
+  if (m < 60) return "방금"; if (m < 60*24) return Math.floor(m/60) + "시간 전"; const d = Math.floor(m/60/24);
+  if (d < 7) return d + "일 전"; if (d < 30) return Math.floor(d/7) + "주 전"; if (d < 365) return Math.floor(d/30) + "달 전"; return Math.floor(d/365) + "년 전";
+}
+function esc(s) { return String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])); }
+function win(color, big, en) {
+  return `<div class="thumb" style="background:${color}" data-t="${esc((en||"").split(/[ (]/)[0])}"><div class="win" style="${big?'width:70%;font-size:12px':''}"><div class="bar"><i></i><i></i><i></i></div><div class="ln m"></div><div class="ln a"></div><div class="ln s"></div><div class="ln m"></div></div></div>`;
+}
+function level(l) { return `<span class="lvl" title="난이도 ${l}/3">${[1,2,3].map(i=>`<i class="${i<=l?'on':''}"></i>`).join("")}</span>`; }
+const LEVEL_TXT = ["", "아주 쉬움", "보통", "약간 손이 감"];
+
+function filtered() {
+  const q = state.q.trim().toLowerCase();
+  let list = ITEMS.filter(it =>
+    (state.cat === "all" || it.cat === state.cat) &&
+    (state.kind === "all" || it.kind === state.kind) &&
+    (state.plat === "all" || it.plat.includes(state.plat)) &&
+    (!state.favOnly || state.favs.has(it.id)) &&
+    (!q || [it.name, it.en, it.one, it.when, ...(it.tips||[]), CATS.find(c=>c.id===it.cat).name].join(" ").toLowerCase().includes(q))
+  );
+  const s = state.sort;
+  list.sort((a,b) => (s==="installs" && ((b.pick?1:0)-(a.pick?1:0))) || (s==="stars" ? b.stars-a.stars : s==="easy" ? a.level-b.level || b.installs-a.installs : s==="new" ? (b.isNew?1:0)-(a.isNew?1:0) || b.installs-a.installs || b.stars-a.stars : b.installs-a.installs || b.stars-a.stars));
+  return list;
+}
+
+function renderChips() {
+  $("#chips").innerHTML = CATS.map(c => `<button class="chip" data-cat="${c.id}" aria-pressed="${state.cat===c.id}">${c.icon} ${c.name}</button>`).join("");
+}
+function renderRank() {
+  // 커뮤니티(Supabase)가 켜져 있고 최근 7일 딸깍 클릭이 하나라도 있으면 실제 집계, 아니면 카탈로그 설치 수(예시)
+  const week = window.CM && CM.on && CM.week.length ? CM.week : null;
+  let top = null, sub;
+  if (week) {
+    top = week.map(w => { const it = ITEMS.find(x => x.id === w.tool_id); return it ? { it, n: w.n } : null; }).filter(Boolean).slice(0, 6);
+    sub = "딸깍 설치 버튼 클릭 수 · 최근 7일 실제 집계";
+  }
+  if (!top || !top.length) { top = [...ITEMS].sort((a,b)=>b.installs-a.installs).slice(0,6).map(it => ({ it, n: it.installs })); sub = "설치 버튼 클릭 수 기준 · 예시 데이터"; }
+  const subEl = $("#rank-sub"); if (subEl) subEl.textContent = sub;
+  $("#rank").innerHTML = top.map(({it, n},i)=>`<button data-open="${it.id}"><span class="n">${i+1}</span><span class="t"><b>${esc(it.name)}</b><span>${esc(it.one)}</span></span><span class="d">${fmt(n)}회</span></button>`).join("");
+  // MD 추천: 편집팀 픽 + 추천 이유 한 줄
+  const md = ITEMS.filter(it => it.pick).slice(0, 8);
+  const mdEl = $("#rank-md"); if (mdEl) mdEl.innerHTML = md.map((it,i)=>`<button data-open="${it.id}"><span class="n">${i+1}</span><span class="t"><b>${esc(it.name)}</b><span>${esc(it.pick)}</span></span><span class="d">필수</span></button>`).join("");
+  // 깃허브 별 순위: 같은 저장소(예: anthropics/skills의 문서 스킬 4종)는 한 번만 센다
+  const seen = new Set();
+  const gh = [...ITEMS].filter(it => it.stars > 0).sort((a,b)=>b.stars-a.stars).filter(it => { const k = (it.repo||it.id).toLowerCase(); if (seen.has(k)) return false; seen.add(k); return true; }).slice(0, 9);
+  const ghEl = $("#rank-gh"); if (ghEl) ghEl.innerHTML = gh.map((it,i)=>`<button data-open="${it.id}"><span class="n">${i+1}</span><span class="t"><b>${esc(it.name)}</b><span>${esc(it.one)}</span></span><span class="d">★ ${fmt(it.stars)}</span></button>`).join("");
+  // skills.sh 설치 순위: 실제 설치 횟수(별이 아니라). 같은 저장소는 한 번만
+  const seenSh = new Set();
+  const sh = [...ITEMS].filter(it => it.sh_installs > 0).sort((a,b)=>b.sh_installs-a.sh_installs).filter(it => { const k = (it.repo||it.id).toLowerCase(); if (seenSh.has(k)) return false; seenSh.add(k); return true; }).slice(0, 9);
+  const shSec = $("#rank-sh-sec"); if (shSec) { shSec.hidden = sh.length < 3; if (sh.length >= 3) $("#rank-sh").innerHTML = sh.map((it,i)=>`<button data-open="${it.id}"><span class="n">${i+1}</span><span class="t"><b>${esc(it.name)}</b><span>${esc(it.one)}</span></span><span class="d">${fmt(it.sh_installs)}회</span></button>`).join(""); }
+  // 이달 증가 순위: 별 기록이 하루 이상 쌓이면 자동으로 나타난다
+  const hot = [...ITEMS].filter(it => it.stars30 > 0).sort((a,b)=>b.stars30-a.stars30).slice(0, 6);
+  const hotSec = $("#rank-hot-sec"); if (hotSec) { hotSec.hidden = hot.length < 3; if (hot.length >= 3) $("#rank-hot").innerHTML = hot.map((it,i)=>`<button data-open="${it.id}"><span class="n">${i+1}</span><span class="t"><b>${esc(it.name)}</b><span>${esc(it.one)}</span></span><span class="d">+${fmt(it.stars30)} ↑</span></button>`).join(""); }
+}
+function renderGrid() {
+  const list = filtered();
+  const cat = CATS.find(c=>c.id===state.cat);
+  $("#list-title").textContent = state.cat==="all" ? "전체 도구" : cat.name + " 도구";
+  $("#list-sub").textContent = `${list.length}개 · 카드를 누르면 한글 설명과 작동 화면을 볼 수 있어요`;
+  if (!list.length) { $("#grid").innerHTML = `<div class="empty" style="grid-column:1/-1">조건에 맞는 도구가 아직 없어요. 검색어를 바꾸거나 "등록 요청하기"로 알려 주세요.</div>`; return; }
+  const cards = list.map(it => `
+    <div class="card" role="button" tabindex="0" data-open="${it.id}">
+      ${win(it.color, false, it.en)}
+      <div class="badge-row">${it.pick?'<span class="badge md">편집팀 검증</span>':''}${it.hot?'<span class="badge hot">인기</span>':''}${it.isNew?'<span class="badge new">NEW</span>':''}</div>
+      <button class="fav" data-fav="${it.id}" aria-pressed="${state.favs.has(it.id)}" aria-label="${esc(it.name)} 찜">${state.favs.has(it.id)?'♥':'♡'}</button>
+      <div class="cbody">
+        <div class="kind"><span class="tag ${it.kind}">${KIND[it.kind]}</span>${it.trust&&TRUST_LABEL[it.trust.grade]?`<span class="tag trust-${it.trust.grade}">${TRUST_LABEL[it.trust.grade]}</span>`:""}${(it.plat||[]).map(p=>`<span>${PLAT[p]}</span>`).join("<span>·</span>")}</div>
+        <h3>${esc(it.name)} <span class="en">${esc(it.en)}</span></h3>
+        <p class="one">${esc(it.one)}</p>
+        <p class="when"><b>이런 분께</b> ${esc(it.when)}</p>${window.CM ? CM.cardLine(it.id) : ""}
+        <div class="meta"><span>★ ${fmt(it.stars)}${it.installs>0?` · 설치 ${fmt(it.installs)}`:""}</span>${level(it.level)}<button class="install" data-open="${it.id}">${installOf(it)&&installOf(it).name?"설치":"연결"}</button></div>
+      </div>
+    </div>`);
+  // 광고 카드: 6번째마다
+  const out = [];
+  cards.forEach((c,i)=>{ out.push(c); if (window.AD_SLOTS && (i+1)%6===0) out.push(`<div class="card ad-card">광고 자리<br><small>피드 네이티브 광고 · 카드 1칸</small></div>`); });   // 실제 광고 붙기 전엔 빈 칸을 안 보여 준다
+  $("#grid").innerHTML = out.join("");
+}
+function renderAll() { renderChips(); renderGrid(); }
+
+function toast(msg) {
+  const t = document.createElement("div"); t.className = "toast"; t.textContent = msg;
+  $("#toast-root").replaceChildren(t); setTimeout(()=>t.remove(), 2200);
+}
+function copyText(text, msg) {
+  const ok = () => toast(msg || "복사됐어요. Claude에 붙여넣기만 하면 설치 끝!");
+  if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(ok).catch(()=>fallback());
+  else fallback();
+  function fallback() { const ta=document.createElement("textarea"); ta.value=text; document.body.appendChild(ta); ta.select(); try{document.execCommand("copy"); ok();}catch(e){toast("아래 명령어를 직접 선택해서 복사해 주세요");} ta.remove(); }
+}
+
+function openDetail(id) {
+  const it = ITEMS.find(x=>x.id===id); if (!it) return;
+  const cmd = cmdOf(it);
+  const hasCmd = !!cmd;
+  const deep = hasCmd ? deepLink(it) : "";
+  const steps = deep
+    ? [["'딸깍 설치' 누르기 → 뜨는 창마다 '열기', '예'", "브라우저가 '딸깍 도우미를 열까요?' 하면 '열기', 도우미가 '설치할까요?' 하면 '예'. 설치 완료 창이 뜨면 끝."],...(it.login ? [["처음 한 번 로그인", `Claude 앱 왼쪽 위 </> 버튼을 누르고, 아래 입력창에 /mcp 치고 엔터 → ${it.en.split(" ")[0]} 고르기 → 브라우저 로그인 창에서 '승인'.`]] : []), typeStep(it, "Claude 앱 왼쪽 위 </> 버튼 → 아래 입력창에", "../media/code-button.svg", "설치가 끝나면 이 문장이 자동으로 복사돼 있어요. 입력창에 Ctrl+V 하고 엔터.")]
+    : hasCmd
+    ? [["'설치 명령 복사' 누르기", "문장이 복사됩니다."],(tryPrompt(it) ? ["Claude 앱 왼쪽 위 </> 버튼 → 아래 입력창에 Ctrl+V, 엔터", "Claude가 나머지 설치를 합니다. 끝나면 같은 입력창에 이렇게 치세요.", "../media/code-button.svg", tryPrompt(it), "복사 버튼을 누르고 입력창에 Ctrl+V 하고 엔터."] : ["Claude 앱 왼쪽 위 </> 버튼 → 아래 입력창에 Ctrl+V, 엔터", "Claude가 나머지 설치를 합니다.", "../media/code-button.svg", "", "", { done: "설치가 끝나면 그걸로 끝. 입력창에 따로 칠 건 없어요.", opt: checkPrompt(it) }])]
+    : [["'커넥터 설정 열기' 누르기 → 목록에서 '연결' → 로그인", "Claude 앱 설정 페이지가 열립니다. 찾아서 '연결'을 누르고 로그인하면 끝."], typeStep(it, "채팅에", "", "복사 버튼을 누르고 채팅창에 Ctrl+V 하고 엔터.")];
+  const actions = `<div class="big-install">
+          ${hasCmd?(deep?`<a class="install" href="${esc(deep)}" data-deep="${esc(deep)}" data-item="${it.id}" data-track="${it.id}" style="text-decoration:none;text-align:center">⚡ 딸깍 설치</a>`:`<button class="install" data-copy="${esc(cmd)}" data-track="${it.id}">⚡ 설치 명령 복사</button>`):`<a class="btn-outline" href="${esc(it.link)}" target="_blank" rel="noopener" data-track="${it.id}" style="background:var(--accent);color:var(--accent-fg);border-color:var(--accent)">⚡ 커넥터 설정 열기</a>`}
+          ${it.sh_url?`<a class="btn-outline" href="${esc(it.sh_url)}" target="_blank" rel="noopener">원문(skills.sh) 보기</a>`:`<a class="btn-outline" href="${esc(it.repo)}" target="_blank" rel="noopener">원문(깃허브) 보기</a>`}
+        </div>`;
+  const html = `
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="${esc(it.name)}">
+    <div class="sheet">
+      <div class="sheet-head">
+        <div>
+          <div class="kind"><span class="tag ${it.kind}">${KIND[it.kind]}</span>${it.trust&&TRUST_LABEL[it.trust.grade]?`<span class="tag trust-${it.trust.grade}">${TRUST_LABEL[it.trust.grade]}</span>`:""}${it.pick?`<span class="badge md" style="position:static;margin-left:4px">편집팀 검증</span>`:""}<span>${it.plat.map(p=>PLAT[p]).join(" · ")}</span><span>·</span><span>난이도: ${LEVEL_TXT[it.level]}</span></div>
+          <h2>${esc(it.name)} <span class="en" style="font-size:14px;color:var(--muted);font-weight:400">${esc(it.en)}</span></h2>
+          <p class="one-line" style="font-size:14px;color:#333">${esc(it.one)}</p>
+          ${window.CM ? CM.cardLine(it.id) : ""}
+          <p class="meta-line" style="font-size:12px;color:var(--muted)">깃허브 ★ ${fmt(it.stars)}${it.stars30>0?` <b style="color:var(--accent)">(${it.stars30_days>=28?"이달":it.stars30_days+"일간"} +${fmt(it.stars30)} ↑)</b>`:""}${it.pushed_at?` · ${ago(it.pushed_at)} 업데이트`:""}${it.sh_installs>0?` · skills.sh 설치 ${fmt(it.sh_installs)}회${it.sh_week>0?` <b style="color:var(--accent)">(지난주 +${fmt(it.sh_week)})</b>`:""}`:""}${it.installs>0?` · 설치 ${fmt(it.installs)}회`:""}${CATALOG_AT?` · 딸깍 확인 ${ago(CATALOG_AT)}`:""}</p>
+        </div>
+        <button class="close" data-close aria-label="${esc(it.name)} 상세 닫기">✕</button>
+      </div>
+      <div class="sheet-body">
+        <section class="zone zone-install">
+          <h3>설치</h3>
+          ${actions}
+          ${it.demo?`<div class="preview" style="background:${it.color};aspect-ratio:auto"><img src="${esc(it.demo)}" alt="${esc(it.name)} 작동 화면" style="display:block;width:100%;height:auto;border-radius:inherit"><span class="cap">작동 화면 · 검색 → 카드 → 딸깍 설치</span></div>`:""}
+          <h4 style="margin:14px 0 10px;font-size:15px">설치 방법 (${steps.length}단계)</h4>
+          <div class="steps">${steps.map((s,i)=>`<div class="stp"><span class="num">${i+1}</span><div class="txt"><b>${esc(s[0])}</b><span>${esc(s[1])}</span>${s[2]?`<img src="${s[2]}" alt="" style="display:block;margin-top:8px;max-width:260px;width:100%;border-radius:10px;border:1px solid var(--line)">`:""}${s[3]?`<div class="cmd try-box"><code>${esc(s[3])}</code><button data-copy="${esc(s[3])}">복사</button></div><span class="try-note"><i class="warn-ico" aria-hidden="true">!</i>${esc(s[4]||"")}</span>`:""}${s[5]?`<div class="done-box"><i class="ok-ico" aria-hidden="true">✓</i><span>${esc(s[5].done)}</span></div><span class="opt-lead">잘 깔렸는지 확인하고 싶으면 (선택) 입력창에 이렇게 쳐 보세요:</span><div class="cmd try-box opt-box"><code>${esc(s[5].opt)}</code><button data-copy="${esc(s[5].opt)}">복사</button></div>`:""}</div></div>`).join("")}</div>
+          ${hasCmd?(deep?`<details style="margin-top:8px"><summary style="cursor:pointer;color:var(--muted);font-size:13px">도우미 없이 직접 하는 방법 (명령 복사)</summary><div class="cmd"><code>${esc(cmd)}</code><button data-copy="${esc(cmd)}">복사</button></div></details>`:`<div class="cmd"><code>${esc(cmd)}</code><button data-copy="${esc(cmd)}">복사</button></div>`):""}
+        </section>
+        <section class="zone zone-demo">
+          <h3>작동 예시</h3>
+          <div class="dm" style="--c:${it.color}">
+            <div class="dm-row you"><span class="dm-av">나</span><div class="dm-bub">${esc(tryPrompt(it)||checkPrompt(it))}</div></div>
+            <div class="dm-row ai"><span class="dm-av ai">C</span><div class="dm-bub"><b>${esc(it.name)}</b>${esc(it.one)}</div></div>
+            <div class="dm-out">✓ ${it.kind==="mcp"?"서비스가 연결돼 Claude가 직접 다룹니다":it.kind==="skill"?"결과물이 바로 나옵니다":"Claude에 이 기능이 더해집니다"}</div>
+          </div>
+          ${(()=>{ const r=Array.isArray(it.readme_ko)?it.readme_ko:[]; const pick=r.find(x=>/달라|특징|기능|왜|장점|할 수|하는 일|무엇/.test(x.h))||r.find(x=>String(x.p).length>80&&!/이란|란\?|소개|설치|시작/.test(x.h))||r[0]; if(!pick) return ""; const p=String(pick.p); return `<div class="dm-more"><b>${esc(pick.h)}</b><p>${esc(p.length>240?p.slice(0,240)+"…":p)}</p>${p.length>240?`<button class="dm-link" data-open-readme>원문 한글판에서 더 보기 ▾</button>`:""}</div>`; })()}
+          <p class="dm-cap"><b>이런 분께</b> ${esc(it.when)}</p>
+        </section>
+        <section class="zone">
+          <h3>알아보기</h3>          ${it.pick?`<div class="md-why" style="margin-bottom:12px"><b>편집팀이 직접 깔아 보고 고른 이유</b>${esc(it.pick)}</div>`:""}
+          <div class="blocks">
+            <div class="blk"><h4>이게 뭐예요?</h4><p>${esc(it.one)}</p></div>
+            <div class="blk"><h4>이런 분께 추천</h4><p>${esc(it.when)}</p></div>
+            <div class="blk" style="grid-column:1/-1"><h4>이렇게 써요</h4><ul>${it.tips.map(t=>`<li>${esc(t)}</li>`).join("")}</ul></div>
+            <div class="blk" style="grid-column:1/-1"><h4>믿어도 되나</h4>${it.trust&&it.trust.reasons&&it.trust.reasons.length?`<ul>${it.trust.reasons.map(r=>`<li>${esc(r)}</li>`).join("")}</ul>`:`<p>딸깍 편집팀이 직접 설치해 보고 올렸습니다.</p>`}${it.note?`<div class="note" style="margin-top:8px">⚠ ${esc(it.note)}</div>`:""}</div>
+          </div>
+          ${Array.isArray(it.readme_ko)&&it.readme_ko.length?`<details class="readme" style="margin-top:12px">
+            <summary><b>${it.sh_url?"skills.sh":"깃허브"} 원문 설명 (한글판)</b> <span>편집팀이 일반인 말로 옮김 · ${it.readme_ko.length}개 항목</span></summary>
+            <div class="readme-body">${it.readme_ko.map(s=>`<section><h5>${esc(s.h)}</h5><p>${esc(s.p).replace(/\n/g,"<br>")}</p></section>`).join("")}</div>
+          </details>`:""}
+          <p style="margin:10px 0 0;font-size:12px;color:var(--muted)">한글 설명은 딸깍 편집팀이 작성했습니다.</p>
+        </section>
+        ${Array.isArray(it.videos)&&it.videos.length?`<section class="zone"><h3>짧은 영상</h3><p style="margin:0 0 10px;font-size:12px;color:var(--muted)">인플루언서가 올린 영상입니다. 영상은 영상, 실제 평가는 아래 후기를 보세요.</p><div class="vids">${it.videos.map(v=>{const e=videoEmbed(v.url); return e?`<div class="vid${e.v?" v":""}"><iframe src="${e.src}" title="${esc(it.name)} 소개 영상" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>${v.by?`<span>${esc(v.by)}</span>`:""}</div>`:"";}).join("")}</div></section>`:""}
+        ${window.CM ? `<section class="zone zone-cm">${CM.box()}</section>` : ""}
+      </div>
+    </div>
+  </div>`;
+  $("#modal-root").innerHTML = html;
+  document.body.style.overflow = "hidden";
+  $("#modal .close").focus();
+  if (window.CM) CM.fill(it.id);
+}
+function closeDetail() { $("#modal-root").innerHTML = ""; document.body.style.overflow = ""; }
+let pressStart = null;
+document.addEventListener("pointerdown", e => { pressStart = { target: e.target, x: e.clientX, y: e.clientY }; });
+
+// 딸깍: 링크를 열고 1.5초 안에 창 포커스가 빠져나가지 않으면(도우미가 안 뜨면) 그 자리에서 도우미 안내로 바꾼다
+function tryDeep(url, id, fromAnchor) {
+  let left = false; const mark = () => { left = true; };
+  window.addEventListener("blur", mark); document.addEventListener("visibilitychange", mark);
+  // 링크 자체의 기본 동작(브라우저의 "열까요?" 창)을 그대로 쓴다. 크롬은 숨은 프레임에서 나가는 외부 프로그램 호출을 막는다.
+  // 실제 브라우저는 알 수 없는 주소 형식으로 이동해도 페이지를 그대로 둔다. (아티팩트 미리보기 샌드박스만 페이지가 날아감)
+  if (!fromAnchor) { try { window.location.href = url; } catch (e) {} }
+  setTimeout(() => {
+    window.removeEventListener("blur", mark); document.removeEventListener("visibilitychange", mark);
+    if (left) { try { localStorage.setItem("sm-helper", "1"); } catch (e) {} document.querySelectorAll(".helper-guide").forEach(g => g.remove()); toast("딸깍 도우미가 확인 창을 띄웠어요. 거기서 '예'만 누르면 끝!"); return; }
+    let known = false; try { known = localStorage.getItem("sm-helper") === "1"; } catch (e) {}
+    if (known) { toast("도우미가 응답하지 않아요. 창이 뜨지 않았다면 다시 눌러 주세요."); return; }
+    showHelperGuide(url, id);
+  }, 1500);
+}
+function showHelperGuide(url, id) {
+  // 상세 창은 그대로 두고(설치되는 동안 아래 정보를 읽을 수 있게), 설치 칸 맨 위에 안내만 끼운다
+  const it = ITEMS.find(x => x.id === id); const zone = $("#modal .zone-install"); if (!zone) return;
+  let box = zone.querySelector(".helper-guide"); if (!box) { box = document.createElement("div"); box.className = "helper-guide"; zone.prepend(box); }
+  box.scrollIntoView({ block: "start", behavior: "smooth" });
+  const cmd = it ? cmdOf(it) : "";
+  box.innerHTML = `
+    <button class="close" data-guide-close aria-label="안내 닫기" style="position:absolute;top:8px;right:8px">✕</button><div>줌이나 스팀처럼 한 번만 깔아 두면, 이후 모든 도구가 버튼 한 번에 설치됩니다. 30초면 끝나요.</div>
+    <div class="steps">
+      <div class="stp"><span class="num">1</span><div class="txt"><b>딸깍 도우미 받기 (처음 한 번)</b><span>받은 파일을 두 번 누르면 끝. 이 도우미가 하는 일은 Claude Code에 설치 명령을 대신 쳐 주는 것 하나입니다. 윈도우가 "알 수 없는 게시자"라고 막으면 '추가 정보 → 실행'.</span>
+        <div class="big-install" style="margin-top:8px"><button class="install" data-helper="win">⬇ Windows용 딸깍설치.exe</button><button class="btn-outline" data-helper="mac">Mac용</button></div></div></div>
+      <div class="stp"><span class="num">2</span><div class="txt"><b>설치 완료 창이 뜨면, 아래 버튼을 다시 누르세요</b><span>${it?esc(it.name):"이 도구"}가 바로 설치됩니다.</span>
+        <div class="big-install" style="margin-top:8px"><a class="install" href="${esc(url)}" data-deep="${esc(url)}" data-item="${esc(id)}" style="text-decoration:none;text-align:center">⚡ 다시 딸깍</a></div></div></div>
+    </div>
+    ${cmd?`<details><summary style="cursor:pointer;color:var(--muted);font-size:13px">도우미 없이 하는 방법 (명령 복사)</summary><div class="cmd"><code>${esc(cmd)}</code><button data-copy="${esc(cmd)}">복사</button></div></details>`:""}`;
+}
+
+document.addEventListener("click", e => {
+  const t = e.target.closest("[data-fav],[data-copy],[data-deep],[data-helper],[data-open],[data-cat],[data-kind],[data-platform],[data-news-more],[data-news],[data-sub],[data-close],[data-guide-close],.modal,.play");
+  if (!t) return;
+  if (t.dataset.track && window.CM) CM.track(t.dataset.track);   // 딸깍 설치·명령 복사·커넥터 열기 클릭을 집계 (하루 1회)
+  if (t.dataset.deep) { e.stopPropagation(); tryDeep(t.dataset.deep, t.dataset.item, t.tagName === "A"); return; }   // <a>는 기본 동작으로 링크를 열게 둔다
+  if (t.dataset.helper) { toast(t.dataset.helper === "win" ? "실제 서비스에서는 딸깍설치.exe 내려받기가 시작됩니다 (192KB)" : "Mac용은 준비 중입니다"); return; }
+  if (t.hasAttribute("data-news-more")) { newsExpanded = true; renderNews(document.querySelector("#newsseg [aria-pressed='true']").dataset.news); return; }
+  if (t.dataset.news) { document.querySelectorAll("#newsseg button").forEach(b=>b.setAttribute("aria-pressed", b.dataset.news===t.dataset.news)); renderNews(t.dataset.news); return; }
+  if (t.dataset.sub) { toast({kakao:"카카오톡 채널 추가 화면으로 연결됩니다 (예시)", rss:"RSS 주소가 복사됩니다 (예시)", tg:"텔레그램 채널로 연결됩니다 (예시)"}[t.dataset.sub]); return; }
+  if (t.dataset.fav) { e.stopPropagation(); const id=t.dataset.fav; state.favs.has(id)?state.favs.delete(id):state.favs.add(id); saveFavs(); renderGrid(); return; }
+  if (t.hasAttribute("data-open-readme")) { const d = document.querySelector("#modal details.readme"); if (d) { d.open = true; d.scrollIntoView({ block: "start", behavior: "smooth" }); } return; }
+  if (t.dataset.copy !== undefined && t.dataset.copy !== "") { e.stopPropagation(); copyText(t.dataset.copy, t.closest(".try-box") ? "복사됐어요. Claude 입력창에 Ctrl+V 하고 엔터!" : ""); return; }
+  if (t.classList.contains("play")) { toast("실제 서비스에서는 여기서 30초 작동 영상이 재생됩니다"); return; }
+  if (t.dataset.open) { e.stopPropagation(); const sec = t.closest("[data-sec]"); if (sec && window.CM && CM.trackSection) CM.trackSection(sec.dataset.sec, t.dataset.open); openDetail(t.dataset.open); return; }   // 어느 칸에서 열었는지 집계 (칸 순서 결정용)
+  if (t.dataset.cat) { state.cat = t.dataset.cat; renderAll(); return; }
+  if (t.dataset.kind) { state.kind = t.dataset.kind; document.querySelectorAll("#kindseg button").forEach(b=>b.setAttribute("aria-pressed", b.dataset.kind===state.kind)); renderGrid(); return; }
+  if (t.dataset.platform) { state.plat = t.dataset.platform; document.querySelectorAll(".nav button").forEach(b=>b.setAttribute("aria-pressed", b.dataset.platform===state.plat)); renderGrid(); return; }
+  if (t.hasAttribute("data-guide-close")) { t.closest(".helper-guide").remove(); return; }
+  // 바깥 어두운 부분: 누른 자리와 뗀 자리가 같은 '진짜 클릭'일 때만 닫는다 (살짝 드래그·글자 선택은 무시)
+  if (t.id === "modal") { if (pressStart && pressStart.target === t && Math.hypot(e.clientX - pressStart.x, e.clientY - pressStart.y) < 6) closeDetail(); return; }
+});
+document.addEventListener("keydown", e => {
+  if (e.key === "Escape") closeDetail();
+  if ((e.key === "Enter" || e.key === " ") && e.target.classList && e.target.classList.contains("card")) { e.preventDefault(); openDetail(e.target.dataset.open); }
+});
+// 검색어를 치면 결과(카드 목록)가 바로 보이게 스크롤. 뉴스 피드를 지나쳐야 결과가 보이는 문제 방지.
+function jumpToGrid() { $("#list-title").scrollIntoView({ block: "start", behavior: "smooth" }); }
+let qTimer = null;
+$("#q").addEventListener("input", e => { state.q = e.target.value; clearTimeout(qTimer); qTimer = setTimeout(() => { renderGrid(); if (state.q.trim()) jumpToGrid(); }, 150); });   // 글자마다 전체 재렌더·점프하지 않게
+$("#qbtn").addEventListener("click", () => { renderGrid(); jumpToGrid(); });
+$("#q").addEventListener("keydown", e => { if (e.key === "Enter") { renderGrid(); jumpToGrid(); } });
+$("#sort").addEventListener("change", e => { state.sort = e.target.value; renderGrid(); });
+$("#favbtn").addEventListener("click", () => { state.favOnly = !state.favOnly; $("#favbtn").setAttribute("aria-pressed", state.favOnly); renderGrid(); });
+$("#submitbtn").addEventListener("click", () => toast("실제 서비스에서는 등록 요청 폼이 열립니다"));
+$("#subform").addEventListener("submit", e => { e.preventDefault(); toast("구독 완료! 내일 아침 8시에 첫 소식을 보내 드려요 (예시)"); e.target.reset(); });
+$("#st-count").textContent = ITEMS.length;
+renderChips(); renderRank(); renderGrid(); renderNews("today");
+
+// 부제 로테이션: 세 문장을 6초마다 부드럽게 교체. 접속할 때마다 시작 문장이 다름. 모션 축소 설정이면 고정.
+(function () {
+  const T = [
+    "이게 뭔지, 나한테 왜 필요한지 쉽게 설명.<br>설치는 버튼 한 번, 끝.",
+    "매일 쏟아지는 새 AI 도구들을<br>쉽게 골라 바로 쓰자.",
+    "AI 도구 편의점. 보고, 고르고, 딸깍."
+  ];
+  const el = $("#tagline"); if (!el) return;
+  let i = Math.floor(Math.random() * T.length); el.innerHTML = T[i];
+  if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  el.style.transition = "opacity .45s ease";
+  setInterval(() => { el.style.opacity = "0"; setTimeout(() => { i = (i + 1) % T.length; el.innerHTML = T[i]; el.style.opacity = "1"; }, 450); }, 6000);
+})();
+
+// 파이프라인이 만든 catalog.json / news.json이 있으면 그걸로 교체 (매일 자동 갱신되는 진짜 데이터)
+(async () => {
+  try {
+    const bust = "?t=" + Math.floor(Date.now() / 300000);   // 5분 단위로 새로 받기 (브라우저가 옛 카탈로그를 붙잡는 문제 방지)
+    const c = await fetch("../catalog.json" + bust); if (c.ok) { const d = await c.json(); if (d.items && d.items.length) { ITEMS = d.items.filter(x => x.status !== "pending"); CATALOG_AT = d.generated_at || ""; } }
+    const n = await fetch("news.json" + bust); if (n.ok) { const arr = await n.json(); const usable = Array.isArray(arr) ? arr.filter(x => x.type !== "found") : []; if (usable.length) { NEWS = arr; TODAY = usable[0].date || TODAY; } }
+    $("#st-count").textContent = ITEMS.length; renderAll(); renderRank(); renderNews("today");
+  } catch (e) { /* 파일이 없으면 내장 예시 데이터 그대로 */ }
+  const qp = new URLSearchParams(location.search); if (qp.get("open")) openDetail(qp.get("open"));   // ?open=도구id 로 상세 창 바로 열기 (시안 비교용)
+})();
+</script>
+
+
+
+
+
+
+
+
+
+<script>
+// ===== 커뮤니티: 딸깍 수 집계 · 한국 사용자 별점 · 글 목록 하나(후기·질문·막힘·잡담, 답글·해결·추천·저도요) · 질문 광장 · 지금 대화 중 띠 · 신고 =====
+// community-config.js 에 Supabase 주소·공개 키가 없으면 CM.on = false 이고 아래 UI는 전부 숨겨진다.
+window.CM = (() => {
+  const cfg = window.KLIK_COMMUNITY || {};
+  const on = /^https:\/\/[\w.-]+/.test(cfg.url || "") && typeof cfg.anonKey === "string" && cfg.anonKey.length > 20;
+  const CDN = "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.49.4/dist/umd/supabase.min.js";
+  const BEST_AT = 5;           // 추천 5개부터 "베스트 후기"
+  const BAD = ["씨발","시발","씨빨","ㅅㅂ","병신","ㅄ","좆","개새","지랄","니애미","느금","꺼져","닥쳐"];
+  const KIND = { review: "후기", question: "질문", story: "막힘", talk: "잡담" };
+  const S = { on, sb: null, week: [], stats: {}, react: {}, solved: {}, feed: [], qs: [], qrp: {}, cur: null, star: 0, kind: "review", filter: "all", page: 8, data: null };
+  const ls = { get: k => { try { return localStorage.getItem(k); } catch (e) { return null; } }, set: (k, v) => { try { localStorage.setItem(k, v); } catch (e) {} } };
+  function client() {
+    let c = ls.get("klik-client");
+    if (!c) { c = (crypto.randomUUID ? crypto.randomUUID() : String(Date.now()) + Math.random().toString(16).slice(2)).replace(/-/g, "").slice(0, 32); ls.set("klik-client", c); }
+    return c;
+  }
+  function nick() { return (ls.get("klik-nick") || "").slice(0, 12); }
+  function nickOr(v) { v = (v || "").trim().slice(0, 12); if (v) ls.set("klik-nick", v); return v || nick() || ("딸깍러" + client().slice(-4)); }
+  function dirty(s) { const t = String(s).replace(/\s/g, ""); return BAD.some(w => t.includes(w)); }
+  function starStr(n) { const r = Math.round(n); return "★★★★★".slice(0, r) + "☆☆☆☆☆".slice(0, 5 - r); }
+  function dstr(iso) { const d = new Date(iso); return `${d.getMonth() + 1}.${d.getDate()}`; }
+  function loadScript(src) { return new Promise((ok, no) => { const s = document.createElement("script"); s.src = src; s.onload = ok; s.onerror = no; document.head.appendChild(s); }); }
+  function err(e, msg) { console.warn("[커뮤니티]", e); toast(msg || (e && e.message && /해결 표시|달린 것이/.test(e.message) ? e.message : "잠시 연결이 안 돼요. 다시 시도해 주세요.")); }
+  const mine = (t, id) => ls.get(`klik-mine-${t}-${id}`) === "1";
+  const nickInput = (id) => `<input class="nick" id="${id}" maxlength="12" placeholder="닉네임" value="${esc(nick())}" onfocus="this.select()">`;
+  const toolName = id => { const it = ITEMS.find(x => x.id === id); return it ? it.name : ""; };
+  const toolChip = id => toolName(id) ? `<button type="button" class="tool-chip" data-open="${esc(id)}">⚡ ${esc(toolName(id))}</button>` : "";
+  const rateLimited = (k, ms, msg) => { const last = Number(ls.get(k) || 0); if (Date.now() - last < ms) { toast(msg); return true; } ls.set(k, String(Date.now())); return false; };
+  const myReview = id => { try { return JSON.parse(ls.get("klik-rev-" + id) || "null"); } catch (e) { return null; } };
+
+  async function init() {
+    if (!on) return;
+    try { await loadScript(CDN); S.sb = window.supabase.createClient(cfg.url, cfg.anonKey, { auth: { persistSession: false, autoRefreshToken: false } }); }
+    catch (e) { console.warn("[커뮤니티] Supabase 불러오기 실패", e); S.on = false; return; }
+    await refresh();
+  }
+  async function refresh() {
+    try {
+      const [w, r, c, sv, fd, qs] = await Promise.all([
+        S.sb.from("installs_week").select("tool_id,n").order("n", { ascending: false }).limit(30),
+        S.sb.from("review_stats").select("tool_id,n,avg"),
+        S.sb.from("reaction_counts").select("tool_id,tried,blocked"),
+        S.sb.from("tool_solved_counts").select("tool_id,n"),
+        S.sb.from("activity_feed").select("kind,id,tool_id,nick,body,created_at").order("created_at", { ascending: false }).limit(10),
+        S.sb.from("questions").select("id,tool_id,nick,body,solved_reply_id,created_at").order("created_at", { ascending: false }).limit(20),
+      ]);
+      if (w.error || r.error || c.error) throw (w.error || r.error || c.error);
+      S.week = w.data || []; S.stats = {}; S.react = {}; S.solved = {};
+      (r.data || []).forEach(x => S.stats[x.tool_id] = x);
+      (c.data || []).forEach(x => S.react[x.tool_id] = x);
+      S.v2 = !(sv.error || fd.error || qs.error);
+      if (S.v2) {
+        (sv.data || []).forEach(x => S.solved[x.tool_id] = x.n);
+        S.feed = fd.data || []; S.qs = qs.data || [];
+        S.qrp = await repliesFor("question", S.qs.map(q => q.id));
+      } else console.warn("[커뮤니티] 2차 표 없음 — community-schema-v2.sql 을 실행하면 질문 광장·답글이 켜집니다", sv.error || fd.error || qs.error);
+      renderRank(); renderGrid(); paintFeed(); paintPlaza();
+    } catch (e) { console.warn("[커뮤니티] 집계 불러오기 실패 (SQL을 아직 안 돌렸을 수 있어요)", e); }
+  }
+  async function repliesFor(target, ids) {
+    const map = {}; if (!ids.length) return map;
+    const { data, error } = await S.sb.from("replies").select("id,target,target_id,parent_id,likes,rec_tool,nick,body,created_at").eq("target", target).in("target_id", ids).order("created_at", { ascending: true });
+    if (error) { console.warn(error); return map; }
+    (data || []).forEach(x => (map[x.target_id] = map[x.target_id] || []).push(x));
+    return map;
+  }
+
+  // 카드 아래 한 줄: 한국 사용자 별점 (깃허브 ★는 그대로 두고 그 아래 따로)
+  function cardLine(id) {
+    if (!S.on) return "";
+    const st = S.stats[id], re = S.react[id] || {}, sv = S.solved[id];
+    if (!st) return `<p class="cm-rate"><span class="stars">☆☆☆☆☆</span><span>아직 평이 없어요 · 첫 별점을 남겨 보세요</span>${sv ? `<span>· 질문 해결 ${sv}건</span>` : ""}</p>`;
+    return `<p class="cm-rate"><span class="stars">${starStr(st.avg)}</span><b>${st.avg}</b><span>· 한국 사용자 ${st.n}명</span>${re.tried ? `<span>· 써 봤어요 ${re.tried}</span>` : ""}${sv ? `<span>· 질문 해결 ${sv}건</span>` : ""}</p>`;
+  }
+
+  // 딸깍 설치 클릭 기록: 같은 브라우저·같은 도구는 하루 1회만
+  function track(id) {
+    if (!S.on || !id) return;
+    const today = new Date().toISOString().slice(0, 10), k = "klik-inst-" + id;
+    if (ls.get(k) === today) return; ls.set(k, today);
+    S.sb.from("installs").insert({ tool_id: id, client: client() }).then(({ error }) => { if (!error) refresh(); else console.warn(error); });
+  }
+
+  // 메인 칸별 클릭 기록: 같은 브라우저·같은 칸·같은 도구는 하루 1회만. 읽기: 콘솔에서 CM.sectionStats()
+  function trackSection(section, toolId) {
+    if (!S.on || !section || !toolId) return;
+    const today = new Date().toISOString().slice(0, 10), k = `klik-sec-${section}-${toolId}`;
+    if (ls.get(k) === today) return; ls.set(k, today);
+    S.sb.from("section_clicks").insert({ section, tool_id: toolId, client: client() }).then(({ error }) => { if (error) console.warn(error); });
+  }
+  async function sectionStats() { const { data, error } = await S.sb.from("section_clicks_week").select("section,n"); if (error) throw error; console.table(data); return data; }
+
+  // ---- 답글 스레드 (후기·댓글·사연·질문 공용) — 답글의 답글은 깊이 제한 없이, 모든 답글에 추천 ----
+  const rfId = (key, part) => `rf-${part}-${key.replace(/:/g, "-")}`;
+  function replyForm(key, opts) {
+    const [target] = key.split(":"), nested = key.split(":").length > 2;
+    return `
+      <div class="cm-reply-form" data-rf="${key}" hidden>
+        <div class="cm-row">${nickInput(rfId(key, "nick"))}<textarea id="${rfId(key, "body")}" maxlength="500" placeholder="${nested ? "이 답글에 답글" : target === "question" ? "어떤 도구로 어떻게 하면 되는지 적어 주세요" : target === "story" ? "어떻게 해결했는지 적어 주세요" : "답글"}"></textarea></div>
+        <div class="cm-row">${opts.allowTool && !nested ? `<select id="${rfId(key, "tool")}"><option value="">추천 도구 (선택)</option>${ITEMS.map(it => `<option value="${esc(it.id)}">${esc(it.name)}</option>`).join("")}</select>` : ""}<button class="install" data-cm-reply-send="${key}">답글 달기</button><button class="btn-outline" data-cm-reply-open="${key}">닫기</button></div>
+      </div>`;
+  }
+  function thread(target, id, replies, opts) {
+    const o = Object.assign({ owner: false, solvedId: null, allowTool: false }, opts || {});
+    const all = replies || [], kids = {}, byId = {};
+    all.forEach(r => { byId[r.id] = r; (kids[r.parent_id || 0] = kids[r.parent_id || 0] || []).push(r); });
+    const node = (r, depth) => {
+      const key = `${target}:${id}:${r.id}`, ch = kids[r.id] || [], parent = r.parent_id ? byId[r.parent_id] : null;
+      return `
+      <div class="cm-reply ${r.id === o.solvedId ? "answer" : ""}" data-depth="${depth}">
+        <div class="body2">${depth > 2 && parent ? `<span class="to">↳ ${esc(parent.nick || "익명")}</span> ` : ""}${esc(r.body)}</div>
+        ${r.rec_tool ? `<div>${toolChip(r.rec_tool)}</div>` : ""}
+        <div class="meta2"><span><b>${esc(r.nick || "익명")}</b> · ${dstr(r.created_at)} ${r.id === o.solvedId ? '<span class="ok">해결 ✓</span>' : ""}</span>
+          <span><button data-cm-rlike="${r.id}" aria-pressed="${ls.get("klik-rlike-" + r.id) === "1"}">👍 ${r.likes || 0}</button> &nbsp; <button data-cm-reply-open="${key}">${ch.length ? `답글 ${ch.length}` : "답글"}</button> &nbsp; ${o.owner && !o.solvedId && (target === "question" || target === "story") ? `<button class="solve" data-cm-solve="${target}:${id}:${r.id}">✓ 이게 됐어요</button> &nbsp; ` : ""}<button data-cm-report="reply:${r.id}">신고</button></span></div>
+        ${replyForm(key, o)}
+        ${ch.length ? `<div class="cm-thread sub ${depth >= 2 ? "flat" : ""}">${ch.map(c => node(c, depth + 1)).join("")}</div>` : ""}
+      </div>`;
+    };
+    const roots = [...(kids[0] || [])].sort((a, b) => (a.id === o.solvedId ? -1 : b.id === o.solvedId ? 1 : 0));
+    const key = `${target}:${id}`;
+    return `<div class="cm-thread" data-thread="${key}">${roots.map(r => node(r, 1)).join("")}${replyForm(key, o)}</div>`;
+  }
+  const replyBtn = (target, id, n) => `<button data-cm-reply-open="${target}:${id}">${n ? `답글 ${n}` : "답글 쓰기"}</button>`;
+
+  // ---- 메인: 지금 대화 중 띠 + 질문 광장 ----
+  function paintFeed() {
+    const el = $("#cm-feed"); if (!el) return;
+    if (!S.on || !S.v2 || !S.feed.length) { el.hidden = true; return; }
+    const K = { question: "❓", reply: "↩", comment: "💬" };
+    el.hidden = false;
+    el.innerHTML = `<span class="chip lbl">지금 대화 중</span>` + S.feed.map(f => `<button class="chip" ${f.tool_id && toolName(f.tool_id) ? `data-open="${esc(f.tool_id)}"` : `data-cm-goto-plaza`}><b>${K[f.kind] || ""} ${esc(f.nick || "익명")}</b>${esc(f.body)}</button>`).join("");
+  }
+  function paintPlaza() {
+    const sec = $("#cm-plaza"); if (!sec) return;
+    if (!S.on || !S.v2) { sec.hidden = true; return; }
+    sec.hidden = false;
+    $("#cm-qlist").innerHTML = S.qs.length ? S.qs.map(q => qItem(q, S.qrp[q.id] || [])).join("") : `<div class="cm-empty">첫 질문을 올려 보세요. "이런 거 하고 싶은데 뭐 써요?"면 충분합니다.</div>`;
+  }
+  function qItem(q, replies) {
+    return `<div class="cm-q ${q.solved_reply_id ? "solved" : ""}" data-q="${q.id}">
+      <div class="qbody">${esc(q.body)}</div>
+      <div class="meta2"><span><b>${esc(q.nick || "익명")}</b> · ${dstr(q.created_at)} ${q.tool_id ? toolChip(q.tool_id) : ""}</span><span>${replyBtn("question", q.id, replies.length)} &nbsp; <button data-cm-report="question:${q.id}">신고</button></span></div>
+      ${thread("question", q.id, replies, { owner: mine("question", q.id), solvedId: q.solved_reply_id, allowTool: true })}
+    </div>`;
+  }
+
+  // ---- 상세 창: 글 목록 하나 ----
+  function box() { return S.on ? `<div class="cm" id="cm-box"><div class="cm-empty">한국 사용자 이야기 불러오는 중…</div></div>` : ""; }
+  async function fill(id) {
+    if (!S.on) return; S.cur = id; S.star = 0; S.page = 8; S.filter = "all"; S.kind = myReview(id) ? "question" : "review";
+    const el = $("#cm-box"); if (!el) return;
+    try {
+      const v2 = S.v2;
+      const [rv, bl, cm, qs, rp] = await Promise.all([
+        S.sb.from("reviews").select("id,nick,stars,body,likes,created_at").eq("tool_id", id).order("created_at", { ascending: false }).limit(100),
+        S.sb.from("reactions").select(v2 ? "id,nick,note,created_at,solved_reply_id" : "id,nick,note,created_at").eq("tool_id", id).eq("kind", "blocked").neq("note", "").order("created_at", { ascending: false }).limit(50),
+        S.sb.from("comments").select("id,nick,body,created_at").eq("tool_id", id).order("created_at", { ascending: false }).limit(100),
+        v2 ? S.sb.from("questions").select("id,tool_id,nick,body,solved_reply_id,created_at").eq("tool_id", id).order("created_at", { ascending: false }).limit(50) : Promise.resolve({ data: [] }),
+        v2 ? S.sb.from("replies").select("id,target,target_id,parent_id,likes,rec_tool,nick,body,created_at").eq("tool_id", id).order("created_at", { ascending: true }) : Promise.resolve({ data: [] }),
+      ]);
+      if (rv.error || bl.error || cm.error || qs.error || rp.error) throw (rv.error || bl.error || cm.error || qs.error || rp.error);
+      const rpm = {}; (rp.data || []).forEach(x => (rpm[`${x.target}:${x.target_id}`] = rpm[`${x.target}:${x.target_id}`] || []).push(x));
+      let metoo = {};
+      if (v2 && bl.data && bl.data.length) { const m = await S.sb.from("story_metoo_counts").select("story_id,n").in("story_id", bl.data.map(b => b.id)); (m.data || []).forEach(x => metoo[x.story_id] = x.n); }
+      // 네 종류를 글 하나의 모양으로 맞춘다
+      const posts = [
+        ...(rv.data || []).map(r => ({ kind: "review", id: r.id, nick: r.nick, body: r.body, created_at: r.created_at, stars: r.stars, likes: r.likes })),
+        ...(qs.data || []).map(q => ({ kind: "question", id: q.id, nick: q.nick, body: q.body, created_at: q.created_at, solved: q.solved_reply_id })),
+        ...(bl.data || []).map(b => ({ kind: "story", id: b.id, nick: b.nick, body: b.note, created_at: b.created_at, solved: b.solved_reply_id || null, metoo: metoo[b.id] || 0 })),
+        ...(cm.data || []).map(c => ({ kind: "talk", id: c.id, nick: c.nick, body: c.body, created_at: c.created_at })),
+      ].sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
+      S.data = { posts, rp: rpm };
+      paint();
+    } catch (e) { el.innerHTML = `<div class="cm-empty">커뮤니티를 불러오지 못했어요. (Supabase SQL이 실행됐는지 확인해 주세요)</div>`; console.warn(e); }
+  }
+  const TARGET = { review: "review", question: "question", story: "story", talk: "comment" };
+  function postItem(p) {
+    const target = TARGET[p.kind], replies = (S.data.rp[`${target}:${p.id}`] || []), v2 = S.v2;
+    const best = p.kind === "review" && p.likes >= BEST_AT;
+    const head = `<span class="tag k-${p.kind}">${KIND[p.kind]}</span>${p.kind === "review" ? `<span class="stars">${starStr(p.stars)}</span>` : ""}${best ? '<span class="best-tag">베스트</span>' : ""}`;
+    const acts = [];
+    if (p.kind === "review") acts.push(`<button data-cm-like="${p.id}" aria-pressed="${ls.get("klik-like-" + p.id) === "1"}">👍 추천 ${p.likes}</button>`);
+    if (p.kind === "story" && v2) acts.push(`<button data-cm-metoo="${p.id}" aria-pressed="${ls.get("klik-metoo-" + p.id) === "1"}">🙋 저도요 ${p.metoo}</button>`);
+    if (v2) acts.push(replyBtn(target, p.id, replies.length));
+    acts.push(`<button data-cm-report="${target}:${p.id}">신고</button>`);
+    return `<div class="cm-item post ${p.solved ? "solved" : ""} ${best ? "best" : ""}">
+      <div class="phead">${head}</div>
+      <div class="body2">${p.body ? esc(p.body) : '<span class="sub">(별점만 남김)</span>'}</div>
+      <div class="meta2"><span><b>${esc(p.nick || "익명")}</b> · ${dstr(p.created_at)}</span><span>${acts.join(" &nbsp; ")}</span></div>
+      ${v2 ? thread(target, p.id, replies, { owner: mine(target, p.id), solvedId: p.solved || null, allowTool: p.kind === "question" }) : ""}
+    </div>`;
+  }
+  function paint() {
+    const el = $("#cm-box"); if (!el || S.cur === null || !S.data) return;
+    const id = S.cur, st = S.stats[id], re = S.react[id] || { tried: 0, blocked: 0 }, d = S.data, v2 = S.v2, mr = myReview(id);
+    const pressed = k => ls.get(`klik-re-${id}-${k}`) === "1";
+    const unanswered = p => (p.kind === "question" || p.kind === "story") && !p.solved && !(d.rp[`${TARGET[p.kind]}:${p.id}`] || []).length;
+    const counts = { all: d.posts.length, open: d.posts.filter(unanswered).length };
+    Object.keys(KIND).forEach(k => counts[k] = d.posts.filter(p => p.kind === k).length);
+    const list = d.posts.filter(p => S.filter === "all" ? true : S.filter === "open" ? unanswered(p) : p.kind === S.filter);
+    const shown = list.slice(0, S.page);
+    const filters = [["all", "전체"], ["open", "답 없는 글"], ["review", "후기"], ["question", "질문"], ["story", "막힘"], ["talk", "잡담"]]
+      .filter(([k]) => k === "all" || counts[k]).map(([k, t]) => `<button class="chip" data-cm-filter="${k}" aria-pressed="${S.filter === k}">${t} ${counts[k]}</button>`).join("");
+    const PH = { review: "한 줄 후기 (선택, 120자)", question: "예: 이걸로 회사 양식 그대로 되나요?", story: "어디서 막혔나요? 예: 도우미 창이 안 떠요", talk: "이 도구 어땠나요? 자유롭게 (500자)" };
+    const kinds = Object.keys(KIND).filter(k => k !== "question" || v2).filter(k => k !== "story" || v2 || true)
+      .map(k => `<button data-cm-kind="${k}" aria-pressed="${S.kind === k}">${k === "review" ? "★ 후기" : k === "story" ? "🚧 막혔어요" : KIND[k]}</button>`).join("");
+    const compose = `
+      <div class="cm-form cm-compose">
+        <div class="seg cm-kinds">${kinds}</div>
+        ${S.kind === "review" ? (mr
+          ? `<div class="cm-done"><b>내 후기</b> <span class="stars">${starStr(mr.stars)}</span> ${mr.body ? esc(mr.body) : ""} <span class="sub">· 후기는 한 브라우저에서 한 번만. 질문·잡담은 계속 쓸 수 있어요</span></div>`
+          : `<div class="cm-starpick">${[1,2,3,4,5].map(n => `<button type="button" data-cm-star="${n}" class="${n <= S.star ? "on" : ""}" aria-label="${n}점">★</button>`).join("")}<span class="sub" id="cm-star-txt">${["별을 눌러 점수를 매겨 주세요","아쉬워요","그냥 그래요","쓸 만해요","좋아요","최고예요"][S.star]}</span></div>`) : ""}
+        ${S.kind === "review" && mr ? "" : `<div class="cm-row">${nickInput("cm-nick")}${S.kind === "talk" ? `<textarea id="cm-body" maxlength="500" placeholder="${PH[S.kind]}"></textarea>` : `<input id="cm-body" maxlength="${S.kind === "review" ? 120 : 300}" placeholder="${PH[S.kind]}">`}<button class="install" data-cm-post>${S.kind === "story" ? "사연 올리기" : S.kind === "question" ? "질문하기" : "올리기"}</button></div>`}
+        ${S.kind === "story" && !pressed("blocked") ? `<div class="sub">사연 없이 "막혔어요" 숫자만 올리려면 <button type="button" class="cm-link" data-cm-blocked-only>여기</button>를 누르세요.</div>` : ""}
+      </div>`;
+    el.innerHTML = `
+      <div class="cm-top">
+        <div class="cm-avg">${st ? `<span class="stars">${starStr(st.avg)}</span><b>${st.avg}</b><span class="sub">한국 사용자 ${st.n}명의 별점</span>` : `<span class="stars">☆☆☆☆☆</span><span class="sub">아직 별점이 없어요</span>`}</div>
+        <div class="cm-react">
+          <button data-cm-react="tried" aria-pressed="${pressed("tried")}">👍 써 봤어요 ${re.tried || 0}</button>
+          <button data-cm-react="blocked" aria-pressed="${pressed("blocked")}">🚧 설치 막혔어요 ${re.blocked || 0}</button>
+        </div>
+      </div>
+      <div>
+        <h4>이 도구 이야기 <span class="sub">후기·질문·막힌 사연·잡담을 한곳에 · 로그인 없이 닉네임만</span></h4>
+        ${compose}
+        <div class="chips cm-filters">${filters}</div>
+        <div class="cm-list">${shown.length ? shown.map(postItem).join("") : `<div class="cm-empty">${S.filter === "open" ? "답을 기다리는 글이 없어요. 모두 해결됐습니다 👍" : "아직 글이 없어요. 첫 글을 남겨 보세요."}</div>`}
+        ${list.length > S.page ? `<button class="chip cm-more" data-cm-more>글 ${list.length - S.page}개 더 보기</button>` : ""}</div>
+      </div>`;
+  }
+
+  // ---- 동작 ----
+  async function post() {
+    const id = S.cur, body = ($("#cm-body").value || "").trim(), nk = nickOr($("#cm-nick").value), k = S.kind;
+    if (dirty(body) || dirty(nk)) { toast("표현을 조금만 순화해 주세요 🙏"); return; }
+    if (k === "review") {
+      if (!S.star) { toast("별을 먼저 눌러 점수를 매겨 주세요"); return; }
+      const { error } = await S.sb.from("reviews").insert({ tool_id: id, client: client(), nick: nk, stars: S.star, body: body.slice(0, 120) });
+      if (error && error.code !== "23505") { err(error); return; }
+      ls.set("klik-rev-" + id, JSON.stringify({ stars: S.star, body })); toast(error ? "이 브라우저에서는 이미 후기를 남기셨어요" : "후기가 올라갔어요. 고마워요!");
+    } else if (k === "question") {
+      if (body.length < 2) { toast("질문을 적어 주세요"); return; }
+      if (rateLimited("klik-q-at", 30000, "질문은 30초에 하나씩 올릴 수 있어요")) return;
+      const { data, error } = await S.sb.from("questions").insert({ tool_id: id, client: client(), nick: nk, body: body.slice(0, 300) }).select("id");
+      if (error) { err(error); return; }
+      if (data && data[0]) ls.set(`klik-mine-question-${data[0].id}`, "1"); toast("질문이 올라갔어요. 답이 달리면 여기서 볼 수 있어요.");
+    } else if (k === "story") {
+      if (!body) { toast("어디서 막혔는지 한 줄만 적어 주세요"); return; }
+      if (!(await sendReaction("blocked", body.slice(0, 120), nk, true))) return;
+      toast("사연 고마워요. 누군가 해결법을 달아 줄 거예요.");
+    } else {
+      if (!body) { toast("내용을 적어 주세요"); return; }
+      if (rateLimited("klik-cmt-at", 20000, "잡담은 20초에 하나씩 쓸 수 있어요")) return;
+      const { error } = await S.sb.from("comments").insert({ tool_id: id, client: client(), nick: nk, body: body.slice(0, 500) });
+      if (error) { err(error); return; }
+      toast("올라갔어요");
+    }
+    await refresh(); await fill(id);
+  }
+  // 써 봤어요: 바로 기록. 막혔어요: 쓰기 칸을 '막혔어요'로 바꿔 사연을 받는다 (숫자만 올리기 링크도 있음)
+  async function react(kind) {
+    const id = S.cur, k = `klik-re-${id}-${kind}`;
+    if (ls.get(k) === "1") { toast(kind === "tried" ? "이미 '써 봤어요'를 누르셨어요" : "이미 '막혔어요'를 누르셨어요. 사연은 아래 '막혔어요' 칸에 더 쓸 수 있어요"); if (kind === "blocked") { S.kind = "story"; paint(); } return; }
+    if (kind === "blocked") { S.kind = "story"; paint(); const b = $("#cm-body"); if (b) b.focus(); return; }
+    await sendReaction("tried", "", nick()); toast("반영됐어요 👍");
+  }
+  async function sendReaction(kind, note, nk, allowDup) {
+    const id = S.cur, k = `klik-re-${id}-${kind}`;
+    // 같은 브라우저가 사연을 또 쓰면 토큰 뒤에 번호를 붙여 저장 (숫자 집계는 1명으로 세지 않지만 사연은 남긴다)
+    const dup = allowDup && ls.get(k) === "1";
+    const { data, error } = await S.sb.from("reactions").insert({ tool_id: id, client: dup ? client().slice(0, 24) + "-" + Date.now().toString(36) : client(), kind, nick: nk, note }).select("id");
+    if (error && error.code !== "23505") { err(error); return false; }
+    ls.set(k, "1"); if (data && data[0]) ls.set(`klik-mine-story-${data[0].id}`, "1");
+    const re = S.react[id] || (S.react[id] = { tool_id: id, tried: 0, blocked: 0 }); re[kind] = (re[kind] || 0) + 1;
+    const b = document.querySelector(`[data-cm-react="${kind}"]`); if (b) { b.setAttribute("aria-pressed", "true"); b.textContent = (kind === "tried" ? "👍 써 봤어요 " : "🚧 설치 막혔어요 ") + re[kind]; }
+    refresh(); return true;
+  }
+  async function like(rid) {
+    if (ls.get("klik-like-" + rid) === "1") { toast("이미 추천하셨어요"); return; }
+    const { error } = await S.sb.from("review_likes").insert({ review_id: Number(rid), client: client() });
+    if (error && error.code !== "23505") { err(error); return; }
+    ls.set("klik-like-" + rid, "1");
+    const r = S.data.posts.find(x => x.kind === "review" && x.id === Number(rid)); if (r) r.likes++; paint();
+  }
+  async function rlike(rid) {
+    if (ls.get("klik-rlike-" + rid) === "1") { toast("이미 추천하셨어요"); return; }
+    const { error } = await S.sb.from("reply_likes").insert({ reply_id: Number(rid), client: client() });
+    if (error && error.code !== "23505") { err(error); return; }
+    ls.set("klik-rlike-" + rid, "1");
+    const bump = r => { if (r.id === Number(rid)) r.likes = (r.likes || 0) + 1; };
+    if (S.data) Object.values(S.data.rp).forEach(a => a.forEach(bump));
+    Object.values(S.qrp).forEach(a => a.forEach(bump));
+    document.querySelectorAll(`[data-cm-rlike="${rid}"]`).forEach(b => { b.setAttribute("aria-pressed", "true"); b.textContent = "👍 " + (Number(b.textContent.replace(/[^0-9]/g, "")) + 1); });
+  }
+  async function metoo(sid) {
+    if (ls.get("klik-metoo-" + sid) === "1") { toast("이미 누르셨어요"); return; }
+    const { error } = await S.sb.from("story_metoo").insert({ story_id: Number(sid), client: client() });
+    if (error && error.code !== "23505") { err(error); return; }
+    ls.set("klik-metoo-" + sid, "1"); const p = S.data.posts.find(x => x.kind === "story" && x.id === Number(sid)); if (p) p.metoo++; paint(); toast("같이 막힌 사람이 있다고 표시했어요");
+  }
+  async function report(spec) {
+    const [target, tid] = spec.split(":"); const k = `klik-rep-${target}-${tid}`;
+    if (ls.get(k) === "1") { toast("이미 신고하셨어요"); return; }
+    if (!confirm("이 글을 신고할까요? 신고가 3건 쌓이면 자동으로 숨겨집니다.")) return;
+    const { error } = await S.sb.from("reports").insert({ target, target_id: Number(tid), client: client() });
+    if (error && error.code !== "23505") { err(error); return; }
+    ls.set(k, "1"); toast("신고가 접수됐어요");
+  }
+  async function askPlaza() {
+    const body = ($("#cm-qbody").value || "").trim().slice(0, 300), nk = nickOr($("#cm-qnick").value);
+    if (body.length < 2) { toast("질문을 적어 주세요"); return; }
+    if (dirty(body) || dirty(nk)) { toast("표현을 조금만 순화해 주세요 🙏"); return; }
+    if (rateLimited("klik-q-at", 30000, "질문은 30초에 하나씩 올릴 수 있어요")) return;
+    const { data, error } = await S.sb.from("questions").insert({ tool_id: null, client: client(), nick: nk, body }).select("id");
+    if (error) { err(error); return; }
+    if (data && data[0]) ls.set(`klik-mine-question-${data[0].id}`, "1");
+    $("#cm-qbody").value = ""; toast("질문이 올라갔어요. 답이 달리면 여기서 볼 수 있어요.");
+    await refresh();
+  }
+  async function reply(key) {
+    const [target, tid, pid] = key.split(":");
+    const body = ($("#" + rfId(key, "body")).value || "").trim().slice(0, 500), nk = nickOr($("#" + rfId(key, "nick")).value);
+    const selEl = $("#" + rfId(key, "tool")); const rec = selEl && selEl.value ? selEl.value : null;
+    if (!body) { toast("답글 내용을 적어 주세요"); return; }
+    if (dirty(body) || dirty(nk)) { toast("표현을 조금만 순화해 주세요 🙏"); return; }
+    if (rateLimited("klik-rp-at", 15000, "답글은 15초에 하나씩 쓸 수 있어요")) return;
+    // 부모 글의 도구: 상세 창이면 열린 도구, 광장 질문이면 그 질문의 도구
+    let toolId = $("#cm-box") ? S.cur : null; if (target === "question") { const q = S.qs.find(x => x.id === Number(tid)); if (q) toolId = q.tool_id; }
+    const { error } = await S.sb.from("replies").insert({ target, target_id: Number(tid), parent_id: pid ? Number(pid) : null, tool_id: toolId || null, rec_tool: rec, client: client(), nick: nk, body });
+    if (error) { err(error); return; }
+    toast("답글이 달렸어요");
+    await refresh(); if (S.cur !== null && $("#cm-box")) await fill(S.cur);
+  }
+  function openReplyForm(key) {
+    const f = document.querySelector(`.cm-reply-form[data-rf="${key}"]`); if (!f) return;
+    f.hidden = !f.hidden; if (!f.hidden) { const ta = f.querySelector("textarea"); if (ta) ta.focus(); }
+  }
+  async function solve(spec) {
+    const [target, tid, rid] = spec.split(":");
+    if (!confirm("이 답글로 해결됐다고 표시할까요? 한 번 정하면 바꿀 수 없어요.")) return;
+    const { error } = await S.sb.from("solves").insert({ target, target_id: Number(tid), reply_id: Number(rid), client: client() });
+    if (error) { err(error); return; }
+    toast("해결됨으로 표시했어요 ✓");
+    await refresh(); if (S.cur !== null && $("#cm-box")) await fill(S.cur);
+  }
+
+  document.addEventListener("click", e => {
+    const t = e.target.closest("[data-cm-star],[data-cm-post],[data-cm-kind],[data-cm-filter],[data-cm-react],[data-cm-blocked-only],[data-cm-like],[data-cm-rlike],[data-cm-report],[data-cm-more],[data-cm-ask],[data-cm-reply-open],[data-cm-reply-send],[data-cm-solve],[data-cm-metoo],[data-cm-goto-plaza]");
+    if (!t || !S.on) return;
+    e.stopPropagation();
+    if (t.dataset.cmStar) { S.star = Number(t.dataset.cmStar); document.querySelectorAll("[data-cm-star]").forEach(b => b.classList.toggle("on", Number(b.dataset.cmStar) <= S.star)); $("#cm-star-txt").textContent = ["","아쉬워요","그냥 그래요","쓸 만해요","좋아요","최고예요"][S.star]; return; }
+    if (t.dataset.cmKind) { S.kind = t.dataset.cmKind; paint(); const b = $("#cm-body"); if (b) b.focus(); return; }
+    if (t.dataset.cmFilter) { S.filter = t.dataset.cmFilter; S.page = 8; paint(); return; }
+    if (t.hasAttribute("data-cm-post")) { post(); return; }
+    if (t.dataset.cmReact) { react(t.dataset.cmReact); return; }
+    if (t.hasAttribute("data-cm-blocked-only")) { sendReaction("blocked", "", nick()).then(ok => { if (ok) { toast("알려 주셔서 고마워요"); paint(); } }); return; }
+    if (t.dataset.cmLike) { like(t.dataset.cmLike); return; }
+    if (t.dataset.cmRlike) { rlike(t.dataset.cmRlike); return; }
+    if (t.dataset.cmMetoo) { metoo(t.dataset.cmMetoo); return; }
+    if (t.dataset.cmReport) { report(t.dataset.cmReport); return; }
+    if (t.hasAttribute("data-cm-ask")) { askPlaza(); return; }
+    if (t.dataset.cmReplyOpen) { openReplyForm(t.dataset.cmReplyOpen); return; }
+    if (t.dataset.cmReplySend) { reply(t.dataset.cmReplySend); return; }
+    if (t.dataset.cmSolve) { solve(t.dataset.cmSolve); return; }
+    if (t.hasAttribute("data-cm-goto-plaza")) { const s = $("#cm-plaza"); if (s) s.scrollIntoView({ block: "start", behavior: "smooth" }); return; }
+    if (t.hasAttribute("data-cm-more")) { S.page += 10; paint(); return; }
+  });
+  document.addEventListener("keydown", e => {
+    if (e.key !== "Enter") return;
+    if (e.target.id === "cm-body" && e.target.tagName === "INPUT") post();
+    else if (e.target.id === "cm-qbody") askPlaza();
+  });
+
+  init();
+  return { get on() { return S.on; }, get week() { return S.week; }, cardLine, track, trackSection, sectionStats, box, fill, refresh };
+})();
+</script>
+<script>
+(function(){
+  const SECS=[['md','편집팀 필수'],['gh','깃허브 별'],['sh','실제 설치'],['hot','이달 상승'],['week','이번 주']];
+  const anchor=document.querySelector('section[data-sec="md"]'); if(!anchor) return;
+  const wrap=document.createElement('section'); wrap.id='rank-tabs';
+  wrap.innerHTML='<div class="sec-head"><div><h2 id="rt-h2"></h2><p id="rt-p"></p></div><div class="seg" id="rankseg" role="group" aria-label="순위 종류"></div></div><div id="rt-body"></div>';
+  anchor.parentNode.insertBefore(wrap, anchor);
+  const seg=wrap.querySelector('#rankseg'), body=wrap.querySelector('#rt-body');
+  const items=SECS.map(([k,label])=>{ const s=document.querySelector('section[data-sec="'+k+'"]'); if(!s) return null; const h=s.querySelector('.sec-head h2'), p=s.querySelector('.sec-head p'), rank=s.querySelector('.rank'); return {k,label,s,h:h?h.textContent:'',p:p?p.textContent:'',sub:p&&p.id==='rank-sub'?p:null,rank}; }).filter(Boolean);
+  items.forEach(it=>{ it.s.style.display='none'; body.appendChild(it.rank); it.rank.dataset.sec=it.k; const b=document.createElement('button'); b.textContent=it.label; b.dataset.rt=it.k; seg.appendChild(b); });
+  function show(k){ const it=items.find(x=>x.k===k); if(!it) return; items.forEach(x=>{ x.rank.hidden=x.k!==k; }); seg.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed', b.dataset.rt===k)); wrap.querySelector('#rt-h2').textContent=it.h; wrap.querySelector('#rt-p').textContent=it.sub?it.sub.textContent:it.p; }
+  seg.addEventListener('click',e=>{ const b=e.target.closest('button[data-rt]'); if(b) show(b.dataset.rt); });
+  const sync=()=>{ items.forEach(it=>{ const btn=seg.querySelector('[data-rt="'+it.k+'"]'); btn.hidden=!it.rank.children.length; }); };
+  const obs=new MutationObserver(sync); items.forEach(it=>obs.observe(it.rank,{childList:true})); sync();
+  show(SECS[0][0]);
+})();
+</script>
+</body><script>(function(){ const g=document.getElementById("grid").closest("section"), p=document.getElementById("cm-plaza"); if(g&&p) p.parentNode.insertBefore(g, p); })();</script>
+</body>
+</html>
+
