@@ -1,6 +1,25 @@
-<title>딸깍</title>
-<meta name="claude:viewport-fit-sides" content="cover">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Noto+Sans+KR:wght@400;500;700&display=swap">
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>딸깍 Klik — Claude 스킬·플러그인·MCP, 한글로 고르고 버튼 한 번에 설치</title>
+<meta name="description" content="스킬·플러그인·MCP가 뭔지 몰라도 됩니다. Claude에 필요한 AI 도구를 한글 설명으로 고르고, 설치는 딸깍 버튼 한 번. 깃허브 별·실제 설치 수·편집팀 검증까지.">
+<link rel="canonical" href="https://yongwoolee512-stack.github.io/klik-site/">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="딸깍 Klik">
+<meta property="og:title" content="딸깍 — AI 도구, 한글로 고르고 버튼 한 번에 설치">
+<meta property="og:description" content="Claude 스킬·플러그인·MCP를 한글 설명으로 골라 딸깍 한 번. 터미널 안 쳐도 됩니다.">
+<meta property="og:image" content="https://yongwoolee512-stack.github.io/klik-site/media/og.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:url" content="https://yongwoolee512-stack.github.io/klik-site/">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="media/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap">
 <style>
 /* Layout: 쇼핑몰식 진열대 — 상단 검색바, 카테고리 칩 줄, 상품 카드 그리드, 우측/중간 광고 슬롯 */
 :root {
@@ -100,7 +119,7 @@ section { margin-top: 36px; }
 .thumb .win .ln.m { width: 80%; }
 .badge-row { position: absolute; top: 10px; left: 10px; display: flex; gap: 6px; }
 .badge { font-size: 11px; font-weight: 700; padding: 3px 8px; border-radius: 6px; background: var(--surface); color: var(--fg); }
-.badge.hot { background: #e8552f; color: #fff; }
+.badge.hot { background: #d33f1a; color: #fff; }
 .badge.new { background: var(--accent); color: var(--accent-fg); }
 .badge.md { background: #111; color: #fff; } .md-why { background: #fff8e6; border: 1px solid #f3dca0; border-radius: 12px; padding: 10px 14px; font-size: 13.5px; line-height: 1.55; } .md-why b { display: block; font-size: 12px; color: #8a6200; margin-bottom: 3px; letter-spacing: .04em; }
 .fav { position: absolute; top: 8px; right: 8px; border: 0; background: var(--surface); width: 30px; height: 30px; border-radius: 50%; font-size: 14px; display: grid; place-items: center; }
@@ -253,7 +272,7 @@ footer { margin-top: 40px; padding-block: 24px; border-top: 1px solid var(--line
 :root[data-theme="dark"] { --bg:#000; --surface:#1d1d1f; --fg:#f5f5f7; --muted:#a1a1a6; --line:#424245; --accent:#7aa2ff; --accent-soft:#15213f; --accent-fg:#000; --ad:#1d1d1f; --shadow:0 10px 30px rgba(0,0,0,.5); --glass:rgba(0,0,0,.72); }
 body { font-size:17px; line-height:1.47; -webkit-font-smoothing:antialiased; letter-spacing:-.01em; }
 .logo,.hero-main h1,.sec-head h2,.stat b,.rank .n,.subscribe h3,.submit h2,.nitem .date b,.sheet-head h2 { font-family:var(--body); font-weight:700; letter-spacing:-.025em; }
-.logo { font-size:22px; color:var(--fg); } .logo .logo-en { font-size:12px; letter-spacing:.12em; opacity:.55; color:var(--fg); } .logo small { font-weight:400; letter-spacing:0; }
+.logo { font-size:22px; color:var(--fg); } .logo .logo-en { font-size:12px; letter-spacing:.12em; opacity:1; color:var(--muted); } .logo small { font-weight:400; letter-spacing:0; }
 header { background:var(--glass); backdrop-filter:saturate(180%) blur(20px); -webkit-backdrop-filter:saturate(180%) blur(20px); border-bottom:1px solid rgba(0,0,0,.06); }
 .search { background:var(--surface); border:0; border-radius:980px; } .search:focus-within { box-shadow:0 0 0 3px var(--accent-soft); }
 .search button,.install,.btn-outline,.chip,.seg,.preview .play,.toast { border-radius:980px; }
@@ -302,13 +321,13 @@ header::after { content: ""; position: absolute; left: 0; right: 0; top: 100%; h
 </style>
 <style id="skin-a-light">
 /* 라이트 고정: 기기가 다크 모드여도 항상 밝은 애플 스타일 */
-:root, :root:not([data-theme="light"]), :root[data-theme="dark"] { --bg:#ffffff; --surface:#f5f5f7; --fg:#1d1d1f; --muted:#6e6e73; --line:#d2d2d7; --accent:#0b2a6f; --accent-soft:#e9eefb; --accent-fg:#ffffff; --ad:#f5f5f7; --warn-soft:#fdf1dc; --warn:#9a6400; --shadow:0 10px 30px rgba(0,0,0,.08); --glass:rgba(255,255,255,.72); color-scheme: light; }
+:root, :root:not([data-theme="light"]), :root[data-theme="dark"] { --bg:#ffffff; --surface:#f5f5f7; --fg:#1d1d1f; --muted:#5e5e63; --line:#d2d2d7; --accent:#0b2a6f; --accent-soft:#e9eefb; --accent-fg:#ffffff; --ad:#f5f5f7; --warn-soft:#fdf1dc; --warn:#9a6400; --shadow:0 10px 30px rgba(0,0,0,.08); --glass:rgba(255,255,255,.72); color-scheme: light; }
 .tag.mcp { background:#e6e9fb !important; color:#3d49b5 !important; } .tag.plugin { background:#fbe9e3 !important; color:#b5471d !important; }
 h1, h2, h3, p, .cbody .one, .cbody .when, .nitem .body b, .nitem .body span { word-break: keep-all; overflow-wrap: anywhere; }
 
 /* 버그 수정: 카드에 기준점이 없어 NEW·인기 배지와 ♥ 버튼이 페이지 왼쪽 위로 튀던 문제 */
 .card { position: relative; }
-.hero { grid-template-columns: 1.8fr 1fr; } .hero-main { padding: 48px 40px 40px; } .hero-main h1 { max-width: none; font-size: clamp(24px, 2.5vw, 38px); line-height: 1.18; letter-spacing: -.035em; } @media (min-width: 761px) { .hero-main h1 { white-space: nowrap; } } .h1-en { font-weight: 700; letter-spacing: .02em; color: var(--accent); }
+.hero { grid-template-columns: 1.8fr 1fr; } .hero-main { padding: 48px 40px 40px; } .hero-main h1 { max-width: none; font-size: clamp(24px, 2.5vw, 38px); line-height: 1.18; letter-spacing: -.035em; } .h1-en { font-weight: 700; letter-spacing: .02em; color: var(--accent); }
 
 /* 히어로: 왼쪽 큰 제목, 오른쪽에 숫자 타일을 크게 세로로 */
 .hero { grid-template-columns: 1.45fr 1fr; gap: 14px; align-items: stretch; }
@@ -428,7 +447,10 @@ html.head-c .sheet-head .cm-rate { display:inline-flex; margin:10px 14px 0 0; ve
 .cm-item.post.solved .body2::before { content:none; }
 .cm-item.post.solved .phead::after { content:"해결됨 ✓"; background:#1f8a4c; color:#fff; font-size:11px; font-weight:700; border-radius:980px; padding:2px 8px; }
 .cm-link { border:0; background:transparent; color:var(--accent); font-weight:700; padding:0; font-size:inherit; text-decoration:underline; }
+:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
 </style>
+</head>
+<body>
 <header>
   <div class="wrap">
     <div class="topbar">
@@ -454,7 +476,7 @@ html.head-c .sheet-head .cm-rate { display:inline-flex; margin:10px 14px 0 0; ve
       <div class="deco"></div>
       <div>
         <h1 id="h1">스킬·플러그인·MCP, 몰라도 됩니다.<br>필요한 AI 도구를 한글로 골라<br>버튼 한 번, 딸깍<span class="h1-en">(KLIK)</span>.</h1>
-        <p id="tagline" aria-live="polite">이게 뭔지, 나한테 왜 필요한지 쉽게 설명.<br>설치는 버튼 한 번, 끝.</p>
+        <p id="tagline">이게 뭔지, 나한테 왜 필요한지 쉽게 설명.<br>설치는 버튼 한 번, 끝.</p>
       </div>
       <div class="hero-steps">
         <div class="step">① 카테고리에서 고르기</div>
@@ -464,8 +486,8 @@ html.head-c .sheet-head .cm-rate { display:inline-flex; margin:10px 14px 0 0; ve
     </div>
     <div class="hero-side">
       <div class="stat"><div><b id="st-count">0</b><br><span>등록된 도구</span></div><span>매주 업데이트</span></div>
-      <div class="stat"><div><b>3분</b><br><span>평균 설치 시간</span></div><span>터미널 입력 불필요</span></div>
-      <div class="ad">광고 자리 (300×120)<small>히어로 옆 배너 · CPM 과금</small></div>
+      <div class="stat"><div><b>0줄</b><br><span>직접 치는 명령</span></div><span>도우미가 대신 칩니다</span></div>
+      <div class="ad" style="display:none" aria-hidden="true">광고 자리 (300×120)<small>히어로 옆 배너 · CPM 과금</small></div>
     </div>
   </div>
 
@@ -564,7 +586,6 @@ html.head-c .sheet-head .cm-rate { display:inline-flex; margin:10px 14px 0 0; ve
           <button type="button" data-sub="rss">RSS</button>
           <button type="button" data-sub="tg">텔레그램</button>
         </div>
-        <span class="sub-cnt">구독자 <b>12,480</b>명 (예시)</span>
       </aside>
     </div>
   </section>
@@ -585,7 +606,7 @@ html.head-c .sheet-head .cm-rate { display:inline-flex; margin:10px 14px 0 0; ve
 </main>
 
 <div id="modal-root"></div>
-<div id="toast-root"></div>
+<div id="toast-root" role="status" aria-live="polite"></div>
 
 <script>
 const CATS = [
@@ -778,7 +799,7 @@ function renderGrid() {
     <div class="card" role="button" tabindex="0" data-open="${it.id}">
       ${win(it.color)}
       <div class="badge-row">${it.pick?'<span class="badge md">편집팀 검증</span>':''}${it.hot?'<span class="badge hot">인기</span>':''}${it.isNew?'<span class="badge new">NEW</span>':''}</div>
-      <button class="fav" data-fav="${it.id}" aria-pressed="${state.favs.has(it.id)}" aria-label="찜">${state.favs.has(it.id)?'♥':'♡'}</button>
+      <button class="fav" data-fav="${it.id}" aria-pressed="${state.favs.has(it.id)}" aria-label="${esc(it.name)} 찜">${state.favs.has(it.id)?'♥':'♡'}</button>
       <div class="cbody">
         <div class="kind"><span class="tag ${it.kind}">${KIND[it.kind]}</span>${it.trust&&TRUST_LABEL[it.trust.grade]?`<span class="tag trust-${it.trust.grade}">${TRUST_LABEL[it.trust.grade]}</span>`:""}${(it.plat||[]).map(p=>`<span>${PLAT[p]}</span>`).join("<span>·</span>")}</div>
         <h3>${esc(it.name)} <span class="en">${esc(it.en)}</span></h3>
@@ -789,7 +810,7 @@ function renderGrid() {
     </div>`);
   // 광고 카드: 6번째마다
   const out = [];
-  cards.forEach((c,i)=>{ out.push(c); if ((i+1)%6===0) out.push(`<div class="card ad-card">광고 자리<br><small>피드 네이티브 광고 · 카드 1칸</small></div>`); });
+  cards.forEach((c,i)=>{ out.push(c); if (window.AD_SLOTS && (i+1)%6===0) out.push(`<div class="card ad-card">광고 자리<br><small>피드 네이티브 광고 · 카드 1칸</small></div>`); });   // 실제 광고 붙기 전엔 빈 칸을 안 보여 준다
   $("#grid").innerHTML = out.join("");
 }
 function renderAll() { renderChips(); renderGrid(); }
@@ -817,7 +838,7 @@ function openDetail(id) {
     : [["'커넥터 설정 열기' 누르기 → 목록에서 '연결' → 로그인", "Claude 앱 설정 페이지가 열립니다. 찾아서 '연결'을 누르고 로그인하면 끝."], typeStep(it, "채팅에", "", "복사 버튼을 누르고 채팅창에 Ctrl+V 하고 엔터.")];
   const actions = `<div class="big-install">
           ${hasCmd?(deep?`<a class="install" href="${esc(deep)}" data-deep="${esc(deep)}" data-item="${it.id}" data-track="${it.id}" style="text-decoration:none;text-align:center">⚡ 딸깍 설치</a>`:`<button class="install" data-copy="${esc(cmd)}" data-track="${it.id}">⚡ 설치 명령 복사</button>`):`<a class="btn-outline" href="${esc(it.link)}" target="_blank" rel="noopener" data-track="${it.id}" style="background:var(--accent);color:var(--accent-fg);border-color:var(--accent)">⚡ 커넥터 설정 열기</a>`}
-          <a class="btn-outline" href="${esc(it.repo)}" target="_blank" rel="noopener">원문(깃허브) 보기</a>
+          ${it.sh_url?`<a class="btn-outline" href="${esc(it.sh_url)}" target="_blank" rel="noopener">원문(skills.sh) 보기</a>`:`<a class="btn-outline" href="${esc(it.repo)}" target="_blank" rel="noopener">원문(깃허브) 보기</a>`}
         </div>`;
   const html = `
   <div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="${esc(it.name)}">
@@ -830,7 +851,7 @@ function openDetail(id) {
           ${window.CM ? CM.cardLine(it.id) : ""}
           <p class="meta-line" style="font-size:12px;color:var(--muted)">깃허브 ★ ${fmt(it.stars)}${it.stars30>0?` <b style="color:var(--accent)">(${it.stars30_days>=28?"이달":it.stars30_days+"일간"} +${fmt(it.stars30)} ↑)</b>`:""}${it.pushed_at?` · ${ago(it.pushed_at)} 업데이트`:""}${it.sh_installs>0?` · skills.sh 설치 ${fmt(it.sh_installs)}회${it.sh_week>0?` <b style="color:var(--accent)">(지난주 +${fmt(it.sh_week)})</b>`:""}`:""}${it.installs>0?` · 설치 ${fmt(it.installs)}회`:""}${CATALOG_AT?` · 딸깍 확인 ${ago(CATALOG_AT)}`:""}</p>
         </div>
-        <button class="close" data-close aria-label="닫기">✕</button>
+        <button class="close" data-close aria-label="${esc(it.name)} 상세 닫기">✕</button>
       </div>
       <div class="sheet-body">
         <section class="zone zone-install">
@@ -851,12 +872,12 @@ function openDetail(id) {
             <div class="blk" style="grid-column:1/-1"><h4>믿어도 되나</h4>${it.trust&&it.trust.reasons&&it.trust.reasons.length?`<ul>${it.trust.reasons.map(r=>`<li>${esc(r)}</li>`).join("")}</ul>`:`<p>딸깍 편집팀이 직접 설치해 보고 올렸습니다.</p>`}${it.note?`<div class="note" style="margin-top:8px">⚠ ${esc(it.note)}</div>`:""}</div>
           </div>
           ${Array.isArray(it.readme_ko)&&it.readme_ko.length?`<details class="readme" style="margin-top:12px">
-            <summary><b>깃허브 원문 설명 (한글판)</b> <span>편집팀이 일반인 말로 옮김 · ${it.readme_ko.length}개 항목</span></summary>
+            <summary><b>${it.sh_url?"skills.sh":"깃허브"} 원문 설명 (한글판)</b> <span>편집팀이 일반인 말로 옮김 · ${it.readme_ko.length}개 항목</span></summary>
             <div class="readme-body">${it.readme_ko.map(s=>`<section><h5>${esc(s.h)}</h5><p>${esc(s.p).replace(/\n/g,"<br>")}</p></section>`).join("")}</div>
           </details>`:""}
           <p style="margin:10px 0 0;font-size:12px;color:var(--muted)">한글 설명은 딸깍 편집팀이 작성했습니다.</p>
         </section>
-        ${Array.isArray(it.videos)&&it.videos.length?`<section class="zone"><h3>짧은 영상</h3><p style="margin:0 0 10px;font-size:12px;color:var(--muted)">인플루언서가 올린 영상입니다. 영상은 영상, 실제 평가는 아래 후기를 보세요.</p><div class="vids">${it.videos.map(v=>{const e=videoEmbed(v.url); return e?`<div class="vid${e.v?" v":""}"><iframe src="${e.src}" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>${v.by?`<span>${esc(v.by)}</span>`:""}</div>`:"";}).join("")}</div></section>`:""}
+        ${Array.isArray(it.videos)&&it.videos.length?`<section class="zone"><h3>짧은 영상</h3><p style="margin:0 0 10px;font-size:12px;color:var(--muted)">인플루언서가 올린 영상입니다. 영상은 영상, 실제 평가는 아래 후기를 보세요.</p><div class="vids">${it.videos.map(v=>{const e=videoEmbed(v.url); return e?`<div class="vid${e.v?" v":""}"><iframe src="${e.src}" title="${esc(it.name)} 소개 영상" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>${v.by?`<span>${esc(v.by)}</span>`:""}</div>`:"";}).join("")}</div></section>`:""}
         ${window.CM ? `<section class="zone zone-cm">${CM.box()}</section>` : ""}
       </div>
     </div>
@@ -892,9 +913,9 @@ function showHelperGuide(url, id) {
   box.scrollIntoView({ block: "start", behavior: "smooth" });
   const cmd = it ? cmdOf(it) : "";
   box.innerHTML = `
-    <button class="close" data-guide-close aria-label="닫기" style="position:absolute;top:8px;right:8px">✕</button> 줌이나 스팀처럼 한 번만 깔아 두면, 앞으로 모든 도구가 버튼 한 번에 설치됩니다. 30초면 끝나요.</div>
+    <button class="close" data-guide-close aria-label="안내 닫기" style="position:absolute;top:8px;right:8px">✕</button><div>줌이나 스팀처럼 한 번만 깔아 두면, 이후 모든 도구가 버튼 한 번에 설치됩니다. 30초면 끝나요.</div>
     <div class="steps">
-      <div class="stp"><span class="num">1</span><div class="txt"><b>딸깍 도우미 받기 (한 번만)</b><span>관리자 권한·터미널·Node 필요 없음. 윈도우가 "알 수 없는 게시자" 경고를 띄우면 '추가 정보 → 실행'을 누르세요.</span>
+      <div class="stp"><span class="num">1</span><div class="txt"><b>딸깍 도우미 받기 (처음 한 번)</b><span>받은 파일을 두 번 누르면 끝. 이 도우미가 하는 일은 Claude Code에 설치 명령을 대신 쳐 주는 것 하나입니다. 윈도우가 "알 수 없는 게시자"라고 막으면 '추가 정보 → 실행'.</span>
         <div class="big-install" style="margin-top:8px"><button class="install" data-helper="win">⬇ Windows용 딸깍설치.exe</button><button class="btn-outline" data-helper="mac">Mac용</button></div></div></div>
       <div class="stp"><span class="num">2</span><div class="txt"><b>설치 완료 창이 뜨면, 아래 버튼을 다시 누르세요</b><span>${it?esc(it.name):"이 도구"}가 바로 설치됩니다.</span>
         <div class="big-install" style="margin-top:8px"><a class="install" href="${esc(url)}" data-deep="${esc(url)}" data-item="${esc(id)}" style="text-decoration:none;text-align:center">⚡ 다시 딸깍</a></div></div></div>
@@ -928,7 +949,8 @@ document.addEventListener("keydown", e => {
 });
 // 검색어를 치면 결과(카드 목록)가 바로 보이게 스크롤. 뉴스 피드를 지나쳐야 결과가 보이는 문제 방지.
 function jumpToGrid() { $("#list-title").scrollIntoView({ block: "start", behavior: "smooth" }); }
-$("#q").addEventListener("input", e => { state.q = e.target.value; renderGrid(); if (state.q.trim()) jumpToGrid(); });
+let qTimer = null;
+$("#q").addEventListener("input", e => { state.q = e.target.value; clearTimeout(qTimer); qTimer = setTimeout(() => { renderGrid(); if (state.q.trim()) jumpToGrid(); }, 150); });   // 글자마다 전체 재렌더·점프하지 않게
 $("#qbtn").addEventListener("click", () => { renderGrid(); jumpToGrid(); });
 $("#q").addEventListener("keydown", e => { if (e.key === "Enter") { renderGrid(); jumpToGrid(); } });
 $("#sort").addEventListener("change", e => { state.sort = e.target.value; renderGrid(); });
@@ -1351,3 +1373,5 @@ window.CM = (() => {
   return { get on() { return S.on; }, get week() { return S.week; }, cardLine, track, trackSection, sectionStats, box, fill, refresh };
 })();
 </script>
+</body>
+</html>

@@ -53,7 +53,9 @@ foreach ($s in $seed) {
   if ($g) { $s | Add-Member stars ([int]$g.stars) -Force; $s | Add-Member pushed_at $g.pushed_at -Force; if ($g.PSObject.Properties["stars30"]) { $s | Add-Member stars30 ([int]$g.stars30) -Force; $s | Add-Member stars30_days ([int]$g.days) -Force } }
   if (-not $s.trust) { $s | Add-Member trust @{ grade = "verified"; reasons = @("편집팀 검수") } -Force }
   if ($picks[$s.id]) { $s | Add-Member pick $picks[$s.id] -Force }   # MD 추천(편집팀 픽) 이유
-  if ($sh[$s.id]) { $s | Add-Member sh_installs ([int]$sh[$s.id].installs) -Force; $s | Add-Member sh_week ([int]$sh[$s.id].week) -Force }
+  if ($sh[$s.id]) { $s | Add-Member sh_installs ([int]$sh[$s.id].installs) -Force; $s | Add-Member sh_week ([int]$sh[$s.id].week) -Force
+    # skills.sh 에서 가져온 도구(sh_source 있음)는 원문 페이지도 skills.sh 로 — 깃허브가 아니라 그 사이트가 출처
+    if ($s.sh_source) { $s | Add-Member sh_url "https://skills.sh/$($sh[$s.id].source)/$($sh[$s.id].skill)" -Force } }
   # 시드에 빠진 기본값 (사이트가 .map/.installs 를 그대로 쓰므로 비어 있으면 상세 창이 안 열린다)
   if (-not $s.plat) { $s | Add-Member plat @("claude-code") -Force }
   if ($null -eq $s.installs) { $s | Add-Member installs 0 -Force }
