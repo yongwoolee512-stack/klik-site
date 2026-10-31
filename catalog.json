@@ -1,4 +1,7 @@
 {
+  "rejected": 147,
+  "count": 168,
+  "generated_at": "2026-10-31T04:56:11.1607672Z",
   "items": [
     {
       "id": "pptx",
@@ -28,13 +31,15 @@
         "표·차트·이미지까지 들어갑니다."
       ],
       "status": "published",
-      "stars": 184981,
+      "stars": 185442,
       "pushed_at": "2026-10-28T19:20:39Z",
+      "stars30": 461,
+      "stars30_days": 1,
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "pick": "말로 설명하면 PPT가 나옵니다. 비개발자가 Claude Code를 처음 켤 이유로 이만한 게 없음.",
       "sh_installs": 245761,
@@ -100,13 +105,15 @@
           "title": "스킬 #26 클로드 코드 엑셀 자동화 xlsx 스킬 #shorts #클로드코드"
         }
       ],
-      "stars": 184981,
+      "stars": 185442,
       "pushed_at": "2026-10-28T19:20:39Z",
+      "stars30": 461,
+      "stars30_days": 1,
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "sh_installs": 190793,
       "sh_week": 3448,
@@ -170,13 +177,15 @@
           "title": "How to Generate DOCX Documents with Claude AI | Make DOCX Files Look Professional"
         }
       ],
-      "stars": 184981,
+      "stars": 185442,
       "pushed_at": "2026-10-28T19:20:39Z",
+      "stars30": 461,
+      "stars30_days": 1,
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "sh_installs": 210222,
       "sh_week": 3658,
@@ -250,13 +259,15 @@
           "title": "Don't upload PDFs to Claude, Use this instead !"
         }
       ],
-      "stars": 184981,
+      "stars": 185442,
       "pushed_at": "2026-10-28T19:20:39Z",
+      "stars30": 461,
+      "stars30_days": 1,
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "sh_installs": 220124,
       "sh_week": 3873,
@@ -320,13 +331,15 @@
           "title": "AI 티 안 나는 랜딩 페이지 | Claude Code frontend-design 스킬"
         }
       ],
-      "stars": 153921,
-      "pushed_at": "2026-10-30T01:06:26Z",
+      "stars": 153993,
+      "pushed_at": "2026-10-31T01:01:35Z",
+      "stars30": 72,
+      "stars30_days": 1,
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "sh_installs": 63896,
       "sh_week": 800,
@@ -393,13 +406,15 @@
           "title": "claude code+피그마 디자인 시스템으로 일관된 디자인 뽑아내기"
         }
       ],
-      "stars": 2130,
+      "stars": 2131,
       "pushed_at": "2026-10-28T14:18:10Z",
+      "stars30": 1,
+      "stars30_days": 1,
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "sh_installs": 9331,
       "sh_week": 477,
@@ -473,13 +488,15 @@
           "title": "🤖 Claude Code vs GitHub Copilot: Which AI Coding Tool Is Better in 2026? 💻 #shorts | Sxaroop"
         }
       ],
-      "stars": 34082,
-      "pushed_at": "2026-10-30T11:41:10Z",
+      "stars": 34104,
+      "pushed_at": "2026-10-30T20:23:35Z",
+      "stars30": 22,
+      "stars30_days": 1,
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "readme_ko": [
         {
@@ -543,13 +560,15 @@
           "title": "Playwright MCP + Claude Code is Dead. Long Live Playwright."
         }
       ],
-      "stars": 38850,
-      "pushed_at": "2026-10-30T04:53:12Z",
+      "stars": 38880,
+      "pushed_at": "2026-10-31T01:18:01Z",
+      "stars30": 30,
+      "stars30_days": 1,
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "readme_ko": [
         {
@@ -620,13 +639,15 @@
           "title": "Context7 MCP Server #mcp #modelcontextprotocol #ai #llm #coding #development"
         }
       ],
-      "stars": 63950,
-      "pushed_at": "2026-10-30T12:53:17Z",
+      "stars": 63981,
+      "pushed_at": "2026-10-30T15:31:30Z",
+      "stars30": 31,
+      "stars30_days": 1,
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "pick": "AI가 구버전 코드를 알려 주는 문제를 한 번에 해결. 설치 뒤 설정 없음.",
       "sh_installs": 8036,
@@ -696,13 +717,15 @@
           "title": "Let Claude Code check your code before you push: /code-review explained"
         }
       ],
-      "stars": 153921,
-      "pushed_at": "2026-10-30T01:06:26Z",
+      "stars": 153993,
+      "pushed_at": "2026-10-31T01:01:35Z",
+      "stars30": 72,
+      "stars30_days": 1,
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "sh_installs": 63896,
       "sh_week": 800,
@@ -767,13 +790,15 @@
           "title": "How to give Claude Code database access #claude #supabase #programming #claudecode #ai #claude"
         }
       ],
-      "stars": 2984,
-      "pushed_at": "2026-10-30T12:45:07Z",
+      "stars": 2988,
+      "pushed_at": "2026-10-30T13:56:26Z",
+      "stars30": 4,
+      "stars30_days": 1,
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "readme_ko": [
         {
@@ -841,10 +866,10 @@
         }
       ],
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "readme_ko": [
         {
@@ -908,13 +933,15 @@
           "title": "Cloudflare's Free Skill Finds Security Holes in Your Code"
         }
       ],
-      "stars": 4432,
+      "stars": 4435,
       "pushed_at": "2026-10-22T15:21:16Z",
+      "stars30": 3,
+      "stars30_days": 1,
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "readme_ko": [
         {
@@ -983,13 +1010,15 @@
           "title": "Tip 25: Using Notion in Claude Code"
         }
       ],
-      "stars": 4686,
+      "stars": 4690,
       "pushed_at": "2026-10-29T16:10:22Z",
+      "stars30": 4,
+      "stars30_days": 1,
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "pick": "회의록·할 일을 노션에 두는 분이면 첫날부터 쓰게 됩니다.",
       "readme_ko": [
@@ -1049,10 +1078,10 @@
         }
       ],
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "readme_ko": [
         {
@@ -1095,13 +1124,15 @@
         "앱마다 허용 여부를 묻습니다."
       ],
       "status": "published",
-      "stars": 153921,
-      "pushed_at": "2026-10-30T01:06:26Z",
+      "stars": 153993,
+      "pushed_at": "2026-10-31T01:01:35Z",
+      "stars30": 72,
+      "stars30_days": 1,
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "sh_installs": 63896,
       "sh_week": 800,
@@ -1163,13 +1194,15 @@
           "title": "Stripe to Claude Desktop - Learn to do it correctly"
         }
       ],
-      "stars": 2005,
-      "pushed_at": "2026-10-30T00:36:36Z",
+      "stars": 2009,
+      "pushed_at": "2026-10-31T00:30:01Z",
+      "stars30": 4,
+      "stars30_days": 1,
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "readme_ko": [
         {
@@ -1238,13 +1271,15 @@
           "title": "MCP Intermediate: one Claude Code prompt using GitHub and Sentry #Shorts"
         }
       ],
-      "stars": 949,
-      "pushed_at": "2026-10-30T12:52:54Z",
+      "stars": 952,
+      "pushed_at": "2026-10-31T00:53:58Z",
+      "stars30": 3,
+      "stars30_days": 1,
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "readme_ko": [
         {
@@ -1319,8 +1354,10 @@
           "title": "Ponytail makes Claude Code check before it writes a single line"
         }
       ],
-      "stars": 180665,
+      "stars": 181052,
       "pushed_at": "2026-10-29T11:59:31Z",
+      "stars30": 387,
+      "stars30_days": 1,
       "pick": "설치 뒤 손 댈 게 없는데 코드 양이 반으로 줄고 테스트는 더 붙습니다. 편집팀이 직접 써 보고 가장 체감이 컸던 도구.",
       "sh_installs": 113280,
       "sh_week": 14193,
@@ -1402,8 +1439,10 @@
           "title": "How to use Superpowers in Claude Code: design, plan, build"
         }
       ],
-      "stars": 309106,
+      "stars": 309532,
       "pushed_at": "2026-10-29T23:35:34Z",
+      "stars30": 426,
+      "stars30_days": 1,
       "pick": "\"뭘 만들지\"부터 묻게 만드는 습관 하나가 결과물 품질을 바꿉니다. 공식 마켓 등재.",
       "sh_installs": 412370,
       "sh_week": 9334,
@@ -1484,8 +1523,10 @@
           "title": "AI 세션 켤 때마다 똑같은 설명 반복하느라 시간 날리고 계시죠? | thedotmack/claude-mem"
         }
       ],
-      "stars": 105423,
-      "pushed_at": "2026-10-30T03:07:33Z",
+      "stars": 106537,
+      "pushed_at": "2026-10-31T02:09:54Z",
+      "stars30": 1114,
+      "stars30_days": 1,
       "sh_installs": 9049,
       "sh_week": 186,
       "readme_ko": [
@@ -1561,8 +1602,10 @@
           "title": "Caveman: Make Claude Code Talk Less and Save Your Limit"
         }
       ],
-      "stars": 116233,
+      "stars": 116362,
       "pushed_at": "2026-10-30T07:41:52Z",
+      "stars30": 129,
+      "stars30_days": 1,
       "pick": "요금이 눈에 띄게 줄어듭니다. 코드는 안 건드리니 부작용이 없음.",
       "sh_installs": 602136,
       "sh_week": 12197,
@@ -1639,8 +1682,10 @@
           "title": "Claude Code Context: Cut Tool Output 98% With Context Mode"
         }
       ],
-      "stars": 32905,
-      "pushed_at": "2026-10-30T12:49:36Z",
+      "stars": 32957,
+      "pushed_at": "2026-10-30T18:03:22Z",
+      "stars30": 52,
+      "stars30_days": 1,
       "sh_installs": 2983,
       "sh_week": 109,
       "readme_ko": [
@@ -1713,8 +1758,10 @@
           "title": "GStack — Garry Tan's free pack of 23 opinionated Claude Code skills"
         }
       ],
-      "stars": 138240,
-      "pushed_at": "2026-10-30T12:53:58Z",
+      "stars": 138354,
+      "pushed_at": "2026-10-31T04:54:09Z",
+      "stars30": 114,
+      "stars30_days": 1,
       "sh_installs": 24344,
       "sh_week": 244,
       "readme_ko": [
@@ -1791,7 +1838,9 @@
         }
       ],
       "stars": 162,
-      "pushed_at": "2026-10-29T22:02:58Z",
+      "pushed_at": "2026-10-30T19:13:38Z",
+      "stars30": 0,
+      "stars30_days": 1,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -1861,8 +1910,10 @@
           "title": "Claude Design with Canva is NUTS"
         }
       ],
-      "stars": 140,
+      "stars": 141,
       "pushed_at": "2026-10-23T18:21:55Z",
+      "stars30": 1,
+      "stars30_days": 1,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -1931,8 +1982,10 @@
           "title": "Claude Code plus Cursor plus Linear"
         }
       ],
-      "stars": 45376,
-      "pushed_at": "2026-10-30T07:32:39Z",
+      "stars": 45466,
+      "pushed_at": "2026-10-30T19:04:13Z",
+      "stars30": 90,
+      "stars30_days": 1,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -1999,6 +2052,8 @@
       ],
       "stars": 1139,
       "pushed_at": "2026-10-29T18:23:30Z",
+      "stars30": 0,
+      "stars30_days": 1,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -2066,8 +2121,10 @@
           "title": "Asana supercharges work management with Claude"
         }
       ],
-      "stars": 45376,
-      "pushed_at": "2026-10-30T07:32:39Z",
+      "stars": 45466,
+      "pushed_at": "2026-10-30T19:04:13Z",
+      "stars30": 90,
+      "stars30_days": 1,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -2134,6 +2191,8 @@
       ],
       "stars": 452,
       "pushed_at": "2026-10-22T23:28:19Z",
+      "stars30": 0,
+      "stars30_days": 1,
       "pick": "8,000개 앱을 말로 움직입니다. 카카오·네이버 계열까지 재피어로 연결돼 있으면 전부.",
       "readme_ko": [
         {
@@ -2204,6 +2263,8 @@
       ],
       "stars": 53,
       "pushed_at": "2026-07-21T18:20:59Z",
+      "stars30": 0,
+      "stars30_days": 1,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -2269,6 +2330,8 @@
       ],
       "stars": 11,
       "pushed_at": "2026-10-23T17:49:09Z",
+      "stars30": 0,
+      "stars30_days": 1,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -2315,8 +2378,10 @@
         "폰에서 봇한테 \"어제 하던 보고서 마저 써\"라고 보내면 됩니다."
       ],
       "status": "published",
-      "stars": 45376,
-      "pushed_at": "2026-10-30T07:32:39Z",
+      "stars": 45466,
+      "pushed_at": "2026-10-30T19:04:13Z",
+      "stars30": 90,
+      "stars30_days": 1,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -2374,8 +2439,10 @@
           "title": "휴대폰으로 집 컴퓨터 AI 직원에게 일 시키기 | 클로드 코드·디스코드  #클로드코드 #1인사업 #서브에이전트 #ai에이전트 #혼자서팀처럼  #ai직원"
         }
       ],
-      "stars": 45376,
-      "pushed_at": "2026-10-30T07:32:39Z",
+      "stars": 45466,
+      "pushed_at": "2026-10-30T19:04:13Z",
+      "stars30": 90,
+      "stars30_days": 1,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -2427,6 +2494,8 @@
       "status": "published",
       "stars": 26,
       "pushed_at": "2026-10-17T20:03:00Z",
+      "stars30": 0,
+      "stars30_days": 1,
       "pick": "로그인 필요한 사이트 반복 작업을 통째로 맡길 수 있는 유일한 길.",
       "readme_ko": [
         {
@@ -2497,6 +2566,8 @@
       ],
       "stars": 252,
       "pushed_at": "2026-10-25T13:30:04Z",
+      "stars30": 0,
+      "stars30_days": 1,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -2555,8 +2626,10 @@
           "title": "Why we ditched 5 AI tabs for 1 Claude Code session (+ Firecrawl vs Exa answer)"
         }
       ],
-      "stars": 5201,
-      "pushed_at": "2026-10-28T19:55:10Z",
+      "stars": 5204,
+      "pushed_at": "2026-10-30T19:09:02Z",
+      "stars30": 3,
+      "stars30_days": 1,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -2610,8 +2683,10 @@
           "title": "Postiz is a social media management platform for scheduling, automating, and analyzing your content"
         }
       ],
-      "stars": 558,
+      "stars": 559,
       "pushed_at": "2026-10-30T09:47:39Z",
+      "stars30": 1,
+      "stars30_days": 1,
       "sh_installs": 4970,
       "sh_week": 231,
       "readme_ko": [
@@ -2678,6 +2753,8 @@
       ],
       "stars": 206,
       "pushed_at": "2026-10-30T10:06:04Z",
+      "stars30": 0,
+      "stars30_days": 1,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -2739,8 +2816,10 @@
           "title": "Hookify makes it easy to add guardrails in Claude Code: no JSON, no scripts. Here’s how it works."
         }
       ],
-      "stars": 45376,
-      "pushed_at": "2026-10-30T07:32:39Z",
+      "stars": 45466,
+      "pushed_at": "2026-10-30T19:04:13Z",
+      "stars30": 90,
+      "stars30_days": 1,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -2785,8 +2864,10 @@
         "작업 끝에 이번 세션에서 배운 걸 메모에 반영해 줍니다."
       ],
       "status": "published",
-      "stars": 45376,
-      "pushed_at": "2026-10-30T07:32:39Z",
+      "stars": 45466,
+      "pushed_at": "2026-10-30T19:04:13Z",
+      "stars30": 90,
+      "stars30_days": 1,
       "sh_installs": 17579,
       "sh_week": 587,
       "readme_ko": [
@@ -2833,8 +2914,10 @@
         "설계안을 먼저 보여 주고 동의 받은 뒤 구현합니다."
       ],
       "status": "published",
-      "stars": 45376,
-      "pushed_at": "2026-10-30T07:32:39Z",
+      "stars": 45466,
+      "pushed_at": "2026-10-30T19:04:13Z",
+      "stars30": 90,
+      "stars30_days": 1,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -2886,8 +2969,10 @@
           "title": "PR Review Toolkit: Six Specialist Agents, One Verdict"
         }
       ],
-      "stars": 45376,
-      "pushed_at": "2026-10-30T07:32:39Z",
+      "stars": 45466,
+      "pushed_at": "2026-10-30T19:04:13Z",
+      "stars30": 90,
+      "stars30_days": 1,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -2949,8 +3034,10 @@
           "title": "introducing claude code security guidance plugin"
         }
       ],
-      "stars": 45376,
-      "pushed_at": "2026-10-30T07:32:39Z",
+      "stars": 45466,
+      "pushed_at": "2026-10-30T19:04:13Z",
+      "stars30": 90,
+      "stars30_days": 1,
       "sh_installs": 17579,
       "sh_week": 587,
       "readme_ko": [
@@ -2997,8 +3084,10 @@
         "\"/commit-push-pr\" 로 커밋·푸시·PR 생성 한 번에"
       ],
       "status": "published",
-      "stars": 45376,
-      "pushed_at": "2026-10-30T07:32:39Z",
+      "stars": 45466,
+      "pushed_at": "2026-10-30T19:04:13Z",
+      "stars30": 90,
+      "stars30_days": 1,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -3060,8 +3149,10 @@
           "title": "Ralph Loop for Claude Code: Keep Building Until Tests Pass"
         }
       ],
-      "stars": 45376,
-      "pushed_at": "2026-10-30T07:32:39Z",
+      "stars": 45466,
+      "pushed_at": "2026-10-30T19:04:13Z",
+      "stars30": 90,
+      "stars30_days": 1,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -3123,8 +3214,10 @@
           "title": "Superdesign-skill: turn AI pages into polished UI"
         }
       ],
-      "stars": 921,
+      "stars": 923,
       "pushed_at": "2026-08-21T05:23:23Z",
+      "stars30": 2,
+      "stars30_days": 1,
       "sh_installs": 11439,
       "sh_week": 446,
       "readme_ko": [
@@ -3192,6 +3285,8 @@
       ],
       "stars": 164,
       "pushed_at": "2026-09-17T14:36:57Z",
+      "stars30": 0,
+      "stars30_days": 1,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -3255,7 +3350,9 @@
         }
       ],
       "stars": 74,
-      "pushed_at": "2026-10-29T13:57:36Z",
+      "pushed_at": "2026-10-30T17:52:07Z",
+      "stars30": 0,
+      "stars30_days": 1,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -3320,7 +3417,9 @@
         }
       ],
       "stars": 318,
-      "pushed_at": "2026-10-30T07:08:53Z",
+      "pushed_at": "2026-10-31T02:51:53Z",
+      "stars30": 0,
+      "stars30_days": 1,
       "sh_installs": 1800,
       "sh_week": 12,
       "readme_ko": [
@@ -3370,6 +3469,8 @@
       "status": "published",
       "stars": 613,
       "pushed_at": "2026-04-23T13:56:22Z",
+      "stars30": 0,
+      "stars30_days": 1,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -3432,7 +3533,9 @@
         }
       ],
       "stars": 192,
-      "pushed_at": "2026-10-28T20:30:23Z",
+      "pushed_at": "2026-10-30T19:57:57Z",
+      "stars30": 0,
+      "stars30_days": 1,
       "sh_installs": 7275,
       "sh_week": 304,
       "readme_ko": [
@@ -3498,8 +3601,10 @@
           "title": "I Built an E-Commerce App Using Flutter, Firebase & Claude Code #shorts #flutter #claudecode"
         }
       ],
-      "stars": 45376,
-      "pushed_at": "2026-10-30T07:32:39Z",
+      "stars": 45466,
+      "pushed_at": "2026-10-30T19:04:13Z",
+      "stars30": 90,
+      "stars30_days": 1,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -3561,8 +3666,10 @@
           "title": "Why I Ditched Replit for Claude Code and Railway After Years of Use"
         }
       ],
-      "stars": 339,
+      "stars": 340,
       "pushed_at": "2026-10-15T11:49:47Z",
+      "stars30": 1,
+      "stars30_days": 1,
       "sh_installs": 8994,
       "sh_week": 505,
       "readme_ko": [
@@ -3628,6 +3735,8 @@
       ],
       "stars": 1,
       "pushed_at": "2026-10-27T20:47:50Z",
+      "stars30": 0,
+      "stars30_days": 1,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -3690,7 +3799,9 @@
         }
       ],
       "stars": 36,
-      "pushed_at": "2026-10-30T09:35:26Z",
+      "pushed_at": "2026-10-30T18:14:11Z",
+      "stars30": 0,
+      "stars30_days": 1,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -3745,6 +3856,8 @@
       ],
       "stars": 53,
       "pushed_at": "2026-04-20T23:21:22Z",
+      "stars30": 0,
+      "stars30_days": 1,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -3809,6 +3922,8 @@
       ],
       "stars": 8,
       "pushed_at": "2026-10-28T06:14:42Z",
+      "stars30": 0,
+      "stars30_days": 1,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -3873,6 +3988,8 @@
       ],
       "stars": 9,
       "pushed_at": "2026-09-27T16:07:59Z",
+      "stars30": 0,
+      "stars30_days": 1,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -3934,8 +4051,10 @@
           "title": "Expo in 100 Seconds"
         }
       ],
-      "stars": 3795,
-      "pushed_at": "2026-10-29T10:37:46Z",
+      "stars": 3918,
+      "pushed_at": "2026-10-30T20:29:57Z",
+      "stars30": 123,
+      "stars30_days": 1,
       "sh_installs": 72078,
       "sh_week": 2004,
       "readme_ko": [
@@ -3999,8 +4118,10 @@
           "title": "How to use Claude Code with Unity 6 using MCP"
         }
       ],
-      "stars": 583,
-      "pushed_at": "2026-10-29T20:51:42Z",
+      "stars": 588,
+      "pushed_at": "2026-10-30T17:26:39Z",
+      "stars30": 5,
+      "stars30_days": 1,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -4062,8 +4183,10 @@
           "title": "Headless Shopify Store With Claude Code + Shopify AI Toolkit"
         }
       ],
-      "stars": 620,
+      "stars": 621,
       "pushed_at": "2026-10-27T16:13:43Z",
+      "stars30": 1,
+      "stars30_days": 1,
       "sh_installs": 17739,
       "sh_week": 217,
       "readme_ko": [
@@ -4113,6 +4236,8 @@
       "status": "published",
       "stars": 4,
       "pushed_at": "2026-10-12T12:46:54Z",
+      "stars30": 0,
+      "stars30_days": 1,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -4167,6 +4292,8 @@
       ],
       "stars": 436,
       "pushed_at": "2026-10-29T15:32:07Z",
+      "stars30": 0,
+      "stars30_days": 1,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -4231,6 +4358,8 @@
       ],
       "stars": 3,
       "pushed_at": "2026-10-27T11:49:19Z",
+      "stars30": 0,
+      "stars30_days": 1,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -4288,8 +4417,10 @@
           "title": "Claude + Desktop Commander MCP = your laptop basically runs itself #ClaudeAI #MCP #productivity"
         }
       ],
-      "stars": 10169,
-      "pushed_at": "2026-10-30T11:28:38Z",
+      "stars": 10176,
+      "pushed_at": "2026-10-30T23:12:12Z",
+      "stars30": 7,
+      "stars30_days": 1,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -4355,8 +4486,10 @@
           "title": "Chrome DevTools MCP: How to use DevTools MCP in VS Code"
         }
       ],
-      "stars": 54481,
+      "stars": 54514,
       "pushed_at": "2026-10-30T10:15:13Z",
+      "stars30": 33,
+      "stars30_days": 1,
       "sh_installs": 8776,
       "sh_week": 346,
       "readme_ko": [
@@ -4409,8 +4542,10 @@
           "title": "Claude Session Report: Claude Didn't Do the Counting"
         }
       ],
-      "stars": 45376,
-      "pushed_at": "2026-10-30T07:32:39Z",
+      "stars": 45466,
+      "pushed_at": "2026-10-30T19:04:13Z",
+      "stars30": 90,
+      "stars30_days": 1,
       "sh_installs": 3948,
       "sh_week": 306,
       "readme_ko": [
@@ -4473,8 +4608,10 @@
           "title": "Claude Code Builds a Fact-Checker: Receipts for Grok Bot"
         }
       ],
-      "stars": 45376,
-      "pushed_at": "2026-10-30T07:32:39Z",
+      "stars": 45466,
+      "pushed_at": "2026-10-30T19:04:13Z",
+      "stars30": 90,
+      "stars30_days": 1,
       "sh_installs": 2331,
       "sh_week": 301,
       "readme_ko": [
@@ -4520,8 +4657,10 @@
         "\"/project-artifact 현황 페이지 만들어서 링크 줘\""
       ],
       "status": "published",
-      "stars": 45376,
-      "pushed_at": "2026-10-30T07:32:39Z",
+      "stars": 45466,
+      "pushed_at": "2026-10-30T19:04:13Z",
+      "stars30": 90,
+      "stars30_days": 1,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -4565,8 +4704,10 @@
         "설치하면 자동으로 켜져요. 답마다 '왜'가 붙습니다."
       ],
       "status": "published",
-      "stars": 45376,
-      "pushed_at": "2026-10-30T07:32:39Z",
+      "stars": 45466,
+      "pushed_at": "2026-10-30T19:04:13Z",
+      "stars30": 90,
+      "stars30_days": 1,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -4613,6 +4754,8 @@
       "status": "published",
       "stars": 1,
       "pushed_at": "2026-05-18T22:26:25Z",
+      "stars30": 0,
+      "stars30_days": 1,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -4673,8 +4816,10 @@
           "title": "Build Better Prompts with Claude Playgrounds"
         }
       ],
-      "stars": 45376,
-      "pushed_at": "2026-10-30T07:32:39Z",
+      "stars": 45466,
+      "pushed_at": "2026-10-30T19:04:13Z",
+      "stars30": 90,
+      "stars30_days": 1,
       "sh_installs": 8255,
       "sh_week": 308,
       "readme_ko": [
@@ -4737,8 +4882,10 @@
           "title": "Build with Claude Code, then run Code Simplifier before opening your PR."
         }
       ],
-      "stars": 45376,
-      "pushed_at": "2026-10-30T07:32:39Z",
+      "stars": 45466,
+      "pushed_at": "2026-10-30T19:04:13Z",
+      "stars30": 90,
+      "stars30_days": 1,
       "sh_installs": 17579,
       "sh_week": 587,
       "readme_ko": [
@@ -4800,6 +4947,8 @@
       ],
       "stars": 208,
       "pushed_at": "2026-10-28T19:18:37Z",
+      "stars30": 0,
+      "stars30_days": 1,
       "sh_installs": 23960,
       "sh_week": 937,
       "readme_ko": [
@@ -4846,8 +4995,10 @@
         "\"한국어 감정 분석 모델 찾아서 이 리뷰 500개 돌려 줘\""
       ],
       "status": "published",
-      "stars": 11237,
-      "pushed_at": "2026-10-29T15:42:48Z",
+      "stars": 11241,
+      "pushed_at": "2026-10-30T14:12:53Z",
+      "stars30": 4,
+      "stars30_days": 1,
       "sh_installs": 2478,
       "sh_week": 81,
       "readme_ko": [
@@ -4906,8 +5057,10 @@
           "title": "Andrej Karpathy Skills A single CLAUDE.md file to improve Claude Code behavior, 215k Stars on GitHub"
         }
       ],
-      "stars": 226649,
+      "stars": 226958,
       "pushed_at": "2026-04-20T10:05:04Z",
+      "stars30": 309,
+      "stars30_days": 1,
       "plat": [
         "claude-code"
       ],
@@ -4951,8 +5104,10 @@
         "\"면접관 역할 프롬프트로 모의 면접 해 줘\""
       ],
       "status": "published",
-      "stars": 175184,
-      "pushed_at": "2026-10-30T12:46:55Z",
+      "stars": 175325,
+      "pushed_at": "2026-10-31T04:08:43Z",
+      "stars30": 141,
+      "stars30_days": 1,
       "sh_installs": 2576,
       "sh_week": 33,
       "plat": [
@@ -4996,8 +5151,10 @@
         "\"이 화면 UI/UX 프로 맥스 기준으로 다시 다듬어 줘\""
       ],
       "status": "published",
-      "stars": 142836,
-      "pushed_at": "2026-10-26T10:07:28Z",
+      "stars": 143092,
+      "pushed_at": "2026-10-30T19:08:34Z",
+      "stars30": 256,
+      "stars30_days": 1,
       "sh_installs": 425610,
       "sh_week": 11203,
       "plat": [
@@ -5042,8 +5199,10 @@
         "설치하면 자동으로 적용됩니다."
       ],
       "status": "published",
-      "stars": 111879,
+      "stars": 112027,
       "pushed_at": "2026-10-29T05:06:58Z",
+      "stars30": 148,
+      "stars30_days": 1,
       "sh_installs": 77106,
       "sh_week": 6429,
       "plat": [
@@ -5104,8 +5263,10 @@
           "title": "Taste Skill: Claude Code and Codex design real websites, not the average AI landing page #Shorts"
         }
       ],
-      "stars": 105996,
-      "pushed_at": "2026-10-30T09:24:57Z",
+      "stars": 106442,
+      "pushed_at": "2026-10-31T03:55:27Z",
+      "stars30": 446,
+      "stars30_days": 1,
       "sh_installs": 707344,
       "sh_week": 41181,
       "plat": [
@@ -5149,8 +5310,10 @@
         "\"이 프로젝트 구조를 그래프로 그려서 설명해 줘\""
       ],
       "status": "published",
-      "stars": 88992,
+      "stars": 89153,
       "pushed_at": "2026-10-26T07:05:22Z",
+      "stars30": 161,
+      "stars30_days": 1,
       "sh_installs": 5470,
       "sh_week": 209,
       "plat": [
@@ -5213,8 +5376,10 @@
           "title": "career-ops: AI-powered job search system built on Claude Code. 14 skill"
         }
       ],
-      "stars": 78800,
-      "pushed_at": "2026-10-30T12:47:28Z",
+      "stars": 78921,
+      "pushed_at": "2026-10-30T21:57:03Z",
+      "stars30": 121,
+      "stars30_days": 1,
       "plat": [
         "claude-code"
       ],
@@ -5273,8 +5438,10 @@
           "title": "last30days: The Claude Skill That Searches People, Not Editors"
         }
       ],
-      "stars": 65960,
+      "stars": 66029,
       "pushed_at": "2026-10-28T16:30:58Z",
+      "stars30": 69,
+      "stars30_days": 1,
       "sh_installs": 55707,
       "sh_week": 2494,
       "plat": [
@@ -5330,8 +5497,10 @@
           "title": "모르면 인생 절반 손해인 강의 자료 준비를 도와주는 오픈소스 3종 - Diagram Design · Presenton · Quarkdown"
         }
       ],
-      "stars": 63164,
+      "stars": 63293,
       "pushed_at": "2026-10-27T20:01:35Z",
+      "stars30": 129,
+      "stars30_days": 1,
       "sh_installs": 22609,
       "sh_week": 5193,
       "plat": [
@@ -5393,8 +5562,10 @@
           "title": "How To Use Humanizer Skill Claude AI"
         }
       ],
-      "stars": 62574,
+      "stars": 62761,
       "pushed_at": "2026-10-28T07:17:33Z",
+      "stars30": 187,
+      "stars30_days": 1,
       "sh_installs": 11366,
       "sh_week": 790,
       "plat": [
@@ -5445,8 +5616,10 @@
           "title": "How to actually install Marketing Skills in Claude"
         }
       ],
-      "stars": 57430,
-      "pushed_at": "2026-10-29T17:22:37Z",
+      "stars": 57542,
+      "pushed_at": "2026-10-31T00:53:07Z",
+      "stars30": 112,
+      "stars30_days": 1,
       "sh_installs": 242299,
       "sh_week": 5907,
       "plat": [
@@ -5502,8 +5675,10 @@
           "title": "Academic Research Skills: Streamline Your Research to Final Draft with Claude Code"
         }
       ],
-      "stars": 54636,
-      "pushed_at": "2026-10-28T02:56:11Z",
+      "stars": 54689,
+      "pushed_at": "2026-10-31T03:36:20Z",
+      "stars30": 53,
+      "stars30_days": 1,
       "sh_installs": 11022,
       "sh_week": 314,
       "plat": [
@@ -5565,8 +5740,10 @@
           "title": "AI 장인들이 쓴다는 클로드, 옵시디언 활용법"
         }
       ],
-      "stars": 50426,
+      "stars": 50473,
       "pushed_at": "2026-09-15T14:43:57Z",
+      "stars30": 47,
+      "stars30_days": 1,
       "sh_installs": 93910,
       "sh_week": 1276,
       "plat": [
@@ -5627,8 +5804,10 @@
           "title": "Hallmark: Claude Code Skill That Stops AI Slop"
         }
       ],
-      "stars": 42435,
+      "stars": 43124,
       "pushed_at": "2026-10-29T16:50:04Z",
+      "stars30": 689,
+      "stars30_days": 1,
       "sh_installs": 81037,
       "sh_week": 2555,
       "plat": [
@@ -5690,8 +5869,10 @@
           "title": "Claude Code vs Codex: Who Wins Now?"
         }
       ],
-      "stars": 34722,
+      "stars": 34743,
       "pushed_at": "2026-07-08T00:17:31Z",
+      "stars30": 21,
+      "stars30_days": 1,
       "plat": [
         "claude-code"
       ],
@@ -5745,8 +5926,10 @@
           "title": "에이전트 메모리 관리에 대해서"
         }
       ],
-      "stars": 30024,
+      "stars": 30039,
       "pushed_at": "2026-10-29T15:58:00Z",
+      "stars30": 15,
+      "stars30_days": 1,
       "sh_installs": 11236,
       "sh_week": 312,
       "plat": [
@@ -5807,8 +5990,10 @@
           "title": "Claude HUD: See What Claude Code Is Actually Doing (28k Stars, 1 Minute)"
         }
       ],
-      "stars": 29028,
-      "pushed_at": "2026-10-29T20:51:14Z",
+      "stars": 29040,
+      "pushed_at": "2026-10-30T22:25:13Z",
+      "stars30": 12,
+      "stars30_days": 1,
       "plat": [
         "claude-code"
       ],
@@ -5851,8 +6036,10 @@
         "\"설치된 스킬 목록 보여 줘\""
       ],
       "status": "published",
-      "stars": 29012,
-      "pushed_at": "2026-10-29T07:44:34Z",
+      "stars": 29040,
+      "pushed_at": "2026-10-30T17:30:57Z",
+      "stars30": 28,
+      "stars30_days": 1,
       "sh_installs": 2399,
       "sh_week": 18,
       "plat": [
@@ -5903,8 +6090,10 @@
           "title": "Planning with Files: Claude Code skill that brings workflow behind Manus straight into your terminal"
         }
       ],
-      "stars": 27770,
-      "pushed_at": "2026-10-28T17:42:45Z",
+      "stars": 27782,
+      "pushed_at": "2026-10-30T20:57:42Z",
+      "stars30": 12,
+      "stars30_days": 1,
       "sh_installs": 47662,
       "sh_week": 729,
       "plat": [
@@ -5949,8 +6138,10 @@
         "\"이 영문 글 번역하고 요약해 줘\""
       ],
       "status": "published",
-      "stars": 27084,
+      "stars": 27093,
       "pushed_at": "2026-09-10T15:13:43Z",
+      "stars30": 9,
+      "stars30_days": 1,
       "sh_installs": 34561,
       "sh_week": 164,
       "plat": [
@@ -6012,8 +6203,10 @@
           "title": "Compound Engineering installs AI skills that make each unit of engineering work easier than the last"
         }
       ],
-      "stars": 25784,
-      "pushed_at": "2026-10-30T04:49:43Z",
+      "stars": 25792,
+      "pushed_at": "2026-10-31T04:05:59Z",
+      "stars30": 8,
+      "stars30_days": 1,
       "sh_installs": 3985,
       "sh_week": 57,
       "plat": [
@@ -6074,8 +6267,10 @@
           "title": "Claude SEO brain is here: the pro second brain for Claude Code SEO"
         }
       ],
-      "stars": 24250,
+      "stars": 24601,
       "pushed_at": "2026-10-22T16:47:40Z",
+      "stars30": 351,
+      "stars30_days": 1,
       "sh_installs": 9424,
       "sh_week": 356,
       "plat": [
@@ -6131,8 +6326,10 @@
           "title": "SuperClaude is here - 3 Essential Tips for Claude Code"
         }
       ],
-      "stars": 23915,
+      "stars": 23916,
       "pushed_at": "2026-09-27T12:50:32Z",
+      "stars30": 1,
+      "stars30_days": 1,
       "plat": [
         "claude-code"
       ],
@@ -6191,8 +6388,10 @@
           "title": "Como usar o plugin brag no Claude Code: do teaser à série de treinamento"
         }
       ],
-      "stars": 19558,
+      "stars": 19654,
       "pushed_at": "2026-10-23T21:18:13Z",
+      "stars30": 96,
+      "stars30_days": 1,
       "sh_installs": 21714,
       "sh_week": 2222,
       "plat": [
@@ -6236,8 +6435,10 @@
         "\"이 데이터로 작은 모델 파인튜닝 계획 짜 줘\""
       ],
       "status": "published",
-      "stars": 14116,
+      "stars": 14127,
       "pushed_at": "2026-10-11T02:56:34Z",
+      "stars30": 11,
+      "stars30_days": 1,
       "sh_installs": 2373,
       "sh_week": 61,
       "plat": [
@@ -6299,8 +6500,10 @@
           "title": "I literally used Claude (and Apify and LinkedIn) to apply to unlimited jobs"
         }
       ],
-      "stars": 13893,
-      "pushed_at": "2026-10-30T08:28:06Z",
+      "stars": 13991,
+      "pushed_at": "2026-10-31T00:28:44Z",
+      "stars30": 98,
+      "stars30_days": 1,
       "plat": [
         "claude-code"
       ],
@@ -6355,8 +6558,10 @@
           "title": "ConardLi/garden-skills"
         }
       ],
-      "stars": 13410,
+      "stars": 13429,
       "pushed_at": "2026-10-25T13:45:33Z",
+      "stars30": 19,
+      "stars30_days": 1,
       "sh_installs": 9046,
       "sh_week": 356,
       "plat": [
@@ -6400,8 +6605,10 @@
         "\"고객 응대 봇 프롬프트 구조화해서 써 줘\""
       ],
       "status": "published",
-      "stars": 12653,
+      "stars": 12655,
       "pushed_at": "2026-09-11T02:11:09Z",
+      "stars30": 2,
+      "stars30_days": 1,
       "plat": [
         "claude-code"
       ],
@@ -6443,8 +6650,10 @@
         "설치하면 상황에 맞는 스킬이 자동 발동됩니다."
       ],
       "status": "published",
-      "stars": 12142,
-      "pushed_at": "2026-10-29T01:36:45Z",
+      "stars": 12146,
+      "pushed_at": "2026-10-30T18:00:19Z",
+      "stars30": 4,
+      "stars30_days": 1,
       "sh_installs": 23520,
       "sh_week": 288,
       "plat": [
@@ -6500,8 +6709,10 @@
           "title": "Kami: Make AI Documents Look Like Real Designed Paper"
         }
       ],
-      "stars": 12135,
-      "pushed_at": "2026-10-30T02:57:38Z",
+      "stars": 12164,
+      "pushed_at": "2026-10-31T00:28:09Z",
+      "stars30": 29,
+      "stars30_days": 1,
       "sh_installs": 13502,
       "sh_week": 232,
       "plat": [
@@ -6562,8 +6773,10 @@
           "title": "Claude Code built-in memory vs Autoharness #ClaudeCode #AITips #AgenticCoding"
         }
       ],
-      "stars": 10609,
-      "pushed_at": "2026-10-29T16:50:53Z",
+      "stars": 10510,
+      "pushed_at": "2026-10-30T18:53:20Z",
+      "stars30": -99,
+      "stars30_days": 1,
       "plat": [
         "claude-code"
       ],
@@ -6605,8 +6818,10 @@
         "\"이 캠페인 성과 분석하고 예산 재배분 제안해 줘\""
       ],
       "status": "published",
-      "stars": 10595,
+      "stars": 10612,
       "pushed_at": "2026-10-17T01:35:42Z",
+      "stars30": 17,
+      "stars30_days": 1,
       "sh_installs": 4932,
       "sh_week": 159,
       "plat": [
@@ -6668,8 +6883,10 @@
           "title": "These Claude patterns changed everything - HARNESS"
         }
       ],
-      "stars": 9288,
+      "stars": 9293,
       "pushed_at": "2026-09-28T05:19:20Z",
+      "stars30": 5,
+      "stars30_days": 1,
       "plat": [
         "claude-code"
       ],
@@ -6718,8 +6935,10 @@
           "title": "Universal Modder turns Claude Code, Codex or Cursor into a game modder for almost any PC #Shorts"
         }
       ],
-      "stars": 9222,
-      "pushed_at": "2026-10-30T12:49:56Z",
+      "stars": 9248,
+      "pushed_at": "2026-10-30T22:16:31Z",
+      "stars30": 26,
+      "stars30_days": 1,
       "sh_installs": 1727,
       "sh_week": 388,
       "plat": [
@@ -6763,8 +6982,10 @@
         "\"이 아이디어 PRD(요구사항 문서)로 정리해 줘\""
       ],
       "status": "published",
-      "stars": 7783,
+      "stars": 7793,
       "pushed_at": "2026-10-16T01:51:12Z",
+      "stars30": 10,
+      "stars30_days": 1,
       "sh_installs": 4759,
       "sh_week": 89,
       "plat": [
@@ -6820,8 +7041,10 @@
           "title": "🚀 Boost AI Productivity with Waza Python Script! @PyLouis #louispython #Waza"
         }
       ],
-      "stars": 7472,
-      "pushed_at": "2026-10-29T02:50:11Z",
+      "stars": 7477,
+      "pushed_at": "2026-10-30T23:47:43Z",
+      "stars30": 5,
+      "stars30_days": 1,
       "sh_installs": 18851,
       "sh_week": 376,
       "plat": [
@@ -6866,8 +7089,10 @@
         "\"이 글 사람이 쓴 것처럼 다듬어 줘\""
       ],
       "status": "published",
-      "stars": 6337,
+      "stars": 6343,
       "pushed_at": "2026-10-12T09:57:11Z",
+      "stars30": 6,
+      "stars30_days": 1,
       "pick": "AI로 쓴 한글을 내보내기 전에 꼭 거치게 되는 도구. 한국인 제작.",
       "plat": [
         "claude-code"
@@ -6928,8 +7153,10 @@
           "title": "How do i Connect Claude to Chat GPT Image 2/2.5"
         }
       ],
-      "stars": 5952,
+      "stars": 5958,
       "pushed_at": "2026-09-30T11:54:50Z",
+      "stars30": 6,
+      "stars30_days": 1,
       "plat": [
         "claude-code"
       ],
@@ -6983,8 +7210,10 @@
           "title": "Claude integrates 12 LinkedIn skills to automate your profile and content #AI #AITools #LinkedIn"
         }
       ],
-      "stars": 5379,
+      "stars": 5394,
       "pushed_at": "2026-10-27T11:22:16Z",
+      "stars30": 15,
+      "stars30_days": 1,
       "sh_installs": 1770,
       "sh_week": 157,
       "plat": [
@@ -7040,8 +7269,10 @@
           "title": "Logo design with Claude Design"
         }
       ],
-      "stars": 5335,
+      "stars": 5445,
       "pushed_at": "2026-10-20T09:14:19Z",
+      "stars30": 110,
+      "stars30_days": 1,
       "plat": [
         "claude-code"
       ],
@@ -7083,8 +7314,10 @@
         "설치 후 자동. 기억이 옵시디언 폴더에 쌓입니다."
       ],
       "status": "published",
-      "stars": 5047,
+      "stars": 5066,
       "pushed_at": "2026-10-28T22:44:30Z",
+      "stars30": 19,
+      "stars30_days": 1,
       "plat": [
         "claude-code"
       ],
@@ -7138,8 +7371,10 @@
           "title": "7x Faster AI UI with Answer Me with HTML ⚡"
         }
       ],
-      "stars": 4856,
-      "pushed_at": "2026-10-30T08:48:27Z",
+      "stars": 4922,
+      "pushed_at": "2026-10-31T03:14:50Z",
+      "stars30": 66,
+      "stars30_days": 1,
       "sh_installs": 6391,
       "sh_week": 1314,
       "plat": [
@@ -7183,8 +7418,10 @@
         "\"toss.im 디자인 시스템 뽑아 줘\""
       ],
       "status": "published",
-      "stars": 4421,
+      "stars": 4430,
       "pushed_at": "2026-10-23T11:31:15Z",
+      "stars30": 9,
+      "stars30_days": 1,
       "sh_installs": 3113,
       "sh_week": 43,
       "plat": [
@@ -7235,8 +7472,10 @@
           "title": "Scroll Craft: this Claude Code skill turns your scroll into a movie"
         }
       ],
-      "stars": 4233,
+      "stars": 4279,
       "pushed_at": "2026-09-30T13:31:42Z",
+      "stars30": 46,
+      "stars30_days": 1,
       "plat": [
         "claude-code"
       ],
@@ -7285,8 +7524,10 @@
           "title": "Connect Claude AI to Google Ads in 30 Seconds | NotFair"
         }
       ],
-      "stars": 4082,
+      "stars": 4087,
       "pushed_at": "2026-10-30T02:35:26Z",
+      "stars30": 5,
+      "stars30_days": 1,
       "plat": [
         "claude-code"
       ],
@@ -7345,8 +7586,10 @@
           "title": "클린 코드 저자도 칭찬한 AI 코딩 스킬, pstack"
         }
       ],
-      "stars": 3647,
-      "pushed_at": "2026-10-29T20:13:09Z",
+      "stars": 3667,
+      "pushed_at": "2026-10-30T23:34:51Z",
+      "stars30": 20,
+      "stars30_days": 1,
       "plat": [
         "claude-code"
       ],
@@ -7388,8 +7631,10 @@
         "\"이 자료들로 위키 페이지 만들어 줘\""
       ],
       "status": "published",
-      "stars": 3640,
+      "stars": 3643,
       "pushed_at": "2026-10-27T07:26:53Z",
+      "stars30": 3,
+      "stars30_days": 1,
       "sh_installs": 4132,
       "sh_week": 38,
       "plat": [
@@ -7433,8 +7678,10 @@
         "\"이 화면 접근성 기준으로 점검해 줘\""
       ],
       "status": "published",
-      "stars": 3058,
+      "stars": 3063,
       "pushed_at": "2026-10-27T15:00:23Z",
+      "stars30": 5,
+      "stars30_days": 1,
       "plat": [
         "claude-code"
       ],
@@ -7476,8 +7723,10 @@
         "\"내 사이트 라이트하우스 점수 올려 줘\""
       ],
       "status": "published",
-      "stars": 3011,
+      "stars": 3014,
       "pushed_at": "2026-08-24T21:07:36Z",
+      "stars30": 3,
+      "stars30_days": 1,
       "sh_installs": 33937,
       "sh_week": 1112,
       "plat": [
@@ -7521,8 +7770,10 @@
         "설치 후 평소처럼 지적하면 됩니다."
       ],
       "status": "published",
-      "stars": 2936,
+      "stars": 2939,
       "pushed_at": "2026-09-29T10:12:13Z",
+      "stars30": 3,
+      "stars30_days": 1,
       "plat": [
         "claude-code"
       ],
@@ -7564,8 +7815,10 @@
         "설치 후 자동."
       ],
       "status": "published",
-      "stars": 2809,
+      "stars": 2812,
       "pushed_at": "2026-10-27T03:33:37Z",
+      "stars30": 3,
+      "stars30_days": 1,
       "plat": [
         "claude-code"
       ],
@@ -7607,8 +7860,10 @@
         "\"이 사업 아이디어 린 캔버스로 정리해 줘\""
       ],
       "status": "published",
-      "stars": 2540,
+      "stars": 2543,
       "pushed_at": "2026-09-10T21:48:01Z",
+      "stars30": 3,
+      "stars30_days": 1,
       "sh_installs": 9738,
       "sh_week": 582,
       "plat": [
@@ -7660,8 +7915,10 @@
           "title": "Headcount: a Claude Code setup where agents are split by which files they own, not by topic"
         }
       ],
-      "stars": 2519,
+      "stars": 2533,
       "pushed_at": "2026-10-18T20:33:57Z",
+      "stars30": 14,
+      "stars30_days": 1,
       "plat": [
         "claude-code"
       ],
@@ -7722,6 +7979,8 @@
       ],
       "stars": 2433,
       "pushed_at": "2026-10-24T11:55:58Z",
+      "stars30": 0,
+      "stars30_days": 1,
       "sh_installs": 7674,
       "sh_week": 215,
       "plat": [
@@ -7765,8 +8024,10 @@
         "\"오늘 새로 나온 AI 용어 정리해 줘\""
       ],
       "status": "published",
-      "stars": 1976,
+      "stars": 1983,
       "pushed_at": "2026-10-28T11:48:20Z",
+      "stars30": 7,
+      "stars30_days": 1,
       "plat": [
         "claude-code"
       ],
@@ -7810,6 +8071,8 @@
       "status": "published",
       "stars": 1668,
       "pushed_at": "2026-09-27T15:24:55Z",
+      "stars30": 0,
+      "stars30_days": 1,
       "plat": [
         "claude-code"
       ],
@@ -7868,8 +8131,10 @@
           "title": "Hivemind: The Memory Your Company Never Had | FalkorDB Knowledge Graph AI Agent"
         }
       ],
-      "stars": 1642,
+      "stars": 1641,
       "pushed_at": "2026-10-24T01:41:07Z",
+      "stars30": -1,
+      "stars30_days": 1,
       "plat": [
         "claude-code"
       ],
@@ -7911,8 +8176,10 @@
         "\"/brooks-lint 검토\""
       ],
       "status": "published",
-      "stars": 1552,
+      "stars": 1553,
       "pushed_at": "2026-10-26T08:57:49Z",
+      "stars30": 1,
+      "stars30_days": 1,
       "plat": [
         "claude-code"
       ],
@@ -7954,8 +8221,10 @@
         "설치하면 자동."
       ],
       "status": "published",
-      "stars": 1513,
-      "pushed_at": "2026-10-23T16:37:45Z",
+      "stars": 1516,
+      "pushed_at": "2026-10-30T19:05:02Z",
+      "stars30": 3,
+      "stars30_days": 1,
       "plat": [
         "claude-code"
       ],
@@ -7998,8 +8267,10 @@
         "설치하면 자동. 바로 한국어가 달라져요."
       ],
       "status": "published",
-      "stars": 1467,
+      "stars": 1469,
       "pushed_at": "2026-08-23T01:09:21Z",
+      "stars30": 2,
+      "stars30_days": 1,
       "pick": "Claude 한국어가 바로 자연스러워집니다. 한국인 제작, 설치 즉시 효과.",
       "plat": [
         "claude-code"
@@ -8042,8 +8313,10 @@
         "\"이 파이썬 코드 러스트로 옮겨 줘\""
       ],
       "status": "published",
-      "stars": 1445,
-      "pushed_at": "2026-10-28T15:41:26Z",
+      "stars": 1540,
+      "pushed_at": "2026-10-30T23:52:41Z",
+      "stars30": 95,
+      "stars30_days": 1,
       "plat": [
         "claude-code"
       ],
@@ -8103,8 +8376,10 @@
           "title": "12 iOS simulators, 12 Claude Code agents, one 16 GB MacBook"
         }
       ],
-      "stars": 1305,
+      "stars": 1306,
       "pushed_at": "2026-10-19T05:39:48Z",
+      "stars30": 1,
+      "stars30_days": 1,
       "sh_installs": 2395,
       "sh_week": 24,
       "plat": [
@@ -8160,8 +8435,10 @@
           "title": "이미지 몇 장으로 설명 애니메이션 완성 — 클로드 코드 animate 스킬 #Shorts"
         }
       ],
-      "stars": 1102,
+      "stars": 1185,
       "pushed_at": "2026-10-05T20:31:48Z",
+      "stars30": 83,
+      "stars30_days": 1,
       "plat": [
         "claude-code"
       ],
@@ -8204,8 +8481,10 @@
         "\"이거 핀 해 둬: API 키는 .env에\""
       ],
       "status": "published",
-      "stars": 1098,
-      "pushed_at": "2026-10-23T16:30:45Z",
+      "stars": 1101,
+      "pushed_at": "2026-10-31T03:58:18Z",
+      "stars30": 3,
+      "stars30_days": 1,
       "plat": [
         "claude-code"
       ],
@@ -8254,8 +8533,10 @@
           "title": "Dataverse MCP Servers: Giving AI Agents Practical Power Platform Skills"
         }
       ],
-      "stars": 1085,
-      "pushed_at": "2026-10-29T23:04:59Z",
+      "stars": 1093,
+      "pushed_at": "2026-10-30T23:04:15Z",
+      "stars30": 8,
+      "stars30_days": 1,
       "plat": [
         "claude-code"
       ],
@@ -8298,8 +8579,10 @@
         "\"이 프로젝트 자막 전부 한 줄로 줄여 줘\""
       ],
       "status": "published",
-      "stars": 1064,
+      "stars": 1069,
       "pushed_at": "2026-10-29T19:45:36Z",
+      "stars30": 5,
+      "stars30_days": 1,
       "plat": [
         "claude-code"
       ],
@@ -8314,10 +8597,1445 @@
           "p": "딸깍 설치 뒤 캡컷 프로젝트 폴더를 알려 주고 \"자막 줄여 줘\"."
         }
       ]
+    },
+    {
+      "id": "find-skills",
+      "kind": "skill",
+      "cat": "work",
+      "name": "스킬 찾기 (skills.sh 검색)",
+      "en": "find-skills (skills CLI)",
+      "one": "'이런 일 해주는 스킬 없나?' 하고 물으면 skills.sh 사이트에서 맞는 스킬을 찾아 설치까지 도와줍니다.",
+      "when": "딸깍에 없는 도구를 직접 찾아보고 싶을 때. Node.js(22.20 이상)가 설치돼 있어야 합니다",
+      "level": 1,
+      "color": "#d6ecf5",
+      "repo": "https://github.com/vercel-labs/skills",
+      "install": {
+        "kind": "skill",
+        "repo": "vercel-labs/skills"
+      },
+      "trust": {
+        "grade": "official",
+        "reasons": [
+          "Vercel Labs가 만든 스킬 생태계의 공식 CLI",
+          "MIT 라이선스, skills.sh 운영 주체"
+        ]
+      },
+      "tips": [
+        "\"엑셀 정리해 주는 스킬 찾아 줘\"",
+        "\"지금 설치된 스킬 목록 보여 주고 업데이트할 거 있으면 알려 줘\""
+      ],
+      "added": "2026-10-31",
+      "sh_source": "vercel-labs/skills",
+      "status": "published",
+      "stars": 37327,
+      "pushed_at": "2026-10-30T20:14:22Z",
+      "sh_installs": 4132026,
+      "sh_week": 121189,
+      "plat": [
+        "claude-code"
+      ],
+      "installs": 0,
+      "readme_ko": [
+        {
+          "h": "이게 뭔가요?",
+          "p": "skills.sh라는 '스킬 장터'를 운영하는 Vercel Labs의 공식 도구입니다. 스킬은 AI 코딩 도우미에게 특정 일을 하는 방법을 알려 주는 설명서 묶음인데, 이 도구는 그 스킬을 검색하고(find), 설치하고(add), 목록을 보고(list), 업데이트하고(update), 지우는(remove) 명령을 제공합니다. Claude Code, Codex, Cursor 등 70여 개 도우미를 지원합니다."
+        },
+        {
+          "h": "안에 뭐가 있나요?",
+          "p": "find-skills 스킬 하나가 핵심입니다. 설치하면 Claude가 \"~하는 스킬 있어?\"라는 말을 알아듣고 skills.sh를 검색해서 후보를 보여 주고, 원하면 바로 설치해 줍니다. 설치하지 않고 한 번만 써 보는 use 명령도 있습니다."
+        },
+        {
+          "h": "쓰는 법",
+          "p": "설치 후 그냥 필요한 일을 말하면 됩니다. 예: \"PDF 표를 뽑아 주는 스킬 찾아 줘\". Node.js 22.20 이상이 필요하고, 스킬은 기본적으로 현재 폴더(프로젝트)에 설치되며 -g 옵션을 쓰면 모든 프로젝트에서 쓸 수 있습니다."
+        },
+        {
+          "h": "주의할 점",
+          "p": "익명 사용 통계를 수집합니다. 끄려면 DISABLE_TELEMETRY=1 환경변수를 설정하면 됩니다. 검색된 스킬은 누구나 올릴 수 있는 것이므로 설치 전에 어떤 저장소인지 한 번 확인하는 습관이 좋습니다."
+        }
+      ]
+    },
+    {
+      "id": "mattpocock-skills",
+      "kind": "skill",
+      "cat": "dev",
+      "name": "맷 포콕의 실전 개발 스킬",
+      "en": "Matt Pocock skills",
+      "one": "일 시작 전 질문으로 요구사항을 또렷하게 만들고(grill-me), 테스트 먼저 짜고(tdd), 코드 구조를 점검하는 등 '제대로 만드는 습관'을 Claude에 심어 줍니다.",
+      "when": "Claude가 내 말을 자꾸 다르게 이해하거나 코드가 자꾸 꼬이는 사람. grill-me는 코딩 아닌 일(글쓰기, 기획)에도 쓸 수 있습니다",
+      "level": 2,
+      "color": "#e8e4dc",
+      "repo": "https://github.com/mattpocock/skills",
+      "install": {
+        "kind": "plugin",
+        "name": "mattpocock-skills@mattpocock",
+        "market": "mattpocock/skills"
+      },
+      "trust": {
+        "grade": "community",
+        "reasons": [
+          "TypeScript 교육자 Matt Pocock 개인 저장소, skills.sh 설치 150만 건",
+          "Claude 공식 플러그인 마켓에도 등록됨"
+        ]
+      },
+      "tips": [
+        "\"/grill-me 블로그 글 기획 같이 다듬어 줘\"",
+        "\"/tdd 로그인 기능 추가해 줘\""
+      ],
+      "added": "2026-10-31",
+      "sh_source": "mattpocock/skills",
+      "status": "published",
+      "stars": 307610,
+      "pushed_at": "2026-10-30T14:00:30Z",
+      "sh_installs": 1468474,
+      "sh_week": 52386,
+      "plat": [
+        "claude-code"
+      ],
+      "installs": 0,
+      "readme_ko": [
+        {
+          "h": "이게 뭔가요?",
+          "p": "TypeScript 강사로 유명한 Matt Pocock이 매일 쓰는 개발 스킬 모음입니다. 커다란 개발 방법론을 통째로 강요하는 대신, 작고 고치기 쉬운 스킬 여러 개로 나뉘어 있어 필요한 것만 골라 쓸 수 있습니다."
+        },
+        {
+          "h": "안에 뭐가 있나요?",
+          "p": "grill-me(일 시작 전 Claude가 꼬치꼬치 질문해서 요구사항을 맞춤), grill-with-docs(질문하면서 프로젝트 용어집과 결정 기록까지 남김), tdd(테스트를 먼저 쓰고 통과시키는 방식), diagnosing-bugs(버그를 단계별로 추적), improve-codebase-architecture(코드 구조를 훑어 개선 후보를 HTML 보고서로), triage(이슈 분류), to-spec(명세 작성), handoff, prototype, teach 등이 들어 있습니다."
+        },
+        {
+          "h": "쓰는 법",
+          "p": "설치 뒤 프로젝트마다 /setup-matt-pocock-skills 를 한 번 실행하면 이슈 트래커(GitHub 등)와 문서 저장 위치를 물어보고 설정해 줍니다. 그다음 /grill-me, /tdd 처럼 슬래시 명령으로 부릅니다. 작성자는 무언가 바꿀 때마다 grill 계열을 먼저 쓰라고 권합니다."
+        },
+        {
+          "h": "주의할 점",
+          "p": "플러그인 설치와 skills.sh 설치를 둘 다 하면 스킬이 두 번 뜨니 한 가지만 쓰세요. 대부분 코드 작업용이라 비개발자는 grill-me 정도만 유용합니다."
+        }
+      ]
+    },
+    {
+      "id": "hyperframes",
+      "kind": "skill",
+      "cat": "design",
+      "name": "하이퍼프레임 (HTML로 영상 만들기)",
+      "en": "HyperFrames",
+      "one": "\"10초짜리 제품 소개 영상 만들어 줘\"라고 말하면 웹페이지 기술(HTML/CSS)로 장면을 짜서 MP4 영상 파일로 뽑아 줍니다.",
+      "when": "짧은 홍보·소개 영상, 자막 영상, 모션 그래픽을 편집 프로그램 없이 만들어 보고 싶은 사람. Node.js가 필요합니다",
+      "level": 2,
+      "color": "#f5d8e4",
+      "repo": "https://github.com/heygen-com/hyperframes",
+      "install": {
+        "kind": "plugin",
+        "name": "hyperframes@hyperframes",
+        "market": "heygen-com/hyperframes"
+      },
+      "trust": {
+        "grade": "official",
+        "reasons": [
+          "AI 영상 회사 HeyGen이 공개한 오픈소스 프레임워크",
+          "Claude 플러그인 마켓 공식 제공, 설치 130만 건"
+        ]
+      },
+      "tips": [
+        "\"/hyperframes 제목이 서서히 나타나고 배경 영상에 잔잔한 음악 깔린 10초 제품 소개 영상 만들어 줘\"",
+        "\"이 영상에 한국어 자막 넣어서 다시 렌더링해 줘\""
+      ],
+      "added": "2026-10-31",
+      "sh_source": "heygen-com/hyperframes",
+      "status": "published",
+      "stars": 76127,
+      "pushed_at": "2026-10-31T04:48:19Z",
+      "sh_installs": 1345173,
+      "sh_week": 158584,
+      "plat": [
+        "claude-code"
+      ],
+      "installs": 0,
+      "readme_ko": [
+        {
+          "h": "이게 뭔가요?",
+          "p": "HTML, CSS, 이미지·영상·음악 파일과 애니메이션을 재료로 결정적(매번 똑같이 나오는) MP4 영상을 만들어 내는 오픈소스 도구입니다. 'HTML을 쓰면 영상이 렌더링된다'가 한 줄 설명이고, AI 코딩 도우미와 함께 쓰도록 설계됐습니다. 맥·윈도우·리눅스용 데스크톱 앱도 있습니다."
+        },
+        {
+          "h": "안에 뭐가 있나요?",
+          "p": "스킬 7개가 들어 있고 핵심은 4개입니다. hyperframes(영상 만들기의 규칙과 작업 순서를 담은 본체, 가장 먼저 읽힘), hyperframes-cli(새 프로젝트 만들기·검사·미리보기·렌더링·클라우드 렌더링 명령), hyperframes-registry(전환 효과, 자막, 제목, 차트, 지도, 3D 등 450여 개 완성 블록), media-use(이미지·영상·음악 다루기). 슬라이드쇼, Remotion 변환, Figma용 스킬은 필요할 때 추가합니다."
+        },
+        {
+          "h": "쓰는 법",
+          "p": "Claude Code에서는 플러그인으로 설치하고 /hyperframes:hyperframes 를 부릅니다. 예시 프롬프트: \"/hyperframes 로 페이드인 제목, 배경 영상, 잔잔한 배경음악이 있는 10초 제품 인트로 만들어 줘\". 스킬이 영상 기획 → HTML 작성 → 애니메이션 연결 → 미디어 추가 → 검사 → 미리보기 → 렌더링 순서로 작업을 이끕니다."
+        },
+        {
+          "h": "주의할 점",
+          "p": "영상 프로젝트 폴더 안에서 작업해야 하며, 자동 업데이트를 켜 두는 것을 권장합니다. skills.sh로 설치하면 등록 정보가 최신 코드보다 몇 시간 늦을 수 있어 npx hyperframes skills update 로 최신 스킬을 받는 방법도 안내합니다."
+        }
+      ]
+    },
+    {
+      "id": "agent-browser",
+      "kind": "skill",
+      "cat": "auto",
+      "name": "에이전트 브라우저 (Claude가 웹을 직접 조작)",
+      "en": "agent-browser",
+      "one": "Claude가 웹사이트를 열고, 버튼을 누르고, 글자를 입력하고, 화면을 캡처하도록 해 주는 빠른 브라우저 조작 도구입니다.",
+      "when": "웹에서 반복되는 클릭·입력 작업을 맡기거나, 내가 만든 사이트가 제대로 동작하는지 확인시키고 싶을 때. npm 설치가 필요합니다",
+      "level": 2,
+      "color": "#d6e8f5",
+      "repo": "https://github.com/vercel-labs/agent-browser",
+      "install": {
+        "kind": "plugin",
+        "name": "agent-browser@agent-browser",
+        "market": "vercel-labs/agent-browser"
+      },
+      "trust": {
+        "grade": "official",
+        "reasons": [
+          "Vercel Labs 공식 도구, Rust로 만든 빠른 CLI",
+          "skills.sh 설치 130만 건, MIT 라이선스"
+        ]
+      },
+      "tips": [
+        "\"agent-browser로 우리 쇼핑몰 주문 페이지 열어서 끝까지 진행되는지 확인해 줘\"",
+        "\"이 사이트 접속해서 공지사항 제목들만 뽑아 줘\""
+      ],
+      "added": "2026-10-31",
+      "sh_source": "vercel-labs/agent-browser",
+      "status": "published",
+      "stars": 44948,
+      "pushed_at": "2026-10-31T04:24:06Z",
+      "sh_installs": 1317599,
+      "sh_week": 75456,
+      "plat": [
+        "claude-code"
+      ],
+      "installs": 0,
+      "readme_ko": [
+        {
+          "h": "이게 뭔가요?",
+          "p": "AI 에이전트용 브라우저 자동화 명령줄 도구입니다. Rust로 만든 네이티브 프로그램이라 빠르고, Claude가 명령 한 줄씩 보내서 웹페이지를 열고(open), 화면 구조를 읽고(snapshot), 클릭하고(click), 입력하고(fill), 스크린샷을 찍을 수 있습니다."
+        },
+        {
+          "h": "어떻게 동작하나요?",
+          "p": "snapshot 명령이 페이지의 접근성 트리를 읽어 각 요소에 @e1, @e2 같은 짧은 참조 번호를 붙입니다. Claude는 그 번호로 \"@e2 클릭\", \"@e3에 이메일 입력\"처럼 정확하게 조작합니다. 요소가 숨겨져 있거나 다른 창에 가려져 있으면 성공한 척하지 않고 바로 실패를 알려 줍니다. CSS 선택자 같은 전통 방식도 지원합니다."
+        },
+        {
+          "h": "설치",
+          "p": "npm install -g agent-browser 후 agent-browser install 로 테스트용 Chrome을 한 번 내려받습니다(이미 설치된 Chrome·Brave 등이 있으면 자동 인식). 맥은 Homebrew, Rust 사용자는 cargo로도 설치할 수 있습니다. Claude Code에서는 플러그인으로 설치하면 스킬이 함께 들어옵니다."
+        },
+        {
+          "h": "주의할 점",
+          "p": "브라우저가 실제로 사이트에 접속해 행동하므로 로그인 정보나 결제처럼 민감한 작업은 직접 하고, 읽기·확인 위주로 맡기는 것이 안전합니다. 리눅스에서는 추가 시스템 라이브러리 설치가 필요할 수 있습니다."
+        }
+      ]
+    },
+    {
+      "id": "reddit-automation",
+      "kind": "skill",
+      "cat": "marketing",
+      "name": "레딧 고객 찾기 (doany)",
+      "en": "reddit-automation (doany skills)",
+      "one": "내 상품을 찾고 있는 사람들이 모인 레딧 글을 찾아내고, 광고 티 안 나는 '도움 되는 댓글' 초안을 써 줍니다.",
+      "when": "해외 고객을 레딧에서 찾아보고 싶은 1인 사업자·마케터. 댓글은 직접 확인해서 올려야 합니다",
+      "level": 1,
+      "color": "#f5e2cf",
+      "repo": "https://github.com/flowkit-labs/skills",
+      "install": {
+        "kind": "skill",
+        "repo": "flowkit-labs/skills"
+      },
+      "trust": {
+        "grade": "community",
+        "reasons": [
+          "마케팅 서비스 doany.ai가 공개한 스킬, MIT 라이선스",
+          "설명서만 들어 있고 외부 스크립트 실행·자동 게시 없음"
+        ]
+      },
+      "tips": [
+        "\"우리 노션 템플릿 사줄 만한 사람들이 있는 레딧 글 찾아서 댓글 초안 써 줘\""
+      ],
+      "added": "2026-10-31",
+      "sh_source": "flowkit-labs/skills",
+      "status": "published",
+      "stars": 25,
+      "pushed_at": "2026-08-12T06:31:41Z",
+      "sh_installs": 1173892,
+      "sh_week": 96986,
+      "plat": [
+        "claude-code"
+      ],
+      "installs": 0,
+      "readme_ko": [
+        {
+          "h": "이게 뭔가요?",
+          "p": "AI 에이전트를 '성장 담당 동료'로 쓰자는 doany.ai가 공개한 스킬 모음으로, 현재는 reddit-automation 스킬 하나가 들어 있습니다. 내가 파는 것을 지금 적극적으로 찾고 있는 레딧 스레드를 찾아내고, 광고가 아니라 커뮤니티 구성원이 쓴 듯한 도움 되는 답글 초안을 써 주는 역할입니다."
+        },
+        {
+          "h": "안전성",
+          "p": "README가 강조하는 점: 이 스킬은 문서만으로 이루어져 있어 Claude의 판단과 글쓰기를 안내할 뿐, 원격 스크립트를 실행하거나 환경변수·비밀번호를 읽거나 대신 글을 올리지 않습니다. 모든 레딧 답글은 사용자가 검토해서 직접 올리도록 되어 있습니다."
+        },
+        {
+          "h": "쓰는 법",
+          "p": "설치 뒤 내 상품·서비스를 설명하고 \"이걸 찾는 사람들이 모인 레딧 글 찾아서 댓글 초안 만들어 줘\"라고 말하면 됩니다."
+        }
+      ]
+    },
+    {
+      "id": "sleek-design-mobile",
+      "kind": "skill",
+      "cat": "design",
+      "name": "슬릭 모바일 앱 디자인 (Sleek)",
+      "en": "Sleek design-mobile-apps",
+      "one": "말로 설명하면 Sleek 서비스를 통해 모바일 앱 화면 디자인을 만들고 수정해 주는 스킬입니다.",
+      "when": "앱 아이디어는 있는데 디자이너가 없는 사람. Sleek 계정과 API 키가 필요하고, 무료는 체험 1회 정도라 계속 쓰려면 유료(월 69달러)입니다",
+      "level": 1,
+      "color": "#f0d6e4",
+      "repo": "https://github.com/designed-by-ai/skills",
+      "install": {
+        "kind": "skill",
+        "repo": "designed-by-ai/skills"
+      },
+      "trust": {
+        "grade": "official",
+        "reasons": [
+          "AI 모바일 앱 디자인 서비스 Sleek(sleek.design)의 공식 스킬",
+          "MIT 라이선스, 설치 110만 건"
+        ]
+      },
+      "tips": [
+        "\"가계부 앱의 홈 화면과 지출 입력 화면 디자인해 줘\"",
+        "\"방금 만든 화면을 다크 모드 버전으로도 만들어 줘\""
+      ],
+      "added": "2026-10-31",
+      "sh_source": "designed-by-ai/skills",
+      "status": "published",
+      "stars": 21,
+      "pushed_at": "2026-10-06T08:00:25Z",
+      "sh_installs": 1137782,
+      "sh_week": 140289,
+      "plat": [
+        "claude-code"
+      ],
+      "installs": 0,
+      "readme_ko": [
+        {
+          "h": "이게 뭔가요?",
+          "p": "Sleek(sleek.design)이라는 AI 모바일 앱 디자인 서비스의 공식 에이전트 스킬입니다. design-mobile-apps 스킬 하나로 모바일 앱을 디자인하고, 화면을 만들고, Sleek 프로젝트를 관리할 수 있습니다."
+        },
+        {
+          "h": "준비물",
+          "p": "Sleek 계정이 필요합니다. 무료 계정은 일회성 체험 크레딧(디자인 한 번 정도)만 제공되고, 계속 쓰려면 Pro 요금제 이상(월 69달러, 연간 결제 시 월 30달러)이 필요합니다. API 키를 만들어 SLEEK_API_KEY 환경변수에 넣어야 합니다."
+        },
+        {
+          "h": "주의할 점",
+          "p": "npx skills add로 설치하면 작업 폴더의 .agents/skills/에 들어가는데, 도우미가 그 위치를 못 찾으면 SKILL.md 경로를 직접 알려 줘야 할 수 있습니다. 딸깍 도우미는 ~/.claude/skills에 복사하므로 그 문제는 피할 수 있습니다."
+        }
+      ]
+    },
+    {
+      "id": "vercel-agent-skills",
+      "kind": "skill",
+      "cat": "dev",
+      "name": "버셀 개발 가이드 모음",
+      "en": "Vercel agent-skills",
+      "one": "React/Next.js 성능 규칙, 웹 디자인 체크리스트(100개+), 글쓰기 규칙, Vercel 배포까지 Vercel 엔지니어링 팀의 기준을 Claude가 따르게 합니다.",
+      "when": "React·Next.js로 웹을 만드는 개발자. 코드가 있어야 쓸 수 있는 개발자용 도구입니다",
+      "level": 3,
+      "color": "#e4e4e4",
+      "repo": "https://github.com/vercel-labs/agent-skills",
+      "install": {
+        "kind": "skill",
+        "repo": "vercel-labs/agent-skills"
+      },
+      "trust": {
+        "grade": "official",
+        "reasons": [
+          "Vercel Labs 공식 저장소, 설치 85만 건",
+          "Vercel 엔지니어링 팀의 실제 가이드라인 기반"
+        ]
+      },
+      "tips": [
+        "\"web-design-guidelines로 이 페이지 접근성 점검해 줘\"",
+        "\"deploy-to-vercel로 이 앱 배포하고 링크 줘\""
+      ],
+      "added": "2026-10-31",
+      "sh_source": "vercel-labs/agent-skills",
+      "status": "published",
+      "stars": 33272,
+      "pushed_at": "2026-10-28T19:17:28Z",
+      "sh_installs": 856571,
+      "sh_week": 25064,
+      "plat": [
+        "claude-code"
+      ],
+      "installs": 0,
+      "readme_ko": [
+        {
+          "h": "이게 뭔가요?",
+          "p": "Vercel Labs가 공개한 AI 코딩 도우미용 스킬 모음입니다. Vercel 엔지니어링 팀이 실제로 쓰는 성능·디자인·글쓰기 기준을 Claude가 코드를 쓰거나 검토할 때 따르도록 합니다."
+        },
+        {
+          "h": "안에 뭐가 있나요?",
+          "p": "react-best-practices(React/Next.js 성능 규칙 40여 개, 영향도 순), web-design-guidelines(접근성·포커스·폼·애니메이션·타이포·다크모드 등 100여 개 규칙으로 UI 코드 점검), writing-guidelines(문서 문체 규칙 80여 개), react-native-guidelines, react-view-transitions(페이지 전환 애니메이션), composition-patterns(컴포넌트 설계), vercel-optimize(배포된 프로젝트의 비용·성능 진단), deploy-to-vercel(배포: git push 우선, 로그인 없으면 임시 배포 링크)."
+        },
+        {
+          "h": "쓰는 법",
+          "p": "설치하면 관련 작업을 감지해 자동으로 쓰입니다. \"내 앱 배포해 줘\", \"이 React 컴포넌트 성능 문제 검토해 줘\", \"이 Next.js 페이지 최적화 도와 줘\" 같은 말로 부릅니다."
+        },
+        {
+          "h": "주의할 점",
+          "p": "대부분 React/Next.js 코드가 있는 프로젝트를 전제로 합니다. 비개발자에게는 web-design-guidelines 정도가 '내 사이트 점검' 용도로 쓸 만합니다."
+        }
+      ]
+    },
+    {
+      "id": "remotion-skills",
+      "kind": "skill",
+      "cat": "design",
+      "name": "리모션 영상 제작 가이드",
+      "en": "Remotion Agent Skills",
+      "one": "React 코드로 영상을 만드는 Remotion의 공식 가이드. 새 영상 프로젝트 만들기, 자막, 지도 애니메이션, 렌더링까지 Claude가 올바르게 하도록 합니다.",
+      "when": "Remotion으로 영상을 만드는 개발자. React와 Node.js 환경이 있어야 하는 개발자용 도구입니다",
+      "level": 3,
+      "color": "#f5d8e4",
+      "repo": "https://github.com/remotion-dev/skills",
+      "install": {
+        "kind": "skill",
+        "repo": "remotion-dev/skills"
+      },
+      "trust": {
+        "grade": "official",
+        "reasons": [
+          "Remotion 개발팀 공식 스킬, 설치 72만 건",
+          "Remotion 문서(remotion.dev/docs/ai/skills)에서 직접 안내"
+        ]
+      },
+      "tips": [
+        "\"/remotion-create 레코드 가게 홍보 영상 만들어 줘\"",
+        "\"/remotion-render 로 지금 영상 MP4로 뽑아 줘\""
+      ],
+      "added": "2026-10-31",
+      "sh_source": "remotion-dev/skills",
+      "status": "published",
+      "stars": 5924,
+      "pushed_at": "2026-10-26T11:37:35Z",
+      "sh_installs": 716986,
+      "sh_week": 37218,
+      "plat": [
+        "claude-code"
+      ],
+      "installs": 0,
+      "readme_ko": [
+        {
+          "h": "이게 뭔가요?",
+          "p": "React 코드로 영상을 만드는 도구 Remotion의 공식 에이전트 스킬입니다. Remotion 프로젝트에서 지켜야 할 모범 사례를 정리해 Claude Code, Codex, Cursor 등이 올바른 코드를 쓰게 합니다. 새 Remotion 프로젝트를 만들 때(bun create video) 함께 설치할지 묻기도 합니다."
+        },
+        {
+          "h": "안에 뭐가 있나요?",
+          "p": "remotion-best-practices(전체를 아우르는 기본 스킬, 뭘 쓸지 모르면 이것), remotion-create(새 프로젝트·컴포지션 만들기), remotion-markup(애니메이션·레이아웃·글꼴·오디오 작성 규칙), remotion-studio(미리보기 실행), remotion-render(영상·스틸 렌더링), remotion-maps(지도 애니메이션), remotion-captions(자막), remotion-saas(앱에 영상 기능 넣는 설계), remotion-interactivity, remotion-docs(문서 검색), remotion-upgrade(버전 업), remotion-multimedia(영상·오디오 메타데이터)."
+        },
+        {
+          "h": "쓰는 법",
+          "p": "/remotion-create 레코드 가게 홍보 영상 만들어 줘, /remotion-render, /remotion-docs Remotion Lambda 설정 방법? 처럼 슬래시 명령 뒤에 요청을 붙입니다."
+        },
+        {
+          "h": "주의할 점",
+          "p": "React와 Node.js를 다룰 줄 아는 개발자를 위한 도구입니다. 코드 없이 영상을 만들고 싶다면 같은 범주의 하이퍼프레임(HyperFrames)이 더 가깝습니다."
+        }
+      ]
+    },
+    {
+      "id": "azure-skills",
+      "kind": "skill",
+      "cat": "dev",
+      "name": "애저 스킬 (마이크로소프트 클라우드)",
+      "en": "Azure Skills Plugin",
+      "one": "마이크로소프트 클라우드 Azure에 앱을 올리고, 비용을 점검하고, 문제를 진단하는 방법을 Claude가 알게 해 주고 Azure 도구 200여 개를 연결합니다.",
+      "when": "Azure를 쓰는 개발자·운영자. Azure 계정, Node.js, Azure CLI 로그인이 필요한 개발자용 도구입니다",
+      "level": 3,
+      "color": "#d6e4f0",
+      "repo": "https://github.com/microsoft/azure-skills",
+      "install": {
+        "kind": "plugin",
+        "name": "azure@azure-skills",
+        "market": "microsoft/azure-skills"
+      },
+      "trust": {
+        "grade": "official",
+        "reasons": [
+          "Microsoft 공식 저장소, Claude 공식 플러그인 마켓에도 등록",
+          "설치 58만 건"
+        ]
+      },
+      "tips": [
+        "\"이 앱을 Azure에 배포하려면 어떤 서비스가 맞는지 정리하고 준비해 줘\"",
+        "\"지난달 Azure 비용이 왜 늘었는지 진단해 줘\""
+      ],
+      "added": "2026-10-31",
+      "sh_source": "microsoft/azure-skills",
+      "status": "published",
+      "stars": 1604,
+      "pushed_at": "2026-10-30T17:07:19Z",
+      "sh_installs": 584956,
+      "sh_week": 9841,
+      "plat": [
+        "claude-code"
+      ],
+      "installs": 0,
+      "readme_ko": [
+        {
+          "h": "이게 뭔가요?",
+          "p": "마이크로소프트가 만든 Azure 클라우드용 플러그인입니다. 'Azure 작업은 코드 문제가 아니라 결정 문제'라는 생각으로, 어떤 서비스를 쓸지·배포 전 무엇을 검증할지 같은 판단 지침(스킬)과, 실제로 Azure 자원을 조회·조작하는 도구(Azure MCP 서버, 200개 이상)를 한 번에 설치합니다. Microsoft Foundry용 AI 모델 도구도 포함됩니다."
+        },
+        {
+          "h": "안에 뭐가 있나요?",
+          "p": "빌드·배포(azure-prepare, azure-validate, azure-deploy, azure-kubernetes 등), 진단·모니터링·거버넌스(azure-diagnostics, azure-compliance, azure-quotas 등), 비용·아키텍처 최적화(azure-cost, azure-compute, azure-cloud-migrate 등), 데이터·AI·인증(azure-ai, azure-storage, azure-rbac, microsoft-foundry 등) 스킬이 들어 있습니다."
+        },
+        {
+          "h": "준비물",
+          "p": "Azure 계정, Node.js 18 이상, Azure CLI(az login 완료), 배포까지 하려면 Azure Developer CLI(azd auth login)가 필요합니다. Claude Code에서는 /plugin install azure@claude-plugins-official 로도 설치할 수 있습니다."
+        },
+        {
+          "h": "주의할 점",
+          "p": "실제 클라우드 자원을 만들고 지울 수 있으므로 비용이 발생할 수 있습니다. 클라우드 운영 경험이 있는 사람을 위한 도구입니다."
+        }
+      ]
+    },
+    {
+      "id": "google-agents-cli",
+      "kind": "skill",
+      "cat": "dev",
+      "name": "구글 에이전트 CLI (Gemini 플랫폼)",
+      "en": "Google agents-cli",
+      "one": "구글 클라우드의 Gemini 플랫폼 위에 AI 에이전트를 만들고, 평가하고, 배포하는 전 과정을 Claude가 대신 익혀서 진행해 줍니다.",
+      "when": "구글 클라우드에서 AI 에이전트를 만들려는 개발자. Python 3.11, uv, Node.js, 구글 클라우드 계정이 필요한 개발자용 도구입니다",
+      "level": 3,
+      "color": "#d6e4f0",
+      "repo": "https://github.com/google/agents-cli",
+      "install": {
+        "kind": "skill",
+        "repo": "google/agents-cli"
+      },
+      "trust": {
+        "grade": "official",
+        "reasons": [
+          "Google 공식 저장소, 설치 53만 건",
+          "PyPI 패키지 google-agents-cli와 함께 배포"
+        ]
+      },
+      "tips": [
+        "\"agents-cli로 고객 문의를 분류해 주는 에이전트 만들어서 배포해 줘\"",
+        "\"방금 만든 에이전트 평가 데이터셋 만들어서 점수 매겨 줘\""
+      ],
+      "added": "2026-10-31",
+      "sh_source": "google/agents-cli",
+      "status": "published",
+      "stars": 6242,
+      "pushed_at": "2026-10-27T10:30:55Z",
+      "sh_installs": 529897,
+      "sh_week": 13327,
+      "plat": [
+        "claude-code"
+      ],
+      "installs": 0,
+      "readme_ko": [
+        {
+          "h": "이게 뭔가요?",
+          "p": "구글이 만든 'Gemini 플랫폼용 에이전트 개발 CLI와 스킬'입니다. 내가 쓰는 코딩 도우미(Claude Code, Codex, Antigravity 등)에 구글 클라우드 위에서 기업용 에이전트를 만들고, 키우고, 관리하는 전문 지식을 넣어 줍니다."
+        },
+        {
+          "h": "안에 뭐가 있나요?",
+          "p": "google-agents-cli-workflow(개발 수명주기와 모델 선택), -adk-code(ADK 파이썬 API로 에이전트·도구·상태 작성), -scaffold(프로젝트 생성·업그레이드), -eval(평가 방법: 지표, 데이터셋, LLM 심사), -deploy(Agent Runtime, Cloud Run, GKE 배포와 CI/CD), -publish(Gemini 등록), -observability(추적·로그) 7개 스킬이 있습니다."
+        },
+        {
+          "h": "쓰는 법",
+          "p": "uvx google-agents-cli setup 으로 CLI와 스킬을 함께 설치하거나 스킬만 설치한 뒤, \"agents-cli로 ~하는 에이전트 만들어 줘\"라고 말합니다. agents-cli create, eval run, deploy, publish gemini 등 명령을 Claude가 대신 실행합니다."
+        },
+        {
+          "h": "주의할 점",
+          "p": "Python 3.11 이상, uv, Node.js가 필요하고 구글 클라우드 로그인이 필요합니다. 배포하면 클라우드 비용이 발생할 수 있습니다."
+        }
+      ]
+    },
+    {
+      "id": "rigorpilot",
+      "kind": "skill",
+      "cat": "data",
+      "name": "리거파일럿 (연구 코드 재현)",
+      "en": "RigorPilot Skills",
+      "one": "논문에 딸려 나온 코드 저장소를 README대로 실제로 실행해 보고, 어디까지 되는지 증거를 붙여 정리해 줍니다.",
+      "when": "논문 코드가 진짜 돌아가는지 확인해야 하는 연구자·대학원생. Python 환경을 다룰 수 있어야 합니다",
+      "level": 3,
+      "color": "#d6f0e8",
+      "repo": "https://github.com/lllllllama/rigorpilot-skills",
+      "install": {
+        "kind": "skill",
+        "repo": "lllllllama/rigorpilot-skills"
+      },
+      "trust": {
+        "grade": "community",
+        "reasons": [
+          "개인 개발자 저장소, 설치 48만 건",
+          "결과를 원문 README 옆에 덧붙이기만 하고 원본은 그대로 보존"
+        ]
+      },
+      "tips": [
+        "\"ai-research-reproduction으로 이 저장소에서 README에 적힌 가장 작은 평가를 돌려 보고 증거를 repro_outputs/에 남겨 줘. 큰 다운로드나 긴 학습 전에는 물어봐\""
+      ],
+      "added": "2026-10-31",
+      "sh_source": "lllllllama/rigorpilot-skills",
+      "status": "published",
+      "stars": 486,
+      "pushed_at": "2026-09-23T14:14:25Z",
+      "sh_installs": 482770,
+      "sh_week": 10927,
+      "plat": [
+        "claude-code"
+      ],
+      "installs": 0,
+      "readme_ko": [
+        {
+          "h": "이게 뭔가요?",
+          "p": "연구용 코드 저장소를 README에 적힌 대로 실행하되, 범위를 제한하고 감사 가능한 증거를 남기는 스킬 모음입니다. 원본 README를 고치지 않고 섹션마다 '여기까지 확인됨' 카드를 끼워 넣고, 그 삽입 부분을 지우면 원본이 바이트 단위로 복원됩니다."
+        },
+        {
+          "h": "안에 뭐가 있나요?",
+          "p": "핵심은 ai-research-reproduction(자체 완결형 재현 스킬)이고, paper-context-resolver 같은 논문 맥락 파악용 보조 스킬들이 함께 있습니다. 결과는 색으로 표시됩니다: 초록(선택한 검사 통과), 파랑(실행 안 함), 노랑(부분), 빨강(막힘), 보라(결정 필요). 초록이 곧 논문 결과 재현을 뜻하는 건 아닙니다."
+        },
+        {
+          "h": "쓰는 법",
+          "p": "대상 저장소를 Claude Code에서 열고 \"ai-research-reproduction으로 README에 적힌 가장 작은 평가를 돌려 보고, 원본은 보존하면서 증거를 repro_outputs/에 쓰고 주석 달린 README 복사본을 만들어 줘. 큰 다운로드나 긴 학습은 먼저 물어봐\"라고 말합니다. 신뢰할 수 있는 재현이 기본이고, 탐색적 시도는 명시적 허락이 있어야 합니다."
+        },
+        {
+          "h": "주의할 점",
+          "p": "설치에 Node 22.20 이상이 필요합니다. 모델 다운로드나 학습은 시간과 용량이 크므로 스킬이 먼저 묻도록 되어 있습니다."
+        }
+      ]
+    },
+    {
+      "id": "runcomfy-skills",
+      "kind": "skill",
+      "cat": "design",
+      "name": "런컴피 AI 미디어 스킬",
+      "en": "RunComfy agent skills",
+      "one": "이미지 생성·수정, 영상 생성·편집, 립싱크, 얼굴 교체 등 수백 개 AI 모델을 RunComfy 서비스 하나로 돌리게 해 주는 스킬 묶음입니다.",
+      "when": "여러 AI 이미지·영상 모델을 한 곳에서 써 보고 싶은 크리에이터. RunComfy 계정과 CLI 설치(Node.js)가 필요하고 사용량만큼 과금됩니다",
+      "level": 2,
+      "color": "#f5d8e4",
+      "repo": "https://github.com/prime-skills/runcomfy-agent-skills",
+      "install": {
+        "kind": "skill",
+        "repo": "prime-skills/runcomfy-agent-skills"
+      },
+      "trust": {
+        "grade": "community",
+        "reasons": [
+          "RunComfy 모델을 쓰는 스킬이지만 공식 조직이 아닌 미러 저장소(agentspace-so 스킬 기반)",
+          "README는 짧고, 각 스킬 폴더의 SKILL.md에 설명이 있음. 설치 44만 건"
+        ]
+      },
+      "tips": [
+        "\"이 사진을 자연스럽게 움직이는 5초 영상으로 만들어 줘\"",
+        "\"이 영상 배경을 해변으로 바꿔 줘\""
+      ],
+      "added": "2026-10-31",
+      "sh_source": "prime-skills/runcomfy-agent-skills",
+      "status": "published",
+      "stars": 62,
+      "pushed_at": "2026-05-15T10:59:51Z",
+      "sh_installs": 442085,
+      "sh_week": 3237,
+      "plat": [
+        "claude-code"
+      ],
+      "installs": 0,
+      "readme_ko": [
+        {
+          "h": "이게 뭔가요?",
+          "p": "RunComfy라는 AI 미디어 플랫폼의 모델들을 Claude에서 바로 쓰게 해 주는 스킬 모음입니다. README 자체는 '한 번에 하나씩 올려 skills.sh 색인을 확인하고 있다'는 짧은 안내뿐이고, 실제 설명은 각 스킬 폴더의 SKILL.md에 있습니다."
+        },
+        {
+          "h": "안에 뭐가 있나요?",
+          "p": "runcomfy-cli(모든 스킬의 바탕. 설치·로그인·모델 실행 방법), ai-image-generation, ai-video-generation, image-to-video, video-edit(의도에 맞춰 Wan 2.7·Kling·Lucy Edit 중 모델을 골라 줌), image-edit, lipsync, face-swap, image-inpainting/outpainting, video-extend, controlnet-pose, relight, nano-banana-2, gpt-image-2, kling-3-0, seedance-v2, wan-2-7 등 30개 안팎의 모델별·용도별 스킬이 있습니다."
+        },
+        {
+          "h": "쓰는 법",
+          "p": "npm i -g @runcomfy/cli 로 CLI를 설치하고 runcomfy login 으로 브라우저 로그인한 뒤, \"이 사진을 5초 영상으로 만들어 줘\"처럼 말하면 스킬이 적절한 모델을 골라 runcomfy run 명령을 실행하고 결과 파일을 내려받습니다."
+        },
+        {
+          "h": "주의할 점",
+          "p": "모델 실행은 초 단위로 과금됩니다. 설치 스크립트를 셸에 바로 흘려 넣지 말고 npm으로 설치하라고 스킬 자체가 권고합니다. 같은 내용의 저장소가 gencraft-labs/skills 이름으로도 있습니다."
+        }
+      ]
+    },
+    {
+      "id": "emil-design-skills",
+      "kind": "skill",
+      "cat": "design",
+      "name": "에밀의 애니메이션·디자인 감각",
+      "en": "Emil Kowalski skills",
+      "one": "버튼이 나타나는 속도, 그림자 두께 같은 '미묘한 디자인 감각'을 Vercel·Linear 출신 디자이너의 기준으로 Claude에 심어 화면이 세련돼지게 합니다.",
+      "when": "AI가 만든 웹 화면이 어딘가 어설퍼 보이는 사람. 웹 코드(CSS/React)가 있는 프로젝트에서 효과가 납니다",
+      "level": 2,
+      "color": "#e0d6f0",
+      "repo": "https://github.com/emilkowalski/skills",
+      "install": {
+        "kind": "skill",
+        "repo": "emilkowalski/skills"
+      },
+      "trust": {
+        "grade": "community",
+        "reasons": [
+          "Vercel·Linear에서 일한 디자인 엔지니어 Emil Kowalski 개인 저장소",
+          "설치 40만 건, 유명 토스트 라이브러리 Sonner 제작자"
+        ]
+      },
+      "tips": [
+        "\"review-animations로 우리 사이트 애니메이션 전부 검토해 줘\"",
+        "\"break-ui로 이름이 아주 길거나 목록이 비어 있을 때 화면이 깨지는지 확인해 줘\""
+      ],
+      "added": "2026-10-31",
+      "sh_source": "emilkowalski/skills",
+      "status": "published",
+      "stars": 52089,
+      "pushed_at": "2026-10-28T18:25:52Z",
+      "sh_installs": 403319,
+      "sh_week": 21425,
+      "plat": [
+        "claude-code"
+      ],
+      "installs": 0,
+      "readme_ko": [
+        {
+          "h": "이게 뭔가요?",
+          "p": "Vercel과 Linear에서 일한 디자인 엔지니어 Emil Kowalski가 만든 '디자이너와 엔지니어를 위한 스킬'입니다. 에이전트는 등장 애니메이션에 ease-in을 쓰거나 반투명 그림자 대신 딱딱한 테두리를 고르는 식의 작은 실수를 반복하는데, 이런 실수 목록과 고치는 법을 담아 더 나은 인터페이스를 만들게 합니다."
+        },
+        {
+          "h": "안에 뭐가 있나요?",
+          "p": "emil-design-eng(애니메이션 중심의 본체 스킬), animate(올바른 곡선·시간·속성으로 애니메이션 작성), animate-expo(React Native/Expo용), review-animations(엄격한 검토), improve-animations(코드베이스 전체 애니메이션 점검과 개선 계획), find-animation-opportunities와 remove-animations(움직임을 넣을 곳·뺄 곳), animation-performance(끊김 해결), animation-vocabulary(AI에 애니메이션을 정확히 요구하는 용어), apple-design(애플 WWDC 디자인 원칙), write-swift, pick-ui-library(믿을 만한 라이브러리 선택), prototype(여러 버전 만들어 비교), mobile-native(웹앱을 폰에서 앱처럼), break-ui(극단적 데이터로 UI 깨기 테스트), ask-sonner."
+        },
+        {
+          "h": "쓰는 법",
+          "p": "설치 뒤 \"이 모달 열리는 애니메이션 검토해 줘\", \"prototype으로 이 카드 디자인 3가지 버전 만들어 줘\"처럼 말합니다. 작성자는 AI가 전문성을 대체하는 게 아니라 증폭시킨다고 강조합니다."
+        }
+      ]
+    },
+    {
+      "id": "prisma-skills",
+      "kind": "skill",
+      "cat": "dev",
+      "name": "프리즈마 데이터베이스 스킬",
+      "en": "Prisma Skills",
+      "one": "데이터베이스 도구 Prisma(ORM 7/8), Prisma Postgres, Prisma Compute 배포를 올바르게 쓰는 공식 설명서를 Claude에 넣어 줍니다.",
+      "when": "Prisma로 데이터베이스를 다루는 개발자. 코드와 DB 지식이 필요한 개발자용 도구입니다",
+      "level": 3,
+      "color": "#d6dcf0",
+      "repo": "https://github.com/prisma/skills",
+      "install": {
+        "kind": "skill",
+        "repo": "prisma/skills"
+      },
+      "trust": {
+        "grade": "official",
+        "reasons": [
+          "Prisma 공식 저장소, 설치 40만 건",
+          "Agent Skills 표준 형식"
+        ]
+      },
+      "tips": [
+        "\"prisma-upgrade-v7로 이 프로젝트를 Prisma 7로 올려 줘\"",
+        "\"데이터베이스가 필요한데 아직 없어. Prisma Postgres로 만들어서 연결해 줘\""
+      ],
+      "added": "2026-10-31",
+      "sh_source": "prisma/skills",
+      "status": "published",
+      "stars": 77,
+      "pushed_at": "2026-10-30T14:47:15Z",
+      "sh_installs": 403008,
+      "sh_week": 17450,
+      "plat": [
+        "claude-code"
+      ],
+      "installs": 0,
+      "readme_ko": [
+        {
+          "h": "이게 뭔가요?",
+          "p": "데이터베이스 ORM인 Prisma와 Prisma Postgres, 앱 배포 서비스 Prisma Compute를 위한 공식 스킬 모음입니다. Claude가 Prisma 명령과 API를 정확하게 쓰게 하는 포장된 설명서입니다."
+        },
+        {
+          "h": "안에 뭐가 있나요?",
+          "p": "prisma-cli(ORM 7 명령: init, migrate, db push, studio 등), prisma-upgrade-v7(v6→v7 변경점 단계별 안내), prisma-mongodb-upgrade(MongoDB 프로젝트의 선택지), prisma-client-api(쿼리·트랜잭션·raw SQL 참고서), prisma-driver-adapter-implementation(어댑터 개발), prisma-orm-setup(Prisma 8 설정과 기존 버전 유지), prisma-postgres-setup(DB가 없을 때 만들고 연결), prisma-compute(배포, 로그, 롤백, 환경변수, 도메인)."
+        },
+        {
+          "h": "쓰는 법",
+          "p": "설치 뒤 \"Prisma 7로 업그레이드해 줘\", \"DB 필요해\" 같은 요청을 하면 맞는 스킬이 자동으로 쓰입니다. Vercel에 배포하는 프로젝트에선 Vercel 플러그인 설치를 제안하되 사용자 동의를 받고 설치합니다."
+        },
+        {
+          "h": "주의할 점",
+          "p": "데이터베이스 마이그레이션은 데이터에 영향을 줄 수 있으니 백업 후 진행하세요. 개발자용 도구입니다."
+        }
+      ]
+    },
+    {
+      "id": "impeccable",
+      "kind": "skill",
+      "cat": "design",
+      "name": "임페커블 (디자인 지시어 24개)",
+      "en": "Impeccable",
+      "one": "\"더 과감하게\", \"차분하게\", \"다듬어\", \"점검해\" 같은 디자인 지시어 24개를 Claude가 알아듣게 해서 흔한 'AI 티 나는 디자인'을 잡아 줍니다.",
+      "when": "AI가 만든 웹 화면이 다 비슷비슷하게 느껴지는 사람. 웹 프로젝트 폴더에서 씁니다",
+      "level": 2,
+      "color": "#f5d8e4",
+      "repo": "https://github.com/pbakaus/impeccable",
+      "install": {
+        "kind": "plugin",
+        "name": "impeccable@impeccable",
+        "market": "pbakaus/impeccable"
+      },
+      "trust": {
+        "grade": "community",
+        "reasons": [
+          "전 Google 개발자 Paul Bakaus 개인 프로젝트, 설치 37만 건",
+          "규칙 기반 '슬롭 탐지기' 62개는 AI·API 키 없이 동작"
+        ]
+      },
+      "tips": [
+        "\"/impeccable critique 가격표 카드\"",
+        "\"/impeccable polish 설정 화면\""
+      ],
+      "added": "2026-10-31",
+      "sh_source": "pbakaus/impeccable",
+      "status": "published",
+      "stars": 97275,
+      "pushed_at": "2026-10-30T17:36:40Z",
+      "sh_installs": 374445,
+      "sh_week": 16661,
+      "plat": [
+        "claude-code"
+      ],
+      "installs": 0,
+      "readme_ko": [
+        {
+          "h": "이게 뭔가요?",
+          "p": "코딩 에이전트를 위한 '디자인 어휘'입니다. \"멋지게 해 줘\"는 에이전트가 추측하게 만들지만, /impeccable bolder 가격 카드 처럼 말하면 그 동작 하나를 위해 쓰인 지침서를 불러와 지정한 대상에만 적용합니다. 어디서나 보이는 Inter 글꼴, 보라-파랑 그라데이션, 카드 안의 카드 같은 'AI 슬롭' 특징을 잡아내는 규칙 62개도 들어 있습니다."
+        },
+        {
+          "h": "안에 뭐가 있나요?",
+          "p": "조정: bolder, quieter, distill, colorize, typeset, layout, animate, delight, overdrive. 검토: critique(사용성 점수 매기기), audit(접근성·성능·테마·반응형을 P0~P3로 등급화). 마무리: polish, harden, clarify, adapt, optimize, onboard. 실시간: live, generate. 준비: shape, init, document, extract. 총 24개 명령입니다."
+        },
+        {
+          "h": "쓰는 법",
+          "p": "프로젝트마다 /impeccable init 을 한 번 실행하면 코드를 읽고 몇 가지만 물어 PRODUCT.md를 씁니다. /impeccable document 는 기존 비주얼 체계를 DESIGN.md로 남겨 브랜드가 흐트러지지 않게 합니다. 그다음 /impeccable critique 온보딩 화면 처럼 '명령 + 대상'으로 부릅니다. 대상을 좁게 잡을수록 결과가 좋습니다."
+        },
+        {
+          "h": "주의할 점",
+          "p": "이미 존재하는 화면을 다듬는 데 가장 강하고, 새 페이지를 처음부터 만드는 것은 더 어려운 모드라고 문서가 밝힙니다."
+        }
+      ]
+    },
+    {
+      "id": "orca-skills",
+      "kind": "skill",
+      "cat": "auto",
+      "name": "오르카 (여러 AI 에이전트 지휘)",
+      "en": "Orca skills",
+      "one": "Codex·Claude Code 등을 나란히 띄워 각자 작업 공간에서 돌리는 Orca 앱을 Claude가 명령줄로 조작하게 해 주는 스킬입니다.",
+      "when": "Orca 데스크톱 앱을 이미 쓰는 개발자. Orca가 설치돼 있어야만 동작하는 개발자용 도구입니다",
+      "level": 3,
+      "color": "#d6e4f5",
+      "repo": "https://github.com/stablyai/orca",
+      "install": {
+        "kind": "skill",
+        "repo": "stablyai/orca"
+      },
+      "trust": {
+        "grade": "official",
+        "reasons": [
+          "Orca를 만든 Stably AI의 공식 저장소, 설치 36만 건",
+          "스킬은 Orca 앱의 버전별 안내를 불러오는 연결 역할"
+        ]
+      },
+      "tips": [
+        "\"orca-cli로 이 작업을 새 worktree에서 Codex에게 넘겨 줘\"",
+        "\"지금 돌고 있는 Orca 터미널 결과 읽어서 요약해 줘\""
+      ],
+      "added": "2026-10-31",
+      "sh_source": "stablyai/orca",
+      "status": "published",
+      "stars": 111235,
+      "pushed_at": "2026-10-31T04:53:29Z",
+      "sh_installs": 356587,
+      "sh_week": 31412,
+      "plat": [
+        "claude-code"
+      ],
+      "installs": 0,
+      "readme_ko": [
+        {
+          "h": "이게 뭔가요?",
+          "p": "Orca는 Codex, Claude Code, OpenCode, Pi 같은 코딩 에이전트를 나란히 실행하되 각각 독립된 git worktree에 격리하고 한 곳에서 추적하는 데스크톱 앱(IDE)입니다. 같은 요청을 에이전트 다섯에 뿌려 결과를 비교하고 가장 좋은 것을 합치는 식의 작업, 터미널 분할, 브라우저에서 UI 요소를 클릭해 프롬프트로 보내는 디자인 모드, GitHub·Linear 연동, 휴대폰 동반 앱 등을 제공합니다."
+        },
+        {
+          "h": "스킬은 무엇을 하나요?",
+          "p": "저장소의 skills 폴더에 orca-cli(Orca가 관리하는 worktree·터미널·브라우저를 orca 명령으로 조작), orchestration(에이전트 지휘), computer-use, orca-linear, orca-jira, orca-emulator 등이 있습니다. 각 스킬은 '발견용 스텁'으로, 실제 안내는 현재 설치된 Orca 실행 파일에서 버전에 맞게 불러옵니다(ORCA skills get orca-cli)."
+        },
+        {
+          "h": "주의할 점",
+          "p": "Orca 앱이 설치돼 있지 않으면 스킬이 할 수 있는 일이 없습니다. 리눅스에서는 bare orca 명령이 GNOME 화면 읽기 프로그램과 겹치므로 orca-ide를 쓰라고 안내합니다."
+        }
+      ]
+    },
+    {
+      "id": "neon-skills",
+      "kind": "skill",
+      "cat": "dev",
+      "name": "네온 포스트그레스 스킬",
+      "en": "Neon Agent Skills",
+      "one": "클라우드 데이터베이스 Neon(Lakebase Postgres)과 인증·파일 저장·함수·AI 게이트웨이를 올바르게 쓰는 공식 안내를 Claude에 넣어 줍니다.",
+      "when": "Neon으로 데이터베이스를 쓰는 개발자. DB 지식이 필요한 개발자용 도구입니다",
+      "level": 3,
+      "color": "#cfe6d6",
+      "repo": "https://github.com/neondatabase/agent-skills",
+      "install": {
+        "kind": "plugin",
+        "name": "neon-postgres@neon",
+        "market": "neondatabase/agent-skills"
+      },
+      "trust": {
+        "grade": "official",
+        "reasons": [
+          "Neon(Databricks 소속) 공식 저장소, 설치 30만 건",
+          "Claude 플러그인 마켓 제공"
+        ]
+      },
+      "tips": [
+        "\"neon-postgres 가이드대로 이 앱에 Neon DB 연결해 줘\"",
+        "\"DB 전송 비용이 왜 높은지 neon-postgres-egress-optimizer로 진단해 줘\""
+      ],
+      "added": "2026-10-31",
+      "sh_source": "neondatabase/agent-skills",
+      "status": "published",
+      "stars": 108,
+      "pushed_at": "2026-10-30T22:41:45Z",
+      "sh_installs": 296472,
+      "sh_week": 21499,
+      "plat": [
+        "claude-code"
+      ],
+      "installs": 0,
+      "readme_ko": [
+        {
+          "h": "이게 뭔가요?",
+          "p": "Databricks 산하 Neon이 제공하는 에이전트 스킬 모음입니다. Neon은 Lakebase Postgres를 중심으로 인증, 실시간, 파일 저장, 함수, Data API, AI 게이트웨이를 묶은 클라우드 백엔드이며, 이 스킬들은 Claude가 그것들을 정확히 쓰도록 하는 설명서입니다."
+        },
+        {
+          "h": "안에 뭐가 있나요?",
+          "p": "neon(전체 개요와 시작법, 계정 없이 쓰는 Claimable Neon 포함), neon-postgres(Postgres 문서와 모범 사례 색인), neon-auth(Managed Better Auth 로그인·세션), neon-postgres-branches(마이그레이션 테스트용 브랜치 선택), neon-postgres-egress-optimizer(과도한 데이터 전송 비용 진단), neon-object-storage(S3 호환 저장소), neon-ai-gateway(여러 LLM을 하나의 API로), neon-functions(서버리스 Node.js 함수), 그리고 에이전트 플랫폼용 스킬."
+        },
+        {
+          "h": "쓰는 법",
+          "p": "설치하면 관련 작업을 감지해 자동으로 쓰입니다. \"Neon에 데이터베이스 만들어서 연결해 줘\", \"브랜치 만들어서 마이그레이션 테스트해 줘\" 같은 요청에 반응합니다."
+        },
+        {
+          "h": "주의할 점",
+          "p": "클라우드 자원을 만들면 비용이 생길 수 있습니다. 개발자용입니다."
+        }
+      ]
+    },
+    {
+      "id": "just-scrape",
+      "kind": "skill",
+      "cat": "data",
+      "name": "저스트 스크레이프 (웹페이지 긁어오기)",
+      "en": "just-scrape (ScrapeGraphAI CLI)",
+      "one": "웹페이지 주소를 주면 본문을 텍스트로 뽑고, \"상품명과 가격 뽑아 줘\"처럼 말로 원하는 표 데이터를 추출해 줍니다.",
+      "when": "여러 사이트의 정보를 모아 정리해야 하는 사람. ScrapeGraphAI API 키(유료 크레딧)와 Node.js 22가 필요합니다",
+      "level": 2,
+      "color": "#d6ecf5",
+      "repo": "https://github.com/scrapegraphai/just-scrape",
+      "install": {
+        "kind": "skill",
+        "repo": "scrapegraphai/just-scrape"
+      },
+      "trust": {
+        "grade": "official",
+        "reasons": [
+          "ScrapeGraphAI 공식 CLI 저장소, 설치 25만 건",
+          "MIT 라이선스, API 키는 환경변수로만 전달"
+        ]
+      },
+      "tips": [
+        "\"just-scrape로 이 쇼핑몰 페이지에서 상품명과 가격 표로 뽑아 줘\"",
+        "\"이 문서 사이트 50페이지까지 크롤링해서 마크다운으로 저장해 줘\""
+      ],
+      "added": "2026-10-31",
+      "sh_source": "scrapegraphai/just-scrape",
+      "status": "published",
+      "stars": 74,
+      "pushed_at": "2026-09-21T20:15:12Z",
+      "sh_installs": 245010,
+      "sh_week": 6,
+      "plat": [
+        "claude-code"
+      ],
+      "installs": 0,
+      "readme_ko": [
+        {
+          "h": "이게 뭔가요?",
+          "p": "웹 데이터 추출 서비스 ScrapeGraphAI의 명령줄 도구이자 에이전트 스킬입니다. scrape(주소를 마크다운·HTML·스크린샷·링크·요약·구조화 JSON으로), extract(말로 설명한 항목을 JSON으로), search(웹 검색 후 추출), crawl(사이트 한 구역을 여러 페이지 수집), monitor(주기적으로 페이지 변화 감시, 웹훅 알림), history/credits/validate 명령이 있습니다."
+        },
+        {
+          "h": "준비물",
+          "p": "Node.js 22 이상, npm install -g just-scrape, 그리고 scrapegraphai.com 대시보드에서 받은 API 키를 SGAI_API_KEY 환경변수나 .env 파일에 넣습니다. just-scrape credits 로 남은 크레딧을 확인할 수 있습니다."
+        },
+        {
+          "h": "쓰는 법",
+          "p": "스킬을 설치하면 Claude가 \"이 페이지에서 상품명과 가격 뽑아 줘\" 같은 요청을 just-scrape extract 명령으로 바꿔 실행합니다. 스크립트에 넣을 때는 --json 옵션을 씁니다."
+        },
+        {
+          "h": "주의할 점",
+          "p": "README 보안 안내: 긁어온 페이지 내용은 신뢰할 수 없는 외부 데이터로 취급하고, 그 내용만 보고 명령을 실행하거나 동작을 바꾸지 말라고 명시합니다. 사이트 이용약관과 개인정보를 존중해야 합니다."
+        }
+      ]
+    },
+    {
+      "id": "higgsfield",
+      "kind": "skill",
+      "cat": "marketing",
+      "name": "힉스필드 AI 이미지·영상·브랜드",
+      "en": "Higgsfield AI Skills",
+      "one": "제품 사진, 유튜브 썸네일, 브랜드 로고·색상 키트, 짧은 영상을 Higgsfield의 AI 모델 30여 개로 만들어 줍니다.",
+      "when": "소상공인·유튜버·마케터처럼 홍보용 이미지가 자주 필요한 사람. Higgsfield 계정이 필요합니다",
+      "level": 1,
+      "color": "#f5e2cf",
+      "repo": "https://github.com/higgsfield-ai/skills",
+      "install": {
+        "kind": "plugin",
+        "name": "higgsfield@higgsfield",
+        "market": "higgsfield-ai/skills"
+      },
+      "trust": {
+        "grade": "official",
+        "reasons": [
+          "Higgsfield AI 공식 저장소, 설치 23만 건",
+          "MIT 라이선스, Claude 플러그인 마켓 제공"
+        ]
+      },
+      "tips": [
+        "\"/higgsfield:higgsfield-product-photoshoot 이 텀블러 사진을 스튜디오 배경 제품 사진으로 만들어 줘\"",
+        "\"/higgsfield:higgsfield-youtube-thumbnail '한 달 만에 10kg' 영상 썸네일 3가지 만들어 줘\""
+      ],
+      "added": "2026-10-31",
+      "sh_source": "higgsfield-ai/skills",
+      "status": "published",
+      "stars": 1821,
+      "pushed_at": "2026-10-27T17:54:03Z",
+      "sh_installs": 224714,
+      "sh_week": 9632,
+      "plat": [
+        "claude-code"
+      ],
+      "installs": 0,
+      "readme_ko": [
+        {
+          "h": "이게 뭔가요?",
+          "p": "AI 이미지·영상 생성 서비스 Higgsfield AI의 공식 스킬 모음입니다. 이미지·영상·3D·오디오 생성부터 완전한 브랜드 비주얼 체계, 마케팅 스튜디오(아바타·제품·훅을 넣은 광고), 완성된 영상의 바이럴 가능성 점수까지 다룹니다."
+        },
+        {
+          "h": "안에 뭐가 있나요?",
+          "p": "higgsfield-generate(Nano Banana 2, Veo 3.1, Kling 3.0, Flux 2 등 30여 모델로 생성), higgsfield-soul-id(얼굴이 일정한 캐릭터 학습), higgsfield-product-photoshoot(스튜디오·라이프스타일·핀터레스트·히어로 배너·가상 착용 등 10가지 모드 제품 사진), higgsfield-brandkit(팔레트, SVG 로고, 글꼴, 목업, SNS 그래픽, 브랜드북 PPTX/PDF), higgsfield-marketplace-cards(오픈마켓 상품 이미지), higgsfield-websites(웹사이트 생성·배포), higgsfield-faceless-video(얼굴 없는 설명 영상), higgsfield-youtube-thumbnail(과장 없는 고효과 썸네일)."
+        },
+        {
+          "h": "쓰는 법",
+          "p": "설치 과정에서 Higgsfield CLI 설치와 로그인이 함께 진행됩니다. Claude Code에서는 /higgsfield:higgsfield-generate 처럼 부르거나 그냥 \"제품 사진 만들어 줘\"라고 말하면 됩니다. 스킬끼리 이어집니다: 캐릭터 학습 → 그 캐릭터로 생성, 브랜드킷 → 웹사이트에 반영 등."
+        },
+        {
+          "h": "주의할 점",
+          "p": "생성에는 Higgsfield 크레딧이 소모됩니다. 썸네일 스킬은 '사실에 맞는(truthful)' 썸네일을 만드는 것을 원칙으로 합니다."
+        }
+      ]
+    },
+    {
+      "id": "uizze",
+      "kind": "skill",
+      "cat": "design",
+      "name": "유이지 (실제 앱 화면 80만 장 참고 UI)",
+      "en": "UIZZE",
+      "one": "내 서비스답게 보이는 화면을 만들도록 UI 작업 순서를 잡아 주고, 스크린샷 한 장을 똑같이 구현해 주는(image-to-ui) 디자인 스킬 모음입니다.",
+      "when": "AI가 만든 화면이 '어디서 본 듯한 템플릿' 같아서 고민인 사람. 기본 스킬은 계정 없이 쓰고, 실제 앱 화면 검색은 유료 MCP가 필요합니다",
+      "level": 2,
+      "color": "#f5d8e4",
+      "repo": "https://github.com/uizze/uizze",
+      "install": {
+        "kind": "plugin",
+        "name": "uizze@uizze",
+        "market": "uizze/uizze"
+      },
+      "trust": {
+        "grade": "official",
+        "reasons": [
+          "UIZZE 공식 저장소, 설치 22만 건",
+          "MIT/Apache-2.0 라이선스, 로컬 작업은 계정 불필요"
+        ]
+      },
+      "tips": [
+        "\"image-to-ui로 이 스크린샷을 우리 앱에 1:1로 구현해 줘. 새로 디자인하지 말고 같은 화면 크기에서 비교해서 차이를 고쳐 줘\"",
+        "\"ui-design으로 결제 설정 페이지 개선해 줘. 로딩·빈 화면·오류 상태도 포함해서\""
+      ],
+      "added": "2026-10-31",
+      "sh_source": "uizze/uizze",
+      "status": "published",
+      "stars": 78,
+      "pushed_at": "2026-10-24T21:28:23Z",
+      "sh_installs": 219299,
+      "sh_week": 89282,
+      "plat": [
+        "claude-code"
+      ],
+      "installs": 0,
+      "readme_ko": [
+        {
+          "h": "이게 뭔가요?",
+          "p": "'코딩 에이전트를 위한 더 나은 UI'를 내건 UIZZE의 스킬 모음입니다. Codex, Claude Code, Cursor, Copilot에 집중된 UI 작업 흐름을 주고, 원하면 실제 웹·iOS 화면 80만 장 이상을 참고 자료로 연결합니다."
+        },
+        {
+          "h": "안에 뭐가 있나요?",
+          "p": "uizze-ui(공식 UI 팩: 내 프로젝트 코드와 디자인 토큰을 바탕으로 디자인 시스템, 실제 앱 예시, 글꼴·아이콘·모션 활용), ui-design(명확한 위계와 필요한 상태를 갖춘 화면 만들기·개선), anti-ui-slop(뻔한 첫 초안을 제품 맞춤으로 고치고 마감 검토), ui-radar(디자인 결정 조사, 유료 MCP 연결 시 실시간 검색), image-to-ui(이미지·스크린샷을 같은 화면 크기에서 비교하며 1:1 구현). UI Taste와 iOS Design 스킬은 uizze.sh에서 별도 배포됩니다."
+        },
+        {
+          "h": "쓰는 법",
+          "p": "설치 뒤 구체적으로 요청합니다. README 예시: \"ui-design으로 결제 설정 페이지를 개선해 줘. 현재 요금제·결제 수단·청구서를 한눈에 보이게, 우리 컴포넌트와 디자인 토큰을 재사용하고, 로딩·빈 화면·오류·권한 상태를 포함하고, 데스크톱과 모바일 크기에서 확인해 깨지는 걸 고쳐 줘.\""
+        },
+        {
+          "h": "주의할 점",
+          "p": "로컬 UI 작업은 계정이나 MCP 연결 없이 됩니다. 실제 제품 화면 검색(참고 자료 검색)은 유료 MCP입니다. PR 검사용 GitHub Action도 제공합니다."
+        }
+      ]
+    },
+    {
+      "id": "archify",
+      "kind": "skill",
+      "cat": "docs",
+      "name": "아키파이 (말하면 인터랙티브 다이어그램)",
+      "en": "Archify",
+      "one": "여행 일정, 공부 계획, 시스템 구조 등 무엇이든 말로 설명하면 클릭하며 탐색할 수 있는 HTML 다이어그램으로 만들어 줍니다.",
+      "when": "복잡한 것을 그림으로 정리해서 공유하고 싶은 사람. Node.js가 있으면 그림 생성과 검증까지 됩니다",
+      "level": 1,
+      "color": "#d6e4f0",
+      "repo": "https://github.com/tt-a1i/archify",
+      "install": {
+        "kind": "skill",
+        "repo": "tt-a1i/archify"
+      },
+      "trust": {
+        "grade": "community",
+        "reasons": [
+          "개인 개발자 저장소지만 무료 오픈소스, 설치 19만 건",
+          "한국어 README 제공. 제3자 유료 서비스는 Archify와 무관하다고 명시"
+        ]
+      },
+      "tips": [
+        "\"Archify로 우리 가족 제주 3박4일 일정을 지도처럼 그려 줘\"",
+        "\"Archify로 이 저장소의 요청 처리 흐름을 다이어그램으로 그리고 캐시 미스 경로를 강조해 줘\""
+      ],
+      "added": "2026-10-31",
+      "sh_source": "tt-a1i/archify",
+      "status": "published",
+      "stars": 91887,
+      "pushed_at": "2026-10-31T04:46:49Z",
+      "sh_installs": 185443,
+      "sh_week": 13659,
+      "plat": [
+        "claude-code"
+      ],
+      "installs": 0,
+      "readme_ko": [
+        {
+          "h": "이게 뭔가요?",
+          "p": "이해하거나 계획하거나 공유하고 싶은 것을 인터랙티브 비주얼로 바꿔 주는 무료 오픈소스 스킬입니다. 아이디어·질문·계획을 말로 설명하면 탐색하고 꾸미고 공유할 수 있는 HTML 파일을 만듭니다. 여행 일정과 학습 지도부터 복잡한 시스템 구조까지 다룹니다. 저장소가 없어도 되고, 저장소를 읽혀 '한 문장으로 코드 지도 만들기'도 가능합니다."
+        },
+        {
+          "h": "안에 뭐가 있나요?",
+          "p": "archify(다이어그램 생성 본체, 스키마와 예시 포함)와 archify-review(검토)가 있습니다. Claude Code, Codex CLI, OpenCode에서는 전체 렌더러와 검증 흐름이 동작하고, Claude.ai에는 archify.zip을 업로드해 쓸 수도 있습니다."
+        },
+        {
+          "h": "쓰는 법",
+          "p": "설치 뒤 \"Archify로 웹 요청 흐름을 그려 줘: 브라우저가 API 호출, API가 Redis 확인, 캐시 미스면 PostgreSQL 조회 후 캐시 채움\"처럼 말하고, 이어서 \"인증 추가\", \"캐시 미스 경로 강조\", \"밝은 테마로\"라고 고쳐 나갑니다."
+        },
+        {
+          "h": "주의할 점",
+          "p": "Mermaid 자동 변환, 범용 자동 배치, 호스팅 공유, 위지윅 편집은 의도적으로 범위 밖입니다. 온라인 유료 서비스들은 제3자가 운영하며 Archify 공식이 아니라고 README가 밝힙니다."
+        }
+      ]
+    },
+    {
+      "id": "convex-skills",
+      "kind": "skill",
+      "cat": "dev",
+      "name": "컨벡스 백엔드 스킬",
+      "en": "Convex Agent Skills",
+      "one": "백엔드 플랫폼 Convex에서 새 프로젝트 시작, 로그인 기능 추가, 컴포넌트 만들기, 마이그레이션, 성능 진단을 Claude가 절차대로 하게 합니다.",
+      "when": "Convex로 앱 백엔드를 만드는 개발자. 코드 프로젝트가 필요한 개발자용 도구입니다",
+      "level": 3,
+      "color": "#d6dcf0",
+      "repo": "https://github.com/convex/agent-skills",
+      "install": {
+        "kind": "skill",
+        "repo": "convex/agent-skills"
+      },
+      "trust": {
+        "grade": "official",
+        "reasons": [
+          "Convex 공식 저장소, 설치 13만 건",
+          "Apache-2.0 라이선스"
+        ]
+      },
+      "tips": [
+        "\"/convex-setup-auth 이 앱에 로그인 기능 붙여 줘\"",
+        "\"/convex-performance-audit 느려진 원인 찾아 줘\""
+      ],
+      "added": "2026-10-31",
+      "sh_source": "convex/agent-skills",
+      "status": "published",
+      "stars": 69,
+      "pushed_at": "2026-10-29T18:08:31Z",
+      "sh_installs": 133110,
+      "sh_week": 2649,
+      "plat": [
+        "claude-code"
+      ],
+      "installs": 0,
+      "readme_ko": [
+        {
+          "h": "이게 뭔가요?",
+          "p": "백엔드 플랫폼 Convex의 공식 에이전트 스킬입니다. 배경 지식을 늘어놓는 대신 '행동'에 집중한다는 철학으로, 인증 설정·컴포넌트 제작·마이그레이션·성능 진단처럼 구체적인 작업을 완수하도록 설계됐습니다."
+        },
+        {
+          "h": "안에 뭐가 있나요?",
+          "p": "convex(진입점: Convex AI 파일 설치를 권하고 세부 스킬로 안내), convex-quickstart(새 프로젝트 시작 또는 기존 앱에 추가), convex-setup-auth(인증 설정), convex-create-component(경계가 명확한 재사용 컴포넌트), convex-migration-helper(안전한 마이그레이션 계획·실행), convex-performance-audit(성능 병목 조사)."
+        },
+        {
+          "h": "쓰는 법",
+          "p": "관련 작업을 감지하면 자동으로 쓰이고, 직접 부를 땐 Claude Code에서 /convex-setup-auth 처럼 슬래시 명령을 씁니다. 모든 스킬을 한 번에 설치하려면 --all 옵션을 씁니다."
+        },
+        {
+          "h": "주의할 점",
+          "p": "개발자용입니다. 인증 같은 UI 관련 스킬은 실제 브라우저 흐름까지 확인하라고 저장소가 권합니다."
+        }
+      ]
+    },
+    {
+      "id": "extract-design-system",
+      "kind": "skill",
+      "cat": "design",
+      "name": "디자인 시스템 추출기 (사이트 색·글꼴 뽑기)",
+      "en": "extract-design-system",
+      "one": "공개된 웹사이트 주소를 주면 그 사이트의 색상, 글꼴, 여백, 모서리 둥글기, 그림자를 분석해 내 프로젝트용 디자인 토큰 파일로 만들어 줍니다.",
+      "when": "마음에 드는 사이트 느낌을 내 사이트에 참고하고 싶은 사람. 결과는 CSS/JSON 파일이라 웹 프로젝트가 있어야 활용됩니다",
+      "level": 2,
+      "color": "#e0d6f0",
+      "repo": "https://github.com/arvindrk/extract-design-system",
+      "install": {
+        "kind": "skill",
+        "repo": "arvindrk/extract-design-system"
+      },
+      "trust": {
+        "grade": "community",
+        "reasons": [
+          "개인 개발자 저장소, 설치 13만 건",
+          "공개 사이트만 대상, 기존 코드 수정 전에 반드시 물어봄"
+        ]
+      },
+      "tips": [
+        "\"https://stripe.com 디자인 시스템 추출해서 이 프로젝트용 토큰 파일 만들어 줘\"",
+        "\"https://linear.app 분석해서 디자인 요소 요약만 먼저 보여 줘\""
+      ],
+      "added": "2026-10-31",
+      "sh_source": "arvindrk/extract-design-system",
+      "status": "published",
+      "stars": 266,
+      "pushed_at": "2026-09-05T00:23:05Z",
+      "sh_installs": 130858,
+      "sh_week": 323,
+      "plat": [
+        "claude-code"
+      ],
+      "installs": 0,
+      "readme_ko": [
+        {
+          "h": "이게 뭔가요?",
+          "p": "공개 웹사이트에서 디자인 토큰(색상, 타이포그래피, 간격, 모서리 반경, 그림자)을 역추출해 W3C 호환 tokens.json과 CSS 변수 파일 tokens.css를 만들어 주는 스킬입니다. 에이전트 스킬이자 독립 CLI이며, 스킬이 내부적으로 CLI를 실행합니다."
+        },
+        {
+          "h": "어떻게 동작하나요?",
+          "p": "대상 사이트가 공개돼 있고 접속 가능한지 확인 → 범위와 한계를 설명 → 추출 실행 → 정규화된 결과 요약 → 프로젝트에 시작용 토큰 파일 생성(.extract-design-system/raw.json, normalized.json, design-system/tokens.json, tokens.css) → 기존 코드·스타일을 바꾸기 전에는 반드시 묻습니다."
+        },
+        {
+          "h": "쓰는 법",
+          "p": "\"https://stripe.com 에서 디자인 시스템을 추출해 이 프로젝트용 시작 토큰 파일을 만들어 줘\" 또는 \"https://linear.app 를 분석해 디자인 요소를 요약한 뒤 토큰을 만들어 줘\"처럼 말합니다."
+        },
+        {
+          "h": "주의할 점",
+          "p": "공개 사이트만, 한 페이지만 다룹니다. 완전한 컴포넌트 라이브러리가 아닌 '시작용 토큰'이고, 스크립트가 많거나 보호된 사이트는 결과가 불완전할 수 있습니다. 픽셀 단위 복제가 아닌 초기화 용도입니다. 다른 사이트의 디자인을 그대로 베끼는 것은 저작권 문제가 될 수 있으니 참고용으로 쓰세요."
+        }
+      ]
+    },
+    {
+      "id": "autonnel-funnel-skills",
+      "kind": "skill",
+      "cat": "marketing",
+      "name": "세일즈 퍼널 스킬 6종 (Autonnel)",
+      "en": "Autonnel Funnel Skills",
+      "one": "\"랜딩페이지가 안 팔려요\"에 대해 영향 순으로 고칠 점을 뽑고, 판매 흐름(퍼널) 설계, 결제 후 추가 판매, 전환 추적까지 단계별로 짜 줍니다.",
+      "when": "온라인으로 상품·강의를 판매하는 1인 사업자·마케터. 서버 설치 단계(self-hosted-funnel-launch)는 개발 지식이 필요합니다",
+      "level": 1,
+      "color": "#f5e2cf",
+      "repo": "https://github.com/autonnel/autonnel-skills",
+      "install": {
+        "kind": "skill",
+        "repo": "autonnel/autonnel-skills"
+      },
+      "trust": {
+        "grade": "community",
+        "reasons": [
+          "오픈소스 퍼널 빌더 Autonnel 팀의 스킬, 설치 11만 건",
+          "자기 서비스가 답이 아닐 때도 명시한다고 README가 밝힘"
+        ]
+      },
+      "tips": [
+        "\"landing-page-conversion-audit로 우리 강의 판매 페이지 점검하고 영향 큰 순서로 고칠 점 알려 줘\"",
+        "\"sales-funnel-blueprint로 전자책 판매 퍼널 설계해 줘\""
+      ],
+      "added": "2026-10-31",
+      "sh_source": "autonnel/autonnel-skills",
+      "status": "published",
+      "stars": 5,
+      "pushed_at": "2026-10-24T05:36:46Z",
+      "sh_installs": 110483,
+      "sh_week": 8699,
+      "plat": [
+        "claude-code"
+      ],
+      "installs": 0,
+      "readme_ko": [
+        {
+          "h": "이게 뭔가요?",
+          "p": "세일즈 퍼널을 만들고 고치는 스킬 6개입니다. '랜딩페이지가 전환이 안 돼요', '이걸 온라인에서 팔아야 해요'를 에이전트가 실제로 할 수 있는 일로 바꿔 줍니다: 뻔한 체크리스트 대신 영향 순으로 정렬된 점검표, 그림이 아닌 바로 만들 수 있는 퍼널 명세, 결제 요건까지 포함한 원클릭 업셀 설계, iOS에서도 살아남는 7단계 추적 체인, 비용 교차점을 계산한 플랫폼 추천."
+        },
+        {
+          "h": "안에 뭐가 있나요?",
+          "p": "landing-page-conversion-audit(트래픽은 있는데 안 팔리는 페이지의 수정 목록), sales-funnel-blueprint(상품을 페이지별 퍼널·가격 사다리·단계별 목표로), post-purchase-upsell-flow(결제 후 추가 판매), server-side-conversion-tracking(전환이 적게 잡힐 때), funnel-platform-picker(호스팅형·플러그인·자체 호스팅 중 선택), self-hosted-funnel-launch(Autonnel 직접 설치·운영). 이 순서대로 이어 쓰면 하나의 전체 프로젝트가 됩니다."
+        },
+        {
+          "h": "주의할 점",
+          "p": "README 스스로 밝히는 것: 영업용 홍보가 아니며 자체 호스팅이 틀린 답일 때를 각 스킬이 말해 줍니다. 스킬 안의 지표 범위는 인용할 벤치마크가 아닌 출발점입니다. Autonnel 자체는 Apache-2.0 자체 호스팅 퍼널 빌더로 Cloudflare Workers에 배포합니다."
+        }
+      ]
+    },
+    {
+      "id": "review-loop",
+      "kind": "skill",
+      "cat": "work",
+      "name": "리뷰 루프 (스스로 검토하고 고치기)",
+      "en": "review-loop",
+      "one": "Claude가 작업물을 만든 뒤 별도의 '비평가'를 불러 10점 만점으로 채점받고, 기준(기본 8점)을 넘길 때까지 스스로 고치게 합니다.",
+      "when": "글·기획서·코드 어떤 것이든 첫 초안보다 다듬어진 결과를 원하는 사람. 시간과 토큰은 더 듭니다",
+      "level": 1,
+      "color": "#f0ead6",
+      "repo": "https://github.com/2dmurali/review-loop-skill",
+      "install": {
+        "kind": "skill",
+        "repo": "2dmurali/review-loop-skill"
+      },
+      "trust": {
+        "grade": "community",
+        "reasons": [
+          "개인 개발자 저장소, 설치 11만 건",
+          "SKILL.md 파일 하나로 된 단순한 구조, MIT 라이선스"
+        ]
+      },
+      "tips": [
+        "\"사업계획서 초안 써 줘. review-loop 써서\"",
+        "\"review-loop로 기준 9점, 꼼꼼하게 이 글 다듬어 줘\""
+      ],
+      "added": "2026-10-31",
+      "sh_source": "2dmurali/review-loop-skill",
+      "status": "published",
+      "stars": 6,
+      "pushed_at": "2026-05-08T01:26:31Z",
+      "sh_installs": 110029,
+      "sh_week": 2787,
+      "plat": [
+        "claude-code"
+      ],
+      "installs": 0,
+      "readme_ko": [
+        {
+          "h": "이게 뭔가요?",
+          "p": "'작업자-검토자 반복 사이클'을 구현한 스킬입니다. 첫 초안을 그대로 믿지 않고, 에이전트가 1) 작업을 하고 2) 새로운 맥락의 별도 비평가 서브에이전트를 띄워 3) 1~10점으로 구체적 피드백과 함께 채점받고 4) 그에 맞춰 고치고 5) 품질 기준(기본 8/10)을 넘길 때까지 반복합니다. 사람 검토자 없이도 버그가 줄고 명세가 탄탄해진다는 것이 목표입니다."
+        },
+        {
+          "h": "쓰는 법",
+          "p": "프롬프트에 언급만 하면 됩니다. \"결제 서비스 구현해 줘, review-loop 써서\", \"방금 쓴 인증 모듈에 review-loop 돌려 줘\", \"review-loop, 기준 9점, 꼼꼼하게\". 기본값은 최소 2회·최대 4회 반복, 기준 8점이며 \"gate 9, max 5 loops\"처럼 바로 바꿀 수 있습니다."
+        },
+        {
+          "h": "주의할 점",
+          "p": "서브에이전트를 띄울 수 있는 도우미(Claude Code, Cursor 등)에서 동작합니다. 반복할수록 시간과 비용이 늘어납니다."
+        }
+      ]
+    },
+    {
+      "id": "playwright-best-practices",
+      "kind": "skill",
+      "cat": "dev",
+      "name": "플레이라이트 테스트 모범 사례",
+      "en": "Playwright Best Practices Skill",
+      "one": "웹 자동 테스트 도구 Playwright로 테스트를 쓰고 고칠 때 57개 참고 문서 중 상황에 맞는 것을 꺼내 Claude가 제대로 하게 합니다.",
+      "when": "Playwright로 E2E 테스트를 쓰는 개발자·QA. TypeScript 프로젝트가 필요한 개발자용 도구입니다",
+      "level": 3,
+      "color": "#d6ecf5",
+      "repo": "https://github.com/currents-dev/playwright-best-practices-skill",
+      "install": {
+        "kind": "skill",
+        "repo": "currents-dev/playwright-best-practices-skill"
+      },
+      "trust": {
+        "grade": "community",
+        "reasons": [
+          "Playwright 대시보드 서비스 Currents가 만든 스킬(Playwright 자체 공식은 아님), 설치 10만 건",
+          "참고 문서 57개, 8개 분류"
+        ]
+      },
+      "tips": [
+        "\"이 로그인 테스트가 가끔 실패해. 원인 찾아서 고쳐 줘\"",
+        "\"결제 페이지에 접근성 테스트 추가해 줘\""
+      ],
+      "added": "2026-10-31",
+      "sh_source": "currents-dev/playwright-best-practices-skill",
+      "status": "published",
+      "stars": 413,
+      "pushed_at": "2026-07-21T06:01:56Z",
+      "sh_installs": 100828,
+      "sh_week": 3217,
+      "plat": [
+        "claude-code"
+      ],
+      "installs": 0,
+      "readme_ko": [
+        {
+          "h": "이게 뭔가요?",
+          "p": "Playwright(TypeScript) 테스트를 작성·디버깅·유지하는 전문 지침을 AI에 주는 스킬입니다. Currents.dev(Playwright 테스트 대시보드 서비스)가 만들었습니다. E2E, 컴포넌트, API, 시각 회귀, 접근성, 보안, 다국어, Electron, 브라우저 확장 테스트까지 다룹니다."
+        },
+        {
+          "h": "어떻게 동작하나요?",
+          "p": "활동 기반입니다. 57개 참고 문서가 core(테스트 구조, 로케이터, 단언과 대기, 페이지 객체 모델, 픽스처, 테스트 데이터, 설정), debugging(디버깅, 불안정한 테스트, 오류 상황, 콘솔 오류), testing-patterns 등 8개 분류로 나뉘어 있고, 지금 하는 일에 맞는 문서만 불러와 한 번에 전부 읽지 않습니다."
+        },
+        {
+          "h": "쓰는 법",
+          "p": "'스킬'이나 'Playwright 모범 사례'라고 말할 필요 없이 \"이 불안정한 로그인 테스트 고쳐 줘\", \"접근성 테스트 추가해 줘\"처럼 할 일을 말하면 관련될 때 자동으로 쓰입니다. 파일 업로드, OAuth 팝업, iframe, 오프라인, 성능(Web Vitals), CI 샤딩 설정 등도 다룹니다."
+        },
+        {
+          "h": "주의할 점",
+          "p": "Playwright와 TypeScript를 쓰는 개발자용입니다."
+        }
+      ]
     }
   ],
-  "count": 142,
-  "rejected": 147,
-  "generated_at": "2026-10-31T04:50:38.9284606Z",
   "pending": 27
 }

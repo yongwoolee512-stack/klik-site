@@ -653,7 +653,7 @@ function renderNews(range) {
 
 // 설치 정보: 카탈로그는 install 객체로, 내장 예시는 cmd 문자열로 갖고 있다. 둘 다 같은 형태로 맞춘다.
 function installOf(it) {
-  if (it.install !== undefined) return it.install;
+  if (it.install !== undefined) { const s = it.install; if (s && s.kind === "skill" && !s.name) s.name = it.id; return s; }   // 스킬 저장소형은 이름이 없으면 도구 id
   if (!it.cmd) return null;
   let m;
   if ((m = it.cmd.match(/^\/plugin install ([\w.-]+)/))) return { kind: "plugin", name: m[1], market: m[1] === "document-skills" ? "anthropics/skills" : "anthropics/claude-plugins-official" };
