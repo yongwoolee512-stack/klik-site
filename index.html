@@ -859,6 +859,9 @@ function copyText(text, msg) {
   function fallback() { const ta=document.createElement("textarea"); ta.value=text; document.body.appendChild(ta); ta.select(); try{document.execCommand("copy"); ok();}catch(e){toast("아래 명령어를 직접 선택해서 복사해 주세요");} ta.remove(); }
 }
 
+// 로그인이 필요한 MCP의 서비스 이름: "노션 연결" → "노션", "재피어 연결 (8,000개 앱)" → "재피어"
+const SVC_NAME = { sentry: "센트리" };
+function svcName(it) { return SVC_NAME[it.id] || String(it.name).replace(/\s*\(.*\)$/, "").trim().split(/\s+/)[0] || it.en.split(" ")[0]; }
 // 단계 한 칸의 본문 (제목·설명·그림·복사칸·끝 칸)
 // 글 속 "</>"는 앱 버튼 모양 칩으로, 제목에 "</>"가 있으면 앞에 "클로드 코드" 라벨, "평소 채팅 말고…" 문장은 노란 경고줄로 (B안+경고줄, 2026-10-31)
 function ck(escaped) { return escaped.replace(/&lt;\/&gt;/g, '<span class="ck" aria-label="코드 버튼">&lt;/&gt;</span>'); }
@@ -874,7 +877,7 @@ function openDetail(id) {
   const hasCmd = !!cmd;
   const deep = hasCmd ? deepLink(it) : "";
   const steps = deep
-    ? [["'딸깍 설치' 누르기 → 뜨는 창마다 '열기', '예'", "브라우저가 '딸깍 도우미를 열까요?' 하면 '열기', 도우미가 '설치할까요?' 하면 '예'. 설치 완료 창이 뜨면 끝."],...(it.login ? [["처음 한 번 로그인", `Claude 앱 왼쪽 위 </> 버튼을 누르고, 아래 입력창에 /mcp 치고 엔터 → ${it.en.split(" ")[0]} 고르기 → 브라우저 로그인 창에서 '승인'.`]] : []), typeStep(it, "Claude 앱 왼쪽 위 </> 버튼 → 아래 입력창에", "media/code-button.svg", "설치가 끝나면 이 문장이 자동으로 복사돼 있어요. 입력창에 Ctrl+V 하고 엔터.")]
+    ? [["'딸깍 설치' 누르기 → 뜨는 창마다 '열기', '예'", "브라우저가 '딸깍 도우미를 열까요?' 하면 '열기', 도우미가 '설치할까요?' 하면 '예'. 설치 완료 창이 뜨면 끝."],...(it.login ? [[`처음 한 번 ${svcName(it)} 로그인 (${svcName(it)} 계정 필요)`, `${svcName(it)} 계정이 없으면 먼저 가입해 두세요(무료 계정이면 됩니다). 그다음 Claude 앱 왼쪽 위 </> 버튼 → 아래 입력창에 /mcp 치고 엔터 → ${it.en.split(" ")[0]} 고르기 → 브라우저에 뜨는 ${svcName(it)} 로그인 창에서 '승인'.`]] : []), typeStep(it, "Claude 앱 왼쪽 위 </> 버튼 → 아래 입력창에", "media/code-button.svg", "설치가 끝나면 이 문장이 자동으로 복사돼 있어요. 입력창에 Ctrl+V 하고 엔터.")]
     : hasCmd
     ? [["'설치 명령 복사' 누르기", "문장이 복사됩니다."],(tryPrompt(it) ? ["Claude 앱 왼쪽 위 </> 버튼 → 아래 입력창에 Ctrl+V, 엔터", "Claude가 나머지 설치를 합니다. 끝나면 같은 입력창에 이렇게 치세요.", "media/code-button.svg", tryPrompt(it), "복사 버튼을 누르고 입력창에 Ctrl+V 하고 엔터."] : ["Claude 앱 왼쪽 위 </> 버튼 → 아래 입력창에 Ctrl+V, 엔터", "Claude가 나머지 설치를 합니다.", "media/code-button.svg", "", "", { done: "설치가 끝나면 그걸로 끝. 입력창에 따로 칠 건 없어요.", opt: checkPrompt(it) }])]
     : [["'커넥터 설정 열기' 누르기 → 목록에서 '연결' → 로그인", "Claude 앱 설정 페이지가 열립니다. 찾아서 '연결'을 누르고 로그인하면 끝."], typeStep(it, "채팅에", "", "복사 버튼을 누르고 채팅창에 Ctrl+V 하고 엔터.")];
@@ -887,7 +890,7 @@ function openDetail(id) {
     <div class="sheet">
       <div class="sheet-head">
         <div>
-          <div class="kind"><span class="tag ${it.kind}">${KIND[it.kind]}</span>${it.trust&&TRUST_LABEL[it.trust.grade]?`<span class="tag trust-${it.trust.grade}">${TRUST_LABEL[it.trust.grade]}</span>`:""}${it.pick?`<span class="badge md" style="position:static;margin-left:4px">편집팀 검증</span>`:""}<span>${it.plat.map(p=>PLAT[p]).join(" · ")}</span><span>·</span><span>난이도: ${LEVEL_TXT[it.level]}</span></div>
+          <div class="kind"><span class="tag ${it.kind}">${KIND[it.kind]}</span>${it.trust&&TRUST_LABEL[it.trust.grade]?`<span class="tag trust-${it.trust.grade}">${TRUST_LABEL[it.trust.grade]}</span>`:""}${it.pick?`<span class="badge md" style="position:static;margin-left:4px">편집팀 검증</span>`:""}${it.login?`<span class="tag" title="이 서비스 계정으로 처음 한 번 로그인해야 합니다">${esc(svcName(it))} 계정 필요</span>`:""}<span>${it.plat.map(p=>PLAT[p]).join(" · ")}</span><span>·</span><span>난이도: ${LEVEL_TXT[it.level]}</span></div>
           <h2>${esc(it.name)} <span class="en" style="font-size:14px;color:var(--muted);font-weight:400">${esc(it.en)}</span></h2>
           <p class="one-line" style="font-size:14px;color:#333">${esc(it.one)}</p>
           ${window.CM ? CM.cardLine(it.id) : ""}
@@ -906,7 +909,7 @@ function openDetail(id) {
             const renderSteps = (arr, cls) => `<div class="steps ${cls}">${arr.map((s,i)=>`<div class="stp"><span class="num">${i+1}</span>${stepBody(s)}</div>`).join("")}</div>`;
             const inst = steps.slice(0, nInstall), use = steps.slice(nInstall);
             return `<h4 class="steps-h">설치 <span>${deep?"딸깍 한 번이면 끝":nInstall+"단계"}</span></h4>${renderSteps(inst,"steps-install")}
-            ${use.length?`<h4 class="steps-h use">쓰는 법 <span>${use.length===1?"설치 뒤 이렇게":use.length+"단계 · 처음 한 번 로그인 포함"}</span></h4>${renderSteps(use,"steps-use")}`:""}`;
+            ${use.length?`<h4 class="steps-h use">쓰는 법 <span>${use.length===1?"설치 뒤 이렇게":use.length+"단계 · 처음 한 번 "+svcName(it)+" 계정 로그인 포함"}</span></h4>${renderSteps(use,"steps-use")}`:""}`;
           })()}
 
           ${hasCmd?(deep?`<details style="margin-top:8px"><summary style="cursor:pointer;color:var(--muted);font-size:13px">도우미 없이 직접 하는 방법 (명령 복사)</summary><div class="cmd"><code>${esc(cmd)}</code><button data-copy="${esc(cmd)}">복사</button></div></details>`:`<div class="cmd"><code>${esc(cmd)}</code><button data-copy="${esc(cmd)}">복사</button></div>`):""}
