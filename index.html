@@ -706,7 +706,7 @@ function renderNews(range) {
 
 // 설치 정보: 카탈로그는 install 객체로, 내장 예시는 cmd 문자열로 갖고 있다. 둘 다 같은 형태로 맞춘다.
 function installOf(it) {
-  if (it.install !== undefined) { const s = it.install; if (s && s.kind === "skill" && !s.name) s.name = it.id; return s; }   // 스킬 저장소형은 이름이 없으면 도구 id
+  if (it.install !== undefined) { const s = it.install; if (s && (s.kind === "skill" || s.kind === "py") && !s.name) s.name = it.id; return s; }   // 스킬 저장소형·파이썬형은 이름이 없으면 도구 id
   if (!it.cmd) return null;
   let m;
   if ((m = it.cmd.match(/^\/plugin install ([\w.-]+)/))) return { kind: "plugin", name: m[1], market: m[1] === "document-skills" ? "anthropics/skills" : "anthropics/claude-plugins-official" };
@@ -719,6 +719,7 @@ function cmdOf(it) {
   const s = installOf(it); if (!s || !s.name) return "";
   if (s.kind === "plugin") return `/plugin install ${s.name}`;
   if (s.kind === "skill") return `npx skills add ${s.repo}`;   // skills.sh 표준 명령 (딸깍 도우미는 git으로 직접 받는다)
+  if (s.kind === "py") return `pip install --user ${s.pkg}${s.post?` && ${s.post}`:""}${s.plugin?` && claude plugin marketplace add ${s.market} && claude plugin install ${s.plugin}`:""}`;
   if (s.url) return `claude mcp add --transport ${s.transport || "http"} ${s.name} ${s.url}`;
   if (s.pkg) return `claude mcp add ${s.name} -- npx -y ${s.pkg}`;
   return "";
@@ -746,6 +747,7 @@ function deepLink(it) {
   const tp = tryPrompt(it); const tail = (tp ? `&try=${encodeURIComponent(tp)}` : "") + (it.login ? "&login=1" : "");
   if (s.kind === "plugin") return `klik://install?kind=plugin&name=${s.name}&market=${encodeURIComponent(s.market || "")}${tail}`;
   if (s.kind === "skill") return `klik://install?kind=skill&name=${s.name}&repo=${encodeURIComponent(s.repo || "")}${tail}`;
+  if (s.kind === "py") return `klik://install?kind=py&name=${s.name}&pkg=${encodeURIComponent(s.pkg || "")}${s.post?`&post=${encodeURIComponent(s.post)}`:""}${s.plugin?`&plugin=${encodeURIComponent(s.plugin)}&market=${encodeURIComponent(s.market||"")}`:""}${tail}`;
   if (s.url) return `klik://install?kind=mcp&name=${s.name}&transport=${s.transport || "http"}&url=${encodeURIComponent(s.url)}${tail}`;
   if (s.pkg) return `klik://install?kind=mcp&name=${s.name}&pkg=${encodeURIComponent(s.pkg)}${tail}`;
   return "";

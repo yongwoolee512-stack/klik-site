@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>헤드룸 (토큰 압축기) (Headroom) 설치법·한글 설명 | 딸깍</title>
+<meta name="description" content="Claude에 보내는 긴 로그&#183;JSON&#183;파일을 자동으로 압축해 토큰을 줄입니다. 코딩 작업 약 20%, JSON은 60~95%까지. 답은 그대로.">
+<link rel="canonical" href="https://yongwoolee512-stack.github.io/klik-site/tools/headroom.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="딸깍">
+<meta property="og:title" content="헤드룸 (토큰 압축기) (Headroom) 설치법·한글 설명">
+<meta property="og:description" content="Claude에 보내는 긴 로그&#183;JSON&#183;파일을 자동으로 압축해 토큰을 줄입니다. 코딩 작업 약 20%, JSON은 60~95%까지. 답은 그대로.">
+<meta property="og:url" content="https://yongwoolee512-stack.github.io/klik-site/tools/headroom.html">
+<meta property="og:image" content="https://yongwoolee512-stack.github.io/klik-site/media/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../media/favicon.svg" type="image/svg+xml">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"헤드룸 (토큰 압축기)","alternateName":"Headroom","description":"Claude에 보내는 긴 로그·JSON·파일을 자동으로 압축해 토큰을 줄입니다. 코딩 작업 약 20%, JSON은 60~95%까지. 답은 그대로.","url":"https://github.com/headroomlabs-ai/headroom","applicationCategory":"개발","operatingSystem":"Claude Code","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+<style>*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}body{margin:0;background:#fff;color:#1d1d1f;font:16px/1.65 -apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Pretendard","Malgun Gothic","Segoe UI",Roboto,sans-serif;word-break:keep-all}
+main{max-width:720px;margin:0 auto;padding:28px 16px 64px}header.top{max-width:720px;margin:0 auto;padding:14px 16px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #e5e5ea}
+a{color:#0b2a6f}.brand{font-weight:800;text-decoration:none;color:#0b2a6f;letter-spacing:-.02em}.meta{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 14px}
+.tag{display:inline-block;padding:3px 10px;border-radius:999px;background:#f2f4f8;color:#0b2a6f;font-size:13px;font-weight:600}
+h1{font-size:30px;line-height:1.25;letter-spacing:-.02em;margin:6px 0 4px}.en{color:#6e6e73;font-size:16px;margin:0 0 14px}.one{font-size:19px;margin:0 0 22px}
+h2{font-size:19px;margin:30px 0 8px;letter-spacing:-.01em}h3{font-size:16px;margin:18px 0 4px}p{margin:0 0 10px}ul{margin:0;padding-left:20px}li{margin:4px 0}
+.cta{display:inline-block;padding:14px 26px;border-radius:999px;background:#0b2a6f;color:#fff;font-weight:700;font-size:17px;text-decoration:none;box-shadow:0 6px 18px rgba(11,42,111,.22)}
+.cta:hover{background:#0a2459}.ctabox{margin:26px 0 8px;padding:20px;border-radius:16px;background:#f5f6fa;text-align:center}.ctabox p{margin:10px 0 0;color:#6e6e73;font-size:14px}
+.stats{display:flex;flex-wrap:wrap;gap:10px 22px;color:#6e6e73;font-size:14px;margin:0 0 4px}.stats b{color:#1d1d1f}
+footer{max-width:720px;margin:0 auto;padding:18px 16px 40px;color:#6e6e73;font-size:13px;border-top:1px solid #e5e5ea}footer a{margin-right:14px}
+@media (max-width:480px){h1{font-size:26px}.one{font-size:17px}.cta{display:block}}</style>
+</head>
+<body>
+<header class="top"><a class="brand" href="../">딸깍</a><a href="../">전체 도구 보기</a></header>
+<main>
+<div class="meta"><span class="tag">플러그인</span><span class="tag">개발</span></div>
+<h1>헤드룸 (토큰 압축기)</h1>
+<p class="en">Headroom</p>
+<p class="one">Claude에 보내는 긴 로그&#183;JSON&#183;파일을 자동으로 압축해 토큰을 줄입니다. 코딩 작업 약 20%, JSON은 60~95%까지. 답은 그대로.</p>
+<div class="stats"><span>GitHub ★ <b>78,442</b></span></div>
+<div class="ctabox"><a class="cta" href="../?open=headroom">딸깍에서 한 번에 설치하기</a><p>설치 명령을 복사·실행하는 과정을 딸깍 홈에서 안내합니다.</p></div>
+<h2>이런 분께</h2>
+<p>명령 결과나 로그가 길어서 사용량이 금방 바닥나는 분</p>
+<h2>사용 예시</h2>
+<ul>
+<li>&quot;headroom wrap claude&quot; 를 터미널에 치면 그때부터 모든 대화가 압축을 거칩니다.</li>
+<li>&quot;/headroom&quot; 이라고 치면 지금까지 얼마나 아꼈는지 보여 줍니다.</li>
+</ul>
+<h2>깃허브 원문 설명 한글판</h2>
+<h3>이게 뭐예요</h3>
+<p>AI에 보내기 전에 도구 결과, 로그, 파일, 검색 결과를 압축해 주는 도구입니다. 예시로 로그 10,144토큰이 1,260토큰으로 줄어도 같은 오류를 똑같이 찾아냅니다. 압축은 내 컴퓨터에서만 일어나고 내용은 어디로도 보내지 않습니다.</p>
+<h3>쓰는 방식 네 가지</h3>
+<p>(1) 프로그램 안에서 compress() 함수로, (2) 프록시 서버로(코드 수정 없이), (3) headroom wrap claude 처럼 Claude Code&#183;Codex&#183;Cursor 등을 한 줄로 감싸서, (4) MCP 서버로. 비개발자에게 현실적인 건 (3)입니다.</p>
+<h3>어떻게 줄이나</h3>
+<p>내용 종류를 알아내서 JSON은 SmartCrusher, 소스코드는 CodeCompressor, 일반 글은 Kompress 모델이 각각 압축합니다. 원본은 내 컴퓨터에 보관돼서(CCR) 모델이 필요하면 headroom_retrieve 로 전체를 다시 꺼내 봅니다. 모델이 &#39;쓰는&#39; 답도 군더더기를 줄입니다.</p>
+<h3>추가 기능</h3>
+<p>Claude&#183;Codex&#183;Gemini&#183;Grok 사이에 기억을 공유하는 메모리, 실패한 세션에서 교훈을 뽑아 CLAUDE.md에 적어 주는 headroom learn 기능이 있습니다.</p>
+<h3>설치</h3>
+<p>pip install &quot;headroom-ai[all]&quot; (파이썬 3.10 이상). 그다음 headroom wrap claude 로 Claude Code를 감싸서 실행합니다. 되돌리려면 headroom unwrap claude.</p>
+<h2>출처</h2>
+<p><a href="https://github.com/headroomlabs-ai/headroom" rel="noopener" target="_blank">원문(깃허브) 보기</a></p>
+<p style="margin-top:28px"><a class="cta" href="../?open=headroom">딸깍에서 한 번에 설치하기</a></p>
+</main>
+<footer><a href="../">딸깍 홈</a><a href="../terms.html">이용약관</a><a href="../privacy.html">개인정보</a><span>한글 설명은 딸깍 편집팀이 옮긴 것이며, 도구의 권리는 원저작자에게 있습니다.</span></footer>
+</body>
+</html>

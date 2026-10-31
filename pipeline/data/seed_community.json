@@ -10,14 +10,27 @@
     "stars": 180482,
     "installs": 41000,
     "level": 1,
-    "plat": ["claude-code"],
+    "plat": [
+      "claude-code"
+    ],
     "hot": true,
     "isNew": true,
     "added": "2026-10-30",
     "color": "#e8e4dc",
     "repo": "https://github.com/DietrichGebert/ponytail",
-    "install": { "kind": "plugin", "name": "ponytail", "market": "DietrichGebert/ponytail" },
-    "trust": { "grade": "community", "reasons": ["깃허브 ★18만, 개인 개발자 제작", "MIT 라이선스", "exe·dll 없는 순수 텍스트 프롬프트 (제작자가 명시)"] },
+    "install": {
+      "kind": "plugin",
+      "name": "ponytail",
+      "market": "DietrichGebert/ponytail"
+    },
+    "trust": {
+      "grade": "community",
+      "reasons": [
+        "깃허브 ★18만, 개인 개발자 제작",
+        "MIT 라이선스",
+        "exe·dll 없는 순수 텍스트 프롬프트 (제작자가 명시)"
+      ]
+    },
     "note": "공식 Claude 앱 플러그인 목록에는 없고, 제작자 저장소에서 직접 받습니다. 설치 후 매 세션 자동으로 켜집니다.",
     "tips": [
       "\"/ponytail-review\"라고 치면 지금 바꾼 코드를 '터지면 호출당하는 고참'처럼 검토해 줍니다.",
@@ -36,14 +49,27 @@
     "stars": 308953,
     "installs": 72000,
     "level": 1,
-    "plat": ["claude-code"],
+    "plat": [
+      "claude-code"
+    ],
     "hot": true,
     "isNew": true,
     "added": "2026-10-30",
     "color": "#d6dcf0",
     "repo": "https://github.com/obra/superpowers",
-    "install": { "kind": "plugin", "name": "superpowers", "market": "anthropics/claude-plugins-official" },
-    "trust": { "grade": "verified", "reasons": ["Anthropic 공식 마켓플레이스에 등재", "깃허브 ★30만, 커뮤니티 제작", "MIT 라이선스"] },
+    "install": {
+      "kind": "plugin",
+      "name": "superpowers",
+      "market": "anthropics/claude-plugins-official"
+    },
+    "trust": {
+      "grade": "verified",
+      "reasons": [
+        "Anthropic 공식 마켓플레이스에 등재",
+        "깃허브 ★30만, 커뮤니티 제작",
+        "MIT 라이선스"
+      ]
+    },
     "note": "커뮤니티 제작이지만 Anthropic 공식 마켓플레이스에 올라 있어 그쪽에서 받습니다.",
     "tips": [
       "\"회원가입 기능 만들어 줘\"라고 해 보세요. 바로 코딩하지 않고 뭘 원하는지 먼저 짧게 묻습니다.",
@@ -62,13 +88,26 @@
     "stars": 105136,
     "installs": 23000,
     "level": 2,
-    "plat": ["claude-code"],
+    "plat": [
+      "claude-code"
+    ],
     "isNew": true,
     "added": "2026-10-30",
     "color": "#d6ecf5",
     "repo": "https://github.com/thedotmack/claude-mem",
-    "install": { "kind": "plugin", "name": "claude-mem", "market": "thedotmack/claude-mem" },
-    "trust": { "grade": "community", "reasons": ["깃허브 ★10만, 개인 개발자 제작", "Apache 2.0 라이선스", "Vercel 오픈소스 프로그램 후원"] },
+    "install": {
+      "kind": "plugin",
+      "name": "claude-mem",
+      "market": "thedotmack/claude-mem"
+    },
+    "trust": {
+      "grade": "community",
+      "reasons": [
+        "깃허브 ★10만, 개인 개발자 제작",
+        "Apache 2.0 라이선스",
+        "Vercel 오픈소스 프로그램 후원"
+      ]
+    },
     "note": "뒤에서 기억을 정리하는 작은 프로그램이 함께 돌아갑니다. Node.js가 없는 컴퓨터는 첫 실행 때 설치 안내가 뜰 수 있습니다. 설치 뒤 Claude Code를 한 번 다시 열어 주세요.",
     "tips": [
       "\"지난번에 뭐 하다 끝났지?\"라고 물어 보세요. 전 세션 요약을 꺼내 옵니다.",
@@ -87,13 +126,26 @@
     "stars": 116181,
     "installs": 27000,
     "level": 1,
-    "plat": ["claude-code"],
+    "plat": [
+      "claude-code"
+    ],
     "isNew": true,
     "added": "2026-10-30",
     "color": "#f3d9c4",
     "repo": "https://github.com/JuliusBrussee/caveman",
-    "install": { "kind": "plugin", "name": "caveman", "market": "JuliusBrussee/caveman" },
-    "trust": { "grade": "community", "reasons": ["깃허브 ★11만, 개인 개발자 제작", "Apache 2.0 라이선스", "Adobe 연구·JetBrains A/B 테스트로 효과 검증"] },
+    "install": {
+      "kind": "plugin",
+      "name": "caveman",
+      "market": "JuliusBrussee/caveman"
+    },
+    "trust": {
+      "grade": "community",
+      "reasons": [
+        "깃허브 ★11만, 개인 개발자 제작",
+        "Apache 2.0 라이선스",
+        "Adobe 연구·JetBrains A/B 테스트로 효과 검증"
+      ]
+    },
     "note": "플러그인판은 '짧게 말하기'가 중심입니다. 로그·JSON 읽기 압축 같은 전체 기능은 Node.js로 설치하는 npx 판에서만 켜집니다.",
     "tips": [
       "\"/caveman\"이라고 치면 바로 짧게 말합니다. 평소 말투로 돌리려면 \"stop caveman\".",
@@ -112,13 +164,26 @@
     "stars": 32885,
     "installs": 8100,
     "level": 2,
-    "plat": ["claude-code"],
+    "plat": [
+      "claude-code"
+    ],
     "isNew": true,
     "added": "2026-10-30",
     "color": "#cfe6d6",
     "repo": "https://github.com/mksglu/context-mode",
-    "install": { "kind": "plugin", "name": "context-mode", "market": "mksglu/context-mode" },
-    "trust": { "grade": "community", "reasons": ["깃허브 ★3.3만, 해커뉴스 1위", "ELv2 라이선스 (쓰는 건 자유, 되팔기만 제한)", "Node.js 기반 MCP 서버"] },
+    "install": {
+      "kind": "plugin",
+      "name": "context-mode",
+      "market": "mksglu/context-mode"
+    },
+    "trust": {
+      "grade": "community",
+      "reasons": [
+        "깃허브 ★3.3만, 해커뉴스 1위",
+        "ELv2 라이선스 (쓰는 건 자유, 되팔기만 제한)",
+        "Node.js 기반 MCP 서버"
+      ]
+    },
     "note": "MCP 서버라 Node.js(npx)가 설치돼 있어야 돌아갑니다. 없는 컴퓨터는 설치 뒤에도 켜지지 않을 수 있습니다.",
     "tips": [
       "\"ctx stats\"라고 치면 지금까지 얼마나 아꼈는지 보여 줍니다.",
@@ -137,19 +202,98 @@
     "stars": 138224,
     "installs": 19000,
     "level": 3,
-    "plat": ["claude-code"],
+    "plat": [
+      "claude-code"
+    ],
     "isNew": true,
     "added": "2026-10-30",
     "color": "#e0d6f0",
     "repo": "https://github.com/garrytan/gstack",
     "install": null,
     "cmd": "Install gstack: run git clone --single-branch --depth 1 https://github.com/garrytan/gstack.git ~/.claude/skills/gstack && cd ~/.claude/skills/gstack && ./setup then add a \"gstack\" section to CLAUDE.md that says to use the /browse skill from gstack for all web browsing and never use mcp__claude-in-chrome__* tools.",
-    "trust": { "grade": "community", "reasons": ["깃허브 ★14만, Y컴비네이터 대표 Garry Tan 제작", "MIT 라이선스", "Bun·Git 등 개발 도구 필요 (딸깍 한 번으론 안 됨)"] },
+    "trust": {
+      "grade": "community",
+      "reasons": [
+        "깃허브 ★14만, Y컴비네이터 대표 Garry Tan 제작",
+        "MIT 라이선스",
+        "Bun·Git 등 개발 도구 필요 (딸깍 한 번으론 안 됨)"
+      ]
+    },
     "note": "딸깍 한 번으로는 안 됩니다. '설치 명령 복사'를 누른 뒤 Claude Code 입력창에 붙여 넣으면 Claude가 나머지 설치를 대신합니다. Git·Bun(1.4.2 이상)이 필요하고, 윈도우는 Node.js도 필요합니다.",
     "tips": [
       "\"/office-hours\"라고 치고 만들고 싶은 걸 설명하세요. 기획을 되묻고 설계 문서를 써 줍니다.",
       "\"/review\"는 CI는 통과하지만 실제로 터지는 버그를 찾고, \"/qa\"는 진짜 브라우저를 열어 테스트합니다.",
       "\"/ship\"은 테스트·검토·PR까지 한 번에. 매주 월·목 안정판이 자동 업데이트됩니다."
+    ]
+  },
+  {
+    "id": "graphify",
+    "kind": "skill",
+    "cat": "dev",
+    "name": "그래피파이 (코드 지도)",
+    "en": "Graphify",
+    "one": "프로젝트 전체를 '지도'로 만들어 두고, Claude가 파일을 뒤지는 대신 지도를 보고 필요한 곳만 읽게 합니다. 새는 토큰을 막아요.",
+    "when": "프로젝트가 커서 Claude가 매번 엉뚱한 파일을 뒤지느라 사용량이 바닥나는 분",
+    "level": 2,
+    "plat": [
+      "claude-code"
+    ],
+    "added": "2026-10-31",
+    "color": "#d6f0e8",
+    "repo": "https://github.com/Graphify-Labs/graphify",
+    "install": {
+      "kind": "py",
+      "pkg": "graphifyy",
+      "post": "graphify install"
+    },
+    "trust": {
+      "grade": "community",
+      "reasons": [
+        "깃허브 ★14만, Y Combinator 투자사(Graphify Labs) 제작",
+        "Apache-2.0 라이선스, 코드 분석은 내 컴퓨터 안에서만(외부 전송 없음)",
+        "파이썬이 필요해요. 없으면 딸깍 도우미가 같이 깔아 줍니다"
+      ]
+    },
+    "note": "파이썬(무료)으로 만들어진 도구라 설치에 1~2분 더 걸릴 수 있어요.",
+    "tips": [
+      "\"/graphify .\" 라고 치면 지금 폴더 전체 지도를 만듭니다. 처음 한 번만.",
+      "지도가 생기면 \"이 프로젝트에서 로그인 처리는 어디서 해?\"처럼 그냥 물어보세요. 파일을 다 안 읽고 답합니다.",
+      "graph.html 파일을 열면 프로젝트 구조를 클릭하며 구경할 수 있어요."
+    ]
+  },
+  {
+    "id": "headroom",
+    "kind": "plugin",
+    "cat": "dev",
+    "name": "헤드룸 (토큰 압축기)",
+    "en": "Headroom",
+    "one": "Claude에 보내는 긴 로그·JSON·파일을 자동으로 압축해 토큰을 줄입니다. 코딩 작업 약 20%, JSON은 60~95%까지. 답은 그대로.",
+    "when": "명령 결과나 로그가 길어서 사용량이 금방 바닥나는 분",
+    "level": 3,
+    "plat": [
+      "claude-code"
+    ],
+    "added": "2026-10-31",
+    "color": "#f0e0d6",
+    "repo": "https://github.com/headroomlabs-ai/headroom",
+    "install": {
+      "kind": "py",
+      "pkg": "headroom-ai[all]",
+      "plugin": "headroom@headroom-marketplace",
+      "market": "headroomlabs-ai/headroom"
+    },
+    "trust": {
+      "grade": "community",
+      "reasons": [
+        "깃허브 ★7.8만, Headroom Labs 제작",
+        "Apache-2.0 라이선스, 압축은 내 컴퓨터 안에서만(내용을 밖으로 보내지 않음)",
+        "원본은 그대로 보관돼 필요하면 Claude가 다시 꺼내 봅니다"
+      ]
+    },
+    "note": "파이썬이 필요하고, 설치 뒤에는 Claude Code를 '헤드룸을 거쳐' 켜야 효과가 납니다(터미널에서 headroom wrap claude). 개발자에게 맞는 도구예요.",
+    "tips": [
+      "\"headroom wrap claude\" 를 터미널에 치면 그때부터 모든 대화가 압축을 거칩니다.",
+      "\"/headroom\" 이라고 치면 지금까지 얼마나 아꼈는지 보여 줍니다."
     ]
   }
 ]
