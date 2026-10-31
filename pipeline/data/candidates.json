@@ -1,35 +1,22 @@
 [
   {
     "full_name": "morluto/rea",
-    "stars": 413169,
+    "stars": 415431,
     "desc": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-    "pushed_at": "2026-10-31T07:11:17Z",
+    "pushed_at": "2026-10-31T23:32:21Z",
     "license": "MIT",
     "kind": "none",
     "name": "",
     "market": "",
     "url": "",
     "pkg": "",
-    "topics": "agent-skills,ai-agents,binary-analysis,claude-code,cli,codex,cordis,decompiler,developer-tools,dsh,dsh-plugin,ghidra,hopper,llm,mcp,model-context-protocol,rea,reverse-engineering,static-analysis,touhou"
-  },
-  {
-    "full_name": "affaan-m/ECC",
-    "stars": 293547,
-    "desc": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
-    "pushed_at": "2026-10-30T03:06:42Z",
-    "license": "MIT",
-    "kind": "plugin?",
-    "name": "",
-    "market": "",
-    "url": "",
-    "pkg": "",
-    "topics": "ai-agents,anthropic,claude,claude-code,developer-tools,llm,mcp,productivity"
+    "topics": "agent-skills,ai,android,claude-code,cli,cpp,dsh-plugin,html,java,javascript,linux,mcp,nodejs,python,rea,react,rust,security,touhou,typescript"
   },
   {
     "full_name": "NousResearch/hermes-agent",
-    "stars": 258951,
+    "stars": 259174,
     "desc": "The agent that grows with you",
-    "pushed_at": "2026-10-31T06:44:27Z",
+    "pushed_at": "2026-10-31T23:11:01Z",
     "license": "MIT",
     "kind": "none",
     "name": "",
@@ -40,7 +27,7 @@
   },
   {
     "full_name": "multica-ai/andrej-karpathy-skills",
-    "stars": 227029,
+    "stars": 227471,
     "desc": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
     "pushed_at": "2026-04-20T10:05:04Z",
     "license": null,
@@ -53,9 +40,9 @@
   },
   {
     "full_name": "n8n-io/n8n",
-    "stars": 209169,
+    "stars": 209211,
     "desc": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
-    "pushed_at": "2026-10-31T06:09:33Z",
+    "pushed_at": "2026-10-31T22:15:41Z",
     "license": "NOASSERTION",
     "kind": "none",
     "name": "",
@@ -66,9 +53,9 @@
   },
   {
     "full_name": "Significant-Gravitas/AutoGPT",
-    "stars": 187840,
+    "stars": 187848,
     "desc": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
-    "pushed_at": "2026-10-31T07:16:05Z",
+    "pushed_at": "2026-10-31T23:26:22Z",
     "license": "NOASSERTION",
     "kind": "none",
     "name": "",
@@ -79,9 +66,9 @@
   },
   {
     "full_name": "langgenius/dify",
-    "stars": 160050,
+    "stars": 160106,
     "desc": "Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack.",
-    "pushed_at": "2026-10-31T07:05:35Z",
+    "pushed_at": "2026-10-31T19:49:43Z",
     "license": "NOASSERTION",
     "kind": "none",
     "name": "",
@@ -92,7 +79,7 @@
   },
   {
     "full_name": "Snailclimb/JavaGuide",
-    "stars": 159359,
+    "stars": 159364,
     "desc": "Java 面试 & 后端通用面试指南，覆盖计算机基础、数据库、分布式、高并发、系统设计与 AI 应用开发",
     "pushed_at": "2026-10-25T11:47:10Z",
     "license": "Apache-2.0",
@@ -105,9 +92,9 @@
   },
   {
     "full_name": "open-webui/open-webui",
-    "stars": 157325,
+    "stars": 157402,
     "desc": "User-friendly AI Interface (Supports Ollama, OpenAI API, ...)",
-    "pushed_at": "2026-10-31T05:07:36Z",
+    "pushed_at": "2026-10-31T10:22:36Z",
     "license": "NOASSERTION",
     "kind": "none",
     "name": "",
@@ -118,9 +105,9 @@
   },
   {
     "full_name": "farion1231/cc-switch",
-    "stars": 150493,
+    "stars": 150633,
     "desc": "A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode,DeepSeek Harness and more. Only official website: ccswitch.io",
-    "pushed_at": "2026-10-31T04:13:02Z",
+    "pushed_at": "2026-10-31T16:11:48Z",
     "license": "MIT",
     "kind": "none",
     "name": "",
@@ -131,7 +118,7 @@
   },
   {
     "full_name": "x1xhlol/system-prompts-and-models-of-ai-tools",
-    "stars": 144371,
+    "stars": 144389,
     "desc": "FULL Augment Code, Claude Code, Cluely, CodeBuddy, Comet, Cursor, Devin AI, Junie, Kiro, Leap.new, Lovable, Manus, NotionAI, Orchids.app, Perplexity, Poke, Qoder, Replit, Same.dev, Trae, Traycer AI, VSCode Agent, Warp.dev, Windsurf, Xcode, Z.ai Code, Dia & v0. (And other Open Sourced) System Prompts, Internal Tools & AI Models",
     "pushed_at": "2026-10-12T15:19:01Z",
     "license": "GPL-3.0",
@@ -143,21 +130,8 @@
     "topics": "ai,bolt,cluely,copilot,cursor,cursorai,devin,github-copilot,lovable,open-source,perplexity,replit,system-prompts,trae,trae-ai,trae-ide,v0,vscode,windsurf,windsurf-ai"
   },
   {
-    "full_name": "Graphify-Labs/graphify",
-    "stars": 139614,
-    "desc": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
-    "pushed_at": "2026-10-30T23:42:18Z",
-    "license": "Apache-2.0",
-    "kind": "none",
-    "name": "",
-    "market": "",
-    "url": "",
-    "pkg": "",
-    "topics": "ai-agents,antigravity,ast,claude-code,code-analysis,code-search,codex,cursor,developer-tools,gemini,graphify,graphrag,knowledge-graph,leiden,llm,mcp,openclaw,rag,skills,tree-sitter"
-  },
-  {
     "full_name": "browser-use/browser-use",
-    "stars": 119617,
+    "stars": 119676,
     "desc": "Open-source Python library for AI browser agents, plus Browser Use Cloud: stealth browsers and a hosted agent API.",
     "pushed_at": "2026-10-31T01:18:25Z",
     "license": "MIT",
@@ -170,9 +144,9 @@
   },
   {
     "full_name": "paperclipai/paperclip",
-    "stars": 109047,
+    "stars": 109451,
     "desc": "The open-source app everyone uses to manage agents at work",
-    "pushed_at": "2026-10-31T07:07:36Z",
+    "pushed_at": "2026-10-31T23:13:35Z",
     "license": "MIT",
     "kind": "none",
     "name": "",
@@ -183,7 +157,7 @@
   },
   {
     "full_name": "google-gemini/gemini-cli",
-    "stars": 108643,
+    "stars": 108655,
     "desc": "An open-source AI agent that brings the power of Gemini directly into your terminal.",
     "pushed_at": "2026-10-31T01:19:31Z",
     "license": "Apache-2.0",
@@ -196,7 +170,7 @@
   },
   {
     "full_name": "Panniantong/Agent-Reach",
-    "stars": 106942,
+    "stars": 107213,
     "desc": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
     "pushed_at": "2026-10-25T04:37:26Z",
     "license": "MIT",
@@ -209,9 +183,9 @@
   },
   {
     "full_name": "nexu-io/open-design",
-    "stars": 105088,
+    "stars": 105187,
     "desc": "The 1st Collaborative AI Design Agent Workspace. Local-first and open source. Create motion, prototypes, websites, apps, dashboards, presentations, images, and videos with your team and AI agents. Share work, exchange feedback, and iterate together in one workspace.",
-    "pushed_at": "2026-10-31T01:09:19Z",
+    "pushed_at": "2026-10-31T18:16:57Z",
     "license": "Apache-2.0",
     "kind": "none",
     "name": "",
@@ -222,9 +196,9 @@
   },
   {
     "full_name": "ruvnet/RuView",
-    "stars": 101799,
+    "stars": 101877,
     "desc": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
-    "pushed_at": "2026-10-31T06:14:21Z",
+    "pushed_at": "2026-10-31T18:36:08Z",
     "license": "MIT",
     "kind": "plugin",
     "name": "ruview",
@@ -235,7 +209,7 @@
   },
   {
     "full_name": "punkpeye/awesome-mcp-servers",
-    "stars": 97102,
+    "stars": 97133,
     "desc": "A collection of MCP servers.",
     "pushed_at": "2026-10-23T18:57:44Z",
     "license": "MIT",
@@ -248,9 +222,9 @@
   },
   {
     "full_name": "D4Vinci/Scrapling",
-    "stars": 90518,
+    "stars": 90866,
     "desc": "🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and tricks: https://x.com/Scrapling_dev",
-    "pushed_at": "2026-10-29T14:00:57Z",
+    "pushed_at": "2026-10-31T16:11:17Z",
     "license": "BSD-3-Clause",
     "kind": "none",
     "name": "",
@@ -261,9 +235,9 @@
   },
   {
     "full_name": "koala73/worldmonitor",
-    "stars": 89824,
+    "stars": 89862,
     "desc": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface",
-    "pushed_at": "2026-10-31T07:10:29Z",
+    "pushed_at": "2026-10-31T22:17:31Z",
     "license": "AGPL-3.0",
     "kind": "none",
     "name": "",
@@ -274,7 +248,7 @@
   },
   {
     "full_name": "ChatGPTNextWeb/NextChat",
-    "stars": 88928,
+    "stars": 88929,
     "desc": "✨ Zero-config AI chat assistant. No API key needed — sign up and instantly chat with GPT-5, Claude 4, Gemini 2.5, DeepSeek & 100+ top models. Pay-as-you-go saves you more. Available on Web, iOS, macOS, Android, Linux, Windows.",
     "pushed_at": "2026-10-20T10:19:31Z",
     "license": "MIT",
@@ -287,7 +261,7 @@
   },
   {
     "full_name": "unclecode/crawl4ai",
-    "stars": 86621,
+    "stars": 86661,
     "desc": "Open-source web crawler and scraper for LLMs and AI agents: any website into clean, LLM-ready Markdown. Run it yourself, or use Crawl4AI Cloud with one key. Join our Discord https://discord.gg/VuxzM8mtf",
     "pushed_at": "2026-10-30T15:02:02Z",
     "license": "Apache-2.0",
@@ -300,9 +274,9 @@
   },
   {
     "full_name": "rtk-ai/rtk",
-    "stars": 85097,
+    "stars": 85143,
     "desc": "CLI proxy that reduces LLM token consumption by 60-90% on common dev commands. Single Rust binary, zero dependencies",
-    "pushed_at": "2026-10-30T18:07:02Z",
+    "pushed_at": "2026-10-31T21:59:54Z",
     "license": "Apache-2.0",
     "kind": "none",
     "name": "",
@@ -313,9 +287,9 @@
   },
   {
     "full_name": "lobehub/lobehub",
-    "stars": 83624,
+    "stars": 83645,
     "desc": "🤯 LobeHub is your Chief Agent Operator, organizing your agents into 7×24 operations by hiring, scheduling, and reporting on your entire AI team.",
-    "pushed_at": "2026-10-31T07:17:39Z",
+    "pushed_at": "2026-10-31T23:04:22Z",
     "license": "NOASSERTION",
     "kind": "none",
     "name": "",
@@ -326,7 +300,7 @@
   },
   {
     "full_name": "cheaper-inference/OmniRoute",
-    "stars": 82972,
+    "stars": 83232,
     "desc": "Never stop coding. Free MIT AI gateway: one endpoint, 375 providers (150+ free), 1,400+ models Kimi, Claude, GPT, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCode, Cline & Copilot. Quota-aware auto-fallback, RTK+Caveman compression saves 15-95% tokens, MCP/A2A, Desktop/PWA. Built by 900+ contributors",
     "pushed_at": "2026-10-31T05:58:07Z",
     "license": "MIT",
@@ -339,9 +313,9 @@
   },
   {
     "full_name": "netdata/netdata",
-    "stars": 81229,
+    "stars": 81235,
     "desc": "The fastest path to AI-powered full stack observability, even for lean teams.",
-    "pushed_at": "2026-10-31T00:13:42Z",
+    "pushed_at": "2026-10-31T19:18:59Z",
     "license": "GPL-3.0",
     "kind": "none",
     "name": "",
@@ -351,21 +325,8 @@
     "topics": "ai,alerting,cncf,data-visualization,database,devops,docker,grafana,influxdb,kubernetes,linux,machine-learning,mcp,mongodb,monitoring,mysql,netdata,observability,postgresql,prometheus"
   },
   {
-    "full_name": "ruvnet/ruflo",
-    "stars": 80337,
-    "desc": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
-    "pushed_at": "2026-10-31T06:28:01Z",
-    "license": "MIT",
-    "kind": "plugin",
-    "name": "ruflo-core",
-    "market": "ruvnet/ruflo",
-    "url": "",
-    "pkg": "",
-    "topics": "agentic-ai,agentic-framework,agentic-workflow,agents,ai-agents,ai-assistant,ai-skills,autonomous-agents,claude,codex,dsh-plugin,harness,mcp-server,multi-agent,multi-agent-systems,npm,skills,swarm,swarm-intelligence,typescript"
-  },
-  {
     "full_name": "shareAI-lab/learn-claude-code",
-    "stars": 79601,
+    "stars": 79633,
     "desc": "Bash is all you need -  A nano claude code–like 「agent harness」, built from 0 to 1",
     "pushed_at": "2026-10-27T04:47:00Z",
     "license": "MIT",
@@ -377,21 +338,8 @@
     "topics": "agent,agent-development,ai-agent,claude,claude-code,educational,llm,python,teaching,tutorial"
   },
   {
-    "full_name": "headroomlabs-ai/headroom",
-    "stars": 78405,
-    "desc": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for coding agents, 60-95% fewer tokens for JSON, same answers. Library, proxy, MCP server.",
-    "pushed_at": "2026-10-30T18:20:12Z",
-    "license": "Apache-2.0",
-    "kind": "none",
-    "name": "",
-    "market": "",
-    "url": "",
-    "pkg": "",
-    "topics": "agent,ai,anthropic,claude-code,compression,context-engineering,context-window,cursor,fastapi,langchain,llm,mcp,openai,prompt-engineering,proxy,python,rag,token-optimization,tokens,typescript"
-  },
-  {
     "full_name": "ComposioHQ/awesome-claude-skills",
-    "stars": 78375,
+    "stars": 78444,
     "desc": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
     "pushed_at": "2026-09-18T07:16:11Z",
     "license": null,
@@ -403,21 +351,8 @@
     "topics": "agent-skills,ai-agents,antigravity,automation,claude,claude-code,codex,composio,cursor,developer-tools,gemini-cli,mcp,openai-codex,rube,saas,skill,workflow-automation"
   },
   {
-    "full_name": "colbymchenry/codegraph",
-    "stars": 76029,
-    "desc": "Pre-indexed code knowledge graph, auto syncs on code changes, for Claude Code, Codex, Gemini, Cursor, OpenCode, AntiGravity, Kiro, CoPilot, and Hermes Agent — fewer tokens, fewer tool calls, 100% local",
-    "pushed_at": "2026-10-31T00:45:36Z",
-    "license": "MIT",
-    "kind": "none",
-    "name": "",
-    "market": "",
-    "url": "",
-    "pkg": "",
-    "topics": ""
-  },
-  {
     "full_name": "rohitg00/ai-engineering-from-scratch",
-    "stars": 75808,
+    "stars": 76094,
     "desc": "Learn AI Engineering! Learn it. Build it. Ship it for others.",
     "pushed_at": "2026-10-29T15:07:57Z",
     "license": "MIT",
@@ -429,8 +364,21 @@
     "topics": "agents,ai,ai-agents,ai-engineering,computer-vision,course,deep-learning,dsh,from-scratch,generative-ai,llm,machine-learning,mcp,python,rea,reinforcement-learning,rust,transformers,tutorial,typescript"
   },
   {
+    "full_name": "colbymchenry/codegraph",
+    "stars": 76086,
+    "desc": "Pre-indexed code knowledge graph, auto syncs on code changes, for Claude Code, Codex, Gemini, Cursor, OpenCode, AntiGravity, Kiro, CoPilot, and Hermes Agent — fewer tokens, fewer tool calls, 100% local",
+    "pushed_at": "2026-10-31T20:38:16Z",
+    "license": "MIT",
+    "kind": "none",
+    "name": "",
+    "market": "",
+    "url": "",
+    "pkg": "",
+    "topics": ""
+  },
+  {
     "full_name": "calesthio/OpenMontage",
-    "stars": 73608,
+    "stars": 73953,
     "desc": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and production-knowledge files. Turn your AI coding assistant into a full video production studio.",
     "pushed_at": "2026-10-28T21:46:02Z",
     "license": "AGPL-3.0",
@@ -443,9 +391,9 @@
   },
   {
     "full_name": "code-yeongyu/oh-my-openagent",
-    "stars": 70515,
+    "stars": 70555,
     "desc": "OmO: Just type \"mass ulw\" keyword with your prompt. Now you are the master of graph engineering.",
-    "pushed_at": "2026-10-31T07:15:22Z",
+    "pushed_at": "2026-10-31T23:20:30Z",
     "license": "NOASSERTION",
     "kind": "none",
     "name": "",
@@ -456,9 +404,9 @@
   },
   {
     "full_name": "asgeirtj/system_prompts_leaks",
-    "stars": 70506,
+    "stars": 70531,
     "desc": "Documented system prompts from Anthropic - Claude Fable 5.1, Opus 5.5, Claude Design, Claude Code. OpenAI - ChatGPT GPT-6-Astra, Codex. Google - Gemini 3.8 Flash, 3.1 Pro, Antigravity. xAI - Grok, Grok Bot, Cursor, Kimi and more! Updated regularly.",
-    "pushed_at": "2026-10-29T17:27:34Z",
+    "pushed_at": "2026-10-31T19:21:17Z",
     "license": "CC0-1.0",
     "kind": "none",
     "name": "",
@@ -468,8 +416,21 @@
     "topics": "ai,ai-agents,ai-prompts,anthropic,chatbot,chatgpt,claude,claude-code,codex,cursor,gemini,generative-ai,google,grok,llm,openai,prompt,prompt-engineering,system-prompt,system-prompts"
   },
   {
+    "full_name": "ai-job-search-dev/ai-job-search",
+    "stars": 68445,
+    "desc": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
+    "pushed_at": "2026-10-31T13:28:19Z",
+    "license": "MIT",
+    "kind": "none",
+    "name": "",
+    "market": "",
+    "url": "",
+    "pkg": "",
+    "topics": "ai,ai-agents,career,claude-code,cover-letter,cv,interview-preparation,job-application,job-hunting,job-search,latex,resume"
+  },
+  {
     "full_name": "shanraisshan/claude-code-best-practice",
-    "stars": 68349,
+    "stars": 68384,
     "desc": "from vibe coding to agentic engineering - practice makes claude perfect",
     "pushed_at": "2026-10-31T06:34:15Z",
     "license": "MIT",
@@ -481,23 +442,10 @@
     "topics": "agentic-ai,agentic-coding,agentic-engineering,agentic-workflow,ai,ai-agents,anthropic,best-practices,boris,claude,claude-ai,claude-code,claude-code-agents,claude-code-best-practices,claude-code-commands,claude-code-skills,context-engineering,pakistan,pakistani-developer,vibe-coding"
   },
   {
-    "full_name": "ai-job-search-dev/ai-job-search",
-    "stars": 68122,
-    "desc": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
-    "pushed_at": "2026-10-31T05:59:09Z",
-    "license": "MIT",
-    "kind": "none",
-    "name": "",
-    "market": "",
-    "url": "",
-    "pkg": "",
-    "topics": "ai,ai-agents,career,claude-code,cover-letter,cv,interview-preparation,job-application,job-hunting,job-search,latex,resume"
-  },
-  {
     "full_name": "Alishahryar1/free-claude-code",
-    "stars": 65262,
+    "stars": 65434,
     "desc": "Use Claude Code, Codex, Antigravity, VSCode, Pi, and OpenCode (and 6 other harnesses) for free (1.3B+ free tokens) from your terminal, app, IDE, or phone, and now from the browser with native browser sessions (multi-harness + multi-model) like OpenClaw (voice supported + ToS friendly)",
-    "pushed_at": "2026-10-31T07:09:32Z",
+    "pushed_at": "2026-10-31T07:53:18Z",
     "license": "NOASSERTION",
     "kind": "none",
     "name": "",
@@ -508,7 +456,7 @@
   },
   {
     "full_name": "sansan0/TrendRadar",
-    "stars": 63327,
+    "stars": 63331,
     "desc": "⭐AI-driven public opinion & trend monitor with multi-platform aggregation, RSS, and smart alerts.🎯 告别信息过载，你的 AI 舆情监控助手与热点筛选工具！聚合多平台热点 +  RSS 订阅，支持关键词精准筛选。AI 智能筛选新闻 + AI 翻译 +  AI 分析简报直推手机，也支持接入 MCP 架构，赋能 AI 自然语言对话分析、情感洞察与趋势预测等。支持 Docker ，数据本地/云端自持。集成微信/飞书/钉钉/Telegram/邮件/ntfy/bark/slack 等渠道智能推送。",
     "pushed_at": "2026-10-29T11:41:00Z",
     "license": "GPL-3.0",
@@ -521,7 +469,7 @@
   },
   {
     "full_name": "tw93/Pake",
-    "stars": 62686,
+    "stars": 62706,
     "desc": "Turn any website into a lightweight desktop app with one command, on macOS, Windows and Linux.",
     "pushed_at": "2026-10-30T22:09:01Z",
     "license": "GPL-3.0",
@@ -533,21 +481,8 @@
     "topics": "chatgpt,claude,cli,desktop,desktop-app,electron-alternative,gemini,linux,macos,nativefier,no-electron,rust,tauri,web-to-desktop,website-to-app,webview,windows,youtube"
   },
   {
-    "full_name": "MemPalace/mempalace",
-    "stars": 60170,
-    "desc": "The best-benchmarked open-source AI memory system. And it's free.",
-    "pushed_at": "2026-10-31T05:41:28Z",
-    "license": "MIT",
-    "kind": "skills-npx",
-    "name": "",
-    "market": "",
-    "url": "",
-    "pkg": "",
-    "topics": "ai,chromadb,llm,mcp,memory,python"
-  },
-  {
     "full_name": "ayghri/i-have-adhd",
-    "stars": 59531,
+    "stars": 59593,
     "desc": "A skill to stop your coding agent from burying the answer. ADHD-friendly output.",
     "pushed_at": "2026-10-19T19:46:23Z",
     "license": "MIT",
@@ -560,9 +495,9 @@
   },
   {
     "full_name": "router-for-me/CLIProxyAPI",
-    "stars": 57067,
+    "stars": 57123,
     "desc": "Wrap Antigravity, ChatGPT Codex, Claude Code, Grok Build, Muse Code, Devin as an OpenAI/Gemini/Claude/Codex compatible API service, allowing you to enjoy the free Gemini Series, GPT Series, Grok Series, Claude model through API",
-    "pushed_at": "2026-10-31T02:11:08Z",
+    "pushed_at": "2026-10-31T18:52:04Z",
     "license": "MIT",
     "kind": "none",
     "name": "",
@@ -573,9 +508,9 @@
   },
   {
     "full_name": "hesreallyhim/awesome-claude-code",
-    "stars": 56946,
+    "stars": 56992,
     "desc": "A hand-picked collection of the finest of resources for the most awesome of agents, Claude Code, the undisputed champion of coding companions, from the unstoppable team at Anthropic PBC (no affiliation). A delectable showcase of top tier skills, ambidextrous agents, scintillating status lines, top notch developer tooling, and also we have plugins",
-    "pushed_at": "2026-10-31T06:09:34Z",
+    "pushed_at": "2026-10-31T21:05:14Z",
     "license": "NOASSERTION",
     "kind": "none",
     "name": "",
@@ -586,7 +521,7 @@
   },
   {
     "full_name": "bojieli/ai-agent-book",
-    "stars": 56717,
+    "stars": 56763,
     "desc": "《深入理解 AI Agent：设计原理与工程实践》（李博杰 著）开源主仓库：全书正文、编译版 PDF 与按章配套代码",
     "pushed_at": "2026-10-08T15:06:27Z",
     "license": "Apache-2.0",
@@ -599,9 +534,9 @@
   },
   {
     "full_name": "aaif-goose/goose",
-    "stars": 56002,
+    "stars": 56050,
     "desc": "an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM",
-    "pushed_at": "2026-10-31T00:29:53Z",
+    "pushed_at": "2026-10-31T23:31:11Z",
     "license": "Apache-2.0",
     "kind": "none",
     "name": "",
@@ -611,21 +546,8 @@
     "topics": "acp,ai,ai-agents,mcp"
   },
   {
-    "full_name": "K-Dense-AI/scientific-agent-skills",
-    "stars": 55444,
-    "desc": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
-    "pushed_at": "2026-10-26T09:36:15Z",
-    "license": "MIT",
-    "kind": "skills-npx",
-    "name": "",
-    "market": "",
-    "url": "",
-    "pkg": "",
-    "topics": "agent-skills,ai-scientist,bioinformatics,chemoinformatics,claude,claude-skills,claudecode,clinical-research,computational-biology,data-analysis,drug-discovery,genomics,materials-science,metabolomics,proteomics,scientific-computing,scientific-visualization"
-  },
-  {
     "full_name": "VoltAgent/awesome-openclaw-skills",
-    "stars": 53454,
+    "stars": 53470,
     "desc": "The awesome collection of OpenClaw skills. 5,400+ skills filtered and categorized from the official OpenClaw Skills Registry.🦞",
     "pushed_at": "2026-10-30T13:21:07Z",
     "license": "MIT",
@@ -637,8 +559,21 @@
     "topics": "agent-skills,awesome,awesome-list,awesome-lists,clawd,clawdbot,clawdbot-skill,clawdhub,moltbot,moltbot-skills,openclaw,openclaw-skills"
   },
   {
+    "full_name": "CherryHQ/cherry-studio",
+    "stars": 53128,
+    "desc": "Your AI workspace for models, agents, and productivity.",
+    "pushed_at": "2026-10-31T23:04:43Z",
+    "license": "AGPL-3.0",
+    "kind": "none",
+    "name": "",
+    "market": "",
+    "url": "",
+    "pkg": "",
+    "topics": "agent-skills,agent-workspace,agentic-workspace,ai-agents,ai-models,ai-productivity,ai-workspace,llm,mcp-client,ollama"
+  },
+  {
     "full_name": "QuantumNous/new-api",
-    "stars": 51078,
+    "stars": 51102,
     "desc": "Open-source AI gateway. Self-hosted LLM gateway with OpenAI-, Claude- and Gemini-compatible APIs, model routing, access control, usage tracking and cost accounting.",
     "pushed_at": "2026-10-31T05:42:44Z",
     "license": "AGPL-3.0",
@@ -651,9 +586,9 @@
   },
   {
     "full_name": "mudler/LocalAI",
-    "stars": 50084,
+    "stars": 50101,
     "desc": "LocalAI is the open-source AI engine. Run any model - LLMs, vision, voice, image, video - on any hardware. No GPU required.",
-    "pushed_at": "2026-10-30T23:06:00Z",
+    "pushed_at": "2026-10-31T23:10:34Z",
     "license": "MIT",
     "kind": "none",
     "name": "",
@@ -664,7 +599,7 @@
   },
   {
     "full_name": "HKUDS/nanobot",
-    "stars": 49695,
+    "stars": 49705,
     "desc": "Your lightweight open-source personal agent.",
     "pushed_at": "2026-10-31T03:55:14Z",
     "license": "MIT",
@@ -677,7 +612,7 @@
   },
   {
     "full_name": "alibaba/open-code-review",
-    "stars": 49142,
+    "stars": 49180,
     "desc": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
     "pushed_at": "2026-10-30T06:18:12Z",
     "license": "Apache-2.0",
@@ -690,9 +625,9 @@
   },
   {
     "full_name": "sickn33/agentic-awesome-skills",
-    "stars": 48868,
-    "desc": "2,877+ reusable AI agent skills for Claude Code, Codex, Cursor and Gemini CLI. AAS Core adds local catalog discovery, agent-owned selection and plan preview. CLI, MCP and plugins.",
-    "pushed_at": "2026-10-31T07:20:41Z",
+    "stars": 48916,
+    "desc": "2,884+ reusable AI agent skills for Claude Code, Codex, Cursor and Gemini CLI. AAS Core adds local catalog discovery, agent-owned selection and plan preview. CLI, MCP and plugins.",
+    "pushed_at": "2026-10-31T11:16:41Z",
     "license": "MIT",
     "kind": "none",
     "name": "",
@@ -703,9 +638,9 @@
   },
   {
     "full_name": "jeecgboot/JeecgBoot",
-    "stars": 48349,
+    "stars": 48356,
     "desc": "【低代码v2.0，一句话即可生成整个系统】企业级AI低代码平台，一键生成前后端代码甚至整个系统。 AI Skills 一句话画流程、设计表单、生成报表、大屏。内置 AI应用平台涵盖：AI聊天、知识库、流程编排、MCP插件等，兼容主流大模型。引领AI低代码「Skills 生成 → 在线配置 → 代码生成 → 手工合并->AI修改」开发模式，解决 Java 项目 90% 重复工作，提高效率又不失灵活。",
-    "pushed_at": "2026-10-28T03:16:05Z",
+    "pushed_at": "2026-10-31T09:49:57Z",
     "license": "Apache-2.0",
     "kind": "none",
     "name": "",
@@ -715,36 +650,10 @@
     "topics": "activiti,agent,ai,antd,claude-code,cli,codegenerator,codex,flowable,langchain4j,llm,low-code,mcp,mybatis-plus,rag,skills,spring-ai,springboot,springcloud,vue3"
   },
   {
-    "full_name": "DeusData/codebase-memory-mcp",
-    "stars": 47879,
-    "desc": "Local code intelligence for developers and AI agents. Connect code, docs and infrastructure in a persistent graph, with CBM Lens, MCP tools, agent integrations and change-aware test selection.",
-    "pushed_at": "2026-10-31T05:11:44Z",
-    "license": "MIT",
-    "kind": "mcp-npm",
-    "name": "",
-    "market": "",
-    "url": "",
-    "pkg": "codebase-memory-mcp",
-    "topics": "aider,ast,claude-code,code-analysis,code-intelligence,codex,cursor,cypher,developer-tools,gemini-cli,graph-visualization,kilocode,knowledge-graph,mcp,mcp-server,model-context-protocol,opencode,sqlite,tree-sitter,windsurf"
-  },
-  {
-    "full_name": "zhayujie/CowAgent",
-    "stars": 47707,
-    "desc": "Open-source personal AI assistant & Agent Harness. Plans tasks, runs tools and skills, self-evolves with memory and knowledge. Multi-agent, multi-model, multi-channel. Lightweight, extensible, one-line install.",
-    "pushed_at": "2026-10-30T03:07:24Z",
-    "license": "MIT",
-    "kind": "none",
-    "name": "",
-    "market": "",
-    "url": "",
-    "pkg": "",
-    "topics": "ai,ai-agent,ai-agents,chatgpt-on-wechat,claude,claude-code,codex,cowagent,deepseek,harness,llm,mcp,multi-agent,openai,openclaw,personal-agent,skills"
-  },
-  {
     "full_name": "Gathin23/cleanyourtv",
-    "stars": 47064,
+    "stars": 47902,
     "desc": "Debloat any Android or Google TV over Wi-Fi and get an Apple TV-style home.",
-    "pushed_at": "2026-10-31T05:27:38Z",
+    "pushed_at": "2026-10-31T18:15:47Z",
     "license": "NOASSERTION",
     "kind": "none",
     "name": "",
@@ -754,21 +663,21 @@
     "topics": "adb,adblock,android-tv,android-tv-launcher,apple-tv,bloatware-removal,claude-code,debloat,fire-tv,google-tv,launcher,privacy,smart-tv,sony-bravia,tcl,vibe-coding,xiaomi"
   },
   {
-    "full_name": "siyuan-note/siyuan",
-    "stars": 47016,
-    "desc": "An open-source, privacy-first, self-hosted knowledge workspace where humans and AI agents work together 开源、隐私优先、自托管的知识工作空间，让人与智能体在此协作",
-    "pushed_at": "2026-10-31T07:18:19Z",
-    "license": "AGPL-3.0",
+    "full_name": "zhayujie/CowAgent",
+    "stars": 47720,
+    "desc": "Open-source personal AI assistant & Agent Harness. Plans tasks, runs tools and skills, self-evolves with memory and knowledge. Multi-agent, multi-model, multi-channel. Lightweight, extensible, one-line install.",
+    "pushed_at": "2026-10-31T11:20:13Z",
+    "license": "MIT",
     "kind": "none",
     "name": "",
     "market": "",
     "url": "",
     "pkg": "",
-    "topics": "agentic-ai,ai-agent,knowledge-base,local-first,markdown,mcp,note-taking,self-hosted,siyuan,workspace"
+    "topics": "ai,ai-agent,ai-agents,chatgpt-on-wechat,claude,claude-code,codex,cowagent,deepseek,harness,llm,mcp,multi-agent,openai,openclaw,personal-agent,skills"
   },
   {
     "full_name": "herdrdev/herdr",
-    "stars": 46988,
+    "stars": 47132,
     "desc": "the runtime your coding agents live on",
     "pushed_at": "2026-10-29T12:57:41Z",
     "license": "Apache-2.0",
@@ -780,10 +689,23 @@
     "topics": "agent,agent-orchestration,ai,ai-agents,claude-code,cli,codex,coding-agents,developer-tools,devtools,multiplexer,rust,terminal,terminal-multiplexer,terminal-ui,tmux,tui,workspace-manager"
   },
   {
+    "full_name": "siyuan-note/siyuan",
+    "stars": 47023,
+    "desc": "An open-source, privacy-first, self-hosted knowledge workspace where humans and AI agents work together 开源、隐私优先、自托管的知识工作空间，让人与智能体在此协作",
+    "pushed_at": "2026-10-31T17:25:53Z",
+    "license": "AGPL-3.0",
+    "kind": "none",
+    "name": "",
+    "market": "",
+    "url": "",
+    "pkg": "",
+    "topics": "agentic-ai,ai-agent,knowledge-base,local-first,markdown,mcp,note-taking,self-hosted,siyuan,workspace"
+  },
+  {
     "full_name": "LibreChat-AI/LibreChat",
-    "stars": 46530,
+    "stars": 46580,
     "desc": "Enhanced ChatGPT Clone: Features Agents, MCP, Skills, DeepSeek, Anthropic, AWS, OpenAI, Responses API, Azure, Groq, o1, GPT-5, Mistral, OpenRouter, Vertex AI, Gemini, Artifacts, AI model switching, message search, Code Interpreter, langchain, DALL-E-3, OpenAPI Actions, Functions, Secure Multi-User Auth, Presets, open-source for self-hosting. Active",
-    "pushed_at": "2026-10-31T07:19:54Z",
+    "pushed_at": "2026-10-31T23:32:37Z",
     "license": "MIT",
     "kind": "none",
     "name": "",
@@ -794,7 +716,7 @@
   },
   {
     "full_name": "luongnv89/claude-howto",
-    "stars": 46235,
+    "stars": 46276,
     "desc": "A visual, example-driven guide to Claude Code — from basic concepts to advanced agents, with copy-paste templates that bring immediate value.",
     "pushed_at": "2026-10-29T00:16:50Z",
     "license": "MIT",
@@ -806,23 +728,10 @@
     "topics": "claude-code,guide,tutorial"
   },
   {
-    "full_name": "Wei-Shaw/sub2api",
-    "stars": 45180,
-    "desc": "Sub2API 一站式开源中转服务，让 Claude、Openai 、Gemini、Grok订阅统一接入，支持拼车共享，更高效分摊成本，原生工具无缝使用。",
-    "pushed_at": "2026-10-31T05:31:41Z",
-    "license": "LGPL-3.0",
-    "kind": "none",
-    "name": "",
-    "market": "",
-    "url": "",
-    "pkg": "",
-    "topics": "2api,antigravity2api,cc2api,claude,claude-code,codex,crs,crs2,gemini"
-  },
-  {
     "full_name": "AstrBotDevs/AstrBot",
-    "stars": 45140,
+    "stars": 45325,
     "desc": "AI Agent Assistant & development framework that integrates lots of IM platforms, LLMs, plugins and AI feature, and can be your openclaw alternative. ✨",
-    "pushed_at": "2026-10-31T05:26:04Z",
+    "pushed_at": "2026-10-31T16:02:46Z",
     "license": "AGPL-3.0",
     "kind": "none",
     "name": "",
@@ -832,8 +741,21 @@
     "topics": "agent,ai,astrbot,chatbot,chatgpt,discord,docker,gemini,gpt,llama,llm,mcp,openai,python,qq,qqbot,telegram"
   },
   {
+    "full_name": "Wei-Shaw/sub2api",
+    "stars": 45211,
+    "desc": "Sub2API 一站式开源中转服务，让 Claude、Openai 、Gemini、Grok订阅统一接入，支持拼车共享，更高效分摊成本，原生工具无缝使用。",
+    "pushed_at": "2026-10-31T15:21:49Z",
+    "license": "LGPL-3.0",
+    "kind": "none",
+    "name": "",
+    "market": "",
+    "url": "",
+    "pkg": "",
+    "topics": "2api,antigravity2api,cc2api,claude,claude-code,codex,crs,crs2,gemini"
+  },
+  {
     "full_name": "chatanywhere/GPT_API_free",
-    "stars": 45123,
+    "stars": 45171,
     "desc": "免费大模型API，支持免费调用GPT、DeepSeek等主流模型，免费额度10000点，每日刷新！另付费价格最低官方1-2折！",
     "pushed_at": "2026-10-30T11:02:36Z",
     "license": "MIT",
@@ -846,9 +768,9 @@
   },
   {
     "full_name": "reactive-resume/reactive-resume",
-    "stars": 45113,
+    "stars": 45127,
     "desc": "A one-of-a-kind resume builder that keeps your privacy in mind. Completely secure, customizable, portable, open-source and free forever. Try it out today!",
-    "pushed_at": "2026-10-31T07:14:36Z",
+    "pushed_at": "2026-10-31T23:14:14Z",
     "license": "MIT",
     "kind": "none",
     "name": "",
@@ -859,7 +781,7 @@
   },
   {
     "full_name": "Kong/kong",
-    "stars": 44331,
+    "stars": 44337,
     "desc": "🦍 The API and AI Gateway",
     "pushed_at": "2026-10-19T02:45:09Z",
     "license": "Apache-2.0",
@@ -872,7 +794,7 @@
   },
   {
     "full_name": "zhaoxuya520/reverse-skill",
-    "stars": 43837,
+    "stars": 43874,
     "desc": "Reverse Engineering / Authorized Penetration Testing / Security Research Skill Router Pack AI-powered routing + On-demand toolchain bootstrapping + Self-evolving knowledge base  Supports Claude Code, Kiro, Cursor, Cline, and other AI coding clients 逆向/渗透/安全技能路由包 - AI 自动路由 + 按需自举工具链 + 自动进化经验库 | 支持 Claude Code / Kiro / Cursor / Cline 等代码 AI 客户端",
     "pushed_at": "2026-09-22T06:43:21Z",
     "license": "MIT",
@@ -885,9 +807,9 @@
   },
   {
     "full_name": "tinyhumansai/openhuman",
-    "stars": 42442,
+    "stars": 42454,
     "desc": "The fastest, cheapest, most efficient open-source agent harness. Run more than 500 agents on a $10 VPS.",
-    "pushed_at": "2026-10-30T11:11:06Z",
+    "pushed_at": "2026-10-31T17:04:06Z",
     "license": "GPL-3.0",
     "kind": "none",
     "name": "",
@@ -898,7 +820,7 @@
   },
   {
     "full_name": "chatboxai/chatbox",
-    "stars": 42206,
+    "stars": 42211,
     "desc": "Powerful AI Client",
     "pushed_at": "2026-10-29T03:41:00Z",
     "license": "GPL-3.0",
@@ -910,23 +832,10 @@
     "topics": "assistant,chatbot,chatgpt,claude,claude-code,copilot,deepseek,gemini,gpt,gpt-5,ollama,openai"
   },
   {
-    "full_name": "wshobson/agents",
-    "stars": 42029,
-    "desc": "Multi-harness agentic plugin marketplace for Claude Code, Codex, Cursor, OpenCode, GitHub Copilot, Google Antigravity, and Pi",
-    "pushed_at": "2026-10-30T23:35:25Z",
-    "license": "MIT",
-    "kind": "plugin",
-    "name": "python-development",
-    "market": "wshobson/agents",
-    "url": "",
-    "pkg": "",
-    "topics": "agent-skills,agentic-ai,ai-agents,anthropic,antigravity,claude,claude-code,claude-code-marketplace,claude-code-plugin,claude-skills,codex,coding-agents,cursor,cursor-rules,github-copilot,mcp,multi-agent,opencode,pi-coding-agent,subagents"
-  },
-  {
     "full_name": "codewhale-hq/Codewhale",
-    "stars": 41155,
+    "stars": 41160,
     "desc": "Open-source agent for the terminal written in Rust. Use any provider or model. Issues & PRs always welcome",
-    "pushed_at": "2026-10-31T07:12:01Z",
+    "pushed_at": "2026-10-31T23:12:26Z",
     "license": "MIT",
     "kind": "plugin?",
     "name": "",
@@ -937,7 +846,7 @@
   },
   {
     "full_name": "ToolJet/ToolJet",
-    "stars": 41150,
+    "stars": 41156,
     "desc": "Open-source foundation of ToolJet AI - the enterprise app generation platform for internal tools, dashboards, business applications, workflows and AI agents. Build visually, from a prompt, or from Claude Code, Codex and Cursor over MCP 🚀",
     "pushed_at": "2026-10-31T06:35:25Z",
     "license": "AGPL-3.0",
@@ -950,7 +859,7 @@
   },
   {
     "full_name": "github/awesome-copilot",
-    "stars": 40615,
+    "stars": 40630,
     "desc": "Community-contributed instructions, agents, skills, and configurations to help you make the most of GitHub Copilot.",
     "pushed_at": "2026-10-30T01:16:42Z",
     "license": "MIT",
@@ -963,9 +872,9 @@
   },
   {
     "full_name": "Yeachan-Heo/oh-my-claudecode",
-    "stars": 40439,
+    "stars": 40463,
     "desc": "Teams-first Multi-agent orchestration for Claude Code",
-    "pushed_at": "2026-10-31T07:17:06Z",
+    "pushed_at": "2026-10-31T23:17:36Z",
     "license": "MIT",
     "kind": "plugin?",
     "name": "",
@@ -976,9 +885,9 @@
   },
   {
     "full_name": "drawdb-io/drawdb",
-    "stars": 40199,
+    "stars": 40207,
     "desc": "Free, simple, and intuitive online database diagram editor and SQL generator.",
-    "pushed_at": "2026-10-30T21:31:20Z",
+    "pushed_at": "2026-10-31T15:24:05Z",
     "license": "AGPL-3.0",
     "kind": "none",
     "name": "",
@@ -989,7 +898,7 @@
   },
   {
     "full_name": "mindsdb/mindshub",
-    "stars": 39835,
+    "stars": 39837,
     "desc": "The unified workspace where open-source models get things done for you.",
     "pushed_at": "2026-10-23T21:25:34Z",
     "license": "MIT",
@@ -1002,7 +911,7 @@
   },
   {
     "full_name": "bytedance/UI-TARS-desktop",
-    "stars": 39474,
+    "stars": 39490,
     "desc": "The Open-Source Multimodal AI Agent Stack: Connecting Cutting-Edge AI Models and Agent Infra",
     "pushed_at": "2026-10-09T01:29:53Z",
     "license": "Apache-2.0",
@@ -1015,7 +924,7 @@
   },
   {
     "full_name": "patchy631/ai-engineering-hub",
-    "stars": 38542,
+    "stars": 39047,
     "desc": "In-depth tutorials on LLMs, RAGs and real-world AI agent applications.",
     "pushed_at": "2026-10-30T12:36:39Z",
     "license": "MIT",
@@ -1028,7 +937,7 @@
   },
   {
     "full_name": "JCodesMore/ai-website-cloner-template",
-    "stars": 38189,
+    "stars": 38282,
     "desc": "Clone any website with one command using AI coding agents",
     "pushed_at": "2026-10-19T22:56:31Z",
     "license": "MIT",
@@ -1041,9 +950,9 @@
   },
   {
     "full_name": "PDFMathTranslate/PDFMathTranslate",
-    "stars": 38066,
+    "stars": 38075,
     "desc": "[EMNLP 2025 Demo] PDF scientific paper translation with preserved formats - 基于 AI 完整保留排版的 PDF 文档全文双语翻译，支持 Google/DeepL/Ollama/OpenAI 等服务，提供 CLI/GUI/MCP/Docker/Zotero",
-    "pushed_at": "2026-10-31T06:20:09Z",
+    "pushed_at": "2026-10-31T18:41:43Z",
     "license": "AGPL-3.0",
     "kind": "none",
     "name": "",
@@ -1053,23 +962,10 @@
     "topics": "chinese,document,edit,english,japanese,korean,latex,math,mcp,modify,obsidian,openai,pdf,pdf2zh,python,russian,translate,translation,zotero"
   },
   {
-    "full_name": "songquanpeng/one-api",
-    "stars": 37295,
-    "desc": "LLM API 管理 & 分发系统，支持 OpenAI、Azure、Anthropic Claude、Google Gemini、DeepSeek、字节豆包、ChatGLM、文心一言、讯飞星火、通义千问、360 智脑、腾讯混元等主流模型，统一 API 适配，可用于 key 管理与二次分发。单可执行文件，提供 Docker 镜像，一键部署，开箱即用。LLM API management & key redistribution system, unifying multiple providers under a single API. Single binary, Docker-ready, with an English UI.",
-    "pushed_at": "2026-01-09T03:26:43Z",
-    "license": "MIT",
-    "kind": "none",
-    "name": "",
-    "market": "",
-    "url": "",
-    "pkg": "",
-    "topics": "api,api-gateway,azure-openai-api,chatgpt,claude,ernie-bot,gemini,gpt,openai,openai-api,proxy"
-  },
-  {
     "full_name": "can1357/oh-my-pi",
-    "stars": 37262,
+    "stars": 37343,
     "desc": "⌥ Coding agent with the IDE wired in. Built by Stencil Labs.",
-    "pushed_at": "2026-10-31T00:39:26Z",
+    "pushed_at": "2026-10-31T20:36:58Z",
     "license": "MIT",
     "kind": "none",
     "name": "",
@@ -1080,7 +976,7 @@
   },
   {
     "full_name": "HKUDS/Vibe-Trading",
-    "stars": 37256,
+    "stars": 37300,
     "desc": "\"Vibe-Trading: Your Personal Trading Agent\"",
     "pushed_at": "2026-10-30T03:45:49Z",
     "license": "MIT",
@@ -1092,8 +988,21 @@
     "topics": "ai-agent,algorithmic-trading,backtesting,fintech,llm,mcp,multi-agent,python,quantitative-finance,trading"
   },
   {
+    "full_name": "songquanpeng/one-api",
+    "stars": 37300,
+    "desc": "LLM API 管理 & 分发系统，支持 OpenAI、Azure、Anthropic Claude、Google Gemini、DeepSeek、字节豆包、ChatGLM、文心一言、讯飞星火、通义千问、360 智脑、腾讯混元等主流模型，统一 API 适配，可用于 key 管理与二次分发。单可执行文件，提供 Docker 镜像，一键部署，开箱即用。LLM API management & key redistribution system, unifying multiple providers under a single API. Single binary, Docker-ready, with an English UI.",
+    "pushed_at": "2026-01-09T03:26:43Z",
+    "license": "MIT",
+    "kind": "none",
+    "name": "",
+    "market": "",
+    "url": "",
+    "pkg": "",
+    "topics": "api,api-gateway,azure-openai-api,chatgpt,claude,ernie-bot,gemini,gpt,openai,openai-api,proxy"
+  },
+  {
     "full_name": "agentscope-ai/QwenPaw",
-    "stars": 37051,
+    "stars": 37080,
     "desc": "Your Personal AI Assistant; easy to install, deploy on your own machine or on the cloud; supports multiple chat apps with easily extensible capabilities.",
     "pushed_at": "2026-10-30T09:37:04Z",
     "license": "Apache-2.0",
@@ -1106,7 +1015,7 @@
   },
   {
     "full_name": "VoltAgent/awesome-agent-skills",
-    "stars": 36653,
+    "stars": 36679,
     "desc": "A curated collection of 1000+ agent skills from official dev teams and the community, compatible with Claude Code, Codex, Gemini CLI, Cursor, and more.",
     "pushed_at": "2026-10-30T13:28:09Z",
     "license": "MIT",
@@ -1118,34 +1027,8 @@
     "topics": "agent-skills,ai-agents,awesome,awesome-list,claude-code,claude-code-skills,claude-skills,codex,codex-skills,cursor,cursor-skills,gemini-skills,opencode-skills,skills"
   },
   {
-    "full_name": "virgiliojr94/book-to-skill",
-    "stars": 36614,
-    "desc": "Turn any technical book PDF into a Claude Code skill — ready to study, reference, and use while you work.",
-    "pushed_at": "2026-10-28T13:26:03Z",
-    "license": "MIT",
-    "kind": "skills-npx",
-    "name": "",
-    "market": "",
-    "url": "",
-    "pkg": "",
-    "topics": "agent-skills,ai-agents,book-to-skill,context-engineering,document-processing,edtech,knowledge-base,knowledge-management,llm,pdf-to-markdown,rag,self-study,study-tools"
-  },
-  {
-    "full_name": "DayuanJiang/next-ai-draw-io",
-    "stars": 36510,
-    "desc": "Draw and edit draw.io diagrams by chatting with an AI. Web app, desktop app, and an MCP server for Claude Code, Cursor, Codex and VS Code.",
-    "pushed_at": "2026-10-31T06:43:31Z",
-    "license": "Apache-2.0",
-    "kind": "mcp-npm",
-    "name": "",
-    "market": "",
-    "url": "",
-    "pkg": "@next-ai-drawio/mcp-server",
-    "topics": "ai,architecture-diagram,claude-code,diagram-generator,diagrams,draw-io,drawio,electron,flowchart,gemini-cli-extension,llm,mcp,mcp-server,nextjs"
-  },
-  {
     "full_name": "mukul975/Anthropic-Cybersecurity-Skills",
-    "stars": 35320,
+    "stars": 35351,
     "desc": "817 structured cybersecurity skills for AI agents · Mapped to 6 frameworks: MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, NIST AI RMF & MITRE F3 (Fight Fraud) · agentskills.io standard · Works with Claude Code, GitHub Copilot, Codex CLI, Cursor, Gemini CLI & 20+ platforms · 29 security domains · Apache 2.0",
     "pushed_at": "2026-08-31T04:32:44Z",
     "license": "Apache-2.0",
@@ -1158,7 +1041,7 @@
   },
   {
     "full_name": "agentscope-ai/agentscope",
-    "stars": 34987,
+    "stars": 35037,
     "desc": "Build and run agents you can see, understand and trust.",
     "pushed_at": "2026-10-30T22:20:56Z",
     "license": "Apache-2.0",
@@ -1184,9 +1067,9 @@
   },
   {
     "full_name": "davila7/claude-code-templates",
-    "stars": 33008,
+    "stars": 33020,
     "desc": "CLI tool for configuring and monitoring Claude Code",
-    "pushed_at": "2026-10-31T03:45:34Z",
+    "pushed_at": "2026-10-31T19:47:13Z",
     "license": "MIT",
     "kind": "none",
     "name": "",
@@ -1197,7 +1080,7 @@
   },
   {
     "full_name": "topoteretes/cognee",
-    "stars": 32941,
+    "stars": 32963,
     "desc": "Cognee is the open-source AI memory platform for agents. Give your AI agents persistent long-term memory with small models for free",
     "pushed_at": "2026-10-30T20:04:38Z",
     "license": "Apache-2.0",
@@ -1210,7 +1093,7 @@
   },
   {
     "full_name": "ahujasid/mcp-for-blender",
-    "stars": 32861,
+    "stars": 32921,
     "desc": "Community plugin to control Blender 3D with any LLM of your choice. Not affiliated with the official Blender Foundation.",
     "pushed_at": "2026-10-29T09:13:34Z",
     "license": "MIT",
@@ -1223,7 +1106,7 @@
   },
   {
     "full_name": "iOfficeAI/OfficeCLI",
-    "stars": 32848,
+    "stars": 32873,
     "desc": "OfficeCLI is the first and best Office suite  purpose-built for AI agents to read, edit, and automate Word, Excel, and PowerPoint files. Free, open-source, single binary, no Office installation required.",
     "pushed_at": "2026-10-30T06:48:51Z",
     "license": "Apache-2.0",
@@ -1236,7 +1119,7 @@
   },
   {
     "full_name": "tirth8205/code-review-graph",
-    "stars": 32515,
+    "stars": 32522,
     "desc": "Local-first code intelligence graph for MCP and CLI. Builds a persistent map of your codebase so AI coding tools read only what matters, with benchmarked context reductions on reviews and large-repo workflows.",
     "pushed_at": "2026-10-29T10:34:29Z",
     "license": "MIT",
@@ -1248,8 +1131,21 @@
     "topics": "ai-coding,claude,claude-code,code-review,graphrag,incremental,knowledge-graph,llm,mcp,python,static-analysis,tree-sitter"
   },
   {
+    "full_name": "78/xiaozhi-esp32",
+    "stars": 32349,
+    "desc": "An MCP-based chatbot | 一个基于MCP的聊天机器人",
+    "pushed_at": "2026-10-31T13:53:21Z",
+    "license": "MIT",
+    "kind": "none",
+    "name": "",
+    "market": "",
+    "url": "",
+    "pkg": "",
+    "topics": "chatbot,esp32,mcp"
+  },
+  {
     "full_name": "feder-cr/invisible_dots",
-    "stars": 32315,
+    "stars": 32330,
     "desc": "Open-source, self-hosted alternative to OpenAI Dots, Grok Bot. Built to be undetectable by anti-bot systems.",
     "pushed_at": "2026-10-31T06:28:10Z",
     "license": "MIT",
@@ -1261,34 +1157,8 @@
     "topics": "agent-skills,agentic-ai,ai-agent,ai-agents,ai-assistant,antidetect-browser,automation,autonomous-agents,browser-automation,claude-cowork,computer-use,computer-use-agent,llm-agents,local-first,manus,mcp,open-source-alternative,playwright,self-hosted,stealth-browser"
   },
   {
-    "full_name": "78/xiaozhi-esp32",
-    "stars": 32309,
-    "desc": "An MCP-based chatbot | 一个基于MCP的聊天机器人",
-    "pushed_at": "2026-10-29T23:20:49Z",
-    "license": "MIT",
-    "kind": "none",
-    "name": "",
-    "market": "",
-    "url": "",
-    "pkg": "",
-    "topics": "chatbot,esp32,mcp"
-  },
-  {
-    "full_name": "googleworkspace/cli",
-    "stars": 32017,
-    "desc": "Google Workspace CLI — one command-line tool for Drive, Gmail, Calendar, Sheets, Docs, Chat, Admin, and more. Dynamically built from Google Discovery Service. Includes AI agent skills.",
-    "pushed_at": "2026-10-30T16:06:54Z",
-    "license": "Apache-2.0",
-    "kind": "skills-npx",
-    "name": "",
-    "market": "",
-    "url": "",
-    "pkg": "",
-    "topics": "agent-skills,ai-agent,automation,cli,discovery-api,gemini-cli-extension,google-admin,google-api,google-calendar,google-chat,google-docs,google-drive,google-sheets,google-workspace,oauth2,rust"
-  },
-  {
     "full_name": "decolua/9router",
-    "stars": 31729,
+    "stars": 31766,
     "desc": "Unlimited FREE AI coding. Connect Claude Code, Codex, Cursor, Cline, Copilot, Antigravity to FREE Claude/GPT/Gemini via 40+ providers. Auto-fallback, RTK -40% tokens, never hit limits.",
     "pushed_at": "2026-10-28T09:45:26Z",
     "license": "MIT",
@@ -1301,7 +1171,7 @@
   },
   {
     "full_name": "zarazhangrui/frontend-slides",
-    "stars": 31626,
+    "stars": 31653,
     "desc": "Create beautiful slides on the web using a coding agent's frontend skills",
     "pushed_at": "2026-06-23T20:08:19Z",
     "license": "MIT",
@@ -1313,8 +1183,21 @@
     "topics": "ai-slides,anthropic,claude,claude-code,claude-skill,generative-ui,html,presentation,slides,vibe-coding"
   },
   {
+    "full_name": "Donchitos/Claude-Code-Game-Studios",
+    "stars": 31130,
+    "desc": "Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy.",
+    "pushed_at": "2026-10-19T02:43:42Z",
+    "license": "MIT",
+    "kind": "none",
+    "name": "",
+    "market": "",
+    "url": "",
+    "pkg": "",
+    "topics": "ai-agents,ai-assisted-development,anthropic,claude,claude-code,game-design,game-development,gamedev,godot,indie-game-dev,unity,unreal-engine"
+  },
+  {
     "full_name": "nanocoai/nanoclaw",
-    "stars": 31062,
+    "stars": 31064,
     "desc": "A lightweight alternative to OpenClaw that runs in containers for security. Connects to WhatsApp, Telegram, Slack, Discord, Gmail and other messaging apps,, has memory, scheduled jobs, and runs directly on Anthropic's Agents SDK",
     "pushed_at": "2026-10-30T18:23:22Z",
     "license": "MIT",
@@ -1327,7 +1210,7 @@
   },
   {
     "full_name": "oraios/serena",
-    "stars": 30904,
+    "stars": 30955,
     "desc": "A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities  - the IDE for your agent",
     "pushed_at": "2026-10-28T10:45:55Z",
     "license": "NOASSERTION",
@@ -1340,9 +1223,9 @@
   },
   {
     "full_name": "ComposioHQ/composio",
-    "stars": 30838,
+    "stars": 30850,
     "desc": "Composio powers 1000+ toolkits, tool search, context management, authentication, and a sandboxed workbench to help you build AI agents that turn intent into action.",
-    "pushed_at": "2026-10-31T06:24:52Z",
+    "pushed_at": "2026-10-31T22:00:02Z",
     "license": "MIT",
     "kind": "none",
     "name": "",
@@ -1352,21 +1235,8 @@
     "topics": "agentic-ai,agents,ai,ai-agents,aiagents,developer-tools,function-calling,gpt-4,javascript,js,llm,llmops,mcp,python,remote-mcp-server,sse,typescript"
   },
   {
-    "full_name": "Donchitos/Claude-Code-Game-Studios",
-    "stars": 30546,
-    "desc": "Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coordination system mirroring real studio hierarchy.",
-    "pushed_at": "2026-10-19T02:43:42Z",
-    "license": "MIT",
-    "kind": "none",
-    "name": "",
-    "market": "",
-    "url": "",
-    "pkg": "",
-    "topics": "ai-agents,ai-assisted-development,anthropic,claude,claude-code,game-design,game-development,gamedev,godot,indie-game-dev,unity,unreal-engine"
-  },
-  {
     "full_name": "assafelovic/gpt-researcher",
-    "stars": 30393,
+    "stars": 30406,
     "desc": "An autonomous agent that conducts deep research on any data using any LLM providers",
     "pushed_at": "2026-10-10T22:03:53Z",
     "license": "Apache-2.0",
@@ -1379,7 +1249,7 @@
   },
   {
     "full_name": "labring/FastGPT",
-    "stars": 29957,
+    "stars": 29964,
     "desc": "FastGPT is a knowledge-based platform built on the LLMs, offers a comprehensive suite of out-of-the-box capabilities such as data processing, RAG retrieval, and visual AI workflow orchestration, letting you easily develop and deploy complex question-answering systems without the need for extensive setup or configuration.",
     "pushed_at": "2026-10-30T09:52:56Z",
     "license": "NOASSERTION",
@@ -1405,9 +1275,9 @@
   },
   {
     "full_name": "mastra-ai/mastra",
-    "stars": 29225,
+    "stars": 29242,
     "desc": "Mastra is the modern TypeScript framework for AI-powered applications and agents.",
-    "pushed_at": "2026-10-31T07:12:24Z",
+    "pushed_at": "2026-10-31T22:06:15Z",
     "license": "NOASSERTION",
     "kind": "none",
     "name": "",
@@ -1417,36 +1287,10 @@
     "topics": "agents,ai,chatbots,evals,javascript,llm,mcp,nextjs,nodejs,reactjs,tts,typescript,workflows"
   },
   {
-    "full_name": "yamadashy/repomix",
-    "stars": 29095,
-    "desc": "📦 Repomix is a powerful tool that packs your entire repository into a single, AI-friendly file. Perfect for when you need to feed your codebase to Large Language Models (LLMs) or other AI tools like Claude, ChatGPT, DeepSeek, Perplexity, Gemini, Gemma, Llama, Grok, and more.",
-    "pushed_at": "2026-10-31T02:25:34Z",
-    "license": "MIT",
-    "kind": "plugin",
-    "name": "repomix-mcp",
-    "market": "yamadashy/repomix",
-    "url": "",
-    "pkg": "",
-    "topics": "ai,anthropic,artificial-intelligence,chatbot,chatgpt,claude,deepseek,developer-tools,gemini,genai,generative-ai,gpt,javascript,language-model,llama,llm,mcp,nodejs,openai,typescript"
-  },
-  {
-    "full_name": "op7418/guizang-ppt-skill",
-    "stars": 28995,
-    "desc": "AI-agent Skill for generating polished HTML slide decks: editorial magazine and Swiss layouts, image prompts, social covers, and a WebGL/low-power presentation runtime.",
-    "pushed_at": "2026-10-30T12:45:28Z",
-    "license": "AGPL-3.0",
-    "kind": "skills-npx",
-    "name": "",
-    "market": "",
-    "url": "",
-    "pkg": "",
-    "topics": "ai-agent,claude-code,codex,html-deck,image-generation,ppt,presentation,skill,skills,swiss-design,web-ppt"
-  },
-  {
     "full_name": "QwenLM/qwen-code",
-    "stars": 28843,
+    "stars": 28853,
     "desc": "An open-source AI coding agent that lives in your terminal.",
-    "pushed_at": "2026-10-31T07:20:19Z",
+    "pushed_at": "2026-10-31T23:30:12Z",
     "license": "Apache-2.0",
     "kind": "none",
     "name": "",
@@ -1457,9 +1301,9 @@
   },
   {
     "full_name": "manaflow-ai/cmux",
-    "stars": 28621,
+    "stars": 28627,
     "desc": "Open source Ghostty-based macOS terminal with vertical tabs and notifications for AI coding agents. Built for multitasking, organization, and programmability.",
-    "pushed_at": "2026-10-31T07:20:39Z",
+    "pushed_at": "2026-10-31T23:32:12Z",
     "license": "NOASSERTION",
     "kind": "none",
     "name": "",
@@ -1470,7 +1314,7 @@
   },
   {
     "full_name": "BloopAI/vibe-kanban",
-    "stars": 28527,
+    "stars": 28541,
     "desc": "Get 10X more out of Claude Code, Codex or any coding agent",
     "pushed_at": "2026-10-29T07:49:44Z",
     "license": "Apache-2.0",
@@ -1496,9 +1340,9 @@
   },
   {
     "full_name": "gastownhall/beads",
-    "stars": 28317,
+    "stars": 28335,
     "desc": "Beads - A memory upgrade for your coding agent",
-    "pushed_at": "2026-10-31T02:40:10Z",
+    "pushed_at": "2026-10-31T18:53:49Z",
     "license": "MIT",
     "kind": "none",
     "name": "",
@@ -1508,23 +1352,10 @@
     "topics": "agents,claude-code,coding"
   },
   {
-    "full_name": "t8y2/dbx",
-    "stars": 28279,
-    "desc": "25 MB lightweight cross-platform database client for 100+ databases, including MySQL, PostgreSQL, SQLite, Redis, MongoDB, DuckDB, SQL Server, and Dameng. Built-in AI, MCP Server, CLI, desktop and Docker. | 轻量级跨平台数据库管理工具，支持 MySQL、PostgreSQL、SQLite、Redis、MongoDB、达梦等 100+ 数据库，提供桌面端、Docker、CLI、内置 AI 助手和 MCP。",
-    "pushed_at": "2026-10-31T06:18:58Z",
-    "license": "Apache-2.0",
-    "kind": "mcp-npm",
-    "name": "",
-    "market": "",
-    "url": "",
-    "pkg": "@dbx-app/mcp-server",
-    "topics": "ai,cli,clickhouse,database,database-client,database-management,docker,gui,mcp,mongodb,mysql,postgresql,redis,rust,sql-server,sqlite,tauri,vue"
-  },
-  {
     "full_name": "PrefectHQ/fastmcp",
-    "stars": 28252,
+    "stars": 28251,
     "desc": "🚀 The fast, Pythonic way to build MCP servers and clients.",
-    "pushed_at": "2026-10-31T07:14:22Z",
+    "pushed_at": "2026-10-31T23:12:46Z",
     "license": "Apache-2.0",
     "kind": "none",
     "name": "",
@@ -1534,23 +1365,10 @@
     "topics": "agents,fastmcp,llms,mcp,mcp-clients,mcp-servers,mcp-tools,model-context-protocol,python"
   },
   {
-    "full_name": "alchaincyf/huashu-design",
-    "stars": 28250,
-    "desc": "Huashu Design 3.0 · 在 agent 里打一句话，拿回能交付的设计：网页 / App 原型 / 可编辑 PPTX / 动画 / 信息图 · 六个候选挑三个方向 · 84 种带样张的风格库 · 越用越懂你的外观账本与设计体检 · HTML-native design skill for Claude Code, Codex, Cursor & any agent",
-    "pushed_at": "2026-10-30T17:51:13Z",
-    "license": "MIT",
-    "kind": "skills-npx",
-    "name": "",
-    "market": "",
-    "url": "",
-    "pkg": "",
-    "topics": "agent-skills,ai-design,claude-code,claude-skills,codex,cursor,design,html,pptx,prototype"
-  },
-  {
     "full_name": "Kilo-Org/kilocode",
-    "stars": 27810,
+    "stars": 27818,
     "desc": "Kilo is the all-in-one agentic engineering platform. Build, ship, and iterate faster with the most popular open source coding agent.",
-    "pushed_at": "2026-10-31T07:12:13Z",
+    "pushed_at": "2026-10-31T14:22:06Z",
     "license": "MIT",
     "kind": "none",
     "name": "",
@@ -1561,7 +1379,7 @@
   },
   {
     "full_name": "phuryn/pm-skills",
-    "stars": 27554,
+    "stars": 27575,
     "desc": "PM Skills Marketplace: 100+ agentic skills, commands, and plugins — from discovery to strategy, execution, launch, and growth.",
     "pushed_at": "2026-10-29T19:09:57Z",
     "license": "MIT",
@@ -1574,7 +1392,7 @@
   },
   {
     "full_name": "onlook-dev/onlook",
-    "stars": 27053,
+    "stars": 27064,
     "desc": "The Developer Tool for Visual Engineers • An Open-Source AI-First Design tool • Visually build, style, and edit your code with AI • World's best, top-most agent recommended #1 Developer tool for Designers and Visual Engineers to design with Real Code.",
     "pushed_at": "2026-10-21T20:42:29Z",
     "license": "Apache-2.0",
@@ -1586,8 +1404,21 @@
     "topics": "ai,claude-code,codex,cursor,design,design-system,design-to-code,design-tool,figma,frontend,ide,nextjs,react,supabase,tailwindcss,typescript,ui,vibe-coding,vibecoding,visual-engineering"
   },
   {
+    "full_name": "yetone/magpie",
+    "stars": 26929,
+    "desc": "Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar.",
+    "pushed_at": "2026-10-31T23:21:21Z",
+    "license": "MIT",
+    "kind": "none",
+    "name": "",
+    "market": "",
+    "url": "",
+    "pkg": "",
+    "topics": "claude-code,codex,deepseek,gemini-cli,llm,macos"
+  },
+  {
     "full_name": "deepset-ai/haystack",
-    "stars": 26895,
+    "stars": 26896,
     "desc": "Open-source AI orchestration framework for building context-engineered, production-ready LLM applications. Design modular pipelines and agent workflows with explicit control over retrieval, routing, memory, and generation. Built for scalable agents, RAG, multimodal applications, semantic search, and conversational systems.",
     "pushed_at": "2026-10-31T02:10:18Z",
     "license": "Apache-2.0",
@@ -1600,7 +1431,7 @@
   },
   {
     "full_name": "agentskills/agentskills",
-    "stars": 26812,
+    "stars": 26835,
     "desc": "Specification and documentation for Agent Skills",
     "pushed_at": "2026-08-09T20:36:04Z",
     "license": "Apache-2.0",
@@ -1612,21 +1443,8 @@
     "topics": "agent-skills"
   },
   {
-    "full_name": "yetone/magpie",
-    "stars": 26514,
-    "desc": "Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar.",
-    "pushed_at": "2026-10-31T07:20:42Z",
-    "license": "MIT",
-    "kind": "none",
-    "name": "",
-    "market": "",
-    "url": "",
-    "pkg": "",
-    "topics": "claude-code,codex,deepseek,gemini-cli,llm,macos"
-  },
-  {
     "full_name": "titanwings/distilly",
-    "stars": 26226,
+    "stars": 26244,
     "desc": "Distilly — Distill how they think into reusable Skills for any Agent or Bot. Formerly Colleague Skill（原同事 Skill）.",
     "pushed_at": "2026-10-13T05:57:17Z",
     "license": "MIT",
@@ -1639,7 +1457,7 @@
   },
   {
     "full_name": "VoltAgent/awesome-claude-code-subagents",
-    "stars": 26220,
+    "stars": 26237,
     "desc": "A collection of 100+ specialized Claude Code subagents covering a wide range of development use cases",
     "pushed_at": "2026-10-30T11:45:01Z",
     "license": "MIT",
@@ -1652,7 +1470,7 @@
   },
   {
     "full_name": "go-kratos/kratos",
-    "stars": 26001,
+    "stars": 25999,
     "desc": "Your ultimate Go microservices framework for the cloud-native era.",
     "pushed_at": "2026-10-26T15:20:53Z",
     "license": "MIT",
@@ -1664,21 +1482,8 @@
     "topics": "ai,architecture,cloud-native,framework,generate,go,golang,grpc,http,kratos,mcp,microservice,microservices,protobuf"
   },
   {
-    "full_name": "browserbase/stagehand",
-    "stars": 25885,
-    "desc": "The SDK to extract data and interact with any site on the web. Get started with Claude Code, Codex, Eve, Mastra, and more.",
-    "pushed_at": "2026-10-30T23:33:45Z",
-    "license": "MIT",
-    "kind": "mcp-http",
-    "name": "browserbase",
-    "market": "",
-    "url": "https://mcp.browserbase.com/mcp",
-    "pkg": "",
-    "topics": "agents,ai,ai-agents,browser-agent,browser-automation,cdp,cloud-browser,data-extraction,headless-chrome,playwright,python,typescript,web-automation,web-scraping"
-  },
-  {
     "full_name": "every-app/open-seo",
-    "stars": 25816,
+    "stars": 25919,
     "desc": "Open source alternative to Semrush and Ahrefs",
     "pushed_at": "2026-10-31T02:28:19Z",
     "license": "MIT",
@@ -1690,8 +1495,21 @@
     "topics": "backlink-analysis,google-search-console-mcp,keyword-research,mcp,seo,seo-agent,seo-audit,seo-automation,seo-skills,seo-tools,site-audit"
   },
   {
+    "full_name": "browserbase/stagehand",
+    "stars": 25891,
+    "desc": "The SDK to extract data and interact with any site on the web. Get started with Claude Code, Codex, Eve, Mastra, and more.",
+    "pushed_at": "2026-10-30T23:33:45Z",
+    "license": "MIT",
+    "kind": "mcp-http",
+    "name": "browserbase",
+    "market": "",
+    "url": "https://mcp.browserbase.com/mcp",
+    "pkg": "",
+    "topics": "agents,ai,ai-agents,browser-agent,browser-automation,cdp,cloud-browser,data-extraction,headless-chrome,playwright,python,typescript,web-automation,web-scraping"
+  },
+  {
     "full_name": "guillaumemeyer/watermarks-remover",
-    "stars": 25692,
+    "stars": 25769,
     "desc": "A privacy-first app that strips AI watermarks from content you own.",
     "pushed_at": "2026-10-26T20:26:14Z",
     "license": "MIT",
@@ -1704,9 +1522,9 @@
   },
   {
     "full_name": "activepieces/activepieces",
-    "stars": 25303,
+    "stars": 25313,
     "desc": "AI Agents & MCPs & AI Workflow Automation • (~400 MCP servers for AI agents) • AI Automation / AI Agent with MCPs • AI Workflows & AI Agents • MCPs for AI Agents",
-    "pushed_at": "2026-10-30T23:26:24Z",
+    "pushed_at": "2026-10-31T21:20:48Z",
     "license": "NOASSERTION",
     "kind": "none",
     "name": "",
@@ -1714,19 +1532,6 @@
     "url": "",
     "pkg": "",
     "topics": "ai-agent,ai-agent-tools,ai-agents,ai-agents-framework,mcp,mcp-server,mcp-tools,mcps,n8n-alternative,no-code-automation,workflow,workflow-automation,workflows"
-  },
-  {
-    "full_name": "pascalorg/editor",
-    "stars": 25239,
-    "desc": "Open-source 3D architectural editor with a local CLI, MCP tools, and practical workflows for humans and AI agents.",
-    "pushed_at": "2026-10-30T23:09:48Z",
-    "license": "MIT",
-    "kind": "plugin",
-    "name": "pascal-agent-skills",
-    "market": "pascalorg/editor",
-    "url": "",
-    "pkg": "",
-    "topics": "3d,agent-skills,ai-agents,architecture,bim,cad,editor,floorplan,gemini-cli-extension,local-first,mcp,mcp-server,model-context-protocol,nextjs,parametric-design,react-three-fiber,threejs,typescript"
   },
   {
     "full_name": "flipped-aurora/gin-vue-admin",
@@ -1743,7 +1548,7 @@
   },
   {
     "full_name": "NirDiamant/GenAI_Agents",
-    "stars": 24741,
+    "stars": 24753,
     "desc": "50+ tutorials and implementations for Generative AI Agent techniques, from basic conversational bots to complex multi-agent systems.",
     "pushed_at": "2026-10-31T01:23:29Z",
     "license": "NOASSERTION",
@@ -1756,7 +1561,7 @@
   },
   {
     "full_name": "modelcontextprotocol/python-sdk",
-    "stars": 24715,
+    "stars": 24720,
     "desc": "The official Python SDK for Model Context Protocol servers and clients",
     "pushed_at": "2026-10-27T11:15:12Z",
     "license": "MIT",
@@ -1769,9 +1574,9 @@
   },
   {
     "full_name": "slopus/happy",
-    "stars": 24430,
+    "stars": 24437,
     "desc": "Orchestrate Claude, Codex and Grok in one app. Open-source (MIT), reuses the subscriptions you already pay for.",
-    "pushed_at": "2026-10-31T06:48:00Z",
+    "pushed_at": "2026-10-31T23:29:43Z",
     "license": "MIT",
     "kind": "none",
     "name": "",
@@ -1782,9 +1587,9 @@
   },
   {
     "full_name": "coleam00/Archon",
-    "stars": 23788,
+    "stars": 23791,
     "desc": "The first open-source harness builder for AI coding. Make AI coding deterministic and repeatable.",
-    "pushed_at": "2026-10-30T23:04:21Z",
+    "pushed_at": "2026-10-31T10:30:38Z",
     "license": "MIT",
     "kind": "none",
     "name": "",
@@ -1795,9 +1600,9 @@
   },
   {
     "full_name": "NVIDIA/SkillSpector",
-    "stars": 23572,
+    "stars": 23696,
     "desc": "Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, security risks, prompt injection, data exfiltration, and supply-chain risks in Claude Code, Codex, and MCP skills before you install them.",
-    "pushed_at": "2026-10-30T20:27:17Z",
+    "pushed_at": "2026-10-31T19:10:36Z",
     "license": "Apache-2.0",
     "kind": "none",
     "name": "",
@@ -1808,7 +1613,7 @@
   },
   {
     "full_name": "czlonkowski/n8n-mcp",
-    "stars": 23174,
+    "stars": 23183,
     "desc": "A MCP for Claude Desktop / Claude Code / Windsurf / Cursor to build n8n workflows for you ",
     "pushed_at": "2026-10-27T19:07:26Z",
     "license": "MIT",
@@ -1821,7 +1626,7 @@
   },
   {
     "full_name": "claude-code-best/claude-code",
-    "stars": 23110,
+    "stars": 23118,
     "desc": "原汁原昧 Claude Code 可运行,可构建, 可调试版; 生产级工程化, 企业级可靠性; 安全无毒, 内存泄露修复",
     "pushed_at": "2026-10-26T00:05:09Z",
     "license": null,
@@ -1834,7 +1639,7 @@
   },
   {
     "full_name": "1Panel-dev/MaxKB",
-    "stars": 23081,
+    "stars": 23086,
     "desc": "🔥 MaxKB is an open-source platform for building enterprise-grade agents.  强大易用的开源企业级智能体平台。",
     "pushed_at": "2026-10-30T10:18:20Z",
     "license": "GPL-3.0",
@@ -1847,9 +1652,9 @@
   },
   {
     "full_name": "steipete/CodexBar",
-    "stars": 22906,
+    "stars": 22915,
     "desc": "Show usage stats for OpenAI Codex and Claude Code, without having to login.",
-    "pushed_at": "2026-10-31T06:44:28Z",
+    "pushed_at": "2026-10-31T10:17:33Z",
     "license": "MIT",
     "kind": "none",
     "name": "",
@@ -1860,9 +1665,9 @@
   },
   {
     "full_name": "getpaseo/paseo",
-    "stars": 22566,
+    "stars": 22616,
     "desc": "Orchestrate multiple coding agents from desktop and mobile",
-    "pushed_at": "2026-10-31T07:00:54Z",
+    "pushed_at": "2026-10-31T22:55:22Z",
     "license": "NOASSERTION",
     "kind": "skills-npx",
     "name": "",
@@ -1873,7 +1678,7 @@
   },
   {
     "full_name": "dipakkr/awesome-ai-engineering",
-    "stars": 22497,
+    "stars": 22502,
     "desc": "🚀 A curated collection of AI engineering resources, roadmaps, tools, and projects covering LLMs, RAG, AI Agents, MCP, fine-tuning, evaluations, and production AI systems.",
     "pushed_at": "2026-10-21T16:19:25Z",
     "license": "MIT",
@@ -1886,7 +1691,7 @@
   },
   {
     "full_name": "winfunc/opcode",
-    "stars": 22428,
+    "stars": 22429,
     "desc": "A powerful GUI app and Toolkit for Claude Code - Create custom agents, manage interactive Claude Code sessions, run secure background agents, and more.",
     "pushed_at": "2026-09-18T16:18:10Z",
     "license": "AGPL-3.0",
@@ -1898,21 +1703,8 @@
     "topics": "anthropic,anthropic-claude,claude,claude-4,claude-4-opus,claude-4-sonnet,claude-ai,claude-code,claude-code-sdk,cursor,ide,llm,llm-code,rust,tauri"
   },
   {
-    "full_name": "screenpipe/screenpipe",
-    "stars": 22186,
-    "desc": "YC (S26) | Open Computer History | Continuously record your company computer work, map your workflows, help you find work worth automating, and power your agents' context",
-    "pushed_at": "2026-10-31T03:34:43Z",
-    "license": "NOASSERTION",
-    "kind": "mcp-npm",
-    "name": "screenpipe",
-    "market": "",
-    "url": "",
-    "pkg": "screenpipe-mcp",
-    "topics": "agents,agi,ai,ai-memory,audio-recording,computer-vision,hermes,hermes-agent,llm,local-ai,local-first,machine-learning,mcp,multimodal,openclaw,privacy,rewind,screen-recording,speech-to-text,ycombinator"
-  },
-  {
     "full_name": "NirDiamant/agents-towards-production",
-    "stars": 21800,
+    "stars": 21802,
     "desc": "End-to-end, code-first tutorials for building production-grade GenAI agents. From prototype to enterprise deployment.",
     "pushed_at": "2026-10-31T02:20:49Z",
     "license": "NOASSERTION",
@@ -1925,7 +1717,7 @@
   },
   {
     "full_name": "KKKKhazix/khazix-skills",
-    "stars": 21764,
+    "stars": 21769,
     "desc": "数字生命卡兹克开源的 AI Skills 合集 | Agent Skills: leader（帮你定义目标）, neat-freak 洁癖, hv-analysis, khazix-writer & more — Claude Code, Codex & 40+ agents",
     "pushed_at": "2026-10-01T13:15:32Z",
     "license": "MIT",
@@ -1938,7 +1730,7 @@
   },
   {
     "full_name": "liyupi/ai-guide",
-    "stars": 21759,
+    "stars": 21769,
     "desc": "程序员鱼皮的 AI 资源大全 + Vibe Coding 零基础教程，分享 OpenClaw 保姆级教程、大模型玩法（DeepSeek / GPT / Gemini / Claude / GLM）、最新 AI 资讯、Prompt 提示词大全、AI 知识百科（Agent Skills / RAG / MCP / A2A）、AI 编程教程（Harness Engineering）、AI 工具用法（Cursor / Claude Code / TRAE / Codex / Copilot）、AI 开发框架教程（Spring AI / LangChain）、AI 产品变现指南，帮你快速掌握 AI 技术，走在时代前沿。本项目为开源文档 aiguide，已升级为鱼皮 AI 导航网站",
     "pushed_at": "2026-10-22T03:01:34Z",
     "license": "NOASSERTION",
@@ -1951,7 +1743,7 @@
   },
   {
     "full_name": "jnMetaCode/agency-agents-zh",
-    "stars": 21733,
+    "stars": 21742,
     "desc": "🎭 277 个即插即用的 AI 专家角色 — 支持 Claude Code/Cursor/Copilot 等 20 种工具，覆盖工程/设计/营销/金融等 20 个部门。含 64 个中国市场原创智能体（小红书/抖音/微信/飞书/钉钉/Qt 上位机/机械设计）。搭配编排器 agency-orchestrator，一句话即可让多位专家按 DAG 自动协作。",
     "pushed_at": "2026-10-27T14:39:44Z",
     "license": "MIT",
@@ -1964,7 +1756,7 @@
   },
   {
     "full_name": "op7418/Humanizer-zh",
-    "stars": 21578,
+    "stars": 21613,
     "desc": "Humanizer 的汉化版本，Claude Code Skills，旨在消除文本中 AI 生成的痕迹。",
     "pushed_at": "2026-09-23T02:24:28Z",
     "license": "MIT",
@@ -1977,9 +1769,9 @@
   },
   {
     "full_name": "1jehuang/jcode",
-    "stars": 21347,
+    "stars": 21372,
     "desc": "High performance coding agent harness written in Rust, built for heavy multi-agent dev workflows",
-    "pushed_at": "2026-10-31T06:38:56Z",
+    "pushed_at": "2026-10-31T18:45:14Z",
     "license": "MIT",
     "kind": "none",
     "name": "",
@@ -1989,21 +1781,8 @@
     "topics": "ai,ai-agent,ai-coding-agent,claude,cli,coding-agent,llm,mcp,openai,rust,terminal,tui"
   },
   {
-    "full_name": "qax-os/excelize",
-    "stars": 21028,
-    "desc": "Go language library for reading and writing Microsoft Excel™ (XLAM / XLSM / XLSX / XLTM / XLTX) spreadsheets",
-    "pushed_at": "2026-10-29T00:11:37Z",
-    "license": "BSD-3-Clause",
-    "kind": "none",
-    "name": "",
-    "market": "",
-    "url": "",
-    "pkg": "",
-    "topics": "agent,ai,analytics,chart,ecma-376,excel,excelize,formula,go,mcp,microsoft,office,ooxml,spreadsheet,statistics,table,vba,visualization,xlsx,xml"
-  },
-  {
     "full_name": "Evil0ctal/Douyin_TikTok_Download_API",
-    "stars": 21005,
+    "stars": 21030,
     "desc": "🚀 自托管的抖音、TikTok、B 站数据采集与无水印视频下载 API，支持 AI agent 通过 MCP 调用与离线语音转文字，Docker 一键部署。| Self-hosted TikTok, Douyin & Bilibili scraper and no-watermark video downloader — async REST API, MCP server for AI agents, CLI and web console, plus offline speech-to-text for downloaded videos. Self-healing identity pool, PostgreSQL archive, one docker compose up.",
     "pushed_at": "2026-10-27T11:31:56Z",
     "license": "Apache-2.0",
@@ -2015,23 +1794,23 @@
     "topics": "bilibili,crawler,data-collection,douyin,douyin-api,downloader,fastapi,mcp-server,model-context-protocol,openapi,rest-api,scraper,social-media,speech-to-text,tiktok,tiktok-api,tiktok-downloader,tiktok-scraper,video-downloader,web-scraping"
   },
   {
-    "full_name": "citrolabs/ego-lite",
-    "stars": 20903,
-    "desc": "The fastest browser for AI agents to run browser automation, built for sharing your logged-in browser state with your AI agents, like Codex or Claude Code, without disturbing you. Zero cost, zero config.",
-    "pushed_at": "2026-10-31T04:22:13Z",
-    "license": "MIT",
-    "kind": "skills-npx",
+    "full_name": "qax-os/excelize",
+    "stars": 21029,
+    "desc": "Go language library for reading and writing Microsoft Excel™ (XLAM / XLSM / XLSX / XLTM / XLTX) spreadsheets",
+    "pushed_at": "2026-10-29T00:11:37Z",
+    "license": "BSD-3-Clause",
+    "kind": "none",
     "name": "",
     "market": "",
     "url": "",
     "pkg": "",
-    "topics": "agent-skills,ai-agent,automation,browser,browser-automation,claude-code,codex,hermes-agent,skills,skills-sh"
+    "topics": "agent,ai,analytics,chart,ecma-376,excel,excelize,formula,go,mcp,microsoft,office,ooxml,spreadsheet,statistics,table,vba,visualization,xlsx,xml"
   },
   {
     "full_name": "modelscope/FunASR",
-    "stars": 20892,
+    "stars": 20895,
     "desc": "Open-source speech recognition toolkit for training, inference, streaming ASR, VAD, punctuation, speaker diarization pipelines, and OpenAI-compatible/MCP serving.",
-    "pushed_at": "2026-10-28T18:11:54Z",
+    "pushed_at": "2026-10-31T22:25:04Z",
     "license": "MIT",
     "kind": "none",
     "name": "",
@@ -2042,7 +1821,7 @@
   },
   {
     "full_name": "datawhalechina/easy-vibe",
-    "stars": 20270,
+    "stars": 20275,
     "desc": "💻  Vibe Coding 101｜Your First Course For AI Product Builders.",
     "pushed_at": "2026-10-22T10:52:29Z",
     "license": null,
@@ -2054,21 +1833,8 @@
     "topics": "agent,ai,coding,course,deepseek,gemini,genai,gpt,llm,low-code,mcp,nextjs,no-code,openai,programming,tutorial,vibe-coding,vibecoding,vscode,workflow"
   },
   {
-    "full_name": "teng-lin/notebooklm-py",
-    "stars": 20017,
-    "desc": "Unofficial Python API and agentic skill for Google Gemini Notebook. Full programmatic access to Gemini Notebook's features—including capabilities the web UI doesn't expose—via Python, CLI, and AI agents like Claude Code, Codex, and OpenClaw.",
-    "pushed_at": "2026-10-31T00:39:22Z",
-    "license": "MIT",
-    "kind": "skills-npx",
-    "name": "",
-    "market": "",
-    "url": "",
-    "pkg": "",
-    "topics": "agentic-skill,claude-skills,gemini-notebook,gemini-notebook-api,gemini-notebook-skill,google-notebooklm,notebooklm,notebooklm-api,notebooklm-skill,openclaw-skills,python,python-api,sdk,skills"
-  },
-  {
     "full_name": "img2threejs/img2threejs",
-    "stars": 19895,
+    "stars": 19948,
     "desc": "Rebuild the object in a reference image as a code-only, procedural, quality-gated, animation-ready Three.js model. Token-efficient image-to-3D.",
     "pushed_at": "2026-10-28T03:15:04Z",
     "license": "Apache-2.0",
@@ -2081,9 +1847,9 @@
   },
   {
     "full_name": "rocketride-org/rocketride-server",
-    "stars": 19034,
+    "stars": 19110,
     "desc": "High-performance AI pipeline engine with a C++ core and 50+ Python-extensible nodes. Build, debug, and scale LLM workflows with 13+ model providers, 8+ vector databases, and agent orchestration, all from your IDE. Includes VS Code extension, TypeScript/Python SDKs, and Docker deployment.",
-    "pushed_at": "2026-10-31T05:21:58Z",
+    "pushed_at": "2026-10-31T22:45:01Z",
     "license": "MIT",
     "kind": "none",
     "name": "",
@@ -2094,9 +1860,9 @@
   },
   {
     "full_name": "nukeop/nuclear",
-    "stars": 18839,
+    "stars": 18843,
     "desc": "Streaming music player that finds free music for you",
-    "pushed_at": "2026-10-31T02:54:38Z",
+    "pushed_at": "2026-10-31T23:27:43Z",
     "license": "AGPL-3.0",
     "kind": "none",
     "name": "",
@@ -2107,7 +1873,7 @@
   },
   {
     "full_name": "microsoft/SkillOpt",
-    "stars": 18785,
+    "stars": 18787,
     "desc": "SkillOpt is a text-space optimizer that trains reusable natural-language skills for frozen LLM agents through trajectory-driven edits, validation-gated updates, and deployable best_skill.md artifacts.",
     "pushed_at": "2026-10-29T14:45:12Z",
     "license": "MIT",
@@ -2120,9 +1886,9 @@
   },
   {
     "full_name": "browser-use/browser-harness",
-    "stars": 18772,
+    "stars": 18784,
     "desc": "Let Claude Code, Codex or Cursor use your real Chrome, logged in as you. One prompt to set up. Open source, MIT.",
-    "pushed_at": "2026-10-30T22:51:26Z",
+    "pushed_at": "2026-10-31T19:15:49Z",
     "license": "MIT",
     "kind": "none",
     "name": "",
@@ -2132,23 +1898,10 @@
     "topics": "ai-agent,browser-agent,browser-automation,browser-use,browser-use-box,browser-use-cloud,cdp,chrome,chrome-devtools-protocol,claude-code,cloud-browser,codex,cursor,llm,mcp,persistent-browser,real-browser,telegram-agent,vps-agent,web-automation"
   },
   {
-    "full_name": "wanshuiyin/Auto-claude-code-research-in-sleep",
-    "stars": 18351,
-    "desc": "ARIS ⚔️ (Auto-Research-In-Sleep) — Lightweight Markdown-only skills for autonomous ML research: cross-model review loops, idea discovery, and experiment automation. No framework, no lock-in — works with Claude Code, Codex, OpenClaw, or any LLM agent.",
-    "pushed_at": "2026-10-30T09:02:50Z",
-    "license": "MIT",
-    "kind": "plugin",
-    "name": "codex",
-    "market": "openai/codex-plugin-cc",
-    "url": "",
-    "pkg": "",
-    "topics": "ai-research,ai-tools,aris,autonomous-agent,claude,claude-code,claude-code-skills,codex,deep-learning,gpt,idea-generation,llm,machine-learning,mcp,mcp-server,ml-research,openai,paper-review,paper-writing,research-automation"
-  },
-  {
     "full_name": "xming521/WeClone",
-    "stars": 18338,
+    "stars": 18339,
     "desc": "Build a portrait of your life. Assistants that know you. Clones that talk like you.",
-    "pushed_at": "2026-10-31T06:46:22Z",
+    "pushed_at": "2026-10-31T13:38:19Z",
     "license": "AGPL-3.0",
     "kind": "none",
     "name": "",
@@ -2156,6 +1909,19 @@
     "url": "",
     "pkg": "",
     "topics": "agent,ai-clone,chat-history,digital-twin,llm,mcp,memory,personal-ai,telegram"
+  },
+  {
+    "full_name": "DuarteSantos8/openGym",
+    "stars": 18283,
+    "desc": "Open-source gym & body-weight tracker, now in the App Store (iPhone + Apple Watch) and as an Android APK. Plan routines, log workouts, see which muscles are trained, import from Strong/Hevy/FitNotes. Self-host it or use it on the phone alone.",
+    "pushed_at": "2026-10-31T22:48:32Z",
+    "license": "AGPL-3.0",
+    "kind": "none",
+    "name": "",
+    "market": "",
+    "url": "",
+    "pkg": "",
+    "topics": "apple-watch,bodyweight,docker,fitness,fitness-tracker,gym,health,ios,mcp,nodejs,passkeys,progressive-web-applications,pwa,react,self-hosted,self-hosting,vite,webauthn,weightlifting,workout-tracker"
   },
   {
     "full_name": "RightNow-AI/openfang",
@@ -2171,8 +1937,21 @@
     "topics": "agent-framework,ai-agents,llm,mcp,open-source,openclaw,operating-system,rust"
   },
   {
+    "full_name": "lidge-jun/opencodex",
+    "stars": 18114,
+    "desc": "Universal provider proxy for OpenAI Codex & Claude Code — use any LLM (Claude, Gemini, Grok, DeepSeek, Ollama…) with Codex CLI, App, SDK, and Claude Code",
+    "pushed_at": "2026-10-31T17:20:22Z",
+    "license": "MIT",
+    "kind": "none",
+    "name": "",
+    "market": "",
+    "url": "",
+    "pkg": "",
+    "topics": "ai-gateway,ai-tools,anthropic,chatgpt,claude,claude-code,codex,codex-cli,deepseek,developer-tools,gemini,grok,kiro,llm,llm-proxy,ollama,openai,openrouter,proxy,typescript"
+  },
+  {
     "full_name": "rowboatlabs/rowboat",
-    "stars": 18098,
+    "stars": 18106,
     "desc": "AI coworker with memory and collaboration",
     "pushed_at": "2026-10-30T13:35:55Z",
     "license": "Apache-2.0",
@@ -2184,49 +1963,10 @@
     "topics": "agents,agents-sdk,ai,ai-agents,ai-agents-automation,chatgpt,claude-code,claude-cowork,generative-ai,llm,multiagent,opeani,open-source,orchestration,productivity"
   },
   {
-    "full_name": "lidge-jun/opencodex",
-    "stars": 18086,
-    "desc": "Universal provider proxy for OpenAI Codex & Claude Code — use any LLM (Claude, Gemini, Grok, DeepSeek, Ollama…) with Codex CLI, App, SDK, and Claude Code",
-    "pushed_at": "2026-10-31T05:59:39Z",
-    "license": "MIT",
-    "kind": "none",
-    "name": "",
-    "market": "",
-    "url": "",
-    "pkg": "",
-    "topics": "ai-gateway,ai-tools,anthropic,chatgpt,claude,claude-code,codex,codex-cli,deepseek,developer-tools,gemini,grok,kiro,llm,llm-proxy,ollama,openai,openrouter,proxy,typescript"
-  },
-  {
-    "full_name": "Canner/WrenAI",
-    "stars": 18023,
-    "desc": "GenBI (Generative BI) for AI agents, an open-source, governed text-to-SQL through an open context layer that turns natural-language questions into trusted dashboards, charts, and SQL across 20+ data sources, such as BigQuery, Snowflake, PostgreSQL, ClickHouse, Amazon Redshift, Databricks and more.",
-    "pushed_at": "2026-10-30T11:25:21Z",
-    "license": "NOASSERTION",
-    "kind": "skills-npx",
-    "name": "",
-    "market": "",
-    "url": "",
-    "pkg": "",
-    "topics": "ai-agents,bigquery,business-intelligence,charts,clickhouse,context-engineering,dashboard,databricks,duckdb,genbi,generative-ai,llm,mcp,postgresql,rag,semantic-layer,snowflake,sql,text-to-sql,text2sql"
-  },
-  {
-    "full_name": "DuarteSantos8/openGym",
-    "stars": 17983,
-    "desc": "Open-source gym & body-weight tracker, now in the App Store (iPhone + Apple Watch) and as an Android APK. Plan routines, log workouts, see which muscles are trained, import from Strong/Hevy/FitNotes. Self-host it or use it on the phone alone.",
-    "pushed_at": "2026-10-30T21:44:15Z",
-    "license": "AGPL-3.0",
-    "kind": "none",
-    "name": "",
-    "market": "",
-    "url": "",
-    "pkg": "",
-    "topics": "apple-watch,bodyweight,docker,fitness,fitness-tracker,gym,health,ios,mcp,nodejs,passkeys,progressive-web-applications,pwa,react,self-hosted,self-hosting,vite,webauthn,weightlifting,workout-tracker"
-  },
-  {
     "full_name": "xerj-org/xerj",
-    "stars": 17799,
+    "stars": 17938,
     "desc": "AI search engine and MCP server for bots and agents. One Rust binary indexes code, docs, logs, JSONL/CSV and PDFs for BM25 full-text, vector and hybrid search, code search without grep, agent memory and RAG. Elasticsearch-compatible API; Corpus Hub serves hundreds of reference memory corpora.",
-    "pushed_at": "2026-10-31T06:48:08Z",
+    "pushed_at": "2026-10-31T23:24:47Z",
     "license": "Apache-2.0",
     "kind": "none",
     "name": "",
@@ -2237,7 +1977,7 @@
   },
   {
     "full_name": "microsoft/mcp-for-beginners",
-    "stars": 17564,
+    "stars": 17574,
     "desc": "This open-source curriculum introduces the fundamentals of Model Context Protocol (MCP) through real-world, cross-language examples in .NET, Java, TypeScript, JavaScript, Rust and Python. Designed for developers, it focuses on practical techniques for building modular, scalable, and secure AI workflows from session setup to service orchestration.",
     "pushed_at": "2026-10-30T14:35:26Z",
     "license": "MIT",
@@ -2250,7 +1990,7 @@
   },
   {
     "full_name": "MemoriLabs/Memori",
-    "stars": 17242,
+    "stars": 17257,
     "desc": "Memori is agent-native memory infrastructure. A LLM-agnostic layer that turns agent execution and conversation into structured, persistent state for production systems. Built for enterprise, Memori works with the data infrastructure you already run, no rip-and-replace, and deploys across managed cloud, single-tenant cloud, VPC, and on-premises.",
     "pushed_at": "2026-10-03T01:33:14Z",
     "license": "NOASSERTION",
@@ -2263,7 +2003,7 @@
   },
   {
     "full_name": "kubesphere/kubesphere",
-    "stars": 17073,
+    "stars": 17074,
     "desc": "The container platform tailored for Kubernetes multi-cloud, datacenter, and edge management ⎈ 🖥 ☁️",
     "pushed_at": "2026-07-15T01:14:39Z",
     "license": "NOASSERTION",
@@ -2276,7 +2016,7 @@
   },
   {
     "full_name": "cft0808/edict",
-    "stars": 17034,
+    "stars": 17037,
     "desc": "🏛️ 三省六部制 · OpenClaw Multi-Agent Orchestration System — 9 specialized AI agents with real-time dashboard, model config, and full audit trails",
     "pushed_at": "2026-09-28T02:33:22Z",
     "license": "MIT",
@@ -2289,7 +2029,7 @@
   },
   {
     "full_name": "xbtlin/ai-berkshire",
-    "stars": 16954,
+    "stars": 16963,
     "desc": "AI 时代的伯克希尔：基于 Claude Code / Codex 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究。| AI-era Berkshire: a value investing research framework built for Claude Code / Codex. 4 masters' methodologies + multi-agent adversarial analysis.",
     "pushed_at": "2026-10-30T17:21:32Z",
     "license": "MIT",
@@ -2302,9 +2042,9 @@
   },
   {
     "full_name": "googleapis/mcp-toolbox",
-    "stars": 16762,
+    "stars": 16765,
     "desc": "MCP Toolbox for Databases is an open source MCP server for databases.",
-    "pushed_at": "2026-10-31T04:12:55Z",
+    "pushed_at": "2026-10-31T21:00:28Z",
     "license": "Apache-2.0",
     "kind": "mcp-npm",
     "name": "",
@@ -2315,7 +2055,7 @@
   },
   {
     "full_name": "xpzouying/xiaohongshu-mcp",
-    "stars": 16682,
+    "stars": 16689,
     "desc": "MCP for xiaohongshu.com",
     "pushed_at": "2026-10-26T04:47:24Z",
     "license": "Apache-2.0",
@@ -2330,7 +2070,7 @@
     "full_name": "triggerdotdev/trigger.dev",
     "stars": 16667,
     "desc": "Trigger.dev – build and deploy durable AI agents and workflows",
-    "pushed_at": "2026-10-30T22:09:35Z",
+    "pushed_at": "2026-10-31T11:59:31Z",
     "license": "Apache-2.0",
     "kind": "none",
     "name": "",
@@ -2341,7 +2081,7 @@
   },
   {
     "full_name": "wasp-lang/open-saas",
-    "stars": 16216,
+    "stars": 16224,
     "desc": "A 100% free modern JS SaaS boilerplate (React, NodeJS, Prisma). Full-featured: Auth (email, google, github, slack, MS), Email sending, Background jobs, Landing page, Payments (Stripe, Polar.sh), Shadcn UI, S3 file upload. AI-ready with tailored AGENTS.md, skills, and Claude Code plugin. One cmd deploy. Powered by Wasp full-stack framework.",
     "pushed_at": "2026-10-28T12:21:48Z",
     "license": "MIT",
@@ -2354,7 +2094,7 @@
   },
   {
     "full_name": "chenhg5/cc-connect",
-    "stars": 16181,
+    "stars": 16184,
     "desc": "Bridge local AI coding agents (Claude Code, Cursor, Gemini CLI, Codex) to messaging platforms (Feishu/Lark, DingTalk, Slack, Telegram, Discord, LINE, WeChat Work). Chat with your AI dev assistant from anywhere — no public IP required for most platforms.",
     "pushed_at": "2026-10-29T06:45:12Z",
     "license": null,
@@ -2367,7 +2107,7 @@
   },
   {
     "full_name": "alibaba/zvec",
-    "stars": 16165,
+    "stars": 16168,
     "desc": "A lightweight, lightning-fast, in-process vector database",
     "pushed_at": "2026-10-30T03:28:22Z",
     "license": "Apache-2.0",
@@ -2393,7 +2133,7 @@
   },
   {
     "full_name": "AgriciDaniel/claude-obsidian",
-    "stars": 16012,
+    "stars": 16031,
     "desc": "Self-organizing AI second brain for Obsidian + Claude Code. Drop any source and Claude reads, links, and files it into one connected knowledge graph of plain Markdown you own. AI note-taking, personal knowledge management (PKM), and an open-source Notion alternative. Based on Karpathy's LLM Wiki pattern.",
     "pushed_at": "2026-10-25T22:24:31Z",
     "license": "MIT",
@@ -2406,7 +2146,7 @@
   },
   {
     "full_name": "dreammis/social-auto-upload",
-    "stars": 15956,
+    "stars": 15974,
     "desc": "自动化上传视频到社交媒体：抖音、小红书、视频号、tiktok、youtube、bilibili",
     "pushed_at": "2026-10-22T18:42:22Z",
     "license": "MIT",
@@ -2418,21 +2158,8 @@
     "topics": "agent-skills,bilibili,douyin,tiktok,xiaohongshu,youtube"
   },
   {
-    "full_name": "YishenTu/claudian",
-    "stars": 15865,
-    "desc": "An Obsidian plugin that embeds Claude Code/Codex as an AI collaborator in your vault",
-    "pushed_at": "2026-10-31T05:25:37Z",
-    "license": "MIT",
-    "kind": "none",
-    "name": "",
-    "market": "",
-    "url": "",
-    "pkg": "",
-    "topics": "claude-code,codex,deepseek-harness,grok,ide,obsidian,obsidian-plugin,opencode,pi,productivity"
-  },
-  {
     "full_name": "google/artemis",
-    "stars": 15855,
+    "stars": 15943,
     "desc": "ARTEMIS turns natural-language instructions into reliable Android automation. It automates end-to-end workflows, captures logs, and integrates seamlessly with AI coding assistants such as Antigravity, Codex, and Claude Code.  It also achieves 99%+ success rate on AndroidWorld Benchmark.",
     "pushed_at": "2026-10-01T21:37:15Z",
     "license": "Apache-2.0",
@@ -2444,10 +2171,23 @@
     "topics": "ai-agents,android,google,test-automation,testing"
   },
   {
+    "full_name": "YishenTu/claudian",
+    "stars": 15871,
+    "desc": "An Obsidian plugin that embeds Claude Code, Codex and other agents as an AI collaborator in your vault.",
+    "pushed_at": "2026-10-31T20:10:08Z",
+    "license": "MIT",
+    "kind": "none",
+    "name": "",
+    "market": "",
+    "url": "",
+    "pkg": "",
+    "topics": "claude-code,codex,deepseek-harness,grok,ide,obsidian,obsidian-plugin,opencode,pi,productivity"
+  },
+  {
     "full_name": "ParadevAI/Paradev",
-    "stars": 15769,
+    "stars": 15792,
     "desc": "Paradev (formerly Superset) is an agentic IDE to orchestrate 100+ coding agents in parallel. Run any agent with your own subscription.",
-    "pushed_at": "2026-10-31T06:24:06Z",
+    "pushed_at": "2026-10-31T23:12:51Z",
     "license": "NOASSERTION",
     "kind": "none",
     "name": "",
@@ -2458,7 +2198,7 @@
   },
   {
     "full_name": "eigent-ai/eigent",
-    "stars": 15701,
+    "stars": 15702,
     "desc": "Eigent: The Open Source Cowork Desktop - Local and Free Alternative to Claude Cowork and Codex",
     "pushed_at": "2026-10-30T18:30:08Z",
     "license": "Apache-2.0",
@@ -2471,7 +2211,7 @@
   },
   {
     "full_name": "travisvn/awesome-claude-skills",
-    "stars": 15647,
+    "stars": 15656,
     "desc": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows — particularly Claude Code",
     "pushed_at": "2026-04-28T19:30:24Z",
     "license": null,
@@ -2484,9 +2224,9 @@
   },
   {
     "full_name": "open-metadata/OpenMetadata",
-    "stars": 15638,
+    "stars": 15639,
     "desc": "The Open Context Layer for Data and AI ,  OpenMetadata is the open platform for building trusted data context and business semantics for humans, AI assistants, and agents.",
-    "pushed_at": "2026-10-31T06:56:44Z",
+    "pushed_at": "2026-10-31T23:11:32Z",
     "license": "Apache-2.0",
     "kind": "none",
     "name": "",
@@ -2497,7 +2237,7 @@
   },
   {
     "full_name": "CoplayDev/unity-mcp",
-    "stars": 15576,
+    "stars": 15593,
     "desc": "Unity MCP acts as a bridge between AI assistants and your Unity Editor. Give your LLM tools to manage assets, control scenes, edit scripts, and automate tasks within Unity.",
     "pushed_at": "2026-10-30T18:15:23Z",
     "license": "MIT",
@@ -2510,7 +2250,7 @@
   },
   {
     "full_name": "nidhinjs/prompt-master",
-    "stars": 15303,
+    "stars": 15331,
     "desc": "A Claude skill that writes the accurate prompts for any AI tool. Zero tokens or credits wasted. Full context and memory retention",
     "pushed_at": "2026-10-22T13:26:18Z",
     "license": "MIT",
@@ -2523,9 +2263,9 @@
   },
   {
     "full_name": "liketrek/TREK",
-    "stars": 15264,
+    "stars": 15277,
     "desc": "The most complete open-source travel planner: real-time collaboration, bookings, budgets, packing lists, journals, offline PWA, SSO and an AI-ready MCP server, with planet-wide place search and routing built in.",
-    "pushed_at": "2026-10-31T07:17:52Z",
+    "pushed_at": "2026-10-31T18:51:59Z",
     "license": "AGPL-3.0",
     "kind": "none",
     "name": "",
@@ -2536,7 +2276,7 @@
   },
   {
     "full_name": "yusufkaraaslan/Skill_Seekers",
-    "stars": 15258,
+    "stars": 15262,
     "desc": "Convert documentation websites, GitHub repositories, and PDFs into Claude AI skills with automatic conflict detection",
     "pushed_at": "2026-09-30T18:49:17Z",
     "license": "MIT",
@@ -2549,7 +2289,7 @@
   },
   {
     "full_name": "GaiZhenbiao/ChuanhuChatGPT",
-    "stars": 15256,
+    "stars": 15253,
     "desc": "GUI for ChatGPT API and many LLMs. Supports agents, file-based QA, GPT finetuning and query with web search. All with a neat UI.",
     "pushed_at": "2026-09-16T11:44:01Z",
     "license": "GPL-3.0",
@@ -2562,9 +2302,9 @@
   },
   {
     "full_name": "NanmiCoder/cc-haha",
-    "stars": 15243,
+    "stars": 15250,
     "desc": "本地优先的跨平台 Claude Code / AI Agent 桌面工作台：多 Agent 协作、Git Worktree、代码 Diff、技能市场、多模型、Computer Use、桌面宠物；支持微信、飞书、钉钉及 H5 等远程访问。 | Local-first Claude Code / AI Agent desktop workspace: multi-agent teams, Git worktrees, diffs, skills marketplace, multi-model, Computer Use, task-aware desktop pets; remote via WeChat, Feishu, DingTalk, Telegram, WhatsApp & H5.",
-    "pushed_at": "2026-10-31T05:54:07Z",
+    "pushed_at": "2026-10-31T17:38:57Z",
     "license": "NOASSERTION",
     "kind": "none",
     "name": "",
@@ -2574,21 +2314,8 @@
     "topics": "agent,ai,ai-agent,anthropic,claude,claude-code,coding-agent,computer-use,desktop-app,electron,llm,mcp,react,typescript"
   },
   {
-    "full_name": "Vincentwei1021/video-shotcraft",
-    "stars": 15232,
-    "desc": "AI video skill for Claude Code & Codex — cinematic, editable product promos with Remotion: 124 shot recipe cards, 150 motion previews, beat sync, sound design, Motion Workbench & JianYing (CapCut CN) export.",
-    "pushed_at": "2026-10-29T16:17:26Z",
-    "license": "Apache-2.0",
-    "kind": "skills-npx",
-    "name": "",
-    "market": "",
-    "url": "",
-    "pkg": "",
-    "topics": "agent-skills,ai-agents,ai-video,claude-code,claude-code-skills,claude-skills,codex,motion-design,motion-graphics,product-video,promo-video,remotion,video-generation,video-production"
-  },
-  {
     "full_name": "kyegomez/OpenMythos",
-    "stars": 14911,
+    "stars": 14912,
     "desc": "A theoretical reconstruction of the Claude Mythos architecture, built from first principles using the available research literature.",
     "pushed_at": "2026-05-23T11:58:48Z",
     "license": "MIT",
@@ -2601,7 +2328,7 @@
   },
   {
     "full_name": "palmier-io/palmier-pro",
-    "stars": 14668,
+    "stars": 14669,
     "desc": "macOS video editor built for AI",
     "pushed_at": "2026-10-30T04:53:54Z",
     "license": "GPL-3.0",
@@ -2614,7 +2341,7 @@
   },
   {
     "full_name": "NevaMind-AI/memU",
-    "stars": 14584,
+    "stars": 14585,
     "desc": "Personal memory across agents",
     "pushed_at": "2026-10-31T07:09:48Z",
     "license": "NOASSERTION",
@@ -2627,9 +2354,9 @@
   },
   {
     "full_name": "lsdefine/GenericAgent",
-    "stars": 14374,
+    "stars": 14376,
     "desc": "Self-evolving agent: grows skill tree from 3.3K-line seed, achieving full system control with 6x less token consumption",
-    "pushed_at": "2026-10-31T03:16:20Z",
+    "pushed_at": "2026-10-31T08:49:06Z",
     "license": "MIT",
     "kind": "none",
     "name": "",
@@ -2640,9 +2367,9 @@
   },
   {
     "full_name": "siteboon/claudecodeui",
-    "stars": 14358,
+    "stars": 14369,
     "desc": "Use Claude Code, OpenCode, Cursor CLI, and Codex on mobile and web with CloudCLI (aka Claude Code UI). CloudCLI is a free open source webui/GUI that helps you manage your Claude Code session and projects remotely.",
-    "pushed_at": "2026-10-27T11:33:08Z",
+    "pushed_at": "2026-10-31T12:40:31Z",
     "license": "AGPL-3.0",
     "kind": "none",
     "name": "",
@@ -2653,9 +2380,9 @@
   },
   {
     "full_name": "browseros-ai/BrowserOS",
-    "stars": 14196,
+    "stars": 14198,
     "desc": "🌐 The open-source Agentic browser; alternative to ChatGPT Atlas, Perplexity Comet, Dia.",
-    "pushed_at": "2026-10-31T06:29:33Z",
+    "pushed_at": "2026-10-31T17:52:36Z",
     "license": "AGPL-3.0",
     "kind": "none",
     "name": "",
@@ -2666,7 +2393,7 @@
   },
   {
     "full_name": "krillinai/OpenCreator",
-    "stars": 14048,
+    "stars": 14054,
     "desc": "Formerly KrillinAI, VideoTranslation and Dubbing Tool. Open-source AI workspace for creators, powered by Codex. Video downloading, video translation, create videos, images, voice, avatars, and edits with Agents in one place. Suitable for your Social Media like YouTube, TikTok, Instagram, etc.",
     "pushed_at": "2026-10-30T23:24:28Z",
     "license": "Apache-2.0",
@@ -2679,9 +2406,9 @@
   },
   {
     "full_name": "OrchestratorInc/agent-orchestrator",
-    "stars": 13941,
+    "stars": 13965,
     "desc": "Plan, run and supervise fleets of agents from task to merged PR. Desktop (macOS, Windows, Linux) + iPhone & Android apps.  Supports Claude Code, Codex & 35+ coding agents.",
-    "pushed_at": "2026-10-31T07:13:55Z",
+    "pushed_at": "2026-10-31T21:18:59Z",
     "license": "Apache-2.0",
     "kind": "none",
     "name": "",
@@ -2705,9 +2432,9 @@
   },
   {
     "full_name": "modelcontextprotocol/typescript-sdk",
-    "stars": 13688,
+    "stars": 13690,
     "desc": "The official TypeScript SDK for Model Context Protocol servers and clients",
-    "pushed_at": "2026-10-30T21:32:09Z",
+    "pushed_at": "2026-10-31T10:56:10Z",
     "license": "NOASSERTION",
     "kind": "none",
     "name": "",
@@ -2718,9 +2445,9 @@
   },
   {
     "full_name": "sirmalloc/ccstatusline",
-    "stars": 13475,
+    "stars": 13480,
     "desc": "🚀 Beautiful highly customizable statusline for Claude Code CLI with powerline support, themes, and more.",
-    "pushed_at": "2026-10-31T00:06:32Z",
+    "pushed_at": "2026-10-31T12:07:23Z",
     "license": "MIT",
     "kind": "none",
     "name": "",
@@ -2731,7 +2458,7 @@
   },
   {
     "full_name": "ccfos/nightingale",
-    "stars": 13418,
+    "stars": 13420,
     "desc": "Open-source, self-hosted alerting for metrics, logs, and databases. Includes a built-in AI agent and MCP server.",
     "pushed_at": "2026-10-30T10:20:05Z",
     "license": "Apache-2.0",
@@ -2744,7 +2471,7 @@
   },
   {
     "full_name": "OpenByteInc/QuantDinger",
-    "stars": 13331,
+    "stars": 13353,
     "desc": "Open-source AI Trading OS, agent trading, and vibe trading, with Jev System One integration. Research, build Python strategies, backtest, and paper/live trade across crypto, stocks, and forex. Launch your own multi-tenant trading SaaS with built-in user management, billing, payments, and settlement.",
     "pushed_at": "2026-10-31T05:03:18Z",
     "license": "Apache-2.0",
@@ -2756,21 +2483,8 @@
     "topics": "agent,backtesting,binance,crypto,exchange,finance,fintech,forex,jev,mcp-server,python,quant,quantitative-finance,saas,stocks,strategy,stripe,trade,typesafe-ai"
   },
   {
-    "full_name": "0x4m4/hexstrike-ai",
-    "stars": 13231,
-    "desc": "HexStrike AI MCP Agents is an advanced MCP server that lets AI agents (Claude, GPT, Copilot, etc.) autonomously run 150+ cybersecurity tools for automated pentesting, vulnerability discovery, bug bounty automation, and security research. Seamlessly bridge LLMs with real-world offensive security capabilities.",
-    "pushed_at": "2026-08-03T14:33:09Z",
-    "license": "MIT",
-    "kind": "none",
-    "name": "",
-    "market": "",
-    "url": "",
-    "pkg": "",
-    "topics": "0x4m4,ai,ai-agents,ai-cybersecurity,ai-hacking,ai-penetration-testing,ai-security-tool,artificial-intelligence,ctf-tools,generative-ai,hexstrike,kali-linux,kali-tools,llm,llm-integration,mcp,mcp-server,mcp-tools,pentesting,pentesting-tools"
-  },
-  {
     "full_name": "mrexodia/ida-pro-mcp",
-    "stars": 13229,
+    "stars": 13254,
     "desc": "AI-powered reverse engineering assistant that bridges IDA Pro with language models through MCP.",
     "pushed_at": "2026-09-26T15:42:10Z",
     "license": "MIT",
@@ -2782,10 +2496,23 @@
     "topics": "ai,aiagent,binary-analysis,ida-plugin,ida-pro,mcp,mcp-server,modelcontextprotocol,reverse-engineering"
   },
   {
+    "full_name": "0x4m4/hexstrike-ai",
+    "stars": 13246,
+    "desc": "HexStrike AI MCP Agents is an advanced MCP server that lets AI agents (Claude, GPT, Copilot, etc.) autonomously run 150+ cybersecurity tools for automated pentesting, vulnerability discovery, bug bounty automation, and security research. Seamlessly bridge LLMs with real-world offensive security capabilities.",
+    "pushed_at": "2026-08-03T14:33:09Z",
+    "license": "MIT",
+    "kind": "none",
+    "name": "",
+    "market": "",
+    "url": "",
+    "pkg": "",
+    "topics": "0x4m4,ai,ai-agents,ai-cybersecurity,ai-hacking,ai-penetration-testing,ai-security-tool,artificial-intelligence,ctf-tools,generative-ai,hexstrike,kali-linux,kali-tools,llm,llm-integration,mcp,mcp-server,mcp-tools,pentesting,pentesting-tools"
+  },
+  {
     "full_name": "JoeanAmier/XHS-Downloader",
-    "stars": 13163,
+    "stars": 13169,
     "desc": "小红书（XiaoHongShu、RedNote）链接提取/作品采集工具",
-    "pushed_at": "2026-10-30T12:18:58Z",
+    "pushed_at": "2026-10-31T12:35:50Z",
     "license": "GPL-3.0",
     "kind": "none",
     "name": "",
@@ -2796,7 +2523,7 @@
   },
   {
     "full_name": "Piebald-AI/claude-code-system-prompts",
-    "stars": 13045,
+    "stars": 13050,
     "desc": "All parts of Claude Code's system prompt, 27 builtin tool descriptions, sub agent prompts (Plan/Explore/Task), utility prompts (CLAUDE.md, compact,  statusline, magic docs, WebFetch, Bash cmd, security review, agent creation).  Updated for each Claude Code version.",
     "pushed_at": "2026-10-31T00:51:38Z",
     "license": "MIT",
@@ -2809,7 +2536,7 @@
   },
   {
     "full_name": "yihui-dev/awesome-opus5-5-videos",
-    "stars": 12785,
+    "stars": 12904,
     "desc": "A growing collection of viral videos made with Claude Opus 5.5 and the prompts behind them. Watch each original next to a live remake on Skillry. Updated regularly.",
     "pushed_at": "2026-10-13T14:46:44Z",
     "license": "MIT",
@@ -2822,9 +2549,9 @@
   },
   {
     "full_name": "Wei-Shaw/claude-relay-service",
-    "stars": 12761,
+    "stars": 12762,
     "desc": "CRS-自建Claude Code镜像，一站式开源中转服务，让 Claude、OpenAI、Gemini、Droid 订阅统一接入，支持拼车共享，更高效分摊成本，原生工具无缝使用。",
-    "pushed_at": "2026-10-30T22:42:43Z",
+    "pushed_at": "2026-10-31T18:23:43Z",
     "license": "MIT",
     "kind": "none",
     "name": "",
@@ -2835,7 +2562,7 @@
   },
   {
     "full_name": "zilliztech/claude-context",
-    "stars": 12660,
+    "stars": 12662,
     "desc": "Code search MCP for Claude Code. Make entire codebase the context for any coding agent.",
     "pushed_at": "2026-07-14T12:00:38Z",
     "license": "MIT",
@@ -2848,7 +2575,7 @@
   },
   {
     "full_name": "MemTensor/MemOS",
-    "stars": 12204,
+    "stars": 12209,
     "desc": "Self-evolving memory OS for LLM & AI Agents: ultra-persistent memory, hybrid-retrieval, and cross-task skill reuse, with 35.24% token savings and DeepSeek Harness support.",
     "pushed_at": "2026-10-29T11:26:35Z",
     "license": "Apache-2.0",
@@ -2861,7 +2588,7 @@
   },
   {
     "full_name": "tadata-org/fastapi_mcp",
-    "stars": 12023,
+    "stars": 12022,
     "desc": "Expose your FastAPI endpoints as Model Context Protocol (MCP) tools, with Auth!",
     "pushed_at": "2025-11-24T14:51:54Z",
     "license": "MIT",
@@ -2887,7 +2614,7 @@
   },
   {
     "full_name": "EmbraceAGI/awesome-chatgpt-zh",
-    "stars": 11793,
+    "stars": 11794,
     "desc": "ChatGPT 中文指南🔥，ChatGPT 中文调教指南，指令指南，应用开发指南，精选资源清单，更好的使用 chatGPT 让你的生产力 up up up! 🚀",
     "pushed_at": "2026-10-15T23:15:39Z",
     "license": "MIT",
@@ -2900,9 +2627,9 @@
   },
   {
     "full_name": "0xJacky/nginx-ui",
-    "stars": 11686,
+    "stars": 11702,
     "desc": "Yet another WebUI for Nginx",
-    "pushed_at": "2026-10-31T04:54:11Z",
+    "pushed_at": "2026-10-31T20:50:21Z",
     "license": "AGPL-3.0",
     "kind": "none",
     "name": "",
@@ -2913,7 +2640,7 @@
   },
   {
     "full_name": "cobusgreyling/loop-engineering",
-    "stars": 11672,
+    "stars": 11675,
     "desc": "Practical patterns, starters & CLI tools for loop engineering with AI coding agents. Design systems that prompt and orchestrate agents (inspired by Addy Osmani and Boris Cherny). Includes loop-audit, loop-init, loop-cost.",
     "pushed_at": "2026-10-31T02:23:35Z",
     "license": "MIT",
@@ -2923,19 +2650,6 @@
     "url": "",
     "pkg": "",
     "topics": "agentic-ai,ai-agents,ai-coding,anthropic,automation,claude,claude-code,codex,coding-agents,devops-automation,devtools,github-actions,grok,llm,loop-engineering,mcp,prompt-engineering"
-  },
-  {
-    "full_name": "getagentseal/codeburn",
-    "stars": 11629,
-    "desc": "Free, local tool to track AI coding token usage and cost across 37 tools and agents (Claude Code, Cursor, Codex, Gemini and more), by model, project, and task. npx codeburn",
-    "pushed_at": "2026-10-31T06:52:50Z",
-    "license": "MIT",
-    "kind": "mcp-npm",
-    "name": "codeburn",
-    "market": "",
-    "url": "",
-    "pkg": "codeburn",
-    "topics": "ai-coding,claude-code,cli,codex,cost-tracking,cursor-ide,developer-tools,menubar,observability,terminal-ui,token-usage,web-dashboard"
   },
   {
     "full_name": "holaboss-ai/holaOS",
@@ -2951,21 +2665,8 @@
     "topics": "agent,agent-harness,agent-os,agentic,ai,ai-agent,ai-agents,artificial-intelligence,claude-code,codex,electron,holaboss,holaos,llm,mcp,memory,model-context-protocol,runtime,typescript,workspace"
   },
   {
-    "full_name": "genspark-ai/genoffice",
-    "stars": 11408,
-    "desc": "Free, open-source AI Office suite: Docs, Sheets, Slides, PDF, Markdown and HTML editors with a built-in AI agent, plus a `genoffice` CLI and agent skill so Claude Code, Codex and Cursor can create and edit real .docx/.xlsx/.pptx files locally. Bring your own key. macOS, Windows & Linux.",
-    "pushed_at": "2026-10-30T14:41:05Z",
-    "license": "Apache-2.0",
-    "kind": "skills-npx",
-    "name": "",
-    "market": "",
-    "url": "",
-    "pkg": "",
-    "topics": "ai,ai-agent,claude-code,cli,codex,cursor,docx,excel,libreoffice-alternative,local-first,markdown-editor,microsoft-office-alternative,office-suite,pdf-editor,pdf-to-word,powerpoint,pptx,skills,spreadsheet,xlsx"
-  },
-  {
     "full_name": "zubair-trabzada/geo-seo-claude",
-    "stars": 11383,
+    "stars": 11388,
     "desc": "GEO-first SEO skill for Claude Code. Comprehensive AI search optimization for any website — citability scoring, AI crawler analysis, brand authority, schema markup, platform-specific optimization, and PDF reports.  If you want learn how to sell this to real businesses, check out the skool community",
     "pushed_at": "2026-10-31T06:24:54Z",
     "license": "MIT",
@@ -2978,9 +2679,9 @@
   },
   {
     "full_name": "omnigent-ai/omnigent",
-    "stars": 11139,
+    "stars": 11146,
     "desc": "Omnigent is an open-source AI agent framework and meta-harness: orchestrate Claude Code, Codex, Cursor, Pi, and custom agents — swap harnesses without rewriting, enforce policies and sandboxing, and collaborate in real time from any device.",
-    "pushed_at": "2026-10-31T07:20:27Z",
+    "pushed_at": "2026-10-31T23:15:59Z",
     "license": "Apache-2.0",
     "kind": "none",
     "name": "",
@@ -2991,7 +2692,7 @@
   },
   {
     "full_name": "aden-hive/hive",
-    "stars": 11132,
+    "stars": 11130,
     "desc": "Multi-Agent Harness for Production AI",
     "pushed_at": "2026-10-26T11:58:57Z",
     "license": "Apache-2.0",
@@ -3004,9 +2705,9 @@
   },
   {
     "full_name": "xinnan-tech/xiaozhi-esp32-server",
-    "stars": 11101,
+    "stars": 11107,
     "desc": "本项目为xiaozhi-esp32提供后端服务，帮助您快速搭建ESP32设备控制服务器。Backend service for xiaozhi-esp32, helps you quickly build an ESP32 device control server.",
-    "pushed_at": "2026-10-30T07:26:45Z",
+    "pushed_at": "2026-10-31T23:30:05Z",
     "license": "MIT",
     "kind": "none",
     "name": "",
@@ -3017,9 +2718,9 @@
   },
   {
     "full_name": "trailhq/Trail-Code",
-    "stars": 10969,
+    "stars": 10988,
     "desc": "Turbocharge Claude Code, Cursor, Codex, Gemini & every coding agent: faster, cheaper, with contextual understanding specific to your codebase.",
-    "pushed_at": "2026-10-30T18:37:45Z",
+    "pushed_at": "2026-10-31T11:24:59Z",
     "license": "MIT",
     "kind": "mcp-npm",
     "name": "",
@@ -3030,7 +2731,7 @@
   },
   {
     "full_name": "NoeFabris/opencode-antigravity-auth",
-    "stars": 10968,
+    "stars": 10975,
     "desc": "Enable Opencode to authenticate against Antigravity (Google's IDE) via OAuth so you can use Antigravity rate limits and access models like gemini-3-pro and claude-opus-4-5-thinking with your Google credentials.",
     "pushed_at": "2026-10-27T17:25:30Z",
     "license": "MIT",
@@ -3043,7 +2744,7 @@
   },
   {
     "full_name": "mcp-use/mcp-use",
-    "stars": 10830,
+    "stars": 10835,
     "desc": "The fullstack MCP framework to develop MCP Apps for ChatGPT / Claude & MCP Servers for AI Agents.",
     "pushed_at": "2026-10-30T22:29:57Z",
     "license": "MIT",
@@ -3056,7 +2757,7 @@
   },
   {
     "full_name": "sigoden/aichat",
-    "stars": 10534,
+    "stars": 10535,
     "desc": "All-in-one LLM CLI tool featuring Shell Assistant, Chat-REPL, RAG, AI Tools & Agents, with access to OpenAI, Claude, Gemini, Ollama, Groq, and more.",
     "pushed_at": "2026-02-23T11:16:42Z",
     "license": "Apache-2.0",
@@ -3066,19 +2767,6 @@
     "url": "",
     "pkg": "",
     "topics": "ai,ai-agents,chatbot,claude,cli,function-calling,gemini,llm,ollama,openai,rag,rust,shell,webui"
-  },
-  {
-    "full_name": "Agents365-ai/drawio-skill",
-    "stars": 10470,
-    "desc": "Agent skill that turns natural language, code, Terraform/K8s, SQL, OpenAPI, AsyncAPI, Protobuf and GraphQL sources into editable, tested draw.io architecture diagrams: incremental sync, multi-view projection, drift diff, CI architecture tests, whiteboard derasterize, interactive HTML/PPTX/Mermaid exports.",
-    "pushed_at": "2026-10-11T11:22:56Z",
-    "license": "MIT",
-    "kind": "skills-npx",
-    "name": "",
-    "market": "",
-    "url": "",
-    "pkg": "",
-    "topics": "agent-skills,architecture,architecture-diagram,asyncapi,bpmn,c4-model,claude-code,diagram,diagrams-as-code,drawio,flowchart,github-actions,graphql,image-to-diagram,kubernetes,mcp-server,protobuf,sysml,terraform,uml"
   },
   {
     "full_name": "Kuberwastaken/claurst",
@@ -3095,7 +2783,7 @@
   },
   {
     "full_name": "ykdojo/claude-code-tips",
-    "stars": 10293,
+    "stars": 10295,
     "desc": "45+ tips for getting the most out of Claude Code, from basics to advanced - includes a custom status line script and Claude Code running itself in a container. Also includes the dx plugin: skills for everyday dev workflows.",
     "pushed_at": "2026-09-25T03:50:54Z",
     "license": "NOASSERTION",
@@ -3108,7 +2796,7 @@
   },
   {
     "full_name": "chuspeeism/dashi-ppt-skill",
-    "stars": 10201,
+    "stars": 10215,
     "desc": "An AI-agent skill that generates browser-editable presentations from multiple visual themes, exportable to HTML, PDF, and PPTX.",
     "pushed_at": "2026-09-12T14:13:08Z",
     "license": "AGPL-3.0",
@@ -3120,17 +2808,30 @@
     "topics": "agent-skill,ai-agent,ai-ppt,claude,claude-code,dashial,html-presentation,ppt,pptx,presentation,presentation-generator,skill,slide-generator,slides"
   },
   {
-    "full_name": "mobile-next/mobile-mcp",
-    "stars": 10157,
-    "desc": "Mobile MCP: let AI agents drive your iOS and Android apps. MCP server for simulators, emulators and real devices. Works with Claude Code, Codex, Cursor and any MCP client.",
-    "pushed_at": "2026-10-30T16:38:40Z",
-    "license": "Apache-2.0",
-    "kind": "plugin",
-    "name": "mobile-mcp",
-    "market": "mobile-next/mobile-mcp",
+    "full_name": "lemomo-ai/lemo-opuscar",
+    "stars": 10105,
+    "desc": "A toolbox of film styles made in code for Claude Code: 66 ready to use, and your own. Each style is a style prompt plus a demo film made entirely in code by Claude Opus 5.5, with no video model. By Lemomo. · 一套用代码做片的风格工具箱：66 种现成风格，也能做出你自己的",
+    "pushed_at": "2026-10-31T14:53:23Z",
+    "license": "MIT",
+    "kind": "none",
+    "name": "",
+    "market": "",
     "url": "",
     "pkg": "",
-    "topics": "agent,android,android-automation,appium-alternative,claude-code,codex,cursor,emulator,ios,ios-automation,mcp,mcp-server,mobile,mobile-automation,mobile-testing,real-device,simulator,skills"
+    "topics": "agent-skills,ai-agents,ai-short-film,ai-video,animation,canvas,claude,claude-code,claude-code-plugin,claude-code-skill,creative-coding,ffmpeg,filmmaking,motion-graphics,opus-5-5,prompt-library,text-to-speech,threejs,video-production,webgl"
+  },
+  {
+    "full_name": "SnailSploit/Claude-Red",
+    "stars": 10086,
+    "desc": "claude-red is a curated library of offensive security skills designed for the Claude skills system. Each skill is a structured SKILL.md file that primes Claude with expert-level methodology for a specific attack surface — from SQLi to shellcode, EDR evasion to exploit development.",
+    "pushed_at": "2026-10-12T15:02:40Z",
+    "license": "MIT",
+    "kind": "none",
+    "name": "",
+    "market": "",
+    "url": "",
+    "pkg": "",
+    "topics": "claude-ai,claude-pt,claude-skills,redteam,redteam-tools,skills"
   },
   {
     "full_name": "diet103/claude-code-infrastructure-showcase",
@@ -3146,34 +2847,8 @@
     "topics": ""
   },
   {
-    "full_name": "SnailSploit/Claude-Red",
-    "stars": 9960,
-    "desc": "claude-red is a curated library of offensive security skills designed for the Claude skills system. Each skill is a structured SKILL.md file that primes Claude with expert-level methodology for a specific attack surface — from SQLi to shellcode, EDR evasion to exploit development.",
-    "pushed_at": "2026-10-12T15:02:40Z",
-    "license": "MIT",
-    "kind": "none",
-    "name": "",
-    "market": "",
-    "url": "",
-    "pkg": "",
-    "topics": "claude-ai,claude-pt,claude-skills,redteam,redteam-tools,skills"
-  },
-  {
-    "full_name": "lemomo-ai/lemo-opuscar",
-    "stars": 9861,
-    "desc": "A toolbox of film styles made in code for Claude Code: 66 ready to use, and your own. Each style is a style prompt plus a demo film made entirely in code by Claude Opus 5.5, with no video model. By Lemomo. · 一套用代码做片的风格工具箱：66 种现成风格，也能做出你自己的",
-    "pushed_at": "2026-10-29T05:52:03Z",
-    "license": "MIT",
-    "kind": "none",
-    "name": "",
-    "market": "",
-    "url": "",
-    "pkg": "",
-    "topics": "agent-skills,ai-agents,ai-short-film,ai-video,animation,canvas,claude,claude-code,claude-code-plugin,claude-code-skill,creative-coding,ffmpeg,filmmaking,motion-graphics,opus-5-5,prompt-library,text-to-speech,threejs,video-production,webgl"
-  },
-  {
     "full_name": "friuns2/BlackFriday-GPTs-Prompts",
-    "stars": 9861,
+    "stars": 9863,
     "desc": "List of free GPTs that doesn't require plus subscription ",
     "pushed_at": "2026-03-18T02:09:18Z",
     "license": "MIT",
@@ -3188,7 +2863,7 @@
     "full_name": "awslabs/mcp",
     "stars": 9853,
     "desc": "Open source MCP Servers for AWS",
-    "pushed_at": "2026-10-30T22:09:56Z",
+    "pushed_at": "2026-10-31T22:26:34Z",
     "license": "Apache-2.0",
     "kind": "none",
     "name": "",
@@ -3199,7 +2874,7 @@
   },
   {
     "full_name": "frankbria/ralph-claude-code",
-    "stars": 9720,
+    "stars": 9721,
     "desc": "Autonomous AI development loop for Claude Code with intelligent exit detection",
     "pushed_at": "2026-10-31T02:33:54Z",
     "license": "MIT",
@@ -3212,7 +2887,7 @@
   },
   {
     "full_name": "ntegrals/openbrowser",
-    "stars": 9576,
+    "stars": 9575,
     "desc": "Let AI agents browse the web. An autonomous toolkit for browser-based AI agents.",
     "pushed_at": "2026-04-02T12:55:42Z",
     "license": "MIT",
@@ -3225,7 +2900,7 @@
   },
   {
     "full_name": "nexu-io/html-anything",
-    "stars": 9337,
+    "stars": 9348,
     "desc": "✨ The agentic HTML editor — your local AI agent writes the HTML, you ship it. 🚀 75 Skills × 9 Surfaces (magazine · deck · poster · XHS / tweet · prototype · data report · Hyperframes) 🛡️ Sandboxed preview · 📤 1-click to WeChat / X / Zhihu / HTML / PNG 🔑 Zero API key — Claude Code / Cursor / Codex / Gemini / Copilot / OpenCode / Qwen / Aider.",
     "pushed_at": "2026-10-13T02:33:42Z",
     "license": "Apache-2.0",
@@ -3238,9 +2913,9 @@
   },
   {
     "full_name": "openstatusHQ/openstatus",
-    "stars": 9243,
+    "stars": 9244,
     "desc": "Open-source status page, incident response and uptime monitoring",
-    "pushed_at": "2026-10-28T20:29:30Z",
+    "pushed_at": "2026-10-31T20:10:58Z",
     "license": "AGPL-3.0",
     "kind": "none",
     "name": "",
@@ -3251,7 +2926,7 @@
   },
   {
     "full_name": "lencx/Noi",
-    "stars": 9069,
+    "stars": 9072,
     "desc": "🚀 Less chaos. More flow.",
     "pushed_at": "2026-08-21T16:42:55Z",
     "license": null,
@@ -3263,23 +2938,10 @@
     "topics": "ai,application,browser,chatgpt,claude,copilot,deepseek,extension,gemini,grok,macos,noi,perplexity,qwen,tools,windows"
   },
   {
-    "full_name": "homarr-labs/dashboard-icons",
-    "stars": 8974,
-    "desc": "3,400+ curated icons and logos for dashboards and AI agents. SVG, PNG and WEBP on a free CDN, plus an MCP server for Claude Code, Codex, ChatGPT, Cursor, Hermes and OpenClaw.",
-    "pushed_at": "2026-10-26T14:25:41Z",
-    "license": "Apache-2.0",
-    "kind": "mcp-http",
-    "name": "dashboard-icons",
-    "market": "",
-    "url": "https://dashboardicons.com/api/mcp`",
-    "pkg": "",
-    "topics": "ai-agents,claude-code,codex,dashboard,dashboard-icons,dashy,docker,heimdall,homarr,homepage,homer,icons,logos,mcp,mcp-server,model-context-protocol,self-hosted,selfhosted,svg-icons"
-  },
-  {
     "full_name": "anbeime/skill",
-    "stars": 8957,
+    "stars": 8972,
     "desc": "收录最全、更新最快的技能Skills商店：精选原创技能包（涵盖文档处理、内容创作、编程开发、机器学习、自动化工作流），全部打包好可直接安装使用！同时自动抓取GitHub上万个Skills项目，按分类、更新时间、Star数量整理。The most comprehensive and frequently updated AI Agent skill library, featuring curated skill packs across document processing, content creation, programming, machine learning, automated workflows, and many more domains.",
-    "pushed_at": "2026-10-30T08:12:10Z",
+    "pushed_at": "2026-10-31T08:04:51Z",
     "license": null,
     "kind": "none",
     "name": "",
@@ -3290,7 +2952,7 @@
   },
   {
     "full_name": "firerpa/lamda",
-    "stars": 8695,
+    "stars": 8696,
     "desc": "Android Full-Stack Device Control Platform: WebRTC/H.264 remote desktop, UI/OCR/image-matching automation, one-click MITM, built-in Frida, proxy/VPN/frp/P2P networking, MCP/Agent, 160+ APIs, designed for multi-device clusters and engineered deployments.",
     "pushed_at": "2026-09-27T10:05:24Z",
     "license": "MIT",
@@ -3300,6 +2962,19 @@
     "url": "",
     "pkg": "",
     "topics": "adb,agents,ai,ai-agents,android,appium,automation,dynamic-analysis,frida,magisk,mcp,mcp-server,mobile-security,remote-control,reverse-engineering,security,uiautomation,uiautomator2,xposed"
+  },
+  {
+    "full_name": "mvschwarz/openrig",
+    "stars": 8481,
+    "desc": "Build your own network of agents from Claude Code, Codex and Pi: persistent teams with roles, shared context and owned work.",
+    "pushed_at": "2026-10-30T17:54:46Z",
+    "license": "Apache-2.0",
+    "kind": "skills-npx",
+    "name": "",
+    "market": "",
+    "url": "",
+    "pkg": "",
+    "topics": "agent-harness,agent-orchestration,agent-skills,ai-coding,claude-code,cli,codex-cli,multi-agent,multi-agent-systems,tmux,typescript"
   },
   {
     "full_name": "jnMetaCode/superpowers-zh",
@@ -3315,60 +2990,8 @@
     "topics": "agent-skills,agentic-coding,ai-coding,chinese,claude-code,code-review,cursor,gemini-cli,kiro,mcp,npm-package,prompt-engineering,skills,superpowers,tdd,trae"
   },
   {
-    "full_name": "mvschwarz/openrig",
-    "stars": 8408,
-    "desc": "Build your own network of agents from Claude Code, Codex and Pi: persistent teams with roles, shared context and owned work.",
-    "pushed_at": "2026-10-30T17:54:46Z",
-    "license": "Apache-2.0",
-    "kind": "skills-npx",
-    "name": "",
-    "market": "",
-    "url": "",
-    "pkg": "",
-    "topics": "agent-harness,agent-orchestration,agent-skills,ai-coding,claude-code,cli,codex-cli,multi-agent,multi-agent-systems,tmux,typescript"
-  },
-  {
-    "full_name": "WenyuChiou/awesome-agentic-ai-zh",
-    "stars": 8314,
-    "desc": "A trilingual (繁中 / English / 简中) learning roadmap for agentic AI: from LLM basics to multi-agent systems, with 240+ curated resources and hands-on examples. 中文 AI agent 學習地圖。",
-    "pushed_at": "2026-10-29T19:30:29Z",
-    "license": "MIT",
-    "kind": "none",
-    "name": "",
-    "market": "",
-    "url": "",
-    "pkg": "",
-    "topics": "agentic-ai,agentic-workflows,ai-agent,ai-agents,awesome-list,chinese-llm,claude-code,claude-skills,cli,learning-roadmap,llm,llm-agents,mcp,model-context-protocol,multi-agent-systems,prompt-engineering,rag,trilingual,tutorial"
-  },
-  {
-    "full_name": "xixu-me/xget",
-    "stars": 8212,
-    "desc": "Ultra-high-performance, secure, all-in-one acceleration engine for developer resources",
-    "pushed_at": "2026-10-22T07:56:49Z",
-    "license": "AGPL-3.0",
-    "kind": "skills-npx",
-    "name": "",
-    "market": "",
-    "url": "",
-    "pkg": "",
-    "topics": "agent-skills,xget"
-  },
-  {
-    "full_name": "YaoApp/yao",
-    "stars": 8210,
-    "desc": "✨ All your agents and workspaces in one place, on every device you own. Track tasks on a board, accessible from desktop, mobile, browser, or API. Self-hosted.",
-    "pushed_at": "2026-10-19T03:30:30Z",
-    "license": "NOASSERTION",
-    "kind": "none",
-    "name": "",
-    "market": "",
-    "url": "",
-    "pkg": "",
-    "topics": "agent-harness,agent-orchestration,agent-skills,agent-workspaces,ai-agents,ai-native,claude-code,coding-agent,deepseek,deepseek-harness,dsh,dsh-plugin,jev,local-first,no-code,own-your-data,typed-decisions"
-  },
-  {
     "full_name": "Ryze-AI-Adgent/open-seo-mcp-skills",
-    "stars": 8204,
+    "stars": 8352,
     "desc": "Free SEO MCP server + open-source SEO and GEO skills for Claude: keyword research, rank tracking, audits, backlinks, AI visibility on your real GSC/GA4/ads data. claude mcp add ryze --transport http https://connector.get-ryze.ai/mcp",
     "pushed_at": "2026-10-27T08:57:55Z",
     "license": "MIT",
@@ -3380,10 +3003,49 @@
     "topics": "ai-seo,ai-visibility,backlinks,claude,claude-code,claude-skills,dataforseo,generative-engine-optimization,geo,geo-mcp,keyword-research,llm-seo,mcp,mcp-server,open-source-seo,rank-tracking,seo,seo-audit,seo-mcp,seo-mcp-server"
   },
   {
+    "full_name": "WenyuChiou/awesome-agentic-ai-zh",
+    "stars": 8325,
+    "desc": "A trilingual (繁中 / English / 简中) learning roadmap for agentic AI: from LLM basics to multi-agent systems, with 240+ curated resources and hands-on examples. 中文 AI agent 學習地圖。",
+    "pushed_at": "2026-10-29T19:30:29Z",
+    "license": "MIT",
+    "kind": "none",
+    "name": "",
+    "market": "",
+    "url": "",
+    "pkg": "",
+    "topics": "agentic-ai,agentic-workflows,ai-agent,ai-agents,awesome-list,chinese-llm,claude-code,claude-skills,cli,learning-roadmap,llm,llm-agents,mcp,model-context-protocol,multi-agent-systems,prompt-engineering,rag,trilingual,tutorial"
+  },
+  {
+    "full_name": "YaoApp/yao",
+    "stars": 8225,
+    "desc": "✨ All your agents and workspaces in one place, on every device you own. Track tasks on a board, accessible from desktop, mobile, browser, or API. Self-hosted.",
+    "pushed_at": "2026-10-19T03:30:30Z",
+    "license": "NOASSERTION",
+    "kind": "none",
+    "name": "",
+    "market": "",
+    "url": "",
+    "pkg": "",
+    "topics": "agent-harness,agent-orchestration,agent-skills,agent-workspaces,ai-agents,ai-native,claude-code,coding-agent,deepseek,deepseek-harness,dsh,dsh-plugin,jev,local-first,no-code,own-your-data,typed-decisions"
+  },
+  {
+    "full_name": "xixu-me/xget",
+    "stars": 8210,
+    "desc": "Ultra-high-performance, secure, all-in-one acceleration engine for developer resources",
+    "pushed_at": "2026-10-22T07:56:49Z",
+    "license": "AGPL-3.0",
+    "kind": "skills-npx",
+    "name": "",
+    "market": "",
+    "url": "",
+    "pkg": "",
+    "topics": "agent-skills,xget"
+  },
+  {
     "full_name": "zenstory-ai/oh-story-claudecode",
-    "stars": 8168,
-    "desc": "Claude Code / Codex / OpenCode agent skills for writing Chinese web novels (网文): 扫榜、拆文、写作、去AI味、封面全流程，长篇短篇都支持 | 13 skills for novel writing and long-form fiction with file-based continuity tracking. MIT.",
-    "pushed_at": "2026-10-30T16:43:16Z",
+    "stars": 8195,
+    "desc": "Claude Code / Codex / OpenCode agent skills for writing Chinese web novels (网文): 扫榜、拆文、写作、去AI味、封面全流程，长篇短篇都支持 | 14 skills for novel writing and long-form fiction with file-based continuity tracking. MIT.",
+    "pushed_at": "2026-10-31T19:50:16Z",
     "license": "MIT",
     "kind": "skills-npx",
     "name": "",
@@ -3394,9 +3056,9 @@
   },
   {
     "full_name": "Gentleman-Programming/gentle-ai",
-    "stars": 8152,
+    "stars": 8160,
     "desc": "Gentle-AI configures the AI coding agents you already use: Claude Code, Cursor, OpenCode, Codex, Pi, and more. Choose persistent memory, Organic-Driven Development, curated skills, MCP servers, personas, and optional bounded review. Open source, no agent lock-in.",
-    "pushed_at": "2026-10-31T03:02:11Z",
+    "pushed_at": "2026-10-31T19:08:44Z",
     "license": "MIT",
     "kind": "none",
     "name": "",
@@ -3409,7 +3071,7 @@
     "full_name": "osaurus-ai/osaurus",
     "stars": 8096,
     "desc": "Own your AI. The native macOS harness for AI agents -- any model, persistent memory, autonomous execution, cryptographic identity. Built in Swift. Fully offline. Open source.",
-    "pushed_at": "2026-10-31T04:57:48Z",
+    "pushed_at": "2026-10-31T22:55:29Z",
     "license": "MIT",
     "kind": "none",
     "name": "",
@@ -3419,21 +3081,8 @@
     "topics": "anthropic,apple-foundation-models,apple-intelligence,apple-neural-engine,llm,mcp,mcp-server,mlx,openai,swift"
   },
   {
-    "full_name": "trailofbits/skills",
-    "stars": 7903,
-    "desc": "Trail of Bits skills for security research, vulnerability detection, and audit workflows",
-    "pushed_at": "2026-10-28T19:41:17Z",
-    "license": "CC-BY-SA-4.0",
-    "kind": "plugin",
-    "name": "",
-    "market": "trailofbits/skills",
-    "url": "",
-    "pkg": "",
-    "topics": "agent-skills"
-  },
-  {
     "full_name": "yzfly/Awesome-MCP-ZH",
-    "stars": 7798,
+    "stars": 7800,
     "desc": "MCP 资源精选， MCP指南，Claude MCP，MCP Servers, MCP Clients",
     "pushed_at": "2026-10-15T23:18:35Z",
     "license": "MIT",
@@ -3446,7 +3095,7 @@
   },
   {
     "full_name": "firecrawl/firecrawl-mcp-server",
-    "stars": 7730,
+    "stars": 7736,
     "desc": "Official Firecrawl MCP server, the context API for AI agents: search, scrape, and interact with the web, plus parse, crawl, map, Agent and Monitor, from any MCP client.",
     "pushed_at": "2026-10-29T15:06:42Z",
     "license": "MIT",
@@ -3459,7 +3108,7 @@
   },
   {
     "full_name": "devlikeapro/waha",
-    "stars": 7716,
+    "stars": 7720,
     "desc": "WAHA - WhatsApp HTTP API (REST API) that you can configure in a click! Multiple engines: WEBJS (browser based), NOWEB (websocket nodejs), GOWS (websocket go), WPP (browser)",
     "pushed_at": "2026-10-28T09:40:49Z",
     "license": "Apache-2.0",
@@ -3471,21 +3120,21 @@
     "topics": "ai-bot,bot,http-api,mcp,mcp-server,mcp-whatsapp,python-bot,whatsapp,whatsapp-api,whatsapp-automation,whatsapp-bot,whatsapp-chat,whatsapp-mcp,whatsapp-web,whatsapp-web-api"
   },
   {
-    "full_name": "miqdadbadjuber/anti-slop",
-    "stars": 7657,
-    "desc": "Rules for an AI coding agent to filter out generic AI-generated UI designs, text, and code.",
-    "pushed_at": "2026-10-28T17:34:01Z",
-    "license": "MIT",
-    "kind": "skills-npx",
+    "full_name": "google/elephant-goldfish-model",
+    "stars": 7670,
+    "desc": "Open-source skills for designing and reviewing software with AI agents",
+    "pushed_at": "2026-10-30T09:33:24Z",
+    "license": "Apache-2.0",
+    "kind": "none",
     "name": "",
     "market": "",
     "url": "",
     "pkg": "",
-    "topics": "accessibility,agent-skills,ai-agents,ai-coding-agent,ai-slop,anti-slop,claude-code,copywriting,design-rules,ui-design"
+    "topics": "agent-skills,ai-agents,antigravity,claude-code,claude-code-plugin,claude-skills,codex,codex-plugin,coding-agents,context-engineering,developer-tools,gemini,llm,multi-agent,prompt-engineering,spec-driven-development"
   },
   {
     "full_name": "refly-ai/refly",
-    "stars": 7545,
+    "stars": 7546,
     "desc": "The first open-source agent skills builder. Define skills by vibe workflow, run on Claude Code, Cursor, Codex & more. Build Clawdbot 🦞· APIs for Lovable · Bots for Slack & Lark/Feishu · Skills are infrastructure, not prompts.",
     "pushed_at": "2026-10-21T16:32:27Z",
     "license": "NOASSERTION",
@@ -3498,7 +3147,7 @@
   },
   {
     "full_name": "ningzimu/codex-ppt-skill",
-    "stars": 7480,
+    "stars": 7491,
     "desc": "GPT-Image-2 PPT Generator Skill for Creating Image-Based PowerPoint Presentations in Codex and Other Skill-Compatible Agents",
     "pushed_at": "2026-10-13T13:04:15Z",
     "license": "MIT",
@@ -3511,7 +3160,7 @@
   },
   {
     "full_name": "Zipstack/unstract",
-    "stars": 7370,
+    "stars": 7379,
     "desc": "LLM-Driven Extraction of Unstructured Data — Built for API Deployments & ETL Pipeline Workflows",
     "pushed_at": "2026-10-30T13:53:42Z",
     "license": "AGPL-3.0",
@@ -3537,9 +3186,9 @@
   },
   {
     "full_name": "Devin-AXIS/iPolloWork",
-    "stars": 7326,
+    "stars": 7332,
     "desc": "Enterprise-grade, local-first Agent Workbench for people and agent teams. A unified multi-engine workspace for Codex Harness, DeepSeek Harness, and OpenCode, with unified plugins and Skills, multi-agent projects and tasks, and editable code, documents, presentations, design, and video.",
-    "pushed_at": "2026-10-30T09:27:43Z",
+    "pushed_at": "2026-10-31T08:25:11Z",
     "license": "NOASSERTION",
     "kind": "none",
     "name": "",
@@ -3549,21 +3198,8 @@
     "topics": "agent-collaboration,agent-skills,ai-agents,ai-work,claude-code,codex,codex-plugin,deepseek-harness,dsh-plugin,enterprise-agent-workspace,hermes-agent,ipollowork-plugin,ipollowork-skill,multi-agent-workspace,opencode,opencode-plugin,self-evolving-ai,visual-editor"
   },
   {
-    "full_name": "BrowserMCP/mcp",
-    "stars": 7258,
-    "desc": "Browser MCP is a Model Context Provider (MCP) server that allows AI applications to control your browser",
-    "pushed_at": "2026-10-30T09:17:32Z",
-    "license": "Apache-2.0",
-    "kind": "mcp-npm",
-    "name": "",
-    "market": "",
-    "url": "",
-    "pkg": "@browsermcp/mcp",
-    "topics": "browser-automation,browser-extension,claude,cursor,mcp,mcp-server"
-  },
-  {
     "full_name": "gosom/google-maps-scraper",
-    "stars": 7083,
+    "stars": 7122,
     "desc": "scrape data  from Google Maps. Extracts data such as the name, address, phone number, website URL, rating,  reviews number, latitude and longitude, reviews,email and more for each place",
     "pushed_at": "2026-10-21T10:24:36Z",
     "license": "MIT",
@@ -3576,7 +3212,7 @@
   },
   {
     "full_name": "internet-court/internet-court-skill",
-    "stars": 7044,
+    "stars": 7047,
     "desc": "The trust layer for agent-to-agent commerce — natural-language mandates, ERC-7710 delegated permissions, x402 payments, escrow, and dispute resolution as one open, catch-all Agent Skill / Claude Code plugin.",
     "pushed_at": "2026-10-26T12:55:11Z",
     "license": "NOASSERTION",
@@ -3589,7 +3225,7 @@
   },
   {
     "full_name": "Jakeschincariol/replica-skill",
-    "stars": 6695,
+    "stars": 6815,
     "desc": "Eleven free Claude skills that clone any app: reverse-engineer it, rebuild it, test it for bugs, then fix what its users hate. Free, MIT.",
     "pushed_at": "2026-10-03T12:07:53Z",
     "license": "MIT",
@@ -3601,23 +3237,10 @@
     "topics": "agent,agent-skills,app-clone,claude,claude-code,claude-skills,indie-hacker,reverse-engineering,saas"
   },
   {
-    "full_name": "google/elephant-goldfish-model",
-    "stars": 6690,
-    "desc": "Open-source skills for designing and reviewing software with AI agents",
-    "pushed_at": "2026-10-30T09:33:24Z",
-    "license": "Apache-2.0",
-    "kind": "none",
-    "name": "",
-    "market": "",
-    "url": "",
-    "pkg": "",
-    "topics": "agent-skills,ai-agents,antigravity,claude-code,claude-code-plugin,claude-skills,codex,codex-plugin,coding-agents,context-engineering,developer-tools,gemini,llm,multi-agent,prompt-engineering,spec-driven-development"
-  },
-  {
     "full_name": "JetBrains/thinkrail",
-    "stars": 6678,
+    "stars": 6810,
     "desc": "Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need",
-    "pushed_at": "2026-10-31T01:42:57Z",
+    "pushed_at": "2026-10-31T23:32:34Z",
     "license": "Apache-2.0",
     "kind": "none",
     "name": "",
@@ -3628,7 +3251,7 @@
   },
   {
     "full_name": "irinabuht12-oss/google-ads-meta-ads-mcp",
-    "stars": 6537,
+    "stars": 6638,
     "desc": "Google Ads MCP server + Meta Ads MCP (Facebook Ads MCP) + Google Analytics MCP (GA4) + Search Console in one hosted remote MCP for Claude, ChatGPT, Cursor & n8n: OAuth login, no API keys, approval-gated writes, 7-day free trial. By Ryze AI.",
     "pushed_at": "2026-10-27T08:57:57Z",
     "license": "MIT",
@@ -3641,9 +3264,9 @@
   },
   {
     "full_name": "getsentry/MobileBuildMCP",
-    "stars": 6527,
+    "stars": 6529,
     "desc": "A Model Context Protocol (MCP) server and CLI that provides tools for agent use when working on iOS and macOS projects.",
-    "pushed_at": "2026-10-27T03:44:20Z",
+    "pushed_at": "2026-10-31T12:05:32Z",
     "license": "MIT",
     "kind": "mcp-npm",
     "name": "",
@@ -3654,7 +3277,7 @@
   },
   {
     "full_name": "htmlstreamofficial/preline",
-    "stars": 6516,
+    "stars": 6515,
     "desc": "Preline UI is an open-source set of prebuilt UI components based on the utility-first Tailwind CSS framework.",
     "pushed_at": "2026-08-31T01:53:38Z",
     "license": "NOASSERTION",
@@ -3666,47 +3289,8 @@
     "topics": "agent-skills,css,html,javascript,tailwindcss,tailwindcss-plugin,typescript,ui-components"
   },
   {
-    "full_name": "larashero3-dotcom/lieflat-charts",
-    "stars": 6505,
-    "desc": "Data visualization Skill for AI Agents, turning data into polished, interactive HTML charts. 面向 AI Agents 的数据可视化 Skill，将数据快速生成精致、可交互的 HTML 图表。",
-    "pushed_at": "2026-10-15T10:59:32Z",
-    "license": "NOASSERTION",
-    "kind": "skills-npx",
-    "name": "",
-    "market": "",
-    "url": "",
-    "pkg": "",
-    "topics": "agent-skills,charts,claude-code,codex,data-visualization,html,moxt,svg"
-  },
-  {
-    "full_name": "melonjs/melonJS",
-    "stars": 6429,
-    "desc": "A modern & fully featured HTML5 game engine (2D & 3D) for JavaScript/TypeScript, with WebGL/WebGPU rendering, built-in physics, Tiled map & glTF support and WebAudio.",
-    "pushed_at": "2026-10-31T07:19:12Z",
-    "license": "MIT",
-    "kind": "skills-npx",
-    "name": "",
-    "market": "",
-    "url": "",
-    "pkg": "",
-    "topics": "2d,3d,agent-skills,canvas,contributions-welcome,game-development,game-engine,game-framework,gamedev,gltf,html5,html5-game-engine,javascript,javascript-game-engine,physics-engine,tiled,typescript,webaudio,webgl,webgpu"
-  },
-  {
-    "full_name": "ThinkInAIXYZ/deepchat",
-    "stars": 6383,
-    "desc": "🐬DeepChat - A smart assistant that connects powerful AI to your personal world",
-    "pushed_at": "2026-10-29T14:26:27Z",
-    "license": "Apache-2.0",
-    "kind": "none",
-    "name": "",
-    "market": "",
-    "url": "",
-    "pkg": "",
-    "topics": "agent,agent-skills,ai,ai-assistant,ai-sdk,chatgpt,claude,cross-platform,deepseek,electron,gemini,harness-design,hermes-agent,llm-client,mcp,mcp-client,openai-client,openclaw"
-  },
-  {
     "full_name": "irinabuht12-oss/marketing-skills",
-    "stars": 6340,
+    "stars": 6446,
     "desc": "Claude skills for marketing: 49 free marketing skills for Claude Code and claude.ai (Google Ads, Meta Ads, SEO, AI visibility) + the Ryze Google Ads MCP / Meta Ads MCP: claude mcp add ryze --transport http https://connector.get-ryze.ai/mcp",
     "pushed_at": "2026-10-27T08:57:53Z",
     "license": null,
@@ -3718,8 +3302,34 @@
     "topics": "ai-visibility,claude-code,claude-desktop,claude-marketing-skills,claude-plugin,claude-skills,claude-skills-for-marketing,cursor,geo,google-ads,google-ads-mcp,marketing,marketing-skills,mcp,mcp-server,meta-ads,meta-ads-mcp,seo"
   },
   {
+    "full_name": "melonjs/melonJS",
+    "stars": 6429,
+    "desc": "A modern & fully featured HTML5 game engine (2D & 3D) for JavaScript/TypeScript, with WebGL/WebGPU rendering, built-in physics, Tiled map & glTF support and WebAudio.",
+    "pushed_at": "2026-10-31T14:09:08Z",
+    "license": "MIT",
+    "kind": "skills-npx",
+    "name": "",
+    "market": "",
+    "url": "",
+    "pkg": "",
+    "topics": "2d,3d,agent-skills,canvas,contributions-welcome,game-development,game-engine,game-framework,gamedev,gltf,html5,html5-game-engine,javascript,javascript-game-engine,physics-engine,tiled,typescript,webaudio,webgl,webgpu"
+  },
+  {
+    "full_name": "ThinkInAIXYZ/deepchat",
+    "stars": 6384,
+    "desc": "🐬DeepChat - A smart assistant that connects powerful AI to your personal world",
+    "pushed_at": "2026-10-31T16:22:32Z",
+    "license": "Apache-2.0",
+    "kind": "none",
+    "name": "",
+    "market": "",
+    "url": "",
+    "pkg": "",
+    "topics": "agent,agent-skills,ai,ai-assistant,ai-sdk,chatgpt,claude,cross-platform,deepseek,electron,gemini,harness-design,hermes-agent,llm-client,mcp,mcp-client,openai-client,openclaw"
+  },
+  {
     "full_name": "MinishLab/semble",
-    "stars": 6333,
+    "stars": 6336,
     "desc": "Fast and Accurate Code Search for Agents. Uses 99% fewer tokens than grep+read",
     "pushed_at": "2026-10-29T07:59:20Z",
     "license": "MIT",
@@ -3732,7 +3342,7 @@
   },
   {
     "full_name": "heilcheng/awesome-agent-skills",
-    "stars": 6329,
+    "stars": 6330,
     "desc": "Tutorials, Guides and Agent Skills Directories",
     "pushed_at": "2026-10-27T18:22:59Z",
     "license": "MIT",
@@ -3745,7 +3355,7 @@
   },
   {
     "full_name": "browser-act/skills",
-    "stars": 6299,
+    "stars": 6300,
     "desc": "Browser automation CLI built for AI agents. Break through anti-bot walls, hand off to humans across platforms when stuck. Parallel multi-task execution, independent multi-session operation, isolated multi-account browsing.",
     "pushed_at": "2026-08-24T14:56:52Z",
     "license": "MIT",
@@ -3758,9 +3368,9 @@
   },
   {
     "full_name": "ikaijua/Awesome-AITools",
-    "stars": 6263,
+    "stars": 6265,
     "desc": "Collection of AI-related utilities. Welcome to submit pull requests /收藏AI相关的实用工具，欢迎提交pull requests",
-    "pushed_at": "2026-10-29T00:28:10Z",
+    "pushed_at": "2026-10-31T15:57:06Z",
     "license": "CC-BY-4.0",
     "kind": "none",
     "name": "",
@@ -3770,49 +3380,10 @@
     "topics": "agent-skills,agents,ai,artificial-intelligence,awesome,awesome-list,awesome-lists,chatgpt,claude,claude-skills,claudecode,deepseek,gemini,gpt,gpt-image-2,llm,nanobanana,seedance,tools"
   },
   {
-    "full_name": "gamedev-skills/awesome-gamedev-agent-skills",
-    "stars": 6155,
-    "desc": "77 game-dev skills for AI coding agents — Godot, Unity, Unreal, Phaser, PixiJS, three.js, Bevy, pygame, LÖVE, Roblox. Portable SKILL.md Agent Skills (the format Anthropic launched as Claude Skills), with a router that loads the right skill for your engine and task. Runs in Claude Code, Cursor, Kiro, Codex, Copilot, Gemini CLI and more.",
-    "pushed_at": "2026-10-28T03:10:14Z",
-    "license": "Apache-2.0",
-    "kind": "skills-npx",
-    "name": "",
-    "market": "",
-    "url": "",
-    "pkg": "",
-    "topics": "agent-skills,ai-agents,antigravity,awesome-list,claude-code,cline,codex,cursor,game-dev,game-development,gamedev,gemini-cli,github-copilot,godot,kiro,oh-my-pi,skills,unity,unreal,windsurf"
-  },
-  {
-    "full_name": "lemonade-sdk/lemonade",
-    "stars": 6030,
-    "desc": "Lemonade helps users discover and run local AI apps by serving optimized LLMs right from their own GPUs and NPUs. Join our discord: https://discord.gg/5xXzkMu8Zk",
-    "pushed_at": "2026-10-31T07:19:44Z",
-    "license": "Apache-2.0",
-    "kind": "none",
-    "name": "",
-    "market": "",
-    "url": "",
-    "pkg": "",
-    "topics": "ai,amd,genai,gpu,llama,llm,llm-inference,local-server,mcp,mcp-server,mistral,npu,onnxruntime,openai-api,qwen,radeon,rocm,ryzen,vulkan"
-  },
-  {
-    "full_name": "antfu/skills",
-    "stars": 6028,
-    "desc": "Anthony Fu's curated collection of agent skills.",
-    "pushed_at": "2026-10-30T21:17:56Z",
-    "license": "MIT",
-    "kind": "skills-npx",
-    "name": "",
-    "market": "",
-    "url": "",
-    "pkg": "",
-    "topics": "agent-skills,skills"
-  },
-  {
     "full_name": "bethington/ghidra-mcp",
-    "stars": 6025,
+    "stars": 6033,
     "desc": "Ghidra MCP Server — 200+ MCP tools for AI-powered reverse engineering. GUI plugin + headless server, lazy tool loading, convention enforcement, batch operations, Ghidra Server integration, and Docker deployment.",
-    "pushed_at": "2026-10-30T20:31:36Z",
+    "pushed_at": "2026-10-31T08:54:38Z",
     "license": "Apache-2.0",
     "kind": "none",
     "name": "",
@@ -3822,8 +3393,21 @@
     "topics": "ai,binary-analysis,ghidra,ghidra-extension,java,mcp,mcp-server,model-context-protocol,python,reverse-engineering,static-analysis"
   },
   {
+    "full_name": "lemonade-sdk/lemonade",
+    "stars": 6033,
+    "desc": "Lemonade helps users discover and run local AI apps by serving optimized LLMs right from their own GPUs and NPUs. Join our discord: https://discord.gg/5xXzkMu8Zk",
+    "pushed_at": "2026-10-31T22:40:17Z",
+    "license": "Apache-2.0",
+    "kind": "none",
+    "name": "",
+    "market": "",
+    "url": "",
+    "pkg": "",
+    "topics": "ai,amd,genai,gpu,llama,llm,llm-inference,local-server,mcp,mcp-server,mistral,npu,onnxruntime,openai-api,qwen,radeon,rocm,ryzen,vulkan"
+  },
+  {
     "full_name": "OpenSenseNova/SenseNova-Skills",
-    "stars": 5986,
+    "stars": 5997,
     "desc": "Modular SenseNova skills for building AI-powered office assistants and productivity workflows",
     "pushed_at": "2026-10-29T09:48:10Z",
     "license": "MIT",
@@ -3836,7 +3420,7 @@
   },
   {
     "full_name": "0xNyk/awesome-hermes-agent",
-    "stars": 5935,
+    "stars": 5939,
     "desc": "Independent directory of useful skills, plugins, memory providers, tools, surfaces, and guides for Nous Research's open-source Hermes Agent.",
     "pushed_at": "2026-10-27T14:12:42Z",
     "license": "NOASSERTION",
@@ -3861,36 +3445,10 @@
     "topics": "agents,ai,ai-agents,api,developer-tools,discord,function-calling,integration,llm,mcp,mcp-client,mcp-server,oauth2,open-source"
   },
   {
-    "full_name": "dotnet/skills",
-    "stars": 5782,
-    "desc": "Repository for skills to assist AI coding agents with .NET and C#",
-    "pushed_at": "2026-10-30T22:54:26Z",
-    "license": "MIT",
-    "kind": "plugin",
-    "name": "",
-    "market": "dotnet/skills",
-    "url": "",
-    "pkg": "",
-    "topics": "agent-skills"
-  },
-  {
-    "full_name": "dmmulroy/anti-slop",
-    "stars": 5782,
-    "desc": "Opinionated Oxlint rules for rejecting low-evidence TypeScript and JavaScript patterns",
-    "pushed_at": "2026-10-14T00:18:33Z",
-    "license": "MIT",
-    "kind": "skills-npx",
-    "name": "",
-    "market": "",
-    "url": "",
-    "pkg": "",
-    "topics": "agent-skills,linting,oxlint,typescript"
-  },
-  {
     "full_name": "54yyyu/zotero-mcp",
-    "stars": 5657,
+    "stars": 5665,
     "desc": "Zotero MCP: Connects your Zotero research library with Claude and other AI assistants via the Model Context Protocol to discuss papers, get summaries, analyze citations, and more.",
-    "pushed_at": "2026-10-16T21:34:45Z",
+    "pushed_at": "2026-10-31T23:22:08Z",
     "license": "MIT",
     "kind": "none",
     "name": "",
@@ -3901,7 +3459,7 @@
   },
   {
     "full_name": "microsoft/skill-recorder",
-    "stars": 5584,
+    "stars": 5599,
     "desc": "Desktop app that records your on-screen work session and uses the GitHub Copilot SDK to reconstruct it as an intent + ordered steps, then builds a reusable Skill or Automation for Microsoft Autopilots like Scout, Microsoft Copilot Cowork, or Copilot Studio.",
     "pushed_at": "2026-10-31T06:08:25Z",
     "license": "MIT",
@@ -3913,23 +3471,10 @@
     "topics": "agent-skills,ai-agents,automation,copilot,copilot-cli,copilot-cowork,copilot-studio,electron,microsoft-scout,screen-recording"
   },
   {
-    "full_name": "JimLiu/baoyu-design",
-    "stars": 5558,
-    "desc": "Run Claude Design locally as an Agent Skill — Cursor, Codex, DeepSeek Harness & more. Produce polished UI mockups, prototypes, decks & wireframes as self-contained HTML, without claude.ai/design. Best with Opus or Claude.",
-    "pushed_at": "2026-10-31T05:42:37Z",
-    "license": "MIT",
-    "kind": "skills-npx",
-    "name": "",
-    "market": "",
-    "url": "",
-    "pkg": "",
-    "topics": "agent-skills,claude,claude-code,claude-design,cursor,design,prototyping,ui-design"
-  },
-  {
     "full_name": "KnockOutEZ/wigolo",
-    "stars": 5509,
+    "stars": 5512,
     "desc": "The go-to web for your AI coding agent — local-first search, fetch, crawl & research over MCP. No API keys, no cloud, $0/query. Public beta.",
-    "pushed_at": "2026-10-30T11:21:49Z",
+    "pushed_at": "2026-10-31T13:08:47Z",
     "license": "NOASSERTION",
     "kind": "none",
     "name": "",
@@ -3939,21 +3484,8 @@
     "topics": "agent,ai,ai-agent,claude,developer-tools,exa-alternative,firecrawl-alternative,local-first,mcp,mcp-server,metasearch,model-context-protocol,privacy,rag,search,search-engine,tavily-alternative,web-crawler,web-scraping,web-search"
   },
   {
-    "full_name": "JerBouma/FinanceToolkit",
-    "stars": 5483,
-    "desc": "Transparent and Efficient Financial Analysis",
-    "pushed_at": "2026-10-31T06:43:33Z",
-    "license": "MIT",
-    "kind": "mcp-http",
-    "name": "finance-toolkit",
-    "market": "",
-    "url": "https://financetoolkit.jeroenbouma.com/mcp`",
-    "pkg": "",
-    "topics": "algorithmic-trading,equities,factor-analysis,finance,financial-analysis,financial-data,financial-statements,fundamental-analysis,fundamentals,market-data,mcp-server,performance-analysis,python,quantitative-analysis,quantitative-finance,risk-management,sector-analysis,stock-data,technical-analysis,valuation"
-  },
-  {
     "full_name": "breaking-brake/cc-wf-studio",
-    "stars": 5442,
+    "stars": 5443,
     "desc": "CC Workflow Studio",
     "pushed_at": "2026-10-07T00:11:01Z",
     "license": "NOASSERTION",
@@ -3966,9 +3498,9 @@
   },
   {
     "full_name": "aipoch/open-science",
-    "stars": 5403,
+    "stars": 5409,
     "desc": "The open-source AI research workbench for scientific research and agent workflows. Local-first, model-agnostic desktop app with extensible skills, MCP tools and connectors, Python/R execution and traceable artifacts for reproducible research on macOS, Windows and Linux.",
-    "pushed_at": "2026-10-31T06:29:53Z",
+    "pushed_at": "2026-10-31T22:45:05Z",
     "license": "Apache-2.0",
     "kind": "none",
     "name": "",
@@ -3979,9 +3511,9 @@
   },
   {
     "full_name": "metalbear-co/mirrord",
-    "stars": 5395,
+    "stars": 5396,
     "desc": "Run any process, on your machine or in an AI agent's environment, as if it were a pod in your Kubernetes cluster: real env vars, DNS, network, traffic.",
-    "pushed_at": "2026-10-31T02:04:32Z",
+    "pushed_at": "2026-10-31T22:30:18Z",
     "license": "MIT",
     "kind": "none",
     "name": "",
@@ -3992,9 +3524,9 @@
   },
   {
     "full_name": "elementalsouls/Claude-BugHunter",
-    "stars": 5355,
+    "stars": 5360,
     "desc": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
-    "pushed_at": "2026-10-30T10:54:08Z",
+    "pushed_at": "2026-10-31T10:25:55Z",
     "license": "MIT",
     "kind": "plugin",
     "name": "claude-bughunter",
@@ -4005,9 +3537,9 @@
   },
   {
     "full_name": "TabularisDB/tabularis",
-    "stars": 5342,
+    "stars": 5349,
     "desc": "Open-source desktop SQL workspace with 3 built-in database drivers and 26 shipped driver plugins, including SQL Server, DuckDB, ClickHouse and Redis. Built-in MCP server for Claude, Cursor and Devin, SQL notebooks and visual EXPLAIN.",
-    "pushed_at": "2026-10-30T13:13:41Z",
+    "pushed_at": "2026-10-31T12:51:05Z",
     "license": "Apache-2.0",
     "kind": "none",
     "name": "",
@@ -4018,7 +3550,7 @@
   },
   {
     "full_name": "FunnyWolf/Viper",
-    "stars": 5340,
+    "stars": 5339,
     "desc": "Adversary simulation and Red teaming platform with AI",
     "pushed_at": "2026-05-31T08:45:04Z",
     "license": null,
@@ -4033,7 +3565,7 @@
     "full_name": "vitali87/code-graph-rag",
     "stars": 5303,
     "desc": "The ultimate RAG for your monorepo. Query, understand, and edit multi-language codebases with the power of AI and knowledge graphs",
-    "pushed_at": "2026-10-31T06:48:12Z",
+    "pushed_at": "2026-10-31T22:33:56Z",
     "license": "MIT",
     "kind": "none",
     "name": "",
@@ -4043,21 +3575,8 @@
     "topics": "ai,ast,claude-code,code-analysis,code-understanding,codebase-search,developer-tools,graph-database,knowledge-graph,llm,mcp,mcp-server,memgraph,monorepo,multi-language,python,rag,retrieval-augmented-generation,semantic-search,tree-sitter"
   },
   {
-    "full_name": "atilaahmettaner/tradingview-mcp",
-    "stars": 5174,
-    "desc": "MCP server for market analysis in AI assistants: screeners, multi-timeframe technical analysis, backtests and sentiment for crypto, stocks, forex and futures. 39 tools. Self-host free, or use the hosted version, TradingMCP.",
-    "pushed_at": "2026-10-29T14:24:40Z",
-    "license": "MIT",
-    "kind": "none",
-    "name": "",
-    "market": "",
-    "url": "",
-    "pkg": "",
-    "topics": "claude-desktop,cryptocurrency,futures,market-data,mcp-server,mcp-tools,model-context-protocol,openclaw,stock-market,technical-analysis,trading-mcp,trading-strategies,tradingview"
-  },
-  {
     "full_name": "ScrapeCreators/social-media-research-skills",
-    "stars": 5154,
+    "stars": 5195,
     "desc": "AI agent skills for social media research. Outlier posts, comment mining, competitor teardowns, ad libraries & trends across TikTok, Instagram, YouTube, Reddit, X, LinkedIn & more. Powered by ScrapeCreators. Works with Claude Code, Cursor, Codex, Gemini CLI.",
     "pushed_at": "2026-08-26T17:26:01Z",
     "license": "MIT",
@@ -4067,6 +3586,19 @@
     "url": "",
     "pkg": "",
     "topics": "agent-skills,ai-agents,claude-code,claude-skills,competitor-analysis,content-marketing,cursor,influencer-marketing,market-research,social-media,social-media-research,workflow-automation"
+  },
+  {
+    "full_name": "atilaahmettaner/tradingview-mcp",
+    "stars": 5184,
+    "desc": "MCP server for market analysis in AI assistants: screeners, multi-timeframe technical analysis, backtests and sentiment for crypto, stocks, forex and futures. 39 tools. Self-host free, or use the hosted version, TradingMCP.",
+    "pushed_at": "2026-10-29T14:24:40Z",
+    "license": "MIT",
+    "kind": "none",
+    "name": "",
+    "market": "",
+    "url": "",
+    "pkg": "",
+    "topics": "claude-desktop,cryptocurrency,futures,market-data,mcp-server,mcp-tools,model-context-protocol,openclaw,stock-market,technical-analysis,trading-mcp,trading-strategies,tradingview"
   },
   {
     "full_name": "clidey/whodb",
@@ -4082,8 +3614,21 @@
     "topics": "ai-agent,data-catalog,data-governance,data-integration,data-lineage,data-pipeline,data-platform,database-management,er-diagram,internal-tools,mcp-server,model-context-protocol,mysql,oracle,postgresql,self-hosted,sql-editor,sqlserver,text-to-sql,visual-query-builder"
   },
   {
+    "full_name": "Oldcircle/geo-sleuth",
+    "stars": 4884,
+    "desc": "An agent skill that finds where a photo was taken — OpenStreetMap geometry, elevation skylines, satellite imagery and street view — and shows its work. Works with Claude Code, Codex, Cursor, Gemini CLI, OpenCode and GitHub Copilot.",
+    "pushed_at": "2026-10-29T08:48:42Z",
+    "license": "MIT",
+    "kind": "skills-npx",
+    "name": "",
+    "market": "",
+    "url": "",
+    "pkg": "",
+    "topics": "agent-skills,ai-agents,claude-code,codex,computer-vision,cursor,gemini-cli,geoguessr,geoint,geolocation,github-copilot,image-geolocation,opencode,openstreetmap,osint,photo-geolocation,reverse-image-search,satellite-imagery"
+  },
+  {
     "full_name": "brycewang-stanford/Auto-Empirical-Research-Skills",
-    "stars": 4842,
+    "stars": 4851,
     "desc": "🔬 A curated collection of 23,000+ agent skills for empirical research across 8 social science disciplines. | 精选 23,000+ AI Agent 技能库，覆盖8大社会科学学科的实证研究。CoPaper.AI 20分钟完成一篇可复现的规范实证论文，并支持用户上传 Skills。-- Maintained by CoPaper.AI from Stanford REAP.",
     "pushed_at": "2026-10-30T05:38:34Z",
     "license": "NOASSERTION",
@@ -4095,21 +3640,8 @@
     "topics": "academic-research,agent-skills,ai-agent,awesome-list,communication,copaper,economics,education,empirical-research,international-relations,political-science,psychology,public-administration,reproducible-research,skills-library,social-science,sociology"
   },
   {
-    "full_name": "inkeep/open-knowledge",
-    "stars": 4744,
-    "desc": "Beautiful, AI-native markdown IDE and LLM wiki",
-    "pushed_at": "2026-10-30T21:04:13Z",
-    "license": "GPL-3.0",
-    "kind": "none",
-    "name": "",
-    "market": "",
-    "url": "",
-    "pkg": "",
-    "topics": "2nd-brain,agent-skills,claude,codex,company-brain,docs,knowledge-,knowledge-base,knowledge-management,llm,llm-wiki,llm-wiki-karpathy,markdown,markdown-editor,md,mdx,notes,pkm,second-brain,skills"
-  },
-  {
     "full_name": "0x0funky/agent-sprite-forge",
-    "stars": 4730,
+    "stars": 4763,
     "desc": "Agent Skill for generating 2D sprite sheets and map, transparent PNG frames, and animated GIFs from prompts.",
     "pushed_at": "2026-10-06T14:09:38Z",
     "license": "MIT",
@@ -4121,21 +3653,8 @@
     "topics": "agent-skills,codex,pixel-art,sprite-generator"
   },
   {
-    "full_name": "xixu-me/awesome-persona-distill-skills",
-    "stars": 4725,
-    "desc": "Curated list of Agent Skills centered on people, relationships, commemorative scenes, and methodological perspectives",
-    "pushed_at": "2026-10-18T19:09:21Z",
-    "license": "CC0-1.0",
-    "kind": "none",
-    "name": "",
-    "market": "",
-    "url": "",
-    "pkg": "",
-    "topics": "agent-skills,awesome,awesome-list,persona-distill"
-  },
-  {
     "full_name": "liustack/modlens",
-    "stars": 4666,
+    "stars": 4683,
     "desc": "The first vision plugin for DeepSeek Harness, and the vision bridge for every text-only coding agent. Paste an image, get structured JSON evidence (OCR, layout, semantics). | 全网最强 DeepSeek Harness 外挂视觉插件，为 DeepSeek、GLM 等纯文本模型外挂视觉能力，粘贴图片即得结构化 JSON 证据（OCR、版面、语义）。",
     "pushed_at": "2026-10-23T15:42:48Z",
     "license": "MIT",
@@ -4148,9 +3667,9 @@
   },
   {
     "full_name": "zenbu-labs/terminal-browser",
-    "stars": 4366,
+    "stars": 4368,
     "desc": "A real browser inside your terminal",
-    "pushed_at": "2026-10-30T21:43:15Z",
+    "pushed_at": "2026-10-31T22:12:05Z",
     "license": "MIT",
     "kind": "none",
     "name": "",
@@ -4161,9 +3680,9 @@
   },
   {
     "full_name": "nyldn/claude-octopus",
-    "stars": 4341,
+    "stars": 4347,
     "desc": "Run multiple AI models against the same research, design, or coding task. Surface disagreements before you ship.",
-    "pushed_at": "2026-10-30T11:42:30Z",
+    "pushed_at": "2026-10-31T07:56:49Z",
     "license": "MIT",
     "kind": "mcp-npm",
     "name": "",
@@ -4171,6 +3690,19 @@
     "url": "",
     "pkg": "",
     "topics": "ai-agents,ai-orchestration,claude-code,claude-code-plugin,codex,copilot,developer-tools,double-diamond,gemini,multi-ai,multi-llm,ollama"
+  },
+  {
+    "full_name": "Jakeschincariol/day-trader-skill",
+    "stars": 3969,
+    "desc": "11 Claude skills for day trading: scan thousands of charts, track breaking news, time every entry and exit, and replay every outcome before you risk a dollar.",
+    "pushed_at": "2026-10-20T14:18:00Z",
+    "license": "MIT",
+    "kind": "plugin",
+    "name": "day-trader-skill",
+    "market": "Jakeschincariol/day-trader-skill",
+    "url": "",
+    "pkg": "",
+    "topics": "backtesting,claude,claude-skills,day-trading,stock-market"
   },
   {
     "full_name": "parcadei/Continuous-Claude-v3",
@@ -4187,7 +3719,7 @@
   },
   {
     "full_name": "Appllama/appllama-skills",
-    "stars": 3873,
+    "stars": 3903,
     "desc": "A builder, not just a researcher. Agent skills that turn top-grossing app patterns into native-quality mobile screens.",
     "pushed_at": "2026-09-06T09:01:39Z",
     "license": "MIT",
@@ -4225,21 +3757,8 @@
     "topics": "ai-tools,claude-code-skill,claude-skills,deployment,deployment-tools,frontend,frontend-deployment,hosting,serverless,skills,static-site,static-site-deploy,static-site-hosting,web-hosting,zero-configuration"
   },
   {
-    "full_name": "Jakeschincariol/day-trader-skill",
-    "stars": 3722,
-    "desc": "11 Claude skills for day trading: scan thousands of charts, track breaking news, time every entry and exit, and replay every outcome before you risk a dollar.",
-    "pushed_at": "2026-10-20T14:18:00Z",
-    "license": "MIT",
-    "kind": "plugin",
-    "name": "day-trader-skill",
-    "market": "Jakeschincariol/day-trader-skill",
-    "url": "",
-    "pkg": "",
-    "topics": "backtesting,claude,claude-skills,day-trading,stock-market"
-  },
-  {
     "full_name": "davepoon/buildwithclaude",
-    "stars": 3701,
+    "stars": 3703,
     "desc": "A single hub to find Claude Skills, Agents, Commands, Hooks, Plugins, and Marketplace collections to extend Claude Code, Claude Desktop, Agent SDK and OpenClaw",
     "pushed_at": "2026-10-31T00:49:36Z",
     "license": "MIT",
@@ -4251,21 +3770,8 @@
     "topics": "claude,claude-code,claude-code-commands,claude-skills,cli-tool,commands,mcp,mcp-server,mcp-tools,openclaw,plugin-marketplace,subagents"
   },
   {
-    "full_name": "rebelytics/one-skill-to-rule-them-all",
-    "stars": 3655,
-    "desc": "The meta-skill that builds and improves all your skills, including itself. Watches your work sessions (autonomous or human-led), captures patterns, corrections and judgement calls, and turns them into skill improvements and new skill candidates for your review. Practical application of the Augmented Expertise methodology. Open source: CC BY 4.0.",
-    "pushed_at": "2026-10-28T14:57:56Z",
-    "license": "CC-BY-4.0",
-    "kind": "skills-npx",
-    "name": "",
-    "market": "",
-    "url": "",
-    "pkg": "",
-    "topics": "agent-skills,ai-skills,augmented-expertise,awesome-skills,claude,claude-code,claude-code-skill,claude-code-skills,claude-cowork,claude-skills,meta-skill,rebelytics,skill-automation,skill-builder,skill-creation,skill-improvement,skill-management,skills"
-  },
-  {
     "full_name": "zenstory-ai/drama-skills",
-    "stars": 3575,
+    "stars": 3593,
     "desc": "开源 AI 短剧/漫剧创作 skill 合集：剧本、角色资产、分镜 storyboard、图片/视频提示词、审查，适配 Claude Code 与 Codex | Open-source AI short drama / micro-drama skills for Claude Code & Codex: script, assets, storyboard, image & video prompts, review. MIT.",
     "pushed_at": "2026-10-30T16:55:59Z",
     "license": "MIT",
@@ -4277,21 +3783,8 @@
     "topics": "agent-skills,ai-short-drama,ai-video,aigc,claude-code,claude-code-skills,claude-skills,codex,comic-drama,micro-drama,prompt-engineering,screenwriting,script-generation,short-drama,storyboard,storyboarding,video-prompts,zenstory"
   },
   {
-    "full_name": "agenticnotetaking/arscontexta",
-    "stars": 3518,
-    "desc": "Claude Code plugin that generates individualized knowledge systems from conversation. You describe how you think and work, have a conversation and get a complete second brain as markdown files you own.",
-    "pushed_at": "2026-02-24T23:54:21Z",
-    "license": "MIT",
-    "kind": "plugin",
-    "name": "arscontexta",
-    "market": "agenticnotetaking/arscontexta",
-    "url": "",
-    "pkg": "",
-    "topics": "claude-code,claude-code-plugin,knowledge-base,knowledge-management,markdown,second-brain"
-  },
-  {
     "full_name": "codeaashu/claude-code",
-    "stars": 3420,
+    "stars": 3422,
     "desc": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
     "pushed_at": "2026-10-14T14:15:16Z",
     "license": "NOASSERTION",
@@ -4304,7 +3797,7 @@
   },
   {
     "full_name": "backnotprop/pstack",
-    "stars": 3233,
+    "stars": 3273,
     "desc": "Use pstack with claude, codex, pi - Skills and principles for rigorous AI-assisted engineering",
     "pushed_at": "2026-10-28T23:22:02Z",
     "license": "MIT",
@@ -4317,9 +3810,9 @@
   },
   {
     "full_name": "Natively-AI-assistant/natively-cluely-ai-assistant",
-    "stars": 3135,
+    "stars": 3141,
     "desc": "Natively — Free open-source AI meeting assistant, interview copilot, and note taker. The best alternative to Cluely, Otter, Granola, Final Round AI, Fireflies, and Interview Coder. Real-time transcription, AI meeting notes, lecture recording, local RAG, BYOK, and stealth mode. Runs locally. No subscriptions. No data breaches.",
-    "pushed_at": "2026-10-30T11:42:36Z",
+    "pushed_at": "2026-10-31T20:58:42Z",
     "license": "NOASSERTION",
     "kind": "none",
     "name": "",
@@ -4329,21 +3822,8 @@
     "topics": "ai,ai-agent,ai-agents,ai-assistant,ai-tools,cheating,claude-code,claude-skills,cluely,cluely-alternative,cluely-clone,final-round-ai,interview,interviewcoder,llm,meeting-assistant,note-taking,notes,open-source,trending-repositories"
   },
   {
-    "full_name": "Jakeschincariol/linkedin-agent-skill",
-    "stars": 2962,
-    "desc": "Eleven free Claude skills that run a LinkedIn account: posts off 21 hook formulas, comments, replies, profile score, weekly plan, and a humanizer that strips the AI fingerprint and scores the draft before it goes out.",
-    "pushed_at": "2026-09-17T11:27:52Z",
-    "license": "MIT",
-    "kind": "plugin",
-    "name": "linkedin-agent",
-    "market": "Jakeschincariol/linkedin-agent-skill",
-    "url": "",
-    "pkg": "",
-    "topics": "agent-skills,ai-humanizer,claude,claude-code,claude-skills,content-marketing,linkedin"
-  },
-  {
     "full_name": "oil-oil/oil-motion",
-    "stars": 2744,
+    "stars": 2751,
     "desc": "Web animation skill for Claude Code & Codex. 帮你做跟着滚动和鼠标动的网页动画。",
     "pushed_at": "2026-10-04T14:54:13Z",
     "license": "MIT",
@@ -4356,7 +3836,7 @@
   },
   {
     "full_name": "romainsimon/paperasse",
-    "stars": 2570,
+    "stars": 2572,
     "desc": "🇫🇷  Skills pour agents IA spécialisés dans la bureaucratie française : Comptable, Notaire, ...",
     "pushed_at": "2026-08-10T20:58:28Z",
     "license": "MIT",
@@ -4368,21 +3848,8 @@
     "topics": "agent-skills,agentic-workflow,bureaucratie,claude,claude-code,claude-skills,comptabilite,comptable,france,notaire,paperasse,skills"
   },
   {
-    "full_name": "oil-oil/oil-ui",
-    "stars": 2537,
-    "desc": "UI design skill for Claude Code, Codex and other AI agents: explore distinct directions, compare them side by side, refine against real screenshots. 给 AI Agent 用的 UI 设计 Skill。",
-    "pushed_at": "2026-10-30T16:34:37Z",
-    "license": "MIT",
-    "kind": "skills-npx",
-    "name": "",
-    "market": "",
-    "url": "",
-    "pkg": "",
-    "topics": "agent-skills,ai-design,claude-code,claude-skills,codex,frontend,ui-design,ux-design"
-  },
-  {
     "full_name": "coldteadotai/pr-lens",
-    "stars": 2306,
+    "stars": 2311,
     "desc": "Review code 100X faster. Lens draws every PR as animated architecture and data-flow walkthroughs, inside the pull request itself. Use it as a GitHub App, GitHub Action, CLI, or a Skill for your coding agent",
     "pushed_at": "2026-10-30T07:45:35Z",
     "license": "MIT",
@@ -4395,7 +3862,7 @@
   },
   {
     "full_name": "Jakeschincariol/founder-skill",
-    "stars": 2249,
+    "stars": 2281,
     "desc": "Eleven free Claude skills that test a business before you launch it: a board trained on Hormozi, Thiel and Jobs, a marketing director, a CFO, and a consumer panel of 100 buyer agents. Free, MIT.",
     "pushed_at": "2026-10-07T01:07:17Z",
     "license": "MIT",
@@ -4408,9 +3875,9 @@
   },
   {
     "full_name": "Mahanaicoach/google-maps-scraper-kit",
-    "stars": 2084,
+    "stars": 2098,
     "desc": "Free Google Maps scraper for lead generation. Exports phones, emails, websites and socials to CSV. Runs locally in Docker, no API keys. Claude Code skill included.",
-    "pushed_at": "2026-10-31T02:24:07Z",
+    "pushed_at": "2026-10-31T20:03:52Z",
     "license": "MIT",
     "kind": "skills-npx",
     "name": "",
@@ -4420,21 +3887,8 @@
     "topics": "agent-skills,b2b-leads,claude-code,claude-skills,codex-skills,cold-outreach,docker,email-extractor,email-scraper,google-maps,google-maps-scraper,google-places,lead-generation,lead-scraper,local-business,playwright,python,sales-prospecting,scraper,web-scraping"
   },
   {
-    "full_name": "zanwei/design-dna",
-    "stars": 2055,
-    "desc": "Turn reference UIs (images, screenshots, URLs) into quantified Design DNA JSON—tokens, qualitative style, visual effects—then generate matching UI from your content.",
-    "pushed_at": "2026-08-28T01:58:49Z",
-    "license": "MIT",
-    "kind": "skills-npx",
-    "name": "",
-    "market": "",
-    "url": "",
-    "pkg": "",
-    "topics": "agent-skills,claude-skills,codex-skills,cursor-skills,design-dna,design-system,design-tokens,skills-cli,ui-design,visual-design"
-  },
-  {
     "full_name": "composio-community/awesome-claude-plugins",
-    "stars": 1974,
+    "stars": 1976,
     "desc": "A curated list of Plugins that let you extend Claude Code with custom commands, agents, hooks, and MCP servers through the plugin system.",
     "pushed_at": "2026-07-26T09:02:02Z",
     "license": null,
@@ -4446,21 +3900,8 @@
     "topics": "anthropic,claude-ai,claude-code,claude-code-plugin,claude-code-plugin-marketplace,claude-code-plugins,claude-code-plugins-marketplace,claude-cowork,claude-desktop,claude-plugins,claude-skills,plugins"
   },
   {
-    "full_name": "oil-oil/beautify-github-readme",
-    "stars": 1927,
-    "desc": "README design skill for Claude Code & Codex. 帮你把 GitHub README 做得好看又好懂。",
-    "pushed_at": "2026-10-04T14:54:25Z",
-    "license": "MIT",
-    "kind": "skills-npx",
-    "name": "",
-    "market": "",
-    "url": "",
-    "pkg": "",
-    "topics": "agent-skill,agent-skills,claude-code,claude-skills,codex,codex-skill,design,documentation,github,github-readme,markdown,readme,readme-design,skill,skills,svg"
-  },
-  {
     "full_name": "BayramAnnakov/claude-reflect",
-    "stars": 1908,
+    "stars": 1911,
     "desc": "A self-learning system for Claude Code that captures corrections, positive feedback, and preferences — then syncs them to CLAUDE.md and AGENTS.md.",
     "pushed_at": "2026-10-03T05:33:46Z",
     "license": "MIT",
@@ -4473,9 +3914,9 @@
   },
   {
     "full_name": "XiaoMaColtAI/math-modeling-skill",
-    "stars": 1891,
+    "stars": 1892,
     "desc": "数学建模技能 - 面向 CUMCM、MCM/ICM 等数学建模竞赛的三阶段工作流：建模分析、Python/MATLAB 编程与 DOCX 论文生成。包含丰富的算法资源库(优化/预测/评价/图论/机器学习等)、角色指导文档、论文模板和实用工具脚本",
-    "pushed_at": "2026-10-30T20:32:57Z",
+    "pushed_at": "2026-10-31T19:46:31Z",
     "license": null,
     "kind": "skills-npx",
     "name": "",
@@ -4486,7 +3927,7 @@
   },
   {
     "full_name": "a5c-ai/babysitter",
-    "stars": 1886,
+    "stars": 1887,
     "desc": "Babysitter enforces obedience on agentic workforces and enables them to manage extremely complex tasks and workflows through deterministic, hallucination-free self-orchestration",
     "pushed_at": "2026-09-16T19:59:50Z",
     "license": "MIT",
@@ -4498,21 +3939,8 @@
     "topics": "agent-orchestration,agent-skills,agentic-ai,agentic-workflow,ai-agents,ai-automation,babysitter,claude-code,claude-code-skills,claude-code-workflows,claude-skills,claude-workflows,codex-plugin,codex-skills,codex-workflow,hermes-plugin,pi-extension,trustworthy-ai,vibe-coding"
   },
   {
-    "full_name": "timescale/pg-aiguide",
-    "stars": 1879,
-    "desc": "MCP server and Claude plugin for Postgres skills and documentation. Helps AI coding tools generate better PostgreSQL code.",
-    "pushed_at": "2026-10-28T04:56:06Z",
-    "license": "Apache-2.0",
-    "kind": "skills-npx",
-    "name": "",
-    "market": "",
-    "url": "",
-    "pkg": "",
-    "topics": "ai,ai-agents,ai-coding,claude-code-plugin,claude-code-plugins,claude-code-plugins-marketplace,claude-marketplace,claude-plugin,claude-skills,docs,documentation,mcp,mcp-server,postgres,postgresql,skills"
-  },
-  {
     "full_name": "kenryu42/cc-safety-net",
-    "stars": 1862,
+    "stars": 1873,
     "desc": "A pre-execution guard for AI coding agents. It blocks destructive Git and file system commands, plus common attempts to access sensitive files, before a tool call runs. Supports Amp Code, Antigravity CLI, Claude Code, Codex, Cursor, DeepSeek Harness, Devin CLI, GitHub Copilot CLI, Grok Build, Hermes Agent, Kimi Code, OpenClaw, OpenCode, and Pi.",
     "pushed_at": "2026-10-30T12:33:32Z",
     "license": "MIT",
@@ -4525,7 +3953,7 @@
   },
   {
     "full_name": "Prat011/awesome-llm-skills",
-    "stars": 1838,
+    "stars": 1839,
     "desc": "A curated list of awesome LLM and AI Agent Skills, resources and tools for customising AI Agent workflows - that works with Claude Code, Codex, Gemini CLI and your custom AI Agents",
     "pushed_at": "2026-07-14T09:53:56Z",
     "license": null,
@@ -4538,7 +3966,7 @@
   },
   {
     "full_name": "Klotzkette/claude-fuer-deutsches-recht",
-    "stars": 1794,
+    "stars": 1795,
     "desc": "⚠️ Experimentelle Skill-Sammlung für deutsches Recht (Arbeits-, Gesellschafts-, Insolvenz-, Datenschutz-, Prozessrecht u.a.) – inzwischen verbessert und im Alltag getestet, aber weiterhin Experiment. Bitte selber ausprobieren, Issues/PRs willkommen! Keine Rechtsberatung. Mandatsgeheimnis (§§ 203/204 StGB, § 43e BRAO), DSGVO, US-Transfer, KI-VO & Co",
     "pushed_at": "2026-10-23T09:21:27Z",
     "license": "Apache-2.0",
@@ -4551,7 +3979,7 @@
   },
   {
     "full_name": "eatmoreduck/boss-zhipin-scraper",
-    "stars": 1682,
+    "stars": 1684,
     "desc": "Boss直聘爬虫 / BOSS直聘职位数据抓取工具，基于 Chrome CDP 协议复用真实登录态，绕过字体反爬，输出明文薪资 JSON/CSV + 薪资技能分析。A Chrome-CDP-based BOSS Zhipin job scraper/crawler.",
     "pushed_at": "2026-10-28T05:38:19Z",
     "license": "MIT",
@@ -4577,7 +4005,7 @@
   },
   {
     "full_name": "arjun988/blender-skills",
-    "stars": 1600,
+    "stars": 1625,
     "desc": "94 specialist Blender skills for Cursor, Claude Code, Kiro & Codex -> MCP-powered production pipeline from blockout to engine export.",
     "pushed_at": "2026-07-10T17:55:21Z",
     "license": "MIT",
@@ -4590,9 +4018,9 @@
   },
   {
     "full_name": "DUNHKpcc/Claude-Guardian",
-    "stars": 1520,
+    "stars": 1581,
     "desc": "Claude Guardian is an all-in-one Claude account safety and risk prevention skill.Claude防封实战 It intelligently assesses your device, account history, network environment, and payment options, then provides personalized guidance for local, VPS, or virtual machine setups. ",
-    "pushed_at": "2026-10-30T08:23:40Z",
+    "pushed_at": "2026-10-31T12:30:35Z",
     "license": "GPL-3.0",
     "kind": "none",
     "name": "",
@@ -4603,7 +4031,7 @@
   },
   {
     "full_name": "UnderleveledBuilder/awesome-short-drama-skills",
-    "stars": 1503,
+    "stars": 1533,
     "desc": "AI 短剧 · 漫剧 Skill（技能包）精选：剧本、改编、分镜、Seedance / 可灵 / MiniMax 视频提示词，千问、豆包、龙虾 OpenClaw、WorkBuddy、Claude Code、Codex 等智能体可用 | Curated agent skills for AI short drama, micro drama / microdrama, vertical drama and manju (AI comic drama): screenwriting, storyboards, Seedance / Kling / MiniMax video prompts",
     "pushed_at": "2026-10-27T20:23:20Z",
     "license": "CC0-1.0",
@@ -4616,7 +4044,7 @@
   },
   {
     "full_name": "mohitagw15856/pm-claude-skills",
-    "stars": 1502,
+    "stars": 1503,
     "desc": "1,310 professional Agent Skills for Claude, Claude Duet, ChatGPT, Gemini, Cursor & Codex: PRDs, postmortems, leases, medical bills, payroll checks, morning briefs. 21 skills built for always-on agents like Claude Duet. Plain markdown, MIT, in Anthropic's plugin directory. Free in-browser or npx pm-claude-skills add.",
     "pushed_at": "2026-10-23T14:08:47Z",
     "license": "MIT",
@@ -4629,9 +4057,9 @@
   },
   {
     "full_name": "quemsah/awesome-claude-plugins",
-    "stars": 1498,
+    "stars": 1503,
     "desc": "Automated index of Claude Code plugins and adoption metrics across GitHub repositories, powered by a Node.js/TypeScript crawler",
-    "pushed_at": "2026-10-31T02:14:08Z",
+    "pushed_at": "2026-10-31T12:34:44Z",
     "license": null,
     "kind": "none",
     "name": "",
@@ -4642,7 +4070,7 @@
   },
   {
     "full_name": "nagisanzenin/engram",
-    "stars": 1467,
+    "stars": 1469,
     "desc": "Evidence-based learning engine — first-principles curricula, free-recall verification with receipts, FSRS-scheduled memory, and explorable artifacts. Learn anything; keep it.",
     "pushed_at": "2026-08-27T09:29:10Z",
     "license": "MIT",
@@ -4655,7 +4083,7 @@
   },
   {
     "full_name": "jordanrendric/claude-video-vision",
-    "stars": 1443,
+    "stars": 1444,
     "desc": "Give Claude the ability to watch and understand videos — Claude Code plugin with frame extraction and multimodal audio analysis",
     "pushed_at": "2026-10-14T21:23:24Z",
     "license": "MIT",
@@ -4668,7 +4096,7 @@
   },
   {
     "full_name": "Shanyin-ai/shanyin-screenwriting-master",
-    "stars": 1426,
+    "stars": 1428,
     "desc": "山音超级编剧大师——由 @山音 设计的全格式影视编剧技能。 覆盖从1-3分钟概念超短片到90分钟电影长片、多集剧集的全格式剧本创作。 支持四种格式：概念超短片（how-to-tell/what-if）、5-10分钟叙事短片、90分钟长片（商业/文艺）、多集剧集。 覆盖从人物设计、结构大纲、场景拆解、到完整剧本写作的全流程。 ",
     "pushed_at": "2026-04-01T02:18:00Z",
     "license": "MIT",
@@ -4678,6 +4106,19 @@
     "url": "",
     "pkg": "",
     "topics": "ai-agent,claude-ai,claude-skills,screenwriting,skills"
+  },
+  {
+    "full_name": "Gabberflast/academic-pptx-skill",
+    "stars": 1420,
+    "desc": "A Claude Skill for creating academic presentations (conference talks, seminar slides, thesis defenses, grant briefings). Enforces action titles, structured argument, exhibit discipline, citation standards, and communication-first design. Works alongside Anthropic's built-in PPTX skill.",
+    "pushed_at": "2026-07-14T23:54:54Z",
+    "license": "MIT",
+    "kind": "none",
+    "name": "",
+    "market": "",
+    "url": "",
+    "pkg": "",
+    "topics": "academic,academic-presentations,agent-skills,anthropic,claude,claude-ai,claude-skills,data-visualization,pptx,presentation-design,presentations,slides"
   },
   {
     "full_name": "hesamsheikh/octogent",
@@ -4693,30 +4134,43 @@
     "topics": "agent-engineering,agentic-workflow,ai-agents,claude,claude-code,claude-hooks,claude-skills,codex,dashboard"
   },
   {
-    "full_name": "Gabberflast/academic-pptx-skill",
-    "stars": 1413,
-    "desc": "A Claude Skill for creating academic presentations (conference talks, seminar slides, thesis defenses, grant briefings). Enforces action titles, structured argument, exhibit discipline, citation standards, and communication-first design. Works alongside Anthropic's built-in PPTX skill.",
-    "pushed_at": "2026-07-14T23:54:54Z",
+    "full_name": "patch-gg/pixelfx",
+    "stars": 1383,
+    "desc": "232 pixel art effects, every one a small piece of code. Plus a Claude Code skill to make your own.",
+    "pushed_at": "2026-10-31T08:44:14Z",
     "license": "MIT",
-    "kind": "none",
-    "name": "",
-    "market": "",
+    "kind": "plugin",
+    "name": "pixelfx",
+    "market": "patch-gg/pixelfx",
     "url": "",
     "pkg": "",
-    "topics": "academic,academic-presentations,agent-skills,anthropic,claude,claude-ai,claude-skills,data-visualization,pptx,presentation-design,presentations,slides"
+    "topics": "agent-skills,animation,canvas,claude-code-plugin,gamedev,pixel-art,sprite-sheet,vfx"
   },
   {
-    "full_name": "bevibing/tutor-skills",
+    "full_name": "scenario-labs/skills",
     "stars": 1375,
-    "desc": "A Claude Code skill that turns PDFs, docs, and codebases into Obsidian study vaults",
-    "pushed_at": "2026-02-28T14:41:09Z",
+    "desc": "Get production-ready images, video, audio, and 3D from any AI agent: skills that pick the right model, price before spending, and keep characters and brands consistent through the Scenario MCP, plus expert teams that drive Blender, Maya, ZBrush, Unreal, and Unity.",
+    "pushed_at": "2026-10-30T23:53:34Z",
     "license": "MIT",
+    "kind": "mcp-http",
+    "name": "scenario",
+    "market": "",
+    "url": "https://mcp.scenario.com/mcp",
+    "pkg": "",
+    "topics": "3d-models,agent-skills,ai-agents,ai-art,blender,claude-code,claude-skills,codex,game-assets,game-development,generative-ai,image-generation,maya,mcp,model-context-protocol,skills-sh,unity,unreal-engine,video-generation,zbrush"
+  },
+  {
+    "full_name": "zhuyansen/awesome-claude-video-skills",
+    "stars": 1359,
+    "desc": "Open-source skills and toolkits that let Claude Code, Codex and other coding agents make video. 180 repos by type, each security-graded. English / 中文.",
+    "pushed_at": "2026-10-31T15:31:31Z",
+    "license": "NOASSERTION",
     "kind": "skills-npx",
     "name": "",
     "market": "",
     "url": "",
     "pkg": "",
-    "topics": "agent-skills,claude,claude-code,claude-skills,skill,skills,skillsmp"
+    "topics": "agent-skills,awesome-list,claude-code,claude-skills,codex,hyperframes,motion-graphics,opus-5-5,remotion,video"
   },
   {
     "full_name": "OpenRaiser/NanoResearch",
@@ -4730,32 +4184,6 @@
     "url": "",
     "pkg": "",
     "topics": "agent-skills,agents,ai,ai-agents,ai-scientist,artificial-intelligence,autonomous-agents,autonomous-research,autoresearch,claude-code,claude-skills,nanobot,openclaw"
-  },
-  {
-    "full_name": "zhuyansen/awesome-claude-video-skills",
-    "stars": 1321,
-    "desc": "Open-source skills and toolkits that let Claude Code, Codex and other coding agents make video. 180 repos by type, each security-graded. English / 中文.",
-    "pushed_at": "2026-10-30T16:08:10Z",
-    "license": "NOASSERTION",
-    "kind": "skills-npx",
-    "name": "",
-    "market": "",
-    "url": "",
-    "pkg": "",
-    "topics": "agent-skills,awesome-list,claude-code,claude-skills,codex,hyperframes,motion-graphics,opus-5-5,remotion,video"
-  },
-  {
-    "full_name": "minsight-ai-info/AI-Search-Hub",
-    "stars": 1307,
-    "desc": "One Query. All Search Skill. 聚合 Gemini、Grok、豆包、元宝等平台原生 AI 搜索能力，免费获取科技趋势、行业舆情、热点追踪、旅行规划、日常问题统一接进自己的 Agent 与工作流，指定链接免费爬取",
-    "pushed_at": "2026-04-27T07:47:18Z",
-    "license": null,
-    "kind": "none",
-    "name": "",
-    "market": "",
-    "url": "",
-    "pkg": "",
-    "topics": "ai,claude-skills,deep-search,knowledge-graph,llm,multi-agent-systems,openclaw,python3,skill"
   },
   {
     "full_name": "kharmanskyi/open-steps",
@@ -4772,9 +4200,9 @@
   },
   {
     "full_name": "fcakyon/claude-codex-settings",
-    "stars": 1193,
+    "stars": 1194,
     "desc": "Battle-tested Claude Code, OpenAI Codex, Cursor configs, plugins, hooks and agents with Kimi, MiniMax and GLM API support.",
-    "pushed_at": "2026-10-30T22:56:51Z",
+    "pushed_at": "2026-10-31T10:33:33Z",
     "license": "Apache-2.0",
     "kind": "skills-npx",
     "name": "",
@@ -4785,7 +4213,7 @@
   },
   {
     "full_name": "openqodex/openqodex",
-    "stars": 1078,
+    "stars": 1087,
     "desc": "Open source AI code review for coding agents. A separate reviewer checks every change your agent writes before you push, in Claude Code, Codex, Cursor and Cline. No account or key of its own.",
     "pushed_at": "2026-10-28T02:01:10Z",
     "license": "Apache-2.0",
@@ -4795,5 +4223,18 @@
     "url": "",
     "pkg": "",
     "topics": "agent-skills,ai-agents,ai-code-review,claude-code,claude-code-plugin,claude-skills,cline,code-quality,code-review,codex,coding-agents,cursor,github-actions,linter,pre-commit,sast,secret-scanning,security,security-tools,static-analysis"
+  },
+  {
+    "full_name": "daveebbelaar/bama",
+    "stars": 1082,
+    "desc": "BAMA: Build Any Mac App. Agent skills to research, clone, design, build, optimize, and test native macOS apps with Swift and SwiftUI.",
+    "pushed_at": "2026-10-29T13:05:44Z",
+    "license": "MIT",
+    "kind": "plugin",
+    "name": "bama",
+    "market": "daveebbelaar/bama",
+    "url": "",
+    "pkg": "",
+    "topics": "agent-skills,ai-agents,app-clone,claude-code,claude-code-plugin,codex,computer-use,liquid-glass,macos,macos-app,native-apps,skills,swift,swiftdata,swiftui"
   }
 ]

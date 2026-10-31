@@ -420,6 +420,13 @@
     "first_seen": "2026-10-31"
   },
   {
+    "full_name": "Oldcircle/geo-sleuth",
+    "stars": 4884,
+    "kind": "skills-npx",
+    "desc": "An agent skill that finds where a photo was taken — OpenStreetMap geometry, elevation skylines, satellite imagery and street view — and shows its work. Works with Claude Code, Codex, Cursor, Gemini CLI, OpenCode and GitHub Copilot.",
+    "first_seen": "2026-10-31"
+  },
+  {
     "full_name": "glitternetwork/pinme",
     "stars": 3753,
     "kind": "skills-npx",
@@ -560,10 +567,24 @@
     "first_seen": "2026-10-31"
   },
   {
+    "full_name": "patch-gg/pixelfx",
+    "stars": 1383,
+    "kind": "plugin",
+    "desc": "232 pixel art effects, every one a small piece of code. Plus a Claude Code skill to make your own.",
+    "first_seen": "2026-10-31"
+  },
+  {
     "full_name": "bevibing/tutor-skills",
     "stars": 1376,
     "kind": "skills-npx",
     "desc": "A Claude Code skill that turns PDFs, docs, and codebases into Obsidian study vaults",
+    "first_seen": "2026-10-31"
+  },
+  {
+    "full_name": "scenario-labs/skills",
+    "stars": 1375,
+    "kind": "mcp-http",
+    "desc": "Get production-ready images, video, audio, and 3D from any AI agent: skills that pick the right model, price before spending, and keep characters and brands consistent through the Scenario MCP, plus expert teams that drive Blender, Maya, ZBrush, Unreal, and Unity.",
     "first_seen": "2026-10-31"
   },
   {
@@ -578,6 +599,13 @@
     "stars": 1193,
     "kind": "skills-npx",
     "desc": "Battle-tested Claude Code, OpenAI Codex, Cursor configs, plugins, hooks and agents with Kimi, MiniMax and GLM API support.",
+    "first_seen": "2026-10-31"
+  },
+  {
+    "full_name": "daveebbelaar/bama",
+    "stars": 1082,
+    "kind": "plugin",
+    "desc": "BAMA: Build Any Mac App. Agent skills to research, clone, design, build, optimize, and test native macOS apps with Swift and SwiftUI.",
     "first_seen": "2026-10-31"
   },
   {
