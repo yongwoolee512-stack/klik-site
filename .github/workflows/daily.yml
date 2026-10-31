@@ -27,6 +27,6 @@ jobs:
           git config user.email "klik-bot@users.noreply.github.com"
           git add catalog.json news.json pipeline/data/*.json
           if (git diff --cached --quiet) { Write-Host "변경 없음"; exit 0 }
-          $n = (git diff --cached --numstat | Measure-Object).Count
-          git commit -m "자동 갱신 $(Get-Date -Format 'yyyy-MM-dd') (파일 $n개)"
+          $n = @(git diff --cached --name-only).Count
+          git commit -m "자동 갱신 $((Get-Date).ToUniversalTime().AddHours(9).ToString('yyyy-MM-dd HH:mm')) KST (파일 $n개)"
           git push

@@ -8,9 +8,17 @@ $root = Split-Path -Parent $MyInvocation.MyCommand.Path
 $MIN = 100000
 
 $all = @(); $page = 0
+$H = @{ "User-Agent" = "klik-pipeline (+https://yongwoolee512-stack.github.io/klik-site/)"; "Accept" = "application/json" }
 while ($true) {
-  $r = Invoke-RestMethod "https://www.skills.sh/api/skills/all-time/$page"
-  $all += @($r.skills); if (-not $r.hasMore) { break }; $page++
+  $r = $null
+  foreach ($wait in 0, 10, 30, 60) {   # 429(요청 과다)면 기다렸다 다시
+    if ($wait) { Start-Sleep -Seconds $wait }
+    try { $r = Invoke-RestMethod "https://www.skills.sh/api/skills/all-time/$page" -Headers $H -TimeoutSec 60; break } catch { if ($wait -eq 60) { throw }; Write-Host "  $page쪽 실패, $($wait+10)초 뒤 재시도: $($_.Exception.Message)" }
+  }
+  $all += @($r.skills)
+  if (-not $r.hasMore) { break }
+  if ($r.skills.Count -and [int]$r.skills[-1].installs -lt 500) { break }   # 설치 500회 미만은 쓸 일 없음 (약 10쪽에서 끝)
+  $page++; Start-Sleep -Milliseconds 800
 }
 $all | ConvertTo-Json -Depth 4 -Compress | Set-Content (Join-Path $root "data\skillssh_raw.json") -Encoding UTF8
 Write-Host "skills.sh: 스킬 $($all.Count)개 ($($page+1)쪽)"
