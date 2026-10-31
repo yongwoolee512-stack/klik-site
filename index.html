@@ -214,7 +214,10 @@ footer { margin-top: 40px; padding-block: 24px; border-top: 1px solid var(--line
 .blk ul { margin: 0; padding-left: 18px; display: grid; gap: 4px; }
 .steps { display: grid; gap: 10px; }
 .steps-h { margin: 14px 0 10px; font-size: 15px; display: flex; align-items: baseline; gap: 8px; } .steps-h span { font-size: 12.5px; font-weight: 500; color: var(--muted); } .steps-h.use { margin-top: 22px; padding-top: 16px; border-top: 1px solid var(--line); }
-.steps-install .stp .num { background: var(--accent); color: var(--accent-fg); } .steps-use .stp .num { background: var(--surface); color: var(--fg); border: 1.5px solid var(--line); }
+.steps-install .stp .num { background: var(--accent); color: var(--accent-fg); }
+.ck { display: inline-flex; align-items: center; justify-content: center; height: 1.5em; min-width: 2.2em; padding: 0 .45em; margin: 0 .15em; border-radius: .4em; background: var(--accent-soft); color: var(--accent); font-family: ui-monospace, Menlo, Consolas, monospace; font-weight: 800; font-size: .92em; line-height: 1; vertical-align: middle; position: relative; top: -.08em; }
+.ck-lbl { display: inline-flex; align-items: center; height: 1.5em; padding: 0 .6em; margin-right: .45em; border-radius: 980px; background: var(--accent); color: var(--accent-fg); font-size: .76em; font-weight: 800; letter-spacing: .02em; vertical-align: middle; position: relative; top: -.1em; }
+.warn-line { display: flex; gap: 8px; align-items: center; margin-top: 6px; padding: 7px 11px; border-radius: 10px; background: var(--warn-soft, #fdf1dc); border: 1px solid #f3dca0; font-size: 13px; line-height: 1.5; color: #5a4300; } .warn-line i { flex: none; display: grid; place-items: center; width: 16px; height: 16px; border-radius: 50%; background: #f5a623; color: #fff; font-style: normal; font-weight: 800; font-size: 11px; } .warn-line .ck { background: #fff; } .steps-use .stp .num { background: var(--surface); color: var(--fg); border: 1.5px solid var(--line); }
 .stp { display: flex; gap: 12px; align-items: flex-start; }
 .stp .num { flex: 0 0 auto; width: 26px; height: 26px; border-radius: 50%; background: var(--accent); color: var(--accent-fg); display: grid; place-items: center; font-weight: 700; font-size: 13px; }
 .stp .txt { min-width: 0; flex: 1; }
@@ -733,8 +736,9 @@ function checkPrompt(it) {
 // 2단계(입력창에 치기): 칠 문장이 있으면 복사칸, 없으면 "끝" 칸 + 확인용 문장(선택)
 function typeStep(it, where, img, noteHas) {
   const tp = tryPrompt(it);
-  if (tp) return [`${where} 이렇게 치기`, where.startsWith("채팅") ? "연결이 끝나면 평소 채팅 화면에서 바로 됩니다." : "평소 채팅 화면 말고, </> 버튼을 누른 화면이어야 해요.", img, tp, noteHas];
-  return [where.startsWith("채팅") ? "끝. 평소 채팅에서 바로 됩니다" : "Claude 앱 왼쪽 위 </> 버튼 → 새 대화 열기", where.startsWith("채팅") ? "" : "평소 채팅 화면 말고, </> 버튼을 누른 화면이어야 해요.", img, "", "", { done: "이 도구는 여기까지가 끝. 입력창에 따로 칠 건 없어요.", opt: checkPrompt(it) }];
+  const WARN = "평소 채팅 말고, 클로드 코드 </> 버튼을 누른 화면이어야 해요.";
+  if (tp) return [`${where} 이렇게 치기`, where.startsWith("채팅") ? "연결이 끝나면 평소 채팅 화면에서 바로 됩니다." : WARN, img, tp, noteHas];
+  return [where.startsWith("채팅") ? "끝. 평소 채팅에서 바로 됩니다" : "Claude 앱 왼쪽 위 </> 버튼 → 새 대화 열기", where.startsWith("채팅") ? "" : WARN, img, "", "", { done: "이 도구는 여기까지가 끝. 입력창에 따로 칠 건 없어요.", opt: checkPrompt(it) }];
 }
 function deepLink(it) {
   const s = installOf(it); if (!s || !s.name) return "";
@@ -855,8 +859,13 @@ function copyText(text, msg) {
 }
 
 // 단계 한 칸의 본문 (제목·설명·그림·복사칸·끝 칸)
+// 글 속 "</>"는 앱 버튼 모양 칩으로, 제목에 "</>"가 있으면 앞에 "클로드 코드" 라벨, "평소 채팅 말고…" 문장은 노란 경고줄로 (B안+경고줄, 2026-10-31)
+function ck(escaped) { return escaped.replace(/&lt;\/&gt;/g, '<span class="ck" aria-label="코드 버튼">&lt;/&gt;</span>'); }
 function stepBody(s) {
-  return `<div class="txt"><b>${esc(s[0])}</b><span>${esc(s[1])}</span>${s[2]?`<img src="${s[2]}" alt="" style="display:block;margin-top:8px;max-width:260px;width:100%;border-radius:10px;border:1px solid var(--line)">`:""}${s[3]?`<div class="cmd try-box"><code>${esc(s[3])}</code><button data-copy="${esc(s[3])}">복사</button></div><span class="try-note"><i class="warn-ico" aria-hidden="true">!</i>${esc(s[4]||"")}</span>`:""}${s[5]?`<div class="done-box"><i class="ok-ico" aria-hidden="true">✓</i><span>${esc(s[5].done)}</span></div><span class="opt-lead">잘 깔렸는지 확인하고 싶으면 (선택) 입력창에 이렇게 쳐 보세요:</span><div class="cmd try-box opt-box"><code>${esc(s[5].opt)}</code><button data-copy="${esc(s[5].opt)}">복사</button></div>`:""}</div>`;
+  const t0 = esc(s[0]), t1 = esc(s[1] || "");
+  const title = (t0.includes("&lt;/&gt;") ? '<span class="ck-lbl">클로드 코드</span>' : "") + ck(t0);
+  const sub = t1 ? (t1.startsWith("평소 채팅") ? `<div class="warn-line"><i aria-hidden="true">!</i><span>${ck(t1)}</span></div>` : `<span>${ck(t1)}</span>`) : "";
+  return `<div class="txt"><b>${title}</b>${sub}${s[2]?`<img src="${s[2]}" alt="" style="display:block;margin-top:8px;max-width:260px;width:100%;border-radius:10px;border:1px solid var(--line)">`:""}${s[3]?`<div class="cmd try-box"><code>${esc(s[3])}</code><button data-copy="${esc(s[3])}">복사</button></div><span class="try-note"><i class="warn-ico" aria-hidden="true">!</i>${esc(s[4]||"")}</span>`:""}${s[5]?`<div class="done-box"><i class="ok-ico" aria-hidden="true">✓</i><span>${esc(s[5].done)}</span></div><span class="opt-lead">잘 깔렸는지 확인하고 싶으면 (선택) 입력창에 이렇게 쳐 보세요:</span><div class="cmd try-box opt-box"><code>${esc(s[5].opt)}</code><button data-copy="${esc(s[5].opt)}">복사</button></div>`:""}</div>`;
 }
 function openDetail(id) {
   const it = ITEMS.find(x=>x.id===id); if (!it) return;

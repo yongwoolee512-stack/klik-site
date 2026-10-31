@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>시안: &lt;/&gt; 버튼 강조</title>
+<style>
+:root{--accent:#0b2a6f;--fg:#1d1d1f;--muted:#5e5e63;--line:#d2d2d7;--surface:#f5f5f7}
+body{margin:0;font-family:-apple-system,"Apple SD Gothic Neo","Pretendard","Noto Sans KR",system-ui,sans-serif;background:#e9e9ec;color:var(--fg)}
+.wrap{max-width:1500px;margin:0 auto;padding:22px 16px}
+h1{font-size:20px;margin:0 0 4px}.lead{color:var(--muted);font-size:14px;margin:0 0 18px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}@media(max-width:1000px){.grid{grid-template-columns:1fr}}
+.card{background:#fff;border-radius:16px;padding:18px 18px 20px}
+.card h2{font-size:16px;margin:0 0 2px}.card .sub{font-size:13px;color:var(--muted);margin:0 0 14px;line-height:1.5}
+.pros{font-size:12.5px;color:#374151;background:#f9fafb;border-radius:8px;padding:8px 10px;margin-top:14px;line-height:1.6}
+.steps-h{margin:0 0 10px;font-size:15px;display:flex;gap:8px;align-items:baseline}.steps-h span{font-size:12.5px;font-weight:500;color:var(--muted)}
+.stp{display:flex;gap:12px;align-items:flex-start}.num{flex:none;width:26px;height:26px;border-radius:50%;background:var(--surface);color:var(--fg);border:1.5px solid var(--line);display:grid;place-items:center;font-weight:700;font-size:13px}
+.txt b{display:block;font-size:15.5px;line-height:1.45}.txt>span{display:block;font-size:13px;color:#374151;line-height:1.5;margin-top:3px}
+.pic{width:230px;border-radius:10px;border:1px solid var(--line);margin-top:8px;display:block}
+.try{display:flex;align-items:center;gap:10px;border:2px solid var(--accent);border-radius:12px;padding:11px 14px;margin:10px 0 0;font-size:14px;font-weight:600}
+.try span{flex:1}.try button{background:var(--accent);color:#fff;border:0;border-radius:8px;padding:7px 12px;font-weight:700;font-size:13px}
+
+/* A: 키캡 */
+.key{display:inline-grid;place-items:center;min-width:34px;height:24px;padding:0 7px;border-radius:7px;background:#1d1d1f;color:#fff;font-family:ui-monospace,Menlo,Consolas,monospace;font-weight:700;font-size:13px;vertical-align:-5px;margin:0 3px;box-shadow:0 2px 0 #000, inset 0 1px 0 rgba(255,255,255,.18)}
+.key.sm{min-width:28px;height:20px;font-size:11.5px;vertical-align:-4px;box-shadow:0 1.5px 0 #000}
+/* B: 포인트 색 글자 + 라벨 */
+.hl{color:var(--accent);font-weight:800;font-family:ui-monospace,Menlo,Consolas,monospace;background:#e9eefb;border-radius:6px;padding:1px 6px;margin:0 2px}
+.lbl{display:inline-block;font-size:11.5px;font-weight:800;color:#fff;background:var(--accent);border-radius:980px;padding:2px 8px;margin-right:6px;vertical-align:1px;letter-spacing:.02em}
+/* C: 키캡 + 경고줄 */
+.warn{display:flex;gap:8px;align-items:center;background:#fff8e6;border:1px solid #f3dca0;border-radius:10px;padding:8px 12px;margin-top:8px;font-size:13px;color:#5a4300}
+.warn i{flex:none;width:16px;height:16px;border-radius:50%;background:#f5a623;color:#fff;font-style:normal;font-weight:800;font-size:11px;display:grid;place-items:center}
+.key.navy{background:var(--accent);box-shadow:0 2px 0 #06183f, inset 0 1px 0 rgba(255,255,255,.25)}
+</style></head><body><div class="wrap">
+<h1>시안: &lt;/&gt; 버튼 강조</h1>
+<p class="lead">"쓰는 법" 2단계 칸. 문장은 네가 준 그대로("클로드 코드에 명령 … / 평소 채팅 말고 클로드 코드 &lt;/&gt; 버튼을 누른 화면이어야 해요"). 강조 방식만 다름.</p>
+<div class="grid">
+
+<div class="card"><h2>A안 · 키캡처럼</h2><p class="sub">&lt;/&gt;를 실제 앱 버튼(검정 바탕)과 같은 모양의 작은 키캡으로. 그림 속 버튼과 글 속 버튼이 똑같이 생겨서 "아, 저거"가 바로 됨.</p>
+<h3 class="steps-h">쓰는 법 <span>설치 뒤 이렇게</span></h3>
+<div class="stp"><div class="num">1</div><div class="txt"><b>클로드 코드에 명령: Claude 앱 왼쪽 위 <span class="key">&lt;/&gt;</span> 버튼 → 아래 입력창에 이렇게 치기</b><span>평소 채팅 말고, 클로드 코드 <span class="key sm">&lt;/&gt;</span> 버튼을 누른 화면이어야 해요.</span>
+<img class="pic" src="../media/code-button.svg" alt="">
+<div class="try"><span>이 내용으로 10장짜리 PPT 만들어 줘</span><button>복사</button></div></div></div>
+<div class="pros">+ 그림과 1:1로 대응, 톤이 차분함<br>− 검정이라 네이비 포인트 색과는 안 섞임</div>
+</div>
+
+<div class="card"><h2>B안 · 포인트 색 + "클로드 코드" 라벨</h2><p class="sub">&lt;/&gt;를 네이비 글자+연한 바탕으로, 앞에 "클로드 코드" 라벨 알약. 사이트 포인트 색이라 디자인에 녹아듦.</p>
+<h3 class="steps-h">쓰는 법 <span>설치 뒤 이렇게</span></h3>
+<div class="stp"><div class="num">1</div><div class="txt"><b><span class="lbl">클로드 코드</span>Claude 앱 왼쪽 위 <span class="hl">&lt;/&gt;</span> 버튼 → 아래 입력창에 이렇게 치기</b><span>평소 채팅 말고, 클로드 코드 <span class="hl">&lt;/&gt;</span> 버튼을 누른 화면이어야 해요.</span>
+<img class="pic" src="../media/code-button.svg" alt="">
+<div class="try"><span>이 내용으로 10장짜리 PPT 만들어 줘</span><button>복사</button></div></div></div>
+<div class="pros">+ 사이트 색과 통일, "클로드 코드"가 뭔지 라벨로 한 번 더<br>− 그림 속 버튼(검정)과 색이 달라 연결은 A보다 약함</div>
+</div>
+
+<div class="card"><h2>C안 · 네이비 키캡 + 경고줄</h2><p class="sub">키캡을 네이비로(그림의 파란 테두리와 맞춤), "평소 채팅 말고" 문장은 노란 경고줄로 따로 빼서 못 놓치게.</p>
+<h3 class="steps-h">쓰는 법 <span>설치 뒤 이렇게</span></h3>
+<div class="stp"><div class="num">1</div><div class="txt"><b>클로드 코드에 명령: Claude 앱 왼쪽 위 <span class="key navy">&lt;/&gt;</span> 버튼 → 아래 입력창에 이렇게 치기</b>
+<div class="warn"><i>!</i><span>평소 채팅 말고, 클로드 코드 <span class="key navy sm">&lt;/&gt;</span> 버튼을 누른 화면이어야 해요.</span></div>
+<img class="pic" src="../media/code-button.svg" alt="">
+<div class="try"><span>이 내용으로 10장짜리 PPT 만들어 줘</span><button>복사</button></div></div></div>
+<div class="pros">+ 가장 눈에 띔, 실수(채팅창에 침)를 막는 데 제일 강함<br>− 칸이 하나 더 생겨 조금 더 길어짐</div>
+</div>
+
+</div></div></body></html>
