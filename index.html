@@ -449,6 +449,31 @@ html.head-c .sheet-head .cm-rate { display:inline-flex; margin:10px 14px 0 0; ve
 .cm-link { border:0; background:transparent; color:var(--accent); font-weight:700; padding:0; font-size:inherit; text-decoration:underline; }
 :focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
 </style>
+<style id="main-a">
+.hero-main h1 { font-size: clamp(28px, 3.4vw, 46px) !important; line-height: 1.1 !important; }
+.sec-head h2 { font-size: 26px !important; }
+.stat b { font-size: 44px !important; }
+.hero-cta { display:flex; align-items:center; gap:14px; flex-wrap:wrap; margin-top:18px; }
+.hero-cta .install { padding:14px 22px; font-size:16px; border-radius:980px; }
+.hero-sub { font-size:13px; color:var(--muted); }
+.thumb .win { display:none; }
+.thumb { aspect-ratio: 16/6; display:grid; place-items:center; }
+.thumb::after { content: attr(data-t); font-size: 30px; font-weight: 800; letter-spacing: -.03em; color: rgba(0,0,0,.5); padding: 0 16px; max-width:100%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.zone-demo .dm { background: color-mix(in srgb, var(--c) 55%, #fff); border-radius:16px; padding:16px; display:flex; flex-direction:column; gap:10px; }
+.dm-row { display:flex; gap:10px; align-items:flex-start; }
+.dm-row.ai { flex-direction:row; }
+.dm-av { flex:none; width:28px; height:28px; border-radius:50%; background:#fff; color:var(--fg); font-size:12px; font-weight:700; display:grid; place-items:center; box-shadow:0 1px 3px rgba(0,0,0,.12); }
+.dm-av.ai { background:var(--accent); color:#fff; }
+.dm-bub { background:#fff; border-radius:14px; padding:10px 14px; font-size:14px; line-height:1.5; max-width:92%; box-shadow:0 1px 3px rgba(0,0,0,.06); }
+.dm-row.you .dm-bub { background:var(--accent); color:#fff; }
+.dm-bub b { display:block; font-size:12px; color:var(--accent); margin-bottom:3px; }
+.dm-out { align-self:flex-end; font-size:12.5px; font-weight:700; color:#15803d; background:#ecfdf3; border-radius:980px; padding:5px 12px; }
+.dm-more { margin-top:12px; background:var(--bg); border-radius:12px; padding:12px 14px; }
+.dm-more b { display:block; font-size:13px; margin-bottom:4px; }
+.dm-more p { margin:0; font-size:13.5px; line-height:1.6; color:var(--fg); }
+.dm-link { margin-top:6px; border:0; background:transparent; color:var(--accent); font-weight:700; font-size:13px; padding:0; }
+.dm-cap { margin:10px 0 0; font-size:13px; color:var(--muted); } .dm-cap b { color:var(--accent); margin-right:6px; }
+</style>
 </head>
 <body>
 <header>
@@ -480,9 +505,10 @@ html.head-c .sheet-head .cm-rate { display:inline-flex; margin:10px 14px 0 0; ve
       </div>
       <div class="hero-steps">
         <div class="step">① 카테고리에서 고르기</div>
-        <div class="step">② 작동 화면 보기</div>
+        <div class="step">② 한글 설명·작동 예시 보기</div>
         <div class="step">③ 설치 버튼 딸깍</div>
       </div>
+      <div class="hero-cta"><button class="install" data-open="pptx">⚡ 첫 도구 딸깍해 보기 — 파워포인트 자동 제작</button><span class="hero-sub">처음 한 번만 도우미(30초)를 받습니다 · 그다음부턴 버튼 하나</span></div>
     </div>
     <div class="hero-side">
       <div class="stat"><div><b id="st-count">0</b><br><span>등록된 도구</span></div><span>매주 업데이트</span></div>
@@ -740,8 +766,8 @@ function ago(iso) {
   if (d < 7) return d + "일 전"; if (d < 30) return Math.floor(d/7) + "주 전"; if (d < 365) return Math.floor(d/30) + "달 전"; return Math.floor(d/365) + "년 전";
 }
 function esc(s) { return String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])); }
-function win(color, big) {
-  return `<div class="thumb" style="background:${color}"><div class="win" style="${big?'width:70%;font-size:12px':''}"><div class="bar"><i></i><i></i><i></i></div><div class="ln m"></div><div class="ln a"></div><div class="ln s"></div><div class="ln m"></div></div></div>`;
+function win(color, big, en) {
+  return `<div class="thumb" style="background:${color}" data-t="${esc((en||"").split(/[ (]/)[0])}"><div class="win" style="${big?'width:70%;font-size:12px':''}"><div class="bar"><i></i><i></i><i></i></div><div class="ln m"></div><div class="ln a"></div><div class="ln s"></div><div class="ln m"></div></div></div>`;
 }
 function level(l) { return `<span class="lvl" title="난이도 ${l}/3">${[1,2,3].map(i=>`<i class="${i<=l?'on':''}"></i>`).join("")}</span>`; }
 const LEVEL_TXT = ["", "아주 쉬움", "보통", "약간 손이 감"];
@@ -797,7 +823,7 @@ function renderGrid() {
   if (!list.length) { $("#grid").innerHTML = `<div class="empty" style="grid-column:1/-1">조건에 맞는 도구가 아직 없어요. 검색어를 바꾸거나 "등록 요청하기"로 알려 주세요.</div>`; return; }
   const cards = list.map(it => `
     <div class="card" role="button" tabindex="0" data-open="${it.id}">
-      ${win(it.color)}
+      ${win(it.color, false, it.en)}
       <div class="badge-row">${it.pick?'<span class="badge md">편집팀 검증</span>':''}${it.hot?'<span class="badge hot">인기</span>':''}${it.isNew?'<span class="badge new">NEW</span>':''}</div>
       <button class="fav" data-fav="${it.id}" aria-pressed="${state.favs.has(it.id)}" aria-label="${esc(it.name)} 찜">${state.favs.has(it.id)?'♥':'♡'}</button>
       <div class="cbody">
@@ -862,9 +888,18 @@ function openDetail(id) {
           <div class="steps">${steps.map((s,i)=>`<div class="stp"><span class="num">${i+1}</span><div class="txt"><b>${esc(s[0])}</b><span>${esc(s[1])}</span>${s[2]?`<img src="${s[2]}" alt="" style="display:block;margin-top:8px;max-width:260px;width:100%;border-radius:10px;border:1px solid var(--line)">`:""}${s[3]?`<div class="cmd try-box"><code>${esc(s[3])}</code><button data-copy="${esc(s[3])}">복사</button></div><span class="try-note"><i class="warn-ico" aria-hidden="true">!</i>${esc(s[4]||"")}</span>`:""}${s[5]?`<div class="done-box"><i class="ok-ico" aria-hidden="true">✓</i><span>${esc(s[5].done)}</span></div><span class="opt-lead">잘 깔렸는지 확인하고 싶으면 (선택) 입력창에 이렇게 쳐 보세요:</span><div class="cmd try-box opt-box"><code>${esc(s[5].opt)}</code><button data-copy="${esc(s[5].opt)}">복사</button></div>`:""}</div></div>`).join("")}</div>
           ${hasCmd?(deep?`<details style="margin-top:8px"><summary style="cursor:pointer;color:var(--muted);font-size:13px">도우미 없이 직접 하는 방법 (명령 복사)</summary><div class="cmd"><code>${esc(cmd)}</code><button data-copy="${esc(cmd)}">복사</button></div></details>`:`<div class="cmd"><code>${esc(cmd)}</code><button data-copy="${esc(cmd)}">복사</button></div>`):""}
         </section>
+        <section class="zone zone-demo">
+          <h3>작동 예시</h3>
+          <div class="dm" style="--c:${it.color}">
+            <div class="dm-row you"><span class="dm-av">나</span><div class="dm-bub">${esc(tryPrompt(it)||checkPrompt(it))}</div></div>
+            <div class="dm-row ai"><span class="dm-av ai">C</span><div class="dm-bub"><b>${esc(it.name)}</b>${esc(it.one)}</div></div>
+            <div class="dm-out">✓ ${it.kind==="mcp"?"서비스가 연결돼 Claude가 직접 다룹니다":it.kind==="skill"?"결과물이 바로 나옵니다":"Claude에 이 기능이 더해집니다"}</div>
+          </div>
+          ${(()=>{ const r=Array.isArray(it.readme_ko)?it.readme_ko:[]; const pick=r.find(x=>/달라|특징|기능|왜|장점|할 수|하는 일|무엇/.test(x.h))||r.find(x=>String(x.p).length>80&&!/이란|란\?|소개|설치|시작/.test(x.h))||r[0]; if(!pick) return ""; const p=String(pick.p); return `<div class="dm-more"><b>${esc(pick.h)}</b><p>${esc(p.length>240?p.slice(0,240)+"…":p)}</p>${p.length>240?`<button class="dm-link" data-open-readme>원문 한글판에서 더 보기 ▾</button>`:""}</div>`; })()}
+          <p class="dm-cap"><b>이런 분께</b> ${esc(it.when)}</p>
+        </section>
         <section class="zone">
-          <h3>알아보기</h3>
-          ${it.pick?`<div class="md-why" style="margin-bottom:12px"><b>편집팀이 직접 깔아 보고 고른 이유</b>${esc(it.pick)}</div>`:""}
+          <h3>알아보기</h3>          ${it.pick?`<div class="md-why" style="margin-bottom:12px"><b>편집팀이 직접 깔아 보고 고른 이유</b>${esc(it.pick)}</div>`:""}
           <div class="blocks">
             <div class="blk"><h4>이게 뭐예요?</h4><p>${esc(it.one)}</p></div>
             <div class="blk"><h4>이런 분께 추천</h4><p>${esc(it.when)}</p></div>
@@ -933,6 +968,7 @@ document.addEventListener("click", e => {
   if (t.dataset.news) { document.querySelectorAll("#newsseg button").forEach(b=>b.setAttribute("aria-pressed", b.dataset.news===t.dataset.news)); renderNews(t.dataset.news); return; }
   if (t.dataset.sub) { toast({kakao:"카카오톡 채널 추가 화면으로 연결됩니다 (예시)", rss:"RSS 주소가 복사됩니다 (예시)", tg:"텔레그램 채널로 연결됩니다 (예시)"}[t.dataset.sub]); return; }
   if (t.dataset.fav) { e.stopPropagation(); const id=t.dataset.fav; state.favs.has(id)?state.favs.delete(id):state.favs.add(id); saveFavs(); renderGrid(); return; }
+  if (t.hasAttribute("data-open-readme")) { const d = document.querySelector("#modal details.readme"); if (d) { d.open = true; d.scrollIntoView({ block: "start", behavior: "smooth" }); } return; }
   if (t.dataset.copy !== undefined && t.dataset.copy !== "") { e.stopPropagation(); copyText(t.dataset.copy, t.closest(".try-box") ? "복사됐어요. Claude 입력창에 Ctrl+V 하고 엔터!" : ""); return; }
   if (t.classList.contains("play")) { toast("실제 서비스에서는 여기서 30초 작동 영상이 재생됩니다"); return; }
   if (t.dataset.open) { e.stopPropagation(); const sec = t.closest("[data-sec]"); if (sec && window.CM && CM.trackSection) CM.trackSection(sec.dataset.sec, t.dataset.open); openDetail(t.dataset.open); return; }   // 어느 칸에서 열었는지 집계 (칸 순서 결정용)
@@ -1375,3 +1411,4 @@ window.CM = (() => {
 </script>
 </body>
 </html>
+
