@@ -222,7 +222,8 @@ footer { margin-top: 40px; padding-block: 24px; border-top: 1px solid var(--line
 .stp .num { flex: 0 0 auto; width: 26px; height: 26px; border-radius: 50%; background: var(--accent); color: var(--accent-fg); display: grid; place-items: center; font-weight: 700; font-size: 13px; }
 .stp .txt { min-width: 0; flex: 1; }
 .stp .txt b { display: block; }
-.stp .txt span { font-size: 13px; color: var(--muted); }
+.stp .txt > span { font-size: 13px; color: var(--muted); }   /* 설명 줄만. 제목 안의 칩·라벨(.ck/.ck-lbl)은 제 색을 지킨다 */
+.stp .txt .ck-lbl { color: var(--accent-fg); font-size: .76em; } .stp .txt .ck { color: var(--accent); font-size: .92em; } .stp .txt .warn-line .ck { font-size: .95em; }
 .cmd { display: flex; gap: 8px; align-items: center; background: #0b1328; color: #d6e0ff; border-radius: 10px; padding: 10px 12px; font-family: ui-monospace, Consolas, monospace; font-size: 13px; margin-top: 8px; }
 .cmd code { flex: 1; min-width: 0; overflow-x: auto; white-space: nowrap; }
 .cmd button { border: 0; background: var(--accent); color: var(--accent-fg); border-radius: 6px; padding: 5px 10px; font-weight: 700; font-size: 12px; flex: 0 0 auto; }
