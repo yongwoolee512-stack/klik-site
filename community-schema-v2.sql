@@ -203,3 +203,7 @@ create or replace view public.section_clicks_week with (security_invoker = false
   where created_at > now() - interval '7 days'
   group by section order by n desc;
 grant select on public.section_clicks_week to anon, authenticated;
+
+-- 8-1) 칸 "sh"(skills.sh 설치 수 순위) 추가 — 칸이 또 늘면 여기 목록만 고치면 됨
+alter table public.section_clicks drop constraint if exists section_clicks_section_check;
+alter table public.section_clicks add constraint section_clicks_section_check check (section in ('md', 'gh', 'sh', 'hot', 'week', 'new'));
