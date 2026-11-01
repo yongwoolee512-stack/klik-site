@@ -1,7 +1,5 @@
 {
   "count": 220,
-  "generated_at": "2026-10-31T14:58:51.6920851Z",
-  "rejected": 147,
   "pending": 27,
   "items": [
     {
@@ -32,6 +30,13 @@
         "표·차트·이미지까지 들어갑니다."
       ],
       "status": "published",
+      "videos": [
+        {
+          "url": "https://www.instagram.com/reel/DfBsWsmlYvZ/",
+          "by": "vibe.trender",
+          "title": "Video by vibe.trender"
+        }
+      ],
       "stars": 185745,
       "pushed_at": "2026-10-28T19:20:39Z",
       "stars30": 764,
@@ -1065,6 +1070,21 @@
       "status": "published",
       "videos": [
         {
+          "url": "https://www.instagram.com/reel/DfGk-3iMqQw/",
+          "by": "joshproductletter",
+          "title": "Video by joshproductletter"
+        },
+        {
+          "url": "https://www.instagram.com/reel/DfCXnEagR0I/",
+          "by": "vibe.trender",
+          "title": "Video by vibe.trender"
+        },
+        {
+          "url": "https://www.instagram.com/reel/De_H0lKgWXL/",
+          "by": "vibe.trender",
+          "title": "Video by vibe.trender"
+        },
+        {
           "url": "https://www.youtube.com/shorts/idJQMJwHtyM",
           "by": "Claude",
           "title": "Claude for Google Workspace™"
@@ -1343,6 +1363,11 @@
         {
           "url": "https://www.instagram.com/reel/DeykbAkzXxL/",
           "by": "lazy_owen (게으른 빌더)"
+        },
+        {
+          "url": "https://www.instagram.com/reel/DfJ5MCLALKu/",
+          "by": "aiscene.kr",
+          "title": "Video by aiscene.kr"
         },
         {
           "url": "https://www.youtube.com/shorts/bMfUtbD-EDU",
@@ -4637,6 +4662,16 @@
       ],
       "status": "published",
       "videos": [
+        {
+          "url": "https://www.instagram.com/reel/DfCXnEagR0I/",
+          "by": "vibe.trender",
+          "title": "Video by vibe.trender"
+        },
+        {
+          "url": "https://www.instagram.com/reel/DeyuZn6EWc3/",
+          "by": "ai_leeseul",
+          "title": "Video by ai_leeseul"
+        },
         {
           "url": "https://www.youtube.com/shorts/e0z7EQZT2b0",
           "by": "proflead",
@@ -10698,6 +10733,13 @@
       ],
       "added": "2026-10-31",
       "status": "published",
+      "videos": [
+        {
+          "url": "https://www.instagram.com/reel/DfJ5MCLALKu/",
+          "by": "aiscene.kr",
+          "title": "Video by aiscene.kr"
+        }
+      ],
       "stars": 7911,
       "pushed_at": "2026-10-28T19:41:17Z",
       "sh_installs": 9785,
@@ -13100,5 +13142,7 @@
         }
       ]
     }
-  ]
+  ],
+  "rejected": 147,
+  "generated_at": "2026-11-01T07:28:44.0661445Z"
 }
