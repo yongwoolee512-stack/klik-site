@@ -398,7 +398,7 @@ html:not(.zone-tint):not(.zone-line) .sheet-body { gap:0; padding:16px 0 0; } ht
 html.head-a .sheet-head h2 { margin-top:4px; } html.head-a .sheet-head .one-line { margin-top:4px !important; } html.head-a .sheet-head .cm-rate { margin-top:6px; } html.head-a .sheet-head .meta-line { margin-top:3px !important; }
 html.head-b .sheet-head h2 { margin-top:6px; } html.head-b .sheet-head .one-line { margin-top:8px !important; } html.head-b .sheet-head .cm-rate { margin-top:10px; } html.head-b .sheet-head .meta-line { margin-top:5px !important; }
 html.head-c .sheet-head .cm-rate { display:inline-flex; margin:10px 14px 0 0; vertical-align:middle; } html.head-c .sheet-head .meta-line { display:inline-block; margin:10px 0 0 !important; vertical-align:middle; } html.head-c .sheet-head .one-line { margin-top:6px !important; }
-.vids { display:flex; gap:10px; overflow-x:auto; padding-bottom:6px; -webkit-overflow-scrolling:touch; } .vid { flex:0 0 auto; width:100%; max-width:420px; } .vid.v { width:220px; } .vid iframe { display:block; width:100%; aspect-ratio:16/9; border:0; border-radius:12px; background:#000; } .vid.v iframe { aspect-ratio:9/16; } .vid span { display:block; font-size:12px; color:var(--muted); margin-top:4px; }
+.vids { display:flex; gap:10px; overflow-x:auto; padding-bottom:6px; -webkit-overflow-scrolling:touch; } .vid { flex:0 0 auto; width:100%; max-width:420px; } .vid.v { width:220px; } .vid iframe { display:block; width:100%; aspect-ratio:16/9; border:0; border-radius:12px; background:#000; } .vid.v iframe { aspect-ratio:9/16; } .vsum { margin-top:8px; background:var(--soft,#eaf0ff); border-radius:10px; padding:9px 12px; font-size:13px; line-height:1.5; } .vsum b { display:block; font-size:12px; color:var(--navy,#1b2f5e); margin-bottom:2px; } .vsum .eff { margin:8px 0 6px; font-weight:700; } .vsum .ba { display:grid; gap:5px; } .vsum .ba div { border-radius:8px; padding:6px 9px; } .vsum .ba i { display:block; font-style:normal; font-size:11px; font-weight:700; } .vsum .ba .b { background:#f6eded; color:#9a3b3b; } .vsum .ba .a { background:#e9f5ee; color:#1d7a4d; } .vsum small { display:block; margin-top:6px; font-size:11px; color:var(--muted); } .vid span { display:block; font-size:12px; color:var(--muted); margin-top:4px; }
 .cm-list { display:grid; gap:8px; }
 .cm-item { background:var(--surface); border-radius:14px; padding:10px 14px; font-size:14px; display:grid; gap:5px; }
 .cm-item.best { box-shadow:inset 0 0 0 1.5px var(--accent); }
@@ -754,10 +754,11 @@ function deepLink(it) {
   return "";
 }
 // 짧은 영상: 주소를 사이트 안에서 재생되는 끼워 넣기 주소로. v=세로(쇼츠·릴스·틱톡)
+const YT_KO = "?cc_load_policy=1&cc_lang_pref=ko&hl=ko"; // 유튜브 영상은 한글 자막을 기본으로 켠다(자막이 있는 영상만)
 function videoEmbed(u) {
   let m;
-  if ((m = u.match(/youtube\.com\/shorts\/([\w-]{11})/))) return { src: `https://www.youtube.com/embed/${m[1]}`, v: true };
-  if ((m = u.match(/(?:youtu\.be\/|youtube\.com\/(?:watch\?(?:.*&)?v=|embed\/))([\w-]{11})/))) return { src: `https://www.youtube.com/embed/${m[1]}`, v: false };
+  if ((m = u.match(/youtube\.com\/shorts\/([\w-]{11})/))) return { src: `https://www.youtube.com/embed/${m[1]}${YT_KO}`, v: true };
+  if ((m = u.match(/(?:youtu\.be\/|youtube\.com\/(?:watch\?(?:.*&)?v=|embed\/))([\w-]{11})/))) return { src: `https://www.youtube.com/embed/${m[1]}${YT_KO}`, v: false };
   if ((m = u.match(/instagram\.com\/(?:reel|reels|p)\/([\w-]+)/))) return { src: `https://www.instagram.com/reel/${m[1]}/embed/`, v: true };
   if ((m = u.match(/tiktok\.com\/.*\/video\/(\d+)/))) return { src: `https://www.tiktok.com/embed/v2/${m[1]}`, v: true };
   return null;
@@ -942,7 +943,7 @@ function openDetail(id) {
           </details>`:""}
           <p style="margin:10px 0 0;font-size:12px;color:var(--muted)">한글 설명은 딸깍 편집팀이 작성했습니다.</p>
         </section>
-        ${Array.isArray(it.videos)&&it.videos.length?`<section class="zone"><h3>짧은 영상</h3><p style="margin:0 0 10px;font-size:12px;color:var(--muted)">인플루언서가 올린 영상입니다. 영상은 영상, 실제 평가는 아래 후기를 보세요.</p><div class="vids">${it.videos.map(v=>{const e=videoEmbed(v.url); return e?`<div class="vid${e.v?" v":""}"><iframe src="${e.src}" title="${esc(it.name)} 소개 영상" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>${v.by?`<span>${esc(v.by)}</span>`:""}</div>`:"";}).join("")}</div></section>`:""}
+        ${Array.isArray(it.videos)&&it.videos.length?`<section class="zone"><h3>짧은 영상</h3><p style="margin:0 0 10px;font-size:12px;color:var(--muted)">인플루언서가 올린 영상입니다. 영상은 영상, 실제 평가는 아래 후기를 보세요.</p><div class="vids">${it.videos.map(v=>{const e=videoEmbed(v.url); return e?`<div class="vid${e.v?" v":""}"><iframe src="${e.src}" title="${esc(it.name)} 소개 영상" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>${v.by?`<span>${esc(v.by)}</span>`:""}${v.sum?`<div class="vsum"><b>이 영상이 보여주는 기능</b>${esc(v.sum.f)}<p class="eff">${esc(v.sum.e)}</p><div class="ba"><div class="b"><i>전</i>${esc(v.sum.b)}</div><div class="a"><i>후</i>${esc(v.sum.a)}</div></div><small>AI 요약</small></div>`:""}</div>`:"";}).join("")}</div></section>`:""}
         ${window.CM ? `<section class="zone zone-cm">${CM.box()}</section>` : ""}
       </div>
     </div>

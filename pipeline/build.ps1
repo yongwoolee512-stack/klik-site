@@ -50,10 +50,15 @@ $sh = @{}; $shPath = Join-Path $root "data\skillssh.json"; if (Test-Path $shPath
 $picks = @{}; $pkPath = Join-Path $root "data\picks.json"; if (Test-Path $pkPath) { (Get-Content $pkPath -Raw -Encoding UTF8 | ConvertFrom-Json).PSObject.Properties | ? { $_.Name -ne "_doc" } | % { $picks[$_.Name] = $_.Value } }
 # 명령이 여러 개인 도구의 "이렇게 써 보세요" 목록: data/cmds.json {id: [{c, d}]}
 $cmds = @{}; $cmPath = Join-Path $root "data\cmds.json"; if (Test-Path $cmPath) { (Get-Content $cmPath -Raw -Encoding UTF8 | ConvertFrom-Json).PSObject.Properties | ? { $_.Name -ne "_doc" } | % { $cmds[$_.Name] = $_.Value } }
+# 영상 카드의 "써 보면" 요약: data/vidsum.json {유튜브ID: {f 기능, e 효과, b 전, a 후}} (소리를 AI가 읽고 줄인 것)
+$vsum = @{}; $vsPath = Join-Path $root "data\vidsum.json"; if (Test-Path $vsPath) { (Get-Content $vsPath -Raw -Encoding UTF8 | ConvertFrom-Json).PSObject.Properties | % { $vsum[$_.Name] = $_.Value } }
 foreach ($s in $seed) {
   $s | Add-Member status "published" -Force
   if ($cmds[$s.id]) { $s | Add-Member cmds @($cmds[$s.id]) -Force }
-  if ($vids[$s.id]) { $s | Add-Member videos $vids[$s.id] -Force }
+  if ($vids[$s.id]) {
+    foreach ($v in $vids[$s.id]) { if ($v.url -match '(?:shorts/|v=|youtu\.be/)([\w-]{11})' -and $vsum[$Matches[1]]) { $v | Add-Member sum $vsum[$Matches[1]] -Force } }
+    $s | Add-Member videos $vids[$s.id] -Force
+  }
   $g = $gh[$s.id]
   if ($g) { $s | Add-Member stars ([int]$g.stars) -Force; $s | Add-Member pushed_at $g.pushed_at -Force; if ($g.PSObject.Properties["stars30"]) { $s | Add-Member stars30 ([int]$g.stars30) -Force; $s | Add-Member stars30_days ([int]$g.days) -Force } }
   if (-not $s.trust) { $s | Add-Member trust @{ grade = "verified"; reasons = @("편집팀 검수") } -Force }
