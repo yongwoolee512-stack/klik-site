@@ -224,6 +224,7 @@ footer { margin-top: 40px; padding-block: 24px; border-top: 1px solid var(--line
 .stp .txt b { display: block; }
 .stp .txt > span { font-size: 13px; color: var(--muted); }   /* 설명 줄만. 제목 안의 칩·라벨(.ck/.ck-lbl)은 제 색을 지킨다 */
 .stp .txt .ck-lbl { color: var(--accent-fg); font-size: .76em; } .stp .txt .ck { color: var(--accent); font-size: .92em; } .stp .txt .warn-line .ck { font-size: .95em; }
+.cmds { display: grid; } .cmdrow { display: grid; grid-template-columns: 1fr auto; gap: 4px 10px; align-items: center; padding: 10px 0; border-top: 1px solid var(--line); } .cmdrow:first-child { border-top: 0; } .cmdrow code { background: var(--surface); border-radius: 8px; padding: 4px 9px; font: 600 13px ui-monospace, Consolas, monospace; overflow-wrap: anywhere; } .cmdrow button { border: 1px solid var(--accent); background: transparent; color: var(--accent); border-radius: 8px; padding: 5px 11px; font: 600 12.5px inherit; cursor: pointer; min-height: 32px; } .cmdrow button:hover { background: var(--accent); color: var(--accent-fg); } .cmdrow span { grid-column: 1; font-size: 13px; color: var(--muted); }
 .cmd { display: flex; gap: 8px; align-items: center; background: #0b1328; color: #d6e0ff; border-radius: 10px; padding: 10px 12px; font-family: ui-monospace, Consolas, monospace; font-size: 13px; margin-top: 8px; }
 .cmd code { flex: 1; min-width: 0; overflow-x: auto; white-space: nowrap; }
 .cmd button { border: 0; background: var(--accent); color: var(--accent-fg); border-radius: 6px; padding: 5px 10px; font-weight: 700; font-size: 12px; flex: 0 0 auto; }
@@ -914,6 +915,7 @@ function openDetail(id) {
             ${use.length?`<h4 class="steps-h use">쓰는 법 <span>${use.length===1?"설치 뒤 이렇게":use.length+"단계 · 처음 한 번 "+svcName(it)+" 계정 로그인 포함"}</span></h4>${renderSteps(use,"steps-use")}`:""}`;
           })()}
 
+          ${Array.isArray(it.cmds)&&it.cmds.length?`<h4 class="steps-h use">이렇게 써 보세요 <span>Claude Code에 붙여 넣어 보세요</span></h4><div class="cmds">${it.cmds.map(x=>`<div class="cmdrow"><code>${esc(x.c)}</code><button data-copy="${esc(x.c)}">복사</button><span>${esc(x.d)}</span></div>`).join("")}</div>`:""}
           ${hasCmd?(deep?`<details style="margin-top:8px"><summary style="cursor:pointer;color:var(--muted);font-size:13px">도우미 없이 직접 하는 방법 (명령 복사)</summary><div class="cmd"><code>${esc(cmd)}</code><button data-copy="${esc(cmd)}">복사</button></div></details>`:`<div class="cmd"><code>${esc(cmd)}</code><button data-copy="${esc(cmd)}">복사</button></div>`):""}
         </section>
         <section class="zone zone-demo">

@@ -48,8 +48,11 @@ if (Test-Path $ghPath) { (Get-Content $ghPath -Raw -Encoding UTF8 | ConvertFrom-
 $sh = @{}; $shPath = Join-Path $root "data\skillssh.json"; if (Test-Path $shPath) { (Get-Content $shPath -Raw -Encoding UTF8 | ConvertFrom-Json).PSObject.Properties | % { $sh[$_.Name] = $_.Value } }
 # MD 추천: data/picks.json {id: 한 줄 이유}
 $picks = @{}; $pkPath = Join-Path $root "data\picks.json"; if (Test-Path $pkPath) { (Get-Content $pkPath -Raw -Encoding UTF8 | ConvertFrom-Json).PSObject.Properties | ? { $_.Name -ne "_doc" } | % { $picks[$_.Name] = $_.Value } }
+# 명령이 여러 개인 도구의 "이렇게 써 보세요" 목록: data/cmds.json {id: [{c, d}]}
+$cmds = @{}; $cmPath = Join-Path $root "data\cmds.json"; if (Test-Path $cmPath) { (Get-Content $cmPath -Raw -Encoding UTF8 | ConvertFrom-Json).PSObject.Properties | ? { $_.Name -ne "_doc" } | % { $cmds[$_.Name] = $_.Value } }
 foreach ($s in $seed) {
   $s | Add-Member status "published" -Force
+  if ($cmds[$s.id]) { $s | Add-Member cmds @($cmds[$s.id]) -Force }
   if ($vids[$s.id]) { $s | Add-Member videos $vids[$s.id] -Force }
   $g = $gh[$s.id]
   if ($g) { $s | Add-Member stars ([int]$g.stars) -Force; $s | Add-Member pushed_at $g.pushed_at -Force; if ($g.PSObject.Properties["stars30"]) { $s | Add-Member stars30 ([int]$g.stars30) -Force; $s | Add-Member stars30_days ([int]$g.days) -Force } }

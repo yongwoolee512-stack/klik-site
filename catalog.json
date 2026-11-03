@@ -1,4 +1,5 @@
 {
+  "rejected": 147,
   "items": [
     {
       "id": "pptx",
@@ -30,6 +31,11 @@
       "status": "published",
       "videos": [
         {
+          "url": "https://www.instagram.com/reel/DfBsWsmlYvZ/",
+          "by": "vibe.trender",
+          "title": "Video by vibe.trender"
+        },
+        {
           "url": "https://www.youtube.com/shorts/P-q1po06rrU",
           "by": "TechMonster",
           "title": "Claude Gave Me PPT Code Instead of a PowerPoint! How to Convert PPTXGenJS to PPTX 🚀"
@@ -40,10 +46,10 @@
       "stars30": 1809,
       "stars30_days": 4,
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "pick": "말로 설명하면 PPT가 나옵니다. 비개발자가 Claude Code를 처음 켤 이유로 이만한 게 없음.",
       "sh_installs": 247497,
@@ -114,10 +120,10 @@
       "stars30": 1809,
       "stars30_days": 4,
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "sh_installs": 192265,
       "sh_week": 3589,
@@ -191,10 +197,10 @@
       "stars30": 1809,
       "stars30_days": 4,
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "sh_installs": 211777,
       "sh_week": 3873,
@@ -273,10 +279,10 @@
       "stars30": 1809,
       "stars30_days": 4,
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "sh_installs": 221785,
       "sh_week": 4049,
@@ -345,10 +351,10 @@
       "stars30": 387,
       "stars30_days": 4,
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "sh_installs": 63897,
       "sh_week": 737,
@@ -398,6 +404,28 @@
       ],
       "note": "피그마 계정 로그인(OAuth)이 한 번 필요합니다.",
       "status": "published",
+      "cmds": [
+        {
+          "c": "/figma:figma-design-to-code",
+          "d": "피그마 디자인을 코드로 옮겨요"
+        },
+        {
+          "c": "/figma:figma-generate-design",
+          "d": "말로 설명하면 피그마 화면을 만들어요"
+        },
+        {
+          "c": "/figma:figma-create-new-file",
+          "d": "새 피그마 파일을 만들어요"
+        },
+        {
+          "c": "/figma:figma-generate-diagram",
+          "d": "흐름도·구조도를 만들어요"
+        },
+        {
+          "c": "/figma:figma-code-connect",
+          "d": "디자인 부품과 실제 코드를 이어줘요"
+        }
+      ],
       "videos": [
         {
           "url": "https://www.youtube.com/shorts/QalGd9uErFA",
@@ -425,10 +453,10 @@
       "stars30": 15,
       "stars30_days": 4,
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "sh_installs": 9463,
       "sh_week": 477,
@@ -507,10 +535,10 @@
       "stars30": 91,
       "stars30_days": 4,
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "readme_ko": [
         {
@@ -579,10 +607,10 @@
       "stars30": 206,
       "stars30_days": 4,
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "readme_ko": [
         {
@@ -658,10 +686,10 @@
       "stars30": 151,
       "stars30_days": 4,
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "pick": "AI가 구버전 코드를 알려 주는 문제를 한 번에 해결. 설치 뒤 설정 없음.",
       "sh_installs": 8162,
@@ -731,10 +759,10 @@
       "stars30": 387,
       "stars30_days": 4,
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "sh_installs": 63897,
       "sh_week": 737,
@@ -804,10 +832,10 @@
       "stars30": 6,
       "stars30_days": 4,
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "readme_ko": [
         {
@@ -875,10 +903,10 @@
         }
       ],
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "readme_ko": [
         {
@@ -947,10 +975,10 @@
       "stars30": 6,
       "stars30_days": 4,
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "readme_ko": [
         {
@@ -1024,10 +1052,10 @@
       "stars30": 7,
       "stars30_days": 4,
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "pick": "회의록·할 일을 노션에 두는 분이면 첫날부터 쓰게 됩니다.",
       "readme_ko": [
@@ -1071,6 +1099,21 @@
       "status": "published",
       "videos": [
         {
+          "url": "https://www.instagram.com/reel/DfGk-3iMqQw/",
+          "by": "joshproductletter",
+          "title": "Video by joshproductletter"
+        },
+        {
+          "url": "https://www.instagram.com/reel/DfCXnEagR0I/",
+          "by": "vibe.trender",
+          "title": "Video by vibe.trender"
+        },
+        {
+          "url": "https://www.instagram.com/reel/De_H0lKgWXL/",
+          "by": "vibe.trender",
+          "title": "Video by vibe.trender"
+        },
+        {
           "url": "https://www.youtube.com/shorts/idJQMJwHtyM",
           "by": "Claude",
           "title": "Claude for Google Workspace™"
@@ -1087,10 +1130,10 @@
         }
       ],
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "readme_ko": [
         {
@@ -1138,10 +1181,10 @@
       "stars30": 387,
       "stars30_days": 4,
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "sh_installs": 63897,
       "sh_week": 737,
@@ -1208,10 +1251,10 @@
       "stars30": 27,
       "stars30_days": 4,
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "readme_ko": [
         {
@@ -1285,10 +1328,10 @@
       "stars30": 2,
       "stars30_days": 4,
       "trust": {
+        "grade": "verified",
         "reasons": [
           "편집팀 검수"
-        ],
-        "grade": "verified"
+        ]
       },
       "readme_ko": [
         {
@@ -1347,6 +1390,24 @@
         "너무 과격하면 \"/ponytail lite\", 코드베이스가 괘씸하면 \"/ponytail ultra\", 끄려면 \"/ponytail off\"."
       ],
       "status": "published",
+      "cmds": [
+        {
+          "c": "/ponytail:ponytail",
+          "d": "가장 작은 수정만으로 해결하는 모드로 바꿔요"
+        },
+        {
+          "c": "/ponytail:ponytail-review",
+          "d": "수정이 안전하고 필요한지 검토해요"
+        },
+        {
+          "c": "/ponytail:ponytail-audit",
+          "d": "불필요하게 복잡한 곳을 찾아요"
+        },
+        {
+          "c": "/ponytail:ponytail-gain",
+          "d": "얼마나 줄였는지 확인해요"
+        }
+      ],
       "videos": [
         {
           "url": "https://www.youtube.com/shorts/rnF40kxwCIg",
@@ -1355,6 +1416,11 @@
         {
           "url": "https://www.instagram.com/reel/DeykbAkzXxL/",
           "by": "lazy_owen (게으른 빌더)"
+        },
+        {
+          "url": "https://www.instagram.com/reel/DfJ5MCLALKu/",
+          "by": "aiscene.kr",
+          "title": "Video by aiscene.kr"
         },
         {
           "url": "https://www.youtube.com/shorts/bMfUtbD-EDU",
@@ -1440,6 +1506,28 @@
         "테스트 먼저 쓰기(TDD), 필요 없는 건 안 만들기(YAGNI)가 기본값입니다."
       ],
       "status": "published",
+      "cmds": [
+        {
+          "c": "/superpowers:brainstorming",
+          "d": "만들기 전에 질문으로 아이디어를 다듬어요"
+        },
+        {
+          "c": "/superpowers:writing-plans",
+          "d": "해야 할 일을 단계별 계획서로 써요"
+        },
+        {
+          "c": "/superpowers:systematic-debugging",
+          "d": "버그 원인을 순서대로 찾아가요"
+        },
+        {
+          "c": "/superpowers:test-driven-development",
+          "d": "테스트를 먼저 만들며 개발해요"
+        },
+        {
+          "c": "/superpowers:requesting-code-review",
+          "d": "다 만든 코드를 검토해 달라고 해요"
+        }
+      ],
       "videos": [
         {
           "url": "https://www.youtube.com/shorts/Kp7-bZNgbCE",
@@ -1524,6 +1612,24 @@
         "검색 도구가 들어 있어 '그때 그 오류 어떻게 고쳤지' 같은 질문에도 답합니다."
       ],
       "status": "published",
+      "cmds": [
+        {
+          "c": "/claude-mem:mem-search",
+          "d": "예전에 한 작업을 기억에서 찾아줘요"
+        },
+        {
+          "c": "/claude-mem:timeline-report",
+          "d": "프로젝트가 지나온 과정을 정리해요"
+        },
+        {
+          "c": "/claude-mem:handoff",
+          "d": "다음 대화로 이어 갈 인수인계 메모를 만들어요"
+        },
+        {
+          "c": "/claude-mem:make-plan",
+          "d": "작업 계획을 세워요"
+        }
+      ],
       "videos": [
         {
           "url": "https://www.youtube.com/shorts/H622ingVW48",
@@ -1603,6 +1709,24 @@
         "내 질문은 절대 바꾸지 않고 답만 줄입니다. 코드·명령·경로·오류 메시지는 한 글자도 안 건드립니다."
       ],
       "status": "published",
+      "cmds": [
+        {
+          "c": "/caveman:caveman",
+          "d": "짧게 말하는 모드로 바꿔 글자 수를 아껴요"
+        },
+        {
+          "c": "/caveman:caveman-commit",
+          "d": "짧고 깔끔한 커밋 메시지를 만들어요"
+        },
+        {
+          "c": "/caveman:caveman-review",
+          "d": "변경 내용을 한 줄씩 검토해요"
+        },
+        {
+          "c": "/caveman:caveman-stats",
+          "d": "얼마나 아꼈는지 확인해요"
+        }
+      ],
       "videos": [
         {
           "url": "https://www.youtube.com/shorts/0nO64outHWI",
@@ -1683,6 +1807,24 @@
         "대화가 압축돼도 편집한 파일·진행 중 작업·내 결정을 검색해서 되찾습니다."
       ],
       "status": "published",
+      "cmds": [
+        {
+          "c": "/context-mode:ctx-stats",
+          "d": "대화 공간을 얼마나 아꼈는지 보여줘요"
+        },
+        {
+          "c": "/context-mode:ctx-search",
+          "d": "저장해 둔 내용에서 찾아요"
+        },
+        {
+          "c": "/context-mode:ctx-doctor",
+          "d": "설치와 작동 상태를 점검해요"
+        },
+        {
+          "c": "/context-mode:ctx-insight",
+          "d": "사용 패턴을 분석해 보여줘요"
+        }
+      ],
       "videos": [
         {
           "url": "https://www.youtube.com/shorts/0M0EigWIS04",
@@ -4722,6 +4864,16 @@
       "status": "published",
       "videos": [
         {
+          "url": "https://www.instagram.com/reel/DfCXnEagR0I/",
+          "by": "vibe.trender",
+          "title": "Video by vibe.trender"
+        },
+        {
+          "url": "https://www.instagram.com/reel/DeyuZn6EWc3/",
+          "by": "ai_leeseul",
+          "title": "Video by ai_leeseul"
+        },
+        {
           "url": "https://www.youtube.com/shorts/JNXw_h_QGLk",
           "by": "TheSkillDrop",
           "title": "Let Claude Code finally see your website: Playwright, Context7 & Chrome DevTools MCP"
@@ -5876,6 +6028,28 @@
         "\"이 랜딩 페이지 전환율 올릴 포인트 찾아 줘\""
       ],
       "status": "published",
+      "cmds": [
+        {
+          "c": "/marketing-skills:seo-audit",
+          "d": "사이트의 검색 노출 문제를 점검해요"
+        },
+        {
+          "c": "/marketing-skills:copywriting",
+          "d": "팔리는 홍보 문구를 써줘요"
+        },
+        {
+          "c": "/marketing-skills:launch",
+          "d": "출시 계획을 짜줘요"
+        },
+        {
+          "c": "/marketing-skills:marketing-plan",
+          "d": "마케팅 계획서를 만들어줘요"
+        },
+        {
+          "c": "/marketing-skills:cro",
+          "d": "방문자가 더 많이 가입·구매하도록 개선점을 찾아요"
+        }
+      ],
       "videos": [
         {
           "url": "https://www.youtube.com/shorts/E2WQt1qMJ6U",
@@ -6750,6 +6924,24 @@
         "\"강남역 근처 카페 100개 구글맵에서 긁어서 표로\""
       ],
       "status": "published",
+      "cmds": [
+        {
+          "c": "/apify:apify-ultimate-scraper",
+          "d": "인스타·유튜브·구글지도 등 웹사이트 정보를 모아와요"
+        },
+        {
+          "c": "/apify:apify-actor-development",
+          "d": "나만의 수집 도구(액터)를 만들어요"
+        },
+        {
+          "c": "/apify:apify-actorization",
+          "d": "내가 만든 프로그램을 수집 도구로 바꿔요"
+        },
+        {
+          "c": "/apify:apify-generate-output-schema",
+          "d": "수집 결과의 표 구조를 자동으로 만들어요"
+        }
+      ],
       "videos": [
         {
           "url": "https://www.youtube.com/shorts/hBbvef2e3n8",
@@ -8016,6 +8208,28 @@
         "\"내 사이트 라이트하우스 점수 올려 줘\""
       ],
       "status": "published",
+      "cmds": [
+        {
+          "c": "/web-quality-skills:web-quality-audit",
+          "d": "사이트 품질을 한꺼번에 점검해요"
+        },
+        {
+          "c": "/web-quality-skills:seo",
+          "d": "검색 노출 문제를 찾아요"
+        },
+        {
+          "c": "/web-quality-skills:accessibility",
+          "d": "접근성(장애인 사용성)을 점검해요"
+        },
+        {
+          "c": "/web-quality-skills:performance",
+          "d": "느린 곳을 찾아 고쳐요"
+        },
+        {
+          "c": "/web-quality-skills:core-web-vitals",
+          "d": "구글이 보는 속도 지표를 개선해요"
+        }
+      ],
       "stars": 3027,
       "pushed_at": "2026-08-24T21:07:36Z",
       "stars30": 16,
@@ -9028,6 +9242,28 @@
       "added": "2026-10-31",
       "sh_source": "mattpocock/skills",
       "status": "published",
+      "cmds": [
+        {
+          "c": "/mattpocock-skills:grilling",
+          "d": "내 계획의 허점을 질문으로 파고들어요"
+        },
+        {
+          "c": "/mattpocock-skills:tdd",
+          "d": "테스트를 먼저 만들며 개발해요"
+        },
+        {
+          "c": "/mattpocock-skills:prototype",
+          "d": "빠르게 시제품을 만들어요"
+        },
+        {
+          "c": "/mattpocock-skills:diagnosing-bugs",
+          "d": "버그 원인을 진단해요"
+        },
+        {
+          "c": "/mattpocock-skills:code-review",
+          "d": "코드를 검토해요"
+        }
+      ],
       "videos": [
         {
           "url": "https://www.youtube.com/shorts/jZZozGJTokM",
@@ -9836,6 +10072,28 @@
       "added": "2026-10-31",
       "sh_source": "pbakaus/impeccable",
       "status": "published",
+      "cmds": [
+        {
+          "c": "/impeccable critique",
+          "d": "화면을 보고 디자인 문제를 점수와 우선순위로 알려줘요"
+        },
+        {
+          "c": "/impeccable audit",
+          "d": "접근성·속도·모바일 문제를 점검해요"
+        },
+        {
+          "c": "/impeccable polish",
+          "d": "출시 직전 마무리를 한 번에 다듬어요"
+        },
+        {
+          "c": "/impeccable typeset",
+          "d": "글자 크기·굵기·줄 간격을 정리해요"
+        },
+        {
+          "c": "/impeccable layout",
+          "d": "간격과 배치를 정리해요"
+        }
+      ],
       "videos": [
         {
           "url": "https://www.youtube.com/shorts/2jedTYUqkAs",
@@ -10928,6 +11186,11 @@
       "added": "2026-10-31",
       "status": "published",
       "videos": [
+        {
+          "url": "https://www.instagram.com/reel/DfJ5MCLALKu/",
+          "by": "aiscene.kr",
+          "title": "Video by aiscene.kr"
+        },
         {
           "url": "https://www.youtube.com/shorts/3KXKhAAAY2A",
           "by": "Trending AI",
@@ -13687,8 +13950,7 @@
       ]
     }
   ],
-  "generated_at": "2026-11-03T02:26:42.1159153Z",
-  "rejected": 147,
-  "pending": 27,
-  "count": 220
+  "count": 220,
+  "generated_at": "2026-11-03T04:53:27.6730126Z",
+  "pending": 27
 }

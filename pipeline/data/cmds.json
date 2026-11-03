@@ -1,0 +1,75 @@
+{
+  "_doc": "명령이 여러 개인 도구의 '이렇게 써 보세요' 목록. id → [{c: 붙여 넣을 명령, d: 한 줄 설명}]. 이 컴퓨터에 깔린 플러그인의 실제 이름에서 뽑았다. 명령이 하나뿐인 도구는 넣지 않는다.",
+  "impeccable": [
+    { "c": "/impeccable critique", "d": "화면을 보고 디자인 문제를 점수와 우선순위로 알려줘요" },
+    { "c": "/impeccable audit", "d": "접근성·속도·모바일 문제를 점검해요" },
+    { "c": "/impeccable polish", "d": "출시 직전 마무리를 한 번에 다듬어요" },
+    { "c": "/impeccable typeset", "d": "글자 크기·굵기·줄 간격을 정리해요" },
+    { "c": "/impeccable layout", "d": "간격과 배치를 정리해요" }
+  ],
+  "superpowers": [
+    { "c": "/superpowers:brainstorming", "d": "만들기 전에 질문으로 아이디어를 다듬어요" },
+    { "c": "/superpowers:writing-plans", "d": "해야 할 일을 단계별 계획서로 써요" },
+    { "c": "/superpowers:systematic-debugging", "d": "버그 원인을 순서대로 찾아가요" },
+    { "c": "/superpowers:test-driven-development", "d": "테스트를 먼저 만들며 개발해요" },
+    { "c": "/superpowers:requesting-code-review", "d": "다 만든 코드를 검토해 달라고 해요" }
+  ],
+  "caveman": [
+    { "c": "/caveman:caveman", "d": "짧게 말하는 모드로 바꿔 글자 수를 아껴요" },
+    { "c": "/caveman:caveman-commit", "d": "짧고 깔끔한 커밋 메시지를 만들어요" },
+    { "c": "/caveman:caveman-review", "d": "변경 내용을 한 줄씩 검토해요" },
+    { "c": "/caveman:caveman-stats", "d": "얼마나 아꼈는지 확인해요" }
+  ],
+  "marketing-skills": [
+    { "c": "/marketing-skills:seo-audit", "d": "사이트의 검색 노출 문제를 점검해요" },
+    { "c": "/marketing-skills:copywriting", "d": "팔리는 홍보 문구를 써줘요" },
+    { "c": "/marketing-skills:launch", "d": "출시 계획을 짜줘요" },
+    { "c": "/marketing-skills:marketing-plan", "d": "마케팅 계획서를 만들어줘요" },
+    { "c": "/marketing-skills:cro", "d": "방문자가 더 많이 가입·구매하도록 개선점을 찾아요" }
+  ],
+  "claude-mem": [
+    { "c": "/claude-mem:mem-search", "d": "예전에 한 작업을 기억에서 찾아줘요" },
+    { "c": "/claude-mem:timeline-report", "d": "프로젝트가 지나온 과정을 정리해요" },
+    { "c": "/claude-mem:handoff", "d": "다음 대화로 이어 갈 인수인계 메모를 만들어요" },
+    { "c": "/claude-mem:make-plan", "d": "작업 계획을 세워요" }
+  ],
+  "ponytail": [
+    { "c": "/ponytail:ponytail", "d": "가장 작은 수정만으로 해결하는 모드로 바꿔요" },
+    { "c": "/ponytail:ponytail-review", "d": "수정이 안전하고 필요한지 검토해요" },
+    { "c": "/ponytail:ponytail-audit", "d": "불필요하게 복잡한 곳을 찾아요" },
+    { "c": "/ponytail:ponytail-gain", "d": "얼마나 줄였는지 확인해요" }
+  ],
+  "context-mode": [
+    { "c": "/context-mode:ctx-stats", "d": "대화 공간을 얼마나 아꼈는지 보여줘요" },
+    { "c": "/context-mode:ctx-search", "d": "저장해 둔 내용에서 찾아요" },
+    { "c": "/context-mode:ctx-doctor", "d": "설치와 작동 상태를 점검해요" },
+    { "c": "/context-mode:ctx-insight", "d": "사용 패턴을 분석해 보여줘요" }
+  ],
+  "web-quality": [
+    { "c": "/web-quality-skills:web-quality-audit", "d": "사이트 품질을 한꺼번에 점검해요" },
+    { "c": "/web-quality-skills:seo", "d": "검색 노출 문제를 찾아요" },
+    { "c": "/web-quality-skills:accessibility", "d": "접근성(장애인 사용성)을 점검해요" },
+    { "c": "/web-quality-skills:performance", "d": "느린 곳을 찾아 고쳐요" },
+    { "c": "/web-quality-skills:core-web-vitals", "d": "구글이 보는 속도 지표를 개선해요" }
+  ],
+  "apify": [
+    { "c": "/apify:apify-ultimate-scraper", "d": "인스타·유튜브·구글지도 등 웹사이트 정보를 모아와요" },
+    { "c": "/apify:apify-actor-development", "d": "나만의 수집 도구(액터)를 만들어요" },
+    { "c": "/apify:apify-actorization", "d": "내가 만든 프로그램을 수집 도구로 바꿔요" },
+    { "c": "/apify:apify-generate-output-schema", "d": "수집 결과의 표 구조를 자동으로 만들어요" }
+  ],
+  "figma": [
+    { "c": "/figma:figma-design-to-code", "d": "피그마 디자인을 코드로 옮겨요" },
+    { "c": "/figma:figma-generate-design", "d": "말로 설명하면 피그마 화면을 만들어요" },
+    { "c": "/figma:figma-create-new-file", "d": "새 피그마 파일을 만들어요" },
+    { "c": "/figma:figma-generate-diagram", "d": "흐름도·구조도를 만들어요" },
+    { "c": "/figma:figma-code-connect", "d": "디자인 부품과 실제 코드를 이어줘요" }
+  ],
+  "mattpocock-skills": [
+    { "c": "/mattpocock-skills:grilling", "d": "내 계획의 허점을 질문으로 파고들어요" },
+    { "c": "/mattpocock-skills:tdd", "d": "테스트를 먼저 만들며 개발해요" },
+    { "c": "/mattpocock-skills:prototype", "d": "빠르게 시제품을 만들어요" },
+    { "c": "/mattpocock-skills:diagnosing-bugs", "d": "버그 원인을 진단해요" },
+    { "c": "/mattpocock-skills:code-review", "d": "코드를 검토해요" }
+  ]
+}
