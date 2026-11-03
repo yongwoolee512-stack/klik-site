@@ -1,13 +1,21 @@
 {
-  "_doc": "릴스·쇼츠를 매일 읽어 도구 언급을 모을 계정. instagram은 이 컴퓨터(Chrome 로그인)에서만, youtube는 서버에서도 됨. saved_collection: 인스타 '저장'에서 이 이름의 컬렉션에 넣은 릴스는 계정과 상관없이 읽는다. 2026-10-31 사용자 팔로잉 333개 중 AI·자동화 계정만 추림.",
+  "_doc": "릴스·쇼츠를 매일 읽어 도구 언급을 모을 계정. instagram은 이 컴퓨터(Chrome 로그인)에서만, youtube는 서버에서도 됨. saved_collection: 인스타 '저장'에서 이 이름의 컬렉션에 넣은 릴스는 계정과 상관없이 읽는다. 2026-10-31 사용자 팔로잉 333개 중 AI·자동화 계정만 추림. 2026-11-03: 계정 제한 이후 instagram은 유지 5개만 두고 나머지는 instagram_hold로 보류(자동 접속 안 함).",
   "saved_collection": "딸깍",
   "instagram": [
     "aiscene.kr",
-    "lazy_owen",
+    "vibe.trender",
     "joshproductletter",
+    "lazy_owen",
+    "ai_leeseul"
+  ],
+  "youtube": [
+    "https://www.youtube.com/@ZeroChoTV/shorts"
+  ],
+  "per_account_limit": 5,
+  "max_age_days": 14,
+  "instagram_hold": [
     "sdk.kim.builds",
     "ai_henry.kr",
-    "vibe.trender",
     "prompt_what",
     "biggie_ai",
     "marketer_c_",
@@ -17,7 +25,6 @@
     "ai.yeongseon",
     "bilder.ai.work",
     "beucheo.ai",
-    "ai_leeseul",
     "workhack_daily",
     "ai_newpd",
     "use.ai.likejimin",
@@ -37,10 +44,5 @@
     "ai.ainow",
     "ukwaehan_0sajang",
     "sunyshare"
-  ],
-  "youtube": [
-    "https://www.youtube.com/@ZeroChoTV/shorts"
-  ],
-  "per_account_limit": 5,
-  "max_age_days": 14
+  ]
 }
