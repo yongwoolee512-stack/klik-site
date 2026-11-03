@@ -8,12 +8,14 @@
   data/videos_influencer.json 도구id → [{url, by, title}]  (build.ps1 이 상세 창 '짧은 영상'에 합침)
   data/mentions_pending.json  카탈로그에 없는 도구 이름 후보 (사람 검수용)
 """
-import sys, json, re, pathlib, argparse, datetime, tempfile
+import sys, json, re, pathlib, argparse, datetime, tempfile, random, time
 here = pathlib.Path(__file__).resolve().parent
 data = here / "data"
 ap = argparse.ArgumentParser()
 ap.add_argument("--youtube", action="store_true"); ap.add_argument("--urls"); ap.add_argument("--url"); ap.add_argument("--by", default="")
 ap.add_argument("--model", default="small"); ap.add_argument("--limit", type=int, default=0)
+ap.add_argument("--max", type=int, default=0, help="이번 실행에서 처리할 영상 수 상한")
+ap.add_argument("--sleep", type=float, default=0, help="영상 사이 대기(초). 실제로는 이 값의 0.6~1.4배 무작위")
 a = ap.parse_args()
 
 try:
@@ -51,8 +53,29 @@ if a.urls:
         if norm(u) not in seen: jobs.append((u, by.strip() or a.by, "instagram" if "instagram.com" in u else "youtube" if "youtu" in u else "tiktok"))
 if a.url and norm(a.url) not in seen:
     jobs.append((a.url, a.by, "instagram" if "instagram.com" in a.url else "youtube" if "youtu" in a.url else "tiktok"))
+# 인스타 주소의 짧은 코드(shortcode)에는 올린 시각이 들어 있다 → 받기 전에 오래된 것을 거른다 (인스타 요청 0회)
+_IG = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_"
+def ig_date(url):
+    m = re.search(r"instagram\.com/(?:[^/]+/)?(?:reel|p)/([A-Za-z0-9_-]+)", url)
+    if not m: return None
+    try:
+        n = 0
+        for ch in m.group(1)[:11]: n = n * 64 + _IG.index(ch)
+        return datetime.datetime.fromtimestamp(((n >> 23) + 1314220021721) / 1000, datetime.timezone.utc).date()
+    except Exception: return None
+kept = []
+for url, by, platform in jobs:
+    d = ig_date(url) if platform == "instagram" else None
+    if d and max_age and (datetime.date.today() - d).days > max_age:
+        mentions.append({"url": url, "platform": platform, "by": by, "skipped": "old", "date": d.strftime("%Y%m%d")}); seen.add(norm(url))
+    else: kept.append((url, by, platform))
+if len(kept) != len(jobs):
+    mpath.write_text(json.dumps(mentions, ensure_ascii=False, indent=1), encoding="utf-8")
+    print(f"오래된 영상 {len(jobs) - len(kept)}개는 받지 않고 건너뜀")
+jobs = kept
 print(f"처리할 영상 {len(jobs)}개 (이미 읽은 {len(seen)}개 제외)")
-if not jobs: sys.exit(0)
+if not jobs: sys.exit(10 if (a.urls or a.url) else 0)   # 10 = 읽을 게 더 없음
+if a.max: jobs = jobs[:a.max]
 
 # ---- 2. 도구 이름 사전 (카탈로그 + 별칭) ----
 cat = json.loads((here / "site" / "catalog.json").read_text(encoding="utf-8")) if (here / "site" / "catalog.json").exists() else json.loads((here.parent / "catalog.json").read_text(encoding="utf-8"))
@@ -96,14 +119,28 @@ vi_path = data / "videos_influencer.json"
 vids = json.loads(vi_path.read_text(encoding="utf-8")) if vi_path.exists() else {}
 pend_path = data / "mentions_pending.json"
 pending = json.loads(pend_path.read_text(encoding="utf-8")) if pend_path.exists() else []
-new_matches = 0
+new_matches = 0; blocks = 0; blocked = False; first = True
 for url, by, platform in jobs:
+    if not first and a.sleep: time.sleep(a.sleep * random.uniform(0.6, 1.4))   # 사람 속도로: 영상 사이 대기
+    first = False
     opts = {"format": "bestaudio[ext=m4a]/bestaudio/best", "outtmpl": str(tmp / "%(id)s.%(ext)s"), "quiet": True, "noplaylist": True, "no_warnings": True}
     try:
         with yt_dlp.YoutubeDL(opts) as y:
             info = y.extract_info(url, download=True); path = pathlib.Path(y.prepare_filename(info))
+        blocks = 0
     except Exception as e:
-        print(f"받기 실패 {url}: {str(e)[:120]}"); continue
+        msg = str(e); print(f"받기 실패 {url}: {msg[:120]}", flush=True)
+        if re.search(r"isn't available to everyone|can't be seen by certain audiences|login required", msg, re.I):
+            # 로그인 없이는 안 열리는 영상: 기록해 두고 다시 두드리지 않는다. 3개 연속이면 전체가 막힌 것으로 보고 멈춘다.
+            mentions.append({"url": url, "platform": platform, "by": by, "skipped": "login"}); seen.add(norm(url))
+            mpath.write_text(json.dumps(mentions, ensure_ascii=False, indent=1), encoding="utf-8")
+            blocks += 1
+            if blocks >= 3: blocked = True; print("로그인 없이는 거의 안 열림: 연속 3개 거절 → 멈춥니다", flush=True); break
+            continue
+        if re.search(r"rate-limit|429|login required|please wait|checkpoint|challenge|not granting access|empty media", msg, re.I):
+            blocks += 1
+            if blocks >= 2: blocked = True; print("차단 의심: 연속 2번 막힘 → 여기서 멈춥니다", flush=True); break   # 계속 두드리지 않는다
+        continue
     up = info.get("upload_date") or ""
     if up and max_age and (datetime.date.today() - datetime.date(int(up[:4]), int(up[4:6]), int(up[6:8]))).days > max_age:
         print(f"오래됨({up}) 건너뜀 {url}"); seen.add(norm(url)); mentions.append({"url": url, "platform": platform, "by": by, "skipped": "old", "date": up}); continue
@@ -130,9 +167,14 @@ for url, by, platform in jobs:
             lst.append({"url": url, "by": rec["by"], "title": rec["title"]}); new_matches += 1
     if unknown and not matched:
         pending.append({"url": url, "by": rec["by"], "date": up, "candidates": unknown[:10], "snippet": text[:300]})
-    print(f"읽음 [{platform}] {rec['by']} · {rec['title'][:40]} → 도구 {matched or '-'} / 후보 {unknown[:5]}")
+    print(f"읽음 [{platform}] {rec['by']} · {rec['title'][:40]} → 도구 {matched or '-'} / 후보 {unknown[:5]}", flush=True)
+    # 영상 하나 끝날 때마다 저장 (긴 작업이 중간에 끊겨도 읽은 건 남는다)
+    mpath.write_text(json.dumps(mentions, ensure_ascii=False, indent=1), encoding="utf-8")
+    vi_path.write_text(json.dumps(vids, ensure_ascii=False, indent=1), encoding="utf-8")
+    pend_path.write_text(json.dumps(pending, ensure_ascii=False, indent=1), encoding="utf-8")
 
 mpath.write_text(json.dumps(mentions, ensure_ascii=False, indent=1), encoding="utf-8")
 vi_path.write_text(json.dumps(vids, ensure_ascii=False, indent=1), encoding="utf-8")
 pend_path.write_text(json.dumps(pending, ensure_ascii=False, indent=1), encoding="utf-8")
 print(f"완료: 기록 {len(mentions)}개, 새로 연결된 영상 {new_matches}개, 검수 대기 {len(pending)}건")
+if blocked: sys.exit(11)   # 11 = 차단 의심으로 중단
