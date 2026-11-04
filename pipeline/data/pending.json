@@ -161,6 +161,13 @@
     "first_seen": "2026-10-31"
   },
   {
+    "full_name": "KKKKhazix/khazix-skills",
+    "stars": 21883,
+    "kind": "plugin",
+    "desc": "数字生命卡兹克开源的 AI Skills 合集 | Agent Skills: leader（帮你定义目标）, neat-freak 洁癖, hv-analysis, khazix-writer & more — Claude Code, Codex & 40+ agents",
+    "first_seen": "2026-10-31"
+  },
+  {
     "full_name": "op7418/Humanizer-zh",
     "stars": 21574,
     "kind": "skills-npx",
@@ -558,6 +565,13 @@
     "kind": "skills-npx",
     "desc": "ktx is an executable context layer for data and analytics agents 🐙 Allow Claude Code, Codex, or other AI agents to query analytical databases accurately and with full context of your company",
     "first_seen": "2026-10-31"
+  },
+  {
+    "full_name": "caru-ini/stack-diagram",
+    "stars": 1540,
+    "kind": "skills-npx",
+    "desc": "Agent skill: describe your stack in a sentence, get an architecture diagram with official logos",
+    "first_seen": "2026-11-04"
   },
   {
     "full_name": "UnderleveledBuilder/awesome-short-drama-skills",
