@@ -553,6 +553,13 @@
     "first_seen": "2026-10-31"
   },
   {
+    "full_name": "OpenOSINT/OpenOSINT",
+    "stars": 1850,
+    "kind": "plugin",
+    "desc": "The OSINT toolkit for AI agents: Agent Skill, MCP server and CLI. Passive by default, no API keys to start, every finding cites its tool call.",
+    "first_seen": "2026-11-05"
+  },
+  {
     "full_name": "eatmoreduck/boss-zhipin-scraper",
     "stars": 1682,
     "kind": "skills-npx",

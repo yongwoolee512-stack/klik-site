@@ -1,7 +1,7 @@
 [
   {
     "source": "uizze.sh",
-    "installs": 957871,
+    "installs": 982513,
     "week": 92139,
     "top_skill": "ui-taste",
     "skills_n": 2,
@@ -13,7 +13,7 @@
   },
   {
     "source": "101-skills/superpowers",
-    "installs": 948380,
+    "installs": 958156,
     "week": 67605,
     "top_skill": "ai-video-generation",
     "skills_n": 26,
@@ -31,7 +31,7 @@
   },
   {
     "source": "open.feishu.cn",
-    "installs": 850050,
+    "installs": 856083,
     "week": 25631,
     "top_skill": "lark-doc",
     "skills_n": 29,
@@ -49,7 +49,7 @@
   },
   {
     "source": "magentosh/superpowers",
-    "installs": 837842,
+    "installs": 847520,
     "week": 114583,
     "top_skill": "ai-image-generation",
     "skills_n": 26,
@@ -67,7 +67,7 @@
   },
   {
     "source": "skills-shell/superpowers",
-    "installs": 631295,
+    "installs": 660250,
     "week": 89771,
     "top_skill": "ai-image-generation",
     "skills_n": 26,
@@ -85,7 +85,7 @@
   },
   {
     "source": "qu-skills/superpowers",
-    "installs": 630681,
+    "installs": 640373,
     "week": 67258,
     "top_skill": "ai-avatar-video",
     "skills_n": 26,
@@ -102,26 +102,8 @@
     ]
   },
   {
-    "source": "larksuite/cli",
-    "installs": 486340,
-    "week": 5531,
-    "top_skill": "lark-doc",
-    "skills_n": 29,
-    "official": false,
-    "skills": [
-      "lark-doc",
-      "lark-base",
-      "lark-shared",
-      "lark-im",
-      "lark-drive",
-      "lark-sheets",
-      "lark-wiki",
-      "lark-whiteboard"
-    ]
-  },
-  {
     "source": "its-a-skill-issue/superpowers",
-    "installs": 478651,
+    "installs": 488115,
     "week": 66763,
     "top_skill": "ai-image-generation",
     "skills_n": 26,
@@ -138,8 +120,26 @@
     ]
   },
   {
+    "source": "larksuite/cli",
+    "installs": 487156,
+    "week": 5531,
+    "top_skill": "lark-doc",
+    "skills_n": 29,
+    "official": false,
+    "skills": [
+      "lark-doc",
+      "lark-base",
+      "lark-shared",
+      "lark-im",
+      "lark-drive",
+      "lark-sheets",
+      "lark-wiki",
+      "lark-whiteboard"
+    ]
+  },
+  {
     "source": "bankai-skills/superpowers",
-    "installs": 463816,
+    "installs": 473311,
     "week": 66504,
     "top_skill": "ai-image-generation",
     "skills_n": 26,
@@ -157,7 +157,7 @@
   },
   {
     "source": "gencraft-labs/skills",
-    "installs": 409283,
+    "installs": 422659,
     "week": 104607,
     "top_skill": "ai-music",
     "skills_n": 5,
@@ -184,7 +184,7 @@
   },
   {
     "source": "wind-alice/alicemarket",
-    "installs": 235121,
+    "installs": 236641,
     "week": 11719,
     "top_skill": "wind-mcp-skill",
     "skills_n": 3,
@@ -197,7 +197,7 @@
   },
   {
     "source": "sentry/dev",
-    "installs": 182343,
+    "installs": 183348,
     "week": 7997,
     "top_skill": "sentry-cli",
     "skills_n": 1,
@@ -208,7 +208,7 @@
   },
   {
     "source": "antibrow/anti-detect-browser-skills",
-    "installs": 147400,
+    "installs": 148578,
     "week": 8157,
     "top_skill": "anti-detect-browser",
     "skills_n": 3,
@@ -221,7 +221,7 @@
   },
   {
     "source": "shadcn-ui/ui",
-    "installs": 135304,
+    "installs": 136470,
     "week": 9348,
     "top_skill": "shadcn",
     "skills_n": 2,
@@ -233,7 +233,7 @@
   },
   {
     "source": "better-auth/skills",
-    "installs": 130193,
+    "installs": 130409,
     "week": 2016,
     "top_skill": "better-auth-best-practices",
     "skills_n": 7,
@@ -250,7 +250,7 @@
   },
   {
     "source": "liarjsdev/liarjs-skills",
-    "installs": 112266,
+    "installs": 113412,
     "week": 7846,
     "top_skill": "browser-fingerprint-audit",
     "skills_n": 4,
@@ -264,7 +264,7 @@
   },
   {
     "source": "browser-act/skills",
-    "installs": 108359,
+    "installs": 108369,
     "week": 44,
     "top_skill": "browser-act",
     "skills_n": 2,
@@ -276,7 +276,7 @@
   },
   {
     "source": "stripe/ai",
-    "installs": 101020,
+    "installs": 101212,
     "week": 2395,
     "top_skill": "stripe-best-practices",
     "skills_n": 6,
