@@ -1,7 +1,7 @@
 [
   {
     "source": "uizze.sh",
-    "installs": 982513,
+    "installs": 1002922,
     "week": 92139,
     "top_skill": "ui-taste",
     "skills_n": 2,
@@ -13,7 +13,7 @@
   },
   {
     "source": "101-skills/superpowers",
-    "installs": 958156,
+    "installs": 967925,
     "week": 67605,
     "top_skill": "ai-video-generation",
     "skills_n": 26,
@@ -31,7 +31,7 @@
   },
   {
     "source": "open.feishu.cn",
-    "installs": 856083,
+    "installs": 862092,
     "week": 25631,
     "top_skill": "lark-doc",
     "skills_n": 29,
@@ -49,7 +49,7 @@
   },
   {
     "source": "magentosh/superpowers",
-    "installs": 847520,
+    "installs": 857096,
     "week": 114583,
     "top_skill": "ai-image-generation",
     "skills_n": 26,
@@ -67,7 +67,7 @@
   },
   {
     "source": "skills-shell/superpowers",
-    "installs": 660250,
+    "installs": 688591,
     "week": 89771,
     "top_skill": "ai-image-generation",
     "skills_n": 26,
@@ -85,7 +85,7 @@
   },
   {
     "source": "qu-skills/superpowers",
-    "installs": 640373,
+    "installs": 649912,
     "week": 67258,
     "top_skill": "ai-avatar-video",
     "skills_n": 26,
@@ -103,7 +103,7 @@
   },
   {
     "source": "its-a-skill-issue/superpowers",
-    "installs": 488115,
+    "installs": 497550,
     "week": 66763,
     "top_skill": "ai-image-generation",
     "skills_n": 26,
@@ -121,7 +121,7 @@
   },
   {
     "source": "larksuite/cli",
-    "installs": 487156,
+    "installs": 488088,
     "week": 5531,
     "top_skill": "lark-doc",
     "skills_n": 29,
@@ -139,7 +139,7 @@
   },
   {
     "source": "bankai-skills/superpowers",
-    "installs": 473311,
+    "installs": 483127,
     "week": 66504,
     "top_skill": "ai-image-generation",
     "skills_n": 26,
@@ -157,15 +157,15 @@
   },
   {
     "source": "gencraft-labs/skills",
-    "installs": 422659,
+    "installs": 437050,
     "week": 104607,
     "top_skill": "ai-music",
     "skills_n": 5,
     "official": false,
     "skills": [
       "ai-music",
-      "video-edit",
       "ai-video-generation",
+      "video-edit",
       "ai-image-generation",
       "image-to-video"
     ]
@@ -184,7 +184,7 @@
   },
   {
     "source": "wind-alice/alicemarket",
-    "installs": 236641,
+    "installs": 238194,
     "week": 11719,
     "top_skill": "wind-mcp-skill",
     "skills_n": 3,
@@ -197,7 +197,7 @@
   },
   {
     "source": "sentry/dev",
-    "installs": 183348,
+    "installs": 184632,
     "week": 7997,
     "top_skill": "sentry-cli",
     "skills_n": 1,
@@ -208,7 +208,7 @@
   },
   {
     "source": "antibrow/anti-detect-browser-skills",
-    "installs": 148578,
+    "installs": 149759,
     "week": 8157,
     "top_skill": "anti-detect-browser",
     "skills_n": 3,
@@ -221,7 +221,7 @@
   },
   {
     "source": "shadcn-ui/ui",
-    "installs": 136470,
+    "installs": 137673,
     "week": 9348,
     "top_skill": "shadcn",
     "skills_n": 2,
@@ -233,7 +233,7 @@
   },
   {
     "source": "better-auth/skills",
-    "installs": 130409,
+    "installs": 130587,
     "week": 2016,
     "top_skill": "better-auth-best-practices",
     "skills_n": 7,
@@ -250,7 +250,7 @@
   },
   {
     "source": "liarjsdev/liarjs-skills",
-    "installs": 113412,
+    "installs": 114544,
     "week": 7846,
     "top_skill": "browser-fingerprint-audit",
     "skills_n": 4,
@@ -264,7 +264,7 @@
   },
   {
     "source": "browser-act/skills",
-    "installs": 108369,
+    "installs": 108376,
     "week": 44,
     "top_skill": "browser-act",
     "skills_n": 2,
@@ -276,7 +276,7 @@
   },
   {
     "source": "stripe/ai",
-    "installs": 101212,
+    "installs": 101394,
     "week": 2395,
     "top_skill": "stripe-best-practices",
     "skills_n": 6,
@@ -288,6 +288,24 @@
       "stripe-directory",
       "connect-recommend",
       "stripe-docs"
+    ]
+  },
+  {
+    "source": "intellectronica/agent-skills",
+    "installs": 100570,
+    "week": 5232,
+    "top_skill": "notion-api",
+    "skills_n": 8,
+    "official": false,
+    "skills": [
+      "notion-api",
+      "context7",
+      "youtube-transcript",
+      "nano-banana-pro",
+      "ultrathink",
+      "beautiful-mermaid",
+      "markdown-converter",
+      "todoist-api"
     ]
   }
 ]

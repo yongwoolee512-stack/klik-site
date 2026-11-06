@@ -497,6 +497,13 @@
     "first_seen": "2026-10-31"
   },
   {
+    "full_name": "romainsimon/paperasse",
+    "stars": 2576,
+    "kind": "plugin",
+    "desc": "🇫🇷  Skills pour agents IA spécialisés dans la bureaucratie française : Comptable, Notaire, ...",
+    "first_seen": "2026-10-31"
+  },
+  {
     "full_name": "oil-oil/oil-ui",
     "stars": 2536,
     "kind": "skills-npx",
@@ -593,6 +600,13 @@
     "kind": "plugin",
     "desc": "232 pixel art effects, every one a small piece of code. Plus a Claude Code skill to make your own.",
     "first_seen": "2026-10-31"
+  },
+  {
+    "full_name": "Jakeschincariol/trader-skill",
+    "stars": 1380,
+    "kind": "plugin",
+    "desc": "11 Claude skills that copy the investors you trust, watch the news and Congress, size every trade to your budget, and never place an order without your yes.",
+    "first_seen": "2026-11-06"
   },
   {
     "full_name": "bevibing/tutor-skills",
