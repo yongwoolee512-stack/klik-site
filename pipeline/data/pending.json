@@ -77,6 +77,13 @@
     "first_seen": "2026-10-31"
   },
   {
+    "full_name": "alchaincyf/nuwa-skill",
+    "stars": 37750,
+    "kind": "skills-npx",
+    "desc": "你想蒸馏的下一个员工，何必是同事。蒸馏任何人的思维方式——心智模型、决策启发式、表达DNA。Distill how anyone thinks.",
+    "first_seen": "2026-11-07"
+  },
+  {
     "full_name": "VoltAgent/awesome-agent-skills",
     "stars": 36652,
     "kind": "skills-npx",
@@ -252,6 +259,13 @@
     "first_seen": "2026-10-31"
   },
   {
+    "full_name": "alchaincyf/zhangxuefeng-skill",
+    "stars": 10719,
+    "kind": "skills-npx",
+    "desc": "张雪峰.skill — 张雪峰的认知操作系统。高考志愿/考研/职业规划的实战思维框架。由女娲.skill生成。",
+    "first_seen": "2026-11-07"
+  },
+  {
     "full_name": "Agents365-ai/drawio-skill",
     "stars": 10470,
     "kind": "skills-npx",
@@ -322,6 +336,13 @@
     "first_seen": "2026-10-31"
   },
   {
+    "full_name": "gepa-ai/gepa",
+    "stars": 7332,
+    "kind": "plugin",
+    "desc": "Optimize prompts, code, and more with AI-powered Reflective Optimization",
+    "first_seen": "2026-11-07"
+  },
+  {
     "full_name": "gosom/google-maps-scraper",
     "stars": 7081,
     "kind": "skills-npx",
@@ -334,6 +355,13 @@
     "kind": "plugin",
     "desc": "The trust layer for agent-to-agent commerce — natural-language mandates, ERC-7710 delegated permissions, x402 payments, escrow, and dispute resolution as one open, catch-all Agent Skill / Claude Code plugin.",
     "first_seen": "2026-10-31"
+  },
+  {
+    "full_name": "alchaincyf/darwin-skill",
+    "stars": 6834,
+    "kind": "skills-npx",
+    "desc": "达尔文.skill —— 一个让你的Skill无限进化的系统：评估→改进→测试→保留或回滚 | Autoresearch-inspired autonomous skill optimization for Claude Code. Evaluate, improve, test, keep or revert.",
+    "first_seen": "2026-11-07"
   },
   {
     "full_name": "Jakeschincariol/replica-skill",
@@ -362,6 +390,13 @@
     "kind": "skills-npx",
     "desc": "Data visualization Skill for AI Agents, turning data into polished, interactive HTML charts. 面向 AI Agents 的数据可视化 Skill，将数据快速生成精致、可交互的 HTML 图表。",
     "first_seen": "2026-10-31"
+  },
+  {
+    "full_name": "alchaincyf/huashu-art-motion",
+    "stars": 6466,
+    "kind": "skills-npx",
+    "desc": "艺术动画skill：35种艺术风格、9种解说语法，用代码让画动起来。",
+    "first_seen": "2026-11-07"
   },
   {
     "full_name": "melonjs/melonJS",
@@ -516,6 +551,13 @@
     "kind": "skills-npx",
     "desc": "UI design skill for Claude Code, Codex and other AI agents: explore distinct directions, compare them side by side, refine against real screenshots. 给 AI Agent 用的 UI 设计 Skill。",
     "first_seen": "2026-10-31"
+  },
+  {
+    "full_name": "alchaincyf/huashu-motion",
+    "stars": 2482,
+    "kind": "skills-npx",
+    "desc": "让你的agent一键直出商业级产品宣传片：会作曲，能指着画面改。Commercial-grade launch films by your coding agent — point at the frame to change it.",
+    "first_seen": "2026-11-07"
   },
   {
     "full_name": "coldteadotai/pr-lens",
