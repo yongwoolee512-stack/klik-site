@@ -10,12 +10,12 @@
     "mcp.supabase.com",
     "mcp.vercel.com"
   ],
+  "generated_at": "2026-11-07T00:17:18.5116044Z",
   "pkgs": [
     "@browsermcp/mcp",
     "@dbx-app/mcp-server",
     "@next-ai-drawio/mcp-server",
     "@playwright/mcp",
     "screenpipe-mcp"
-  ],
-  "generated_at": "2026-11-06T01:11:04.4812735Z"
+  ]
 }
