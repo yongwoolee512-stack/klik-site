@@ -1,7 +1,7 @@
 [
   {
     "source": "uizze.sh",
-    "installs": 1042534,
+    "installs": 1062287,
     "week": 92139,
     "top_skill": "ui-taste",
     "skills_n": 2,
@@ -13,7 +13,7 @@
   },
   {
     "source": "101-skills/superpowers",
-    "installs": 986400,
+    "installs": 996047,
     "week": 67605,
     "top_skill": "ai-video-generation",
     "skills_n": 26,
@@ -31,7 +31,7 @@
   },
   {
     "source": "magentosh/superpowers",
-    "installs": 875231,
+    "installs": 884847,
     "week": 114583,
     "top_skill": "ai-image-generation",
     "skills_n": 26,
@@ -49,7 +49,7 @@
   },
   {
     "source": "open.feishu.cn",
-    "installs": 871239,
+    "installs": 874644,
     "week": 25631,
     "top_skill": "lark-doc",
     "skills_n": 29,
@@ -67,7 +67,7 @@
   },
   {
     "source": "skills-shell/superpowers",
-    "installs": 742844,
+    "installs": 771702,
     "week": 89771,
     "top_skill": "ai-image-generation",
     "skills_n": 26,
@@ -85,7 +85,7 @@
   },
   {
     "source": "qu-skills/superpowers",
-    "installs": 667963,
+    "installs": 677559,
     "week": 67258,
     "top_skill": "ai-avatar-video",
     "skills_n": 26,
@@ -103,7 +103,7 @@
   },
   {
     "source": "its-a-skill-issue/superpowers",
-    "installs": 515831,
+    "installs": 525320,
     "week": 66763,
     "top_skill": "ai-image-generation",
     "skills_n": 26,
@@ -121,7 +121,7 @@
   },
   {
     "source": "bankai-skills/superpowers",
-    "installs": 501435,
+    "installs": 511061,
     "week": 66504,
     "top_skill": "ai-image-generation",
     "skills_n": 26,
@@ -139,7 +139,7 @@
   },
   {
     "source": "larksuite/cli",
-    "installs": 489393,
+    "installs": 489785,
     "week": 5531,
     "top_skill": "lark-doc",
     "skills_n": 29,
@@ -157,7 +157,7 @@
   },
   {
     "source": "gencraft-labs/skills",
-    "installs": 463192,
+    "installs": 477821,
     "week": 104607,
     "top_skill": "ai-music",
     "skills_n": 5,
@@ -184,7 +184,7 @@
   },
   {
     "source": "wind-alice/alicemarket",
-    "installs": 240192,
+    "installs": 240864,
     "week": 11719,
     "top_skill": "wind-mcp-skill",
     "skills_n": 3,
@@ -197,7 +197,7 @@
   },
   {
     "source": "sentry/dev",
-    "installs": 186376,
+    "installs": 187163,
     "week": 7997,
     "top_skill": "sentry-cli",
     "skills_n": 1,
@@ -208,7 +208,7 @@
   },
   {
     "source": "antibrow/anti-detect-browser-skills",
-    "installs": 152018,
+    "installs": 153173,
     "week": 8157,
     "top_skill": "anti-detect-browser",
     "skills_n": 3,
@@ -221,7 +221,7 @@
   },
   {
     "source": "shadcn-ui/ui",
-    "installs": 139996,
+    "installs": 141003,
     "week": 9348,
     "top_skill": "shadcn",
     "skills_n": 2,
@@ -233,7 +233,7 @@
   },
   {
     "source": "better-auth/skills",
-    "installs": 131013,
+    "installs": 131172,
     "week": 2016,
     "top_skill": "better-auth-best-practices",
     "skills_n": 7,
@@ -250,7 +250,7 @@
   },
   {
     "source": "liarjsdev/liarjs-skills",
-    "installs": 116733,
+    "installs": 117848,
     "week": 7846,
     "top_skill": "browser-fingerprint-audit",
     "skills_n": 4,
@@ -258,13 +258,13 @@
     "skills": [
       "browser-fingerprint-audit",
       "playwright-stealth-verify",
-      "fingerprint-ci-gate",
-      "fingerprint-failure-triage"
+      "fingerprint-failure-triage",
+      "fingerprint-ci-gate"
     ]
   },
   {
     "source": "browser-act/skills",
-    "installs": 108384,
+    "installs": 108393,
     "week": 44,
     "top_skill": "browser-act",
     "skills_n": 2,
@@ -275,24 +275,8 @@
     ]
   },
   {
-    "source": "stripe/ai",
-    "installs": 101667,
-    "week": 2395,
-    "top_skill": "stripe-best-practices",
-    "skills_n": 6,
-    "official": true,
-    "skills": [
-      "stripe-best-practices",
-      "upgrade-stripe",
-      "stripe-projects",
-      "stripe-directory",
-      "connect-recommend",
-      "stripe-docs"
-    ]
-  },
-  {
     "source": "intellectronica/agent-skills",
-    "installs": 101667,
+    "installs": 102145,
     "week": 5232,
     "top_skill": "notion-api",
     "skills_n": 8,
@@ -306,6 +290,22 @@
       "beautiful-mermaid",
       "markdown-converter",
       "todoist-api"
+    ]
+  },
+  {
+    "source": "stripe/ai",
+    "installs": 101804,
+    "week": 2395,
+    "top_skill": "stripe-best-practices",
+    "skills_n": 6,
+    "official": true,
+    "skills": [
+      "stripe-best-practices",
+      "upgrade-stripe",
+      "stripe-projects",
+      "stripe-directory",
+      "connect-recommend",
+      "stripe-docs"
     ]
   }
 ]

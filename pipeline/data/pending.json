@@ -705,5 +705,12 @@
     "kind": "skills-npx",
     "desc": "Open source AI code review for coding agents. A separate reviewer checks every change your agent writes before you push, in Claude Code, Codex, Cursor and Cline. No account or key of its own.",
     "first_seen": "2026-10-31"
+  },
+  {
+    "full_name": "ccplugins/awesome-claude-code-plugins",
+    "stars": 1000,
+    "kind": "plugin",
+    "desc": "Awesome Claude Code plugins — a curated list of slash commands, subagents, MCP servers, and hooks for Claude Code",
+    "first_seen": "2026-11-08"
   }
 ]
