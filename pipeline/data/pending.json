@@ -63,6 +63,13 @@
     "first_seen": "2026-10-31"
   },
   {
+    "full_name": "obsidianmd/obsidian-skills",
+    "stars": 51717,
+    "kind": "plugin",
+    "desc": "Agent skills for Obsidian. Teach your agent to use Obsidian CLI and open formats including Markdown, Bases, JSON Canvas.",
+    "first_seen": "2026-11-12"
+  },
+  {
     "full_name": "luongnv89/claude-howto",
     "stars": 46232,
     "kind": "mcp-http",
@@ -158,6 +165,13 @@
     "stars": 25239,
     "kind": "plugin",
     "desc": "Open-source 3D architectural editor with a local CLI, MCP tools, and practical workflows for humans and AI agents.",
+    "first_seen": "2026-10-31"
+  },
+  {
+    "full_name": "czlonkowski/n8n-mcp",
+    "stars": 23246,
+    "kind": "mcp-http",
+    "desc": "MCP server that lets Claude, ChatGPT, Cursor and other AI assistants operate n8n: debug, edit, validate, test and build workflows on any n8n instance",
     "first_seen": "2026-10-31"
   },
   {
@@ -278,6 +292,13 @@
     "kind": "plugin",
     "desc": "Mobile MCP: let AI agents drive your iOS and Android apps. MCP server for simulators, emulators and real devices. Works with Claude Code, Codex, Cursor and any MCP client.",
     "first_seen": "2026-10-31"
+  },
+  {
+    "full_name": "nexu-io/openmotion",
+    "stars": 9525,
+    "kind": "skills-npx",
+    "desc": "The open-source full-stack studio for Opus 5.5 motion video. Reverse engineering for any video. Code video with HTML: recreate, edit and render. BYOA + BYOK · Motion.md · Images, Video, Music & Voice.",
+    "first_seen": "2026-11-12"
   },
   {
     "full_name": "homarr-labs/dashboard-icons",
@@ -635,6 +656,13 @@
     "kind": "plugin",
     "desc": "Art and animation, written as code. Illustrations, loops, interactive web art, launch-videos and scored films in dozens of styles, identical on every render.",
     "first_seen": "2026-11-11"
+  },
+  {
+    "full_name": "DozenTwelve/Papermorph",
+    "stars": 1580,
+    "kind": "skills-npx",
+    "desc": "An AI skill that turns books into animated, narrated, interactive web experiences",
+    "first_seen": "2026-11-12"
   },
   {
     "full_name": "caru-ini/stack-diagram",
