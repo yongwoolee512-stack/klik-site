@@ -1,5 +1,6 @@
 {
   "count": 220,
+  "pending": 27,
   "items": [
     {
       "id": "pptx",
@@ -36,21 +37,15 @@
           "title": "Video by vibe.trender"
         },
         {
-          "url": "https://www.youtube.com/shorts/P-q1po06rrU",
-          "by": "TechMonster",
-          "title": "Claude Gave Me PPT Code Instead of a PowerPoint! How to Convert PPTXGenJS to PPTX 🚀",
-          "sum": {
-            "f": "Claude가 준 JS 코드 파일을 진짜 PPT 파일로 바꿔요",
-            "e": "코드로 받은 발표자료를 PPT로 열어요",
-            "b": "Claude가 PPT 대신 코드만 줌",
-            "a": "터미널 명령으로 PPT 파일 완성"
-          }
+          "url": "https://www.youtube.com/shorts/R5YuHkJPBhA",
+          "by": "Code, Coffee and Chill",
+          "title": "Who's making Lola's birthday slides? Let Claude help | pptx skill"
         }
       ],
-      "stars": 195344,
-      "pushed_at": "2026-11-14T21:52:49Z",
-      "stars30": 10363,
-      "stars30_days": 16,
+      "stars": 196109,
+      "pushed_at": "2026-11-16T14:22:50Z",
+      "stars30": 11128,
+      "stars30_days": 18,
       "trust": {
         "grade": "verified",
         "reasons": [
@@ -58,8 +53,8 @@
         ]
       },
       "pick": "말로 설명하면 PPT가 나옵니다. 비개발자가 Claude Code를 처음 켤 이유로 이만한 게 없음.",
-      "sh_installs": 256059,
-      "sh_week": 4397,
+      "sh_installs": 257148,
+      "sh_week": 4395,
       "readme_ko": [
         {
           "h": "스킬이란?",
@@ -127,18 +122,18 @@
           }
         }
       ],
-      "stars": 195344,
-      "pushed_at": "2026-11-14T21:52:49Z",
-      "stars30": 10363,
-      "stars30_days": 16,
+      "stars": 196109,
+      "pushed_at": "2026-11-16T14:22:50Z",
+      "stars30": 11128,
+      "stars30_days": 18,
       "trust": {
         "grade": "verified",
         "reasons": [
           "편집팀 검수"
         ]
       },
-      "sh_installs": 199489,
-      "sh_week": 3758,
+      "sh_installs": 200383,
+      "sh_week": 3667,
       "readme_ko": [
         {
           "h": "스킬이란?",
@@ -194,17 +189,6 @@
       "status": "published",
       "videos": [
         {
-          "url": "https://www.youtube.com/shorts/NZL2U1zh5D0",
-          "by": "GuideGrid",
-          "title": "How to Generate DOCX Documents with Claude AI | Make DOCX Files Look Professional",
-          "sum": {
-            "f": "Claude에게 말로 시켜 깔끔한 Word 문서를 만들어요",
-            "e": "디자인 몰라도 Word 문서가 나와요",
-            "b": "문서 디자인이 막막함",
-            "a": "말로 시키면 Word 파일 완성"
-          }
-        },
-        {
           "url": "https://www.youtube.com/shorts/6YF94M6l6K0",
           "by": "Cognitive Capital",
           "title": "Generate Real .docx Files in Claude: Reports, Proposals, Redlines | Claude Master",
@@ -214,20 +198,31 @@
             "b": "워드를 열고 서식을 직접 맞춤",
             "a": "설명만 하면 워드 파일 다운로드"
           }
+        },
+        {
+          "url": "https://www.youtube.com/shorts/NZL2U1zh5D0",
+          "by": "GuideGrid",
+          "title": "How to Generate DOCX Documents with Claude AI | Make DOCX Files Look Professional",
+          "sum": {
+            "f": "Claude에게 말로 시켜 깔끔한 Word 문서를 만들어요",
+            "e": "디자인 몰라도 Word 문서가 나와요",
+            "b": "문서 디자인이 막막함",
+            "a": "말로 시키면 Word 파일 완성"
+          }
         }
       ],
-      "stars": 195344,
-      "pushed_at": "2026-11-14T21:52:49Z",
-      "stars30": 10363,
-      "stars30_days": 16,
+      "stars": 196109,
+      "pushed_at": "2026-11-16T14:22:50Z",
+      "stars30": 11128,
+      "stars30_days": 18,
       "trust": {
         "grade": "verified",
         "reasons": [
           "편집팀 검수"
         ]
       },
-      "sh_installs": 219217,
-      "sh_week": 4006,
+      "sh_installs": 220152,
+      "sh_week": 3804,
       "readme_ko": [
         {
           "h": "스킬이란?",
@@ -283,6 +278,11 @@
       "status": "published",
       "videos": [
         {
+          "url": "https://www.youtube.com/shorts/VwKrOXC8ozI",
+          "by": "JVI Mobile Marketing",
+          "title": "Claude builds the whole PDF by code"
+        },
+        {
           "url": "https://www.youtube.com/shorts/_lQ3CZq6oxM",
           "by": "Carson Yan",
           "title": "Don't upload PDFs to Claude, Use this instead!",
@@ -294,34 +294,23 @@
           }
         },
         {
-          "url": "https://www.youtube.com/shorts/SpVgQ4m3m7s",
-          "by": "100x Engineers",
-          "title": "Don't upload PDFs to Claude, Use this instead !",
-          "sum": {
-            "f": "PDF·워드·엑셀을 깔끔한 텍스트로 바꿔 Claude에 넘겨요",
-            "e": "토큰 사용량이 최대 70% 줄어요",
-            "b": "PDF를 그대로 올려 토큰 낭비",
-            "a": "텍스트로 바꿔 올려 토큰 절약"
-          }
-        },
-        {
-          "url": "https://www.youtube.com/shorts/tFiZUPzPNck",
-          "by": "Stefcode AI",
-          "title": "The Claude skill that turns your PDF books into something you can ask"
+          "url": "https://www.youtube.com/shorts/nLhPhh2wAgY",
+          "by": "Sebastian Hardy | AI Marketing",
+          "title": "Stop Uploading PDFs To Claude Like This"
         }
       ],
-      "stars": 195344,
-      "pushed_at": "2026-11-14T21:52:49Z",
-      "stars30": 10363,
-      "stars30_days": 16,
+      "stars": 196109,
+      "pushed_at": "2026-11-16T14:22:50Z",
+      "stars30": 11128,
+      "stars30_days": 18,
       "trust": {
         "grade": "verified",
         "reasons": [
           "편집팀 검수"
         ]
       },
-      "sh_installs": 230143,
-      "sh_week": 4152,
+      "sh_installs": 231154,
+      "sh_week": 4309,
       "readme_ko": [
         {
           "h": "스킬이란?",
@@ -382,10 +371,10 @@
           "title": "Claude로 예쁜 카페 예약 페이지 만들기 | frontend-design #Shorts"
         }
       ],
-      "stars": 155792,
-      "pushed_at": "2026-11-15T23:10:55Z",
-      "stars30": 1871,
-      "stars30_days": 16,
+      "stars": 155933,
+      "pushed_at": "2026-11-17T02:01:24Z",
+      "stars30": 2012,
+      "stars30_days": 18,
       "trust": {
         "grade": "verified",
         "reasons": [
@@ -393,7 +382,7 @@
         ]
       },
       "sh_installs": 63897,
-      "sh_week": 177,
+      "sh_week": 0,
       "readme_ko": [
         {
           "h": "이 저장소는?",
@@ -496,18 +485,18 @@
           "title": "Turn Figma Designs Into Working Code With Claude Code"
         }
       ],
-      "stars": 2195,
-      "pushed_at": "2026-11-13T17:32:21Z",
-      "stars30": 65,
-      "stars30_days": 16,
+      "stars": 2200,
+      "pushed_at": "2026-11-16T17:12:20Z",
+      "stars30": 70,
+      "stars30_days": 18,
       "trust": {
         "grade": "verified",
         "reasons": [
           "편집팀 검수"
         ]
       },
-      "sh_installs": 10021,
-      "sh_week": 320,
+      "sh_installs": 10082,
+      "sh_week": 337,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -579,15 +568,21 @@
           }
         },
         {
-          "url": "https://www.youtube.com/shorts/TQ_nKiVTzE4",
-          "by": "Design with May",
-          "title": "How to Install Claude Skills from GitHub (No Code)"
+          "url": "https://www.youtube.com/shorts/9UYqW3h_F5A",
+          "by": "Isabelle Hanson | Gold St Solutions | Claude",
+          "title": "How to install Github skills into Claude Cowork",
+          "sum": {
+            "f": "GitHub의 스킬을 zip으로 받아 Claude에 올려요",
+            "e": "남이 만든 스킬을 바로 설치해요",
+            "b": "스킬을 직접 만들려 시간 소모",
+            "a": "GitHub 스킬을 올려 바로 사용"
+          }
         }
       ],
-      "stars": 34496,
-      "pushed_at": "2026-11-15T23:49:59Z",
-      "stars30": 414,
-      "stars30_days": 16,
+      "stars": 34531,
+      "pushed_at": "2026-11-16T23:13:57Z",
+      "stars30": 449,
+      "stars30_days": 18,
       "trust": {
         "grade": "verified",
         "reasons": [
@@ -657,15 +652,15 @@
           }
         },
         {
-          "url": "https://www.youtube.com/shorts/cICJarjZ_LE",
-          "by": "Tilo’sTechJourney🚀",
-          "title": "Claude Code + Playwright Setup for QA Engineers 🚀 | Day 4 #Shorts #claudecode #claude"
+          "url": "https://www.youtube.com/shorts/-EJaCjxwdh8",
+          "by": "Nick Zick",
+          "title": "Claude Code Tests Your Site by Itself — Playwright MCP 🐞 #shorts"
         }
       ],
-      "stars": 39689,
-      "pushed_at": "2026-11-15T20:56:47Z",
-      "stars30": 839,
-      "stars30_days": 16,
+      "stars": 39753,
+      "pushed_at": "2026-11-16T22:57:05Z",
+      "stars30": 903,
+      "stars30_days": 18,
       "trust": {
         "grade": "verified",
         "reasons": [
@@ -737,11 +732,6 @@
           }
         },
         {
-          "url": "https://www.youtube.com/shorts/rEsbZ46oQnE",
-          "by": "Pouya Saadeghi",
-          "title": "Generate daisyUI code with Claude and Context7 MCP server"
-        },
-        {
           "url": "https://www.youtube.com/shorts/yejRD0TyTTo",
           "by": "Jessica Wang",
           "title": "Context7 MCP Server #mcp #modelcontextprotocol #ai #llm #coding #development",
@@ -751,12 +741,17 @@
             "b": "AI가 옛 문서 기준으로 코드 작성",
             "a": "최신 문서를 참고해 코드 작성"
           }
+        },
+        {
+          "url": "https://www.youtube.com/shorts/uCgBSgWQyGo",
+          "by": "ToolDrop",
+          "title": "Claude Code Using Old APIs? Add This FREE MCP Server (Context7)"
         }
       ],
-      "stars": 64876,
-      "pushed_at": "2026-11-15T22:07:31Z",
-      "stars30": 926,
-      "stars30_days": 16,
+      "stars": 64940,
+      "pushed_at": "2026-11-16T16:42:40Z",
+      "stars30": 990,
+      "stars30_days": 18,
       "trust": {
         "grade": "verified",
         "reasons": [
@@ -764,8 +759,8 @@
         ]
       },
       "pick": "AI가 구버전 코드를 알려 주는 문제를 한 번에 해결. 설치 뒤 설정 없음.",
-      "sh_installs": 8701,
-      "sh_week": 334,
+      "sh_installs": 8746,
+      "sh_week": 275,
       "readme_ko": [
         {
           "h": "없으면 어떻게 되나 (원문 Without Context7)",
@@ -838,10 +833,10 @@
           }
         }
       ],
-      "stars": 155792,
-      "pushed_at": "2026-11-15T23:10:55Z",
-      "stars30": 1871,
-      "stars30_days": 16,
+      "stars": 155933,
+      "pushed_at": "2026-11-17T02:01:24Z",
+      "stars30": 2012,
+      "stars30_days": 18,
       "trust": {
         "grade": "verified",
         "reasons": [
@@ -849,7 +844,7 @@
         ]
       },
       "sh_installs": 63897,
-      "sh_week": 177,
+      "sh_week": 0,
       "readme_ko": [
         {
           "h": "이 저장소는?",
@@ -901,26 +896,20 @@
           "title": "We just shipped an official Claude Connector for Supabase"
         },
         {
-          "url": "https://www.youtube.com/shorts/qllbXWC9E5E",
-          "by": "Skills For AI",
-          "title": "Connect your Supabase database to Claude Code with the Supabase MCP server"
+          "url": "https://www.youtube.com/shorts/RsWJbYWEv9A",
+          "by": "Bouye | AI",
+          "title": "Add a Database and Login to Your AI App for Free (Supabase) #claudecode"
         },
         {
-          "url": "https://www.youtube.com/shorts/IuSlnuIFrc8",
-          "by": "Noah Brandes",
-          "title": "How to give Claude Code database access #claude #supabase #programming #claudecode #ai #claude",
-          "sum": {
-            "f": "Supabase를 연결해 데이터베이스와 로그인을 만들어줘요",
-            "e": "DB와 로그인 기능을 맡겨요",
-            "b": "백엔드·로그인 만드는 법을 모름",
-            "a": "Claude가 DB와 로그인까지 만듦"
-          }
+          "url": "https://www.youtube.com/shorts/L_MfmeZM7Fk",
+          "by": "Ahmad | AI Automation",
+          "title": "Supabase MCP in Claude Code: How to Connect It"
         }
       ],
-      "stars": 3014,
-      "pushed_at": "2026-11-14T06:13:35Z",
-      "stars30": 30,
-      "stars30_days": 16,
+      "stars": 3016,
+      "pushed_at": "2026-11-16T15:09:34Z",
+      "stars30": 32,
+      "stars30_days": 18,
       "trust": {
         "grade": "verified",
         "reasons": [
@@ -988,14 +977,14 @@
           }
         },
         {
+          "url": "https://www.youtube.com/shorts/kA-tfNLGf9A",
+          "by": "Mindly Nova",
+          "title": "How to Deploy Claude Code Project On Vercel - Step by Step"
+        },
+        {
           "url": "https://www.youtube.com/shorts/N8IBEJw5DwQ",
           "by": "Digital Vlad",
           "title": "Deploy a Vibe-Coded App to Vercel in 5 Minutes (Claude Code Did It For Me)"
-        },
-        {
-          "url": "https://www.youtube.com/shorts/Dk05Y8A5yKA",
-          "by": "Nick Maciel | AI Automations",
-          "title": "I Built a Full Video Game in Exactly 5 Minutes Using Claude Code & Vercel 🚀🎮"
         }
       ],
       "trust": {
@@ -1062,6 +1051,11 @@
           }
         },
         {
+          "url": "https://www.youtube.com/shorts/y1TEjN0buEg",
+          "by": "Repo Drop",
+          "title": "Cloudflare's Free Security Auditor for Your Code (71k-Star Claude Code Skill) #shorts"
+        },
+        {
           "url": "https://www.youtube.com/shorts/ASye5MLsLSA",
           "by": "Cloudflare Developers",
           "title": "Claude Managed Agents Can Now Run on Cloudflare",
@@ -1071,17 +1065,12 @@
             "b": "에이전트에 비밀키를 직접 줘야 함",
             "a": "키 노출 없이 에이전트 실행"
           }
-        },
-        {
-          "url": "https://www.youtube.com/shorts/Azh9wn9upZo",
-          "by": "Pankaj Pahuja",
-          "title": "Give Claude Code This Free Security Audit Skill From Cloudflare"
         }
       ],
-      "stars": 4468,
+      "stars": 4472,
       "pushed_at": "2026-10-22T15:21:16Z",
-      "stars30": 36,
-      "stars30_days": 16,
+      "stars30": 40,
+      "stars30_days": 18,
       "trust": {
         "grade": "verified",
         "reasons": [
@@ -1140,22 +1129,6 @@
       "status": "published",
       "videos": [
         {
-          "url": "https://www.youtube.com/shorts/45hPRdfDEsI",
-          "by": "Claude",
-          "title": "How Notion built with Claude Managed Agents",
-          "sum": {
-            "f": "Notion 안에서 Claude 에이전트가 여러 작업을 대신 처리해요",
-            "e": "맡겨둔 작업이 알아서 끝나 있어요",
-            "b": "프로토타입 30개를 하나씩 작업",
-            "a": "작업을 맡기고 간식 먹고 오면 완성"
-          }
-        },
-        {
-          "url": "https://www.youtube.com/shorts/iC9oENqdIUA",
-          "by": "Andrew Tsai's Tips",
-          "title": "How to Connect Claude to Notion for Free (No Notion AI subscription)"
-        },
-        {
           "url": "https://www.youtube.com/shorts/3vv14e4XzuM",
           "by": "Elisa",
           "title": "How to use Notion with Claude",
@@ -1165,12 +1138,22 @@
             "b": "메일에서 할 일을 직접 찾음",
             "a": "Notion에 할 일 목록이 생김"
           }
+        },
+        {
+          "url": "https://www.youtube.com/shorts/vHeOAE9i2lg",
+          "by": "Codemon",
+          "title": "Connect Claude to Notion!"
+        },
+        {
+          "url": "https://www.youtube.com/shorts/-4dCtGRmmPg",
+          "by": "Meiracle & Co.",
+          "title": "Using Claude & Notion for your Content Calendar | Day 14/30 #aitools"
         }
       ],
-      "stars": 4710,
+      "stars": 4715,
       "pushed_at": "2026-10-29T16:10:22Z",
-      "stars30": 24,
-      "stars30_days": 16,
+      "stars30": 29,
+      "stars30_days": 18,
       "trust": {
         "grade": "verified",
         "reasons": [
@@ -1239,20 +1222,14 @@
           "title": "Claude for Google Workspace™"
         },
         {
-          "url": "https://www.youtube.com/shorts/H__L1DqWw6c",
-          "by": "Guide Hub (2026 WORKING GUIDES)",
-          "title": "How To Connect Claude With Google Workspace (𝟮𝟬𝟮𝟲) | 100% WORKS | NO Yapping, To The Point & EASY",
-          "sum": {
-            "f": "Claude에 Gmail·Drive·캘린더를 연결하는 방법을 보여줘요",
-            "e": "내 메일·문서·일정을 Claude와 함께 쓸 수 있어요",
-            "b": "Claude가 내 구글 자료를 모름",
-            "a": "연결 후 Claude에서 바로 사용"
-          }
-        },
-        {
           "url": "https://www.youtube.com/shorts/0EixbJlv324",
           "by": "JustBOZ",
           "title": "How To Set Up Google Workspace MCP In Claude Code - Full Guide"
+        },
+        {
+          "url": "https://www.youtube.com/shorts/dMpq3srMJD8",
+          "by": "The AI Drill",
+          "title": "Claude Inside Google Workspace Changes Everything"
         }
       ],
       "trust": {
@@ -1302,10 +1279,10 @@
         "앱마다 허용 여부를 묻습니다."
       ],
       "status": "published",
-      "stars": 155792,
-      "pushed_at": "2026-11-15T23:10:55Z",
-      "stars30": 1871,
-      "stars30_days": 16,
+      "stars": 155933,
+      "pushed_at": "2026-11-17T02:01:24Z",
+      "stars30": 2012,
+      "stars30_days": 18,
       "trust": {
         "grade": "verified",
         "reasons": [
@@ -1313,7 +1290,7 @@
         ]
       },
       "sh_installs": 63897,
-      "sh_week": 177,
+      "sh_week": 0,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -1379,15 +1356,15 @@
           }
         },
         {
-          "url": "https://www.youtube.com/shorts/3xApvDImNxE",
-          "by": "Extreme Guides",
-          "title": "How to integrate Stripe using Claude Code [FULL GUIDE]"
+          "url": "https://www.youtube.com/shorts/WAow8uhVNdo",
+          "by": "Brooke Wright - AI Strategist + Educator",
+          "title": "Build a Booking Page with Stripe Payments Using Claude Code"
         }
       ],
-      "stars": 2064,
-      "pushed_at": "2026-11-15T00:33:34Z",
-      "stars30": 59,
-      "stars30_days": 16,
+      "stars": 2068,
+      "pushed_at": "2026-11-17T00:30:44Z",
+      "stars30": 63,
+      "stars30_days": 18,
       "trust": {
         "grade": "verified",
         "reasons": [
@@ -1446,11 +1423,6 @@
       "status": "published",
       "videos": [
         {
-          "url": "https://www.youtube.com/shorts/1Os4-vAhj2I",
-          "by": "Sentry",
-          "title": "Sentry Claude Code Plugin and Skills"
-        },
-        {
           "url": "https://www.youtube.com/shorts/gtDrd_s8vWg",
           "by": "Sentry",
           "title": "Sentry + Claude Agents: Automatic Bug Fixes from Root Cause to PR",
@@ -1462,15 +1434,20 @@
           }
         },
         {
+          "url": "https://www.youtube.com/shorts/1Os4-vAhj2I",
+          "by": "Sentry",
+          "title": "Sentry Claude Code Plugin and Skills"
+        },
+        {
           "url": "https://www.youtube.com/shorts/hW2LdNg_Q18",
           "by": "Puff | AI coding tips",
           "title": "Connect Claude Code to Sentry, GitHub and more (MCP) #Shorts"
         }
       ],
-      "stars": 963,
-      "pushed_at": "2026-11-15T19:32:51Z",
-      "stars30": 14,
-      "stars30_days": 16,
+      "stars": 967,
+      "pushed_at": "2026-11-17T01:26:41Z",
+      "stars30": 18,
+      "stars30_days": 18,
       "trust": {
         "grade": "verified",
         "reasons": [
@@ -1578,9 +1555,9 @@
           "title": "How to Install and Use PonyTail in Claude Code"
         },
         {
-          "url": "https://www.youtube.com/shorts/ChFTSqJpQpo",
-          "by": "The Code City",
-          "title": "How to Install Ponytail on Claude Code Easily (2026)"
+          "url": "https://www.youtube.com/shorts/3-fS0kCd5oo",
+          "by": "Chase AI",
+          "title": "Debunking the Ponytail Benchmarks"
         },
         {
           "url": "https://www.youtube.com/shorts/bMfUtbD-EDU",
@@ -1594,13 +1571,13 @@
           }
         }
       ],
-      "stars": 191441,
+      "stars": 192235,
       "pushed_at": "2026-10-29T11:59:31Z",
-      "stars30": 10776,
-      "stars30_days": 16,
+      "stars30": 11570,
+      "stars30_days": 18,
       "pick": "설치 뒤 손 댈 게 없는데 코드 양이 반으로 줄고 테스트는 더 붙습니다. 편집팀이 직접 써 보고 가장 체감이 컸던 도구.",
-      "sh_installs": 131375,
-      "sh_week": 9283,
+      "sh_installs": 133006,
+      "sh_week": 8027,
       "readme_ko": [
         {
           "h": "포니테일이란?",
@@ -1707,13 +1684,13 @@
           "title": "Claude Code Superpowers Skills just changed the game for developers!"
         }
       ],
-      "stars": 318067,
+      "stars": 318727,
       "pushed_at": "2026-11-03T23:24:58Z",
-      "stars30": 8961,
-      "stars30_days": 16,
+      "stars30": 9621,
+      "stars30_days": 18,
       "pick": "\"뭘 만들지\"부터 묻게 만드는 습관 하나가 결과물 품질을 바꿉니다. 공식 마켓 등재.",
-      "sh_installs": 430581,
-      "sh_week": 8117,
+      "sh_installs": 432101,
+      "sh_week": 8169,
       "readme_ko": [
         {
           "h": "슈퍼파워란?",
@@ -1794,11 +1771,6 @@
       ],
       "videos": [
         {
-          "url": "https://www.youtube.com/shorts/H622ingVW48",
-          "by": "Hungry Labs",
-          "title": "claude-mem: Persistent Memory for Claude Code That Survives Every Session"
-        },
-        {
           "url": "https://www.youtube.com/shorts/hV_jbznpvYc",
           "by": "Analytics Vidhya",
           "title": "Claude-Mem: Give Claude Code Persistent Memory (Free & Open Source)",
@@ -1810,17 +1782,28 @@
           }
         },
         {
-          "url": "https://www.youtube.com/shorts/lTsHJAL5V1M",
-          "by": "AI Dev Minute",
-          "title": "Give Claude Code A Memory Across Sessions (claude-mem, 100k Stars)"
+          "url": "https://www.youtube.com/shorts/H622ingVW48",
+          "by": "Hungry Labs",
+          "title": "claude-mem: Persistent Memory for Claude Code That Survives Every Session"
+        },
+        {
+          "url": "https://www.youtube.com/shorts/VRqW0d8-dIU",
+          "by": "InsiderForce",
+          "title": "Someone just gave Claude Code permanent memory and It's Free - Claude-mem",
+          "sum": {
+            "f": "Claude-mem이 지난 작업을 기억해 이어가게 해줘요",
+            "e": "다음 세션에서 이어서 작업해요",
+            "b": "터미널을 닫으면 내용을 잊음",
+            "a": "어제 하던 곳에서 바로 이어감"
+          }
         }
       ],
-      "stars": 117367,
-      "pushed_at": "2026-11-15T22:56:53Z",
-      "stars30": 11944,
-      "stars30_days": 16,
-      "sh_installs": 9474,
-      "sh_week": 174,
+      "stars": 117724,
+      "pushed_at": "2026-11-17T01:53:58Z",
+      "stars30": 12301,
+      "stars30_days": 18,
+      "sh_installs": 9503,
+      "sh_week": 188,
       "readme_ko": [
         {
           "h": "클로드 기억이란?",
@@ -1918,13 +1901,13 @@
           "title": "Caveman Claude Code Is Meta (This Study Shows Proves it)"
         }
       ],
-      "stars": 120453,
-      "pushed_at": "2026-11-15T07:19:16Z",
-      "stars30": 4220,
-      "stars30_days": 16,
+      "stars": 120782,
+      "pushed_at": "2026-11-16T07:30:16Z",
+      "stars30": 4549,
+      "stars30_days": 18,
       "pick": "요금이 눈에 띄게 줄어듭니다. 코드는 안 건드리니 부작용이 없음.",
-      "sh_installs": 628709,
-      "sh_week": 11908,
+      "sh_installs": 630940,
+      "sh_week": 12201,
       "readme_ko": [
         {
           "h": "왜 많은 토큰, 적은 토큰도 되는데",
@@ -2028,12 +2011,12 @@
           "title": "Increase Your Claude Code Context Window with Context Mode"
         }
       ],
-      "stars": 34141,
-      "pushed_at": "2026-11-15T22:57:44Z",
-      "stars30": 1236,
-      "stars30_days": 16,
+      "stars": 34189,
+      "pushed_at": "2026-11-16T05:50:47Z",
+      "stars30": 1284,
+      "stars30_days": 18,
       "sh_installs": 3017,
-      "sh_week": 80,
+      "sh_week": 23,
       "readme_ko": [
         {
           "h": "문제: 컨텍스트의 '나머지 절반'",
@@ -2089,17 +2072,6 @@
       "status": "published",
       "videos": [
         {
-          "url": "https://www.youtube.com/shorts/u_xCcR2g_oc",
-          "by": "Sai Santosh Kumar (SSK)",
-          "title": "GStack Claude Code setup with 23 commands",
-          "sum": {
-            "f": "개발팀처럼 일하게 하는 명령 23개 묶음이에요",
-            "e": "막막한 시작을 명령어로 도와줘요",
-            "b": "빈 화면 앞에서 막막함",
-            "a": "명령어가 질문하며 작업을 안내"
-          }
-        },
-        {
           "url": "https://www.youtube.com/shorts/K2Ct0qQ130I",
           "by": "Nathan Hodgson",
           "title": "gstack turns Claude Code into a full team of 23 specialist agents."
@@ -2114,14 +2086,25 @@
             "b": "한 프롬프트에 모든 작업 뒤섞임",
             "a": "명령어로 단계별 작업 분리"
           }
+        },
+        {
+          "url": "https://www.youtube.com/shorts/u_xCcR2g_oc",
+          "by": "Sai Santosh Kumar (SSK)",
+          "title": "GStack Claude Code setup with 23 commands",
+          "sum": {
+            "f": "개발팀처럼 일하게 하는 명령 23개 묶음이에요",
+            "e": "막막한 시작을 명령어로 도와줘요",
+            "b": "빈 화면 앞에서 막막함",
+            "a": "명령어가 질문하며 작업을 안내"
+          }
         }
       ],
-      "stars": 141692,
-      "pushed_at": "2026-11-15T17:26:18Z",
-      "stars30": 3452,
-      "stars30_days": 16,
-      "sh_installs": 24809,
-      "sh_week": 329,
+      "stars": 141825,
+      "pushed_at": "2026-11-16T19:18:46Z",
+      "stars30": 3585,
+      "stars30_days": 18,
+      "sh_installs": 24844,
+      "sh_week": 192,
       "readme_ko": [
         {
           "h": "지스택이란?",
@@ -2182,6 +2165,16 @@
           "by": "lazy_owen (게으른 빌더)"
         },
         {
+          "url": "https://www.youtube.com/shorts/lcCOYrdb2Jk",
+          "by": "Skills For AI",
+          "title": "Graphify for Claude Code: install, build, ask (3-minute guide)"
+        },
+        {
+          "url": "https://www.youtube.com/shorts/6h-ZH_W5YKM",
+          "by": "Graphify Labs ",
+          "title": "Give Claude a Map of Your Codebase with Graphify"
+        },
+        {
           "url": "https://www.youtube.com/shorts/A6lwT0Vd0fE",
           "by": "Charlie Automates",
           "title": "Everything You Need To Know About Graphify For Claude Code",
@@ -2191,24 +2184,14 @@
             "b": "Claude가 grep으로 자료를 훑음",
             "a": "자료 관계도를 만들어 활용"
           }
-        },
-        {
-          "url": "https://www.youtube.com/shorts/40Acig9vAwo",
-          "by": "Jan Sargsyan",
-          "title": "The Truth About Graphify and Claude Code Tokens"
-        },
-        {
-          "url": "https://www.youtube.com/shorts/GU2suVxqI1o",
-          "by": "TRYVOLT",
-          "title": "Graphify: Turn Your Project Into a Knowledge Graph for Claude Code"
         }
       ],
-      "stars": 148409,
-      "pushed_at": "2026-11-15T20:17:32Z",
-      "stars30": 8395,
-      "stars30_days": 15,
-      "sh_installs": 14055,
-      "sh_week": 981,
+      "stars": 149093,
+      "pushed_at": "2026-11-16T17:34:46Z",
+      "stars30": 9079,
+      "stars30_days": 17,
+      "sh_installs": 14221,
+      "sh_week": 910,
       "installs": 0,
       "readme_ko": [
         {
@@ -2274,25 +2257,25 @@
           "by": "lazy_owen (게으른 빌더)"
         },
         {
-          "url": "https://www.youtube.com/shorts/KG_XJAzK7xE",
-          "by": "Arty | Free AI Dev Tools",
-          "title": "Headroom launches tool to cut AI token usage by up to 95% with no loss #AI #AITools #OpenSource"
+          "url": "https://www.youtube.com/shorts/rtkDoDqHkk0",
+          "by": "ResultKit",
+          "title": "Headroom AI for Claude Code: what it really saved me"
+        },
+        {
+          "url": "https://www.youtube.com/shorts/CxWZYzq2zsQ",
+          "by": "Trending Open Source Projects",
+          "title": "headroom — Compress LLM context, save tokens and costs"
         },
         {
           "url": "https://www.youtube.com/shorts/p1x2HYWW99Q",
           "by": "AI Experiments in 60s",
           "title": "Set up Headroom with Claude Code in 2 steps"
-        },
-        {
-          "url": "https://www.youtube.com/shorts/XoaJgiMsJYs",
-          "by": "Jimenez K.",
-          "title": "Headroom: Codex + Claude Code limits on your Mac"
         }
       ],
-      "stars": 79747,
-      "pushed_at": "2026-11-15T15:29:28Z",
-      "stars30": 1276,
-      "stars30_days": 15,
+      "stars": 79856,
+      "pushed_at": "2026-11-17T02:47:28Z",
+      "stars30": 1385,
+      "stars30_days": 17,
       "installs": 0,
       "readme_ko": [
         {
@@ -2354,7 +2337,7 @@
       "stars": 0,
       "pushed_at": "2026-10-31T13:53:43Z",
       "stars30": 0,
-      "stars30_days": 15,
+      "stars30_days": 17,
       "installs": 0,
       "readme_ko": [
         {
@@ -2436,9 +2419,9 @@
         }
       ],
       "stars": 170,
-      "pushed_at": "2026-11-15T16:07:34Z",
+      "pushed_at": "2026-11-17T02:20:30Z",
       "stars30": 8,
-      "stars30_days": 16,
+      "stars30_days": 18,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -2493,17 +2476,6 @@
       "status": "published",
       "videos": [
         {
-          "url": "https://www.youtube.com/shorts/L0CvZM6xVnQ",
-          "by": "Porter Metrics",
-          "title": "How to connect Canva to Claude",
-          "sum": {
-            "f": "Claude에 Canva를 연결해 디자인을 만들게 해요",
-            "e": "발표자료·배너를 Claude 안에서 만들어요",
-            "b": "디자인을 직접 하나씩 제작",
-            "a": "Claude에서 바로 디자인 생성"
-          }
-        },
-        {
           "url": "https://www.youtube.com/shorts/zQGgNSETqe0",
           "by": "Sabrina Ramonov 🍄",
           "title": "Claude + Canva Is a Literal Cheat Code",
@@ -2512,6 +2484,17 @@
             "e": "Canva 디자인을 말로 만들어요",
             "b": "디자인 툴을 직접 열어 작업",
             "a": "Claude에 말하면 그래픽이 나옴"
+          }
+        },
+        {
+          "url": "https://www.youtube.com/shorts/L0CvZM6xVnQ",
+          "by": "Porter Metrics",
+          "title": "How to connect Canva to Claude",
+          "sum": {
+            "f": "Claude에 Canva를 연결해 디자인을 만들게 해요",
+            "e": "발표자료·배너를 Claude 안에서 만들어요",
+            "b": "디자인을 직접 하나씩 제작",
+            "a": "Claude에서 바로 디자인 생성"
           }
         },
         {
@@ -2527,9 +2510,9 @@
         }
       ],
       "stars": 164,
-      "pushed_at": "2026-11-11T02:34:40Z",
+      "pushed_at": "2026-11-17T01:53:24Z",
       "stars30": 24,
-      "stars30_days": 16,
+      "stars30_days": 18,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -2594,9 +2577,9 @@
           }
         },
         {
-          "url": "https://www.youtube.com/shorts/u8UsTrwRxVk",
-          "by": "Linda Cunningham",
-          "title": "Track your Claude Code project in Linear #Shorts"
+          "url": "https://www.youtube.com/shorts/SjVH561PBqA",
+          "by": "Rodney Gainous Jr",
+          "title": "Claude Code plus Cursor plus Linear"
         },
         {
           "url": "https://www.youtube.com/shorts/p86CUSke7-k",
@@ -2604,10 +2587,10 @@
           "title": "Manage Linear issues from Claude Code with the Linear MCP server"
         }
       ],
-      "stars": 47396,
-      "pushed_at": "2026-11-14T07:27:28Z",
-      "stars30": 2020,
-      "stars30_days": 16,
+      "stars": 47484,
+      "pushed_at": "2026-11-16T23:11:39Z",
+      "stars30": 2108,
+      "stars30_days": 18,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -2662,11 +2645,6 @@
           "title": "Easy Atlassian MCP Setup with Claude Code Documentation"
         },
         {
-          "url": "https://www.youtube.com/shorts/_luSzZEP8I0",
-          "by": "Kyle Chalmers | Data + AI",
-          "title": "Atlassian CLI vs MCP Which Method is Best When Working with Claude #jira #ai #claude #analytics"
-        },
-        {
           "url": "https://www.youtube.com/shorts/gfoCwgUCKQo",
           "by": "AiNow",
           "title": "Connect Atlassian (Jira) MCP to Claude Code in 2 Minutes (Part 2/3)",
@@ -2676,12 +2654,23 @@
             "b": "Jira와 Claude Code가 따로 놀음",
             "a": "명령 한 줄로 Jira 연결"
           }
+        },
+        {
+          "url": "https://www.youtube.com/shorts/67zFCVlPbqk",
+          "by": "Patchwave Tutorials",
+          "title": "How to Add Atlassian MCP to Claude Code | Atlassian MCP Claude Code Tutorial (2026)",
+          "sum": {
+            "f": "Claude에 Atlassian 계정을 연결하는 방법을 보여줘요",
+            "e": "Claude에서 Atlassian을 쓸 수 있어요",
+            "b": "Claude와 Atlassian이 따로 놂",
+            "a": "커넥터로 계정 연결 완료"
+          }
         }
       ],
-      "stars": 1165,
+      "stars": 1168,
       "pushed_at": "2026-11-14T00:09:44Z",
-      "stars30": 26,
-      "stars30_days": 16,
+      "stars30": 29,
+      "stars30_days": 18,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -2734,25 +2723,25 @@
       "status": "published",
       "videos": [
         {
-          "url": "https://www.youtube.com/shorts/8Uqf6ES434A",
-          "by": "Three Step Guide",
-          "title": "How To Connect Asana With Claude (2026) (Complete Guide)"
-        },
-        {
           "url": "https://www.youtube.com/shorts/zUa7eY_OmWg",
           "by": "This New Way Podcast - Aydin Mirzaee ",
           "title": "Claude & Asana: Master Your Projects with AI!"
         },
         {
-          "url": "https://www.youtube.com/shorts/UIWq6cMtdfM",
-          "by": "News from AI Land",
-          "title": "Organizing Tasks in Asana with Claude #asana   #taskmanagement   #productivitytips"
+          "url": "https://www.youtube.com/shorts/8Uqf6ES434A",
+          "by": "Three Step Guide",
+          "title": "How To Connect Asana With Claude (2026) (Complete Guide)"
+        },
+        {
+          "url": "https://www.youtube.com/shorts/9oiihyFWBJg",
+          "by": "Asana",
+          "title": "What's new in Asana | February 2026"
         }
       ],
-      "stars": 47396,
-      "pushed_at": "2026-11-14T07:27:28Z",
-      "stars30": 2020,
-      "stars30_days": 16,
+      "stars": 47484,
+      "pushed_at": "2026-11-16T23:11:39Z",
+      "stars30": 2108,
+      "stars30_days": 18,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -2802,6 +2791,11 @@
       "status": "published",
       "videos": [
         {
+          "url": "https://www.youtube.com/shorts/w-w37LWNcIk",
+          "by": "Adrian Twarog",
+          "title": "Claude MCP Server Tutorial using Zapier"
+        },
+        {
           "url": "https://www.youtube.com/shorts/vxni9W9D3NY",
           "by": "The AI Impact | AI Workflows - Daily",
           "title": "Claude + Zapier: One Connection, 8,000 Apps (Free Setup Guide)",
@@ -2822,17 +2816,12 @@
             "b": "도구마다 따로 옮겨 작업",
             "a": "Claude 한마디로 글·이미지·예약"
           }
-        },
-        {
-          "url": "https://www.youtube.com/shorts/bW3dEiE8Zmo",
-          "by": "@cc60",
-          "title": "Zapier MCP for Claude Code (60 sec) — 8,000 apps in one server"
         }
       ],
       "stars": 460,
       "pushed_at": "2026-11-11T19:34:43Z",
       "stars30": 8,
-      "stars30_days": 16,
+      "stars30_days": 18,
       "pick": "8,000개 앱을 말로 움직입니다. 카카오·네이버 계열까지 재피어로 연결돼 있으면 전부.",
       "readme_ko": [
         {
@@ -2886,31 +2875,25 @@
       "status": "published",
       "videos": [
         {
-          "url": "https://www.youtube.com/shorts/BSgzOfa8ifs",
-          "by": "Andrew Kroeze",
-          "title": "Claude Just Changed Airtable Forever (Nothing Will Be the Same)",
-          "sum": {
-            "f": "Claude로 일정을 짜고 할 일을 Airtable에 저장해요",
-            "e": "할 일 정리를 말로 시켜 끝내요",
-            "b": "할 일을 손으로 표에 입력",
-            "a": "말하면 프로젝트·할 일이 생성됨"
-          }
+          "url": "https://www.youtube.com/shorts/qbUI2nPnGmk",
+          "by": "Airtable",
+          "title": "Airtable + Claude AI: System of Record Explained"
         },
         {
-          "url": "https://www.youtube.com/shorts/22e6ikRGj78",
-          "by": "Learnology",
-          "title": "How to Build Airtable CRM Using Claude AI (2026 Guide)"
+          "url": "https://www.youtube.com/shorts/gE_assDF_0c",
+          "by": "Airtable",
+          "title": "3 Ways to Use Claude Directly in Your Airtable Base"
         },
         {
-          "url": "https://www.youtube.com/shorts/ewlybNIVyFI",
-          "by": "Learnology",
-          "title": "How to Manage Clients in Airtable Using Claude AI (2026 Guide)"
+          "url": "https://www.youtube.com/shorts/lzk6NciZgNs",
+          "by": "Airtable",
+          "title": "How Claude + Airtable Monitors Campaign Health and Sends Slack Status Updates"
         }
       ],
       "stars": 53,
       "pushed_at": "2026-07-21T18:20:59Z",
       "stars30": 0,
-      "stars30_days": 16,
+      "stars30_days": 18,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -2995,7 +2978,7 @@
       "stars": 13,
       "pushed_at": "2026-10-23T17:49:09Z",
       "stars30": 2,
-      "stars30_days": 16,
+      "stars30_days": 18,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -3042,10 +3025,10 @@
         "폰에서 봇한테 \"어제 하던 보고서 마저 써\"라고 보내면 됩니다."
       ],
       "status": "published",
-      "stars": 47396,
-      "pushed_at": "2026-11-14T07:27:28Z",
-      "stars30": 2020,
-      "stars30_days": 16,
+      "stars": 47484,
+      "pushed_at": "2026-11-16T23:11:39Z",
+      "stars30": 2108,
+      "stars30_days": 18,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -3098,11 +3081,6 @@
       "status": "published",
       "videos": [
         {
-          "url": "https://www.youtube.com/shorts/mcXMnLgFrpU",
-          "by": "안똔AI",
-          "title": "클로드 코드가 브라우저 직접 조작해 디스코드 서버·채널 만들고 헤르메스 봇 연결 #클로드코드 #헤르메스 #디스코드봇"
-        },
-        {
           "url": "https://www.youtube.com/shorts/-uFXasAfsAo",
           "by": "아빠 업데이트 중",
           "title": "디스코드 알림 봇, 코딩 몰라도 만들어준다면? #디스코드 #클로드코드 #부업 #shorts #업무자동화 #클로드코드"
@@ -3117,12 +3095,17 @@
             "b": "컴퓨터 앞에서만 시킬 수 있음",
             "a": "폰 메시지로 집 PC가 처리"
           }
+        },
+        {
+          "url": "https://www.youtube.com/shorts/ZAF5vUUlPkg",
+          "by": "Nova AI Daily",
+          "title": "클로드의 역습! OpenClaw를 끝장낸 Claude Channels 출시 (텔레그램, 디스코드 연동)"
         }
       ],
-      "stars": 47396,
-      "pushed_at": "2026-11-14T07:27:28Z",
-      "stars30": 2020,
-      "stars30_days": 16,
+      "stars": 47484,
+      "pushed_at": "2026-11-16T23:11:39Z",
+      "stars30": 2108,
+      "stars30_days": 18,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -3175,7 +3158,7 @@
       "stars": 31,
       "pushed_at": "2026-10-17T20:03:00Z",
       "stars30": 5,
-      "stars30_days": 16,
+      "stars30_days": 18,
       "pick": "로그인 필요한 사이트 반복 작업을 통째로 맡길 수 있는 유일한 길.",
       "readme_ko": [
         {
@@ -3263,9 +3246,9 @@
         }
       ],
       "stars": 261,
-      "pushed_at": "2026-11-11T15:00:17Z",
+      "pushed_at": "2026-11-16T20:18:14Z",
       "stars30": 9,
-      "stars30_days": 16,
+      "stars30_days": 18,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -3317,17 +3300,12 @@
           "url": "https://www.youtube.com/shorts/P6xWWBzraRo",
           "by": "Wassel ALAZHAR",
           "title": "Replacing Claude WebSearch with MCP Exa inside Claude Code (setup demo)"
-        },
-        {
-          "url": "https://www.youtube.com/shorts/iKkA26Moyz0",
-          "by": "GenAI Unplugged",
-          "title": "Why we ditched 5 AI tabs for 1 Claude Code session (+ Firecrawl vs Exa answer)"
         }
       ],
-      "stars": 5234,
+      "stars": 5241,
       "pushed_at": "2026-11-05T23:18:45Z",
-      "stars30": 33,
-      "stars30_days": 16,
+      "stars30": 40,
+      "stars30_days": 18,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -3376,6 +3354,17 @@
       "status": "published",
       "videos": [
         {
+          "url": "https://www.youtube.com/shorts/vSy6sgxRuPk",
+          "by": "Lukegarv ai ",
+          "title": "Automate your ALL of your social media posts using postiz GitHub repo 📝 #ai #claude #github",
+          "sum": {
+            "f": "Postiz로 AI가 SNS 게시물을 쓰고 예약해 줘요",
+            "e": "SNS 글을 AI가 초안부터 예약까지 해줘요",
+            "b": "플랫폼마다 직접 올림",
+            "a": "한 주 일정만 말하면 글이 예약됨"
+          }
+        },
+        {
           "url": "https://www.youtube.com/shorts/z6N8jD9p3AU",
           "by": "Yumi Kato Reviews",
           "title": "Postiz Review: Can AI Really Run Your Posting? (2026)"
@@ -3384,25 +3373,14 @@
           "url": "https://www.youtube.com/shorts/LnNB_vs4HvM",
           "by": "Postiz",
           "title": "Add social scheduling to your software with Postiz!"
-        },
-        {
-          "url": "https://www.youtube.com/shorts/_EcwqDMwAfo",
-          "by": "Open Projects",
-          "title": "Postiz is a social media management platform for scheduling, automating, and analyzing your content",
-          "sum": {
-            "f": "AI가 SNS 글을 만들어 여러 채널에 예약 게시해요",
-            "e": "달력에서 확인 후 여러 채널에 올려요",
-            "b": "채널마다 따로 글을 올림",
-            "a": "한 번 작성해 여러 채널에 예약"
-          }
         }
       ],
-      "stars": 576,
+      "stars": 575,
       "pushed_at": "2026-11-05T00:48:32Z",
-      "stars30": 18,
-      "stars30_days": 16,
-      "sh_installs": 5539,
-      "sh_week": 259,
+      "stars30": 17,
+      "stars30_days": 18,
+      "sh_installs": 5589,
+      "sh_week": 247,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -3450,25 +3428,31 @@
       "status": "published",
       "videos": [
         {
+          "url": "https://www.youtube.com/shorts/eIO9eM1PE7A",
+          "by": "AI Dev Minute",
+          "title": "Make A New Claude Code Chat Remember Your Old One",
+          "sum": {
+            "f": "새 대화에서도 Claude가 이전 내용을 기억하게 해요",
+            "e": "한 번 알려주면 새 대화도 기억해요",
+            "b": "새 대화마다 처음부터 설명",
+            "a": "remember 한 번에 다음 대화도 앎"
+          }
+        },
+        {
+          "url": "https://www.youtube.com/shorts/Yj_krygYzyc",
+          "by": "Byte Sized Tech",
+          "title": "How Claude Code Remembers (When Every API Call Starts From Zero)"
+        },
+        {
           "url": "https://www.youtube.com/shorts/_fDGCWm71sw",
           "by": "MarketerHub",
           "title": "Claude Code ECC Toolkit: Remember Context Across Coding Sessions"
-        },
-        {
-          "url": "https://www.youtube.com/shorts/MA7QNOIgdmw",
-          "by": "Make money with AI. Today.",
-          "title": "The 1 file that makes Claude Code remember everything"
-        },
-        {
-          "url": "https://www.youtube.com/shorts/j3UocosiWPk",
-          "by": "Weird Game Lab",
-          "title": "Claude Code remembers you between sessions. Here's how to control it"
         }
       ],
       "stars": 213,
       "pushed_at": "2026-11-15T10:59:56Z",
       "stars30": 7,
-      "stars30_days": 16,
+      "stars30_days": 18,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -3515,16 +3499,6 @@
       "status": "published",
       "videos": [
         {
-          "url": "https://www.youtube.com/shorts/r2_NyRZKTto",
-          "by": "CodenamePoshan",
-          "title": "Hookify makes it easy to add guardrails in Claude Code: no JSON, no scripts. Here’s how it works."
-        },
-        {
-          "url": "https://www.youtube.com/shorts/aiRA_p5wdp0",
-          "by": "James Goldbach",
-          "title": "Use the hookify plugin to make Claude hooks #claude #vibecoding #aiagents #aitools #aiautomation"
-        },
-        {
           "url": "https://www.youtube.com/shorts/H_z8BhUJMHo",
           "by": "Kvint Labs",
           "title": "Hookify for Claude Code: Turn Mistakes Into Enforced Rules",
@@ -3534,12 +3508,22 @@
             "b": "같은 실수를 매번 지적",
             "a": "규칙으로 저장돼 경고가 뜸"
           }
+        },
+        {
+          "url": "https://www.youtube.com/shorts/r2_NyRZKTto",
+          "by": "CodenamePoshan",
+          "title": "Hookify makes it easy to add guardrails in Claude Code: no JSON, no scripts. Here’s how it works."
+        },
+        {
+          "url": "https://www.youtube.com/shorts/aiRA_p5wdp0",
+          "by": "James Goldbach",
+          "title": "Use the hookify plugin to make Claude hooks #claude #vibecoding #aiagents #aitools #aiautomation"
         }
       ],
-      "stars": 47396,
-      "pushed_at": "2026-11-14T07:27:28Z",
-      "stars30": 2020,
-      "stars30_days": 16,
+      "stars": 47484,
+      "pushed_at": "2026-11-16T23:11:39Z",
+      "stars30": 2108,
+      "stars30_days": 18,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -3591,12 +3575,12 @@
           "title": "CLAUDE.md Management: Keep Project Context Accurate"
         }
       ],
-      "stars": 47396,
-      "pushed_at": "2026-11-14T07:27:28Z",
-      "stars30": 2020,
-      "stars30_days": 16,
-      "sh_installs": 19000,
-      "sh_week": 678,
+      "stars": 47484,
+      "pushed_at": "2026-11-16T23:11:39Z",
+      "stars30": 2108,
+      "stars30_days": 18,
+      "sh_installs": 19143,
+      "sh_week": 642,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -3641,10 +3625,10 @@
         "설계안을 먼저 보여 주고 동의 받은 뒤 구현합니다."
       ],
       "status": "published",
-      "stars": 47396,
-      "pushed_at": "2026-11-14T07:27:28Z",
-      "stars30": 2020,
-      "stars30_days": 16,
+      "stars": 47484,
+      "pushed_at": "2026-11-16T23:11:39Z",
+      "stars30": 2108,
+      "stars30_days": 18,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -3702,10 +3686,10 @@
           }
         }
       ],
-      "stars": 47396,
-      "pushed_at": "2026-11-14T07:27:28Z",
-      "stars30": 2020,
-      "stars30_days": 16,
+      "stars": 47484,
+      "pushed_at": "2026-11-16T23:11:39Z",
+      "stars30": 2108,
+      "stars30_days": 18,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -3763,12 +3747,12 @@
           }
         }
       ],
-      "stars": 47396,
-      "pushed_at": "2026-11-14T07:27:28Z",
-      "stars30": 2020,
-      "stars30_days": 16,
-      "sh_installs": 19000,
-      "sh_week": 678,
+      "stars": 47484,
+      "pushed_at": "2026-11-16T23:11:39Z",
+      "stars30": 2108,
+      "stars30_days": 18,
+      "sh_installs": 19143,
+      "sh_week": 642,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -3813,10 +3797,10 @@
         "\"/commit-push-pr\" 로 커밋·푸시·PR 생성 한 번에"
       ],
       "status": "published",
-      "stars": 47396,
-      "pushed_at": "2026-11-14T07:27:28Z",
-      "stars30": 2020,
-      "stars30_days": 16,
+      "stars": 47484,
+      "pushed_at": "2026-11-16T23:11:39Z",
+      "stars30": 2108,
+      "stars30_days": 18,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -3884,10 +3868,10 @@
           "title": "The power of The Ralph Loop"
         }
       ],
-      "stars": 47396,
-      "pushed_at": "2026-11-14T07:27:28Z",
-      "stars30": 2020,
-      "stars30_days": 16,
+      "stars": 47484,
+      "pushed_at": "2026-11-16T23:11:39Z",
+      "stars30": 2108,
+      "stars30_days": 18,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -3939,6 +3923,11 @@
       "status": "published",
       "videos": [
         {
+          "url": "https://www.youtube.com/shorts/IsUb1WshZlc",
+          "by": "Next Horizon",
+          "title": "Superdesign-skill: turn AI pages into polished UI"
+        },
+        {
           "url": "https://www.youtube.com/shorts/2iPHpiugIuU",
           "by": "AI小伙",
           "title": "SuperDesign: Let AI Design the UI Before It Writes Code",
@@ -3948,14 +3937,19 @@
             "b": "AI가 바로 코딩해 밋밋한 화면",
             "a": "시안을 고른 뒤 코드 작성"
           }
+        },
+        {
+          "url": "https://www.youtube.com/shorts/0C_ncvyO0CE",
+          "by": "Tool Pilot Hub ",
+          "title": "Create UI Mockups in VS Code with AI #SuperDesign"
         }
       ],
-      "stars": 1014,
+      "stars": 1017,
       "pushed_at": "2026-08-21T05:23:23Z",
-      "stars30": 93,
-      "stars30_days": 16,
-      "sh_installs": 12029,
-      "sh_week": 333,
+      "stars30": 96,
+      "stars30_days": 18,
+      "sh_installs": 12090,
+      "sh_week": 241,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -4004,11 +3998,6 @@
       "status": "published",
       "videos": [
         {
-          "url": "https://www.youtube.com/shorts/kLkW2dF8qXc",
-          "by": "Three Step Guide",
-          "title": "How To Connect Miro With Claude (2026) (Beginners Guide)"
-        },
-        {
           "url": "https://www.youtube.com/shorts/90EzwoNNEPo",
           "by": "Nocode Joshua",
           "title": "Miro and Claude is an AI hack that no one is talking about. #claude #claudeai  #ai",
@@ -4020,6 +4009,17 @@
           }
         },
         {
+          "url": "https://www.youtube.com/shorts/7lR5QKNhC4Y",
+          "by": "Pat Simmons",
+          "title": "Claude 4's coding ability is  wild. Here's a very quick run through of it one-prompting a Miro white",
+          "sum": {
+            "f": "설명과 화면 캡처로 Miro 같은 앱을 만들어요",
+            "e": "화이트보드 앱 복제본이 나와요",
+            "b": "비슷한 앱을 직접 만들기 어려움",
+            "a": "5분 만에 작동하는 복제 앱 완성"
+          }
+        },
+        {
           "url": "https://www.youtube.com/shorts/n4cliYQ8Db8",
           "by": "Brock Mesarich | AI for Non Techies",
           "title": "Miro Just Connected Every Board You Own to Claude"
@@ -4028,7 +4028,7 @@
       "stars": 170,
       "pushed_at": "2026-09-17T14:36:57Z",
       "stars30": 6,
-      "stars30_days": 16,
+      "stars30_days": 18,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -4081,11 +4081,6 @@
           "title": "How to add Runway Dev to Claude Code, Codex and Cursor"
         },
         {
-          "url": "https://www.youtube.com/shorts/OfmOjOMwcGA",
-          "by": "Raised",
-          "title": "Runway launches Runway Dev plugins for Claude Code, Codex and Cursor"
-        },
-        {
           "url": "https://www.youtube.com/shorts/tl-3xJ7oY8k",
           "by": "Nathan Hodgson",
           "title": "Runway MCP: Make AI Video Inside Claude or ChatGPT",
@@ -4095,12 +4090,17 @@
             "b": "영상 제작은 별도 도구가 필요",
             "a": "채팅에서 영상 생성·비교"
           }
+        },
+        {
+          "url": "https://www.youtube.com/shorts/OfmOjOMwcGA",
+          "by": "Raised",
+          "title": "Runway launches Runway Dev plugins for Claude Code, Codex and Cursor"
         }
       ],
       "stars": 75,
       "pushed_at": "2026-10-30T17:52:07Z",
       "stars30": 1,
-      "stars30_days": 16,
+      "stars30_days": 18,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -4154,6 +4154,11 @@
           "title": "Adobe for creativity is now in Claude."
         },
         {
+          "url": "https://www.youtube.com/shorts/vCRBImn8xG4",
+          "by": "AITOZ",
+          "title": "PDF 합치기, 어도비 말고 클로드 코드로 직접 만들었더니"
+        },
+        {
           "url": "https://www.youtube.com/shorts/Yb87kvbUaGk",
           "by": "글리터 AI 팩토리",
           "title": "클로드 코드 사용법, 클로드 안에서 어도비가 열립니다 #클로드코드사용법",
@@ -4165,12 +4170,12 @@
           }
         }
       ],
-      "stars": 329,
-      "pushed_at": "2026-11-15T19:05:54Z",
-      "stars30": 11,
-      "stars30_days": 16,
-      "sh_installs": 1838,
-      "sh_week": 20,
+      "stars": 331,
+      "pushed_at": "2026-11-17T00:07:31Z",
+      "stars30": 13,
+      "stars30_days": 18,
+      "sh_installs": 1841,
+      "sh_week": 17,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -4219,7 +4224,7 @@
       "stars": 617,
       "pushed_at": "2026-04-23T13:56:22Z",
       "stars30": 4,
-      "stars30_days": 16,
+      "stars30_days": 18,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -4271,17 +4276,6 @@
           "title": "How to use Claude Code with MongoDB [FULL GUIDE]"
         },
         {
-          "url": "https://www.youtube.com/shorts/kIhuKVri0fU",
-          "by": "MongoDB for Developers",
-          "title": "How to Install the MongoDB Atlas MCP Server in Claude Code",
-          "sum": {
-            "f": "Claude Code에 MongoDB Atlas 플러그인을 설치하는 법이에요",
-            "e": "Claude Code가 내 Atlas 데이터에 접근해요",
-            "b": "Claude Code가 Atlas를 못 다룸",
-            "a": "플러그인 설치 후 Atlas 연동"
-          }
-        },
-        {
           "url": "https://www.youtube.com/shorts/I52cLxpLCOU",
           "by": "MongoDB for Developers",
           "title": "How to Connect MongoDB Atlas with Claude Using the MongoDB MCP Server",
@@ -4291,14 +4285,25 @@
             "b": "데이터를 직접 찾아봄",
             "a": "말로 목록 조회·구조 상담"
           }
+        },
+        {
+          "url": "https://www.youtube.com/shorts/kIhuKVri0fU",
+          "by": "MongoDB for Developers",
+          "title": "How to Install the MongoDB Atlas MCP Server in Claude Code",
+          "sum": {
+            "f": "Claude Code에 MongoDB Atlas 플러그인을 설치하는 법이에요",
+            "e": "Claude Code가 내 Atlas 데이터에 접근해요",
+            "b": "Claude Code가 Atlas를 못 다룸",
+            "a": "플러그인 설치 후 Atlas 연동"
+          }
         }
       ],
-      "stars": 198,
-      "pushed_at": "2026-11-13T23:22:27Z",
-      "stars30": 6,
-      "stars30_days": 16,
-      "sh_installs": 7631,
-      "sh_week": 287,
+      "stars": 200,
+      "pushed_at": "2026-11-16T21:07:41Z",
+      "stars30": 8,
+      "stars30_days": 18,
+      "sh_installs": 7668,
+      "sh_week": 167,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -4368,10 +4373,10 @@
           "title": "How to integrate Claude Code with Firebase[FULL GUIDE]"
         }
       ],
-      "stars": 47396,
-      "pushed_at": "2026-11-14T07:27:28Z",
-      "stars30": 2020,
-      "stars30_days": 16,
+      "stars": 47484,
+      "pushed_at": "2026-11-16T23:11:39Z",
+      "stars30": 2108,
+      "stars30_days": 18,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -4440,11 +4445,11 @@
         }
       ],
       "stars": 342,
-      "pushed_at": "2026-11-12T02:14:17Z",
+      "pushed_at": "2026-11-16T20:09:17Z",
       "stars30": 3,
-      "stars30_days": 16,
-      "sh_installs": 9606,
-      "sh_week": 230,
+      "stars30_days": 18,
+      "sh_installs": 9650,
+      "sh_week": 298,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -4513,15 +4518,15 @@
           }
         },
         {
-          "url": "https://www.youtube.com/shorts/l2yATa7n32c",
-          "by": "Extreme Guides",
-          "title": "How to host Claude Code project on Render[FULL GUIDE]"
+          "url": "https://www.youtube.com/shorts/6WDLBtPyfqY",
+          "by": "Marvomatic | AI Automations",
+          "title": "My Claude Code Editing Setup: Transcript, Cuts, Render, Frame Check"
         }
       ],
       "stars": 1,
       "pushed_at": "2026-10-27T20:47:50Z",
       "stars30": 0,
-      "stars30_days": 16,
+      "stars30_days": 18,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -4590,15 +4595,15 @@
           }
         },
         {
-          "url": "https://www.youtube.com/shorts/YiODqL4IxCs",
-          "by": "Wix for Developers",
-          "title": "[PART 2/2] Building an Ecommerce Site with Claude Code and Wix Headless Skills"
+          "url": "https://www.youtube.com/shorts/cujOJqNYjV8",
+          "by": "Tim The SEO Guru",
+          "title": "How I use Claude Code for Wix SEO to Rank #1 (in 10 minutes)"
         }
       ],
       "stars": 40,
-      "pushed_at": "2026-11-15T16:52:27Z",
+      "pushed_at": "2026-11-16T14:10:39Z",
       "stars30": 4,
-      "stars30_days": 16,
+      "stars30_days": 18,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -4655,12 +4660,23 @@
             "b": "사이트를 직접 열어 수정",
             "a": "대화로 페이지와 글 수정"
           }
+        },
+        {
+          "url": "https://www.youtube.com/shorts/Jywvzfo_w8c",
+          "by": "WordPress.com",
+          "title": "You can now Vibe Code with WordPress.com",
+          "sum": {
+            "f": "Claude로 워드프레스 사이트 페이지를 만들고 고쳐요",
+            "e": "말로 요청해 랜딩 페이지가 만들어져요",
+            "b": "워드프레스를 직접 클릭해 작업",
+            "a": "랜딩 페이지와 문의 폼이 바로 생성"
+          }
         }
       ],
       "stars": 53,
       "pushed_at": "2026-04-20T23:21:22Z",
       "stars30": 0,
-      "stars30_days": 16,
+      "stars30_days": 18,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -4732,7 +4748,7 @@
       "stars": 8,
       "pushed_at": "2026-11-14T06:10:52Z",
       "stars30": 0,
-      "stars30_days": 16,
+      "stars30_days": 18,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -4802,9 +4818,9 @@
         }
       ],
       "stars": 10,
-      "pushed_at": "2026-11-13T12:54:02Z",
+      "pushed_at": "2026-11-16T10:13:03Z",
       "stars30": 1,
-      "stars30_days": 16,
+      "stars30_days": 18,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -4878,12 +4894,12 @@
           "title": "How quickly can I build an Expo Live Activity with Claude?"
         }
       ],
-      "stars": 4157,
-      "pushed_at": "2026-11-15T22:20:40Z",
-      "stars30": 362,
-      "stars30_days": 16,
-      "sh_installs": 76203,
-      "sh_week": 2333,
+      "stars": 4176,
+      "pushed_at": "2026-11-16T16:05:11Z",
+      "stars30": 381,
+      "stars30_days": 18,
+      "sh_installs": 76549,
+      "sh_week": 1803,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -4940,21 +4956,15 @@
           "title": "Your guide to the official Unity plugin for Claude Code"
         },
         {
-          "url": "https://www.youtube.com/shorts/4E-XuKi474M",
-          "by": "Sunny Valley Studio",
-          "title": "How to use Claude Code with Unity 6 using MCP",
-          "sum": {
-            "f": "Unity 게임 엔진을 Claude Code와 연결해요",
-            "e": "빈 장면에서 시제품까지 빠르게 가요",
-            "b": "빈 장면에서 직접 구현",
-            "a": "Claude가 Unity에서 함께 작업"
-          }
+          "url": "https://www.youtube.com/shorts/rA1RuMheNrY",
+          "by": "Unity",
+          "title": "Introducing the official Unity plugin for Claude Code"
         }
       ],
-      "stars": 641,
-      "pushed_at": "2026-11-13T18:16:46Z",
-      "stars30": 58,
-      "stars30_days": 16,
+      "stars": 645,
+      "pushed_at": "2026-11-16T22:03:24Z",
+      "stars30": 62,
+      "stars30_days": 18,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -5022,12 +5032,12 @@
           "title": "New Shopify AI Toolkit - Control Your Store with Claude Code"
         }
       ],
-      "stars": 646,
+      "stars": 649,
       "pushed_at": "2026-10-27T16:13:43Z",
-      "stars30": 26,
-      "stars30_days": 16,
-      "sh_installs": 17839,
-      "sh_week": 155,
+      "stars30": 29,
+      "stars30_days": 18,
+      "sh_installs": 17846,
+      "sh_week": 41,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -5076,7 +5086,7 @@
       "stars": 5,
       "pushed_at": "2026-10-12T12:46:54Z",
       "stars30": 1,
-      "stars30_days": 16,
+      "stars30_days": 18,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -5135,10 +5145,10 @@
           }
         }
       ],
-      "stars": 439,
-      "pushed_at": "2026-11-15T11:12:53Z",
-      "stars30": 3,
-      "stars30_days": 16,
+      "stars": 440,
+      "pushed_at": "2026-11-16T08:49:29Z",
+      "stars30": 4,
+      "stars30_days": 18,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -5191,17 +5201,6 @@
           "title": "How Intercom is redefining customer support with Claude"
         },
         {
-          "url": "https://www.youtube.com/shorts/IAxzkYOS1Nk",
-          "by": "Adopt AI",
-          "title": "Intercom MCP: hear your users with Claude Code #intercom #mcp #claudecode #aiagents",
-          "sum": {
-            "f": "Intercom 고객 문의를 Claude Code로 검색해요",
-            "e": "고객이 원하는 기능인지 확인해요",
-            "b": "기능 요청 검색에 결과 없음",
-            "a": "문의 내용에서 불만 사례 발견"
-          }
-        },
-        {
           "url": "https://www.youtube.com/shorts/K97xA5c4NQI",
           "by": "Fresh Commits",
           "title": "MuhammadTalhaMT/claude-intercom — Two developers, two laptops, one Claude Code hotline. #Shorts",
@@ -5211,12 +5210,23 @@
             "b": "각자 Claude가 따로 일함",
             "a": "한쪽이 보내면 바로 받고 답장"
           }
+        },
+        {
+          "url": "https://www.youtube.com/shorts/IAxzkYOS1Nk",
+          "by": "Adopt AI",
+          "title": "Intercom MCP: hear your users with Claude Code #intercom #mcp #claudecode #aiagents",
+          "sum": {
+            "f": "Intercom 고객 문의를 Claude Code로 검색해요",
+            "e": "고객이 원하는 기능인지 확인해요",
+            "b": "기능 요청 검색에 결과 없음",
+            "a": "문의 내용에서 불만 사례 발견"
+          }
         }
       ],
       "stars": 3,
       "pushed_at": "2026-10-27T11:49:19Z",
       "stars30": 0,
-      "stars30_days": 16,
+      "stars30_days": 18,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -5264,17 +5274,6 @@
       "status": "published",
       "videos": [
         {
-          "url": "https://www.youtube.com/shorts/cU3Z1BZY_i4",
-          "by": "Codefinity",
-          "title": "Claude + Desktop Commander MCP = your laptop basically runs itself #ClaudeAI #MCP #productivity",
-          "sum": {
-            "f": "Desktop Commander로 Claude가 내 컴퓨터 작업을 해 줘요",
-            "e": "Claude에게 시켜 새 도구를 설치할 수 있어요",
-            "b": "수동 작업을 직접 반복",
-            "a": "Claude가 설치·재시작까지 처리"
-          }
-        },
-        {
           "url": "https://www.youtube.com/shorts/eiucsyr8B5w",
           "by": "Giuseppe Builds",
           "title": "I Let Claude AI Organize 1,000+ Files on My Desktop (Desktop Commander MCP)",
@@ -5284,12 +5283,23 @@
             "b": "다운로드 폴더가 어수선함",
             "a": "파일이 정리되고 중복이 사라짐"
           }
+        },
+        {
+          "url": "https://www.youtube.com/shorts/cU3Z1BZY_i4",
+          "by": "Codefinity",
+          "title": "Claude + Desktop Commander MCP = your laptop basically runs itself #ClaudeAI #MCP #productivity",
+          "sum": {
+            "f": "Desktop Commander로 Claude가 내 컴퓨터 작업을 해 줘요",
+            "e": "Claude에게 시켜 새 도구를 설치할 수 있어요",
+            "b": "수동 작업을 직접 반복",
+            "a": "Claude가 설치·재시작까지 처리"
+          }
         }
       ],
-      "stars": 10319,
+      "stars": 10331,
       "pushed_at": "2026-11-12T12:53:43Z",
-      "stars30": 150,
-      "stars30_days": 16,
+      "stars30": 162,
+      "stars30_days": 18,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -5360,17 +5370,23 @@
           "title": "Tip 35: Claude Code in Chrome Devtools"
         },
         {
-          "url": "https://www.youtube.com/shorts/uwrY0lfb-B0",
-          "by": "Skills For AI",
-          "title": "Find why your page is slow with Chrome DevTools MCP in Claude Code"
+          "url": "https://www.youtube.com/shorts/q1vlGUKjfeY",
+          "by": "Addy Osmani",
+          "title": "Announcing Chrome DevTools MCP! 🚀 Connect your AI coding agent to Chrome's powerful debugger free",
+          "sum": {
+            "f": "AI가 Chrome을 직접 열어 느린 앱을 고쳐줘요",
+            "e": "느린 웹앱의 원인을 찾아 고쳐요",
+            "b": "느린 이유를 직접 찾아야 함",
+            "a": "AI가 성능을 측정하고 개선"
+          }
         }
       ],
-      "stars": 56899,
-      "pushed_at": "2026-11-15T03:06:25Z",
-      "stars30": 2418,
-      "stars30_days": 16,
-      "sh_installs": 9322,
-      "sh_week": 215,
+      "stars": 57735,
+      "pushed_at": "2026-11-16T17:21:41Z",
+      "stars30": 3254,
+      "stars30_days": 18,
+      "sh_installs": 9367,
+      "sh_week": 251,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -5421,12 +5437,12 @@
           "title": "Claude Session Report: Claude Didn't Do the Counting"
         }
       ],
-      "stars": 47396,
-      "pushed_at": "2026-11-14T07:27:28Z",
-      "stars30": 2020,
-      "stars30_days": 16,
-      "sh_installs": 4526,
-      "sh_week": 287,
+      "stars": 47484,
+      "pushed_at": "2026-11-16T23:11:39Z",
+      "stars30": 2108,
+      "stars30_days": 18,
+      "sh_installs": 4574,
+      "sh_week": 275,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -5472,9 +5488,15 @@
       "status": "published",
       "videos": [
         {
-          "url": "https://www.youtube.com/shorts/7NG4axHj-jg",
-          "by": "ReelStyles",
-          "title": "Receipts beat arguments · made by Claude Code"
+          "url": "https://www.youtube.com/shorts/Do5lr4J764w",
+          "by": "RepoQuarry",
+          "title": "Claude Code Builds a Fact-Checker: Receipts for Grok Bot",
+          "sum": {
+            "f": "Claude Code가 주장 사실 여부를 확인하는 앱을 만들어요",
+            "e": "근거 출처와 판정 카드, 답글 초안이 나와요",
+            "b": "AI 답변이 맞는지 확인 어려움",
+            "a": "출처 확인 후 판정과 초안 제공"
+          }
         },
         {
           "url": "https://www.youtube.com/shorts/YRDbJzb9kjM",
@@ -5488,23 +5510,17 @@
           }
         },
         {
-          "url": "https://www.youtube.com/shorts/Do5lr4J764w",
-          "by": "RepoQuarry",
-          "title": "Claude Code Builds a Fact-Checker: Receipts for Grok Bot",
-          "sum": {
-            "f": "Claude Code가 주장 사실 여부를 확인하는 앱을 만들어요",
-            "e": "근거 출처와 판정 카드, 답글 초안이 나와요",
-            "b": "AI 답변이 맞는지 확인 어려움",
-            "a": "출처 확인 후 판정과 초안 제공"
-          }
+          "url": "https://www.youtube.com/shorts/pE_Yqkdc7rU",
+          "by": " AI Leverage",
+          "title": "Stop Typing Receipts Into Excel: Claude Reads the Photo. #ai #Claude #Excel"
         }
       ],
-      "stars": 47396,
-      "pushed_at": "2026-11-14T07:27:28Z",
-      "stars30": 2020,
-      "stars30_days": 16,
-      "sh_installs": 2888,
-      "sh_week": 285,
+      "stars": 47484,
+      "pushed_at": "2026-11-16T23:11:39Z",
+      "stars30": 2108,
+      "stars30_days": 18,
+      "sh_installs": 2934,
+      "sh_week": 260,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -5548,10 +5564,10 @@
         "\"/project-artifact 현황 페이지 만들어서 링크 줘\""
       ],
       "status": "published",
-      "stars": 47396,
-      "pushed_at": "2026-11-14T07:27:28Z",
-      "stars30": 2020,
-      "stars30_days": 16,
+      "stars": 47484,
+      "pushed_at": "2026-11-16T23:11:39Z",
+      "stars30": 2108,
+      "stars30_days": 18,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -5595,10 +5611,10 @@
         "설치하면 자동으로 켜져요. 답마다 '왜'가 붙습니다."
       ],
       "status": "published",
-      "stars": 47396,
-      "pushed_at": "2026-11-14T07:27:28Z",
-      "stars30": 2020,
-      "stars30_days": 16,
+      "stars": 47484,
+      "pushed_at": "2026-11-16T23:11:39Z",
+      "stars30": 2108,
+      "stars30_days": 18,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -5646,7 +5662,7 @@
       "stars": 1,
       "pushed_at": "2026-05-18T22:26:25Z",
       "stars30": 0,
-      "stars30_days": 16,
+      "stars30_days": 18,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -5714,17 +5730,17 @@
           }
         },
         {
-          "url": "https://www.youtube.com/shorts/MkTwOUVOLQw",
-          "by": "Ivan Velichko",
-          "title": "Coding Agent Base Playground Demo (Claude Code with Web Preview)"
+          "url": "https://www.youtube.com/shorts/EF_8sZUoj-k",
+          "by": "Kvint Labs",
+          "title": "Build Better Prompts with Claude Playgrounds"
         }
       ],
-      "stars": 47396,
-      "pushed_at": "2026-11-14T07:27:28Z",
-      "stars30": 2020,
-      "stars30_days": 16,
-      "sh_installs": 8838,
-      "sh_week": 297,
+      "stars": 47484,
+      "pushed_at": "2026-11-16T23:11:39Z",
+      "stars30": 2108,
+      "stars30_days": 18,
+      "sh_installs": 8888,
+      "sh_week": 273,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -5803,12 +5819,12 @@
           }
         }
       ],
-      "stars": 47396,
-      "pushed_at": "2026-11-14T07:27:28Z",
-      "stars30": 2020,
-      "stars30_days": 16,
-      "sh_installs": 19000,
-      "sh_week": 678,
+      "stars": 47484,
+      "pushed_at": "2026-11-16T23:11:39Z",
+      "stars30": 2108,
+      "stars30_days": 18,
+      "sh_installs": 19143,
+      "sh_week": 642,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -5870,25 +5886,14 @@
             "b": "Resend에 직접 들어가 작업",
             "a": "Claude에서 메일 발송·자동화"
           }
-        },
-        {
-          "url": "https://www.youtube.com/shorts/t38nzWxzYOM",
-          "by": "21st | Building Blocks for the Agentic Internet",
-          "title": "Turn Your Docs Agent into a Support Agent with Resend Email | 21st SDK + Claude Code",
-          "sum": {
-            "f": "문서 답변 에이전트에 Resend 메일 보내기를 붙여요",
-            "e": "답 못 하는 질문은 메일로 문의가 가요",
-            "b": "문서로 답 못 하면 끝남",
-            "a": "Resend로 지원 메일 발송 가능"
-          }
         }
       ],
       "stars": 212,
       "pushed_at": "2026-11-09T18:46:50Z",
       "stars30": 4,
-      "stars30_days": 16,
-      "sh_installs": 24701,
-      "sh_week": 622,
+      "stars30_days": 18,
+      "sh_installs": 24758,
+      "sh_week": 360,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -5933,12 +5938,12 @@
         "\"한국어 감정 분석 모델 찾아서 이 리뷰 500개 돌려 줘\""
       ],
       "status": "published",
-      "stars": 11352,
+      "stars": 11356,
       "pushed_at": "2026-11-13T15:20:05Z",
-      "stars30": 115,
-      "stars30_days": 16,
-      "sh_installs": 2636,
-      "sh_week": 63,
+      "stars30": 119,
+      "stars30_days": 18,
+      "sh_installs": 2651,
+      "sh_week": 77,
       "readme_ko": [
         {
           "h": "이게 뭐예요?",
@@ -5990,10 +5995,10 @@
           "title": "Andrej Karpathy Skills A single CLAUDE.md file to improve Claude Code behavior, 215k Stars on GitHub"
         }
       ],
-      "stars": 233446,
+      "stars": 233761,
       "pushed_at": "2026-04-20T10:05:04Z",
-      "stars30": 6797,
-      "stars30_days": 16,
+      "stars30": 7112,
+      "stars30_days": 18,
       "plat": [
         "claude-code"
       ],
@@ -6050,12 +6055,12 @@
           }
         }
       ],
-      "stars": 177558,
-      "pushed_at": "2026-11-15T07:04:27Z",
-      "stars30": 2374,
-      "stars30_days": 16,
-      "sh_installs": 2622,
-      "sh_week": 72,
+      "stars": 177685,
+      "pushed_at": "2026-11-16T03:14:07Z",
+      "stars30": 2501,
+      "stars30_days": 18,
+      "sh_installs": 2625,
+      "sh_week": 18,
       "plat": [
         "claude-code"
       ],
@@ -6110,12 +6115,12 @@
           }
         }
       ],
-      "stars": 149952,
-      "pushed_at": "2026-11-15T22:07:39Z",
-      "stars30": 7116,
-      "stars30_days": 16,
-      "sh_installs": 453675,
-      "sh_week": 14025,
+      "stars": 150475,
+      "pushed_at": "2026-11-16T04:10:04Z",
+      "stars30": 7639,
+      "stars30_days": 18,
+      "sh_installs": 455924,
+      "sh_week": 12691,
       "plat": [
         "claude-code"
       ],
@@ -6158,12 +6163,12 @@
         "설치하면 자동으로 적용됩니다."
       ],
       "status": "published",
-      "stars": 117936,
+      "stars": 118368,
       "pushed_at": "2026-11-14T04:33:56Z",
-      "stars30": 6057,
-      "stars30_days": 16,
-      "sh_installs": 88484,
-      "sh_week": 5359,
+      "stars30": 6489,
+      "stars30_days": 18,
+      "sh_installs": 89398,
+      "sh_week": 5126,
       "plat": [
         "claude-code"
       ],
@@ -6229,17 +6234,17 @@
           }
         },
         {
-          "url": "https://www.youtube.com/shorts/VHnwSK9hWI4",
-          "by": "Matt Paige",
-          "title": "Use this Claude Skill to give Claude taste.  #claudeskills #claudecode"
+          "url": "https://www.youtube.com/shorts/dWwtsnWTX0Y",
+          "by": "Magentic Dev",
+          "title": "Teach Claude Your Taste in 3 Steps (AI Code Reviewer)"
         }
       ],
-      "stars": 116219,
+      "stars": 116976,
       "pushed_at": "2026-11-08T21:51:50Z",
-      "stars30": 10223,
-      "stars30_days": 16,
-      "sh_installs": 782487,
-      "sh_week": 39089,
+      "stars30": 10980,
+      "stars30_days": 18,
+      "sh_installs": 788375,
+      "sh_week": 34196,
       "plat": [
         "claude-code"
       ],
@@ -6288,17 +6293,17 @@
           "title": "Understand Anything: Claude Code Plugin That Maps Any Codebase Into a Visual Knowledge Graph"
         },
         {
-          "url": "https://www.youtube.com/shorts/D9Tp_eRM_Es",
-          "by": "Qwonc AI",
-          "title": "Turn Any Codebase Into an Interactive Graph | Understand Anything for Claude Code, Cursor & Codex"
+          "url": "https://www.youtube.com/shorts/EnKDklmG5ck",
+          "by": "CodenamePoshan",
+          "title": "Understand Anything is a Claude plugin that turns your codebase into an interactive map"
         }
       ],
-      "stars": 92733,
+      "stars": 92878,
       "pushed_at": "2026-11-15T12:10:30Z",
-      "stars30": 3741,
-      "stars30_days": 16,
-      "sh_installs": 6014,
-      "sh_week": 295,
+      "stars30": 3886,
+      "stars30_days": 18,
+      "sh_installs": 6076,
+      "sh_week": 265,
       "plat": [
         "claude-code"
       ],
@@ -6344,31 +6349,25 @@
       "status": "published",
       "videos": [
         {
-          "url": "https://www.youtube.com/shorts/5S2NrTYtsyo",
-          "by": "Hungry Labs",
-          "title": "Career-Ops: Open-Source AI Job Search System Built on Claude Code",
-          "sum": {
-            "f": "채용 공고를 평가하고 지원 직무별 이력서를 만들어요",
-            "e": "공고에 맞춘 이력서가 나와요",
-            "b": "같은 이력서로 여러 곳 지원",
-            "a": "공고별 맞춤 이력서 생성"
-          }
+          "url": "https://www.youtube.com/shorts/A-S12n3ZHLs",
+          "by": "Glen Rhodes",
+          "title": "Career-ops: open-source Claude Code system that filters job applications using engineering disciplin"
         },
         {
-          "url": "https://www.youtube.com/shorts/MGzvgQdGg2w",
-          "by": "Devfinds",
-          "title": "career-ops: AI-powered job search system built on Claude Code. 14 skill"
+          "url": "https://www.youtube.com/shorts/CAmtLwVD0Bo",
+          "by": "Lets Do It",
+          "title": "Revolutionize Your Job Search with AI: Career-Ops Demo"
         },
         {
-          "url": "https://www.youtube.com/shorts/nMsfQJ4HogY",
-          "by": "Amine AI",
-          "title": "Career-Ops: Free AI Job Search That Runs in Claude Code"
+          "url": "https://www.youtube.com/shorts/oCPD40uoCyQ",
+          "by": "Gourcer",
+          "title": "santifer/career-ops - Gource visualisation"
         }
       ],
-      "stars": 82789,
-      "pushed_at": "2026-11-15T18:29:14Z",
-      "stars30": 3989,
-      "stars30_days": 16,
+      "stars": 83125,
+      "pushed_at": "2026-11-16T17:58:29Z",
+      "stars30": 4325,
+      "stars30_days": 18,
       "plat": [
         "claude-code"
       ],
@@ -6422,23 +6421,17 @@
           "title": "last30days is an open source Claude Code skill by Matt Van Horn (mvanhorn), an AI agent-led search e"
         },
         {
-          "url": "https://www.youtube.com/shorts/HOtCfLk1XFY",
-          "by": "Open Source Explained",
-          "title": "last30days: The Claude Skill That Searches People, Not Editors",
-          "sum": {
-            "f": "last30days가 레딧·유튜브 등 최근 반응을 모아줘요",
-            "e": "최근 30일 이야기를 한 번에 정리해요",
-            "b": "여러 앱을 돌며 반응을 찾음",
-            "a": "한 명령으로 요약 보고서를 받음"
-          }
+          "url": "https://www.youtube.com/shorts/jdV1c0x6XnA",
+          "by": "The Solo Factory",
+          "title": "/last30days: Ask What People Actually Did This Month — Free"
         }
       ],
-      "stars": 67779,
-      "pushed_at": "2026-11-15T22:10:25Z",
-      "stars30": 1819,
-      "stars30_days": 16,
-      "sh_installs": 62443,
-      "sh_week": 4089,
+      "stars": 68203,
+      "pushed_at": "2026-11-17T02:38:27Z",
+      "stars30": 2243,
+      "stars30_days": 18,
+      "sh_installs": 62978,
+      "sh_week": 2895,
       "plat": [
         "claude-code"
       ],
@@ -6515,12 +6508,12 @@
           }
         }
       ],
-      "stars": 67383,
+      "stars": 67666,
       "pushed_at": "2026-11-12T21:14:19Z",
-      "stars30": 4219,
-      "stars30_days": 16,
-      "sh_installs": 28805,
-      "sh_week": 4019,
+      "stars30": 4502,
+      "stars30_days": 18,
+      "sh_installs": 29242,
+      "sh_week": 2900,
       "plat": [
         "claude-code"
       ],
@@ -6566,7 +6559,7 @@
       "videos": [
         {
           "url": "https://www.youtube.com/shorts/1d3uOVakNBk",
-          "by": "Rohit Beria | AI × Finance",
+          "by": "Rohit Beria",
           "title": "I Made Claude Write Like a Human Forever (Humanizer Skill Install Guide)",
           "sum": {
             "f": "Claude 글에서 AI 티 나는 표현을 없애주는 스킬이에요",
@@ -6592,12 +6585,12 @@
           "title": "How To Add Humanizer Skill To Claude (𝟮𝟬𝟮𝟲) | 100% WORKS | NO Yapping, To The Point! | FAST & EASY"
         }
       ],
-      "stars": 69474,
+      "stars": 69944,
       "pushed_at": "2026-11-10T01:35:15Z",
-      "stars30": 6900,
-      "stars30_days": 16,
-      "sh_installs": 13249,
-      "sh_week": 944,
+      "stars30": 7370,
+      "stars30_days": 18,
+      "sh_installs": 13404,
+      "sh_week": 828,
       "plat": [
         "claude-code"
       ],
@@ -6674,17 +6667,17 @@
           }
         },
         {
-          "url": "https://www.youtube.com/shorts/hW6eqs5OBGo",
-          "by": "Steph Lombardo",
-          "title": "10 marketing skills for Claude every founder needs"
+          "url": "https://www.youtube.com/shorts/lqjHs9IOjNI",
+          "by": "Brock Mesarich | AI for Non Techies",
+          "title": "This Free GitHub Repo Gives Claude 53 Marketing Skills"
         }
       ],
-      "stars": 60577,
+      "stars": 60843,
       "pushed_at": "2026-11-11T17:49:23Z",
-      "stars30": 3147,
-      "stars30_days": 16,
-      "sh_installs": 256426,
-      "sh_week": 7459,
+      "stars30": 3413,
+      "stars30_days": 18,
+      "sh_installs": 257824,
+      "sh_week": 6753,
       "plat": [
         "claude-code"
       ],
@@ -6737,14 +6730,19 @@
             "b": "AI가 없는 참고문헌을 만듦",
             "a": "인용을 출처와 대조해 확인"
           }
+        },
+        {
+          "url": "https://www.youtube.com/shorts/AuINfZ5KPbg",
+          "by": "OnlyCS",
+          "title": "Academic Research Skills for Claude Code"
         }
       ],
-      "stars": 57021,
+      "stars": 57177,
       "pushed_at": "2026-11-15T04:27:28Z",
-      "stars30": 2385,
-      "stars30_days": 16,
-      "sh_installs": 11571,
-      "sh_week": 250,
+      "stars30": 2541,
+      "stars30_days": 18,
+      "sh_installs": 11620,
+      "sh_week": 242,
       "plat": [
         "claude-code"
       ],
@@ -6810,10 +6808,10 @@
           }
         }
       ],
-      "stars": 52815,
-      "pushed_at": "2026-11-11T16:12:33Z",
-      "stars30": 2389,
-      "stars30_days": 16,
+      "stars": 52962,
+      "pushed_at": "2026-11-16T20:55:45Z",
+      "stars30": 2536,
+      "stars30_days": 18,
       "plat": [
         "claude-code"
       ],
@@ -6862,22 +6860,22 @@
           "title": "I tested the Hallmark skill for Claude Code. Fact or hype?"
         },
         {
+          "url": "https://www.youtube.com/shorts/JB_Gj1nGtwk",
+          "by": "Fork This.",
+          "title": "Hallmark: Free Claude Code Skill That Ends AI Slop"
+        },
+        {
           "url": "https://www.youtube.com/shorts/FLfOauWh0BE",
           "by": "Saqer AlSabri",
           "title": "Hallmark: Claude Code Skill That Stops AI Slop"
-        },
-        {
-          "url": "https://www.youtube.com/shorts/UAOZ2ItLQeE",
-          "by": "Vadym | AI Agentic Hub",
-          "title": "Stop AI Slop with Hallmark Skill in Claude"
         }
       ],
-      "stars": 55487,
+      "stars": 56191,
       "pushed_at": "2026-11-11T11:56:16Z",
-      "stars30": 13052,
-      "stars30_days": 16,
-      "sh_installs": 107861,
-      "sh_week": 14378,
+      "stars30": 13756,
+      "stars30_days": 18,
+      "sh_installs": 109688,
+      "sh_week": 12588,
       "plat": [
         "claude-code"
       ],
@@ -6922,6 +6920,11 @@
       "status": "published",
       "videos": [
         {
+          "url": "https://www.youtube.com/shorts/hEm-drNmuv0",
+          "by": "Maverick Maltin | ChatGPT, Claude, & AI",
+          "title": "Codex vs Claude code"
+        },
+        {
           "url": "https://www.youtube.com/shorts/zdadBmQALvA",
           "by": "Zac Frulloni",
           "title": "Claude Code vs Codex: Who Wins Now?"
@@ -6930,17 +6933,12 @@
           "url": "https://www.youtube.com/shorts/__VBoH1jUhQ",
           "by": "ClickIT DevOps & Software Development",
           "title": "Codex vs Claude Code: Choose Wisely"
-        },
-        {
-          "url": "https://www.youtube.com/shorts/hEm-drNmuv0",
-          "by": "Maverick Maltin | ChatGPT, Claude, & AI",
-          "title": "Codex vs Claude code"
         }
       ],
-      "stars": 35150,
+      "stars": 35173,
       "pushed_at": "2026-07-08T00:17:31Z",
-      "stars30": 428,
-      "stars30_days": 16,
+      "stars30": 451,
+      "stars30_days": 18,
       "plat": [
         "claude-code"
       ],
@@ -6993,19 +6991,14 @@
             "b": "세션마다 다 잊어버림",
             "a": "규칙과 구조를 계속 기억"
           }
-        },
-        {
-          "url": "https://www.youtube.com/shorts/ciDRzjnNLTk",
-          "by": "Nelson Rodriguez",
-          "title": "Agentmemory: Is This the Fix AI Coding Agents Actually Need? #Shorts"
         }
       ],
-      "stars": 30385,
-      "pushed_at": "2026-11-13T06:39:42Z",
-      "stars30": 361,
-      "stars30_days": 16,
-      "sh_installs": 11785,
-      "sh_week": 297,
+      "stars": 30413,
+      "pushed_at": "2026-11-16T11:49:23Z",
+      "stars30": 389,
+      "stars30_days": 18,
+      "sh_installs": 11830,
+      "sh_week": 255,
       "plat": [
         "claude-code"
       ],
@@ -7060,6 +7053,11 @@
           }
         },
         {
+          "url": "https://www.youtube.com/shorts/N1vbiFzNiGc",
+          "by": "AI-Saddlebag",
+          "title": "Claude HUD: see your context and agents live under the prompt"
+        },
+        {
           "url": "https://www.youtube.com/shorts/uaaxAWp8O2w",
           "by": "VibeDev",
           "title": "Claude HUD: A Live Status Bar for Claude Code Sessions",
@@ -7069,23 +7067,12 @@
             "b": "세션 상태를 알 수 없음",
             "a": "대화 사용량·진행 상황이 보임"
           }
-        },
-        {
-          "url": "https://www.youtube.com/shorts/oPhvxJFUSBs",
-          "by": "AI Dev Minute",
-          "title": "28K Stars: See What Claude Code Is Really Doing (Claude HUD)",
-          "sum": {
-            "f": "Claude HUD가 작업 중인 상태를 화면 아래에 보여줘요",
-            "e": "도구·진행 상황을 실시간으로 봐요",
-            "b": "Claude가 뭘 하는지 안 보임",
-            "a": "사용 도구와 남은 공간이 보임"
-          }
         }
       ],
-      "stars": 29211,
+      "stars": 29221,
       "pushed_at": "2026-11-10T23:24:15Z",
-      "stars30": 183,
-      "stars30_days": 16,
+      "stars30": 193,
+      "stars30_days": 18,
       "plat": [
         "claude-code"
       ],
@@ -7128,12 +7115,12 @@
         "\"설치된 스킬 목록 보여 줘\""
       ],
       "status": "published",
-      "stars": 29854,
-      "pushed_at": "2026-11-12T10:35:06Z",
-      "stars30": 842,
-      "stars30_days": 16,
-      "sh_installs": 2446,
-      "sh_week": 14,
+      "stars": 29917,
+      "pushed_at": "2026-11-16T08:02:52Z",
+      "stars30": 905,
+      "stars30_days": 18,
+      "sh_installs": 2455,
+      "sh_week": 17,
       "plat": [
         "claude-code"
       ],
@@ -7182,12 +7169,12 @@
           "title": "Claude Code skill Planning with Files: keep or delete?"
         }
       ],
-      "stars": 28078,
+      "stars": 28099,
       "pushed_at": "2026-11-11T20:55:30Z",
-      "stars30": 308,
-      "stars30_days": 16,
-      "sh_installs": 49006,
-      "sh_week": 876,
+      "stars30": 329,
+      "stars30_days": 18,
+      "sh_installs": 49096,
+      "sh_week": 580,
       "plat": [
         "claude-code"
       ],
@@ -7230,12 +7217,12 @@
         "\"이 영문 글 번역하고 요약해 줘\""
       ],
       "status": "published",
-      "stars": 27566,
+      "stars": 27615,
       "pushed_at": "2026-11-06T17:20:33Z",
-      "stars30": 482,
-      "stars30_days": 16,
-      "sh_installs": 34970,
-      "sh_week": 191,
+      "stars30": 531,
+      "stars30_days": 18,
+      "sh_installs": 34999,
+      "sh_week": 211,
       "plat": [
         "claude-code"
       ],
@@ -7296,17 +7283,23 @@
           }
         },
         {
-          "url": "https://www.youtube.com/shorts/x_LFx4UHfQs",
-          "by": "Claudical",
-          "title": "AI한테 같은 걸 두 번 안 가르치는 법 | Claude Code 플러그인 Compound Engineering"
+          "url": "https://www.youtube.com/shorts/LUG0dvwN0L8",
+          "by": "ZeroCho TV",
+          "title": "AI의 실수는 한 번으로 족하다. 실수 반복하지 않게 하기 Compound Engineering. 컴파운드 엔지니어링 #llm #claude #codex #opencode",
+          "sum": {
+            "f": "실수를 기록해 다음 작업에 반영하게 하는 방식이에요",
+            "e": "같은 실수를 덜 반복하게 돼요",
+            "b": "같은 실수를 반복",
+            "a": "기록을 참고해 다음엔 줄임"
+          }
         }
       ],
-      "stars": 26112,
-      "pushed_at": "2026-11-13T17:09:51Z",
-      "stars30": 328,
-      "stars30_days": 16,
-      "sh_installs": 4163,
-      "sh_week": 74,
+      "stars": 26127,
+      "pushed_at": "2026-11-17T01:12:32Z",
+      "stars30": 343,
+      "stars30_days": 18,
+      "sh_installs": 4173,
+      "sh_week": 86,
       "plat": [
         "claude-code"
       ],
@@ -7350,6 +7343,11 @@
       "status": "published",
       "videos": [
         {
+          "url": "https://www.youtube.com/shorts/FqKRd2PruWQ",
+          "by": "Allen Anant Thomas",
+          "title": "Free Claude Code plugin audits your whole website (Claude SEO)"
+        },
+        {
           "url": "https://www.youtube.com/shorts/-W-8HJrFubo",
           "by": "Daily SEO with Julian",
           "title": "Claude SEO: A Free SEO Team Inside Claude Code (26 Skills, 19 Agents)"
@@ -7358,19 +7356,14 @@
           "url": "https://www.youtube.com/shorts/iOTS0qnzfLY",
           "by": "Daniel Agrici",
           "title": "Claude SEO brain is here: the pro second brain for Claude Code SEO"
-        },
-        {
-          "url": "https://www.youtube.com/shorts/TWSvl4_Pp-g",
-          "by": "Daniel Agrici",
-          "title": "Claude SEO v2, Now Hardened: 248 Tests, Every SSRF Bypass Closed"
         }
       ],
-      "stars": 29705,
-      "pushed_at": "2026-11-15T10:10:39Z",
-      "stars30": 5455,
-      "stars30_days": 16,
-      "sh_installs": 10367,
-      "sh_week": 494,
+      "stars": 30084,
+      "pushed_at": "2026-11-16T06:16:01Z",
+      "stars30": 5834,
+      "stars30_days": 18,
+      "sh_installs": 10457,
+      "sh_week": 414,
       "plat": [
         "claude-code"
       ],
@@ -7414,14 +7407,14 @@
       "status": "published",
       "videos": [
         {
-          "url": "https://www.youtube.com/shorts/2H3PuagUYR8",
-          "by": "Datadog Community",
-          "title": "Using SuperClaude with Claude Code 2"
-        },
-        {
           "url": "https://www.youtube.com/shorts/r3nJlx49hL0",
           "by": "MichalKu",
           "title": "SuperClaude is here - 3 Essential Tips for Claude Code"
+        },
+        {
+          "url": "https://www.youtube.com/shorts/2H3PuagUYR8",
+          "by": "Datadog Community",
+          "title": "Using SuperClaude with Claude Code 2"
         },
         {
           "url": "https://www.youtube.com/shorts/RAM8BruE0LQ",
@@ -7435,10 +7428,10 @@
           }
         }
       ],
-      "stars": 23938,
+      "stars": 23937,
       "pushed_at": "2026-09-27T12:50:32Z",
-      "stars30": 23,
-      "stars30_days": 16,
+      "stars30": 22,
+      "stars30_days": 18,
       "plat": [
         "claude-code"
       ],
@@ -7493,22 +7486,22 @@
           }
         },
         {
-          "url": "https://www.youtube.com/shorts/3GzJ-GDsLnA",
-          "by": "CodenamePoshan",
-          "title": "/brag: Turn Claude Code & Codex Projects Into Launch Videos"
+          "url": "https://www.youtube.com/shorts/UbovWH2JAeM",
+          "by": "Kevin Singh",
+          "title": "This Claude Code Skill Turns Your Project into a Promo Video in 10 Minutes! | Bragg AI"
         },
         {
-          "url": "https://www.youtube.com/shorts/os3Kd1YR76o",
-          "by": "BarbuPrime IA | Claude Code Vs Codex",
-          "title": "Claude Code hace el VIDEO de lanzamiento de tu proyecto 🎬 Skill /brag"
+          "url": "https://www.youtube.com/shorts/FyY5Svp1QfA",
+          "by": "Dev En Direct",
+          "title": "I tried to break /brag #claude #development #brag #motiongraphics #hyperframes"
         }
       ],
-      "stars": 21612,
+      "stars": 21745,
       "pushed_at": "2026-11-15T17:07:46Z",
-      "stars30": 2054,
-      "stars30_days": 16,
-      "sh_installs": 24486,
-      "sh_week": 1797,
+      "stars30": 2187,
+      "stars30_days": 18,
+      "sh_installs": 24660,
+      "sh_week": 1223,
       "plat": [
         "claude-code"
       ],
@@ -7550,12 +7543,12 @@
         "\"이 데이터로 작은 모델 파인튜닝 계획 짜 줘\""
       ],
       "status": "published",
-      "stars": 14570,
+      "stars": 14601,
       "pushed_at": "2026-10-11T02:56:34Z",
-      "stars30": 454,
-      "stars30_days": 16,
-      "sh_installs": 2541,
-      "sh_week": 54,
+      "stars30": 485,
+      "stars30_days": 18,
+      "sh_installs": 2552,
+      "sh_week": 69,
       "plat": [
         "claude-code"
       ],
@@ -7629,20 +7622,20 @@
           }
         },
         {
-          "url": "https://www.youtube.com/shorts/5RWXeDd3MvM",
-          "by": "Apify",
-          "title": "Claude Code + Apify: find viral TikTok hooks"
+          "url": "https://www.youtube.com/shorts/AOgvN2ePeRM",
+          "by": "Somya Nayak",
+          "title": "I literally used Claude (and Apify and LinkedIn) to apply to unlimited jobs"
         },
         {
-          "url": "https://www.youtube.com/shorts/2fvVnubgt0s",
-          "by": "Charlie Automates",
-          "title": "Apify + Claude Code + GHL = Unlimited Leads"
+          "url": "https://www.youtube.com/shorts/mzmkPFlga-0",
+          "by": "Top Click Media",
+          "title": "Get Unlimited Leads Everyday Automatically Using Claude and Apify"
         }
       ],
-      "stars": 16411,
-      "pushed_at": "2026-11-13T22:31:34Z",
-      "stars30": 2518,
-      "stars30_days": 16,
+      "stars": 16575,
+      "pushed_at": "2026-11-16T23:16:07Z",
+      "stars30": 2682,
+      "stars30_days": 18,
       "plat": [
         "claude-code"
       ],
@@ -7703,12 +7696,12 @@
           "title": "아직도 AI 코딩 에이전트를 단순 코딩에만 쓰고 계신가요? | ConardLi/garden-skills"
         }
       ],
-      "stars": 15232,
+      "stars": 15312,
       "pushed_at": "2026-11-14T15:18:55Z",
-      "stars30": 1822,
-      "stars30_days": 16,
-      "sh_installs": 9967,
-      "sh_week": 413,
+      "stars30": 1902,
+      "stars30_days": 18,
+      "sh_installs": 10044,
+      "sh_week": 437,
       "plat": [
         "claude-code"
       ],
@@ -7750,10 +7743,10 @@
         "\"고객 응대 봇 프롬프트 구조화해서 써 줘\""
       ],
       "status": "published",
-      "stars": 12699,
+      "stars": 12706,
       "pushed_at": "2026-09-11T02:11:09Z",
-      "stars30": 46,
-      "stars30_days": 16,
+      "stars30": 53,
+      "stars30_days": 18,
       "plat": [
         "claude-code"
       ],
@@ -7795,12 +7788,12 @@
         "설치하면 상황에 맞는 스킬이 자동 발동됩니다."
       ],
       "status": "published",
-      "stars": 12379,
-      "pushed_at": "2026-11-15T12:48:35Z",
-      "stars30": 237,
-      "stars30_days": 16,
-      "sh_installs": 24061,
-      "sh_week": 298,
+      "stars": 12414,
+      "pushed_at": "2026-11-16T17:30:27Z",
+      "stars30": 272,
+      "stars30_days": 18,
+      "sh_installs": 24094,
+      "sh_week": 241,
       "plat": [
         "claude-code"
       ],
@@ -7866,12 +7859,12 @@
           }
         }
       ],
-      "stars": 12554,
+      "stars": 12559,
       "pushed_at": "2026-11-10T02:51:15Z",
-      "stars30": 419,
-      "stars30_days": 16,
-      "sh_installs": 13930,
-      "sh_week": 272,
+      "stars30": 424,
+      "stars30_days": 18,
+      "sh_installs": 13952,
+      "sh_week": 204,
       "plat": [
         "claude-code"
       ],
@@ -7942,10 +7935,10 @@
           "title": "autoharness is a self-learning skill layer for Claude Code."
         }
       ],
-      "stars": 11128,
+      "stars": 11147,
       "pushed_at": "2026-11-12T08:19:16Z",
-      "stars30": 519,
-      "stars30_days": 16,
+      "stars30": 538,
+      "stars30_days": 18,
       "plat": [
         "claude-code"
       ],
@@ -7987,12 +7980,12 @@
         "\"이 캠페인 성과 분석하고 예산 재배분 제안해 줘\""
       ],
       "status": "published",
-      "stars": 11062,
+      "stars": 11096,
       "pushed_at": "2026-11-01T21:08:14Z",
-      "stars30": 467,
-      "stars30_days": 16,
-      "sh_installs": 5307,
-      "sh_week": 202,
+      "stars30": 501,
+      "stars30_days": 18,
+      "sh_installs": 5363,
+      "sh_week": 178,
       "plat": [
         "claude-code"
       ],
@@ -8042,26 +8035,20 @@
           "title": "What Is an AI Harness? Claude Code Explained"
         },
         {
-          "url": "https://www.youtube.com/shorts/9zYoAh2PH60",
-          "by": "Nick Automates",
-          "title": "Deepseek Harness is a new Free Claude Code alternative where you can customize it however you want",
-          "sum": {
-            "f": "모든 부분을 바꿔 끼울 수 있는 무료 AI 코딩 도구예요",
-            "e": "원하는 모델로 나만의 에이전트를 만들어요",
-            "b": "정해진 도구 구성에 맞춰 사용",
-            "a": "모델·도구를 골라 조립해 사용"
-          }
+          "url": "https://www.youtube.com/shorts/IVdJj_aNwhE",
+          "by": "KodeKloud",
+          "title": "Agent Harness Explained in 2 minutes"
         },
         {
-          "url": "https://www.youtube.com/shorts/mAosyfIGB9s",
-          "by": "RC Photography Austin",
-          "title": "Claude Harness Engineering Explained"
+          "url": "https://www.youtube.com/shorts/-EwmLQmHELI",
+          "by": "Google Cloud Tech",
+          "title": "Why build your own AI agent harness?"
         }
       ],
-      "stars": 9368,
+      "stars": 9370,
       "pushed_at": "2026-09-28T05:19:20Z",
-      "stars30": 80,
-      "stars30_days": 16,
+      "stars30": 82,
+      "stars30_days": 18,
       "plat": [
         "claude-code"
       ],
@@ -8110,12 +8097,12 @@
           "title": "클로드 코드로 게임 모드 만들기, GTA 속 마인크래프트까지"
         }
       ],
-      "stars": 9715,
-      "pushed_at": "2026-11-15T18:19:40Z",
-      "stars30": 493,
-      "stars30_days": 16,
-      "sh_installs": 2142,
-      "sh_week": 228,
+      "stars": 9732,
+      "pushed_at": "2026-11-17T00:39:18Z",
+      "stars30": 510,
+      "stars30_days": 18,
+      "sh_installs": 2169,
+      "sh_week": 186,
       "plat": [
         "claude-code"
       ],
@@ -8157,12 +8144,12 @@
         "\"이 아이디어 PRD(요구사항 문서)로 정리해 줘\""
       ],
       "status": "published",
-      "stars": 8032,
+      "stars": 8046,
       "pushed_at": "2026-11-13T15:19:58Z",
-      "stars30": 249,
-      "stars30_days": 16,
-      "sh_installs": 4878,
-      "sh_week": 82,
+      "stars30": 263,
+      "stars30_days": 18,
+      "sh_installs": 4886,
+      "sh_week": 46,
       "plat": [
         "claude-code"
       ],
@@ -8222,12 +8209,12 @@
           "title": "🚀 Boost AI Productivity with Waza Python Script! @PyLouis #louispython #Waza"
         }
       ],
-      "stars": 7598,
+      "stars": 7599,
       "pushed_at": "2026-11-11T07:02:04Z",
-      "stars30": 126,
-      "stars30_days": 16,
-      "sh_installs": 19200,
-      "sh_week": 359,
+      "stars30": 127,
+      "stars30_days": 18,
+      "sh_installs": 19218,
+      "sh_week": 162,
       "plat": [
         "claude-code"
       ],
@@ -8270,10 +8257,10 @@
         "\"이 글 사람이 쓴 것처럼 다듬어 줘\""
       ],
       "status": "published",
-      "stars": 6568,
-      "pushed_at": "2026-11-15T16:28:34Z",
-      "stars30": 231,
-      "stars30_days": 16,
+      "stars": 6612,
+      "pushed_at": "2026-11-16T14:01:16Z",
+      "stars30": 275,
+      "stars30_days": 18,
       "pick": "AI로 쓴 한글을 내보내기 전에 꼭 거치게 되는 도구. 한국인 제작.",
       "plat": [
         "claude-code"
@@ -8319,14 +8306,20 @@
       "status": "published",
       "videos": [
         {
-          "url": "https://www.youtube.com/shorts/nng9SyelQSM",
-          "by": "Noe Varner | AI Automation",
-          "title": "Claude Code + ChatGPT Image 2 = Unlimited Image Ads"
+          "url": "https://www.youtube.com/shorts/OR1dvAjsUwo",
+          "by": "Pablo Valdivia",
+          "title": "How do i Connect Claude to Chat GPT Image 2/2.5",
+          "sum": {
+            "f": "Claude로 GPT 이미지 모델의 광고 이미지를 만들어요",
+            "e": "제품 사진으로 광고 이미지가 나와요",
+            "b": "광고 이미지를 직접 제작",
+            "a": "Claude에 시키면 광고 10장 생성"
+          }
         },
         {
-          "url": "https://www.youtube.com/shorts/7-RWf3X-6jI",
-          "by": "AI With Abhijay | Master Gemini, ChatGPT & Claude",
-          "title": "100+ Secret ChatGPT Image Codes You Need to Try"
+          "url": "https://www.youtube.com/shorts/J6obLv8K0AI",
+          "by": "Pablo Valdivia",
+          "title": "How to Connect GPT Image to Claude in 6 Steps"
         },
         {
           "url": "https://www.youtube.com/shorts/rKvKR4iKXh4",
@@ -8334,10 +8327,10 @@
           "title": "Build Cinematic Websites With AI 🤯 | Claude Code + GPT Image 2.#AITools #shorts"
         }
       ],
-      "stars": 6108,
+      "stars": 6119,
       "pushed_at": "2026-11-08T22:34:08Z",
-      "stars30": 156,
-      "stars30_days": 16,
+      "stars30": 167,
+      "stars30_days": 18,
       "plat": [
         "claude-code"
       ],
@@ -8392,12 +8385,12 @@
           }
         }
       ],
-      "stars": 5937,
+      "stars": 5969,
       "pushed_at": "2026-11-10T11:05:23Z",
-      "stars30": 558,
-      "stars30_days": 16,
-      "sh_installs": 2027,
-      "sh_week": 137,
+      "stars30": 590,
+      "stars30_days": 18,
+      "sh_installs": 2048,
+      "sh_week": 108,
       "plat": [
         "claude-code"
       ],
@@ -8441,27 +8434,33 @@
       "status": "published",
       "videos": [
         {
-          "url": "https://www.youtube.com/shorts/Qtq6gS7iLbo",
-          "by": "Lodestar",
-          "title": "Claude Just Killed Logo Designers? 🤯 The AI Design Revolution Is Here"
-        },
-        {
           "url": "https://www.youtube.com/shorts/TF_O19hps9k",
           "by": "Nick Babich",
           "title": "Logo design with Claude Design"
         },
         {
-          "url": "https://www.youtube.com/shorts/H2sHLkai6gc",
-          "by": "Pinto | AI news & tools",
-          "title": "Claude Code logo design: the free skill that stops and asks"
+          "url": "https://www.youtube.com/shorts/BgJaH92dda0",
+          "by": "츄즈잇 CHOO's IT",
+          "title": "클로드 로고 만들기 logo design 스킬 무료 AI 로고 디자인 시안 28개 디자이너 없이"
+        },
+        {
+          "url": "https://www.youtube.com/shorts/wT79wTv9S_o",
+          "by": "Claudical",
+          "title": "가게 로고 시안을 무료로 그려 주는 Claude Code 스킬 | 로고 디자인 스킬",
+          "sum": {
+            "f": "로고 디자인 스킬이 가게 로고 시안 3개를 그려줘요",
+            "e": "이름만 주면 로고 시안이 나와요",
+            "b": "로고 방향을 잡기 어려움",
+            "a": "시안 3개와 브랜드 가이드를 받음"
+          }
         }
       ],
-      "stars": 6999,
+      "stars": 7089,
       "pushed_at": "2026-11-13T16:32:36Z",
-      "stars30": 1664,
-      "stars30_days": 16,
-      "sh_installs": 2675,
-      "sh_week": 477,
+      "stars30": 1754,
+      "stars30_days": 18,
+      "sh_installs": 2796,
+      "sh_week": 516,
       "plat": [
         "claude-code"
       ],
@@ -8510,10 +8509,10 @@
           "title": "I made Claude smarter with an Obsidian second brain"
         }
       ],
-      "stars": 5341,
-      "pushed_at": "2026-11-15T18:28:52Z",
-      "stars30": 294,
-      "stars30_days": 16,
+      "stars": 5355,
+      "pushed_at": "2026-11-16T21:55:15Z",
+      "stars30": 308,
+      "stars30_days": 18,
       "plat": [
         "claude-code"
       ],
@@ -8568,23 +8567,23 @@
           }
         },
         {
-          "url": "https://www.youtube.com/shorts/aAqWstXRR2A",
-          "by": "bestatAI",
-          "title": "Answer Me With HTML: an AI skill that answers hard questions with a readable page",
+          "url": "https://www.youtube.com/shorts/Sy6t8mD0wUE",
+          "by": "LookOnThisGit",
+          "title": "7x Faster AI UI with Answer Me with HTML ⚡",
           "sum": {
-            "f": "AI가 어려운 질문의 답을 읽기 쉬운 웹페이지로 만들어요",
-            "e": "긴 글 대신 보기 편한 페이지로 받아요",
-            "b": "답이 긴 글로 나옴",
-            "a": "답이 웹페이지로 표시됨"
+            "f": "Answer Me with HTML로 AI가 보기 좋은 페이지를 빠르게 만들어요",
+            "e": "다이어그램·타임라인을 가볍게 만들어요",
+            "b": "AI가 긴 HTML을 써서 느림",
+            "a": "짧은 글로 예쁜 페이지 생성"
           }
         }
       ],
-      "stars": 6339,
-      "pushed_at": "2026-11-15T12:29:21Z",
-      "stars30": 1483,
-      "stars30_days": 16,
-      "sh_installs": 8382,
-      "sh_week": 1316,
+      "stars": 6368,
+      "pushed_at": "2026-11-16T05:37:19Z",
+      "stars30": 1512,
+      "stars30_days": 18,
+      "sh_installs": 8496,
+      "sh_week": 1158,
       "plat": [
         "claude-code"
       ],
@@ -8626,12 +8625,12 @@
         "\"toss.im 디자인 시스템 뽑아 줘\""
       ],
       "status": "published",
-      "stars": 5107,
+      "stars": 5123,
       "pushed_at": "2026-11-13T00:59:00Z",
-      "stars30": 686,
-      "stars30_days": 16,
-      "sh_installs": 3502,
-      "sh_week": 211,
+      "stars30": 702,
+      "stars30_days": 18,
+      "sh_installs": 3522,
+      "sh_week": 177,
       "plat": [
         "claude-code"
       ],
@@ -8684,19 +8683,14 @@
             "b": "정해진 템플릿 같은 사이트",
             "a": "스크롤이 영상처럼 흐르는 사이트"
           }
-        },
-        {
-          "url": "https://www.youtube.com/shorts/gEBzHGO93l0",
-          "by": "TheSkillDrop",
-          "title": "Scroll Craft, Motion Skills: 3 Claude Code skills for websites that move"
         }
       ],
-      "stars": 5106,
+      "stars": 5156,
       "pushed_at": "2026-09-30T13:31:42Z",
-      "stars30": 873,
-      "stars30_days": 16,
-      "sh_installs": 1817,
-      "sh_week": 210,
+      "stars30": 923,
+      "stars30_days": 18,
+      "sh_installs": 1850,
+      "sh_week": 231,
       "plat": [
         "claude-code"
       ],
@@ -8751,10 +8745,10 @@
           }
         }
       ],
-      "stars": 4201,
+      "stars": 4227,
       "pushed_at": "2026-11-13T23:09:26Z",
-      "stars30": 119,
-      "stars30_days": 16,
+      "stars30": 145,
+      "stars30_days": 18,
       "plat": [
         "claude-code"
       ],
@@ -8798,25 +8792,25 @@
       "status": "published",
       "videos": [
         {
-          "url": "https://www.youtube.com/shorts/lVVgYJ4yDqc",
-          "by": "Renato Dinis | Build With AI",
-          "title": "pstack Makes Claude Prove Its Fixes. Who Checks It?"
+          "url": "https://www.youtube.com/shorts/TI2rFCY9cGQ",
+          "by": "TonkaToyXL | Mario Builds with AI",
+          "title": "What Is Pstack? Better AI Coding Explained"
         },
         {
-          "url": "https://www.youtube.com/shorts/-aTAoUWF5rc",
-          "by": "Build with Huy",
-          "title": "3 Claude Code workflow skills: Superpowers, Spec Kit, pstack #claudecode #aishorts #claudefable"
+          "url": "https://www.youtube.com/shorts/zE4sPs-V47c",
+          "by": "tianhai-tech",
+          "title": "Stop Prompting: How to Clone Your Engineering Style with pstack's /automate-me"
         },
         {
-          "url": "https://www.youtube.com/shorts/NeT-R3uP9VI",
-          "by": "Next Horizon",
-          "title": "pstack-claude: Multimodel Agent Workflows with Cursor Primitives – AI Debugging"
+          "url": "https://www.youtube.com/shorts/HpMVCnt7GFw",
+          "by": "Gourcer",
+          "title": "michael-denyer/pstack-claude - Gource visualisation"
         }
       ],
-      "stars": 4349,
+      "stars": 4401,
       "pushed_at": "2026-11-13T15:53:05Z",
-      "stars30": 702,
-      "stars30_days": 16,
+      "stars30": 754,
+      "stars30_days": 18,
       "plat": [
         "claude-code"
       ],
@@ -8858,12 +8852,12 @@
         "\"이 자료들로 위키 페이지 만들어 줘\""
       ],
       "status": "published",
-      "stars": 3745,
+      "stars": 3758,
       "pushed_at": "2026-11-15T21:57:42Z",
-      "stars30": 105,
-      "stars30_days": 16,
-      "sh_installs": 4190,
-      "sh_week": 42,
+      "stars30": 118,
+      "stars30_days": 18,
+      "sh_installs": 4191,
+      "sh_week": 37,
       "plat": [
         "claude-code"
       ],
@@ -8918,10 +8912,10 @@
           }
         }
       ],
-      "stars": 3177,
+      "stars": 3182,
       "pushed_at": "2026-11-10T07:20:20Z",
-      "stars30": 119,
-      "stars30_days": 16,
+      "stars30": 124,
+      "stars30_days": 18,
       "plat": [
         "claude-code"
       ],
@@ -8985,12 +8979,12 @@
           "d": "구글이 보는 속도 지표를 개선해요"
         }
       ],
-      "stars": 3088,
+      "stars": 3099,
       "pushed_at": "2026-08-24T21:07:36Z",
-      "stars30": 77,
-      "stars30_days": 16,
-      "sh_installs": 37517,
-      "sh_week": 1467,
+      "stars30": 88,
+      "stars30_days": 18,
+      "sh_installs": 37808,
+      "sh_week": 1585,
       "plat": [
         "claude-code"
       ],
@@ -9032,10 +9026,10 @@
         "설치 후 평소처럼 지적하면 됩니다."
       ],
       "status": "published",
-      "stars": 2958,
+      "stars": 2961,
       "pushed_at": "2026-09-29T10:12:13Z",
-      "stars30": 22,
-      "stars30_days": 16,
+      "stars30": 25,
+      "stars30_days": 18,
       "plat": [
         "claude-code"
       ],
@@ -9084,10 +9078,10 @@
           "title": "MemSearch: OpenClaw's long-term memory"
         }
       ],
-      "stars": 2882,
+      "stars": 2891,
       "pushed_at": "2026-11-13T09:22:22Z",
-      "stars30": 73,
-      "stars30_days": 16,
+      "stars30": 82,
+      "stars30_days": 18,
       "plat": [
         "claude-code"
       ],
@@ -9129,12 +9123,12 @@
         "\"이 사업 아이디어 린 캔버스로 정리해 줘\""
       ],
       "status": "published",
-      "stars": 2705,
+      "stars": 2712,
       "pushed_at": "2026-11-13T13:37:16Z",
-      "stars30": 165,
-      "stars30_days": 16,
-      "sh_installs": 10778,
-      "sh_week": 523,
+      "stars30": 172,
+      "stars30_days": 18,
+      "sh_installs": 10856,
+      "sh_week": 468,
       "plat": [
         "claude-code"
       ],
@@ -9266,17 +9260,17 @@
           "title": "Claude Code with Terraform | Quick Explainer | English"
         },
         {
-          "url": "https://www.youtube.com/shorts/tomUWcQ0P3k",
-          "by": "Fireship",
-          "title": "Terraform in 100 Seconds"
+          "url": "https://www.youtube.com/shorts/KehrALnedGk",
+          "by": "TheShiftStack",
+          "title": "Claude vs ChatGPT — Terraform Code Round #claude #chatgpt #shorts"
         }
       ],
-      "stars": 2466,
-      "pushed_at": "2026-10-24T11:55:58Z",
-      "stars30": 33,
-      "stars30_days": 16,
-      "sh_installs": 8064,
-      "sh_week": 288,
+      "stars": 2468,
+      "pushed_at": "2026-11-16T15:15:52Z",
+      "stars30": 35,
+      "stars30_days": 18,
+      "sh_installs": 8099,
+      "sh_week": 207,
       "plat": [
         "claude-code"
       ],
@@ -9318,10 +9312,10 @@
         "\"오늘 새로 나온 AI 용어 정리해 줘\""
       ],
       "status": "published",
-      "stars": 2178,
-      "pushed_at": "2026-11-02T23:42:54Z",
-      "stars30": 202,
-      "stars30_days": 16,
+      "stars": 2182,
+      "pushed_at": "2026-11-16T18:06:58Z",
+      "stars30": 206,
+      "stars30_days": 18,
       "plat": [
         "claude-code"
       ],
@@ -9365,20 +9359,20 @@
       "status": "published",
       "videos": [
         {
-          "url": "https://www.youtube.com/shorts/aEX4PqBOv3k",
-          "by": "Generative",
-          "title": "Claude Code Settings Files Expose Secrets on GitHub, Researchers Report"
+          "url": "https://www.youtube.com/shorts/tlQhMIkBnRE",
+          "by": "CloudYeti | Practical AI Engineering",
+          "title": "The 2 Claude Code Settings That Save You Real Money | AI Cost optimization series"
         },
         {
-          "url": "https://www.youtube.com/shorts/x19GRYCggco",
-          "by": "The Rogue Data Scientist",
-          "title": "1,122 Claude Code Settings Files Contained Real Secrets #Shorts"
+          "url": "https://www.youtube.com/shorts/lmx8HOKtaY0",
+          "by": "Ahmed Mukhtar AI",
+          "title": "100,000 Claude Code Settings Files Are Public"
         }
       ],
       "stars": 1682,
       "pushed_at": "2026-11-05T13:15:07Z",
       "stars30": 14,
-      "stars30_days": 16,
+      "stars30_days": 18,
       "plat": [
         "claude-code"
       ],
@@ -9430,12 +9424,17 @@
           "url": "https://www.youtube.com/shorts/rja1DfjUdww",
           "by": "Activeloop",
           "title": "Continual learning for every coding agent on your team | Hivemind"
+        },
+        {
+          "url": "https://www.youtube.com/shorts/ZEw2Z7lN_IM",
+          "by": "Adrian Erlikhman",
+          "title": "hivemind pitch final"
         }
       ],
       "stars": 1655,
       "pushed_at": "2026-11-11T13:39:16Z",
       "stars30": 13,
-      "stars30_days": 16,
+      "stars30_days": 18,
       "plat": [
         "claude-code"
       ],
@@ -9477,10 +9476,10 @@
         "\"/brooks-lint 검토\""
       ],
       "status": "published",
-      "stars": 1577,
-      "pushed_at": "2026-11-15T16:33:43Z",
-      "stars30": 25,
-      "stars30_days": 16,
+      "stars": 1578,
+      "pushed_at": "2026-11-17T02:48:42Z",
+      "stars30": 26,
+      "stars30_days": 18,
       "plat": [
         "claude-code"
       ],
@@ -9535,10 +9534,10 @@
           }
         }
       ],
-      "stars": 1584,
+      "stars": 1587,
       "pushed_at": "2026-10-30T19:05:02Z",
-      "stars30": 71,
-      "stars30_days": 16,
+      "stars30": 74,
+      "stars30_days": 18,
       "plat": [
         "claude-code"
       ],
@@ -9581,10 +9580,10 @@
         "설치하면 자동. 바로 한국어가 달라져요."
       ],
       "status": "published",
-      "stars": 1506,
+      "stars": 1510,
       "pushed_at": "2026-08-23T01:09:21Z",
-      "stars30": 39,
-      "stars30_days": 16,
+      "stars30": 43,
+      "stars30_days": 18,
       "pick": "Claude 한국어가 바로 자연스러워집니다. 한국인 제작, 설치 즉시 효과.",
       "plat": [
         "claude-code"
@@ -9649,17 +9648,12 @@
             "b": "AI가 필드를 공개하는 등 부실한 코드",
             "a": "비공개 필드와 문서화된 오류 처리"
           }
-        },
-        {
-          "url": "https://www.youtube.com/shorts/ohLgj983WdY",
-          "by": "No Short Answers",
-          "title": "Can AI write beautiful Rust? #shorts"
         }
       ],
-      "stars": 1826,
+      "stars": 1923,
       "pushed_at": "2026-11-08T17:21:11Z",
-      "stars30": 381,
-      "stars30_days": 16,
+      "stars30": 478,
+      "stars30_days": 18,
       "plat": [
         "claude-code"
       ],
@@ -9715,9 +9709,9 @@
           }
         },
         {
-          "url": "https://www.youtube.com/shorts/RchShuBZpx4",
-          "by": "SSK Tech Podcast",
-          "title": "Claude Code Gets Its Own iOS Simulator — Build, Test & Fix All in One"
+          "url": "https://www.youtube.com/shorts/yQIpi4C9hd0",
+          "by": "☕️ Claude Code Cafe",
+          "title": "🔔 Claude Code Desktop Gets an iOS Simulator Pane #claude #claudecode #ios"
         },
         {
           "url": "https://www.youtube.com/shorts/nbgGxzOMqpg",
@@ -9731,12 +9725,12 @@
           }
         }
       ],
-      "stars": 1328,
+      "stars": 1330,
       "pushed_at": "2026-11-08T15:21:32Z",
-      "stars30": 23,
-      "stars30_days": 16,
-      "sh_installs": 2461,
-      "sh_week": 26,
+      "stars30": 25,
+      "stars30_days": 18,
+      "sh_installs": 2469,
+      "sh_week": 27,
       "plat": [
         "claude-code"
       ],
@@ -9791,20 +9785,20 @@
           }
         },
         {
-          "url": "https://www.youtube.com/shorts/1jBJ__KG8VQ",
-          "by": "Duncan Ships",
-          "title": "This Claude Code Skill Creates 3D Animated Explainer Videos"
-        },
-        {
           "url": "https://www.youtube.com/shorts/9ZxdXEd1pZw",
           "by": "Tensaikun",
           "title": "Claude Fable 5.2 vs Opus 5.5 Make an Animated Video From Scratch"
+        },
+        {
+          "url": "https://www.youtube.com/shorts/2gysSSBSLRY",
+          "by": "Himan Creates",
+          "title": "How to Make $10k 3D animated website with Claude in 5 minutes"
         }
       ],
-      "stars": 2006,
+      "stars": 2061,
       "pushed_at": "2026-10-05T20:31:48Z",
-      "stars30": 904,
-      "stars30_days": 16,
+      "stars30": 959,
+      "stars30_days": 18,
       "plat": [
         "claude-code"
       ],
@@ -9847,10 +9841,10 @@
         "\"이거 핀 해 둬: API 키는 .env에\""
       ],
       "status": "published",
-      "stars": 875,
+      "stars": 874,
       "pushed_at": "2026-11-01T05:18:11Z",
-      "stars30": -223,
-      "stars30_days": 16,
+      "stars30": -224,
+      "stars30_days": 18,
       "plat": [
         "claude-code"
       ],
@@ -9905,10 +9899,10 @@
           }
         }
       ],
-      "stars": 1152,
-      "pushed_at": "2026-11-15T23:04:42Z",
-      "stars30": 67,
-      "stars30_days": 16,
+      "stars": 1155,
+      "pushed_at": "2026-11-16T23:03:54Z",
+      "stars30": 70,
+      "stars30_days": 18,
       "plat": [
         "claude-code"
       ],
@@ -9958,10 +9952,10 @@
           "title": "클로드로 캡컷 영상 편집자 만든 공대생"
         }
       ],
-      "stars": 1204,
+      "stars": 1219,
       "pushed_at": "2026-11-15T01:55:39Z",
-      "stars30": 140,
-      "stars30_days": 16,
+      "stars30": 155,
+      "stars30_days": 18,
       "plat": [
         "claude-code"
       ],
@@ -10019,12 +10013,12 @@
           }
         }
       ],
-      "stars": 39515,
-      "pushed_at": "2026-11-12T23:25:25Z",
-      "stars30": 2087,
-      "stars30_days": 15,
-      "sh_installs": 4376589,
-      "sh_week": 115285,
+      "stars": 39711,
+      "pushed_at": "2026-11-17T00:58:04Z",
+      "stars30": 2283,
+      "stars30_days": 17,
+      "sh_installs": 4397113,
+      "sh_week": 110096,
       "sh_url": "https://skills.sh/vercel-labs/skills/find-skills",
       "plat": [
         "claude-code"
@@ -10103,22 +10097,22 @@
       ],
       "videos": [
         {
+          "url": "https://www.youtube.com/shorts/Pmfdl3XFWAI",
+          "by": "Seb Moska",
+          "title": "Matt Pocock Skills vs Superpowers: Which One? (Claude Code)"
+        },
+        {
           "url": "https://www.youtube.com/shorts/RkWlEkPkxXo",
           "by": "Seb Moska",
           "title": "Matt Pocock Skills vs Superpowers: 10 Things You Need to Know (Claude Code)"
-        },
-        {
-          "url": "https://www.youtube.com/shorts/86EBT6mofyw",
-          "by": "AI Arnob",
-          "title": "The Whole Claude Code Skills Flow in 60 Seconds | Matt Pocock Skills EP 28"
         }
       ],
-      "stars": 325159,
+      "stars": 326018,
       "pushed_at": "2026-11-13T12:30:31Z",
-      "stars30": 16829,
-      "stars30_days": 15,
-      "sh_installs": 1556360,
-      "sh_week": 43368,
+      "stars30": 17688,
+      "stars30_days": 17,
+      "sh_installs": 1563065,
+      "sh_week": 41260,
       "sh_url": "https://skills.sh/mattpocock/skills/grill-me",
       "plat": [
         "claude-code"
@@ -10175,6 +10169,11 @@
       "status": "published",
       "videos": [
         {
+          "url": "https://www.youtube.com/shorts/1AmjZxemaBY",
+          "by": "Seb Moska",
+          "title": "How to Create Motion Graphics with HyperFrames (Claude Code)"
+        },
+        {
           "url": "https://www.youtube.com/shorts/Yo-ikJ2ad_4",
           "by": "TheSkillDrop",
           "title": "3 Free Claude Code Skills That Make Real Videos - HyperFrames, Remotion, Motion Skills"
@@ -10189,19 +10188,14 @@
             "b": "영상 편집 프로그램으로 제작",
             "a": "Claude가 쓴 HTML이 영상으로"
           }
-        },
-        {
-          "url": "https://www.youtube.com/shorts/ogMWTj-sOL0",
-          "by": "Nextworthy",
-          "title": "Claude can now edit videos with HyperFrames (open source)"
         }
       ],
-      "stars": 84735,
-      "pushed_at": "2026-11-15T23:55:00Z",
-      "stars30": 8185,
-      "stars30_days": 15,
-      "sh_installs": 1577792,
-      "sh_week": 125767,
+      "stars": 85293,
+      "pushed_at": "2026-11-17T02:47:45Z",
+      "stars30": 8743,
+      "stars30_days": 17,
+      "sh_installs": 1595667,
+      "sh_week": 103285,
       "sh_url": "https://skills.sh/heygen-com/hyperframes/hyperframes-cli",
       "plat": [
         "claude-code"
@@ -10285,12 +10279,12 @@
           }
         }
       ],
-      "stars": 51606,
-      "pushed_at": "2026-11-15T12:43:23Z",
-      "stars30": 6573,
-      "stars30_days": 15,
-      "sh_installs": 1538233,
-      "sh_week": 86942,
+      "stars": 52060,
+      "pushed_at": "2026-11-17T02:41:48Z",
+      "stars30": 7027,
+      "stars30_days": 17,
+      "sh_installs": 1557046,
+      "sh_week": 103297,
       "sh_url": "https://skills.sh/vercel-labs/agent-browser/agent-browser",
       "plat": [
         "claude-code"
@@ -10343,12 +10337,12 @@
       "added": "2026-10-31",
       "sh_source": "flowkit-labs/skills",
       "status": "published",
-      "stars": 40,
+      "stars": 42,
       "pushed_at": "2026-11-11T12:41:39Z",
-      "stars30": 15,
-      "stars30_days": 15,
-      "sh_installs": 1396352,
-      "sh_week": 104996,
+      "stars30": 17,
+      "stars30_days": 17,
+      "sh_installs": 1414283,
+      "sh_week": 98412,
       "sh_url": "https://skills.sh/flowkit-labs/skills/reddit-automation",
       "plat": [
         "claude-code"
@@ -10398,12 +10392,12 @@
       "added": "2026-10-31",
       "sh_source": "designed-by-ai/skills",
       "status": "published",
-      "stars": 35,
+      "stars": 36,
       "pushed_at": "2026-10-06T08:00:25Z",
-      "stars30": 14,
-      "stars30_days": 15,
-      "sh_installs": 1443005,
-      "sh_week": 136787,
+      "stars30": 15,
+      "stars30_days": 17,
+      "sh_installs": 1466236,
+      "sh_week": 138882,
       "sh_url": "https://skills.sh/designed-by-ai/skills/design-mobile-apps",
       "plat": [
         "claude-code"
@@ -10453,12 +10447,12 @@
       "added": "2026-10-31",
       "sh_source": "vercel-labs/agent-skills",
       "status": "published",
-      "stars": 34127,
+      "stars": 34211,
       "pushed_at": "2026-11-12T14:09:10Z",
-      "stars30": 818,
-      "stars30_days": 15,
-      "sh_installs": 902333,
-      "sh_week": 22802,
+      "stars30": 902,
+      "stars30_days": 17,
+      "sh_installs": 905900,
+      "sh_week": 20702,
       "sh_url": "https://skills.sh/vercel-labs/agent-skills/vercel-react-best-practices",
       "plat": [
         "claude-code"
@@ -10512,12 +10506,12 @@
       "added": "2026-10-31",
       "sh_source": "remotion-dev/skills",
       "status": "published",
-      "stars": 7271,
-      "pushed_at": "2026-11-11T19:23:32Z",
-      "stars30": 1293,
-      "stars30_days": 15,
-      "sh_installs": 831146,
-      "sh_week": 45239,
+      "stars": 7353,
+      "pushed_at": "2026-11-16T08:11:09Z",
+      "stars30": 1375,
+      "stars30_days": 17,
+      "sh_installs": 841603,
+      "sh_week": 47586,
       "sh_url": "https://skills.sh/remotion-dev/skills/remotion-best-practices",
       "plat": [
         "claude-code"
@@ -10572,12 +10566,12 @@
       "added": "2026-10-31",
       "sh_source": "microsoft/azure-skills",
       "status": "published",
-      "stars": 1644,
-      "pushed_at": "2026-11-13T17:56:00Z",
-      "stars30": 38,
-      "stars30_days": 15,
-      "sh_installs": 717241,
-      "sh_week": 8608,
+      "stars": 1647,
+      "pushed_at": "2026-11-17T02:09:17Z",
+      "stars30": 41,
+      "stars30_days": 17,
+      "sh_installs": 726973,
+      "sh_week": 75545,
       "sh_url": "https://skills.sh/microsoft/azure-skills/microsoft-foundry",
       "plat": [
         "claude-code"
@@ -10631,12 +10625,12 @@
       "added": "2026-10-31",
       "sh_source": "google/agents-cli",
       "status": "published",
-      "stars": 6357,
+      "stars": 6362,
       "pushed_at": "2026-11-12T15:04:58Z",
-      "stars30": 93,
-      "stars30_days": 15,
-      "sh_installs": 574960,
-      "sh_week": 21580,
+      "stars30": 98,
+      "stars30_days": 17,
+      "sh_installs": 577475,
+      "sh_week": 24054,
       "sh_url": "https://skills.sh/google/agents-cli/google-agents-cli-adk-code",
       "plat": [
         "claude-code"
@@ -10692,9 +10686,9 @@
       "stars": 486,
       "pushed_at": "2026-09-23T14:14:25Z",
       "stars30": 0,
-      "stars30_days": 15,
-      "sh_installs": 499252,
-      "sh_week": 8756,
+      "stars30_days": 17,
+      "sh_installs": 500186,
+      "sh_week": 7280,
       "sh_url": "https://skills.sh/lllllllama/rigorpilot-skills/paper-context-resolver",
       "plat": [
         "claude-code"
@@ -10751,9 +10745,9 @@
       "stars": 62,
       "pushed_at": "2026-05-15T10:59:51Z",
       "stars30": 0,
-      "stars30_days": 15,
-      "sh_installs": 448891,
-      "sh_week": 3101,
+      "stars30_days": 17,
+      "sh_installs": 449363,
+      "sh_week": 3110,
       "sh_url": "https://skills.sh/prime-skills/runcomfy-agent-skills/video-edit",
       "plat": [
         "claude-code"
@@ -10814,12 +10808,12 @@
           "title": "AI툴 Emil Kowalski skills — 클로드 화면에 움직임과 디자인 눈썰미 더하기"
         }
       ],
-      "stars": 57210,
+      "stars": 57493,
       "pushed_at": "2026-11-15T12:42:50Z",
-      "stars30": 4785,
-      "stars30_days": 15,
-      "sh_installs": 451761,
-      "sh_week": 21061,
+      "stars30": 5068,
+      "stars30_days": 17,
+      "sh_installs": 455441,
+      "sh_week": 20798,
       "sh_url": "https://skills.sh/emilkowalski/skills/emil-design-eng",
       "plat": [
         "claude-code"
@@ -10869,12 +10863,12 @@
       "added": "2026-10-31",
       "sh_source": "prisma/skills",
       "status": "published",
-      "stars": 80,
+      "stars": 81,
       "pushed_at": "2026-11-10T16:06:30Z",
-      "stars30": 3,
-      "stars30_days": 15,
-      "sh_installs": 429918,
-      "sh_week": 14660,
+      "stars30": 4,
+      "stars30_days": 17,
+      "sh_installs": 432156,
+      "sh_week": 12374,
       "sh_url": "https://skills.sh/prisma/skills/prisma-client-api",
       "plat": [
         "claude-code"
@@ -10980,12 +10974,12 @@
           "title": "Claude Code + Impeccable: I Fixed This AI Landing Page Using Only Commands"
         }
       ],
-      "stars": 110740,
-      "pushed_at": "2026-11-15T23:53:24Z",
-      "stars30": 12522,
-      "stars30_days": 15,
-      "sh_installs": 410555,
-      "sh_week": 18109,
+      "stars": 111438,
+      "pushed_at": "2026-11-17T02:50:16Z",
+      "stars30": 13220,
+      "stars30_days": 17,
+      "sh_installs": 413322,
+      "sh_week": 15779,
       "sh_url": "https://skills.sh/pbakaus/impeccable/impeccable",
       "plat": [
         "claude-code"
@@ -11041,6 +11035,11 @@
       "status": "published",
       "videos": [
         {
+          "url": "https://www.youtube.com/shorts/nSCCtuEfjAA",
+          "by": "REBORN AI",
+          "title": "클로드 코드 여러 개를 동시에, 오르카 #Shorts"
+        },
+        {
           "url": "https://www.youtube.com/shorts/vALqcLaU75M",
           "by": "패스트캠퍼스",
           "title": "오르카가 AI에게 일을 나누는 방법",
@@ -11050,24 +11049,14 @@
             "b": "에이전트가 알아서 협업하지 않음",
             "a": "조정자가 작업 배정·취합까지 처리"
           }
-        },
-        {
-          "url": "https://www.youtube.com/shorts/vvRf0LXlnRg",
-          "by": "파인튜닝 제작소",
-          "title": "클로드 코드 여러 개를 동시에, 오르카 #Shorts"
-        },
-        {
-          "url": "https://www.youtube.com/shorts/nSCCtuEfjAA",
-          "by": "REBORN AI",
-          "title": "클로드 코드 여러 개를 동시에, 오르카 #Shorts"
         }
       ],
-      "stars": 125741,
-      "pushed_at": "2026-11-15T23:54:49Z",
-      "stars30": 14035,
-      "stars30_days": 15,
-      "sh_installs": 362773,
-      "sh_week": 3761,
+      "stars": 126856,
+      "pushed_at": "2026-11-17T02:51:46Z",
+      "stars30": 15150,
+      "stars30_days": 17,
+      "sh_installs": 363123,
+      "sh_week": 2745,
       "sh_url": "https://skills.sh/stablyai/orca/orca-cli",
       "plat": [
         "claude-code"
@@ -11118,12 +11107,12 @@
       "added": "2026-10-31",
       "sh_source": "neondatabase/agent-skills",
       "status": "published",
-      "stars": 113,
+      "stars": 115,
       "pushed_at": "2026-11-14T01:38:24Z",
-      "stars30": 5,
-      "stars30_days": 15,
-      "sh_installs": 312206,
-      "sh_week": 18319,
+      "stars30": 7,
+      "stars30_days": 17,
+      "sh_installs": 313225,
+      "sh_week": 7902,
       "sh_url": "https://skills.sh/neondatabase/agent-skills/neon-postgres",
       "plat": [
         "claude-code"
@@ -11180,9 +11169,9 @@
       "stars": 76,
       "pushed_at": "2026-09-21T20:15:12Z",
       "stars30": 2,
-      "stars30_days": 15,
+      "stars30_days": 17,
       "sh_installs": 245017,
-      "sh_week": 6,
+      "sh_week": 4,
       "sh_url": "https://skills.sh/scrapegraphai/just-scrape/just-scrape",
       "plat": [
         "claude-code"
@@ -11250,12 +11239,12 @@
           }
         }
       ],
-      "stars": 1989,
+      "stars": 2002,
       "pushed_at": "2026-11-05T01:43:26Z",
-      "stars30": 158,
-      "stars30_days": 15,
-      "sh_installs": 249107,
-      "sh_week": 8897,
+      "stars30": 171,
+      "stars30_days": 17,
+      "sh_installs": 251052,
+      "sh_week": 8333,
       "sh_url": "https://skills.sh/higgsfield-ai/skills/higgsfield-generate",
       "plat": [
         "claude-code"
@@ -11310,12 +11299,12 @@
       "added": "2026-10-31",
       "sh_source": "uizze/uizze",
       "status": "published",
-      "stars": 102,
-      "pushed_at": "2026-11-01T14:51:45Z",
-      "stars30": 25,
-      "stars30_days": 15,
-      "sh_installs": 367515,
-      "sh_week": 108363,
+      "stars": 105,
+      "pushed_at": "2026-11-17T00:44:55Z",
+      "stars30": 28,
+      "stars30_days": 17,
+      "sh_installs": 367534,
+      "sh_week": 96498,
       "sh_url": "https://skills.sh/uizze/uizze/uizze-ui",
       "plat": [
         "claude-code"
@@ -11404,12 +11393,12 @@
           }
         }
       ],
-      "stars": 96796,
-      "pushed_at": "2026-11-15T21:40:28Z",
-      "stars30": 4660,
-      "stars30_days": 15,
-      "sh_installs": 192550,
-      "sh_week": 11897,
+      "stars": 97190,
+      "pushed_at": "2026-11-17T01:42:28Z",
+      "stars30": 5054,
+      "stars30_days": 17,
+      "sh_installs": 193043,
+      "sh_week": 3645,
       "sh_url": "https://skills.sh/tt-a1i/archify/archify",
       "plat": [
         "claude-code"
@@ -11464,11 +11453,11 @@
       "sh_source": "convex/agent-skills",
       "status": "published",
       "stars": 69,
-      "pushed_at": "2026-10-29T18:08:31Z",
+      "pushed_at": "2026-11-16T22:47:57Z",
       "stars30": 1,
-      "stars30_days": 15,
-      "sh_installs": 138638,
-      "sh_week": 2663,
+      "stars30_days": 17,
+      "sh_installs": 139112,
+      "sh_week": 2352,
       "sh_url": "https://skills.sh/convex/agent-skills/convex-quickstart",
       "plat": [
         "claude-code"
@@ -11525,9 +11514,9 @@
       "stars": 290,
       "pushed_at": "2026-09-05T00:23:05Z",
       "stars30": 23,
-      "stars30_days": 15,
-      "sh_installs": 131632,
-      "sh_week": 274,
+      "stars30_days": 17,
+      "sh_installs": 131685,
+      "sh_week": 363,
       "sh_url": "https://skills.sh/arvindrk/extract-design-system/extract-design-system",
       "plat": [
         "claude-code"
@@ -11584,9 +11573,9 @@
       "stars": 8,
       "pushed_at": "2026-11-01T09:13:58Z",
       "stars30": 3,
-      "stars30_days": 15,
-      "sh_installs": 129256,
-      "sh_week": 8272,
+      "stars30_days": 17,
+      "sh_installs": 130650,
+      "sh_week": 8249,
       "sh_url": "https://skills.sh/autonnel/autonnel-skills/landing-page-conversion-audit",
       "plat": [
         "claude-code"
@@ -11639,9 +11628,9 @@
       "stars": 7,
       "pushed_at": "2026-05-08T01:26:31Z",
       "stars30": 1,
-      "stars30_days": 15,
-      "sh_installs": 113370,
-      "sh_week": 5950,
+      "stars30_days": 17,
+      "sh_installs": 114357,
+      "sh_week": 821,
       "sh_url": "https://skills.sh/2dmurali/review-loop-skill/review-loop",
       "plat": [
         "claude-code"
@@ -11691,12 +11680,12 @@
       "added": "2026-10-31",
       "sh_source": "currents-dev/playwright-best-practices-skill",
       "status": "published",
-      "stars": 432,
+      "stars": 433,
       "pushed_at": "2026-11-08T08:00:59Z",
-      "stars30": 18,
-      "stars30_days": 15,
-      "sh_installs": 107151,
-      "sh_week": 2908,
+      "stars30": 19,
+      "stars30_days": 17,
+      "sh_installs": 107686,
+      "sh_week": 2685,
       "sh_url": "https://skills.sh/currents-dev/playwright-best-practices-skill/playwright-best-practices",
       "plat": [
         "claude-code"
@@ -11764,10 +11753,10 @@
           }
         }
       ],
-      "stars": 3605,
+      "stars": 3649,
       "pushed_at": "2026-09-17T11:27:52Z",
-      "stars30": 618,
-      "stars30_days": 15,
+      "stars30": 662,
+      "stars30_days": 17,
       "plat": [
         "claude-code"
       ],
@@ -11823,7 +11812,7 @@
       "stars": 3518,
       "pushed_at": "2026-02-24T23:54:21Z",
       "stars30": 0,
-      "stars30_days": 15,
+      "stars30_days": 17,
       "plat": [
         "claude-code"
       ],
@@ -11900,10 +11889,10 @@
           "title": "Pascal Editor: The Free 3D Building Editor That Architects Hate — 13K Stars"
         }
       ],
-      "stars": 25529,
-      "pushed_at": "2026-11-14T06:42:01Z",
-      "stars30": 277,
-      "stars30_days": 15,
+      "stars": 25562,
+      "pushed_at": "2026-11-16T22:37:03Z",
+      "stars30": 310,
+      "stars30_days": 17,
       "plat": [
         "claude-code"
       ],
@@ -11969,28 +11958,28 @@
           }
         },
         {
-          "url": "https://www.youtube.com/shorts/uv7sj7ml5SU",
-          "by": "Agentic Planet",
-          "title": "Aggressive): Stop Wasting Claude Tokens 💸 (Use Repomix)",
-          "sum": {
-            "f": "Repomix가 코드 전체를 정리한 요약본을 만들어요",
-            "e": "코드 파악과 그래프 작업이 빨라져요",
-            "b": "코드를 하나씩 읽혀야 함",
-            "a": "코드 지도를 만들어 분석"
-          }
-        },
-        {
           "url": "https://www.youtube.com/shorts/0a3eKNTBtxg",
           "by": "yamadashy",
           "title": "Repomix is a tool that transforms your entire repository into AI-friendly single files"
+        },
+        {
+          "url": "https://www.youtube.com/shorts/lHZQCSyzqh0",
+          "by": "Agentic Planet",
+          "title": "Stop Wasting AI Tokens on Code Context (Use Repomix)",
+          "sum": {
+            "f": "Repomix가 코드베이스를 한 파일로 요약해 Claude에 줘요",
+            "e": "코드를 매번 다시 읽히지 않아 사용량을 아껴요",
+            "b": "Claude가 코드를 매번 다시 훑음",
+            "a": "요약 파일로 사용량 절약"
+          }
         }
       ],
-      "stars": 29277,
+      "stars": 29291,
       "pushed_at": "2026-11-15T06:16:28Z",
-      "stars30": 177,
-      "stars30_days": 15,
-      "sh_installs": 2051,
-      "sh_week": 29,
+      "stars30": 191,
+      "stars30_days": 17,
+      "sh_installs": 2060,
+      "sh_week": 33,
       "plat": [
         "claude-code"
       ],
@@ -12045,33 +12034,27 @@
       "status": "published",
       "videos": [
         {
-          "url": "https://www.youtube.com/shorts/0GRK5NX-XCQ",
-          "by": "VibeDev",
-          "title": "wshobson/agents: 185 Sub-Agents for Claude Code",
-          "sum": {
-            "f": "Claude Code용 전문 에이전트를 골라 설치하는 모음이에요",
-            "e": "필요한 분야만 골라 설치해요",
-            "b": "에이전트를 하나씩 찾아야 함",
-            "a": "명령어로 원하는 분야만 설치"
-          }
+          "url": "https://www.youtube.com/shorts/cj1sMCIVexo",
+          "by": "Telenewswire (AI News without fuss)",
+          "title": "wshobson/agents: 202 Specialist Agents for Claude Code — Day 5"
         },
         {
-          "url": "https://www.youtube.com/shorts/P5pNcbXqfjo",
-          "by": "Top Github",
-          "title": "wshobson/agents — Multi-harness agentic plugin marketplace for Claude Code, Codex, Cursor, OpenCode,"
+          "url": "https://www.youtube.com/shorts/rsi3ENMF4mY",
+          "by": "VT Tech Insights",
+          "title": "94 Plugin, 202 Agent cho Claude Code? Review wshobson/agents & Cách Cài"
         },
         {
-          "url": "https://www.youtube.com/shorts/Do0c29HMnWc",
-          "by": "월터의 AI 실험실",
-          "title": "클로드 코드 플러그인 94개 한 번에, 무료 모음 wshobson/agents | 월터 #ClaudeCode"
+          "url": "https://www.youtube.com/shorts/I19-bAUCIgg",
+          "by": "MC73",
+          "title": "Satu Repo, Satu Tim AI: Cara Pakai Plugin, Agent & Skill wshobson/agents"
         }
       ],
-      "stars": 42558,
-      "pushed_at": "2026-11-09T01:08:33Z",
-      "stars30": 505,
-      "stars30_days": 15,
-      "sh_installs": 100167,
-      "sh_week": 3317,
+      "stars": 42588,
+      "pushed_at": "2026-11-16T01:08:59Z",
+      "stars30": 535,
+      "stars30_days": 17,
+      "sh_installs": 100415,
+      "sh_week": 2259,
       "plat": [
         "claude-code"
       ],
@@ -12152,12 +12135,12 @@
           "title": "배포 전 필수, 클라우드플레어 무료 보안 감사 스킬"
         }
       ],
-      "stars": 8207,
+      "stars": 8238,
       "pushed_at": "2026-11-12T17:48:51Z",
-      "stars30": 289,
-      "stars30_days": 15,
-      "sh_installs": 10629,
-      "sh_week": 363,
+      "stars30": 320,
+      "stars30_days": 17,
+      "sh_installs": 10712,
+      "sh_week": 354,
       "plat": [
         "claude-code"
       ],
@@ -12213,12 +12196,12 @@
           "title": "GitHub - dotnet/skills: Repository for skills to assist AI coding agents with .NET and C#"
         }
       ],
-      "stars": 6203,
-      "pushed_at": "2026-11-15T13:06:54Z",
-      "stars30": 422,
-      "stars30_days": 15,
-      "sh_installs": 7034,
-      "sh_week": 483,
+      "stars": 6241,
+      "pushed_at": "2026-11-16T23:15:17Z",
+      "stars30": 460,
+      "stars30_days": 17,
+      "sh_installs": 7131,
+      "sh_week": 459,
       "plat": [
         "claude-code"
       ],
@@ -12269,11 +12252,6 @@
       "status": "published",
       "videos": [
         {
-          "url": "https://www.youtube.com/shorts/SkpwzfR4A1E",
-          "by": "Claude",
-          "title": "Claude's new mobile app updates are here"
-        },
-        {
           "url": "https://www.youtube.com/shorts/h0QFPBBdQy4",
           "by": "Better Stack",
           "title": "Easiest Way To Get Mobile Claude Code",
@@ -12283,12 +12261,17 @@
             "b": "컴퓨터 앞에서만 사용",
             "a": "폰 앱으로 서버의 Claude Code 사용"
           }
+        },
+        {
+          "url": "https://www.youtube.com/shorts/TcUpZUx-O84",
+          "by": "Theo - t3․gg",
+          "title": "Claude Code on Mobile Is Horrible"
         }
       ],
-      "stars": 10593,
+      "stars": 10627,
       "pushed_at": "2026-11-11T14:34:17Z",
-      "stars30": 417,
-      "stars30_days": 15,
+      "stars30": 451,
+      "stars30_days": 17,
       "plat": [
         "claude-code"
       ],
@@ -12355,11 +12338,6 @@
           }
         },
         {
-          "url": "https://www.youtube.com/shorts/fThoqHB1C6g",
-          "by": "Hungry Labs",
-          "title": "ruflo: Turn Claude Code into a Swarm of 100 AI Agents"
-        },
-        {
           "url": "https://www.youtube.com/shorts/A3X058-KZxU",
           "by": "Kayvon Jafarzadeh",
           "title": "RuFlo Runs 60 Claude Agents at the Same Time",
@@ -12369,14 +12347,19 @@
             "b": "에이전트를 하나씩 사용",
             "a": "여러 에이전트가 협업해 처리"
           }
+        },
+        {
+          "url": "https://www.youtube.com/shorts/fThoqHB1C6g",
+          "by": "Hungry Labs",
+          "title": "ruflo: Turn Claude Code into a Swarm of 100 AI Agents"
         }
       ],
-      "stars": 81819,
-      "pushed_at": "2026-11-15T16:20:49Z",
-      "stars30": 1398,
-      "stars30_days": 15,
-      "sh_installs": 4187,
-      "sh_week": 100,
+      "stars": 81890,
+      "pushed_at": "2026-11-16T19:41:30Z",
+      "stars30": 1469,
+      "stars30_days": 17,
+      "sh_installs": 4201,
+      "sh_week": 62,
       "plat": [
         "claude-code"
       ],
@@ -12429,10 +12412,10 @@
       ],
       "added": "2026-10-31",
       "status": "published",
-      "stars": 19247,
+      "stars": 19318,
       "pushed_at": "2026-11-14T09:10:57Z",
-      "stars30": 877,
-      "stars30_days": 15,
+      "stars30": 948,
+      "stars30_days": 17,
       "plat": [
         "claude-code"
       ],
@@ -12486,10 +12469,10 @@
       ],
       "added": "2026-10-31",
       "status": "published",
-      "stars": 9105,
-      "pushed_at": "2026-11-08T19:50:31Z",
-      "stars30": 126,
-      "stars30_days": 15,
+      "stars": 9111,
+      "pushed_at": "2026-11-16T18:42:19Z",
+      "stars30": 132,
+      "stars30_days": 17,
       "plat": [
         "claude-code"
       ],
@@ -12547,10 +12530,10 @@
           "title": "Set up the Finance Toolkit MCP in Claude (500+ financial metrics, free and open source)"
         }
       ],
-      "stars": 5522,
-      "pushed_at": "2026-11-15T23:06:11Z",
-      "stars30": 39,
-      "stars30_days": 15,
+      "stars": 5531,
+      "pushed_at": "2026-11-17T02:43:50Z",
+      "stars30": 48,
+      "stars30_days": 17,
       "plat": [
         "claude-code"
       ],
@@ -12615,22 +12598,22 @@
           }
         },
         {
-          "url": "https://www.youtube.com/shorts/XPm3CQ0WhDc",
-          "by": "Oleksandra Lysenko",
-          "title": "MemPalace AI Memory: 100% Score Was Fake — Here's What's Real"
-        },
-        {
           "url": "https://www.youtube.com/shorts/vAWUSHsoZns",
           "by": "Chase AI",
           "title": "Mempalace drama (fake benchmarks?)"
+        },
+        {
+          "url": "https://www.youtube.com/shorts/CeG87xbOH-o",
+          "by": "ZeroCho TV",
+          "title": "여전사 배우가 만든 놀라운 성능의 AI 기억법 + 논란. MemPalace. #llm #agent #claude #codex #chatgpt #openclaw #gemini"
         }
       ],
-      "stars": 60572,
-      "pushed_at": "2026-11-14T11:18:51Z",
-      "stars30": 380,
-      "stars30_days": 15,
-      "sh_installs": 2376,
-      "sh_week": 244,
+      "stars": 60580,
+      "pushed_at": "2026-11-17T02:45:16Z",
+      "stars30": 388,
+      "stars30_days": 17,
+      "sh_installs": 2396,
+      "sh_week": 206,
       "plat": [
         "claude-code"
       ],
@@ -12684,9 +12667,15 @@
       "status": "published",
       "videos": [
         {
-          "url": "https://www.youtube.com/shorts/J5pTRBkS3zU",
-          "by": "Next Horizon",
-          "title": "Book-to-skill turns any technical PDF into a Claude Code skill"
+          "url": "https://www.youtube.com/shorts/3BzbjqP_zUg",
+          "by": "굿리포",
+          "title": "PDF 한 권이 Claude Code skill로, book-to-skill",
+          "sum": {
+            "f": "기술서적 PDF를 Claude가 참조하는 스킬로 바꿔요",
+            "e": "두꺼운 책을 스킬로 만들어 써요",
+            "b": "책을 직접 읽고 찾아봄",
+            "a": "PDF가 스킬로 변환됨"
+          }
         },
         {
           "url": "https://www.youtube.com/shorts/wRfmNDc7bXY",
@@ -12700,23 +12689,17 @@
           }
         },
         {
-          "url": "https://www.youtube.com/shorts/3BzbjqP_zUg",
-          "by": "굿리포",
-          "title": "PDF 한 권이 Claude Code skill로, book-to-skill",
-          "sum": {
-            "f": "기술서적 PDF를 Claude가 참조하는 스킬로 바꿔요",
-            "e": "두꺼운 책을 스킬로 만들어 써요",
-            "b": "책을 직접 읽고 찾아봄",
-            "a": "PDF가 스킬로 변환됨"
-          }
+          "url": "https://www.youtube.com/shorts/J5pTRBkS3zU",
+          "by": "Next Horizon",
+          "title": "Book-to-skill turns any technical PDF into a Claude Code skill"
         }
       ],
-      "stars": 37976,
+      "stars": 38148,
       "pushed_at": "2026-11-08T21:22:31Z",
-      "stars30": 1320,
-      "stars30_days": 15,
-      "sh_installs": 9556,
-      "sh_week": 500,
+      "stars30": 1492,
+      "stars30_days": 17,
+      "sh_installs": 9632,
+      "sh_week": 337,
       "plat": [
         "claude-code"
       ],
@@ -12769,12 +12752,12 @@
       ],
       "added": "2026-10-31",
       "status": "published",
-      "stars": 57309,
-      "pushed_at": "2026-11-09T09:17:48Z",
-      "stars30": 1768,
-      "stars30_days": 15,
-      "sh_installs": 2677,
-      "sh_week": 91,
+      "stars": 57476,
+      "pushed_at": "2026-11-16T09:19:25Z",
+      "stars30": 1935,
+      "stars30_days": 17,
+      "sh_installs": 2693,
+      "sh_week": 79,
       "plat": [
         "claude-code"
       ],
@@ -12827,12 +12810,12 @@
       ],
       "added": "2026-10-31",
       "status": "published",
-      "stars": 32330,
+      "stars": 32354,
       "pushed_at": "2026-11-03T01:37:22Z",
-      "stars30": 304,
-      "stars30_days": 15,
-      "sh_installs": 85254,
-      "sh_week": 1069,
+      "stars30": 328,
+      "stars30_days": 17,
+      "sh_installs": 85495,
+      "sh_week": 1046,
       "plat": [
         "claude-code"
       ],
@@ -12891,12 +12874,12 @@
           "title": "AI가 만든 슬라이드, 무대에서 버틸까? GitHub 별 2.9만 Guizang PPT Skill, 점검표·발표자 화면까지 #Shorts"
         }
       ],
-      "stars": 29835,
+      "stars": 29898,
       "pushed_at": "2026-10-30T12:45:28Z",
-      "stars30": 812,
-      "stars30_days": 15,
-      "sh_installs": 28798,
-      "sh_week": 414,
+      "stars30": 875,
+      "stars30_days": 17,
+      "sh_installs": 28861,
+      "sh_week": 348,
       "plat": [
         "claude-code"
       ],
@@ -12950,11 +12933,6 @@
       "status": "published",
       "videos": [
         {
-          "url": "https://www.youtube.com/shorts/EHVGpLNlpJk",
-          "by": "SkipCI",
-          "title": "Huashu Design Turns One Sentence Into a Shippable Prototype, 84 Styles Library"
-        },
-        {
           "url": "https://www.youtube.com/shorts/cxV8CHzFrn8",
           "by": "AI Honeycove",
           "title": "Huashu Design clones Claude Design #huashudesign #claudedesign #aicoding",
@@ -12964,6 +12942,11 @@
             "b": "디자인 도구 사용량 한도에 막힘",
             "a": "일반 사용량으로 비슷한 결과물"
           }
+        },
+        {
+          "url": "https://www.youtube.com/shorts/IZPPvl76eko",
+          "by": "Tech On Cue",
+          "title": "Huashu Design Explained: Is It Right for You? (AI Design Skill, Fit Check)"
         },
         {
           "url": "https://www.youtube.com/shorts/-AnrPmcoVVg",
@@ -12977,12 +12960,12 @@
           }
         }
       ],
-      "stars": 29576,
+      "stars": 29664,
       "pushed_at": "2026-11-10T00:16:14Z",
-      "stars30": 1267,
-      "stars30_days": 15,
-      "sh_installs": 53460,
-      "sh_week": 1567,
+      "stars30": 1355,
+      "stars30_days": 17,
+      "sh_installs": 53601,
+      "sh_week": 866,
       "plat": [
         "claude-code"
       ],
@@ -13034,12 +13017,12 @@
       ],
       "added": "2026-10-31",
       "status": "published",
-      "stars": 22956,
-      "pushed_at": "2026-11-15T04:23:45Z",
-      "stars30": 1960,
-      "stars30_days": 15,
-      "sh_installs": 17319,
-      "sh_week": 2255,
+      "stars": 23200,
+      "pushed_at": "2026-11-16T09:13:36Z",
+      "stars30": 2204,
+      "stars30_days": 17,
+      "sh_installs": 17603,
+      "sh_week": 1710,
       "plat": [
         "claude-code"
       ],
@@ -13098,12 +13081,12 @@
           "title": "Claude Code + NotebookLM: que otro lea tus documentos 📚 (notebooklm-py)"
         }
       ],
-      "stars": 20242,
+      "stars": 20260,
       "pushed_at": "2026-11-15T22:04:20Z",
-      "stars30": 207,
-      "stars30_days": 15,
-      "sh_installs": 10187,
-      "sh_week": 138,
+      "stars30": 225,
+      "stars30_days": 17,
+      "sh_installs": 10200,
+      "sh_week": 81,
       "plat": [
         "claude-code"
       ],
@@ -13168,10 +13151,10 @@
           }
         }
       ],
-      "stars": 18264,
-      "pushed_at": "2026-11-13T11:25:37Z",
-      "stars30": 238,
-      "stars30_days": 15,
+      "stars": 18307,
+      "pushed_at": "2026-11-17T02:38:06Z",
+      "stars30": 281,
+      "stars30_days": 17,
       "plat": [
         "claude-code"
       ],
@@ -13236,9 +13219,9 @@
           }
         },
         {
-          "url": "https://www.youtube.com/shorts/i5Qt9sunhKA",
-          "by": "AtTheDailyRepo",
-          "title": "Claude Code turns one sentence into a product video (video-shotcraft)"
+          "url": "https://www.youtube.com/shorts/RIJ2rnAIyYA",
+          "by": "Two Minute Repos",
+          "title": "video-shotcraft: promo videos from your coding agent"
         },
         {
           "url": "https://www.youtube.com/shorts/uOtfafIZkXo",
@@ -13252,12 +13235,12 @@
           }
         }
       ],
-      "stars": 20049,
-      "pushed_at": "2026-11-15T13:34:28Z",
-      "stars30": 4575,
-      "stars30_days": 15,
-      "sh_installs": 9106,
-      "sh_week": 1461,
+      "stars": 20638,
+      "pushed_at": "2026-11-16T09:23:36Z",
+      "stars30": 5164,
+      "stars30_days": 17,
+      "sh_installs": 9333,
+      "sh_week": 1169,
       "plat": [
         "claude-code"
       ],
@@ -13311,15 +13294,9 @@
       "status": "published",
       "videos": [
         {
-          "url": "https://www.youtube.com/shorts/MShApqEWUvg",
-          "by": "BarbuPrime IA | Claude Code Vs Codex",
-          "title": "Claude Code + GenOffice: ¿el Office gratis con IA? 📊 Mito o verdad",
-          "sum": {
-            "f": "한 문장으로 발표 자료를 만들고 엑셀 수식도 다뤄요",
-            "e": "11장짜리 발표 슬라이드가 나와요",
-            "b": "발표 자료를 처음부터 제작",
-            "a": "한 번 요청으로 편집 가능한 슬라이드"
-          }
+          "url": "https://www.youtube.com/shorts/B2pLdMX95v4",
+          "by": "Genspark Products & Guides",
+          "title": "🚀 Meet GenOffice — the world's first full-featured open-source AI Office"
         },
         {
           "url": "https://www.youtube.com/shorts/avlzLQLWHuA",
@@ -13333,15 +13310,21 @@
           }
         },
         {
-          "url": "https://www.youtube.com/shorts/B2pLdMX95v4",
-          "by": "Genspark Products & Guides",
-          "title": "🚀 Meet GenOffice — the world's first full-featured open-source AI Office"
+          "url": "https://www.youtube.com/shorts/MShApqEWUvg",
+          "by": "BarbuPrime IA | Claude Code Vs Codex",
+          "title": "Claude Code + GenOffice: ¿el Office gratis con IA? 📊 Mito o verdad",
+          "sum": {
+            "f": "한 문장으로 발표 자료를 만들고 엑셀 수식도 다뤄요",
+            "e": "11장짜리 발표 슬라이드가 나와요",
+            "b": "발표 자료를 처음부터 제작",
+            "a": "한 번 요청으로 편집 가능한 슬라이드"
+          }
         }
       ],
-      "stars": 12398,
-      "pushed_at": "2026-11-14T03:34:48Z",
-      "stars30": 962,
-      "stars30_days": 15,
+      "stars": 12463,
+      "pushed_at": "2026-11-16T02:25:04Z",
+      "stars30": 1027,
+      "stars30_days": 17,
       "plat": [
         "claude-code"
       ],
@@ -13393,12 +13376,12 @@
       ],
       "added": "2026-10-31",
       "status": "published",
-      "stars": 10778,
+      "stars": 10799,
       "pushed_at": "2026-11-10T08:11:10Z",
-      "stars30": 296,
-      "stars30_days": 15,
-      "sh_installs": 7805,
-      "sh_week": 569,
+      "stars30": 317,
+      "stars30_days": 17,
+      "sh_installs": 7892,
+      "sh_week": 528,
       "plat": [
         "claude-code"
       ],
@@ -13450,12 +13433,12 @@
       ],
       "added": "2026-10-31",
       "status": "published",
-      "stars": 9305,
+      "stars": 9370,
       "pushed_at": "2026-11-13T12:29:58Z",
-      "stars30": 1544,
-      "stars30_days": 15,
-      "sh_installs": 10980,
-      "sh_week": 1129,
+      "stars30": 1609,
+      "stars30_days": 17,
+      "sh_installs": 11212,
+      "sh_week": 1124,
       "plat": [
         "claude-code"
       ],
@@ -13511,15 +13494,15 @@
         {
           "url": "https://www.youtube.com/shorts/ilj1TTmfTmo",
           "by": "CodeGlade",
-          "title": "Lieflat Charts: AI Agent Skill for HTML Charts"
+          "title": "AI Agent Skill That Turns Raw Data Into Animated HTML Charts (Lieflat Charts)"
         }
       ],
-      "stars": 6881,
+      "stars": 6897,
       "pushed_at": "2026-11-12T08:29:24Z",
-      "stars30": 368,
-      "stars30_days": 15,
-      "sh_installs": 1940,
-      "sh_week": 56,
+      "stars30": 384,
+      "stars30_days": 17,
+      "sh_installs": 1953,
+      "sh_week": 63,
       "plat": [
         "claude-code"
       ],
@@ -13585,12 +13568,12 @@
           }
         }
       ],
-      "stars": 8999,
+      "stars": 9183,
       "pushed_at": "2026-11-12T07:38:53Z",
-      "stars30": 2689,
-      "stars30_days": 15,
-      "sh_installs": 17282,
-      "sh_week": 2445,
+      "stars30": 2873,
+      "stars30_days": 17,
+      "sh_installs": 17812,
+      "sh_week": 2263,
       "plat": [
         "claude-code"
       ],
@@ -13643,11 +13626,11 @@
       "added": "2026-10-31",
       "status": "published",
       "stars": 6073,
-      "pushed_at": "2026-11-11T08:13:27Z",
+      "pushed_at": "2026-11-16T07:12:50Z",
       "stars30": 43,
-      "stars30_days": 15,
-      "sh_installs": 48268,
-      "sh_week": 1705,
+      "stars30_days": 17,
+      "sh_installs": 48422,
+      "sh_week": 1607,
       "plat": [
         "claude-code"
       ],
@@ -13699,12 +13682,12 @@
       ],
       "added": "2026-10-31",
       "status": "published",
-      "stars": 6091,
+      "stars": 6124,
       "pushed_at": "2026-10-14T00:18:33Z",
-      "stars30": 296,
-      "stars30_days": 15,
-      "sh_installs": 16185,
-      "sh_week": 1456,
+      "stars30": 329,
+      "stars30_days": 17,
+      "sh_installs": 16247,
+      "sh_week": 663,
       "plat": [
         "claude-code"
       ],
@@ -13769,11 +13752,14 @@
           }
         }
       ],
+      "stars": 0,
+      "pushed_at": "2026-11-17T02:25:26Z",
+      "stars30": -5664,
+      "stars30_days": 17,
       "plat": [
         "claude-code"
       ],
       "installs": 0,
-      "stars": 0,
       "readme_ko": [
         {
           "h": "이게 뭔가요?",
@@ -13821,12 +13807,12 @@
       ],
       "added": "2026-10-31",
       "status": "published",
-      "stars": 3923,
-      "pushed_at": "2026-11-15T10:43:09Z",
-      "stars30": 260,
-      "stars30_days": 15,
-      "sh_installs": 19025,
-      "sh_week": 1605,
+      "stars": 3940,
+      "pushed_at": "2026-11-16T15:45:50Z",
+      "stars30": 277,
+      "stars30_days": 17,
+      "sh_installs": 19299,
+      "sh_week": 1550,
       "plat": [
         "claude-code"
       ],
@@ -13907,12 +13893,12 @@
           }
         }
       ],
-      "stars": 3411,
-      "pushed_at": "2026-11-15T15:38:25Z",
-      "stars30": 857,
-      "stars30_days": 15,
-      "sh_installs": 4727,
-      "sh_week": 738,
+      "stars": 3462,
+      "pushed_at": "2026-11-16T14:44:11Z",
+      "stars30": 908,
+      "stars30_days": 17,
+      "sh_installs": 4904,
+      "sh_week": 743,
       "plat": [
         "claude-code"
       ],
@@ -13964,12 +13950,12 @@
       ],
       "added": "2026-10-31",
       "status": "published",
-      "stars": 2129,
+      "stars": 2131,
       "pushed_at": "2026-08-28T01:58:49Z",
-      "stars30": 71,
-      "stars30_days": 15,
-      "sh_installs": 7410,
-      "sh_week": 333,
+      "stars30": 73,
+      "stars30_days": 17,
+      "sh_installs": 7453,
+      "sh_week": 285,
       "plat": [
         "claude-code"
       ],
@@ -14021,10 +14007,10 @@
       ],
       "added": "2026-10-31",
       "status": "published",
-      "stars": 1972,
-      "pushed_at": "2026-11-13T03:39:25Z",
-      "stars30": 42,
-      "stars30_days": 15,
+      "stars": 1980,
+      "pushed_at": "2026-11-16T14:45:35Z",
+      "stars30": 50,
+      "stars30_days": 17,
       "plat": [
         "claude-code"
       ],
@@ -14083,10 +14069,10 @@
           "title": "timescale/pg-aiguide - Gource visualisation"
         }
       ],
-      "stars": 1884,
+      "stars": 1885,
       "pushed_at": "2026-11-15T22:47:20Z",
-      "stars30": 7,
-      "stars30_days": 15,
+      "stars30": 8,
+      "stars30_days": 17,
       "plat": [
         "claude-code"
       ],
@@ -14138,12 +14124,19 @@
       ],
       "added": "2026-10-31",
       "status": "published",
+      "videos": [
+        {
+          "url": "https://www.youtube.com/shorts/sstJ3Kd8ka8",
+          "by": "Barbellsoft",
+          "title": "클로드가 퀴즈부터 내는 무료 튜터 스킬, 깃허브 별 9.6k"
+        }
+      ],
       "stars": 1410,
       "pushed_at": "2026-02-28T14:41:09Z",
       "stars30": 33,
-      "stars30_days": 15,
-      "sh_installs": 2558,
-      "sh_week": 39,
+      "stars30_days": 17,
+      "sh_installs": 2573,
+      "sh_week": 67,
       "plat": [
         "claude-code"
       ],
@@ -14197,12 +14190,12 @@
       "added": "2026-10-31",
       "sh_source": "supabase/agent-skills",
       "status": "published",
-      "stars": 3088,
+      "stars": 3096,
       "pushed_at": "2026-11-12T15:32:31Z",
-      "stars30": 115,
-      "stars30_days": 15,
-      "sh_installs": 487035,
-      "sh_week": 9359,
+      "stars30": 123,
+      "stars30_days": 17,
+      "sh_installs": 488500,
+      "sh_week": 8672,
       "sh_url": "https://skills.sh/supabase/agent-skills/supabase-postgres-best-practices",
       "plat": [
         "claude-code"
@@ -14256,12 +14249,12 @@
       "added": "2026-10-31",
       "sh_source": "microsoft/playwright-cli",
       "status": "published",
-      "stars": 15224,
-      "pushed_at": "2026-11-11T17:10:44Z",
-      "stars30": 397,
-      "stars30_days": 15,
-      "sh_installs": 217622,
-      "sh_week": 8318,
+      "stars": 15251,
+      "pushed_at": "2026-11-16T21:53:41Z",
+      "stars30": 424,
+      "stars30_days": 17,
+      "sh_installs": 218762,
+      "sh_week": 6728,
       "sh_url": "https://skills.sh/microsoft/playwright-cli/playwright-cli",
       "plat": [
         "claude-code"
@@ -14316,12 +14309,12 @@
       "added": "2026-10-31",
       "sh_source": "firebase/agent-skills",
       "status": "published",
-      "stars": 516,
+      "stars": 517,
       "pushed_at": "2026-11-09T18:52:44Z",
-      "stars30": 21,
-      "stars30_days": 15,
-      "sh_installs": 186178,
-      "sh_week": 3742,
+      "stars30": 22,
+      "stars30_days": 17,
+      "sh_installs": 186805,
+      "sh_week": 3373,
       "sh_url": "https://skills.sh/firebase/agent-skills/firebase-basics",
       "plat": [
         "claude-code"
@@ -14385,12 +14378,12 @@
           }
         }
       ],
-      "stars": 3371,
+      "stars": 3375,
       "pushed_at": "2026-11-10T11:41:34Z",
-      "stars30": 136,
-      "stars30_days": 15,
-      "sh_installs": 158473,
-      "sh_week": 7902,
+      "stars30": 140,
+      "stars30_days": 17,
+      "sh_installs": 159647,
+      "sh_week": 6615,
       "sh_url": "https://skills.sh/cloudflare/skills/cloudflare",
       "plat": [
         "claude-code"
@@ -14447,9 +14440,9 @@
       "stars": 591,
       "pushed_at": "2026-11-04T18:41:19Z",
       "stars30": 9,
-      "stars30_days": 15,
-      "sh_installs": 111616,
-      "sh_week": 6910,
+      "stars30_days": 17,
+      "sh_installs": 112338,
+      "sh_week": 3188,
       "sh_url": "https://skills.sh/solana-foundation/solana-dev-skill/solana-dev",
       "plat": [
         "claude-code"
@@ -14521,12 +14514,12 @@
           }
         }
       ],
-      "stars": 688,
-      "pushed_at": "2026-11-12T19:52:27Z",
-      "stars30": 12,
-      "stars30_days": 15,
-      "sh_installs": 104585,
-      "sh_week": 518,
+      "stars": 689,
+      "pushed_at": "2026-11-16T18:38:26Z",
+      "stars30": 13,
+      "stars30_days": 17,
+      "sh_installs": 104635,
+      "sh_week": 409,
       "sh_url": "https://skills.sh/firecrawl/cli/firecrawl",
       "plat": [
         "claude-code"
@@ -14584,15 +14577,20 @@
       "status": "published",
       "videos": [
         {
+          "url": "https://www.youtube.com/shorts/mhPaT1Ewqno",
+          "by": "Byte Drop",
+          "title": "AI draws your architecture diagram? Next AI Draw.io, tested"
+        },
+        {
           "url": "https://www.youtube.com/shorts/xeNRJysJ9ys",
           "by": "AI-Saddlebag",
           "title": "Next AI Draw.io: Claude draws an animated AWS diagram live"
         }
       ],
-      "stars": 36970,
-      "pushed_at": "2026-11-15T18:20:41Z",
-      "stars30": 445,
-      "stars30_days": 15,
+      "stars": 37001,
+      "pushed_at": "2026-11-16T19:14:31Z",
+      "stars30": 476,
+      "stars30_days": 17,
       "plat": [
         "claude-code"
       ],
@@ -14650,16 +14648,6 @@
       "status": "published",
       "videos": [
         {
-          "url": "https://www.youtube.com/shorts/_1fg-43iCJA",
-          "by": "NiyiTech",
-          "title": "Give Your PC a Perfect Memory with Screenpipe—Search Everything Instantly"
-        },
-        {
-          "url": "https://www.youtube.com/shorts/XCU8JhjG7vk",
-          "by": "screenpipe",
-          "title": "Computer History for Claude — powered by screenpipe"
-        },
-        {
           "url": "https://www.youtube.com/shorts/eJOPGX_7zJo",
           "by": "screenpipe",
           "title": "How I retrieve my to-do list in 3s: screenpipe chat, Claude, Claude code",
@@ -14669,12 +14657,22 @@
             "b": "내 할 일을 잊어버림",
             "a": "화면 기록에서 목록을 찾아옴"
           }
+        },
+        {
+          "url": "https://www.youtube.com/shorts/_1fg-43iCJA",
+          "by": "NiyiTech",
+          "title": "Give Your PC a Perfect Memory with Screenpipe—Search Everything Instantly"
+        },
+        {
+          "url": "https://www.youtube.com/shorts/XCU8JhjG7vk",
+          "by": "screenpipe",
+          "title": "Computer History for Claude — powered by screenpipe"
         }
       ],
-      "stars": 22389,
-      "pushed_at": "2026-11-15T22:51:11Z",
-      "stars30": 196,
-      "stars30_days": 15,
+      "stars": 22404,
+      "pushed_at": "2026-11-17T01:21:09Z",
+      "stars30": 211,
+      "stars30_days": 17,
       "plat": [
         "claude-code"
       ],
@@ -14737,26 +14735,20 @@
           "title": "Codeburn - Track your AI Coding usage"
         },
         {
-          "url": "https://www.youtube.com/shorts/fv90_pquBfI",
-          "by": "DevDrop",
-          "title": "CodeBurn: See Where Your AI Coding Tokens Actually Go"
+          "url": "https://www.youtube.com/shorts/f9zMO15HNyE",
+          "by": "Chase AI",
+          "title": "CodeBurn Is The Latest Usage Tracker Blowing up On Github"
         },
         {
-          "url": "https://www.youtube.com/shorts/zQQq6gnR85M",
-          "by": "BitandBrain_ai",
-          "title": "Track & Optimize Your Claude Code Usage with CodeBurn 🔥 #Shorts",
-          "sum": {
-            "f": "CodeBurn이 토큰 사용량을 대시보드로 보여줘요",
-            "e": "토큰을 어디에 썼는지 확인해요",
-            "b": "토큰이 어디 쓰였는지 모름",
-            "a": "프로젝트별 사용 현황 확인"
-          }
+          "url": "https://www.youtube.com/shorts/5_87HjdFZLc",
+          "by": "Github Awesome",
+          "title": "codeburn: a Terminal UI that shows you exactly where your $200 Claude Code bill went"
         }
       ],
-      "stars": 11818,
+      "stars": 11838,
       "pushed_at": "2026-11-13T14:42:10Z",
-      "stars30": 185,
-      "stars30_days": 15,
+      "stars30": 205,
+      "stars30_days": 17,
       "plat": [
         "claude-code"
       ],
@@ -14833,15 +14825,21 @@
           "title": "Claude Cowork Just Got Its Own Browser"
         },
         {
-          "url": "https://www.youtube.com/shorts/WEMcN1T_z1I",
-          "by": "Mitch Barham | AI",
-          "title": "Claude Code Runs in Your Browser Now (No Terminal Needed) #claudecode #claudeai"
+          "url": "https://www.youtube.com/shorts/zEduoPkRVG0",
+          "by": "Build Great Products",
+          "title": "The Claude Code in-app browser is here! (Finally)",
+          "sum": {
+            "f": "Claude Code 데스크톱 앱 안에서 웹 브라우저를 써요",
+            "e": "앱 전환 없이 웹사이트를 열어요",
+            "b": "여러 앱과 창을 오가야 함",
+            "a": "한 화면에서 사이트를 보고 조작"
+          }
         }
       ],
-      "stars": 7362,
+      "stars": 7370,
       "pushed_at": "2026-11-12T16:35:15Z",
-      "stars30": 100,
-      "stars30_days": 15,
+      "stars30": 108,
+      "stars30_days": 17,
       "plat": [
         "claude-code"
       ],
@@ -14906,10 +14904,10 @@
           }
         }
       ],
-      "stars": 30382,
-      "pushed_at": "2026-11-15T18:19:31Z",
-      "stars30": 2012,
-      "stars30_days": 15,
+      "stars": 30546,
+      "pushed_at": "2026-11-17T02:37:47Z",
+      "stars30": 2176,
+      "stars30_days": 17,
       "plat": [
         "claude-code"
       ],
@@ -14976,17 +14974,12 @@
             "b": "매번 파일을 뒤져 검색",
             "a": "한 번 정리해 두고 질의"
           }
-        },
-        {
-          "url": "https://www.youtube.com/shorts/xlvSZvbDTtY",
-          "by": "Ruang Dosen",
-          "title": "AI Coding Boros Token? Hemat Sampai 10x dengan codebase-memory-mcp (Gratis & Open Source)"
         }
       ],
-      "stars": 48686,
+      "stars": 48740,
       "pushed_at": "2026-11-14T22:03:40Z",
-      "stars30": 779,
-      "stars30_days": 15,
+      "stars30": 833,
+      "stars30_days": 17,
       "plat": [
         "claude-code"
       ],
@@ -15042,12 +15035,12 @@
       "added": "2026-10-31",
       "note": "덩치가 큰 묶음입니다(에이전트 71·스킬 314·명령 98·훅). 규칙(rules)은 플러그인으로 배포되지 않아 원하면 저장소에서 따로 복사해야 합니다. Claude Code 2.1 이상, Git 필요.",
       "status": "published",
-      "stars": 303834,
-      "pushed_at": "2026-11-15T06:48:46Z",
-      "stars30": 9799,
-      "stars30_days": 15,
-      "sh_installs": 9892,
-      "sh_week": 467,
+      "stars": 304701,
+      "pushed_at": "2026-11-17T02:38:38Z",
+      "stars30": 10666,
+      "stars30_days": 17,
+      "sh_installs": 9974,
+      "sh_week": 439,
       "plat": [
         "claude-code"
       ],
@@ -15072,7 +15065,6 @@
       ]
     }
   ],
-  "pending": 27,
-  "generated_at": "2026-11-16T00:12:10.0021925Z",
+  "generated_at": "2026-11-17T03:10:53.9703908Z",
   "rejected": 147
 }

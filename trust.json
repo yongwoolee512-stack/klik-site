@@ -1,12 +1,4 @@
 {
-  "generated_at": "2026-11-16T00:12:10.0372450Z",
-  "pkgs": [
-    "@browsermcp/mcp",
-    "@dbx-app/mcp-server",
-    "@next-ai-drawio/mcp-server",
-    "@playwright/mcp",
-    "screenpipe-mcp"
-  ],
   "hosts": [
     "api.githubcopilot.com",
     "dashboardicons.com",
@@ -17,5 +9,13 @@
     "mcp.sentry.dev",
     "mcp.supabase.com",
     "mcp.vercel.com"
+  ],
+  "generated_at": "2026-11-17T03:10:53.9927495Z",
+  "pkgs": [
+    "@browsermcp/mcp",
+    "@dbx-app/mcp-server",
+    "@next-ai-drawio/mcp-server",
+    "@playwright/mcp",
+    "screenpipe-mcp"
   ]
 }

@@ -511,6 +511,13 @@
     "first_seen": "2026-10-31"
   },
   {
+    "full_name": "onehumanbeing/esp32-iphone-agent",
+    "stars": 5030,
+    "kind": "plugin",
+    "desc": "Let an AI model use a real iPhone with a $7 ESP32: AirPlay eyes, USB HID hands, any OpenAI-compatible vision model. No Mac, no developer account, no jailbreak.",
+    "first_seen": "2026-11-17"
+  },
+  {
     "full_name": "Oldcircle/geo-sleuth",
     "stars": 4884,
     "kind": "skills-npx",
@@ -656,6 +663,20 @@
     "kind": "plugin",
     "desc": "The OSINT toolkit for AI agents: Agent Skill, MCP server and CLI. Passive by default, no API keys to start, every finding cites its tool call.",
     "first_seen": "2026-11-05"
+  },
+  {
+    "full_name": "Klotzkette/claude-fuer-deutsches-recht",
+    "stars": 1846,
+    "kind": "plugin",
+    "desc": "⚠️ Experimentelle Skill-Sammlung für deutsches Recht (Arbeits-, Gesellschafts-, Insolvenz-, Datenschutz-, Prozessrecht u.a.) – inzwischen verbessert und im Alltag getestet, aber weiterhin Experiment. Bitte selber ausprobieren, Issues/PRs willkommen! Keine Rechtsberatung. Mandatsgeheimnis (§§ 203/204 StGB, § 43e BRAO), DSGVO, US-Transfer, KI-VO & Co",
+    "first_seen": "2026-10-31"
+  },
+  {
+    "full_name": "iart-ai/motion-skills",
+    "stars": 1746,
+    "kind": "plugin",
+    "desc": "56 open-source skills that teach your AI coding agent to make motion graphics, animation & video — kinetic typography, data-viz, explainers, TikTok/Reels, WebGL, Manim. 19 installable packs. By iart.ai, the AI motion agent.",
+    "first_seen": "2026-11-17"
   },
   {
     "full_name": "eatmoreduck/boss-zhipin-scraper",
