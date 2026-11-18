@@ -1,4 +1,5 @@
 {
+  "generated_at": "2026-11-18T02:34:02.0260690Z",
   "hosts": [
     "api.githubcopilot.com",
     "dashboardicons.com",
@@ -10,7 +11,6 @@
     "mcp.supabase.com",
     "mcp.vercel.com"
   ],
-  "generated_at": "2026-11-17T03:10:53.9927495Z",
   "pkgs": [
     "@browsermcp/mcp",
     "@dbx-app/mcp-server",

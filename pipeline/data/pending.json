@@ -63,6 +63,13 @@
     "first_seen": "2026-10-31"
   },
   {
+    "full_name": "alibaba/open-code-review",
+    "stars": 53793,
+    "kind": "skills-npx",
+    "desc": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+    "first_seen": "2026-10-31"
+  },
+  {
     "full_name": "obsidianmd/obsidian-skills",
     "stars": 51717,
     "kind": "plugin",
@@ -637,6 +644,13 @@
     "first_seen": "2026-10-31"
   },
   {
+    "full_name": "EL4CTEO/blender-skills",
+    "stars": 1981,
+    "kind": "plugin",
+    "desc": "Professional Blender 5.3 workflows as Agent Skills for Claude Code, Codex, Gemini CLI, Copilot and Cursor: modeling, UVs, PBR, baking, rigging, animation, export and QA.",
+    "first_seen": "2026-11-18"
+  },
+  {
     "full_name": "oil-oil/beautify-github-readme",
     "stars": 1928,
     "kind": "skills-npx",
@@ -789,6 +803,13 @@
     "kind": "skills-npx",
     "desc": "Open source AI code review for coding agents. A separate reviewer checks every change your agent writes before you push, in Claude Code, Codex, Cursor and Cline. No account or key of its own.",
     "first_seen": "2026-10-31"
+  },
+  {
+    "full_name": "EricJujianZou/rederive",
+    "stars": 1029,
+    "kind": "plugin",
+    "desc": "Explain code that AI wrote for you, in an interview or at work. An open source Claude Code skill that asks how you would build each part of your repo, so you re-derive its design decisions yourself. It also works on open source repos you want to learn.",
+    "first_seen": "2026-11-18"
   },
   {
     "full_name": "ccplugins/awesome-claude-code-plugins",
