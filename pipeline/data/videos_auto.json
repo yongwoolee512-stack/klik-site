@@ -32,11 +32,6 @@
   ],
   "pdf": [
     {
-      "url": "https://www.youtube.com/shorts/SpVgQ4m3m7s",
-      "by": "100x Engineers",
-      "title": "Don't upload PDFs to Claude, Use this instead !"
-    },
-    {
       "url": "https://www.youtube.com/shorts/_lQ3CZq6oxM",
       "by": "Carson Yan",
       "title": "Don't upload PDFs to Claude, Use this instead!"
@@ -45,6 +40,11 @@
       "url": "https://www.youtube.com/shorts/VwKrOXC8ozI",
       "by": "JVI Mobile Marketing",
       "title": "Claude builds the whole PDF by code"
+    },
+    {
+      "url": "https://www.youtube.com/shorts/SpVgQ4m3m7s",
+      "by": "100x Engineers",
+      "title": "Don't upload PDFs to Claude, Use this instead !"
     }
   ],
   "frontend": [
@@ -61,9 +61,9 @@
       "title": "Claude Code to Figma"
     },
     {
-      "url": "https://www.youtube.com/shorts/IQlppo06HhA",
-      "by": "kopciowski.design",
-      "title": "Figma to Code in 2 Minutes (No Dev Mode Required!) | Claude AI 2026"
+      "url": "https://www.youtube.com/shorts/skvDVmuZT-w",
+      "by": "Tech With Tim",
+      "title": "Turn Figma Designs Into Working Code With Claude Code"
     },
     {
       "url": "https://www.youtube.com/shorts/3SloEAQnJs4",
@@ -73,6 +73,11 @@
   ],
   "github": [
     {
+      "url": "https://www.youtube.com/shorts/0ULEsxvde3c",
+      "by": "SoojinTech",
+      "title": "How to Sync Github with Claude Code"
+    },
+    {
       "url": "https://www.youtube.com/shorts/9UYqW3h_F5A",
       "by": "Isabelle Hanson | Gold St Solutions | Claude",
       "title": "How to install Github skills into Claude Cowork"
@@ -81,11 +86,6 @@
       "url": "https://www.youtube.com/shorts/bBdY_uUbpzk",
       "by": "Levine Tech Talks",
       "title": "5 Claude Code Skills With 800K+ GitHub Stars 🤯 #shorts"
-    },
-    {
-      "url": "https://www.youtube.com/shorts/0ULEsxvde3c",
-      "by": "SoojinTech",
-      "title": "How to Sync Github with Claude Code"
     }
   ],
   "playwright": [
@@ -95,14 +95,14 @@
       "title": "Claude Code MCP Playwright: It Found a Bug on My Website"
     },
     {
-      "url": "https://www.youtube.com/shorts/1k4LZVFpOKM",
-      "by": "Testing Funda by Zeeshan Asghar",
-      "title": "Claude AI + Playwright MCP Server Opens Browser in 30 Sec 🚀 | AI Automation Shorts"
-    },
-    {
       "url": "https://www.youtube.com/shorts/7cw9wWDVQog",
       "by": "Keshav Suki | AI Automation",
       "title": "Stop using the Playwright MCP in Claude Code…"
+    },
+    {
+      "url": "https://www.youtube.com/shorts/ed_aGJUSyQw",
+      "by": "Chase AI",
+      "title": "Playwright MCP + Claude Code is Dead. Long Live Playwright."
     }
   ],
   "context7": [
@@ -132,11 +132,6 @@
       "url": "https://www.youtube.com/shorts/YajWK1IF3bc",
       "by": "Small Talk Claude",
       "title": "Let Claude Code check your code before you push: /code-review explained"
-    },
-    {
-      "url": "https://www.youtube.com/shorts/vGAg8vyVZBQ",
-      "by": "skill daily AI",
-      "title": "스킬 #18 코드 올리기 전에 버그부터! 클로드 코드 /code-review 자동 리뷰 #shorts #클로드코드"
     }
   ],
   "supabase": [
@@ -151,26 +146,26 @@
       "title": "Connect your Supabase database to Claude Code with the Supabase MCP server"
     },
     {
-      "url": "https://www.youtube.com/shorts/RsWJbYWEv9A",
-      "by": "Bouye | AI",
-      "title": "Add a Database and Login to Your AI App for Free (Supabase) #claudecode"
+      "url": "https://www.youtube.com/shorts/L_MfmeZM7Fk",
+      "by": "Ahmad | AI Automation",
+      "title": "Supabase MCP in Claude Code: How to Connect It"
     }
   ],
   "vercel": [
     {
-      "url": "https://www.youtube.com/shorts/z_pZENEljr0",
-      "by": "corbin",
-      "title": "Vercel Explained in 3 Minutes (for beginners)"
-    },
-    {
-      "url": "https://www.youtube.com/shorts/MzwY9Je9SGA",
-      "by": "XYZ Lab",
-      "title": "Connect Vercel to Claude"
-    },
-    {
       "url": "https://www.youtube.com/shorts/4nDerujSkD0",
       "by": "George Basics",
       "title": "How to Deploy Claude Code Project On Vercel (Step-By-Step Guide)"
+    },
+    {
+      "url": "https://www.youtube.com/shorts/kA-tfNLGf9A",
+      "by": "Mindly Nova",
+      "title": "How to Deploy Claude Code Project On Vercel - Step by Step"
+    },
+    {
+      "url": "https://www.youtube.com/shorts/N8IBEJw5DwQ",
+      "by": "Digital Vlad",
+      "title": "Deploy a Vibe-Coded App to Vercel in 5 Minutes (Claude Code Did It For Me)"
     }
   ],
   "cloudflare": [
@@ -180,31 +175,31 @@
       "title": "Cloudflare Security Audit Skill Turns Claude Code Into a Hacker"
     },
     {
-      "url": "https://www.youtube.com/shorts/Azh9wn9upZo",
-      "by": "Pankaj Pahuja",
-      "title": "Give Claude Code This Free Security Audit Skill From Cloudflare"
-    },
-    {
       "url": "https://www.youtube.com/shorts/ASye5MLsLSA",
       "by": "Cloudflare Developers",
       "title": "Claude Managed Agents Can Now Run on Cloudflare"
+    },
+    {
+      "url": "https://www.youtube.com/shorts/Azh9wn9upZo",
+      "by": "Pankaj Pahuja",
+      "title": "Give Claude Code This Free Security Audit Skill From Cloudflare"
     }
   ],
   "notion": [
-    {
-      "url": "https://www.youtube.com/shorts/45hPRdfDEsI",
-      "by": "Claude",
-      "title": "How Notion built with Claude Managed Agents"
-    },
     {
       "url": "https://www.youtube.com/shorts/3vv14e4XzuM",
       "by": "Elisa",
       "title": "How to use Notion with Claude"
     },
     {
-      "url": "https://www.youtube.com/shorts/-4dCtGRmmPg",
-      "by": "Meiracle & Co.",
-      "title": "Using Claude & Notion for your Content Calendar | Day 14/30 #aitools"
+      "url": "https://www.youtube.com/shorts/S_gsTl138_E",
+      "by": "Systems Made Better",
+      "title": "I made Claude it's own Notion task list!"
+    },
+    {
+      "url": "https://www.youtube.com/shorts/rmOxn2ECgZg",
+      "by": "Alek",
+      "title": "$557K Notion template made with Claude AI 🤖"
     }
   ],
   "gdrive": [
@@ -219,9 +214,9 @@
       "title": "How To Set Up Google Workspace MCP In Claude Code - Full Guide"
     },
     {
-      "url": "https://www.youtube.com/shorts/H__L1DqWw6c",
-      "by": "Guide Hub (2026 WORKING GUIDES)",
-      "title": "How To Connect Claude With Google Workspace (𝟮𝟬𝟮𝟲) | 100% WORKS | NO Yapping, To The Point & EASY"
+      "url": "https://www.youtube.com/shorts/rAKVvImQcEQ",
+      "by": "The AI Advantage",
+      "title": "Claude for Google Workspace"
     }
   ],
   "stripe": [
@@ -236,9 +231,9 @@
       "title": "How the Stripe Tools plugin works with Claude Code"
     },
     {
-      "url": "https://www.youtube.com/shorts/3xApvDImNxE",
-      "by": "Extreme Guides",
-      "title": "How to integrate Stripe using Claude Code [FULL GUIDE]"
+      "url": "https://www.youtube.com/shorts/exL4G9oVpEM",
+      "by": "Pure Tech Lens",
+      "title": "Stripe to Claude Desktop - Learn to do it correctly"
     }
   ],
   "sentry": [
@@ -253,9 +248,9 @@
       "title": "Sentry Claude Code Plugin and Skills"
     },
     {
-      "url": "https://www.youtube.com/shorts/hW2LdNg_Q18",
-      "by": "Puff | AI coding tips",
-      "title": "Connect Claude Code to Sentry, GitHub and more (MCP) #Shorts"
+      "url": "https://www.youtube.com/shorts/lgFfyCkCzxM",
+      "by": "Lekssoft",
+      "title": "Turn your top Sentry errors into tested fixes with Claude Code"
     }
   ],
   "ponytail": [
@@ -316,14 +311,14 @@
       "title": "Caveman: A Claude Code skill that forces your AI to talk like a literal caveman"
     },
     {
-      "url": "https://www.youtube.com/shorts/a7BkcLZqkaA",
-      "by": "Skillselion",
-      "title": "Your AI talks too much: the caveman skill for Claude Code"
-    },
-    {
       "url": "https://www.youtube.com/shorts/VXtSkam3mbk",
       "by": "TechIgnite",
       "title": "Caveman Claude Code Skill - 33% Fewer Tokens #caveman"
+    },
+    {
+      "url": "https://www.youtube.com/shorts/lUqx6T6vYPE",
+      "by": "Chase AI",
+      "title": "Caveman Claude Code Is Meta (This Study Shows Proves it)"
     }
   ],
   "context-mode": [
@@ -338,26 +333,26 @@
       "title": "Claude Code Context: Cut Tool Output 98% With Context Mode"
     },
     {
-      "url": "https://www.youtube.com/shorts/D_YBjmwE1O8",
-      "by": "Vadym | AI Agentic Hub",
-      "title": "Increase Your Claude Code Context Window with Context Mode"
+      "url": "https://www.youtube.com/shorts/On85gNJgUgg",
+      "by": "Skill MD",
+      "title": "Context Mode Claims 98% Less Context. Its Own Benchmark Says 82% for Code."
     }
   ],
   "gstack": [
-    {
-      "url": "https://www.youtube.com/shorts/K2Ct0qQ130I",
-      "by": "Nathan Hodgson",
-      "title": "gstack turns Claude Code into a full team of 23 specialist agents."
-    },
     {
       "url": "https://www.youtube.com/shorts/u_xCcR2g_oc",
       "by": "Sai Santosh Kumar (SSK)",
       "title": "GStack Claude Code setup with 23 commands"
     },
     {
-      "url": "https://www.youtube.com/shorts/0NL9X_VhMCc",
-      "by": "cmdkai",
-      "title": "Garry Tan's Claude Code setup (gstack): start with 3 commands"
+      "url": "https://www.youtube.com/shorts/K2Ct0qQ130I",
+      "by": "Nathan Hodgson",
+      "title": "gstack turns Claude Code into a full team of 23 specialist agents."
+    },
+    {
+      "url": "https://www.youtube.com/shorts/J-CBz_exEy4",
+      "by": "GUIMA AI",
+      "title": "GStack — Garry Tan's free pack of 23 opinionated Claude Code skills"
     }
   ],
   "graphify": [
@@ -372,9 +367,9 @@
       "title": "The Truth About Graphify and Claude Code Tokens"
     },
     {
-      "url": "https://www.youtube.com/shorts/GU2suVxqI1o",
-      "by": "TRYVOLT",
-      "title": "Graphify: Turn Your Project Into a Knowledge Graph for Claude Code"
+      "url": "https://www.youtube.com/shorts/wEHWWIutuec",
+      "by": "CodenamePoshan",
+      "title": "Graphify Just Solved Claude Code's Biggest Memory Problem"
     }
   ],
   "headroom": [
@@ -389,9 +384,9 @@
       "title": "headroom — Compress LLM context, save tokens and costs"
     },
     {
-      "url": "https://www.youtube.com/shorts/5tu7Lqs3-sE",
-      "by": "QJC 퀀텀점프클럽",
-      "title": "headroom — AI 에이전트를 위한 컨텍스트 압축 레이어 (도구출력·로그·RAG·파일을"
+      "url": "https://www.youtube.com/shorts/M-GnjrAZZ3Y",
+      "by": "The Contextian",
+      "title": "Headroom: Cut AI agent token bloat by 95%"
     }
   ],
   "slack": [
@@ -418,31 +413,31 @@
       "title": "How to connect Canva to Claude"
     },
     {
-      "url": "https://www.youtube.com/shorts/NuEvWr0tKUY",
-      "by": "Gannon Meyer",
-      "title": "Claude Design with Canva is NUTS"
-    },
-    {
       "url": "https://www.youtube.com/shorts/zQGgNSETqe0",
       "by": "Sabrina Ramonov 🍄",
       "title": "Claude + Canva Is a Literal Cheat Code"
+    },
+    {
+      "url": "https://www.youtube.com/shorts/NuEvWr0tKUY",
+      "by": "Gannon Meyer",
+      "title": "Claude Design with Canva is NUTS"
     }
   ],
   "linear": [
-    {
-      "url": "https://www.youtube.com/shorts/GwprPPJi7XY",
-      "by": "Mindly Nova",
-      "title": "How to Connect Claude to Linear - Step By Step"
-    },
     {
       "url": "https://www.youtube.com/shorts/T4lcWkWaCgE",
       "by": "Jim Caralis -  AI Product Playbook",
       "title": "How Claude Code with Linear MCP Changes Everything"
     },
     {
-      "url": "https://www.youtube.com/shorts/6PBcYCsjKWg",
-      "by": "Hire Fraction",
-      "title": "Connect Claude Code to Linear. Your PM Board Updates Itself."
+      "url": "https://www.youtube.com/shorts/u8UsTrwRxVk",
+      "by": "Linda Cunningham",
+      "title": "Track your Claude Code project in Linear #Shorts"
+    },
+    {
+      "url": "https://www.youtube.com/shorts/SjVH561PBqA",
+      "by": "Rodney Gainous Jr",
+      "title": "Claude Code plus Cursor plus Linear"
     }
   ],
   "atlassian": [
@@ -464,11 +459,6 @@
   ],
   "asana": [
     {
-      "url": "https://www.youtube.com/shorts/8Uqf6ES434A",
-      "by": "Three Step Guide",
-      "title": "How To Connect Asana With Claude (2026) (Complete Guide)"
-    },
-    {
       "url": "https://www.youtube.com/shorts/zUa7eY_OmWg",
       "by": "This New Way Podcast - Aydin Mirzaee ",
       "title": "Claude & Asana: Master Your Projects with AI!"
@@ -477,6 +467,11 @@
       "url": "https://www.youtube.com/shorts/UIWq6cMtdfM",
       "by": "News from AI Land",
       "title": "Organizing Tasks in Asana with Claude #asana   #taskmanagement   #productivitytips"
+    },
+    {
+      "url": "https://www.youtube.com/shorts/0ZNUgN9emu4",
+      "by": "This New Way Podcast - Aydin Mirzaee ",
+      "title": "AI Agents in Asana: Unleash Claude's Power Now!"
     }
   ],
   "zapier": [
@@ -491,9 +486,9 @@
       "title": "Claude + Zapier: One Connection, 8,000 Apps (Free Setup Guide)"
     },
     {
-      "url": "https://www.youtube.com/shorts/bW3dEiE8Zmo",
-      "by": "@cc60",
-      "title": "Zapier MCP for Claude Code (60 sec) — 8,000 apps in one server"
+      "url": "https://www.youtube.com/shorts/_-VjJEez9uw",
+      "by": "digitalSamaritan",
+      "title": "Claude will not replace Zapier it makes it more powerful for non-technical people"
     }
   ],
   "airtable": [
@@ -532,19 +527,19 @@
   ],
   "discord": [
     {
-      "url": "https://www.youtube.com/shorts/50HqEcDG2Ik",
-      "by": "게으른 일잘러 LazyAchiever",
-      "title": "폰 하나로 컴퓨터 3대가 일합니다 | 디스코드 × 클로드 AI 에이전트"
-    },
-    {
       "url": "https://www.youtube.com/shorts/-uFXasAfsAo",
       "by": "아빠 업데이트 중",
       "title": "디스코드 알림 봇, 코딩 몰라도 만들어준다면? #디스코드 #클로드코드 #부업 #shorts #업무자동화 #클로드코드"
     },
     {
-      "url": "https://www.youtube.com/shorts/zrPIq-9kB2c",
-      "by": "혼자서 팀처럼",
-      "title": "휴대폰으로 집 컴퓨터 AI 직원에게 일 시키기 | 클로드 코드·디스코드  #클로드코드 #1인사업 #서브에이전트 #ai에이전트 #혼자서팀처럼  #ai직원"
+      "url": "https://www.youtube.com/shorts/mcXMnLgFrpU",
+      "by": "안똔AI",
+      "title": "클로드 코드가 브라우저 직접 조작해 디스코드 서버·채널 만들고 헤르메스 봇 연결 #클로드코드 #헤르메스 #디스코드봇"
+    },
+    {
+      "url": "https://www.youtube.com/shorts/50HqEcDG2Ik",
+      "by": "게으른 일잘러 LazyAchiever",
+      "title": "폰 하나로 컴퓨터 3대가 일합니다 | 디스코드 × 클로드 AI 에이전트"
     }
   ],
   "firecrawl": [
@@ -559,9 +554,9 @@
       "title": "Claude MCP setup: Firecrawl, Playwright and Context7"
     },
     {
-      "url": "https://www.youtube.com/shorts/ypniFQgScF0",
-      "by": "Rob the ops | AI",
-      "title": "Claude + Firecrawl - unlock your scraping potential"
+      "url": "https://www.youtube.com/shorts/aH-Yxu8sgcg",
+      "by": "Jay E | RoboNuggets",
+      "title": "Connecting Firecrawl to Claude Code"
     }
   ],
   "exa": [
@@ -569,6 +564,16 @@
       "url": "https://www.youtube.com/shorts/P6xWWBzraRo",
       "by": "Wassel ALAZHAR",
       "title": "Replacing Claude WebSearch with MCP Exa inside Claude Code (setup demo)"
+    },
+    {
+      "url": "https://www.youtube.com/shorts/xtd8Wyd6T2s",
+      "by": "Exa AI Labs",
+      "title": "Launching exa-code: perfect search for coding agents!"
+    },
+    {
+      "url": "https://www.youtube.com/shorts/U6Py0EgliZg",
+      "by": "Kawsar Alam",
+      "title": "How to Connect OpenRouter and Exa.ai in Clay | Save 30–35% of Your Clay Credits"
     }
   ],
   "postiz": [
@@ -590,19 +595,19 @@
   ],
   "remember": [
     {
-      "url": "https://www.youtube.com/shorts/_fDGCWm71sw",
-      "by": "MarketerHub",
-      "title": "Claude Code ECC Toolkit: Remember Context Across Coding Sessions"
-    },
-    {
       "url": "https://www.youtube.com/shorts/j3UocosiWPk",
       "by": "Weird Game Lab",
       "title": "Claude Code remembers you between sessions. Here's how to control it"
     },
     {
-      "url": "https://www.youtube.com/shorts/_zBjhi8mN9w",
-      "by": "The Setup Lab",
-      "title": "Make Claude Code remember you with one file #shorts"
+      "url": "https://www.youtube.com/shorts/HtNG81OACbE",
+      "by": "Aidan Holt AI",
+      "title": "How Claude Code remembers your rules"
+    },
+    {
+      "url": "https://www.youtube.com/shorts/eIO9eM1PE7A",
+      "by": "AI Dev Minute",
+      "title": "Make A New Claude Code Chat Remember Your Old One"
     }
   ],
   "hookify": [
@@ -643,9 +648,9 @@
       "title": "Claude, is the code you write safe? Security guidance plugin in Claude Code"
     },
     {
-      "url": "https://www.youtube.com/shorts/LAYw_6eDzOI",
-      "by": "RepoShots",
-      "title": "O Jeito Certo de Ativar o Plugin de Segurança no Claude Code (Security Guidance)"
+      "url": "https://www.youtube.com/shorts/5L6RIxPP7dw",
+      "by": "Raghav Mehra",
+      "title": "introducing claude code security guidance plugin"
     }
   ],
   "ralph-loop": [
@@ -660,9 +665,9 @@
       "title": "The Ralph loop — the dumbest pattern in AI coding"
     },
     {
-      "url": "https://www.youtube.com/shorts/VUC54LAl_ys",
-      "by": "cmdkai",
-      "title": "Ralph loop for Claude Code: run an agent through a task list"
+      "url": "https://www.youtube.com/shorts/HgTwHGG9vnU",
+      "by": "Google for Developers",
+      "title": "The power of The Ralph Loop"
     }
   ],
   "superdesign": [
@@ -679,14 +684,14 @@
       "title": "Miro and Claude is an AI hack that no one is talking about. #claude #claudeai  #ai"
     },
     {
+      "url": "https://www.youtube.com/shorts/m2HgB3zr-OI",
+      "by": "Griffin Wooldridge",
+      "title": "Miro MCP lets me visualize any codebase with Claude Code @MiroHQ  #MiroPartner #ad"
+    },
+    {
       "url": "https://www.youtube.com/shorts/7lR5QKNhC4Y",
       "by": "Pat Simmons",
       "title": "Claude 4's coding ability is  wild. Here's a very quick run through of it one-prompting a Miro white"
-    },
-    {
-      "url": "https://www.youtube.com/shorts/n4cliYQ8Db8",
-      "by": "Brock Mesarich | AI for Non Techies",
-      "title": "Miro Just Connected Every Board You Own to Claude"
     }
   ],
   "runway-api": [
@@ -696,14 +701,14 @@
       "title": "Runway MCP: Make AI Video Inside Claude or ChatGPT"
     },
     {
+      "url": "https://www.youtube.com/shorts/ubQFSQskQEA",
+      "by": "Griffin Wooldridge",
+      "title": "#ad Runway in Claude! Comment RUNWAY for the link. MCP50 = 50% off 1 month #MadeWithRunway"
+    },
+    {
       "url": "https://www.youtube.com/shorts/y6bvU0BeO-g",
       "by": "SlopTV News",
       "title": "How to add Runway Dev to Claude Code, Codex and Cursor"
-    },
-    {
-      "url": "https://www.youtube.com/shorts/OfmOjOMwcGA",
-      "by": "Raised",
-      "title": "Runway launches Runway Dev plugins for Claude Code, Codex and Cursor"
     }
   ],
   "adobe": [
@@ -718,9 +723,9 @@
       "title": "클로드 코드 사용법, 클로드 안에서 어도비가 열립니다 #클로드코드사용법"
     },
     {
-      "url": "https://www.youtube.com/shorts/L2285BFoUwA",
-      "by": "헤인스튜디오",
-      "title": "클로드 커넥터 5개, 피그마·캔바·어도비 안에서 직접 만들기 #클로드 #claude"
+      "url": "https://www.youtube.com/shorts/vCRBImn8xG4",
+      "by": "AITOZ",
+      "title": "PDF 합치기, 어도비 말고 클로드 코드로 직접 만들었더니"
     }
   ],
   "mongodb": [
@@ -730,14 +735,14 @@
       "title": "How to use Claude Code with MongoDB [FULL GUIDE]"
     },
     {
-      "url": "https://www.youtube.com/shorts/kIhuKVri0fU",
-      "by": "MongoDB for Developers",
-      "title": "How to Install the MongoDB Atlas MCP Server in Claude Code"
-    },
-    {
       "url": "https://www.youtube.com/shorts/I52cLxpLCOU",
       "by": "MongoDB for Developers",
       "title": "How to Connect MongoDB Atlas with Claude Using the MongoDB MCP Server"
+    },
+    {
+      "url": "https://www.youtube.com/shorts/kIhuKVri0fU",
+      "by": "MongoDB for Developers",
+      "title": "How to Install the MongoDB Atlas MCP Server in Claude Code"
     }
   ],
   "firebase": [
@@ -747,9 +752,9 @@
       "title": "How To Integrate Claude Code with Firebase | Step by Step Guide for 2026"
     },
     {
-      "url": "https://www.youtube.com/shorts/W_cwirGJHNM",
-      "by": "Aning Design Lab",
-      "title": "Codex vs Claude Code vs Firebase Studio: Which Workflow Wins?"
+      "url": "https://www.youtube.com/shorts/94Ib3AvBILg",
+      "by": "Shivam Gupta",
+      "title": "I Built an E-Commerce App Using Flutter, Firebase & Claude Code #shorts #flutter #claudecode"
     },
     {
       "url": "https://www.youtube.com/shorts/_h3-PZe9k-g",
@@ -781,14 +786,14 @@
       "title": "Claude Code + Blender = Insane 3D Renders"
     },
     {
-      "url": "https://www.youtube.com/shorts/Z0ShpQGsG0Y",
-      "by": "Antonio Monteiro | More Leads & Sales With AI",
-      "title": "Claude Code now renders 3D video on your own computer"
-    },
-    {
       "url": "https://www.youtube.com/shorts/tar6gmTznaM",
       "by": "Ashard ",
       "title": "Claude Code Fullscreen Render #claude #claudecode"
+    },
+    {
+      "url": "https://www.youtube.com/shorts/Z0ShpQGsG0Y",
+      "by": "Antonio Monteiro | More Leads & Sales With AI",
+      "title": "Claude Code now renders 3D video on your own computer"
     }
   ],
   "wix": [
@@ -803,9 +808,9 @@
       "title": "Claude Can Build Your WIX Website Now"
     },
     {
-      "url": "https://www.youtube.com/shorts/cujOJqNYjV8",
-      "by": "Tim The SEO Guru",
-      "title": "How I use Claude Code for Wix SEO to Rank #1 (in 10 minutes)"
+      "url": "https://www.youtube.com/shorts/PZaWo0qbfq8",
+      "by": "Top Click Media",
+      "title": "Create Wix HTML sitemaps with Claude AI #wix #claude"
     }
   ],
   "wordpress": [
@@ -813,6 +818,11 @@
       "url": "https://www.youtube.com/shorts/KDLqEd_QAD8",
       "by": "WordPress.com",
       "title": "Connect Claude to your WordPress.com site"
+    },
+    {
+      "url": "https://www.youtube.com/shorts/Jywvzfo_w8c",
+      "by": "WordPress.com",
+      "title": "You can now Vibe Code with WordPress.com"
     }
   ],
   "hostinger": [
@@ -834,14 +844,14 @@
   ],
   "lovable": [
     {
-      "url": "https://www.youtube.com/shorts/9p8oo3h7vX0",
-      "by": "Tom Nassr | XRAY ",
-      "title": "Lovable + Claude Code: The Ultimate Vibe-coding Stack"
-    },
-    {
       "url": "https://www.youtube.com/shorts/k2lfCtV7OuA",
       "by": "byjackprice",
       "title": "Lovable vs Claude Code"
+    },
+    {
+      "url": "https://www.youtube.com/shorts/9p8oo3h7vX0",
+      "by": "Tom Nassr | XRAY ",
+      "title": "Lovable + Claude Code: The Ultimate Vibe-coding Stack"
     },
     {
       "url": "https://www.youtube.com/shorts/d7UTcIEXppA",
@@ -878,9 +888,9 @@
       "title": "How to Set Up Claude with Unity MCP: Claude Built This Game"
     },
     {
-      "url": "https://www.youtube.com/shorts/z4hxL10jdw0",
-      "by": "yvslnt",
-      "title": "Claude Built This Entire Game in 36 Hours  #ai #claude #unity"
+      "url": "https://www.youtube.com/shorts/4rfMHz4XHR8",
+      "by": "Sunny Valley Studio",
+      "title": "Unity made 29 AI skills for Unity devs — Official Claude plugin!"
     }
   ],
   "shopify": [
@@ -938,19 +948,19 @@
   ],
   "chrome-devtools": [
     {
-      "url": "https://www.youtube.com/shorts/q1vlGUKjfeY",
-      "by": "Addy Osmani",
-      "title": "Announcing Chrome DevTools MCP! 🚀 Connect your AI coding agent to Chrome's powerful debugger free"
-    },
-    {
-      "url": "https://www.youtube.com/shorts/e0z7EQZT2b0",
-      "by": "proflead",
-      "title": "Chrome DevTools MCP: How to use DevTools MCP in VS Code"
-    },
-    {
       "url": "https://www.youtube.com/shorts/OO2aPlDNccU",
       "by": "Sadra Majidi",
       "title": "Chrome DevTools MCP: Let Claude Code and Cursor Debug Chrome"
+    },
+    {
+      "url": "https://www.youtube.com/shorts/qdxGzNblpDE",
+      "by": "FK Prompts",
+      "title": "Tip 35: Claude Code in Chrome Devtools"
+    },
+    {
+      "url": "https://www.youtube.com/shorts/uwrY0lfb-B0",
+      "by": "Skills For AI",
+      "title": "Find why your page is slow with Chrome DevTools MCP in Claude Code"
     }
   ],
   "session-report": [
@@ -979,14 +989,14 @@
   ],
   "playground": [
     {
-      "url": "https://www.youtube.com/shorts/MkTwOUVOLQw",
-      "by": "Ivan Velichko",
-      "title": "Coding Agent Base Playground Demo (Claude Code with Web Preview)"
-    },
-    {
       "url": "https://www.youtube.com/shorts/EF_8sZUoj-k",
       "by": "Kvint Labs",
       "title": "Build Better Prompts with Claude Playgrounds"
+    },
+    {
+      "url": "https://www.youtube.com/shorts/MkTwOUVOLQw",
+      "by": "Ivan Velichko",
+      "title": "Coding Agent Base Playground Demo (Claude Code with Web Preview)"
     },
     {
       "url": "https://www.youtube.com/shorts/x2Du-1MY1lA",
@@ -999,6 +1009,11 @@
       "url": "https://www.youtube.com/shorts/8wq-f8qThcE",
       "by": "Jessica Wang",
       "title": "Code Simplifier Sub Agent #claude #code #ai #subagent #softwareengineer #tech #vibecode"
+    },
+    {
+      "url": "https://www.youtube.com/shorts/sUUSq_phZ4Y",
+      "by": "CodenamePoshan",
+      "title": "Build with Claude Code, then run Code Simplifier before opening your PR."
     },
     {
       "url": "https://www.youtube.com/shorts/_H4mkD8ODJw",
@@ -1028,13 +1043,18 @@
       "url": "https://www.youtube.com/shorts/BAeR8TGFvDs",
       "by": "Jack Roberts",
       "title": "Claude Code Skills 2.0 (Andrej Karpathy Skills)"
+    },
+    {
+      "url": "https://www.youtube.com/shorts/nSNWR7yfnCE",
+      "by": "Open Projects",
+      "title": "Andrej Karpathy Skills A single CLAUDE.md file to improve Claude Code behavior, 215k Stars on GitHub"
     }
   ],
   "prompts-chat": [
     {
-      "url": "https://www.youtube.com/shorts/gpKQTMHqOYc",
-      "by": "짐코딩",
-      "title": "prompts.chat MCP 연결법 | 클로드 코드·코덱스 무료 프롬프트 #shorts"
+      "url": "https://www.youtube.com/shorts/X3laWBvzO2A",
+      "by": "Omri Dan | AI for Non Techies",
+      "title": "Connect Claude Code to prompts.chat #Shorts"
     }
   ],
   "ui-ux-pro-max": [
@@ -1051,14 +1071,14 @@
       "title": "taste-skill is a free open-source skill that gives Claude actual design vstaste"
     },
     {
-      "url": "https://www.youtube.com/shorts/cocDtPpMRw8",
-      "by": "Built By Alaa",
-      "title": "Taste: the free skill that gives Claude a designer's eye"
+      "url": "https://www.youtube.com/shorts/Z4A5LouaBYU",
+      "by": "Chase Lindsay",
+      "title": "Taste Skill for Claude Code: Fix AI-Looking UI (100K GitHub Stars)"
     },
     {
-      "url": "https://www.youtube.com/shorts/dWwtsnWTX0Y",
-      "by": "Magentic Dev",
-      "title": "Teach Claude Your Taste in 3 Steps (AI Code Reviewer)"
+      "url": "https://www.youtube.com/shorts/VHnwSK9hWI4",
+      "by": "Matt Paige",
+      "title": "Use this Claude Skill to give Claude taste.  #claudeskills #claudecode"
     }
   ],
   "understand-anything": [
@@ -1066,23 +1086,28 @@
       "url": "https://www.youtube.com/shorts/Hj74EreV_X4",
       "by": "Hungry Labs",
       "title": "Understand Anything: Claude Code Plugin That Maps Any Codebase Into a Visual Knowledge Graph"
+    },
+    {
+      "url": "https://www.youtube.com/shorts/EnKDklmG5ck",
+      "by": "CodenamePoshan",
+      "title": "Understand Anything is a Claude plugin that turns your codebase into an interactive map"
     }
   ],
   "career-ops": [
     {
-      "url": "https://www.youtube.com/shorts/UOwL0XZCeQ4",
-      "by": "Trinath Reddy",
-      "title": "Stop Applying Blindly: Let AI Filter Your Job Search (career-ops + Claude Code)"
+      "url": "https://www.youtube.com/shorts/5S2NrTYtsyo",
+      "by": "Hungry Labs",
+      "title": "Career-Ops: Open-Source AI Job Search System Built on Claude Code"
     },
     {
-      "url": "https://www.youtube.com/shorts/A-S12n3ZHLs",
-      "by": "Glen Rhodes",
-      "title": "Career-ops: open-source Claude Code system that filters job applications using engineering disciplin"
+      "url": "https://www.youtube.com/shorts/nMsfQJ4HogY",
+      "by": "Amine AI",
+      "title": "Career-Ops: Free AI Job Search That Runs in Claude Code"
     },
     {
-      "url": "https://www.youtube.com/shorts/CAmtLwVD0Bo",
-      "by": "Lets Do It",
-      "title": "Revolutionize Your Job Search with AI: Career-Ops Demo"
+      "url": "https://www.youtube.com/shorts/3KLUg_Z28eo",
+      "by": "Studiotom",
+      "title": "Claude Scores Every Job Against Your Resume (career-ops, 75k Stars)"
     }
   ],
   "last30days": [
@@ -1097,16 +1122,16 @@
       "title": "last30days is an open source Claude Code skill by Matt Van Horn (mvanhorn), an AI agent-led search e"
     },
     {
-      "url": "https://www.youtube.com/shorts/aX9gNaVxEyQ",
-      "by": "GitHub Trending Digest",
-      "title": "last30days-skill - GitHub Trending Today"
+      "url": "https://www.youtube.com/shorts/HOtCfLk1XFY",
+      "by": "Open Source Explained",
+      "title": "last30days: The Claude Skill That Searches People, Not Editors"
     }
   ],
   "diagram-design": [
     {
-      "url": "https://www.youtube.com/shorts/cQBsWmV2FHU",
-      "by": "Fresh Commits",
-      "title": "cathrynlavery/diagram-design — Diagram design is a skill you install into Claude Code or Co… #Shorts"
+      "url": "https://www.youtube.com/shorts/oIJCv4iy_ko",
+      "by": "WifiCoding",
+      "title": "Claude Code + Diagram Design = Editorial-Quality Diagrams in Your Brand"
     },
     {
       "url": "https://www.youtube.com/shorts/GdWN8l8KMyM",
@@ -1174,6 +1199,11 @@
   ],
   "hallmark": [
     {
+      "url": "https://www.youtube.com/shorts/JB_Gj1nGtwk",
+      "by": "Fork This.",
+      "title": "Hallmark: Free Claude Code Skill That Ends AI Slop"
+    },
+    {
       "url": "https://www.youtube.com/shorts/U_yw_SRG3Lw",
       "by": "Allen Anant Thomas",
       "title": "I tested the Hallmark skill for Claude Code. Fact or hype?"
@@ -1182,36 +1212,26 @@
       "url": "https://www.youtube.com/shorts/6VUA2QynERs",
       "by": "Kris Torrington | AI Automation",
       "title": "Hallmark: The Free Claude Skill That Spots an AI-Made Website 🔍"
-    },
-    {
-      "url": "https://www.youtube.com/shorts/JB_Gj1nGtwk",
-      "by": "Fork This.",
-      "title": "Hallmark: Free Claude Code Skill That Ends AI Slop"
     }
   ],
   "codex-plugin": [
     {
-      "url": "https://www.youtube.com/shorts/s6GKFhYZsZc",
-      "by": "패스트캠퍼스",
-      "title": "Claude Code vs Codex | 개발자들이 갈리는 이유"
+      "url": "https://www.youtube.com/shorts/__VBoH1jUhQ",
+      "by": "ClickIT DevOps & Software Development",
+      "title": "Codex vs Claude Code: Choose Wisely"
+    },
+    {
+      "url": "https://www.youtube.com/shorts/wHrccsaV4YU",
+      "by": "Chad Sheppard",
+      "title": "Claude Code vs Codex   25 vs 100 of My Usage Limit"
     },
     {
       "url": "https://www.youtube.com/shorts/zdadBmQALvA",
       "by": "Zac Frulloni",
       "title": "Claude Code vs Codex: Who Wins Now?"
-    },
-    {
-      "url": "https://www.youtube.com/shorts/hEm-drNmuv0",
-      "by": "Maverick Maltin | ChatGPT, Claude, & AI",
-      "title": "Codex vs Claude code"
     }
   ],
   "agentmemory": [
-    {
-      "url": "https://www.youtube.com/shorts/cx9zdT5t6Ok",
-      "by": "Kuro",
-      "title": "AgentMemory - Persistent Memory for AI Coding Agents Tutorial"
-    },
     {
       "url": "https://www.youtube.com/shorts/mLVAmwMFycA",
       "by": "Daily Tech Talks",
@@ -1230,12 +1250,17 @@
       "title": "Claude HUD: see your context and agents live under the prompt"
     },
     {
-      "url": "https://www.youtube.com/shorts/sHQhbhTSXQ0",
-      "by": "Isaac",
-      "title": "Claude HUD: Your Coding Game-Changer!"
+      "url": "https://www.youtube.com/shorts/oPhvxJFUSBs",
+      "by": "AI Dev Minute",
+      "title": "28K Stars: See What Claude Code Is Really Doing (Claude HUD)"
     }
   ],
   "planning-with-files": [
+    {
+      "url": "https://www.youtube.com/shorts/e-j-juXTV74",
+      "by": "Github Awesome",
+      "title": "Planning with Files: Claude Code skill that brings workflow behind Manus straight into your terminal"
+    },
     {
       "url": "https://www.youtube.com/shorts/CMstrOrpBuw",
       "by": "Skills Unleashed",
@@ -1266,14 +1291,14 @@
       "title": "Claude SEO brain is here: the pro second brain for Claude Code SEO"
     },
     {
-      "url": "https://www.youtube.com/shorts/TWSvl4_Pp-g",
-      "by": "Daniel Agrici",
-      "title": "Claude SEO v2, Now Hardened: 248 Tests, Every SSRF Bypass Closed"
+      "url": "https://www.youtube.com/shorts/FqKRd2PruWQ",
+      "by": "Allen Anant Thomas",
+      "title": "Free Claude Code plugin audits your whole website (Claude SEO)"
     },
     {
-      "url": "https://www.youtube.com/shorts/-W-8HJrFubo",
-      "by": "Daily SEO with Julian",
-      "title": "Claude SEO: A Free SEO Team Inside Claude Code (26 Skills, 19 Agents)"
+      "url": "https://www.youtube.com/shorts/0qybWUDA9Gk",
+      "by": "GitHunt",
+      "title": "Claude SEO: Free SEO Audit Plugin for Claude Code — Rank Higher"
     }
   ],
   "superclaude": [
@@ -1288,9 +1313,9 @@
       "title": "Why SuperClaude Is a Game Changer for Developers!"
     },
     {
-      "url": "https://www.youtube.com/shorts/r3nJlx49hL0",
-      "by": "MichalKu",
-      "title": "SuperClaude is here - 3 Essential Tips for Claude Code"
+      "url": "https://www.youtube.com/shorts/RAM8BruE0LQ",
+      "by": "The AI Roundups",
+      "title": "SuperClaude-Org/SuperClaude_Framework"
     }
   ],
   "brag": [
@@ -1300,14 +1325,14 @@
       "title": "Brag Makes Launch Videos with Claude #brag #Claude #GitHub #opensource"
     },
     {
-      "url": "https://www.youtube.com/shorts/FyY5Svp1QfA",
-      "by": "Dev En Direct",
-      "title": "I tried to break /brag #claude #development #brag #motiongraphics #hyperframes"
-    },
-    {
       "url": "https://www.youtube.com/shorts/8lxDG2pYPEo",
       "by": "SSK Tech Podcast",
       "title": "Brag: Turn Any Project Into a 20-Second Launch Trailer with Claude Code"
+    },
+    {
+      "url": "https://www.youtube.com/shorts/FyY5Svp1QfA",
+      "by": "Dev En Direct",
+      "title": "I tried to break /brag #claude #development #brag #motiongraphics #hyperframes"
     }
   ],
   "apify": [
@@ -1317,26 +1342,26 @@
       "title": "Connect Apify to Claude and Just Ask for the Data #claudeai #apify #ai"
     },
     {
-      "url": "https://www.youtube.com/shorts/AOgvN2ePeRM",
-      "by": "Somya Nayak",
-      "title": "I literally used Claude (and Apify and LinkedIn) to apply to unlimited jobs"
-    },
-    {
       "url": "https://www.youtube.com/shorts/mzmkPFlga-0",
       "by": "Top Click Media",
       "title": "Get Unlimited Leads Everyday Automatically Using Claude and Apify"
+    },
+    {
+      "url": "https://www.youtube.com/shorts/AOgvN2ePeRM",
+      "by": "Somya Nayak",
+      "title": "I literally used Claude (and Apify and LinkedIn) to apply to unlimited jobs"
     }
   ],
   "garden-skills": [
     {
-      "url": "https://www.youtube.com/shorts/Z4FPGu3gMJc",
-      "by": "굿리포",
-      "title": "아직도 AI 코딩 에이전트를 단순 코딩에만 쓰고 계신가요? | ConardLi/garden-skills"
-    },
-    {
       "url": "https://www.youtube.com/shorts/JxTrfVkS8-k",
       "by": "Repocast | GitHub 일일 브리핑",
       "title": "Claude Code에 스킬 꽂기, 가든 스킬즈 하나로 끝"
+    },
+    {
+      "url": "https://www.youtube.com/shorts/Z4FPGu3gMJc",
+      "by": "굿리포",
+      "title": "아직도 AI 코딩 에이전트를 단순 코딩에만 쓰고 계신가요? | ConardLi/garden-skills"
     }
   ],
   "kami": [
@@ -1344,6 +1369,11 @@
       "url": "https://www.youtube.com/shorts/MJ0H21Q9TSI",
       "by": "Github Awesome",
       "title": "Kami: a Claude Code skill that enforces one design language across every document it generates"
+    },
+    {
+      "url": "https://www.youtube.com/shorts/s1nylhB09fw",
+      "by": "Tech On Cue",
+      "title": "Kami Explained: Is It Right for You? (AI Document Design, Fit Check)"
     },
     {
       "url": "https://www.youtube.com/shorts/56SILH-GVw4",
@@ -1358,14 +1388,14 @@
       "title": "How AutoHarness Makes Claude Code Self-Learning | Tigerless Labs"
     },
     {
-      "url": "https://www.youtube.com/shorts/s8d074v2rLM",
-      "by": "Tech On Cue",
-      "title": "AutoHarness: Claude Code that learns from your work #shorts"
-    },
-    {
       "url": "https://www.youtube.com/shorts/s1NbxHCdJdM",
       "by": "bytsyz1",
       "title": "AutoHarness: Self-Learning Skills for Claude Code"
+    },
+    {
+      "url": "https://www.youtube.com/shorts/s8d074v2rLM",
+      "by": "Tech On Cue",
+      "title": "AutoHarness: Claude Code that learns from your work #shorts"
     }
   ],
   "harness": [
@@ -1380,17 +1410,12 @@
       "title": "Agent Harness Explained in 2 minutes"
     },
     {
-      "url": "https://www.youtube.com/shorts/nkNad0R3D4U",
-      "by": "DIY Smart Code",
-      "title": "These Claude patterns changed everything - HARNESS"
+      "url": "https://www.youtube.com/shorts/9zYoAh2PH60",
+      "by": "Nick Automates",
+      "title": "Deepseek Harness is a new Free Claude Code alternative where you can customize it however you want"
     }
   ],
   "universal-modder": [
-    {
-      "url": "https://www.youtube.com/shorts/b9Zn_AwqKM8",
-      "by": "How-To Academy",
-      "title": "How to Make Game Mods With Claude Code (Universal Modder)"
-    },
     {
       "url": "https://www.youtube.com/shorts/D7CzlucHrbU",
       "by": "밤샘AI | 세상 모든 AI 꿀팁•정보•뉴스",
@@ -1411,6 +1436,11 @@
   ],
   "gpt-image": [
     {
+      "url": "https://www.youtube.com/shorts/yhpP0MU_sVw",
+      "by": "Grace Frank",
+      "title": "I Connected Claude Code to ChatGPT Image Gen 2 — and Claude is a Better Image Prompter Than Me"
+    },
+    {
       "url": "https://www.youtube.com/shorts/nng9SyelQSM",
       "by": "Noe Varner | AI Automation",
       "title": "Claude Code + ChatGPT Image 2 = Unlimited Image Ads"
@@ -1419,11 +1449,6 @@
       "url": "https://www.youtube.com/shorts/rKvKR4iKXh4",
       "by": "Blinkory",
       "title": "Build Cinematic Websites With AI 🤯 | Claude Code + GPT Image 2.#AITools #shorts"
-    },
-    {
-      "url": "https://www.youtube.com/shorts/J6obLv8K0AI",
-      "by": "Pablo Valdivia",
-      "title": "How to Connect GPT Image to Claude in 6 Steps"
     }
   ],
   "linkedin-skills": [
@@ -1440,9 +1465,9 @@
       "title": "Claude Just Killed Logo Designers? 🤯 The AI Design Revolution Is Here"
     },
     {
-      "url": "https://www.youtube.com/shorts/H2sHLkai6gc",
-      "by": "Pinto | AI news & tools",
-      "title": "Claude Code logo design: the free skill that stops and asks"
+      "url": "https://www.youtube.com/shorts/wT79wTv9S_o",
+      "by": "Claudical",
+      "title": "가게 로고 시안을 무료로 그려 주는 Claude Code 스킬 | 로고 디자인 스킬"
     },
     {
       "url": "https://www.youtube.com/shorts/TDEKDu7UBDY",
@@ -1459,14 +1484,19 @@
   ],
   "answer-with-html": [
     {
+      "url": "https://www.youtube.com/shorts/Ur9TDycU3LE",
+      "by": "BarbuPrime IA | Claude Code Vs Codex",
+      "title": "Claude Code responde con una página en vez de un muro de texto (Answer me with HTML)"
+    },
+    {
       "url": "https://www.youtube.com/shorts/YsoBhRkNOs0",
       "by": "Solo AI Stack",
       "title": "Why Use 'Answer Me with HTML' to Prototype Is Easier Than You Think"
     },
     {
-      "url": "https://www.youtube.com/shorts/Sy6t8mD0wUE",
-      "by": "LookOnThisGit",
-      "title": "7x Faster AI UI with Answer Me with HTML ⚡"
+      "url": "https://www.youtube.com/shorts/yX3XCs0Pn0A",
+      "by": "츄즈잇 CHOO's IT",
+      "title": "클로드 답변 HTML로 받기 Answer me with HTML 스킬 같은 질문 다른 답"
     }
   ],
   "scroll-craft": [
@@ -1485,19 +1515,19 @@
   ],
   "pstack": [
     {
-      "url": "https://www.youtube.com/shorts/NeT-R3uP9VI",
-      "by": "Next Horizon",
-      "title": "pstack-claude: Multimodel Agent Workflows with Cursor Primitives – AI Debugging"
-    },
-    {
       "url": "https://www.youtube.com/shorts/lVVgYJ4yDqc",
       "by": "Renato Dinis | Build With AI",
       "title": "pstack Makes Claude Prove Its Fixes. Who Checks It?"
     },
     {
-      "url": "https://www.youtube.com/shorts/-aTAoUWF5rc",
-      "by": "Build with Huy",
-      "title": "3 Claude Code workflow skills: Superpowers, Spec Kit, pstack #claudecode #aishorts #claudefable"
+      "url": "https://www.youtube.com/shorts/NeT-R3uP9VI",
+      "by": "Next Horizon",
+      "title": "pstack-claude: Multimodel Agent Workflows with Cursor Primitives – AI Debugging"
+    },
+    {
+      "url": "https://www.youtube.com/shorts/w7ETgvI1C4o",
+      "by": "Top Github",
+      "title": "michael-denyer/pstack-claude — Claude Code, Codex, Copilot, Pi, OpenCode, Gemini, and Prime Agent ve"
     }
   ],
   "ux-ui-agent": [
@@ -1562,6 +1592,11 @@
   ],
   "hivemind": [
     {
+      "url": "https://www.youtube.com/shorts/pIbD16nXUaw",
+      "by": "OpenViST",
+      "title": "Hivemind by Activeloop: Shared Memory and Reusable Skills for AI Coding Agents | OpenViST Listing"
+    },
+    {
       "url": "https://www.youtube.com/shorts/wmBzH3som4A",
       "by": "Adrian Erlikhman",
       "title": "hivemind demo"
@@ -1570,11 +1605,6 @@
       "url": "https://www.youtube.com/shorts/rja1DfjUdww",
       "by": "Activeloop",
       "title": "Continual learning for every coding agent on your team | Hivemind"
-    },
-    {
-      "url": "https://www.youtube.com/shorts/ZEw2Z7lN_IM",
-      "by": "Adrian Erlikhman",
-      "title": "hivemind pitch final"
     }
   ],
   "attention-span": [
@@ -1594,11 +1624,6 @@
       "url": "https://www.youtube.com/shorts/ghNa9vBDVGM",
       "by": "RocketLauncher Code",
       "title": "Your AI writes bad Rust. This free skill fixes it (Beautiful Rust)"
-    },
-    {
-      "url": "https://www.youtube.com/shorts/tZl3Nq6-d-s",
-      "by": "tech how it works",
-      "title": "Uncle Bob ki AI Skill: Claude Code ab Clean Code likhega | ub-mode, tstack, Beautiful Rust (Hindi)"
     }
   ],
   "ios-simulator": [
@@ -1613,12 +1638,17 @@
       "title": "Claude Code Can Now Fold an iPhone Duo to Test Your App (iOS Simulator Beta)"
     },
     {
-      "url": "https://www.youtube.com/shorts/yQIpi4C9hd0",
-      "by": "☕️ Claude Code Cafe",
-      "title": "🔔 Claude Code Desktop Gets an iOS Simulator Pane #claude #claudecode #ios"
+      "url": "https://www.youtube.com/shorts/nbgGxzOMqpg",
+      "by": "Antoine van der Lee",
+      "title": "I Put the iOS Simulator in Cursor, Claude Code & Codex"
     }
   ],
   "animate": [
+    {
+      "url": "https://www.youtube.com/shorts/vk-W1AwCM94",
+      "by": "Algo Picks",
+      "title": "How I make animated reels with Claude Code"
+    },
     {
       "url": "https://www.youtube.com/shorts/wRQjaZg6RKk",
       "by": "Nick Automates",
@@ -1628,11 +1658,6 @@
       "url": "https://www.youtube.com/shorts/9ZxdXEd1pZw",
       "by": "Tensaikun",
       "title": "Claude Fable 5.2 vs Opus 5.5 Make an Animated Video From Scratch"
-    },
-    {
-      "url": "https://www.youtube.com/shorts/O0Lv80Arp1M",
-      "by": "Sebastian Hardy | AI Marketing",
-      "title": "Claude Makes Animated Explainer Videos For Free"
     }
   ],
   "power-platform": [
@@ -1663,14 +1688,14 @@
       "title": "Matt Pocock Skills vs Superpowers: 10 Things You Need to Know (Claude Code)"
     },
     {
+      "url": "https://www.youtube.com/shorts/Pmfdl3XFWAI",
+      "by": "Seb Moska",
+      "title": "Matt Pocock Skills vs Superpowers: Which One? (Claude Code)"
+    },
+    {
       "url": "https://www.youtube.com/shorts/wzNpD-0-nqg",
       "by": "Lib Drop",
       "title": "Matt Pocock Skills: Claude Code changed 14 files for one toggle"
-    },
-    {
-      "url": "https://www.youtube.com/shorts/utTUeasCles",
-      "by": "AI Arnob",
-      "title": "Teach: Turn Claude Code Into a Tutor That Remembers | Matt Pocock Skills EP 26"
     }
   ],
   "hyperframes": [
@@ -1680,9 +1705,9 @@
       "title": "How to Create Motion Graphics with HyperFrames (Claude Code)"
     },
     {
-      "url": "https://www.youtube.com/shorts/DtDzZjrNzAI",
+      "url": "https://www.youtube.com/shorts/Yo-ikJ2ad_4",
       "by": "TheSkillDrop",
-      "title": "HyperFrames: this whole video is HTML, written by Claude Code"
+      "title": "3 Free Claude Code Skills That Make Real Videos - HyperFrames, Remotion, Motion Skills"
     },
     {
       "url": "https://www.youtube.com/shorts/ogMWTj-sOL0",
@@ -1692,19 +1717,19 @@
   ],
   "agent-browser": [
     {
-      "url": "https://www.youtube.com/shorts/h-eSCnwFVE4",
-      "by": "Lib Drop",
-      "title": "agent-browser: let Claude Code test its own pages (24 + 12 = 2412?)"
-    },
-    {
       "url": "https://www.youtube.com/shorts/1ioS9WEvovw",
       "by": "One Minute Skill",
       "title": "agent-browser: Real Browser Sessions for Claude Code — Skill #Shorts"
     },
     {
-      "url": "https://www.youtube.com/shorts/gKM-bSzvdc4",
-      "by": "Token Theory",
-      "title": "Let Claude Code Test Your Web App: agent-browser #Shorts"
+      "url": "https://www.youtube.com/shorts/h-eSCnwFVE4",
+      "by": "Lib Drop",
+      "title": "agent-browser: let Claude Code test its own pages (24 + 12 = 2412?)"
+    },
+    {
+      "url": "https://www.youtube.com/shorts/S1hJhqLTolU",
+      "by": "Harshit_git",
+      "title": "Your AI Agent Can Now Drive a Real Browser | agent-browser by Vercel Labs #shorts"
     }
   ],
   "emil-design-skills": [
@@ -1726,17 +1751,12 @@
       "title": "Claude Code + Impeccable: I Fixed This AI Landing Page Using Only Commands"
     },
     {
-      "url": "https://www.youtube.com/shorts/XoxJweKTW-U",
-      "by": "AI Signal Lab",
-      "title": "Claude Code Design Skill: Impeccable Makes AI Web Pages Look Good (111K★, Free) 🔥"
+      "url": "https://www.youtube.com/shorts/BinXd_3RJHE",
+      "by": "TheSkillDrop",
+      "title": "UI UX Pro Max, Impeccable, Emil Kowalski: 3 Claude Code skills for non-designers"
     }
   ],
   "orca-skills": [
-    {
-      "url": "https://www.youtube.com/shorts/nSCCtuEfjAA",
-      "by": "REBORN AI",
-      "title": "클로드 코드 여러 개를 동시에, 오르카 #Shorts"
-    },
     {
       "url": "https://www.youtube.com/shorts/vvRf0LXlnRg",
       "by": "파인튜닝 제작소",
@@ -1762,14 +1782,21 @@
       "title": "Claude Skills: Convert Code to Architecture | Archify #claude #softwareengineer #architecture  #ai"
     },
     {
-      "url": "https://www.youtube.com/shorts/0r8zY1rT0KY",
-      "by": "TechWithRG27",
-      "title": "Archify: Turn Any Codebase Into Beautiful Architecture Diagrams 🔥"
-    },
-    {
       "url": "https://www.youtube.com/shorts/ZAp4d4Tz20M",
       "by": "AI-Saddlebag",
       "title": "Archify: Claude turns your codebase into a clickable diagram"
+    },
+    {
+      "url": "https://www.youtube.com/shorts/0r8zY1rT0KY",
+      "by": "TechWithRG27",
+      "title": "Archify: Turn Any Codebase Into Beautiful Architecture Diagrams 🔥"
+    }
+  ],
+  "playwright-best-practices": [
+    {
+      "url": "https://www.youtube.com/shorts/QB_yISYCl_M",
+      "by": "TestMu AI (Formerly LambdaTest)",
+      "title": "5 Playwright Best Practices for Tests You Can Trust"
     }
   ],
   "linkedin-agent": [
@@ -1803,31 +1830,31 @@
       "title": "Repomix + GLM-5.2: Full-Context Claude Code for Pennies"
     },
     {
-      "url": "https://www.youtube.com/shorts/iVRhcildneY",
-      "by": "AI Star Pick",
-      "title": "Pack Your Entire Repo into One AI-Friendly File with Repomix! 📦"
+      "url": "https://www.youtube.com/shorts/XngE1QH91dw",
+      "by": "Terminal Chai",
+      "title": "Pack 50,000 Lines of Code into 1 AI Prompt (Repomix) #shorts"
     },
     {
-      "url": "https://www.youtube.com/shorts/I6ttIARflNg",
-      "by": "ArchAItecton",
-      "title": "Repomix Tutorial: Pack Your Codebase for ChatGPT or Claude"
+      "url": "https://www.youtube.com/shorts/y7wFqT0Wl2A",
+      "by": "Daily AI News By Ali",
+      "title": "Free Tool: Pack Your Whole Repo Into One AI-Ready File (Repomix) #Shorts"
     }
   ],
   "wshobson-agents": [
-    {
-      "url": "https://www.youtube.com/shorts/0GRK5NX-XCQ",
-      "by": "VibeDev",
-      "title": "wshobson/agents: 185 Sub-Agents for Claude Code"
-    },
     {
       "url": "https://www.youtube.com/shorts/9_vQa0nA070",
       "by": "roundtable_so",
       "title": "wshobson/agents"
     },
     {
-      "url": "https://www.youtube.com/shorts/Do0c29HMnWc",
-      "by": "월터의 AI 실험실",
-      "title": "클로드 코드 플러그인 94개 한 번에, 무료 모음 wshobson/agents | 월터 #ClaudeCode"
+      "url": "https://www.youtube.com/shorts/0GRK5NX-XCQ",
+      "by": "VibeDev",
+      "title": "wshobson/agents: 185 Sub-Agents for Claude Code"
+    },
+    {
+      "url": "https://www.youtube.com/shorts/cj1sMCIVexo",
+      "by": "Telenewswire (AI News without fuss)",
+      "title": "wshobson/agents: 202 Specialist Agents for Claude Code — Day 5"
     }
   ],
   "trailofbits-skills": [
@@ -1842,9 +1869,9 @@
       "title": "클라우드플레어 보안 감사 스킬, 바이브 코딩 앱 올리기 전에 돌리세요 (클로드 코드 무료 스킬 ★7만)"
     },
     {
-      "url": "https://www.youtube.com/shorts/xb3P-ZukkQQ",
-      "by": "바퍼",
-      "title": "클라우드플레어가 AI로 자기 코드 털었더니 7천 개? 무료 보안 감사 스킬 #클로드코드 #보안 #shorts"
+      "url": "https://www.youtube.com/shorts/GA6gm5sYIJE",
+      "by": "113kongai",
+      "title": "배포 전 필수, 클라우드플레어 무료 보안 감사 스킬"
     }
   ],
   "dotnet-skills": [
@@ -1859,6 +1886,11 @@
       "url": "https://www.youtube.com/shorts/h0QFPBBdQy4",
       "by": "Better Stack",
       "title": "Easiest Way To Get Mobile Claude Code"
+    },
+    {
+      "url": "https://www.youtube.com/shorts/TNnC0We8EiA",
+      "by": "Eamonn Cottrell",
+      "title": "Code on iPhone with Claude: Deploy Features Mobile-First (No Laptop Needed!)"
     }
   ],
   "ruflo": [
@@ -1873,9 +1905,9 @@
       "title": "ruflo: Turn Claude Code into a Swarm of 100 AI Agents"
     },
     {
-      "url": "https://www.youtube.com/shorts/XjUz3ZyjyHA",
-      "by": "AI with Hassan",
-      "title": "Ruflo: 60+ free AI agents that build together in Claude Code #aiwithhassan"
+      "url": "https://www.youtube.com/shorts/A3X058-KZxU",
+      "by": "Kayvon Jafarzadeh",
+      "title": "RuFlo Runs 60 Claude Agents at the Same Time"
     }
   ],
   "financetoolkit": [
@@ -1892,31 +1924,31 @@
       "title": "MemPalace Gives Claude Code the Memory It Was Missing"
     },
     {
-      "url": "https://www.youtube.com/shorts/CeG87xbOH-o",
-      "by": "ZeroCho TV",
-      "title": "여전사 배우가 만든 놀라운 성능의 AI 기억법 + 논란. MemPalace. #llm #agent #claude #codex #chatgpt #openclaw #gemini"
+      "url": "https://www.youtube.com/shorts/xikL1ViAt5o",
+      "by": "AI Star Pick",
+      "title": "MemPalace: The Best Open-Source AI Memory System"
     },
     {
-      "url": "https://www.youtube.com/shorts/vAWUSHsoZns",
-      "by": "Chase AI",
-      "title": "Mempalace drama (fake benchmarks?)"
+      "url": "https://www.youtube.com/shorts/e-4rjsmkmoM",
+      "by": "BACKFIRED X",
+      "title": "MemPalace: Give Every AI Coding Session Persistent Local Memory"
     }
   ],
   "book-to-skill": [
-    {
-      "url": "https://www.youtube.com/shorts/wRfmNDc7bXY",
-      "by": "Neura Quanta",
-      "title": "Turn Any Book Into an AI Skill 🤯 | Claude Code + book-to-skill"
-    },
     {
       "url": "https://www.youtube.com/shorts/3BzbjqP_zUg",
       "by": "굿리포",
       "title": "PDF 한 권이 Claude Code skill로, book-to-skill"
     },
     {
-      "url": "https://www.youtube.com/shorts/_mWMmDyz_YQ",
-      "by": "OverClocked",
-      "title": "How to use book-to-skill — Turn any technical book PDF into a Claude Code skill — ready  #shorts"
+      "url": "https://www.youtube.com/shorts/wRfmNDc7bXY",
+      "by": "Neura Quanta",
+      "title": "Turn Any Book Into an AI Skill 🤯 | Claude Code + book-to-skill"
+    },
+    {
+      "url": "https://www.youtube.com/shorts/J5pTRBkS3zU",
+      "by": "Next Horizon",
+      "title": "Book-to-skill turns any technical PDF into a Claude Code skill"
     }
   ],
   "guizang-ppt-skill": [
@@ -1933,14 +1965,14 @@
       "title": "Huashu Design clones Claude Design #huashudesign #claudedesign #aicoding"
     },
     {
+      "url": "https://www.youtube.com/shorts/Eit7buMw61g",
+      "by": "Maestro_AI",
+      "title": "Huashu Design 3.0: Production UI from Your Terminal #Shorts"
+    },
+    {
       "url": "https://www.youtube.com/shorts/IZPPvl76eko",
       "by": "Tech On Cue",
       "title": "Huashu Design Explained: Is It Right for You? (AI Design Skill, Fit Check)"
-    },
-    {
-      "url": "https://www.youtube.com/shorts/-AnrPmcoVVg",
-      "by": "BarbuPrime IA | Claude Code Vs Codex",
-      "title": "Claude Code: 3 cosas que diseña Huashu Design con UNA frase 🎨"
     }
   ],
   "notebooklm-py": [
@@ -1964,26 +1996,26 @@
       "title": "Claude Code turns one sentence into a product video (video-shotcraft)"
     },
     {
-      "url": "https://www.youtube.com/shorts/LYxRmum48T8",
-      "by": "AI Shortcut",
-      "title": "Video-Shotcraft Turns Claude Code into a Video Director"
-    },
-    {
       "url": "https://www.youtube.com/shorts/RIJ2rnAIyYA",
       "by": "Two Minute Repos",
       "title": "video-shotcraft: promo videos from your coding agent"
+    },
+    {
+      "url": "https://www.youtube.com/shorts/uOtfafIZkXo",
+      "by": "Nico Decodes AI",
+      "title": "video-shotcraft: Claude Code Skill for Cinematic Product Videos (Remotion)"
     }
   ],
   "genoffice": [
     {
-      "url": "https://www.youtube.com/shorts/B2pLdMX95v4",
-      "by": "Genspark Products & Guides",
-      "title": "🚀 Meet GenOffice — the world's first full-featured open-source AI Office"
-    },
-    {
       "url": "https://www.youtube.com/shorts/MShApqEWUvg",
       "by": "BarbuPrime IA | Claude Code Vs Codex",
       "title": "Claude Code + GenOffice: ¿el Office gratis con IA? 📊 Mito o verdad"
+    },
+    {
+      "url": "https://www.youtube.com/shorts/B2pLdMX95v4",
+      "by": "Genspark Products & Guides",
+      "title": "🚀 Meet GenOffice — the world's first full-featured open-source AI Office"
     },
     {
       "url": "https://www.youtube.com/shorts/avlzLQLWHuA",
@@ -2029,6 +2061,13 @@
       "title": "Esta skill de Claude te da 3 diseños DISTINTOS para elegir 🎨 Top 3 de Oil UI"
     }
   ],
+  "beautify-github-readme": [
+    {
+      "url": "https://www.youtube.com/shorts/XpJn2J1MPpU",
+      "by": "AI-Saddlebag",
+      "title": "beautify-github-readme: your README gets a designed hero"
+    }
+  ],
   "pg-aiguide": [
     {
       "url": "https://www.youtube.com/shorts/WF5vjA0qIOM",
@@ -2064,14 +2103,14 @@
   ],
   "next-ai-drawio": [
     {
-      "url": "https://www.youtube.com/shorts/mhPaT1Ewqno",
-      "by": "Byte Drop",
-      "title": "AI draws your architecture diagram? Next AI Draw.io, tested"
-    },
-    {
       "url": "https://www.youtube.com/shorts/xeNRJysJ9ys",
       "by": "AI-Saddlebag",
       "title": "Next AI Draw.io: Claude draws an animated AWS diagram live"
+    },
+    {
+      "url": "https://www.youtube.com/shorts/mhPaT1Ewqno",
+      "by": "Byte Drop",
+      "title": "AI draws your architecture diagram? Next AI Draw.io, tested"
     }
   ],
   "screenpipe": [
@@ -2086,9 +2125,9 @@
       "title": "Computer History for Claude — powered by screenpipe"
     },
     {
-      "url": "https://www.youtube.com/shorts/_1fg-43iCJA",
-      "by": "NiyiTech",
-      "title": "Give Your PC a Perfect Memory with Screenpipe—Search Everything Instantly"
+      "url": "https://www.youtube.com/shorts/hnUmfHf-V4U",
+      "by": "screenpipe",
+      "title": "Build context-aware apps with the Screenpipe SDK"
     }
   ],
   "codeburn": [
@@ -2098,14 +2137,14 @@
       "title": "Codeburn - Track your AI Coding usage"
     },
     {
-      "url": "https://www.youtube.com/shorts/fv90_pquBfI",
-      "by": "DevDrop",
-      "title": "CodeBurn: See Where Your AI Coding Tokens Actually Go"
+      "url": "https://www.youtube.com/shorts/5_87HjdFZLc",
+      "by": "Github Awesome",
+      "title": "codeburn: a Terminal UI that shows you exactly where your $200 Claude Code bill went"
     },
     {
-      "url": "https://www.youtube.com/shorts/f9zMO15HNyE",
-      "by": "Chase AI",
-      "title": "CodeBurn Is The Latest Usage Tracker Blowing up On Github"
+      "url": "https://www.youtube.com/shorts/pm9c15mx1uw",
+      "by": "CodeGlade",
+      "title": "How Much Does Claude Code Cost? See Your AI Bill (CodeBurn)"
     }
   ],
   "browser-mcp": [
@@ -2120,9 +2159,9 @@
       "title": "Claude Cowork Just Got Its Own Browser"
     },
     {
-      "url": "https://www.youtube.com/shorts/zEduoPkRVG0",
-      "by": "Build Great Products",
-      "title": "The Claude Code in-app browser is here! (Finally)"
+      "url": "https://www.youtube.com/shorts/riPfkB5j7ok",
+      "by": "Chase AI",
+      "title": "Top 3 Claude Code Browser Agents"
     }
   ],
   "dbx": [
