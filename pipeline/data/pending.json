@@ -378,6 +378,13 @@
     "first_seen": "2026-10-31"
   },
   {
+    "full_name": "htdt/godogen",
+    "stars": 7370,
+    "kind": "skills-npx",
+    "desc": "Skills for Claude Code, Codex and Antigravity to build games, and anything else a game engine renders well",
+    "first_seen": "2026-11-20"
+  },
+  {
     "full_name": "gepa-ai/gepa",
     "stars": 7332,
     "kind": "plugin",
@@ -532,6 +539,13 @@
     "first_seen": "2026-10-31"
   },
   {
+    "full_name": "nykooi1/vibe-wise",
+    "stars": 4418,
+    "kind": "plugin",
+    "desc": "A Claude Code / Codex plugin that helps you learn how to build while AI writes the code.",
+    "first_seen": "2026-11-20"
+  },
+  {
     "full_name": "glitternetwork/pinme",
     "stars": 3753,
     "kind": "skills-npx",
@@ -621,6 +635,13 @@
     "kind": "skills-npx",
     "desc": "Review code 100X faster. Lens draws every PR as animated architecture and data-flow walkthroughs, inside the pull request itself. Use it as a GitHub App, GitHub Action, CLI, or a Skill for your coding agent",
     "first_seen": "2026-10-31"
+  },
+  {
+    "full_name": "tractorjuice/arc-kit",
+    "stars": 2289,
+    "kind": "plugin",
+    "desc": "Enterprise architecture governance for Claude Code and other AI coding assistants. 76 commands draft requirements, business cases and design reviews.",
+    "first_seen": "2026-11-20"
   },
   {
     "full_name": "Jakeschincariol/founder-skill",
