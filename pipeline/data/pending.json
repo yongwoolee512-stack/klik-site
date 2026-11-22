@@ -280,6 +280,13 @@
     "first_seen": "2026-11-13"
   },
   {
+    "full_name": "google-labs-code/stitch-skills",
+    "stars": 11425,
+    "kind": "skills-npx",
+    "desc": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
+    "first_seen": "2026-11-22"
+  },
+  {
     "full_name": "genspark-ai/genoffice",
     "stars": 11405,
     "kind": "skills-npx",
