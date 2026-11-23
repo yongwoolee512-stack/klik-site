@@ -539,6 +539,13 @@
     "first_seen": "2026-11-17"
   },
   {
+    "full_name": "jordan-gibbs/hyperresearch",
+    "stars": 5002,
+    "kind": "plugin",
+    "desc": "Convert Claude Code or Codex into the most intelligent Deep Research Agent. Collect, search, and synthesize web research into a persistent, searchable wiki that builds on itself. Hosted API + MCP: hyperresearch.ai",
+    "first_seen": "2026-11-23"
+  },
+  {
     "full_name": "Oldcircle/geo-sleuth",
     "stars": 4884,
     "kind": "skills-npx",
@@ -684,6 +691,20 @@
     "kind": "skills-npx",
     "desc": "README design skill for Claude Code & Codex. 帮你把 GitHub README 做得好看又好懂。",
     "first_seen": "2026-10-31"
+  },
+  {
+    "full_name": "Illyism/seo-skills",
+    "stars": 1918,
+    "kind": "skills-npx",
+    "desc": "30 open-source SEO skills (SKILL.md) for Claude Code, Cursor, Codex & AI agents: technical SEO roasts, Ahrefs & DataForSEO SERP workflows, first-hand proof KBs, backlinks & GEO.",
+    "first_seen": "2026-11-23"
+  },
+  {
+    "full_name": "EL4CTEO/fast-anything",
+    "stars": 1907,
+    "kind": "plugin",
+    "desc": "Don't rewrite it in Rust. Rewrite the 5% that's slow: profile Python, Node or Ruby apps, port the hot functions with your coding agent, prove they behave the same.",
+    "first_seen": "2026-11-23"
   },
   {
     "full_name": "XiaoMaColtAI/math-modeling-skill",
