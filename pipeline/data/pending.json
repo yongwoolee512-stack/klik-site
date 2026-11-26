@@ -315,6 +315,13 @@
     "first_seen": "2026-10-31"
   },
   {
+    "full_name": "mutonby/openshorts",
+    "stars": 9898,
+    "kind": "mcp-http",
+    "desc": "Open source AI clip generator: turns long videos into viral 9:16 shorts with AI moment detection, face tracking, subtitles and dubbing. Self-host free with Docker (MIT), or use the cloud with GPU speed from $12/mo. MCP server and API for AI agents.",
+    "first_seen": "2026-11-26"
+  },
+  {
     "full_name": "nexu-io/openmotion",
     "stars": 9525,
     "kind": "skills-npx",
