@@ -6,7 +6,6 @@
     "@playwright/mcp",
     "screenpipe-mcp"
   ],
-  "generated_at": "2026-11-26T03:02:42.6617979Z",
   "hosts": [
     "api.githubcopilot.com",
     "dashboardicons.com",
@@ -17,5 +16,6 @@
     "mcp.sentry.dev",
     "mcp.supabase.com",
     "mcp.vercel.com"
-  ]
+  ],
+  "generated_at": "2026-11-27T03:01:41.7951586Z"
 }

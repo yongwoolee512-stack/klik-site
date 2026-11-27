@@ -1,7 +1,7 @@
 [
   {
     "source": "uizze.sh",
-    "installs": 1145592,
+    "installs": 1165703,
     "week": 32686,
     "top_skill": "ui-taste",
     "skills_n": 2,
@@ -13,7 +13,7 @@
   },
   {
     "source": "101-skills/superpowers",
-    "installs": 1080125,
+    "installs": 1084823,
     "week": 36175,
     "top_skill": "ai-video-generation",
     "skills_n": 26,
@@ -31,7 +31,7 @@
   },
   {
     "source": "magentosh/superpowers",
-    "installs": 969932,
+    "installs": 971233,
     "week": 45531,
     "top_skill": "ai-image-generation",
     "skills_n": 26,
@@ -49,7 +49,7 @@
   },
   {
     "source": "open.feishu.cn",
-    "installs": 942266,
+    "installs": 945907,
     "week": 34011,
     "top_skill": "lark-doc",
     "skills_n": 29,
@@ -67,7 +67,7 @@
   },
   {
     "source": "skills-shell/superpowers",
-    "installs": 902642,
+    "installs": 905188,
     "week": 70989,
     "top_skill": "ai-image-generation",
     "skills_n": 26,
@@ -85,7 +85,7 @@
   },
   {
     "source": "qu-skills/superpowers",
-    "installs": 827614,
+    "installs": 836462,
     "week": 61529,
     "top_skill": "ai-avatar-video",
     "skills_n": 26,
@@ -103,7 +103,7 @@
   },
   {
     "source": "gencraft-labs/skills",
-    "installs": 726451,
+    "installs": 741415,
     "week": 96963,
     "top_skill": "ai-music",
     "skills_n": 5,
@@ -118,15 +118,15 @@
   },
   {
     "source": "bankai-skills/superpowers",
-    "installs": 659634,
+    "installs": 662495,
     "week": 100349,
     "top_skill": "ai-image-generation",
     "skills_n": 26,
     "official": false,
     "skills": [
       "ai-image-generation",
-      "ai-avatar-video",
       "ai-video-generation",
+      "ai-avatar-video",
       "twitter-automation",
       "agent-browser",
       "python-executor",
@@ -136,7 +136,7 @@
   },
   {
     "source": "its-a-skill-issue/superpowers",
-    "installs": 629753,
+    "installs": 632028,
     "week": 56130,
     "top_skill": "ai-image-generation",
     "skills_n": 26,
@@ -154,7 +154,7 @@
   },
   {
     "source": "larksuite/cli",
-    "installs": 504477,
+    "installs": 505519,
     "week": 5605,
     "top_skill": "lark-doc",
     "skills_n": 29,
@@ -171,6 +171,24 @@
     ]
   },
   {
+    "source": "beltsh/superpowers",
+    "installs": 272720,
+    "week": 4303,
+    "top_skill": "ai-video-generation",
+    "skills_n": 26,
+    "official": false,
+    "skills": [
+      "ai-video-generation",
+      "ai-image-generation",
+      "ai-avatar-video",
+      "twitter-automation",
+      "agent-browser",
+      "web-search",
+      "python-executor",
+      "agent-tools"
+    ]
+  },
+  {
     "source": "shadcn/ui",
     "installs": 271099,
     "week": 0,
@@ -184,7 +202,7 @@
   },
   {
     "source": "wind-alice/alicemarket",
-    "installs": 262247,
+    "installs": 263662,
     "week": 8672,
     "top_skill": "wind-mcp-skill",
     "skills_n": 3,
@@ -196,26 +214,8 @@
     ]
   },
   {
-    "source": "beltsh/superpowers",
-    "installs": 244036,
-    "week": 4303,
-    "top_skill": "ai-video-generation",
-    "skills_n": 26,
-    "official": false,
-    "skills": [
-      "ai-video-generation",
-      "ai-image-generation",
-      "twitter-automation",
-      "ai-avatar-video",
-      "agent-browser",
-      "web-search",
-      "python-executor",
-      "agent-tools"
-    ]
-  },
-  {
     "source": "sentry/dev",
-    "installs": 206036,
+    "installs": 207316,
     "week": 5490,
     "top_skill": "sentry-cli",
     "skills_n": 1,
@@ -226,7 +226,7 @@
   },
   {
     "source": "antibrow/anti-detect-browser-skills",
-    "installs": 173383,
+    "installs": 174565,
     "week": 8262,
     "top_skill": "anti-detect-browser",
     "skills_n": 3,
@@ -239,7 +239,7 @@
   },
   {
     "source": "shadcn-ui/ui",
-    "installs": 160679,
+    "installs": 162024,
     "week": 8148,
     "top_skill": "shadcn",
     "skills_n": 2,
@@ -251,7 +251,7 @@
   },
   {
     "source": "liarjsdev/liarjs-skills",
-    "installs": 137383,
+    "installs": 138528,
     "week": 7991,
     "top_skill": "browser-fingerprint-audit",
     "skills_n": 4,
@@ -265,7 +265,7 @@
   },
   {
     "source": "better-auth/skills",
-    "installs": 134146,
+    "installs": 134311,
     "week": 1266,
     "top_skill": "better-auth-best-practices",
     "skills_n": 7,
@@ -282,7 +282,7 @@
   },
   {
     "source": "cloudflare/security-audit-skill",
-    "installs": 127725,
+    "installs": 129518,
     "week": 16995,
     "top_skill": "security-audit",
     "skills_n": 1,
@@ -293,23 +293,22 @@
   },
   {
     "source": "intellectronica/agent-skills",
-    "installs": 113461,
+    "installs": 114337,
     "week": 2149,
     "top_skill": "notion-api",
-    "skills_n": 6,
+    "skills_n": 5,
     "official": false,
     "skills": [
       "notion-api",
       "context7",
       "youtube-transcript",
       "nano-banana-pro",
-      "ultrathink",
-      "beautiful-mermaid"
+      "ultrathink"
     ]
   },
   {
     "source": "mastra-ai/skills",
-    "installs": 113430,
+    "installs": 114258,
     "week": 5955,
     "top_skill": "mastra",
     "skills_n": 2,
@@ -321,7 +320,7 @@
   },
   {
     "source": "mcollina/skills",
-    "installs": 110507,
+    "installs": 111271,
     "week": 5684,
     "top_skill": "fastify-best-practices",
     "skills_n": 5,
@@ -336,7 +335,7 @@
   },
   {
     "source": "spillwavesolutions/design-doc-mermaid",
-    "installs": 109844,
+    "installs": 110612,
     "week": 5709,
     "top_skill": "design-doc-mermaid",
     "skills_n": 1,
@@ -347,7 +346,7 @@
   },
   {
     "source": "browser-act/skills",
-    "installs": 108550,
+    "installs": 108559,
     "week": 56,
     "top_skill": "browser-act",
     "skills_n": 2,
@@ -358,24 +357,8 @@
     ]
   },
   {
-    "source": "stripe/ai",
-    "installs": 104739,
-    "week": 1203,
-    "top_skill": "stripe-best-practices",
-    "skills_n": 6,
-    "official": true,
-    "skills": [
-      "stripe-best-practices",
-      "upgrade-stripe",
-      "stripe-projects",
-      "stripe-directory",
-      "connect-recommend",
-      "stripe-docs"
-    ]
-  },
-  {
     "source": "nrwl/nx-ai-agents-config",
-    "installs": 104450,
+    "installs": 105196,
     "week": 5568,
     "top_skill": "nx-workspace",
     "skills_n": 7,
@@ -391,8 +374,24 @@
     ]
   },
   {
+    "source": "stripe/ai",
+    "installs": 104883,
+    "week": 1203,
+    "top_skill": "stripe-best-practices",
+    "skills_n": 6,
+    "official": true,
+    "skills": [
+      "stripe-best-practices",
+      "upgrade-stripe",
+      "stripe-projects",
+      "stripe-directory",
+      "connect-recommend",
+      "stripe-docs"
+    ]
+  },
+  {
     "source": "typesafe-ai/skills",
-    "installs": 102506,
+    "installs": 102613,
     "week": 1156,
     "top_skill": "typesafe-ai",
     "skills_n": 1,
@@ -403,7 +402,7 @@
   },
   {
     "source": "browser-use/browser-use",
-    "installs": 100388,
+    "installs": 100444,
     "week": 485,
     "top_skill": "browser-use",
     "skills_n": 4,

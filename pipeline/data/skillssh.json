@@ -1,877 +1,870 @@
 {
   "pptx": {
-    "source": "anthropics/skills",
     "skills_n": 20,
+    "skill": "pptx",
     "week": 5006,
-    "installs": 263997,
-    "skill": "pptx"
+    "source": "anthropics/skills",
+    "installs": 264836
   },
   "xlsx": {
-    "source": "anthropics/skills",
     "skills_n": 20,
+    "skill": "xlsx",
     "week": 4262,
-    "installs": 206188,
-    "skill": "xlsx"
+    "source": "anthropics/skills",
+    "installs": 206892
   },
   "docx": {
-    "source": "anthropics/skills",
     "skills_n": 20,
+    "skill": "docx",
     "week": 4370,
-    "installs": 226163,
-    "skill": "docx"
+    "source": "anthropics/skills",
+    "installs": 226887
   },
   "pdf": {
-    "source": "anthropics/skills",
     "skills_n": 20,
+    "skill": "pdf",
     "week": 4834,
-    "installs": 237591,
-    "skill": "pdf"
+    "source": "anthropics/skills",
+    "installs": 238363
   },
   "frontend": {
-    "source": "anthropics/claude-code",
     "skills_n": 10,
+    "skill": "frontend-design",
     "week": 0,
-    "installs": 63897,
-    "skill": "frontend-design"
+    "source": "anthropics/claude-code",
+    "installs": 63897
   },
   "figma": {
-    "source": "figma/mcp-server-guide",
     "skills_n": 11,
+    "skill": "figma-use",
     "week": 272,
-    "installs": 10482,
-    "skill": "figma-use"
+    "source": "figma/mcp-server-guide",
+    "installs": 10526
   },
   "context7": {
-    "source": "upstash/context7",
     "skills_n": 3,
+    "skill": "context7-cli",
     "week": 315,
-    "installs": 9169,
-    "skill": "context7-cli"
+    "source": "upstash/context7",
+    "installs": 9212
   },
   "code-review": {
-    "source": "anthropics/claude-code",
     "skills_n": 10,
+    "skill": "frontend-design",
     "week": 0,
-    "installs": 63897,
-    "skill": "frontend-design"
+    "source": "anthropics/claude-code",
+    "installs": 63897
   },
   "computer-use": {
-    "source": "anthropics/claude-code",
     "skills_n": 10,
+    "skill": "frontend-design",
     "week": 0,
-    "installs": 63897,
-    "skill": "frontend-design"
+    "source": "anthropics/claude-code",
+    "installs": 63897
   },
   "ponytail": {
-    "source": "dietrichgebert/ponytail",
     "skills_n": 6,
+    "skill": "ponytail",
     "week": 8394,
-    "installs": 144188,
-    "skill": "ponytail"
+    "source": "dietrichgebert/ponytail",
+    "installs": 145600
   },
   "superpowers": {
-    "source": "obra/superpowers",
     "skills_n": 15,
+    "skill": "brainstorming",
     "week": 8548,
-    "installs": 443171,
-    "skill": "brainstorming"
+    "source": "obra/superpowers",
+    "installs": 444467
   },
   "claude-mem": {
-    "source": "thedotmack/claude-mem",
     "skills_n": 20,
+    "skill": "mem-search",
     "week": 198,
-    "installs": 9768,
-    "skill": "mem-search"
+    "source": "thedotmack/claude-mem",
+    "installs": 9794
   },
   "caveman": {
-    "source": "juliusbrussee/caveman",
     "skills_n": 23,
+    "skill": "caveman",
     "week": 12149,
-    "installs": 648968,
-    "skill": "caveman"
+    "source": "juliusbrussee/caveman",
+    "installs": 651119
   },
   "context-mode": {
-    "source": "mksglu/context-mode",
     "skills_n": 2,
+    "skill": "context-mode",
     "week": 0,
-    "installs": 3017,
-    "skill": "context-mode"
+    "source": "mksglu/context-mode",
+    "installs": 3017
   },
   "gstack": {
-    "source": "garrytan/gstack",
     "skills_n": 1,
+    "skill": "gstack",
     "week": 206,
-    "installs": 25105,
-    "skill": "gstack"
+    "source": "garrytan/gstack",
+    "installs": 25135
   },
   "graphify": {
-    "source": "graphify-labs/graphify",
     "skills_n": 1,
+    "skill": "graphify",
     "week": 1027,
-    "installs": 15495,
-    "skill": "graphify"
+    "source": "graphify-labs/graphify",
+    "installs": 15642
   },
   "postiz": {
-    "source": "gitroomhq/postiz-agent",
     "skills_n": 1,
+    "skill": "postiz",
     "week": 256,
-    "installs": 5928,
-    "skill": "postiz"
+    "source": "gitroomhq/postiz-agent",
+    "installs": 5960
   },
   "claude-md-management": {
-    "source": "anthropics/claude-plugins-official",
     "skills_n": 25,
+    "skill": "frontend-design",
     "week": 643,
-    "installs": 20054,
-    "skill": "frontend-design"
+    "source": "anthropics/claude-plugins-official",
+    "installs": 20152
   },
   "security-guidance": {
-    "source": "anthropics/claude-plugins-official",
     "skills_n": 25,
+    "skill": "frontend-design",
     "week": 643,
-    "installs": 20054,
-    "skill": "frontend-design"
+    "source": "anthropics/claude-plugins-official",
+    "installs": 20152
   },
   "superdesign": {
-    "source": "superdesigndev/superdesign-skill",
     "skills_n": 1,
+    "skill": "superdesign",
     "week": 241,
-    "installs": 12459,
-    "skill": "superdesign"
-  },
-  "adobe": {
-    "source": "adobe/skills",
-    "skills_n": 1,
-    "week": 18,
-    "installs": 1869,
-    "skill": "scrape-webpage"
+    "source": "superdesigndev/superdesign-skill",
+    "installs": 12498
   },
   "mongodb": {
-    "source": "mongodb/agent-skills",
     "skills_n": 7,
+    "skill": "mongodb-query-optimizer",
     "week": 164,
-    "installs": 7879,
-    "skill": "mongodb-query-optimizer"
+    "source": "mongodb/agent-skills",
+    "installs": 7912
   },
   "railway": {
-    "source": "railwayapp/railway-skills",
     "skills_n": 1,
+    "skill": "use-railway",
     "week": 262,
-    "installs": 10038,
-    "skill": "use-railway"
+    "source": "railwayapp/railway-skills",
+    "installs": 10087
   },
   "expo": {
-    "source": "expo/skills",
     "skills_n": 38,
+    "skill": "expo-dev-client",
     "week": 1892,
-    "installs": 78863,
-    "skill": "expo-dev-client"
+    "source": "expo/skills",
+    "installs": 79076
   },
   "shopify": {
-    "source": "shopify/shopify-ai-toolkit",
     "skills_n": 22,
+    "skill": "shopify-admin",
     "week": 56,
-    "installs": 17911,
-    "skill": "shopify-admin"
+    "source": "shopify/shopify-ai-toolkit",
+    "installs": 17915
   },
   "chrome-devtools": {
-    "source": "chromedevtools/chrome-devtools-mcp",
     "skills_n": 6,
-    "week": 256,
-    "installs": 9734,
-    "skill": "chrome-devtools"
+    "skill": "chrome-devtools-cli",
+    "week": 436,
+    "source": "chromedevtools/chrome-devtools-mcp",
+    "installs": 9865
   },
   "session-report": {
-    "source": "anthropics/claude-plugins-official",
     "skills_n": 25,
+    "skill": "session-report",
     "week": 252,
-    "installs": 4898,
-    "skill": "session-report"
+    "source": "anthropics/claude-plugins-official",
+    "installs": 4933
   },
   "receipts": {
-    "source": "anthropics/claude-plugins-official",
     "skills_n": 25,
+    "skill": "receipts",
     "week": 246,
-    "installs": 3248,
-    "skill": "receipts"
+    "source": "anthropics/claude-plugins-official",
+    "installs": 3282
   },
   "playground": {
-    "source": "anthropics/claude-plugins-official",
     "skills_n": 25,
+    "skill": "playground",
     "week": 256,
-    "installs": 9218,
-    "skill": "playground"
+    "source": "anthropics/claude-plugins-official",
+    "installs": 9254
   },
   "code-simplifier": {
-    "source": "anthropics/claude-plugins-official",
     "skills_n": 25,
+    "skill": "frontend-design",
     "week": 643,
-    "installs": 20054,
-    "skill": "frontend-design"
+    "source": "anthropics/claude-plugins-official",
+    "installs": 20152
   },
   "resend": {
-    "source": "resend/resend-skills",
     "skills_n": 5,
+    "skill": "resend",
     "week": 303,
-    "installs": 25147,
-    "skill": "resend"
+    "source": "resend/resend-skills",
+    "installs": 25188
   },
   "huggingface": {
-    "source": "huggingface/skills",
     "skills_n": 11,
+    "skill": "huggingface-datasets",
     "week": 65,
-    "installs": 2779,
-    "skill": "huggingface-datasets"
+    "source": "huggingface/skills",
+    "installs": 2797
   },
   "prompts-chat": {
-    "source": "f/prompts.chat",
     "skills_n": 2,
+    "skill": "skill-lookup",
     "week": 13,
-    "installs": 2688,
-    "skill": "skill-lookup"
+    "source": "f/prompts.chat",
+    "installs": 2691
   },
   "ui-ux-pro-max": {
-    "source": "nextlevelbuilder/ui-ux-pro-max-skill",
     "skills_n": 13,
+    "skill": "ui-ux-pro-max",
     "week": 12199,
-    "installs": 472804,
-    "skill": "ui-ux-pro-max"
+    "source": "nextlevelbuilder/ui-ux-pro-max-skill",
+    "installs": 474953
   },
   "addy-agent-skills": {
-    "source": "addyosmani/agent-skills",
     "skills_n": 26,
+    "skill": "code-review-and-quality",
     "week": 5063,
-    "installs": 95507,
-    "skill": "code-review-and-quality"
+    "source": "addyosmani/agent-skills",
+    "installs": 96169
   },
   "taste-skill": {
-    "source": "leonxlnx/taste-skill",
     "skills_n": 15,
+    "skill": "design-taste-frontend",
     "week": 32522,
-    "installs": 828373,
-    "skill": "design-taste-frontend"
+    "source": "leonxlnx/taste-skill",
+    "installs": 832597
   },
   "understand-anything": {
-    "source": "egonex-ai/understand-anything",
     "skills_n": 9,
+    "skill": "understand",
     "week": 227,
-    "installs": 6377,
-    "skill": "understand"
+    "source": "egonex-ai/understand-anything",
+    "installs": 6417
   },
   "last30days": {
-    "source": "mvanhorn/last30days-skill",
     "skills_n": 1,
+    "skill": "last30days",
     "week": 2739,
-    "installs": 68432,
-    "skill": "last30days"
+    "source": "mvanhorn/last30days-skill",
+    "installs": 69046
   },
   "diagram-design": {
-    "source": "cathrynlavery/diagram-design",
     "skills_n": 1,
+    "skill": "diagram-design",
     "week": 2577,
-    "installs": 33672,
-    "skill": "diagram-design"
+    "source": "cathrynlavery/diagram-design",
+    "installs": 34369
   },
   "humanizer": {
-    "source": "blader/humanizer",
     "skills_n": 1,
+    "skill": "humanizer",
     "week": 880,
-    "installs": 14504,
-    "skill": "humanizer"
+    "source": "blader/humanizer",
+    "installs": 14634
   },
   "marketing-skills": {
-    "source": "coreyhaines31/marketingskills",
     "skills_n": 72,
+    "skill": "copywriting",
     "week": 7120,
-    "installs": 268030,
-    "skill": "copywriting"
+    "source": "coreyhaines31/marketingskills",
+    "installs": 269230
   },
   "academic-research": {
-    "source": "imbad0202/academic-research-skills",
     "skills_n": 4,
+    "skill": "academic-paper",
     "week": 256,
-    "installs": 11961,
-    "skill": "academic-paper"
+    "source": "imbad0202/academic-research-skills",
+    "installs": 11998
   },
   "hallmark": {
-    "source": "nutlope/hallmark",
     "skills_n": 1,
+    "skill": "hallmark",
     "week": 10844,
-    "installs": 124325,
-    "skill": "hallmark"
+    "source": "nutlope/hallmark",
+    "installs": 125942
   },
   "agentmemory": {
-    "source": "rohitg00/agentmemory",
     "skills_n": 17,
+    "skill": "agentmemory-agents",
     "week": 233,
-    "installs": 12110,
-    "skill": "agentmemory-agents"
+    "source": "rohitg00/agentmemory",
+    "installs": 12139
   },
   "alireza-skills": {
-    "source": "alirezarezvani/claude-skills",
     "skills_n": 7,
+    "skill": "engineering-skills",
     "week": 26,
-    "installs": 2478,
-    "skill": "engineering-skills"
+    "source": "alirezarezvani/claude-skills",
+    "installs": 2484
   },
   "planning-with-files": {
-    "source": "othmanadi/planning-with-files",
     "skills_n": 7,
+    "skill": "planning-with-files",
     "week": 585,
-    "installs": 49835,
-    "skill": "planning-with-files"
+    "source": "othmanadi/planning-with-files",
+    "installs": 49930
   },
   "baoyu-skills": {
-    "source": "jimliu/baoyu-skills",
     "skills_n": 24,
+    "skill": "baoyu-post-to-wechat",
     "week": 158,
-    "installs": 35182,
-    "skill": "baoyu-post-to-wechat"
+    "source": "jimliu/baoyu-skills",
+    "installs": 35202
   },
   "compound-engineering": {
-    "source": "everyinc/compound-engineering-plugin",
     "skills_n": 24,
+    "skill": "ce-brainstorm",
     "week": 78,
-    "installs": 4259,
-    "skill": "ce-brainstorm"
+    "source": "everyinc/compound-engineering-plugin",
+    "installs": 4266
   },
   "claude-seo": {
-    "source": "agricidaniel/claude-seo",
     "skills_n": 26,
+    "skill": "seo",
     "week": 440,
-    "installs": 11131,
-    "skill": "seo"
+    "source": "agricidaniel/claude-seo",
+    "installs": 11215
   },
   "brag": {
-    "source": "latent-spaces/brag",
     "skills_n": 2,
+    "skill": "brag",
     "week": 1219,
-    "installs": 25911,
-    "skill": "brag"
+    "source": "latent-spaces/brag",
+    "installs": 26046
   },
   "ai-research-skills": {
-    "source": "orchestra-research/ai-research-skills",
     "skills_n": 1,
+    "skill": "ml-paper-writing",
     "week": 88,
-    "installs": 2652,
-    "skill": "ml-paper-writing"
+    "source": "orchestra-research/ai-research-skills",
+    "installs": 2673
   },
   "garden-skills": {
-    "source": "conardli/garden-skills",
     "skills_n": 5,
+    "skill": "web-design-engineer",
     "week": 409,
-    "installs": 10509,
-    "skill": "web-design-engineer"
+    "source": "conardli/garden-skills",
+    "installs": 10545
   },
   "fullstack-skills": {
-    "source": "jeffallan/claude-skills",
     "skills_n": 66,
+    "skill": "laravel-specialist",
     "week": 246,
-    "installs": 24348,
-    "skill": "laravel-specialist"
+    "source": "jeffallan/claude-skills",
+    "installs": 24369
   },
   "kami": {
-    "source": "tw93/kami",
     "skills_n": 1,
+    "skill": "kami",
     "week": 159,
-    "installs": 14111,
-    "skill": "kami"
+    "source": "tw93/kami",
+    "installs": 14126
   },
   "claude-ads": {
-    "source": "agricidaniel/claude-ads",
     "skills_n": 23,
+    "skill": "ads-meta",
     "week": 172,
-    "installs": 5669,
-    "skill": "ads-meta"
+    "source": "agricidaniel/claude-ads",
+    "installs": 5716
   },
   "universal-modder": {
-    "source": "rehan-remade/universal-modder",
     "skills_n": 10,
+    "skill": "reverse-engineering",
     "week": 165,
-    "installs": 2333,
-    "skill": "reverse-engineering"
+    "source": "rehan-remade/universal-modder",
+    "installs": 2354
   },
   "pm-skills": {
-    "source": "deanpeters/product-manager-skills",
-    "skills_n": 47,
+    "skills_n": 46,
+    "skill": "prd-development",
     "week": 54,
-    "installs": 4974,
-    "skill": "prd-development"
+    "source": "deanpeters/product-manager-skills",
+    "installs": 4985
   },
   "waza": {
-    "source": "tw93/waza",
     "skills_n": 9,
+    "skill": "health",
     "week": 125,
-    "installs": 19361,
-    "skill": "health"
+    "source": "tw93/waza",
+    "installs": 19376
   },
   "linkedin-skills": {
-    "source": "sergebulaev/linkedin-skills",
     "skills_n": 1,
+    "skill": "linkedin-marketing",
     "week": 116,
-    "installs": 2177,
-    "skill": "linkedin-marketing"
+    "source": "sergebulaev/linkedin-skills",
+    "installs": 2193
   },
   "logo-design": {
-    "source": "kaankiziltug/logo-design-skill",
     "skills_n": 1,
+    "skill": "logo-design",
     "week": 599,
-    "installs": 3717,
-    "skill": "logo-design"
+    "source": "kaankiziltug/logo-design-skill",
+    "installs": 3853
   },
   "answer-with-html": {
-    "source": "qingyuna/answer-me-with-html",
     "skills_n": 1,
+    "skill": "answer-me-with-html",
     "week": 645,
-    "installs": 9161,
-    "skill": "answer-me-with-html"
+    "source": "qingyuna/answer-me-with-html",
+    "installs": 9233
   },
   "design-extract": {
-    "source": "manavarya09/design-extract",
     "skills_n": 1,
+    "skill": "extract-design",
     "week": 176,
-    "installs": 3701,
-    "skill": "extract-design"
+    "source": "manavarya09/design-extract",
+    "installs": 3718
   },
   "scroll-craft": {
-    "source": "nateherkai/scroll-craft",
     "skills_n": 1,
+    "skill": "scroll-craft",
     "week": 201,
-    "installs": 2092,
-    "skill": "scroll-craft"
+    "source": "nateherkai/scroll-craft",
+    "installs": 2117
   },
   "obsidian-wiki": {
-    "source": "ar9av/obsidian-wiki",
     "skills_n": 29,
+    "skill": "llm-wiki",
     "week": 16,
-    "installs": 4228,
-    "skill": "llm-wiki"
+    "source": "ar9av/obsidian-wiki",
+    "installs": 4229
   },
   "web-quality": {
-    "source": "addyosmani/web-quality-skills",
     "skills_n": 6,
+    "skill": "web-quality-audit",
     "week": 1654,
-    "installs": 40005,
-    "skill": "web-quality-audit"
+    "source": "addyosmani/web-quality-skills",
+    "installs": 40249
   },
   "wondel-skills": {
-    "source": "wondelai/skills",
     "skills_n": 64,
+    "skill": "ux-heuristics",
     "week": 449,
-    "installs": 11475,
-    "skill": "ux-heuristics"
+    "source": "wondelai/skills",
+    "installs": 11545
   },
   "terraform-skill": {
-    "source": "antonbabenko/terraform-skill",
     "skills_n": 1,
+    "skill": "terraform-skill",
     "week": 153,
-    "installs": 8337,
-    "skill": "terraform-skill"
+    "source": "antonbabenko/terraform-skill",
+    "installs": 8366
   },
   "ios-simulator": {
-    "source": "conorluddy/ios-simulator-skill",
     "skills_n": 1,
+    "skill": "ios-simulator-skill",
     "week": 35,
-    "installs": 2506,
-    "skill": "ios-simulator-skill"
+    "source": "conorluddy/ios-simulator-skill",
+    "installs": 2511
   },
   "find-skills": {
-    "source": "vercel-labs/skills",
     "skills_n": 1,
+    "skill": "find-skills",
     "week": 109742,
-    "installs": 4542760,
-    "skill": "find-skills"
+    "source": "vercel-labs/skills",
+    "installs": 4559052
   },
   "mattpocock-skills": {
-    "source": "mattpocock/skills",
     "skills_n": 56,
+    "skill": "grill-me",
     "week": 38630,
-    "installs": 1614204,
-    "skill": "grill-me"
+    "source": "mattpocock/skills",
+    "installs": 1620392
   },
   "hyperframes": {
-    "source": "heygen-com/hyperframes",
     "skills_n": 51,
+    "skill": "hyperframes-cli",
     "week": 103703,
-    "installs": 1717489,
-    "skill": "hyperframes-cli"
+    "source": "heygen-com/hyperframes",
+    "installs": 1730392
   },
   "agent-browser": {
-    "source": "vercel-labs/agent-browser",
     "skills_n": 1,
+    "skill": "agent-browser",
     "week": 102954,
-    "installs": 1713278,
-    "skill": "agent-browser"
+    "source": "vercel-labs/agent-browser",
+    "installs": 1733334
   },
   "reddit-automation": {
-    "source": "flowkit-labs/skills",
     "skills_n": 3,
+    "skill": "reddit-automation",
     "week": 97088,
-    "installs": 1547969,
-    "skill": "reddit-automation"
+    "source": "flowkit-labs/skills",
+    "installs": 1562932
   },
   "sleek-design-mobile": {
-    "source": "designed-by-ai/skills",
     "skills_n": 1,
+    "skill": "design-mobile-apps",
     "week": 136332,
-    "installs": 1643130,
-    "skill": "design-mobile-apps"
+    "source": "designed-by-ai/skills",
+    "installs": 1662972
   },
   "vercel-agent-skills": {
-    "source": "vercel-labs/agent-skills",
     "skills_n": 9,
+    "skill": "vercel-react-best-practices",
     "week": 20633,
-    "installs": 933802,
-    "skill": "vercel-react-best-practices"
+    "source": "vercel-labs/agent-skills",
+    "installs": 937021
   },
   "remotion-skills": {
-    "source": "remotion-dev/skills",
     "skills_n": 15,
+    "skill": "remotion-best-practices",
     "week": 56019,
-    "installs": 919309,
-    "skill": "remotion-best-practices"
+    "source": "remotion-dev/skills",
+    "installs": 928834
   },
   "azure-skills": {
-    "source": "microsoft/azure-skills",
     "skills_n": 34,
+    "skill": "microsoft-foundry",
     "week": 56233,
-    "installs": 787464,
-    "skill": "microsoft-foundry"
+    "source": "microsoft/azure-skills",
+    "installs": 789726
   },
   "google-agents-cli": {
-    "source": "google/agents-cli",
     "skills_n": 7,
+    "skill": "google-agents-cli-adk-code",
     "week": 17139,
-    "installs": 596915,
-    "skill": "google-agents-cli-adk-code"
+    "source": "google/agents-cli",
+    "installs": 599332
   },
   "rigorpilot": {
-    "source": "lllllllama/rigorpilot-skills",
     "skills_n": 12,
+    "skill": "paper-context-resolver",
     "week": 6722,
-    "installs": 506749,
-    "skill": "paper-context-resolver"
+    "source": "lllllllama/rigorpilot-skills",
+    "installs": 507469
   },
   "runcomfy-skills": {
-    "source": "prime-skills/runcomfy-agent-skills",
     "skills_n": 30,
+    "skill": "video-edit",
     "week": 3025,
-    "installs": 452989,
-    "skill": "video-edit"
+    "source": "prime-skills/runcomfy-agent-skills",
+    "installs": 453346
   },
   "emil-design-skills": {
-    "source": "emilkowalski/skills",
     "skills_n": 20,
+    "skill": "emil-design-eng",
     "week": 22605,
-    "installs": 482277,
-    "skill": "emil-design-eng"
+    "source": "emilkowalski/skills",
+    "installs": 485793
   },
   "prisma-skills": {
-    "source": "prisma/skills",
     "skills_n": 11,
+    "skill": "prisma-client-api",
     "week": 12108,
-    "installs": 450270,
-    "skill": "prisma-client-api"
+    "source": "prisma/skills",
+    "installs": 451928
   },
   "impeccable": {
-    "source": "pbakaus/impeccable",
     "skills_n": 24,
+    "skill": "impeccable",
     "week": 16177,
-    "installs": 435901,
-    "skill": "impeccable"
+    "source": "pbakaus/impeccable",
+    "installs": 438626
   },
   "orca-skills": {
-    "source": "stablyai/orca",
     "skills_n": 8,
+    "skill": "orca-cli",
     "week": 2948,
-    "installs": 366270,
-    "skill": "orca-cli"
+    "source": "stablyai/orca",
+    "installs": 366650
   },
   "neon-skills": {
-    "source": "neondatabase/agent-skills",
     "skills_n": 10,
+    "skill": "neon-postgres",
     "week": 5795,
-    "installs": 320499,
-    "skill": "neon-postgres"
+    "source": "neondatabase/agent-skills",
+    "installs": 321290
   },
   "just-scrape": {
-    "source": "scrapegraphai/just-scrape",
     "skills_n": 1,
+    "skill": "just-scrape",
     "week": 2,
-    "installs": 245017,
-    "skill": "just-scrape"
+    "source": "scrapegraphai/just-scrape",
+    "installs": 245017
   },
   "higgsfield": {
-    "source": "higgsfield-ai/skills",
     "skills_n": 10,
+    "skill": "higgsfield-generate",
     "week": 14201,
-    "installs": 266789,
-    "skill": "higgsfield-generate"
+    "source": "higgsfield-ai/skills",
+    "installs": 268740
   },
   "uizze": {
-    "source": "uizze/uizze",
     "skills_n": 2,
+    "skill": "uizze-ui",
     "week": 18690,
-    "installs": 395591,
-    "skill": "uizze-ui"
+    "source": "uizze/uizze",
+    "installs": 407273
   },
   "archify": {
-    "source": "tt-a1i/archify",
     "skills_n": 2,
+    "skill": "archify",
     "week": 2584,
-    "installs": 196657,
-    "skill": "archify"
+    "source": "tt-a1i/archify",
+    "installs": 197181
   },
   "convex-skills": {
-    "source": "convex/agent-skills",
     "skills_n": 37,
+    "skill": "convex-quickstart",
     "week": 2640,
-    "installs": 142694,
-    "skill": "convex-quickstart"
+    "source": "convex/agent-skills",
+    "installs": 143047
   },
   "extract-design-system": {
-    "source": "arvindrk/extract-design-system",
     "skills_n": 1,
+    "skill": "extract-design-system",
     "week": 352,
-    "installs": 132132,
-    "skill": "extract-design-system"
+    "source": "arvindrk/extract-design-system",
+    "installs": 132195
   },
   "autonnel-funnel-skills": {
-    "source": "autonnel/autonnel-skills",
     "skills_n": 6,
+    "skill": "landing-page-conversion-audit",
     "week": 8404,
-    "installs": 141373,
-    "skill": "landing-page-conversion-audit"
+    "source": "autonnel/autonnel-skills",
+    "installs": 142570
   },
   "review-loop": {
-    "source": "2dmurali/review-loop-skill",
     "skills_n": 1,
+    "skill": "review-loop",
     "week": 2519,
-    "installs": 115868,
-    "skill": "review-loop"
+    "source": "2dmurali/review-loop-skill",
+    "installs": 116005
   },
   "playwright-best-practices": {
-    "source": "currents-dev/playwright-best-practices-skill",
     "skills_n": 1,
+    "skill": "playwright-best-practices",
     "week": 3161,
-    "installs": 111819,
-    "skill": "playwright-best-practices"
+    "source": "currents-dev/playwright-best-practices-skill",
+    "installs": 112282
   },
   "repomix": {
-    "source": "yamadashy/repomix",
     "skills_n": 1,
+    "skill": "repomix-explorer",
     "week": 43,
-    "installs": 2110,
-    "skill": "repomix-explorer"
+    "source": "yamadashy/repomix",
+    "installs": 2116
   },
   "wshobson-agents": {
-    "source": "wshobson/agents",
     "skills_n": 183,
+    "skill": "typescript-advanced-types",
     "week": 1785,
-    "installs": 102302,
-    "skill": "typescript-advanced-types"
+    "source": "wshobson/agents",
+    "installs": 102514
   },
   "trailofbits-skills": {
-    "source": "trailofbits/skills",
     "skills_n": 88,
+    "skill": "differential-review",
     "week": 645,
-    "installs": 11559,
-    "skill": "differential-review"
+    "source": "trailofbits/skills",
+    "installs": 11678
   },
   "dotnet-skills": {
-    "source": "dotnet/skills",
-    "skills_n": 110,
+    "skills_n": 111,
+    "skill": "optimizing-ef-core-queries",
     "week": 439,
-    "installs": 7804,
-    "skill": "optimizing-ef-core-queries"
+    "source": "dotnet/skills",
+    "installs": 7943
   },
   "ruflo": {
-    "source": "ruvnet/ruflo",
     "skills_n": 2,
+    "skill": "ruflo",
     "week": 61,
-    "installs": 4280,
-    "skill": "ruflo"
+    "source": "ruvnet/ruflo",
+    "installs": 4296
   },
   "mempalace": {
-    "source": "mempalace/mempalace",
     "skills_n": 3,
+    "skill": "mempalace",
     "week": 121,
-    "installs": 2557,
-    "skill": "mempalace"
+    "source": "mempalace/mempalace",
+    "installs": 2574
   },
   "book-to-skill": {
-    "source": "virgiliojr94/book-to-skill",
     "skills_n": 1,
+    "skill": "book-to-skill",
     "week": 304,
-    "installs": 10123,
-    "skill": "book-to-skill"
+    "source": "virgiliojr94/book-to-skill",
+    "installs": 10171
   },
   "scientific-agent-skills": {
-    "source": "k-dense-ai/scientific-agent-skills",
     "skills_n": 132,
+    "skill": "scientific-writing",
     "week": 89,
-    "installs": 2815,
-    "skill": "scientific-writing"
+    "source": "k-dense-ai/scientific-agent-skills",
+    "installs": 2828
   },
   "gws-cli": {
-    "source": "googleworkspace/cli",
     "skills_n": 95,
+    "skill": "gws-gmail",
     "week": 1143,
-    "installs": 87059,
-    "skill": "gws-gmail"
+    "source": "googleworkspace/cli",
+    "installs": 87246
   },
   "guizang-ppt-skill": {
-    "source": "op7418/guizang-ppt-skill",
     "skills_n": 1,
+    "skill": "guizang-ppt-skill",
     "week": 321,
-    "installs": 29368,
-    "skill": "guizang-ppt-skill"
+    "source": "op7418/guizang-ppt-skill",
+    "installs": 29417
   },
   "huashu-design": {
-    "source": "alchaincyf/huashu-design",
     "skills_n": 1,
+    "skill": "huashu-design",
     "week": 724,
-    "installs": 55104,
-    "skill": "huashu-design"
+    "source": "alchaincyf/huashu-design",
+    "installs": 55255
   },
   "ego-lite": {
-    "source": "citrolabs/ego-lite",
     "skills_n": 1,
+    "skill": "ego-browser",
     "week": 1291,
-    "installs": 19700,
-    "skill": "ego-browser"
+    "source": "citrolabs/ego-lite",
+    "installs": 19950
   },
   "notebooklm-py": {
-    "source": "teng-lin/notebooklm-py",
     "skills_n": 1,
+    "skill": "notebooklm",
     "week": 64,
-    "installs": 10304,
-    "skill": "notebooklm"
+    "source": "teng-lin/notebooklm-py",
+    "installs": 10314
   },
   "video-shotcraft": {
-    "source": "vincentwei1021/video-shotcraft",
     "skills_n": 1,
+    "skill": "video-shotcraft",
     "week": 1304,
-    "installs": 10964,
-    "skill": "video-shotcraft"
+    "source": "vincentwei1021/video-shotcraft",
+    "installs": 11131
   },
   "drawio-skill": {
-    "source": "agents365-ai/drawio-skill",
     "skills_n": 1,
+    "skill": "drawio-skill",
     "week": 480,
-    "installs": 8460,
-    "skill": "drawio-skill"
+    "source": "agents365-ai/drawio-skill",
+    "installs": 8525
   },
   "antislop": {
-    "source": "miqdadbadjuber/anti-slop",
     "skills_n": 6,
+    "skill": "antislop",
     "week": 1394,
-    "installs": 12801,
-    "skill": "antislop"
+    "source": "miqdadbadjuber/anti-slop",
+    "installs": 12987
   },
   "lieflat-charts": {
-    "source": "larashero3-dotcom/lieflat-charts",
     "skills_n": 1,
+    "skill": "lieflat-charts",
     "week": 36,
-    "installs": 2001,
-    "skill": "lieflat-charts"
+    "source": "larashero3-dotcom/lieflat-charts",
+    "installs": 2002
   },
   "gamedev-agent-skills": {
-    "source": "gamedev-skills/awesome-gamedev-agent-skills",
     "skills_n": 80,
+    "skill": "game-feel",
     "week": 3013,
-    "installs": 21872,
-    "skill": "game-feel"
+    "source": "gamedev-skills/awesome-gamedev-agent-skills",
+    "installs": 22402
   },
   "antfu-skills": {
-    "source": "antfu/skills",
     "skills_n": 19,
+    "skill": "vitest",
     "week": 1249,
-    "installs": 49551,
-    "skill": "vitest"
+    "source": "antfu/skills",
+    "installs": 49679
   },
   "anti-slop-oxlint": {
-    "source": "dmmulroy/anti-slop",
     "skills_n": 1,
+    "skill": "install-anti-slop",
     "week": 398,
-    "installs": 16819,
-    "skill": "install-anti-slop"
+    "source": "dmmulroy/anti-slop",
+    "installs": 16889
   },
   "task-observer": {
-    "source": "rebelytics/one-skill-to-rule-them-all",
     "skills_n": 1,
+    "skill": "task-observer",
     "week": 1467,
-    "installs": 20917,
-    "skill": "task-observer"
+    "source": "rebelytics/one-skill-to-rule-them-all",
+    "installs": 21086
   },
   "oil-ui": {
-    "source": "oil-oil/oil-ui",
     "skills_n": 1,
+    "skill": "oil-ui",
     "week": 1229,
-    "installs": 6112,
-    "skill": "oil-ui"
+    "source": "oil-oil/oil-ui",
+    "installs": 6266
   },
   "design-dna": {
-    "source": "zanwei/design-dna",
     "skills_n": 1,
+    "skill": "design-dna",
     "week": 295,
-    "installs": 7795,
-    "skill": "design-dna"
+    "source": "zanwei/design-dna",
+    "installs": 7828
   },
   "tutor-skills": {
-    "source": "bevibing/tutor-skills",
     "skills_n": 2,
+    "skill": "tutor",
     "week": 85,
-    "installs": 2661,
-    "skill": "tutor"
+    "source": "bevibing/tutor-skills",
+    "installs": 2668
   },
   "supabase-agent-skills": {
-    "source": "supabase/agent-skills",
     "skills_n": 2,
+    "skill": "supabase-postgres-best-practices",
     "week": 8615,
-    "installs": 498556,
-    "skill": "supabase-postgres-best-practices"
+    "source": "supabase/agent-skills",
+    "installs": 499696
   },
   "playwright-cli": {
-    "source": "microsoft/playwright-cli",
     "skills_n": 2,
+    "skill": "playwright-cli",
     "week": 6408,
-    "installs": 227988,
-    "skill": "playwright-cli"
+    "source": "microsoft/playwright-cli",
+    "installs": 229334
   },
   "firebase-agent-skills": {
-    "source": "firebase/agent-skills",
     "skills_n": 23,
+    "skill": "firebase-basics",
     "week": 3422,
-    "installs": 191044,
-    "skill": "firebase-basics"
+    "source": "firebase/agent-skills",
+    "installs": 191511
   },
   "cloudflare-skills": {
-    "source": "cloudflare/skills",
-    "skills_n": 25,
+    "skills_n": 27,
+    "skill": "cloudflare",
     "week": 6616,
-    "installs": 168561,
-    "skill": "cloudflare"
+    "source": "cloudflare/skills",
+    "installs": 169689
   },
   "solana-dev-skill": {
-    "source": "solana-foundation/solana-dev-skill",
     "skills_n": 1,
+    "skill": "solana-dev",
     "week": 3148,
-    "installs": 117101,
-    "skill": "solana-dev"
+    "source": "solana-foundation/solana-dev-skill",
+    "installs": 117619
   },
   "firecrawl-cli": {
-    "source": "firecrawl/cli",
     "skills_n": 14,
+    "skill": "firecrawl",
     "week": 338,
-    "installs": 105110,
-    "skill": "firecrawl"
+    "source": "firecrawl/cli",
+    "installs": 105162
   },
   "ecc": {
-    "source": "affaan-m/ecc",
-    "skills_n": 322,
+    "skills_n": 323,
+    "skill": "ecc-tools-cost-audit",
     "week": 468,
-    "installs": 10523,
-    "skill": "ecc-tools-cost-audit"
+    "source": "affaan-m/ecc",
+    "installs": 10575
   }
 }
