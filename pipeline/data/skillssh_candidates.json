@@ -1,7 +1,7 @@
 [
   {
     "source": "uizze.sh",
-    "installs": 1165703,
+    "installs": 1167475,
     "week": 32686,
     "top_skill": "ui-taste",
     "skills_n": 2,
@@ -13,7 +13,7 @@
   },
   {
     "source": "101-skills/superpowers",
-    "installs": 1084823,
+    "installs": 1089564,
     "week": 36175,
     "top_skill": "ai-video-generation",
     "skills_n": 26,
@@ -31,7 +31,7 @@
   },
   {
     "source": "magentosh/superpowers",
-    "installs": 971233,
+    "installs": 971958,
     "week": 45531,
     "top_skill": "ai-image-generation",
     "skills_n": 26,
@@ -49,7 +49,7 @@
   },
   {
     "source": "open.feishu.cn",
-    "installs": 945907,
+    "installs": 949130,
     "week": 34011,
     "top_skill": "lark-doc",
     "skills_n": 29,
@@ -59,15 +59,15 @@
       "lark-shared",
       "lark-drive",
       "lark-base",
-      "lark-im",
       "lark-sheets",
+      "lark-im",
       "lark-wiki",
       "lark-calendar"
     ]
   },
   {
     "source": "skills-shell/superpowers",
-    "installs": 905188,
+    "installs": 907752,
     "week": 70989,
     "top_skill": "ai-image-generation",
     "skills_n": 26,
@@ -85,7 +85,7 @@
   },
   {
     "source": "qu-skills/superpowers",
-    "installs": 836462,
+    "installs": 845274,
     "week": 61529,
     "top_skill": "ai-avatar-video",
     "skills_n": 26,
@@ -103,7 +103,7 @@
   },
   {
     "source": "gencraft-labs/skills",
-    "installs": 741415,
+    "installs": 756246,
     "week": 96963,
     "top_skill": "ai-music",
     "skills_n": 5,
@@ -118,7 +118,7 @@
   },
   {
     "source": "bankai-skills/superpowers",
-    "installs": 662495,
+    "installs": 665387,
     "week": 100349,
     "top_skill": "ai-image-generation",
     "skills_n": 26,
@@ -136,7 +136,7 @@
   },
   {
     "source": "its-a-skill-issue/superpowers",
-    "installs": 632028,
+    "installs": 634342,
     "week": 56130,
     "top_skill": "ai-image-generation",
     "skills_n": 26,
@@ -154,7 +154,7 @@
   },
   {
     "source": "larksuite/cli",
-    "installs": 505519,
+    "installs": 506416,
     "week": 5605,
     "top_skill": "lark-doc",
     "skills_n": 29,
@@ -172,7 +172,7 @@
   },
   {
     "source": "beltsh/superpowers",
-    "installs": 272720,
+    "installs": 301349,
     "week": 4303,
     "top_skill": "ai-video-generation",
     "skills_n": 26,
@@ -202,7 +202,7 @@
   },
   {
     "source": "wind-alice/alicemarket",
-    "installs": 263662,
+    "installs": 264935,
     "week": 8672,
     "top_skill": "wind-mcp-skill",
     "skills_n": 3,
@@ -215,7 +215,7 @@
   },
   {
     "source": "sentry/dev",
-    "installs": 207316,
+    "installs": 208853,
     "week": 5490,
     "top_skill": "sentry-cli",
     "skills_n": 1,
@@ -226,7 +226,7 @@
   },
   {
     "source": "antibrow/anti-detect-browser-skills",
-    "installs": 174565,
+    "installs": 175742,
     "week": 8262,
     "top_skill": "anti-detect-browser",
     "skills_n": 3,
@@ -239,7 +239,7 @@
   },
   {
     "source": "shadcn-ui/ui",
-    "installs": 162024,
+    "installs": 163114,
     "week": 8148,
     "top_skill": "shadcn",
     "skills_n": 2,
@@ -251,7 +251,7 @@
   },
   {
     "source": "liarjsdev/liarjs-skills",
-    "installs": 138528,
+    "installs": 139669,
     "week": 7991,
     "top_skill": "browser-fingerprint-audit",
     "skills_n": 4,
@@ -259,13 +259,13 @@
     "skills": [
       "browser-fingerprint-audit",
       "playwright-stealth-verify",
-      "fingerprint-failure-triage",
-      "fingerprint-ci-gate"
+      "fingerprint-ci-gate",
+      "fingerprint-failure-triage"
     ]
   },
   {
     "source": "better-auth/skills",
-    "installs": 134311,
+    "installs": 134464,
     "week": 1266,
     "top_skill": "better-auth-best-practices",
     "skills_n": 7,
@@ -282,7 +282,7 @@
   },
   {
     "source": "cloudflare/security-audit-skill",
-    "installs": 129518,
+    "installs": 131156,
     "week": 16995,
     "top_skill": "security-audit",
     "skills_n": 1,
@@ -293,7 +293,7 @@
   },
   {
     "source": "intellectronica/agent-skills",
-    "installs": 114337,
+    "installs": 115273,
     "week": 2149,
     "top_skill": "notion-api",
     "skills_n": 5,
@@ -308,7 +308,7 @@
   },
   {
     "source": "mastra-ai/skills",
-    "installs": 114258,
+    "installs": 115060,
     "week": 5955,
     "top_skill": "mastra",
     "skills_n": 2,
@@ -320,7 +320,7 @@
   },
   {
     "source": "mcollina/skills",
-    "installs": 111271,
+    "installs": 112040,
     "week": 5684,
     "top_skill": "fastify-best-practices",
     "skills_n": 5,
@@ -335,7 +335,7 @@
   },
   {
     "source": "spillwavesolutions/design-doc-mermaid",
-    "installs": 110612,
+    "installs": 111370,
     "week": 5709,
     "top_skill": "design-doc-mermaid",
     "skills_n": 1,
@@ -346,7 +346,7 @@
   },
   {
     "source": "browser-act/skills",
-    "installs": 108559,
+    "installs": 108564,
     "week": 56,
     "top_skill": "browser-act",
     "skills_n": 2,
@@ -358,7 +358,7 @@
   },
   {
     "source": "nrwl/nx-ai-agents-config",
-    "installs": 105196,
+    "installs": 105932,
     "week": 5568,
     "top_skill": "nx-workspace",
     "skills_n": 7,
@@ -375,7 +375,7 @@
   },
   {
     "source": "stripe/ai",
-    "installs": 104883,
+    "installs": 105020,
     "week": 1203,
     "top_skill": "stripe-best-practices",
     "skills_n": 6,
@@ -390,8 +390,19 @@
     ]
   },
   {
+    "source": "proseify.xyz",
+    "installs": 103257,
+    "week": 11,
+    "top_skill": "anti-prose-slop",
+    "skills_n": 1,
+    "official": false,
+    "skills": [
+      "anti-prose-slop"
+    ]
+  },
+  {
     "source": "typesafe-ai/skills",
-    "installs": 102613,
+    "installs": 102698,
     "week": 1156,
     "top_skill": "typesafe-ai",
     "skills_n": 1,
@@ -402,7 +413,7 @@
   },
   {
     "source": "browser-use/browser-use",
-    "installs": 100444,
+    "installs": 100495,
     "week": 485,
     "top_skill": "browser-use",
     "skills_n": 4,
@@ -412,6 +423,41 @@
       "remote-browser",
       "open-source",
       "cloud"
+    ]
+  },
+  {
+    "source": "greensock/gsap-skills",
+    "installs": 100172,
+    "week": 5288,
+    "top_skill": "gsap-core",
+    "skills_n": 8,
+    "official": false,
+    "skills": [
+      "gsap-core",
+      "gsap-scrolltrigger",
+      "gsap-timeline",
+      "gsap-performance",
+      "gsap-plugins",
+      "gsap-react",
+      "gsap-utils",
+      "gsap-frameworks"
+    ]
+  },
+  {
+    "source": "obsidianmd/obsidian-skills",
+    "installs": 100137,
+    "week": 1495,
+    "top_skill": "obsidian-markdown",
+    "skills_n": 7,
+    "official": false,
+    "skills": [
+      "obsidian-markdown",
+      "obsidian-cli",
+      "obsidian-bases",
+      "json-canvas",
+      "defuddle",
+      "knap",
+      "obsidian-headless"
     ]
   }
 ]
